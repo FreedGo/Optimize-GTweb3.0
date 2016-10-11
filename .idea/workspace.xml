@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/品牌首页.html" afterPath="$PROJECT_DIR$/html/品牌首页.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yueqipinpai.js" afterPath="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -283,12 +280,20 @@
       <option name="presentableId" value="Default" />
       <updated>1475980328474</updated>
       <workItem from="1475980329957" duration="12128000" />
-      <workItem from="1476149771105" duration="5977000" />
+      <workItem from="1476149771105" duration="6007000" />
     </task>
+    <task id="LOCAL-00001" summary="去除">
+      <created>1476164634362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476164634362</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18105000" />
+    <option name="totallyTimeSpent" value="18135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,6 +355,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="去除" />
+    <option name="LAST_COMMIT_MESSAGE" value="去除" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
