@@ -276,7 +276,575 @@
                                 </div>
                             </li>
                             [/e:loop]
-                        </ul>
+                        </ul><!DOCTYPE html>
+                        <html lang="zh-CN">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>[!--pagetitle--]</title>
+                            <meta name="keywords" content="[!--pagekey--]" />
+                            <meta name="description" content="[!--pagedes--]" />
+                            <meta name="baidu-site-verification" content="SSAE70KFwk" />
+                            <meta http-equiv="X-UA-Compatible"  content="ie=edge">
+                            <meta property="og:title"           content="[!--pagetitle--]" />
+                            <meta property="og:description"     content="[!--pagedes--]" />
+                            <meta property="og:image"           content="/images/logo.png" />
+                            <meta name="360-site-verification" content="b4e22540990d04d0fbdc411d1d924298" />
+                            <base target=_blank>
+                            <link rel="shortcut icon" href="favicon.ico">
+                            <link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+                            <link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_index.css">
+                            <script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+                            <!--<script type="text/javascript" src="[!&#45;&#45;news.url&#45;&#45;]js/52img.js"></script>-->
+                            <script type="text/javascript" src="[!--news.url--]js/jquery.SuperSlide.2.1.1.js"></script>
+                            <script language='javascript' src='/js/language.js'></script>
+                            <script language='javascript' src='/js/xin_index.js'></script>
+                        </head>
+                        <body>
+                        <!-----------头部调用------------>
+                        [!--temp.tou--]
+                        <!-- ····························中间结构·································· -->
+                        <div class="bodyWrap">
+                            <!-- 登录和轮播图··············································· -->
+                            <div class="bigBan clearfix">
+                                <!-- 登录区域··············································· -->
+                                <div class="login">
+                                    <!-- 登录前············································· -->
+                                    <script>
+                                        document.write('<script src="[!--news.url--]e/member/login/loginjs.php?t='+Math.random()+'"><'+'/script>');
+                                    </script>
+                                    <!-- 登录后············································· -->
+
+                                    <div class="search">
+                                        <form action="[!--news.url--]e/search/index.php" method="post" name="searchform" id="searchform">
+                                            <input type="hidden" name="show" value="title" />
+                                            <input type="hidden" name="tempid" value="1" />
+                                            <select name="tbname" id="xuanze">
+                                                <option value="photo">视频</option>
+                                                <option value="photo">音乐</option>
+                                                <option value="photo">图片</option>
+                                            </select>
+
+                                            <input type="search" name="keyboard">
+                                            <input type="image" class="inputSub" src="[!--news.url--]skin/default/images/search.gif" />
+                                            <i class="iconfont">&#xe658;</i>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- 登录区域结束··············································· -->
+                                <!-- 轮播图················································· -->
+                                <div class="banner">
+                                    <div id="slideBox" class="slideBox">
+                                        <div class="hd">
+
+                                            <ul>
+                                                [e:loop={"select * from phome_enewsad where classid=5 order by onclick desc",10,24,0}]
+                                                <li></li>
+                                                [/e:loop]
+                                            </ul>
+                                        </div>
+                                        <div class="bd">
+
+                                            <ul>
+                                                [e:loop={"select * from phome_enewsad where classid=5 order by onclick desc",10,24,0}]
+                                                <li><a rel="external nofollow" href="<?=$bqr[url]?>"><img src="<?=$bqr[picurl]?>" /></a></li>
+                                                [/e:loop]
+                                            </ul>
+                                        </div>
+
+
+                                        <a class="prev" href="javascript:void(0)"></a>
+                                        <a class="next" href="javascript:void(0)"></a>
+
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,effect:"leftLoop",interTime:5000});
+                                    </script>
+                                </div>
+                                <!-- 轮播图结束······················································ -->
+                            </div>
+                            <!-- 登录和轮播图结束························································ -->
+
+                            <!-- 音乐广场和爱乐大人区域·················································· -->
+                            <div class="middleWrap clearfix">
+                                <!-- 左边结构开始···················································· -->
+                                <div class="middleLeft">
+
+                                    <!-- 音乐广场···················································· -->
+                                    <div class="yinyueguangchang">
+                                        <!-- 标题················· -->
+                                        <div class="yinyueHead clearfix">
+                                            <h3><a href="[!--news.url--]guangchang">音乐广场</a></h3>
+                                            <span class="more"><a href="[!--news.url--]guangchang">更多</a></span>
+                                        </div>
+                                        <!-- 标题················· -->
+                                        <!-- 音乐广场内容·············································· -->
+                                        <div class="slideTxtBox">
+                                            <div class="hd">
+                                                <div class="fatie">
+                                                    <a href="javascript:;">
+                                                        <span><a href="[!--news.url--]e/fatie/ListInfo.php?mid=10">我要发帖</a></span><i class="iconfont">&#xe64f;</i>
+                                                    </a>
+                                                </div>
+                                                <ul><li>全站动态</li><li>热门视频</li><li>热门音乐</li><li>热门图片</li></ul>
+                                            </div>
+                                            <div class="bd">
+                                                <ul class="quanzhandongtai">
+                                                    [e:loop={'11,12,13',2,0,0,'','newstime DESC'}]
+
+                                                    <li class="clearfix" id="userImg<?=$bqr[id]?>">
+                                                        <?
+                            	if($bqr[classid]==12){
+                                ?>
+                                                        <script type="text/javascript">
+                                                            // ajax请求后台，返回四张图片
+                                                            $(function() {
+                                                                var imgUserMsg="<?=$bqr[id]?>";
+
+                                                                $.ajax({
+                                                                    url: '/guangchang/index.photo.php',
+                                                                    type: 'post',
+                                                                    cache:true,
+                                                                    dataType: 'text',
+                                                                    data: {'tit_id': imgUserMsg},
+                                                                })
+                                                                        .done(function(msg) {
+                                                                            var UserImgInfo=msg;
+                                                                            var userSelect="userImg"+imgUserMsg;
+                                                                            $('#'+userSelect).find('.chatu a').empty().append(msg);
+                                                                        })
+                                                                        .fail(function() {
+                                                                            console.log("error");
+                                                                        });
+                                                            });
+
+                                                        </script>
+                                                        <?
+                                }
+                            ?>
+                                                        <h3><a href="<?=$bqsr['titleurl']?>"><?=$bqr['title']?></a></h3>
+                                                        <p><?=esub($bqr[smalltext],200)?></p>
+                                                        <div class="chatu">
+                                                            <a href="<?=$bqsr['titleurl']?>" class="clearfix">
+                                                                <img src="<?=$bqr[titlepic]?>">
+
+                                                                <?php
+						                	if($bqr[classid]==11){
+						                    	echo "<i class='iconfont'>&#xe63b;</i>";
+                                                                }elseif($bqr[classid]==13){
+                                                                echo "<i class='iconfont'>&#xe63e;</i>";
+                                                                }
+                                                                ?>
+                                                            </a>
+                                                        </div>
+                                                        <div class="time clearfix">
+                                                            <span><?=date('Y-m-d',$bqr[newstime])?></span>
+                                                            <div class="timeRight">
+                                                                <ol class="clearfix">
+                                                                    <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
+                                                                    <li><?=$bqr['onclick']?></li>
+
+                                                                    <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+                                                                    <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+
+                                                                    <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
+                                                                    <li><?=$bqr['plnum']?></li>
+                                                                    <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
+                                                                    <li>34</li>
+                                                                    <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
+                                                                    <li></li>
+                                                                    <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
+                                                                </ol>
+                                                                <div class="bdsharebuttonbox">
+                                                                    <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="quanzhandongtai">
+                                                    [e:loop={11,2,0,0,'','newstime DESC'}]
+                                                    <li class="clearfix">
+                                                        <h3><a href="<?=$bqsr['titleurl']?>"><?=$bqr['title']?></a></h3>
+                                                        <p><?=esub($bqr[smalltext],200)?></p>
+                                                        <div class="chatu">
+                                                            <a href="<?=$bqsr['titleurl']?>">
+                                                                <img src="<?=$bqr[titlepic]?>">
+                                                                <?php
+						                	if($bqr[classid]==11){
+						                    	echo "<i class='iconfont'>&#xe63b;</i>";
+                                                                }elseif($bqr[classid]==13){
+                                                                echo "<i class='iconfont'>&#xe63e;</i>";
+                                                                }
+                                                                ?>
+                                                            </a>
+                                                        </div>
+                                                        <div class="time clearfix">
+                                                            <span><?=date('Y-m-d',$bqr[newstime])?></span>
+                                                            <div class="timeRight">
+                                                                <ol class="clearfix">
+                                                                    <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
+                                                                    <li><?=$bqr['onclick']?></li>
+
+                                                                    <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+                                                                    <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+
+                                                                    <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
+                                                                    <li><?=$bqr['plnum']?></li>
+                                                                    <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
+                                                                    <li>34</li>
+                                                                    <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
+                                                                    <li></li>
+                                                                    <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
+                                                                </ol>
+                                                                <div class="bdsharebuttonbox">
+                                                                    <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="quanzhandongtai">
+                                                    [e:loop={13,2,0,0,'','newstime DESC'}]
+                                                    <li class="clearfix">
+                                                        <h3><a href="<?=$bqsr['titleurl']?>"><?=$bqr['title']?></a></h3>
+                                                        <p><?=esub($bqr[smalltext],200)?></p>
+                                                        <div class="chatu">
+                                                            <a href="<?=$bqsr['titleurl']?>">
+
+                                                                <img src="<?=$bqr[titlepic]?$bqr[titlepic]:'/images/video2.jpg' ?>">
+
+                                                                <?php
+						                	if($bqr[classid]==11){
+						                    	echo "<i class='iconfont'>&#xe63b;</i>";
+                                                                }elseif($bqr[classid]==13){
+                                                                echo "<i class='iconfont'>&#xe63e;</i>";
+                                                                }
+                                                                ?>
+                                                            </a>
+                                                        </div>
+                                                        <div class="time clearfix">
+                                                            <span><?=date('Y-m-d',$bqr[newstime])?></span>
+                                                            <div class="timeRight">
+                                                                <ol class="clearfix">
+                                                                    <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
+                                                                    <li><?=$bqr['onclick']?></li>
+
+                                                                    <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+                                                                    <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+
+                                                                    <li><a title="评论数" ><i class="iconfont">&#xe64e;</i></a></li>
+                                                                    <li><?=$bqr['plnum']?></li>
+                                                                    <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
+                                                                    <li>34</li>
+                                                                    <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
+                                                                    <li></li>
+                                                                    <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
+                                                                </ol>
+                                                                <div class="bdsharebuttonbox">
+                                                                    <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="quanzhandongtai">
+                                                    [e:loop={12,2,0,0,'','newstime DESC'}]
+                                                    <li class="clearfix" id="userImg1<?=$bqr[id]?>">
+                                                        <script type="text/javascript">
+                                                            // ajax请求后台，返回四张图片
+                                                            $(function() {
+                                                                var imgUserMsg="<?=$bqr[id]?>";
+
+                                                                $.ajax({
+                                                                    url: '/guangchang/index.photo.php',
+                                                                    type: 'post',
+                                                                    cache:true,
+                                                                    dataType: 'text',
+                                                                    data: {'tit_id': imgUserMsg},
+                                                                })
+                                                                        .done(function(msg) {
+                                                                            var UserImgInfo=msg;
+                                                                            var userSelect="userImg1"+imgUserMsg;
+                                                                            $('#'+userSelect).find('.chatu a').empty().append(msg);
+                                                                        })
+                                                                        .fail(function() {
+                                                                            console.log("error");
+                                                                        });
+                                                            });
+
+                                                        </script>
+
+                                                        <h3><a href="<?=$bqsr['titleurl']?>"><?=$bqr['title']?></a></h3>
+                                                        <p><?=esub($bqr[smalltext],200)?></p>
+                                                        <div class="chatu">
+                                                            <a href="<?=$bqsr['titleurl']?>" class="clearfix"><img src="<?=$bqr['titlepic']?>">
+                                                                <?php
+						                	if($bqr[classid]==11){
+						                    	echo "<i class='iconfont'>&#xe63b;</i>";
+                                                                }elseif($bqr[classid]==13){
+                                                                echo "<i class='iconfont'>&#xe63e;</i>";
+                                                                }
+                                                                ?>
+                                                            </a>
+                                                        </div>
+                                                        <div class="time clearfix">
+                                                            <span><?=date('Y-m-d',$bqr[newstime])?></span>
+                                                            <div class="timeRight">
+                                                                <ol class="clearfix">
+                                                                    <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
+                                                                    <li><?=$bqr['onclick']?></li>
+
+                                                                    <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+                                                                    <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+
+                                                                    <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
+                                                                    <li><?=$bqr['plnum']?></li>
+                                                                    <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
+                                                                    <li>34</li>
+                                                                    <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
+                                                                    <li></li>
+                                                                    <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
+                                                                </ol>
+                                                                <div class="bdsharebuttonbox">
+                                                                    <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
+                                        <!-- 音乐广场内容············································ -->
+                                    </div>
+                                    <!-- 音乐广场结束················································ -->
+
+
+                                    <!-- 音乐教室和老师·············································· -->
+                                    <div class="musicTech">
+                                        <div class="yinyueHead musicTechHead clearfix">
+                                            <h3 class="current">音乐教室</h3>
+                                            <h3>音乐老师</h3>
+                                            <span class="more"><a href="http://www.greattone.net/jiaoshi/">更多</a></span>
+                                        </div>
+                                        <div class="musicTechList">
+                                            <ul class="clearfix">
+
+
+                                                [e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=4 and a.sign=1 order by b.follownum desc limit 8",10,24,0}]
+                                                <li><a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+                                                    <img src="<?=$bqr[userpic]?>">
+                                                    <h3><?=$bqr[username]?></h3>
+                                                </a>
+                                                </li>
+                                                [/e:loop]
+                                            </ul>
+
+
+                                            <ul class="clearfix">
+                                                [e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3 and a.sign=1 order by b.follownum desc limit 8",10,24,0}]
+                                                <li><a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+                                                    <img src="<?=$bqr[userpic]?>">
+                                                    <h3><?=$bqr[username]?></h3>
+                                                </a>
+                                                </li>
+                                                [/e:loop]
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <!-- 音乐教室和老师结束·············································· -->
+                                </div>
+                                <!-- 左边结构结束···················································· -->
+                                <!-- 右边结构开始···················································· -->
+                                <div class="middleRight">
+
+                                    <!-- 音乐之星开始················································ -->
+                                    <div class="yinyuezhixing">
+                                        <div class="inXing">
+                                            <div class="xingHead">
+                                                <div class="yinyueHead clearfix">
+                                                    <h3><a href="[!--news.url--]mingren">音乐之星</a></h3>
+                                                    <span class="more"><a href="[!--news.url--]mingren">更多</a></span>
+                                                </div>
+                                            </div>
+                                            <div class="xingName">
+                                                <ul class="clearfix">
+                                                    <li>琴行名人</li>
+                                                    <li>钢琴之星</li>
+                                                    <li>提琴之星</li>
+                                                    <li>吉他之星</li>
+                                                    <!--<li>琴行名人</li>-->
+                                                    <li>管乐之星</li>
+                                                    <li>民乐之星</li>
+                                                    <li>歌唱之星</li>
+                                                    <li>其他之星</li>
+                                                    <li>维修达人</li>
+                                                </ul>
+                                            </div>
+                                            <div class="xingImg">
+                                                <ul class="clearfix">
+                                                    <!--名人名家-->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='琴行名人' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!--···············钢琴之星····················-->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='钢琴之星' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!---------提琴之星---------->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='提琴之星' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!---······················吉它之星·························--->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='吉它之星' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!------琴行名人------->
+                                                    <!-- [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='琴行名人' limit 12",10,24,0}]
+                                                      <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                                       <img src="<?=$bqr[userpic]?>" alt="">
+                                                                       <h3><?=$bqr[username]?></h3>
+                                                                   </a>
+                                                      </li>
+                                                       [/e:loop]-->
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!------管乐之星------->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='管乐之星' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!------民乐之星------->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='民乐之星' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!------歌唱之星------->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2  and u.sign=1 and ui.music_star='歌唱之星' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!------其他之星------->
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='其他之星' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                                <ul class="clearfix">
+                                                    <!------维修达人------->
+
+                                                    [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='维修达人' limit 12",10,24,0}]
+                                                    <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
+                                                        <img src="<?=$bqr[userpic]?>" alt="">
+                                                        <h3><?=$bqr[username]?></h3>
+                                                    </a>
+                                                    </li>
+                                                    [/e:loop]
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 音乐之星结束················································ -->
+                                    <!-- 音乐资讯开始················································ -->
+                                    <div class="yinyuezixun">
+                                        <!-- 标题················· -->
+                                        <div class="yinyueHead clearfix">
+                                            <h3><a href="[!--news.url--]news/">音乐资讯</a></h3>
+                                            <span class="more"><a href="[!--news.url--]news/">更多</a></span>
+                                        </div>
+                                        <!-- 标题················· -->
+                                        <div class="zixunList">
+                                            <ul>
+                                                [ecmsinfo]'14,15',4,32,0,0,55,0,'','newstime DESC'[/ecmsinfo]
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- 音乐资讯结束················································ -->
+                                </div>
+                                <!-- 右边结构结束···················································· -->
+                                <div class="index-ad clearfix" style="float:left;width:1200px;height:90px;">
+                                    <div class="index-ad-1" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea77.js"></script></div>
+                                    <div class="index-ad-2" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea78.js"></script></div>
+
+                                </div>
+                            </div>
+                            <!--去除友情链接的css-->
+                            <!-- 友情链接开始····························· -->
+                            <section class="friendly-link" style="background-color: #DDDDDD;">
+                                <div class="friendly-link-head">
+                                    <h2>友情链接：</h2>
+                                </div>
+                                <div class="friendly-link-content">
+                                    [e:loop={'select lname,lurl,lpic from [!db.pre!]enewslink where checked=1 and classid=1 order by myorder,lid',20,24,0}]
+                                    <a href="<?=$bqr[lurl]?>" target="_blank" ><?=$bqr[lname]?></a>
+                                    [/e:loop]
+                                </div>
+                            </section>
+                            <!-- 友情链接结束····························· -->
+                            <!-- 中间区域结束···························································· -->
+                        </div>
+                        <!-----------尾部调用------------>
+                        [!--temp.wei--]
+                        [!--temp.xuanfu--]
+                        </body>
+                        </html>
                         <ul class="quanzhandongtai">
                             [e:loop={12,2,0,0,'','newstime DESC'}]
                             <li class="clearfix" id="userImg1<?=$bqr[id]?>">

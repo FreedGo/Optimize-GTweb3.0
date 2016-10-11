@@ -103,8 +103,17 @@ $(function() {
             alert('输入的品牌名字不能为空');
         } else{
             // 点下按钮之后加载css动画
-            $('.liebiaoShow').empty().append('<div class="loaders"><div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div></div>');
-            $('.loaders').fadeIn(200);
+            // $('.liebiaoShow').empty().append('' +
+            //     '<div class="loaders">' +
+            //     '<div class="loader">' +
+            //     '<div class="loader-inner line-scale">' +
+            //     '<div></div><div></div><div></div><div></div><div></div></div></div></div>');
+            $('.sousuo-pinpai').show().empty().append('' +
+                '<div class="loaders">' +
+                '<div class="loader">' +
+                '<div class="loader-inner line-scale">' +
+                '<div></div><div></div><div></div><div></div><div></div></div></div></div>').siblings().hide();
+            // $('.loaders').fadeIn(200);
             // console.log(jiaoshiName);
             $.ajax({
                 url: '/pinpai/index.name.php',
@@ -116,15 +125,15 @@ $(function() {
                     // 清空liebiaoShow并插入li
                     // console.log(msg);
                     if (msg=='') {
-                        $('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到琴行，请重新搜索</p>');
+                        $('.sousuo-pinpai').empty().append('' +
+                            '<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到与'+jiaoshiName+'相关的品牌，请重新搜索</p>'
+                        );
                     } else {
-                        $('.liebiaoFuck').eq(0).hide();
-                        $('.liebiaoShow').hide();
-                        $('.liebiaoShow:last').show().empty().append(msg);
-                        $('.toutiao01').append('推荐');
-                        $('.di_zhi').append('创立国家：');
-                        $('.nianfen').append('创立年份：');
-                        $('.telephone_one').append('咨询电话：');
+                        $('.sousuo-pinpai').show().empty().append(msg);
+                        $('.sousuo-pinpai .toutiao01').append('推荐');
+                        $('.sousuo-pinpai .di_zhi').append('创立国家：');
+                        $('.sousuo-pinpai .nianfen').append('创立年份：');
+                        $('.sousuo-pinpai .telephone_one').append('咨询电话：');
                     }
 
                 }
@@ -167,11 +176,11 @@ $(function() {
                     // 清空liebiaoShow并插入li
                     // console.log(msg);
                     $('.liebiaoFuck').eq(0).hide();
-                    $('.liebiaoShow').empty().append(msg);
-                    $('.toutiao01').append('推荐');
-                    $('.di_zhi').append('创立国家：');
-                    $('.nianfen').append('创立年份：');
-                    $('.telephone_one').append('咨询电话：');
+                    $('.liebiaoShow').eq(0).empty().append(msg);
+                    $('.liebiaoShow').eq(0).find('.toutiao01').append('推荐');
+                    $('.liebiaoShow').eq(0).find('.di_zhi').append('创立国家：');
+                    $('.liebiaoShow').eq(0).find('.nianfen').append('创立年份：');
+                    $('.liebiaoShow').eq(0).find('.telephone_one').append('咨询电话：');
                 }
             })
                 .done(function() {
@@ -208,7 +217,6 @@ $(function() {
                 console.log(subCity1);
                 // 第二步，向好琴声后台发送当前地址并接受返回的信息
                 $.ajax({
-
                     url: '/pinpai/indexs.ip.php',
                     type: 'post',
                     dataType: 'text',
@@ -217,10 +225,10 @@ $(function() {
                         // 清空liebiaoShow并插入li
                         $('.liebiaoFuck').eq(0).hide();
                         $('.liebiaoShow').eq(0).empty().append(msg);
-                        $('.toutiao01').append('推荐');
-                        $('.di_zhi').append('创立国家：');
-                        $('.nianfen').append('创立年份：');
-                        $('.telephone_one').append('咨询电话：');
+                        $('.liebiaoShow').eq(0).find('.toutiao01').append('推荐');
+                        $('.liebiaoShow').eq(0).find('.di_zhi').append('创立国家：');
+                        $('.liebiaoShow').eq(0).find('.nianfen').append('创立年份：');
+                        $('.liebiaoShow').eq(0).find('.telephone_one').append('咨询电话：');
                     }
                 });
                 // 第二步end，向好琴声后台发送当前地址并接受返回的信息
@@ -242,10 +250,56 @@ $(function() {
             getCurrentCity();
         })
     })
+    /**
+     * 1.X 此函数为乐器品牌首页,点击其他分类的时候向后台调用数据
+     * @param typeNum {number} :1为钢琴,2为提琴,3为吉他,4为管乐器,5为打击乐器
+     */
+    function newPinType(typeNum) {
+        // var typeName;
+        // switch (typeNum){
+        //     case 1:typeName = '钢琴';
+        //         break;
+        //     case 2:typeName = '提琴';
+        //         break;
+        //     case 3:typeName = '吉他';
+        //         break;
+        //     case 4:typeName = '管乐';
+        //         break;
+        //     case 5:typeName = '打击乐';
+        //         break;
+        // };
+        $.ajax({
+            url: '/pinpai/index.type.ajax.php',
+            type: 'post',
+            dataType: 'text',
+            data:{'pintype': typeNum},
+            success:function(msg) {
+                // 清空liebiaoShow并插入li
+                $('.liebiaoFuck').eq(0).hide();
+                if (!msg){
+                    $('.liebiaoShow').eq(typeNum).empty().append('<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到相应品牌，快来加入好琴声吧！</p>');
+                } else {
+                    $('.liebiaoShow').eq(typeNum).empty().append(msg);
+                    $('.liebiaoShow').eq(typeNum).find('.toutiao01').append('推荐');
+                    $('.liebiaoShow').eq(typeNum).find('.di_zhi').append('创立国家：');
+                    $('.liebiaoShow').eq(typeNum).find('.nianfen').append('创立年份：');
+                    $('.liebiaoShow').eq(typeNum).find('.telephone_one').append('咨询电话：');
+                }
+            }
+        });
+    }
 
-
-
-
+    $(function () {
+        //点击乐器品牌首页,点击其他分类的时候向后台调用数据,只限点击一次
+        $('.musical-instruments .fenleiFuck').children('li').one('click',function () {
+            console.log(1);
+            var iPinIdx;
+            iPinIdx = $(this).index();
+            if (iPinIdx >0 ){
+                newPinType(iPinIdx);
+            }
+        });
+    });
 
 
 
