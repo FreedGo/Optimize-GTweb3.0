@@ -2,163 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/cancel_upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/upload-btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Optimize-GTweb3.0.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/banner.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bd-images-upload.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/dateRange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/demo2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/dropzone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/haixuan.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/haixuan1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/haixuanphone1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/huodong.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/imgUpload.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.slideBox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/laydate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/list1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/loader1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/loaders.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/luntan.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/luntanIndex.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/luntanPhone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/luntanliebiao.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/luntanneirong.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/music-play.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/musicIndex.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/musicList.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/news.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/pay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/privilege_yc_v1.2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/shipinneiye2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/sousuo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/tongxunlu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/tupianneiye3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/vali.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/wanshanziliao.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/wodekongjianzhuye.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin-music-news-article.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_live.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_music-book.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_qa.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_yinyueguangchang.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_yinyuejiaoshi.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_yinyuelaoshi.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_yinyuemingren.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin_yueqipinpai.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xuanfu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/yinyuexinwenlist.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/yinyuezixun.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/zan.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/zhuce.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/zhucehuiyuan.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/乐谱中心.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/乐谱内页.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/品牌首页.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/页面头部标准.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/52img.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/PIE.htc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/adress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/area.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/artDialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/cikonss.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/cropbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/dateRange.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/diyUpload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ecmsshop_fanyi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/fatie-upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/fatie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/fullAvatarEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/hai-list-new-paixu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/handlers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/huodong.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/iframeTools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ipresenter.packed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jNotify.jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jqPaginator.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jqtransform.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.7.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.8.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.SuperSlide.2.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.bigcolorpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.bigcolorpicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.charfirst.pinyin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.jqtransform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.raty.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.slideBox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.slides.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.timeago.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.uploadify.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/language.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/laydate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/luntan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/myPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/news-list-next.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/news-list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/newszan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/owl.carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pay2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pinpai-gdmap-configs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/register.yanzheng2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/smusic.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/space-dis-area-ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/stream-v1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/toupiao-img.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/toupiao1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/toupiao4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/tui_zhiyin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/tuijian.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/upload1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vali.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/visuallightbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/webuploader.html5only.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/webuploader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/webuploader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_haixuan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_live.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_music-book-lists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_music-book.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_yinyuezhixing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_yueqipinpai.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/yaoqing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/yecha.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/yinyueguangchang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/zan.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,7 +23,71 @@
     <favorites_list name="Optimize-GTweb3.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <folding>
+                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#7;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#8;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#10;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#13588#13596#1#HTML" expanded="true" />
+                <element signature="e#13816#13824#1#HTML" expanded="true" />
+                <element signature="n#li#12;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#13935#13943#1#HTML" expanded="true" />
+                <element signature="n#li#13;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#14149#14157#1#HTML" expanded="true" />
+                <element signature="e#14420#14428#1#HTML" expanded="true" />
+                <element signature="e#14529#14537#1#HTML" expanded="true" />
+                <element signature="n#li#16;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#14679#14687#1#HTML" expanded="true" />
+                <element signature="e#14907#14915#1#HTML" expanded="true" />
+                <element signature="n#li#19;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#15145#15153#1#HTML" expanded="true" />
+                <element signature="n#li#20;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#15416#15424#1#HTML" expanded="true" />
+                <element signature="e#15822#15830#1#HTML" expanded="true" />
+                <element signature="n#li#26;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#16325#16333#1#HTML" expanded="true" />
+                <element signature="e#16553#16561#1#HTML" expanded="true" />
+                <element signature="n#li#28;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#16672#16680#1#HTML" expanded="true" />
+                <element signature="n#li#29;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#16886#16894#1#HTML" expanded="true" />
+                <element signature="e#17157#17165#1#HTML" expanded="true" />
+                <element signature="e#17266#17274#1#HTML" expanded="true" />
+                <element signature="e#20372#20380#1#HTML" expanded="true" />
+                <marker date="1476147377000" expanded="true" signature="109:184" ph="select * fro... $" />
+                <marker date="1476147377000" expanded="true" signature="507:579" ph="select * fro... $" />
+                <marker date="1476147377000" expanded="true" signature="1341:1404" ph="select cked phome_enewsmember" />
+                <marker date="1476147377000" expanded="true" signature="1474:1538" ph="select group... $" />
+                <marker date="1476147377000" expanded="true" signature="1564:1625" ph="select * fro... $" />
+                <marker date="1476147377000" expanded="true" signature="1879:1933" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="2167:2221" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="2488:2542" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="2772:2826" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="3070:3124" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="3331:3385" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="3631:3685" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="3895:3949" ph="UPDATE phome... " />
+                <marker date="1476147377000" expanded="true" signature="5573:5639" ph="select * fro... $" />
+                <marker date="1476147377000" expanded="true" signature="5781:5844" ph="select feedu... $" />
+                <marker date="1476147377000" expanded="true" signature="6026:6139" ph="select mid,q... $" />
+                <marker date="1476147377000" expanded="true" signature="6202:6273" ph="select id fr... $" />
+                <marker date="1476147377000" expanded="true" signature="25063:25140" ph="select follo... $" />
+                <marker date="1476147377000" expanded="true" signature="26291:26473" ph="select * fro... phome_ecms_photo" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -206,6 +115,7 @@
         <option value="$PROJECT_DIR$/html/乐谱内页.html" />
         <option value="$PROJECT_DIR$/html/品牌首页.html" />
         <option value="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
+        <option value="$PROJECT_DIR$/php/header.php" />
       </list>
     </option>
   </component>
@@ -266,6 +176,10 @@
               <option name="myItemId" value="Optimize-GTweb3.0" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -274,10 +188,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,18 +255,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1475980328474</updated>
-      <workItem from="1475980329957" duration="10051000" />
+      <workItem from="1475980329957" duration="12099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10051000" />
+    <option name="totallyTimeSpent" value="12099000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="47" width="1920" height="977" extended-state="0" />
-    <editor active="false" />
+    <frame x="14" y="47" width="1920" height="977" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -538,8 +448,8 @@
           <caret line="143" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="321" selection-end-column="7" />
           <folding>
             <element signature="n#script#5;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,25 +505,84 @@
         <state relative-caret-position="455">
           <caret line="317" column="64" selection-start-line="317" selection-start-column="64" selection-end-line="317" selection-end-column="64" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7402#7410#1" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10279#10287#1" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7402#7410#1" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#10279#10287#1" expanded="false" />
             <element signature="n#ul#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#2;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#2;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#2;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#3;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#3;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#3;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#4;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#4;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#4;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#5;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#5;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#6;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#6;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#5;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#7;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#7;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#7;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding>
+            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#7;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#8;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#10;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#13588#13596#1#HTML" expanded="true" />
+            <element signature="e#13816#13824#1#HTML" expanded="true" />
+            <element signature="n#li#12;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#13935#13943#1#HTML" expanded="true" />
+            <element signature="n#li#13;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#14149#14157#1#HTML" expanded="true" />
+            <element signature="e#14420#14428#1#HTML" expanded="true" />
+            <element signature="e#14529#14537#1#HTML" expanded="true" />
+            <element signature="n#li#16;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#14679#14687#1#HTML" expanded="true" />
+            <element signature="e#14907#14915#1#HTML" expanded="true" />
+            <element signature="n#li#19;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#15145#15153#1#HTML" expanded="true" />
+            <element signature="n#li#20;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#15416#15424#1#HTML" expanded="true" />
+            <element signature="e#15822#15830#1#HTML" expanded="true" />
+            <element signature="n#li#26;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#16325#16333#1#HTML" expanded="true" />
+            <element signature="e#16553#16561#1#HTML" expanded="true" />
+            <element signature="n#li#28;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#16672#16680#1#HTML" expanded="true" />
+            <element signature="n#li#29;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#16886#16894#1#HTML" expanded="true" />
+            <element signature="e#17157#17165#1#HTML" expanded="true" />
+            <element signature="e#17266#17274#1#HTML" expanded="true" />
+            <element signature="e#20372#20380#1#HTML" expanded="true" />
+            <marker date="1476147377000" expanded="true" signature="109:184" ph="select * fro... $" />
+            <marker date="1476147377000" expanded="true" signature="507:579" ph="select * fro... $" />
+            <marker date="1476147377000" expanded="true" signature="1341:1404" ph="select cked phome_enewsmember" />
+            <marker date="1476147377000" expanded="true" signature="1474:1538" ph="select group... $" />
+            <marker date="1476147377000" expanded="true" signature="1564:1625" ph="select * fro... $" />
+            <marker date="1476147377000" expanded="true" signature="1879:1933" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="2167:2221" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="2488:2542" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="2772:2826" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="3070:3124" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="3331:3385" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="3631:3685" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="3895:3949" ph="UPDATE phome... " />
+            <marker date="1476147377000" expanded="true" signature="5573:5639" ph="select * fro... $" />
+            <marker date="1476147377000" expanded="true" signature="5781:5844" ph="select feedu... $" />
+            <marker date="1476147377000" expanded="true" signature="6026:6139" ph="select mid,q... $" />
+            <marker date="1476147377000" expanded="true" signature="6202:6273" ph="select id fr... $" />
+            <marker date="1476147377000" expanded="true" signature="25063:25140" ph="select follo... $" />
+            <marker date="1476147377000" expanded="true" signature="26291:26473" ph="select * fro... phome_ecms_photo" />
           </folding>
         </state>
       </provider>
