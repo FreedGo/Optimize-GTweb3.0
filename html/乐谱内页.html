@@ -1,0 +1,322 @@
+[e:loop={"select photo from phome_ecms_music where id='$navinfor[id]'",10,24,0}]
+<?php
+ 		if(empty($bqr[titlepic])){
+				//标题图片为空，调用图集第一张
+				$flid_1=explode("::::::",$bqr[photo]);
+				$titpic=$flid_1[0];
+		}else{
+			$titpic=$bqr[titlepic];
+		}
+    ?>
+[/e:loop]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声</title>
+    <meta name="keywords" content="[!--title--]" />
+    <meta name="description" content="[!--smalltext--]" />
+    <meta property="og:image" content="[!--titlepic--]"/>
+    <meta property="og:description" content="[!--smalltext--]"/>
+    <meta property="og:image" content="<?=$titpic?>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+    <script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+    <script language="javascript" src="/js/language.js"></script>
+    <link rel="stylesheet" type="text/css" href="[!--news.url--]css/tupianneiye3.css">
+    <script type="text/javascript" src="[!--news.url--]js/app/rem.js"></script>
+    <!--<script type="text/javascript" src="[!&#45;&#45;news.url&#45;&#45;]js/index.js"></script>-->
+    <script type="text/javascript" src="[!--news.url--]js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+            // 匹配是微信浏览器再去验证微信权限
+
+            // 微信相关分享，1.0获取url发给后台并获取相应其他参数
+            var AppID,
+                    TimeStamp,
+                    NonceStr,
+                    Signature,
+                    getUrl = location.href.split('#')[0];
+            $.ajax({
+                url: '/e/weixin/jssdkone.php',
+                type: 'post',
+                dataType: 'json',
+                data: {'urlone':getUrl},
+                async: false,
+                timeout:1000,
+
+            })
+                    .done(function(msg) {
+                        console.log("success");
+                        AppID = msg.a;
+                        TimeStamp = msg.b;
+                        NonceStr = msg.c;
+                        Signature = msg.d;
+                    })
+                    .fail(function() {
+                        console.log("error");
+                    })
+                    .always(function() {
+                        console.log("complete");
+                    });
+            // 2.微信权限验证
+            wx.config({
+                debug: false,
+                appId: AppID,
+                timestamp: TimeStamp,
+                nonceStr: NonceStr,
+                signature: Signature,
+                jsApiList: ['onMenuShareTimeline',"onMenuShareAppMessage","onMenuShareQQ","onMenuShareQZone",]
+            });
+            wx.ready(function() {
+                // 3 判断当前版本是否支持指定 JS 接口，支持批量判断
+                wx.checkJsApi({
+                    jsApiList : ['onMenuShareTimeline','onMenuShareAppMessage',"onMenuShareQQ","onMenuShareQZone","hideMenuItems"],
+
+                });
+                var strTiele="[!--title--] - 好琴声";
+                var strDesc="[!--pagekey--]";
+                // var strLink="URL";
+                var strImgUrl="<?=$titpic?>";
+                //分享朋友圈
+                wx.onMenuShareTimeline({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+
+                });
+
+                //分享给微信好友
+                wx.onMenuShareAppMessage({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+                });
+
+                //分享到QQ
+                wx.onMenuShareQQ({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+                });
+
+                //分享到QQ空间
+                wx.onMenuShareQZone({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+                });
+            });
+        }
+    </script>
+    <!--视频播放器-->
+</head>
+<body>
+<!--头部-->
+[!--temp.tou--]
+<div class="bodyWrap">
+    <!-- 头部广告 -->
+    <div class="headAdvert"><!--<img src="">--><script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea1.js"></script></div>
+    <!-- 头部广告结束 -->
+    <div class="artWrap">
+        <!-- 左边结构 -->
+        <div class="artLeft">
+            <!-- 文章头 -->
+            <div class="textHead">
+                <div class="textSource">您当前的位置：[!--newsnav--]</div>
+                <h2 style="overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;height: 40px;">[!--title--]</h2>
+                <div class="textInfo">
+                    <!-- 头像框 -->
+                    <div class="zhuozhe-img f-l-l">
+                        <?
+                            $id=$_GET['id'];
+                            $haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");
+                        $poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");
+                        ?>
+                        <a class="f-l-l" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
+                            <img src="<?=$poto[userpic]?>" alt="">
+                        </a>
+                        <div class="zuozhe-msg f-l-l">
+                            <h2 class="zuozhe-name">[!--username--]</h2>
+                            <h2 class="zuozhe-price">
+                                <?php
+                					$poto=$empire->fetch1("select userfen from phome_enewsmember where userid=$haipic[userid]");
+                                if($r[userfen]<=100){
+                                echo "一级";
+                                }elseif($r[userfen]<=300){
+                                echo "二级";
+                                }elseif($r[userfen]<=800){
+                                echo "三级";
+                                }elseif($r[userfen]<=2000){
+                                echo "四级";
+                                }elseif($r[userfen]<=5000){
+                                echo "五级";
+                                }elseif($r[userfen]<=15000){
+                                echo "六级";
+                                }elseif($r[userfen]<=50000){
+                                echo "七级";
+                                }elseif($r[userfen]>100000){
+                                echo "八级";
+                                }else{
+                                echo "八级";
+                                }
+                                ?>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="songster">
+                        <h3>作曲者：</h3>
+                        <p>[!--zuozhe--]</p>
+                    </div>
+                    <div class="textAuthor">
+                        <h3>上传者：</h3>
+                        <p><a href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">[!--username--]</a></p>
+                    </div>
+                    <div class="textDianji">
+                        <h3>点击量：</h3>
+                        <p>[!--page.stats--]<script src=[!--news.url--]e/public/ViewClick?classid=[!--classid--]&id=[!--id--]&addclick=1></script></p>
+                    </div>
+                    <div class="textTime">
+                        <h3>发表时间：</h3>
+                        <p>[!--newstime--]</p>
+                    </div>
+                    <!-- <div class="textDianji shoucang">
+          <h3>收藏量：</h3>
+          <p>gettotal("select count(*) as total from phome_enewsfava where id='$navinfor[id]' and classid='$navinfor[classid]'");?></p>
+      </div>-->
+                </div>
+
+
+            </div>
+            <!-- 文字头结束 -->
+            <div class="text">
+                <div class="w3cFocus">
+
+                    <div class="w3cFocusIn">
+                        <div class="bd">
+                            <ul>
+                                <li><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+                                <li><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+                                <li><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+                                <li><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="hd">
+                            <ul>
+
+                                <li><img src="/images/logo.png" /></li>
+                                <li><img src="/images/logo.png" /></li>
+                                <li><img src="/images/logo.png" /></li>
+                                <li><img src="/images/logo.png" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="prev"  target="_self"></a>
+                    <a class="next"  target="_self"></a>
+
+                </div>
+
+                <script type="text/javascript">
+                    // 向服务器请求图片
+                    $(function() {
+                        $.ajax({
+                            url: '/yuepu/photo.php',
+                            type: 'post',
+                            dataType: 'html',
+                            data: {'id_photo' : '[!--id--]'},
+                        })
+                                .done(function(msg) {
+                                    console.log("success");
+                                    console.log({'id_photo' : '[!--id--]'})
+                                    console.log(msg);
+                                    $('.bd ul').empty().append(msg);
+                                    $('.hd ul').empty().append(msg);
+                                    jQuery(".w3cFocus").slide({ mainCell:".bd ul", effect:"leftLoop", delayTime:300, autoPlay:false });
+                                })
+                                .fail(function() {
+                                    console.log("error");
+                                }).always(function() {
+                            window.onload=function(){
+                                console.log($('.bd ul').height());
+                                $('.bd li').css('top',$('.bd ul').height()*0.5);
+                            }
+
+
+                        });
+
+
+
+
+
+                    });
+                    // window.onload=function(){
+                    // console.log($('.bd ul').height());
+                    // $('.bd li').css('top',$('.bd ul').height()*0.5);
+                    // }
+
+                </script>
+
+                <div class="nei_photo">[!--smalltext--]</div>
+                <div class="pre_and_next clearfix"><div class="pre">上一篇：
+                    [e:loop={"select * from phome_ecms_music where id>$navinfor[id] and classid=$navinfor[classid] order by id asc limit 1",10,24,0}]
+                    <a href="<?=$bqsr[titleurl]?>"><?=$bqr[title]?></a>
+                    [/e:loop]
+                </div><div class="next">下一篇：
+                    [e:loop={"select * from phome_ecms_music where id<$navinfor[id] and classid=$navinfor[classid] order by id desc limit 1",10,24,0}]
+                    <a href="<?=$bqsr[titleurl]?>"><?=$bqr[title]?></a>
+                    [/e:loop]
+                </div></div>
+
+                <div class="share">
+                    <script type="text/javascript" src="/js/jquery.timeago.js"></script>
+                    <script type="text/javascript" src="/js/52img.js"></script>
+                    <script type="text/javascript" src="/js/zan.js"></script>
+                    <?php
+	                 $follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].')" class="button blue dianzanBtn " id="follow'.$navinfor[id].'"></a>';
+                    ?>
+                    <?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style_32x32" style="float:right">
+                        <a class="jiathis_button_weixin"></a>
+                        <a class="jiathis_button_tsina"></a>
+                        <a class="jiathis_button_qzone"></a>
+                        <a class="jiathis_button_tqq"></a>
+                        <a class="jiathis_button_fb"></a>
+                        <a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                        <a class="jiathis_counter_style"></a>
+                        <script "text/javascript">
+                        var jiathis_config = {
+                        // url: "http://www.yourdomain.com",
+                        title: "[!--pagetitle--] - 好琴声",
+                        summary:"[!--pagekey--]",
+                        pic:"[!--titlepic--]",
+                        img_url:"[!--titlepic--]"
+                        }
+                        </script>
+                        </div>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
+                    </div>
+                </div>
+                <br>
+                [!--temp.chang--]
+            </div>
+        </div>
+        <div class="footAdcert">
+            <script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea2.js"></script>
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    [!--temp.wei--]
+    <!----悬浮窗---->
+    [!--temp.xuanfu--]
+</body>
+</html>

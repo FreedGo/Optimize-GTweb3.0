@@ -1,0 +1,1130 @@
+
+.musicSquare img:after {
+	content: "";
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	width: 100%;
+	display: block;
+	height: 20px;
+}
+
+
+/*banner*/
+.bannerwrap{
+	width: 100%；
+}
+.banner{
+	width: 1000px;
+	margin: 0 auto;
+/*	box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);*/
+}
+.banner ul li img{
+	height: 400px;
+}
+/*banner*/
+/*音乐广场*/
+.musicSquare{
+	width: 100%;
+
+
+}
+.inSquare{
+	width: 800px;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+	
+	float: left;
+}
+
+.inSquareRight{
+	float: right;
+
+	width: 200px;
+}
+.content{
+	height: 40px;
+	border-bottom:#ccc solid 1px;
+	margin-bottom: 20px;
+}
+.content {
+	/*box-shadow: 0 8px 5px 0px rgba(0,0,0,0.1);*/
+}
+.content h2{
+	float: left;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	margin-left: 15px;
+	color: #4193D7;
+}
+.more{
+	float: right;
+	height: 20px;
+	width: 40px;
+
+	transition: all 0.5s;
+	margin:11px 15px 0 0;
+	text-align: center;
+	border-radius: 3px;
+
+    line-height: 20px;
+    padding: 0 8px;
+}
+.more a{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	font-weight: bold;
+	color:#63A4DB;
+}
+.more:hover{
+	background-color: #4193D7;
+	color: #fff;
+}
+a:hover{
+	color: #4193D7;
+}
+.more:hover #lanse{
+	color: #fff!important;
+}
+.side{
+	float: left;
+	width: 600px;
+}
+.side span{
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 0 4px;
+	cursor: pointer;
+}
+.side span:hover
+.side h3{
+	float: left;
+	font-size: 16px;
+	margin-right: 20px;
+	cursor: pointer;
+	line-height: 40px;
+}
+
+
+.side h3:hover{
+	color: #4193D7;
+}
+.content h3{
+	float: left;
+	margin-top: 11px;
+	line-height: 20px;
+	padding:0 8px;
+	cursor: pointer;
+	color: #4193D7;
+	border-radius: 3px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.content h3:hover{
+	color: #fff;
+	background-color:#4193D7;
+}
+
+.inSquare .left{
+	width: 800px;
+
+}
+
+.inSquare .left li{
+	float: left;
+	width: 180px;
+	margin-left: 17px;
+	background-color: #fff;
+	height: 180px;
+	margin-bottom: 2px;
+	position: relative;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	_display：inline；
+}
+.inSquare .left li:first-child{
+	margin-left: 16px;
+}
+.inSquare .left li:hover,.musicSquareNews li:hover{
+	box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-webkit-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-ms-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-moz-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	
+}
+.videoPlay{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background: url(../images/moive.png) 0 0 no-repeat;
+	-webkit-background-size: 40px 40px;
+	background-size: 40px 40px;
+	top: 72px;
+	right: 10px;
+	opacity: 0.7;
+	filter:alpha(opacity = 70);
+	transition: all 0.5s ease 0s;
+
+}
+.musicPlay{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	font-size: 39px;
+	color: #fff;
+	-webkit-background-size: 40px 40px;
+	background-size: 40px 40px;
+	top: 70px;
+	right: 8px;
+	opacity: 0.7;
+	filter:alpha(opacity = 70);
+	transition: all 0.5s ease 0s;
+}
+.inSquareRight dl:hover{
+	outline: skyblue solid 1px;
+}
+.inSquare .left li:hover .videoPlay{
+	opacity: 1;
+	filter:alpha(opacity = 100);
+}
+.inSquare .left li:hover .musicPlay{
+	opacity: 1;
+	filter:alpha(opacity = 100);
+}
+.inSquare .left li a{
+	display: inline-block;
+	width: 100%;
+
+	position: relative;
+}
+.inSquare .left li a:after{
+	content: "";
+	display: block;
+	width: 180px;
+	height: 20px;
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+.musicSquareNews li a:after{
+	content: "";
+	display: block;
+	width: 180px;
+	height: 20px;
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+.musicNewsList ul li a:after{
+	content: "";
+	display: block;
+	width: 150px;
+	height: 20px;
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+.inSquare .left li a img{
+	width: 180px;
+	height: 120px;
+}
+.inSquare .left li h4{
+	font-size: 14px;
+	font-weight: normal;
+	padding:0 10px;
+	color: #333;
+	height: 30px;
+	overflow: hidden;
+	line-height: 30px;
+
+
+
+}
+.inSquare .left li p{
+	padding-left: 10px;
+}
+.inSquare .left li p i{
+	display: inline-block;
+	width: 42px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+
+.inSquareRight .rightVideo,.inSquareRight .rightMusic,.inSquareRight .rightPic{
+	float: right;
+	width: 171px;
+	height: 180px;
+	padding-left: 10px;
+	margin:0 15px 2px 0;
+	background: url(../images/dlBg.png) 0 0 repeat-x;
+	box-shadow: 2px 5px 5px 3px rgba(127,127,127,0.2);
+	-webkit-box-shadow: 2px 5px 5px 3px rgba(127,127,127,0.2);
+	-ms-box-shadow: 2px 5px 5px 3px rgba(127,127,127,0.2);
+	-moz-box-shadow: 2px 5px 5px 3px rgba(127,127,127,0.2);
+	-o-box-shadow: 2px 5px 5px 3px rgba(127,127,127,0.2);
+
+}
+
+.inSquareRight dd{
+	height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 30px;
+	margin-bottom: 7px;
+}
+.inSquareRight dt{
+	height: 24px;
+	line-height: 24px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+.inSquareRight i{
+	float: left;
+}
+.inSquareRight h4{
+	float: left;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+/*音乐广场*/
+/*··························音乐广场动态······················*/
+.musicSquareNews li:first-child{
+	margin-left: 16px;
+}
+.musicSquareNews li{
+	float: left;
+	width: 180px;
+	margin-left: 17px;
+	background-color: #fff;
+	height: 180px;
+
+	position: relative;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.musicSquareNews li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.musicSquareNews li a img{
+	width: 180px;
+	height: 120px;
+}
+.musicSquareNews li h4{
+	font-size: 14px;
+	font-weight: normal;
+	padding:0 10px;
+	color: #333;
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+
+
+}
+.musicSquareNews li p{
+	padding-left: 10px;
+}
+.musicSquareNews li p i{
+	display: inline-block;
+	width: 42px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+
+}
+
+
+
+/*··························音乐广场动态结束······················*/
+
+/*···························dang dang 广告来了·····························*/
+
+.musicAdvert li{
+	float: left;
+	width: 180px;
+	margin-left: 17px;
+	background-color: #fff;
+	height: 180px;
+
+	position: relative;
+	
+}
+.musicAdvert li:first-child{
+	margin-left: 15px;
+}
+.musicAdvert li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
+.musicAdvert ul li a>img{
+	width:180px;
+	height:180px;}
+.musicAdvert ul li a:after{
+	content: "";
+	display: block;
+	width: 180px;
+	height: 20px;
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	position: absolute;
+	left: 0;
+	top: 160px;
+}
+
+.musicAdvert {
+	position: relative;
+}
+.bigAdPic {
+	position: absolute;
+	z-index: 100;
+	top: 41px;
+	left: -15px;
+	display: none;
+}
+.bigAdPic li{
+	width: 50px;
+	height: 200px;
+	float: left;
+	top: 0;
+	left: 0;
+	display: none;
+
+
+}
+.bigAdPic li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+
+}
+.bigAdPic li a img{
+
+	height: 200px;
+}
+
+
+
+
+/*···························dang dang广告走了·····························*/
+/*··························duang音乐资讯又来了······················*/
+.side{
+	float: left;
+	margin-left: 40px;
+}
+.musicNews .news{
+	float: left;
+	width: 356px;
+	margin-left: 10px;
+	background-color: #FBFBFB;
+	text-align: center;
+	padding: 10px 5px;
+	height: 295px;
+}
+.musicNews .left li h4{
+	line-height: 26px;
+	color: #111;
+}
+.musicNews .left li span{
+	display: block;
+	text-align: center;
+}
+.musicNews .news li{
+	display: inline-block;
+}
+.musicNews .news01{
+	font-size: 14px;
+	line-height: 28px;
+
+}
+.musicNews .news02 li{
+	line-height: 18px;
+}
+.musicNews .news01 a{
+	color: #1f1f1f;
+}
+.musicNews .left{
+	width: 604px;
+	margin-left: 20px;
+}
+.inmusicNews{
+	width: 1000px;
+	height: 390px;
+	
+	box-sizing: border-box;
+}
+.inmusicNews>div{
+	float: left;
+	height: 376px;
+	width: 270px;
+	margin-left: 15px;
+	box-sizing: border-box;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.mostFamous:hover{
+	box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-webkit-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-ms-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-moz-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+}
+.newsTouTiao{
+
+	width: 280px;
+}
+.newsTouTiao>ul{
+	height: 177px;
+	padding-top: 10px;
+}
+.newsTouTiao>ul li{
+	padding:0 10px;
+	overflow: hidden;
+
+}
+.inmusicNews .musicNewsList{
+	width: 505px;
+	margin-left: 0px;
+}
+.inmusicNews .musicNewsBang{
+	float: right;
+	width: 180px;
+
+	margin-left: 0;
+	
+}
+.musicNewsTop{
+	height: 150px;
+	background-color: #fff;
+
+
+
+}
+.musicNewsRecommend{
+	height: 150px;
+	background-color: #fff;
+
+}
+.musicNewsRecommend li:first-child a{
+	font-weight: bold;
+	line-height: 30px;
+	height: 30px;
+}
+.newsTouTiao a {
+	font-size:14px;
+	color: #333;
+	line-height: 24px;
+}
+.musicNewsTop li:first-child a{
+	font-weight: bold;
+	line-height: 30px;
+	height: 30px;
+
+}
+.musicNewsList>ul{
+
+	height: 180px;
+	margin-bottom: 15px;
+}
+.musicNewsList ul li{
+	width: 150px;
+	height: 180px;
+	background-color: #fff;
+	float: left;
+	margin-left: 17px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+
+}
+.musicNewsList ul li:hover{
+	box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-webkit-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-ms-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-moz-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+}
+.musicNewsList ul li a{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+
+}
+.musicNewsList ul li a img{
+	height: 120px;
+	width: 150px;
+
+}
+.musicNewsList ul li a h4{
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	color: #333;
+	overflow: hidden;
+	padding: 0 10px;
+	;
+}
+.famous ul li a h4,.musicTeacher .left li h4{
+	text-align: center;
+}
+
+
+.musicNewsListFen{
+	padding: 0 10px;
+}
+.musicNewsListFen input{
+	float: left;
+	height: 20px;
+	width: 60px;
+	border-radius: 3px;
+	background:  url(../images/guanzhu.png) center no-repeat;
+	outline: none;
+	border: #ccc solid 1px;
+	cursor: pointer;
+}
+
+.musicNewsListFen span{
+	float: right;
+	width: 60px;
+	height: 20px;
+	border: #ccc solid 1px;
+	border-radius: 3px;
+	height: 18px;
+	text-align: center;
+	color: #999;
+	cursor: pointer;
+
+}
+.inmusicNews .musicActivity{
+	margin-left: 0px;
+	height: 185px;
+}
+.bodyWrap .footer{
+	border-top: #FEF5D8 solid 2px;
+
+}
+.gifImg{
+	height: 25px;
+	width: 100px;
+	margin:10px 0 0  20px;
+	background-color: skyblue;
+	float: left;
+}
+.musicNewsBang .rightVideo{
+	height: 187px;
+	margin-bottom: 0px;
+}
+
+.musicNewsBang .rightMusic{
+	height: 187px;
+}
+/*··························duang音乐资讯也完了了······················*/
+/*························音乐鸣人驾到······················*/
+.mostFamous a{
+	display: block;
+	height: 376px;
+	width: 270px;
+	background-color: #fff;
+	position: relative;
+
+}
+.mostFamous a:after{
+	content: "";
+	display: block;
+	width: 270px;
+	height: 20px;
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	position: absolute;
+	left: 0;
+	top: 250px;
+}
+.mostFamous a img{
+	height: 270px;
+	width: 270px;
+}
+.mostFamous a h3{
+	height: 40px;
+	font-size: 20px;
+	width: 250px;
+	overflow: hidden;
+	font-weight: bold;
+	padding-left: 10px;
+	line-height: 40px;
+	color: #333;
+}
+.mostFamous a p{
+	padding: 0 10px;
+	height: 48px;
+	overflow: hidden;
+
+}
+.famous .musicNewsBang .rightVideo{
+	height: 375px;
+	background-color: #fff;
+}
+.famous .rightVideo dt{
+	width: 165px;
+	height: 110px;
+
+}
+.famous .rightVideo dt a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.famous .rightVideo dt a:after{
+	content: "";
+	display: block;
+	width: 165px;
+	height: 20px;
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	position: absolute;
+	left: 0;
+	top: 60px;
+}
+.famous .rightVideo dt img{
+	width: 165px;
+	height: 80px;
+
+}
+.famous .rightVideo dt h4{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+}
+/*······························音乐名人死了························*/
+/*中间广告*/
+.milldeAdvert{
+	width: 1000px;
+	height: 60px;
+	background-color: skyblue;
+	/*margin-bottom: 15px;*/
+}
+/*中间广告*/
+
+/*`````````````````````````````老师```````````````````````````*/
+.musicTeacher{
+	height: 436px;
+	
+}
+.musicTeacher .musicNewsBang {
+    float: right;
+    width: 180px;
+    margin-left: 0;
+    height: 375px;
+
+}
+.musicTeacher .musicNewsBang .rightVideo{
+	background-color: #fff;
+	height: 375px;
+}
+.musicTeacher .rightVideo dt{
+	height: 60px;
+	margin-bottom: 9px;
+	background-color: #fff;
+	transition: all 1s ease 0s;
+	-webkit-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+}
+.musicTeacher .rightVideo dt a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.musicTeacher .rightVideo dt a img{
+	float: left;
+
+	height: 60px;
+	width: 60px;
+}
+.musicTeacher .rightVideo dt a h4{
+	margin-left: 10px;
+	line-height: 60px;
+	font-size: 18px;
+	height: 60px;
+}
+.musicTeacher .rightVideo dt :hover{
+	background-color: #ccc;
+}
+.musicTeacher .rightVideo{
+	background-image: none;
+}
+.musicTeacher .inSquare .left li{
+	margin-bottom: 15px;
+}
+.musicTeacher .inSquare .fuck li{
+	margin-bottom: 0;
+}
+/*`````````````````````````````老师`````````````````````````````*/
+/*``````````````````````````haixuan``````````````````*/
+.inHaixuan{
+	height: 300px;
+	width: 1000px;
+	
+}
+.inHaixuan>div{float: left;
+			margin-left: 15px;}
+.haixuanLeft{
+	width: 700px;
+	position: relative;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+
+}			
+.haixuanLeft>ul{
+	width: 700px;
+	height: 300px;
+	position: relative;
+}
+.haixuanLeft ul li{
+	width: 700px;
+	height: 300px;
+	background-color: skyblue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.haixuanLeft ul li:first-child{
+	display: block;
+}
+.haixuanLeft>ol{
+	position: absolute;
+	left: 50%;
+	top: 280px;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.haixuanLeft>ol li{
+	height: 12px;
+	width: 12px;
+	margin: 0 5px;
+	background-color:rgba(255,255,255,0.8);
+	border-radius: 50%;
+	float: left;
+}
+.haixuanLeft>ol li.current{
+	background-color: #FEF5D8;
+}
+.haixuanLeft>i{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	height: 70px;
+	border-radius: 2px;
+	width:35px;
+	font-size: 36px;
+	line-height: 70px;
+	text-align: center;
+	color: #fff;
+	top: 50%;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	display: none;
+	cursor: pointer;
+}
+.haixuanLeft>i.left{
+	font-weight: bold;
+}
+.haixuanLeft>i.right{
+	right: 0;
+	line-height: 70px;
+
+	
+}
+.haixuanLeft ul li a{
+	display: block;
+	height: 300px;
+	width: 700px;
+	overflow: hidden;
+}
+.haixuanLeft ul li a img{
+	width: 700px;
+	height: 300px;
+}
+
+
+
+.inHaixuan .haixuanRight{
+	width: 250px;
+	float: right;
+	height: 300px;
+	margin:0 15px 0 0;
+	background-color: #fff;
+}
+.haixuanRight ul{
+	height: 300px;
+	width: 250px;
+}
+.haixuanRight ul li{
+	width: 250px;
+	height: 150px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.haixuanRight ul li:hover{
+	box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-webkit-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-ms-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	-moz-box-shadow: 0 0 10px 3px rgba(127,127,127,0.5);
+	}
+.haixuanRight ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.haixuanRight ul li a:after{
+	content: "";
+	display: block;
+	width: 250px;
+	height: 20px;
+	background: url(../images/onImg.png) 0 0 repeat-x;
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+.haixuanRight ul li a img{
+	width: 250px;
+	height: 120px;
+	background-color: skyblue;
+}
+.haixuanRight ul li a h3{
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+	overflow: hidden;
+	transform:translateY(-3px);
+	-webkit-transform:translateY(-3px);
+	-ms-transform:translateY(-3px);
+	-moz-transform:translateY(-3px);
+}
+
+/*````````````````````````````````````````````haixuan*/
+.famous .inSquareRight .rightVideo{
+	background-image: none;
+}
+/*``````````````````乐团`````````````````````*/
+.yuetuan{
+	margin-bottom: 15px;
+}
+.inYueTuan{
+	height: 215px;
+	background: url(../images/follow-bg.png) 0 0 repeat-x;
+	padding: 15px 0 0 15px;
+
+}
+.inYueTuan ul{
+	width: 969px;
+	height: 200px;
+	background-color: #EBEBEB;
+}
+.inYueTuan ul li{
+	float: left;
+	width: 241px;
+	height: 100px;
+	border-right:#ccc solid 1px;
+	border-bottom:#ccc solid 1px;
+	
+	 transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+
+}
+.inYueTuan ul li:nth-child(4){
+	border-right:none;
+}
+.inYueTuan ul li:nth-child(8){
+	border-right:none;
+}
+.inYueTuan ul li:hover{
+	
+	background-color:#fff;
+}
+.inYueTuan ul li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+
+}
+.inYueTuan ul li a img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin: 10px 0 0 10px;
+}
+.inYueTuan ul li a h4{
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	overflow: hidden;
+	width: 110px;
+	padding-left: 20px;
+	color:#333;
+
+}
+.inYueTuan ul li a p{
+	padding-left:110px;
+	color:#666;
+	width: 110px;
+	height: 48px;
+}
+.yuetuan .content{
+	margin-bottom: 0px;
+}
+/*`````````````````````````乐团``````````````````*/
+
+/*·························论坛···················*/
+.inLuntan {
+	width: 1000px;
+
+}
+.inLuntan ul{
+	
+
+}
+.inLuntan ul>li{
+	width: 231px;
+	float: left;
+	margin-left: 15px;
+	background-color: #fff;
+
+
+}
+.luntanTui ol li{
+	height: 60px;
+	width: 221px;
+	border-bottom: #ccc solid 1px;
+	padding: 7px 0 7px 10px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.luntanTui ol li:hover{
+	
+	background-color: #C8C8C8;
+}
+.luntanTui ol li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.inLuntan ol li a img{
+	height: 60px;
+	width: 60px;
+	float: left;
+	border-radius:50%;
+}
+.inLuntan ol li a h4{
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 10px;
+	color: #333;
+	overflow: hidden;
+	width: 132px;
+}
+.inLuntan ol li a p{
+	font-size: 12px;
+	color: #666;
+	height:32px;
+	overflow: hidden;
+	width: 132px;
+	padding-left: 10px;
+}
+.inLuntan ul li .content h2{
+	font-size: 14px;
+	margin-bottom: 0;
+	height: 24px;
+	line-height: 24px;
+	color: #333;
+
+
+}
+.luntan>.content{
+	margin-bottom: 5px;
+}
+.inLuntan ul li .content span{
+	margin: 0;
+	border: none;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.inLuntan ul li .content span:hover{
+	background-color: #C8C8C8;
+}
+.inLuntan ul li .content{
+	height: 24px;
+	margin-bottom: 0;
+	
+}
+#lanse{
+	color:#4193D7!important;}
+.content h3 a#lanse:hover{
+	color:#fff!important;}
+	
+
+/*·························论坛···················*/
+/*·························底部广告···············*/
+.lastAdvert{
+	height: 60px;
+	width: 1000px;
+	background-color: skyblue;
+	margin: 15px 0;
+
+}
+
+
+
+
+

@@ -1,0 +1,49 @@
+
+	body{width: 100%}
+	body .head{width: 100%}
+	body .bodyWrap{width: 100%;height: auto;}
+	body .nav{width: 100%;height: auto;}
+	body .artRight{display: none;}
+	body .artLeft{width: 100%;
+			padding: 0px;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+	}
+	.headAdvert{width: 100%;}
+	.headAdvert img{width: 100%;}
+	.textHead h2{font-size: 16px;}
+	.bdsharebuttonbox{display: none;}
+	.footAdcert{width: 100%;}
+	.footAdcert img{width: 100%;}
+	.footNavWrap {width: 100%;overflow: hidden;}
+	.footNav {display: none;}
+	.footer{width: 100%;overflow: hidden;}
+	.footCode{float: none;margin: 0 auto;}
+	.h1{float: none;margin: 0 auto;}
+	.lianxi{float: none;padding: 10px;}
+	.footBtm{height: auto;}
+	.huanying,.fanti,.erweima,.dneglu{display: none;}
+	.navwrap{height: auto;}
+	#ivaLive{width: 100%!important;height: 4.95rem!important;}
+	.content-ad{height: auto!important;}
+	.grid-music-container{width: 100%;box-sizing: border-box;height: auto;padding: 10px;}
+	.grid-music-container .m-music-play-wrap{padding-left: 0;height: auto;}
+	.grid-music-container .u-cover{position: relative;}
+	.grid-music-container .m-now-controls .u-process{width: 100%;}
+        .content-ad{height: auto!important;}
+	.headerWrap{display: none;}
+	.headAdvert{display: none;}
+	.content-ad{width: 100%!important;}
+	.share{display: none;}
+	.toolbar{display: none;}
+	.m-now-info{
+		margin-top:10px
+	}
+.grid-music-container .u-cover{
+	width: 80px;
+	height: 80px;
+}
+.grid-music-container .m-now-info h1 strong{
+	font-size: 14px;
+}

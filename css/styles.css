@@ -1,0 +1,426 @@
+
+h2 {
+	font-size: 38px
+}
+
+
+a {
+
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #C00;
+	text-decoration: none;
+}
+
+p.copy {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	color: #999;
+	margin-top: 10px;
+}
+
+ul.examples {
+	list-style: none;
+	display: block;
+	width: 1258px;
+	height: 28px;
+	margin: 10px auto 0px auto;
+}
+
+ul.examples li.logo {
+	float: left;
+	font-size: 24px;
+	text-shadow: #BBB 1px 1px 3px;
+}
+
+ul.examples li {
+	float: right;
+}
+
+ul.examples li a {
+	float: right;
+	padding: 5px 12px;
+	border: 1px solid #3079ED !important;
+	background: #4B8DF8;
+	background: -webkit-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -moz-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -ms-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -o-linear-gradient(top, #4C8FFD, #4787ED);
+	color: #FFF !important;
+	text-shadow: 0 1px 0 #2F5BB7 !important;
+	text-decoration: none;
+	font-size: 13px;
+	margin-left: 10px;
+	border-radius: 3px;
+}
+ul.examples li a:hover {
+	border: 1px solid #2F5BB7 !important;
+	background: #3F83F1;
+	background: -webkit-linear-gradient(top, #4D90FE, #357AE8);
+	background: -moz-linear-gradient(top, #4D90FE, #357AE8);
+	background: -ms-linear-gradient(top, #4D90FE, #357AE8);
+	background: -o-linear-gradient(top, #4D90FE, #357AE8);
+	-moz-box-shadow: 0 1px 0px #DDD;
+	-webkit-box-shadow: 0 1px 0px #DDD;
+	box-shadow: 0 1px 0px #DDD;
+}
+
+ul.examples li a.active {
+	border: 1px solid #CCC !important;
+	background: #DDD;
+	background: -webkit-linear-gradient(top, #EEE, #DDD);
+	background: -moz-linear-gradient(top, #EEE, #DDD);
+	background: -ms-linear-gradient(top, #EEE, #DDD);
+	background: -o-linear-gradient(top, #EEE, #DDD);
+	color: #000 !important;
+	text-shadow: 0 1px 0 #FFF !important;
+}
+
+
+/*····························分割线·····························*/
+.artWrap{
+			overflow: hidden;
+			zoom: 1; 
+			border-bottom:#ccc solid 1px;
+			padding-bottom:10px;
+		}
+
+		/*广告*/
+		.headAdvert{
+			height:60px;
+			width:1000px;
+			background-color: skyblue;
+			margin-bottom:10px;
+		}
+		.footAdcert{
+			margin-top:10px;
+			width:1000px;
+			height:60px;
+			background-color: skyblue;
+		}
+		/*头部广告结束*/
+		/*详情页左边*/
+		
+		.artLeft{
+			width:980px;
+			
+			
+
+			padding:10px 0 0 10px;
+		}
+		.text{
+			padding-bottom:10px;
+			border-bottom:#ccc 1px solid;
+		}
+		.textInfo{
+			height:36px;
+			line-height: 36px;
+			overflow: hidden;
+			font-size:14px;
+			float: left;
+		}
+		.textInfo div{
+			float: left;
+		}
+		.textInfo h3{
+			float: left;
+		}
+		.textInfo p{
+			float: left;
+		}
+		.textTime{
+			width:240px;
+		}
+		.textAuthor,.textDianji {
+			width:150px;
+		}
+		.bdsharebuttonbox{
+			display: inline-block;
+			height:36px;
+			float: left;
+		}
+		.textHead .share{
+			overflow: hidden;
+			zoom: 1; 
+			padding-bottom:10px;
+
+			float: right;
+		}
+		.textWraper{
+			border-bottom: #ccc solid 1px;
+		}
+		.zihao{
+			font-size:16px;
+			float: right;
+			line-height: 36px;
+			margin-right:10px;
+		}
+		.zihao span{
+			cursor:pointer;
+			padding:0 5px;
+		}
+		.keyWrod{
+			padding-top:10px;
+			font-size:14px;
+			color:#6e6e6e;
+		}
+		.neirong{
+			font-size:14px;
+			color:#333;
+			line-height: 20px;
+		}
+		.neirong p{
+			text-indent:20px;
+		}
+		
+		.neirong p strong img{
+			position: relative;
+			left:-20px;
+		}
+		.zhuanfa{
+			overflow: hidden;
+			zoom: 1; 
+			height:24px !important;
+			line-height: 24px;
+			width:100%;
+
+		}
+		.zhuanfa p{
+			float: left;
+			color:#062E82;
+		}
+		.zhuanfa a{
+			float: left;
+			color:#062E82;
+		}
+		.guandian,.laiyuan{
+			color:#9F9F9E;
+			overflow: hidden;
+			text-indent:2em;
+		}
+		.laiyuan div{
+			float: left;
+		}
+		/*详情页左边结束*/
+
+		/*详情页右边*/
+		.artRight{
+			width:282px;
+			
+			
+			float: right;
+			padding:0px 10px 0 15px;
+			border-left:#ccc solid 1px;
+		}
+		.textSource i{
+			color:#969696;
+			font-size:12px;
+
+		}
+		.textHead h2{
+			font-size:30px;
+			font-weight:bold;
+			color:#333;
+			height:60px;
+			line-height: 60px;
+		}
+		/*右一广告*/
+		.rightAdvert{
+			height:300px;
+			width:280px;
+			background-color: skyblue;
+			margin-bottom: 20px;
+		}
+		/*右二排行榜*/
+		.recommond{
+			float: right;
+			width:280px;
+			padding-bottom:15px;
+			margin-bottom: 20px;
+		}
+		.recommond dd{
+			font-size:14px;
+			padding-left:10px;
+			line-height: 44px;
+			font-weight:bold;
+			border-bottom:#C0C0C0 solid 1px;
+		}
+		.recommond dt{
+			line-height: 30px;
+			padding-left:15px;
+			border-bottom:#ccc dotted 1px;
+			background: url(images/sanjiao.png) 0 center no-repeat;
+
+		}
+		.recommond dt i{
+			padding-right:5px;
+			color:#ccc;
+			font-size:16px;
+			display: inline-block;
+			line-height: 24px;
+			-webkit-transform: rotateX(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+		.recommond dt a{
+			color:#333;
+		}
+		/*详情页右边结束*/
+		/*评论页*/
+		.hotDiscuss{
+			width:680px;
+			float: left;
+			border:#ccc solid 1px;
+		}
+		.discussName{
+			height:34px;
+			background-color: #ccc;
+			color:#333;
+			font-size:18px;
+			font-weight:bold;
+			text-indent:1em;
+			line-height: 34px;
+
+		}
+		.hotDiscuss dl{
+			padding-left:60px;
+		}
+		.hotDiscuss dl dt{
+			padding:10px 10px;
+			border-bottom:#ccc solid 1px;
+			position: relative;
+		}
+		.hotDiscuss dl dt img{
+			position: absolute;
+			height:40px;
+			width:40px;
+			top:10px;
+			left:-48px;
+		}
+		.discussAuthor{
+			height:30px;
+			line-height: 30px;
+			font-size:16px;
+			font-weight:bold;
+			
+			margin-bottom:10px;
+		}
+		.discussNeirong{
+			font-size:14px;
+			line-height: 20px;
+			padding:10px 10px;
+		}
+		.discussLit span{
+			padding:10px;
+		}
+		.videopl{
+			border-top:#ccc solid 1px;
+			margin-top:20px;
+		}
+		.videopl h2{
+			height:26px;
+			line-height: 26px;
+			font-size:16px;
+			padding-left:10px;
+			border-bottom:#ccc solid 1px;
+		}
+		.videopl form{
+			position: relative;
+			padding:10px;
+			overflow: hidden;
+			zoom:1;
+			font-size:14px;
+
+		}
+		#mima{
+			margin-left:100px;
+		}
+
+		.videopl form label{
+			height:20px;
+			line-height: 24px;
+		}
+		.videopl form input{
+			height:24px;
+			line-height: 30px;
+		}
+		#danxuan{
+			width:14px;
+			height:14px;
+			margin-left:100px;
+		}
+		textarea{
+			margin-top:10px;
+			width:580px;
+			height:100px;
+			resize: none;
+			background-color: #FDFDFD;
+		}
+		.videopl form button{
+			background-color: #ccc;
+			border-radius:4px;
+			height:24px;
+			width:80px;
+			text-align: center;
+			color:#333;
+			margin-top:10px;
+		}
+.discussRight{
+	float: right;
+
+	width: 280px;
+
+}
+
+.recommond{
+			float: right;
+			width:280px;
+			padding-bottom:15px;
+			margin-bottom: 20px;
+		}
+		.recommond dd{
+			font-size:16px;
+			padding-left:10px;
+			line-height: 44px;
+			font-weight:bold;
+			border-bottom:#C0C0C0 solid 1px;
+		}
+		.recommond dt{
+			line-height: 30px;
+			padding-left:80px;
+			height: 80px;
+			border-bottom:#ccc dotted 1px;
+			position: relative;
+			
+			-webkit-background-size: 60px 60px;
+			background-size: 60px 60px;
+			transition: all 0.5s ease 0s;
+
+		}
+		.recommond dt img{
+			position: absolute;
+			top: 10px;
+			left: 9px;
+			height: 60px;
+			width: 60px;
+		}
+		.recommond dt:hover{
+			background-color: #ccc;
+		}
+		.recommond dt span{
+			display: block;
+			color: #999;
+			margin-top: 10px;
+			
+		}
+		.recommond dt a{
+			color:#333;
+			font-size: 14px;
+			line-height: 37px;
+		}

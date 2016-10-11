@@ -1,0 +1,169 @@
+@charset "utf-8";
+.mainForm{
+			margin:0 auto;
+			background:#fff;
+			padding: 24px 250px;
+			color:#333;}
+		.chongfumima{
+			position:relative;}	
+		.yanzhengmima{
+			position:absolute;
+			left: 445px;
+			top:18px;}
+		tbody>tr{
+			height:56px;
+			margin-bottom:20px;}
+		tbody input{
+			height:34px;
+			border:#ccc solid 1px;
+			border-radius:3px;
+			width:440px;
+			outline:none;
+			padding-left:5px;
+			line-height: 35px;
+			}
+		.yanzheng{
+			width:200px;
+			border-radius:3px;
+			}
+    	.yanzhengBtn{
+			width:80px;
+			height:36px;
+			background-color:#cb7047;
+			color:#fff;
+			float:right;
+			border:none;
+			margin-right:144px;
+			cursor:pointer;}
+		.yanzheng-pre{
+			width:80px;
+			height:36px;
+			background-color:#ccc;
+			color:#fff;
+			float:right;
+			border:none;
+			margin-right:144px;
+			cursor:pointer;
+		}
+		.touxiang>input{
+			border:none;
+			vertical-align:middle;
+			line-height:35px;
+			margin:auto auto;
+			height:24px;
+			display:inline-block;
+			margin-top:26px;
+			}
+		.touxiang {
+			box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+			-ms-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			vertical-align:middle;}
+		.info>div{
+			height:35px;
+			border:#ccc solid 1px;
+			border-radius:3px;
+			line-height:33px;
+			font-size:16px;
+			color:#999;}
+		.info select{
+			height:33px;
+			width:162px;
+			outline:none;
+			text-align:center}
+		submit{
+		background-color:#cb7047;}
+		.tijiao{
+		background-color:#cb7047;
+		border-radius:3px;
+		border:none;
+		margin-top:20px;
+		color:#fff;
+		font-size:16px;}
+		.header{
+			font-size:18px;
+			font-weight:bold;
+			color:#cb7047;}
+		/*本例css 从这个地方开始复制*/
+		#sjld{width:520px;position:relative;z-index:999;}
+		.m_zlxg{ width:138px; height:38px; line-height:38px;cursor:pointer;float:left;margin:0 10px 0 0;display:inline;border:#cb7047 solid 1px;}
+
+		.m_zlxg p{ width:71px; padding-left:10px; overflow:hidden; line-height:38px; color:#333333; font-size:12px; font-family:"微软雅黑";text-overflow:ellipsis; white-space:nowrap;}
+
+		.m_zlxg2{ position:absolute;z-index:999; border:1px solid #cb7047;background:#fff; width:91px; display:none;  }
+		.m_zlxg1{ border:1px solid #cb7047; width:227px;padding-left:70px; display:block; height:280px;background: url(/images/sanjiliandong.png) 0 0 no-repeat;display: none; }
+		.m_zlxg2 li{line-height:28px;white-space:nowrap; padding-left:10px;font-family:"微软雅黑";color:#333333; font-size:14px;}
+
+		.m_zlxg2 li:hover{ color:#7a5a21;}
+		.m_zlxg1>ul{position: relative;height:300px;width:227px;}
+		.m_zlxg1>ul>li{position: absolute;}
+		/*控制第三级县不至于过长无法选择*/
+
+		/*.m_zlxg2>ul{
+			max-height:400px;
+			overflow-x: hidden;
+		}*/
+		.aa{top:0;}
+		.bb{top:26px;}
+		.a2,.a6,.h2,.h6,.s2,.s5,.t2,.t5{left:50px;}
+		.a3,.a7,.h3,.h7,.s3,.s6,.t3,.t6{left:100px;}
+		.a4,.a8,.h4,.h8,.s4,.s8,.t4,.t8{left:150px;}
+		.hh{
+			top:56px;
+		}
+
+		.ii{top:82px;}
+		.jj{top:108px;}
+		.ss{top:138px;}
+		.ll{top:164px;}
+		.tt{top:194px;}
+		.zz{top:220px;}
+		.yy{top:246px;}
+		/*本例css 结束*/
+		.touxiangcaijian{
+			position: relative;
+			left:-80px;
+			top:30px;
+		}
+    
+    
+    .celltype{
+    	width: 70px;
+    	height: 34px;
+    	border: #ccc solid 1px;
+    	border-radius: 3px;
+    	float: left;
+    	line-height: 34px;
+    }
+     .celltype option {
+     	line-height: 34px;
+     }
+    .iphoneNum{
+    	width:370px; 
+    	padding-left: 34px;
+    }
+    .yonghumingtishi{
+    	position: absolute;
+    	left: 445px;
+    	top: 10px;
+    	display: block;
+    }
+    .receiveNum{
+    	position: absolute;
+    	top: 10px;
+    	line-height: 38px;
+    	font-size: 14px;
+    	color: #000;
+    	left: 74px;
+    	font-family: Arial;
+    }
+    /*2016.5.11修改*/
+    .user_agree{
+    	width: 18px;
+    	height: 18px;
+    	vertical-align: middle;
+    }
+    .user_agree_wrap a{
+    	font-size: 16px;
+    }

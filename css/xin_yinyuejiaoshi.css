@@ -1,0 +1,445 @@
+/* 
+* @Author: Administrator
+* @Date:   2016-01-06 20:19:04
+* @Last Modified by:   Freed
+* @Last Modified time: 2016-10-07 17:31:25
+*/
+/* 
+* @Author: Administrator
+* @Date:   2016-01-06 09:21:45
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-01-06 20:15:08
+*/
+.bodyWrap{
+	width: 1200px;
+	margin: 0 auto;
+	
+	
+	padding: 20px 0 ;
+	background-color: #fff;
+}
+
+/*左侧二级导航样式·····································*/
+.leftWrap{
+	width: 200px;
+	float: left;
+
+}
+.leftWrap li{
+	width: 200px;
+	height: 120px;
+
+	background-color: #E4E6E3;
+	margin-bottom: 15px;
+	text-align: center;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	
+}
+
+
+
+.leftWrap li>a{
+	color: #000;
+	display: block;
+	height: 100%;
+
+}
+.leftWrap li>a>img{
+	width:200px;
+	height: 120px;
+}
+
+/*左侧二级导航样式结束··································*/
+
+/*中间内容部分··········································*/
+.rightWrap{
+	width:980px;
+	float: right;
+	
+
+}
+
+/*全站动态列表·············································*/
+
+.qzdtList{
+	width: 980px;
+	float: left;
+
+}
+.dizhi{
+	height: 38px;
+	width: 400px;
+	border: 1px solid #cb7047;
+	float: left;
+	position: relative;
+	background-color: #fff;
+
+}
+.creat{
+	height: 40px;
+	width: 120px;
+	border-radius: 3px;
+	background-color: #cb7047;
+	float: right;
+	text-align: center;
+
+}
+.creat a{
+	color: #fef5d8;
+	line-height: 40px;
+
+}
+.search{
+	height: 34px;
+	border: #cb7047 solid 1px;
+	padding: 2px 0;
+	background-color: #fff;
+	position: relative;
+	width: 300px;
+	float:left;
+	margin-left:  20px;
+}
+.searchWrap{
+	padding-bottom: 15px;
+	border-bottom: #cb7047 solid 1px;
+}
+.search>i{
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	width: 50px;
+	height: 40px;
+	background-color: #cb7047;
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.search input{
+	height: 34px;
+	width: 265px;
+	float: left;
+	border-left: #ccc solid 1px;
+	outline: none;
+}
+.search select{
+	height: 34px;
+	width: 60px;
+	font-size: 14px;
+	text-align: center;
+	padding-left: 5px;
+	float: left;
+	outline: none;
+}
+
+.info select{ height: 30px;
+			line-height: 30px;
+			border-right:#ccc solid 1px;
+			margin-top: 5px;
+			width: 105px;
+			outline: none;
+			}
+.info{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	width: 350px;
+	text-align:center;}
+.info #show{ color:#3399FF; }
+.bottom{ text-align:right; font-size:12px; color:#CCCCCC; width:1000px;}
+.tijiao{
+	display: inline-block;
+	width: 57px;
+	height: 38px;
+	background-color: #cb7047;
+	color: #fff;
+	position: absolute;
+	top: 0;right: 0;
+
+
+}
+.tijiao>input{
+	display: block;
+	height: 38px;
+	width: 57px;
+	background: #cb7047;
+	outline: none;
+	color: #fff;
+}
+.listLeft{
+	width: 100px;
+	float: left;
+	padding-top: 10px;
+
+}
+.listLeft a{
+	display: block;
+	height: 100%;
+}
+.listLeft a img{
+	height: 100px;
+	width: 100px;
+}
+.listLeft a h3{
+	color: #333;
+	line-height: 24px;
+}
+.listLeft a p{
+	line-height: 24px;
+}
+.listLeft a p span{
+	color: skyblue;
+	padding-left: 5px;
+}
+/*分类行样式··········································*/
+.fenlei{
+	height: 50px;
+	border-bottom: #ccc solid 1px;
+	margin-bottom: 30px;
+}
+.fenlei>ul{
+	height: 50px;
+}
+.fenlei >ul>li{
+	float: left;
+	position: relative;
+	height: 50px;
+	/*transition: all 0.5s ease 0s;*/
+	/*-webkit-transition: all 0.5s ease 0s;*/
+	/*-mos-transition: all 0.5s ease 0s;*/
+	/*-ms-transition: all 0.5s ease 0s;*/
+	
+}
+.fenlei >ul>li.current{
+	background-color: #cb7047;
+}
+.fenlei >ul>li.current>span{
+	display: block;
+}
+.fenlei >ul>li.current>span>a{
+	/*border-right: #cb7047 solid 1px;*/
+}
+.fenlei >ul>li:hover>span{
+	display: block;
+}
+.fenlei >ul>li:hover>a{
+	color: #fff;
+	border-right: #cb7047 solid 1px;
+}
+.fenlei >ul>li>a{
+	display: inline-block;
+	height: 30px;
+	/*border-right: #E4E6E3 solid 1px;*/
+	margin-top: 10px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #333;
+	padding: 0 30px;
+	
+}
+.fenlei >ul>li.current>a{
+	border-right: #cb7047 solid 1px;
+	color: #fff;
+}
+.fenlei >ul>li>span{
+	height: 0;
+	width: 0;
+	padding-top: 0;
+	border: 10px  transparent solid;
+	border-top: 10px #cb7047 solid;
+	position: absolute;
+	top:50px;
+	left: 35px;
+	display: none;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-mos-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+}
+/*分类行样式结束··········································*/
+/*排序行··················································*/
+.paixu{
+	height: 24px;
+	margin-bottom: 20px;
+
+}
+.paixu .tongji {
+	padding: 0 20px;
+	float: right;
+}
+.paixu>span{
+	float: left;
+	line-height: 24px;
+	padding-right: 5px;
+}
+.paixu>em{
+	float: left;
+	padding: 0 5px;
+	height: 24px;
+	line-height: 24px;
+	display: inline-block;
+	background-color: #cb7047;
+	color: #fff;
+}
+.paixufangfa{
+	display: inline-block;
+	float: left;
+	border: 1px solid #ccc;
+	height: 22px;
+	margin-left: 10px;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.paixufangfa select{
+	outline: none;
+}
+.liebiao>ul{
+	width: 1000px;
+}
+.liebiao>ul>li{
+	min-height: 340px;
+	width: 230px;
+	float: left;
+	margin:0 20px 10px 0;
+	position: relative;
+}
+/*头条点*/
+.toutiao01,.toutiao02{
+	position: absolute;
+	top: 176px;
+	left: 192px;
+	background-color: #239AD6;
+	z-index: 100;
+	display: inline-block;
+	cursor: pointer;
+}
+.toutiao01{
+	height: 22px;
+	width: 28px;
+	font-size: 14px;
+	color: #fff;
+	line-height: 22px;
+	padding: 0 10px;
+	z-index: 101;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3)
+}
+.toutiao02{
+	width: 10px;
+	top: 180px;
+	height: 18px;
+	left: 230px;
+	transform-origin: right;
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	-moz-transform-origin: right;
+	-webkit-transform: skewY(-45deg);
+	-ms-transform: skewY(-45deg);
+	-o-transform: skewY(-45deg);
+	transform: skewY(-45deg);
+
+}
+/*头条点*/
+.liebiao>ul>li>a{
+	display: inline-block;
+	width: 230px;
+}
+.liebiao>ul>li>a>img{
+	height: 230px;
+	width: 230px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+.xingming{
+	font-size: 18px;
+	margin-bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+.xingming span{
+	color: #333;
+	display:inline-block;
+	max-width:200px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	height:24px;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.xingming i{
+	padding: 0 5px;
+	color:#FFB700;
+	position: relative;
+	top: -7px;
+}
+.shenfen{
+	height: 24px;
+	line-height:24px;
+}
+.shenfen>p,.guanzhu p{
+	width: 230px;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+.guanzhu{
+	height: 24px;
+
+}
+.guanzhu>a{
+	display: inline-block;
+	float: left;
+}
+
+
+/*排序行结束··················································*/
+/*全站动态列表结束·············································*/
+/*城市联动*/
+/*本例css 从这个地方开始复制*/
+#sjld{position:relative;}
+.m_zlxg{ width:106px; height:36px; line-height:30px;cursor:pointer;float:left;margin:0 10px 0 0;display:inline;border:#cb7047 solid 1px;}
+
+.m_zlxg p{ width:71px; padding-left:10px; overflow:hidden; line-height:36px; color:#333333; font-size:12px; font-family:"微软雅黑";text-overflow:ellipsis; white-space:nowrap;}
+
+.m_zlxg2{z-index:999; position:absolute; border:1px solid #cb7047;background:#fff; width:91px; display:none;  }
+.m_zlxg1{ border:1px solid #cb7047; width:227px;padding-left:70px; display:block; height:280px;background: url(../images/sanjiliandong.png) 0 0 no-repeat;display: none;position: relative;z-index: 999; }
+.m_zlxg2 li{line-height:28px;white-space:nowrap; padding-left:10px;font-family:"微软雅黑";color:#333333; font-size:14px;}
+
+.m_zlxg2 li:hover{ color:#7a5a21;}
+.m_zlxg1>ul{position: relative;height:300px;width:227px;}
+.m_zlxg1>ul>li{position: absolute;}
+.aa{top:0;}
+.bb{top:26px;}
+.a2,.a6,.h2,.h6,.s2,.s5,.t2,.t5{left:50px;}
+.a3,.a7,.h3,.h7,.s3,.s6,.t3,.t6{left:100px;}
+.a4,.a8,.h4,.h8,.s4,.s8,.t4,.t8{left:150px;}
+.hh{
+	top:56px;
+}
+
+.ii{top:82px;}
+.jj{top:108px;}
+.ss{top:138px;}
+.ll{top:164px;}
+.tt{top:194px;}
+.zz{top:220px;}
+.yy{top:246px;}
+/*本例css 结束*/
+
+
+
+
+
+
+
+
+
+

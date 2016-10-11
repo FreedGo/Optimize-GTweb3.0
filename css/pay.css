@@ -1,0 +1,232 @@
+/*
+* @Author: Administrator
+* @Date:   2016-03-01 20:05:15
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-03-10 10:19:52
+*/
+.lh>li{
+	position: relative;
+}
+.shutUp{
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	border:#cb7047 solid 1px;
+	color: #cb7047;
+	border-radius: 50%;
+	line-height: 22px;
+	text-align: center;
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+.seeBtn1,.seeBtn2{
+	cursor: pointer;
+	color: #fff;
+	background: url(../images/seeBtn.png) center no-repeat;
+	
+
+}
+.payWrap,.payWrap2{
+	width: 620px;
+	min-height:330px;
+	max-height: 600px;
+	padding: 15px;
+	border: #ccc solid 1px;
+	background-color: #f2f2f2;
+	 display: none; 
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+
+}
+.payHead{
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	border-bottom: #cb7047 solid 1px;
+}
+.payContent{
+	padding-left: 15px;
+}
+.payContent ul>li{
+	padding: 5px 0;
+}
+.payContent ul>li>span{
+	float: left;
+}
+.payRight1{
+	vertical-align: middle;
+	display: inline-block;
+}
+.epayLeft{
+	display: block;
+}
+.payRight1 ol>li{
+	float: left;
+	padding-left: 5px;
+}
+.payImg{
+	display: inline-block;
+	width: 162px;
+	height: 36px;
+	background-image: url(../images/banks.gif);
+	background-repeat:no-repeat;
+	vertical-align: middle;
+	border: #ccc solid 1px;
+
+}
+.payImg1{
+	background-position:0 -1158px ;
+	border-color: #cb7047;
+}
+.payImg2{
+	background-position:0 -1585px ;
+}
+.payImg3{
+	background-position:0 -148px ;
+}
+.payImg4{
+	background-position:0 -1620px ;
+}
+.payRight1 label{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.goPay{
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #cb7047;
+	border-radius: 3px;
+	color: #fff;
+	margin-top: 20px;
+}
+/* 支付成功或者失败的返回页面 */
+.zhifuMsg{
+	width: 600px;
+	height: 600px;
+	margin: 100px auto;
+}
+.payInfoImg,.payInfoImg2{
+	width: 200px;
+	height: 200px;
+	margin:0 auto;
+	background: url(../images/pay1.png) center no-repeat;
+}
+.payInfoImg2{
+	background:url(../images/pay2.png) center no-repeat;
+}
+.payMsg{
+	text-align: center;
+}
+.payMsg h2{
+	font-size: 30px;
+	font-family: 微软雅黑;
+}
+.lianjie{
+	margin-top: 10px;
+}
+.lianjie a{
+	color: #cb7047;
+	font-size: 16px;
+	text-decoration: underline;
+
+}
+
+/* superslide */
+
+	.www360buy1 .hd{ overflow:hidden; background:url(images/bg.png) 0 -32px #efefef;   }
+	.www360buy1 .hd li{ margin-right: 10px; padding: 0; position:relative; margin-left:-1px;  height:36px; line-height:36px; text-align:center; width:177px; float:left; border-top:0;
+		font:normal 14px/37px "Microsoft YaHei"; _font-weight:bold; cursor:default; }
+	.www360buy1 .hd li.on{ width:176px;  color:#c00;border: #cb7047 solid 1px;  }
+	.www360buy1 .bd{ }
+	.www360buy1 .lh{ overflow:hidden;  }
+	.www360buy1 .lh li{ height: 36px; padding:5px 0 5px 15px;   }
+	.www360buy1 .lh li span{display: inline-block; height: 36px;line-height: 36px;}
+	.www360buy1 .lh li .p-img{ width:130px; height:132px; padding:30px 13px 0 13px; margin:0 auto; text-align:center;   }
+	.www360buy1 .lh li .p-name{ height:36px; line-height:18px;  word-break:break-all; word-wrap: break-word; overflow:hidden;   }
+	.www360buy1 .lh li .p-price{ color:#999;  }
+	.www360buy1 .lh li .p-price strong{ color:#c00; font-size:14px; font-family: verdana; }
+	/* end */
+.selectWayLeft{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+}
+.selectWay{
+	float: left;
+}
+.cashWay{
+	margin-top: 15px;
+}
+.selectWay1,.selectWay2{
+	background-image: url(../images/banks.gif);
+	background-attachment: no-reapeat;
+
+}
+.selectWay1{
+	background-position: 0 -1157px;
+}
+.selectWay2{
+	background-position: 0 -148px;
+}
+.cashInfoLeft{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	float: left;
+}
+.cashInfoRight{
+	float: left;
+}
+.cashInfoRight input{
+	height: 34px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 300px;
+	padding-left: 5px;
+}
+.cashInfoRight input.yanzhengNum{
+	width:180px;
+	float: left;
+}
+.yanzhengImg{
+	display: inline-block;
+	width: 120px;
+	height: 36px;
+	text-align: center;
+	background-color: #ccc;
+	cursor: pointer;
+}
+.cashSub{
+	width:200px;
+	height: 36px;
+	text-align: center;
+	background-color: #cb7047;
+	border-radius: 3px;
+	color: #fff;
+	margin-left: 100px;
+}
+.cashCode{
+	text-indent: 100px;
+	color: red;
+}
+
+
+
+
+
+
+

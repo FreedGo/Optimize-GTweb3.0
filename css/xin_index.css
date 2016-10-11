@@ -1,0 +1,638 @@
+/* 
+* @Author: Administrator
+* @Date:   2016-01-04 15:27:06
+* @Last Modified by:   付云龙
+* @Last Modified time: 2016-04-01 11:01:53
+*/
+.bodyWrap{
+	width: 1200px;
+	margin: 0 auto;
+	
+	
+	padding: 20px 0 ;
+	background-color: #fff;
+}
+/*登录区域样式······································*/
+.login{
+	width: 300px;
+	height: 400px;
+	float: left;
+	
+}
+.loginUp{
+	padding: 20px 26px 0;
+	background-color: #ddd;
+	/* background-color: #dedede; */
+	height: 330px;
+	margin-bottom: 10px;
+	display: block;
+}
+.login_Hou{
+	padding: 10px 26px 0;
+	background-color: #ddd;
+	height: 310px;
+	/* margin-bottom: 10px; */
+	overflow: hidden;
+	zoom: 1; 
+	font-size: 14px;
+	
+}
+.login_Hou .touxiang{
+	height: 194px;
+	width: 194px;
+	margin-left: 23px;
+	float: left;
+	padding-bottom: 5px;
+}
+ .touxiang img{
+ 	height: 194px;
+	width: 194px;
+ }
+ .uesrID{
+ 	    text-align: center;
+    /* margin-bottom: 10px; */
+    font-size: 16px;
+    color: #474646;
+    line-height: 20px;
+    float: left;
+    width: 248px;
+ }
+.shenfen,.dengji{
+	padding-left: 10px;
+	height: 30px;
+	line-height: 30px;
+	width: 112px;
+	float: left;
+}
+.shenfen>span,.dengji>span{
+	color: #ce6d40;
+}
+.dengji>span>img{
+	height:18px;
+	width:18px;
+	}
+.loginOut{
+	text-align: center;
+	padding-top: 5px;
+	float: left;
+	/* margin-left: 98px; */
+}
+.loginOut>a{
+	font-size: 14px;
+	float: left;
+	margin-left: 92px;
+	line-height: 16px;
+}
+
+.guanzhu {
+	height: 24px;
+	line-height: 24px;
+	float: left;
+}
+.inguanzhu,.fensi{
+	float: left;
+	width: 112px;
+	padding-left: 10px;
+
+}
+.fensi{
+	width: 112px;
+	padding-left: 10px;
+}
+.inguanzhu>span,.fensi>span{
+	font-size: 14px;
+	color: #333;
+	padding-left: 10px;
+}
+.inguanzhu{
+	border-right: #ccc solid 1px;
+}
+.fatiezi{
+	height: 39px;
+	width: 298px;
+	background-color: #ddd;
+	position: relative;
+	top:-10px;
+	border: #ccc solid 1px;
+	
+}
+.fatiezi>ul{
+	height: 40px;
+	/* margin-top: 5px; */
+}
+.fatiezi>ul>li{
+	float: left;
+	width: 148px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 16px;
+}
+.fatiezi>ul>li>a>i{
+	font-size: 20px;
+	padding: 0 10px;
+	color: #333;
+}
+.fatiezi>ul>li>a{
+	color: #333;
+}
+.fatiezi>ul>li>a>i:hover{
+	color: #FFB301;
+}
+.fatiezi>ul>li>a:hover{
+	color: #FFB301;
+}
+.fatiezi>ul>li>a>span{
+	color: red;
+}
+.login h3{
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.fatiezi>ul>li:first-child{
+	border-right: #ccc solid 1px;
+}
+.inLogin div{
+	height: 40px;
+	width: 245px;
+}
+.loginName,.loginPassWord,.loginSb{
+	margin-bottom: 15px;
+	border: #BCBCBC solid 1px;
+}
+.inLogin .loginName{
+	padding-left:0;}
+.loginName>input,.loginPassWord>input,.loginSb>input{
+	height: 40px;
+	line-height: 40px;
+	width: 240px;
+	outline: none;
+	padding-left: 5px;
+
+}
+.loginSb>input{
+	background-color: #ce6d40;
+	color: #FFF;
+	font-size: 14px;
+	width: 245px;
+	
+	border-radius: 3px;
+}
+.loginSb {
+	border: none;
+}
+.jizhu span{
+	float: right;
+}
+.inLogin form>p{
+	text-align: right;
+}
+.inLogin form>p a{
+	color: #333;
+}
+.search{
+	height: 34px;
+	border: #ce6d40 solid 1px;
+	padding: 2px 0;
+	background-color: #fff;
+	position: relative;
+}
+.search>form>i,.search .inputSub{
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	width: 50px;
+	height: 40px;
+	background-color: #ce6d40;
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.search .inputSub{
+	z-index: 100;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.search input{
+	height: 34px;
+	width: 200px;
+	float: left;
+	border-left: #ccc solid 1px;
+	outline: none;
+	line-height: 34px;
+}
+.search select{
+	height: 34px;
+	width: 60px;
+	font-size: 14px;
+	text-align: center;
+	padding-left: 5px;
+	float: left;
+	outline: none;
+	line-height: 34px;
+}
+.search select option{
+	line-height: 34px;
+}
+
+/*登录区域样式结束······································*/
+/*banner···················································*/
+
+.banner{
+	width: 880px;
+	height: 400px;
+	float: right;
+	overflow: hidden;
+	
+}
+/* 轮播图本例子css············································ */
+		.slideBox{ width:880px; height:400px; overflow:hidden; position:relative;  }
+		.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+		.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+		.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:rgba(0,0,0,0.5);margin: 0 5px; cursor:pointer;border-radius: 50%; }
+		.slideBox .hd ul li.on{ background:#ce6d40; color:#fff; }
+		.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+		.slideBox .bd li{ zoom:1; vertical-align:middle; }
+		.slideBox .bd img{ width:880px; height:400px; display:block;  }
+
+		/* 下面是前/后按钮代码，如果不需要删除即可 */
+		.slideBox .prev,
+		.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px;  filter:alpha(opacity=50);opacity:0.5;   }
+		.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+		.slideBox .prev:hover,
+		.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+		.slideBox .prevStop{ display:none;  }
+		.slideBox .nextStop{ display:none;  }
+/* 轮播图本例子css结束············································ */
+
+/*banner结束···················································*/
+.middleWrap{
+	width: 1200px;
+	margin-top: 24px;
+	background-color: #fef9e9;
+}
+.middleLeft{
+	height: 1084px;
+	width: 800px;
+	float: left;
+
+}
+.middleRight{
+	width: 375px;
+	height: 1084px;
+
+	float: right;
+}
+/*音乐广场区域样式····································*/
+/* 本例子css */
+		.slideTxtBox{ width:766px; text-align:left;  }
+		.slideTxtBox .hd{ height:30px; line-height:30px; background:#f4f4f4; padding:0 10px 0 0; position:relative; }
+		.slideTxtBox .hd ul{ float:left;  position:absolute; left:0px; top:0px; height:32px;   }
+		.slideTxtBox .hd ul li{ float:left;background-color: #fff; padding:0 15px; cursor:pointer;height: 32px;  }
+		.slideTxtBox .hd ul li.on{ height:32px;color: #fef5d8;  background:#ce6d40;  }
+		.slideTxtBox .bd ul{ padding:15px;  zoom:1;  }
+		.slideTxtBox .bd li{  line-height:24px;   }
+		.slideTxtBox .bd li .date{ float:right; color:#999;  }
+
+		/* 下面是前/后按钮代码，如果不需要删除即可 */
+		.slideTxtBox .arrow{  position:absolute; right:10px; top:0; }
+		.slideTxtBox .arrow a{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+			 cursor:pointer; background:url("../images/arrow.png") 0 0 no-repeat; }
+		.slideTxtBox .arrow .next{ background-position:0 -50px;  }
+		.slideTxtBox .arrow .prevStop{ background-position:-60px 0; }
+		.slideTxtBox .arrow .nextStop{ background-position:-60px -50px; }
+/*插件代码结束···················································*/
+/*控制首页六个小按钮的 显示与隐藏*/
+.timeRight>ol>li:nth-child(3),.timeRight>ol>li:nth-child(4),.timeRight>ol>li:nth-child(7),.timeRight>ol>li:nth-child(8),
+.timeRight>ol>li:nth-child(9),.timeRight>ol>li:nth-child(10),.timeRight>ol>li:nth-child(11){
+	display: none;
+}
+.yinyueguangchang{
+	height: 525px;
+	padding: 15px 15px 0 15px;
+	overflow: hidden;
+	margin-bottom: 24px;
+	background-color: #ddd;
+
+}
+.yinyueHead {
+	height: 36px;
+	border-bottom: #ce6d40 solid 1px;
+}
+.fatie{
+	position: absolute;
+	top:0px;
+	right: -4px;
+	background-color: #ce6d40;
+	color: #fef5d8;
+	padding: 0 5px;
+	cursor: pointer;
+}
+.fatie a{
+	color: #fef5d8;
+}
+.yinyueHead>h3{
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 36px;
+}
+.yinyueHead>h3>a{
+	color:#333;
+font-size: 16px;}
+.more{
+	float: right;
+	line-height: 36px;
+}
+.more a{
+	color: #333;
+	font-size: 14px;
+}
+.more a:hover{
+	color: #ce6d40;
+}
+.bd{
+	height: 446px;
+	overflow: hidden;
+}
+.quanzhandongtai>li{
+	padding: 15px 0 0;
+}
+.quanzhandongtai>li>h3{
+	font-weight: bold;
+	line-height: 32px;
+	font-size: 14px;
+	color: #333;
+}
+.quanzhandongtai>li>h3>a{line-height: 32px;
+	font-size: 14px;
+	color: #333;
+}
+.quanzhandongtai>li>p{
+	font-size: 12px;
+	margin-bottom: 10px;
+	line-height: 20px;
+	max-height: 20px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.time >span{
+	float: left;
+
+}
+.time{
+	padding: 10px 0;
+	margin-bottom: 10px;
+	border-bottom: #ccc solid 1px;
+}
+.timeRight{
+	float: right;
+	position: relative;
+
+}
+.timeRight .bdsharebuttonbox{
+	position: absolute;
+	top: -33px;
+	right: -6px;
+	display: none;
+	width: 190px;
+}
+.timeRight ol>li{
+	float: left;
+	padding: 0 2px;
+	cursor: pointer;
+}
+.timeRight ol>li i.iconfont{
+	font-size: 20px;
+}
+.timeRight ol>li.bigsize a i{
+	font-size: 22px;
+}
+.chatu{
+	height:93px;
+	width: 135px;
+}
+.chatu a{
+	display: block;
+	position: relative;
+	width: 590px;
+
+}
+.chatu a .zongshu{
+	display: none;
+}
+.chatu img{
+	height: 93px;
+	width: 135px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.chatu>a>i{
+	position: absolute;
+	top:34px;
+	left: 46px;
+	font-size: 42px;
+	color: #fff;
+}
+/*.timeRight ol>li:nth-child(3),.timeRight ol>li:nth-child(4),.timeRight ol>li:nth-child(7),.timeRight ol>li:nth-child(8){
+	display: none;
+}
+.timeRight ol>li:nth-child(9),.timeRight ol>li:nth-child(10),.timeRight ol>li:nth-child(11){
+	display: none;
+
+}*/
+/*音乐广场区域样式····································*/
+/*音乐教室和老师······································*/
+.musicTech{
+	height: 505px;
+	width: 770px;
+	background-color: #ddd;
+	padding: 15px 15px 0 15px;
+}
+.musicTechHead h3{
+	padding: 0 10px;
+	cursor: pointer;
+
+}
+.musicTechHead h3.current{
+	background-color: #ce6d40;
+	color: #fef5d8;
+}
+.musicTechList ul{
+	margin-top: 15px;
+}
+.musicTechList ul:last-child{
+	display: none;
+}
+.musicTechList ul>li{
+	float: left;
+	width: 175px;
+	height: 200px;
+	margin: 0 17px 25px 0;
+}
+.musicTechList ul>li>a{
+	display: block;
+	height: 100%;
+}
+.musicTechList ul>li img{
+	height: 175px;
+	width: 175px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.musicTechList ul>li h3{
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+	text-align: center;
+
+}
+/*音乐教室和老师结束······································*/
+
+/*音乐之星开始······································*/
+.yinyuezhixing{
+	height: 525px;
+	width: 345px;
+	background-color: #ddd;
+	margin-bottom: 25px;
+	padding: 15px 15px 0 15px;
+}
+.xingName{
+	margin-top: 10px;
+}
+.xingName>ul>li{
+	float: left;
+	padding: 0 10px;
+	background-color: #eee;
+	margin-right: 13px;
+	margin-bottom: 10px;
+	line-height: 28px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.xingName>ul>li:hover{
+	background-color: #ce6d40;
+	color: #fef5d8;
+}
+.xingName>ul>li:nth-child(4n),.xingImg>ul>li:nth-child(4n){
+	margin-right: 0;
+}
+.xingImg {
+	margin-top: 20px;
+	
+}
+.xingImg>ul{
+	display: none;
+}
+.xingImg>ul:first-child{
+	display: block;
+}
+.xingImg>ul>li{
+	width: 75px;
+	height: 101px;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+.xingImg>ul>li>a>img{
+	height: 75px;
+	width: 75px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.xingImg>ul>li>a>h3{
+	text-align: center;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+}
+.xingImg>ul>li>a{
+	display: block;
+	height: 100%;
+}
+/*音乐之星结束······································*/
+
+/*音乐资讯开始······································*/
+.yinyuezixun{
+	height: 505px;
+	width: 345px;
+	background-color: #ddd;
+	padding: 15px 15px 0 15px;
+	overflow: hidden;
+}
+.zixunList{
+}
+.zixunList li{
+	height: 87px;
+	padding: 15px 0;
+	border-bottom: #ccc dotted 1px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.zixunList li:hover{
+	background-color: #ddd;
+}
+.zixunList li>a{
+	display: block;
+	position: relative;
+	height: 81px;
+}
+.zixunList li>a>img{
+	height: 87px;
+	width: 118px;
+	float: left;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.zixunList li>a>h3{
+    width:182px;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    padding-left: 15px;
+    color: #333;
+}
+.zixunList li>a>p{
+	height:40px;
+	width: 196px;
+	overflow: hidden;
+	padding-left: 15px;
+	text-overflow: ellipsis;
+	font-size: 12px;
+	line-height: 20px;
+	color: #969696
+}
+.zixunList li>a>i.iconfont{
+	position: absolute;
+	bottom: -7px;
+	right: 16px;
+	color: #ce6d40;
+	font-size: 22px;
+}
+.faburen{
+	padding-left: 15px;
+	overflow: hidden;
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+}
+/*音乐资讯结束······································*/
+
+
+

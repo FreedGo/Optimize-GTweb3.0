@@ -1,0 +1,461 @@
+/* 
+* @Author: Administrator
+* @Date:   2016-01-19 14:37:15
+* @Last Modified by:   好琴声
+* @Last Modified time: 2016-02-02 19:24:28
+*/
+.bodyWrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+.beijingdatu{
+	width: 1200px;
+	height: 400px;
+	background:  url(../images/bg.jpg) 0 0 no-repeat;
+	background-size:cover;
+	position: relative;
+	overflow: hidden;
+}
+.touxiangImg{
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	bottom: 0;
+	left: 100px;
+
+}
+.touxiangImg>img{
+	height: 220px;
+	width: 220px;
+}
+.mingzi{
+	position: absolute;
+	top: 200px;
+	left: 350px;
+	height: 30px;
+	min-width: 220px;
+}
+.mingzi h2{
+	float: left;
+	font-size: 22px;
+	font-family: 黑体;
+	font-weight: bold;
+	margin-right: 20px;
+	line-height: 30px;
+	color: #fff;
+}
+.mingzi img{
+	height: 30px;
+	width: 80px;
+	float: left;
+}
+.shouye{
+	position: absolute;
+	background-color: #fff;
+	top: 50px;
+	right:41px;
+
+}
+.shouye ul li{
+	float: left;
+
+}
+.shouye ul li a{
+	padding: 5px 30px;
+	display: inline-block;
+	color: #cb7047;
+	font-size: 14px;
+}
+.shouye ul li a:hover{
+	color: #cb7047;
+	background-color: #fef5d8;
+}
+.bigMsg{
+	width: 270px;
+	height: 270px;
+	background-color: rgba(0,0,0,0.6);
+	padding: 15px;
+	position: absolute;
+	top: 100px;
+	right: 40px;
+	color: #fff;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.4);
+}
+.bigMsg>ul>li>h2{
+	font-size: 22px;
+	font-family: 黑体;
+	font-weight: bold;
+	margin-right: 20px;
+	line-height: 30px;
+	color: #fff;
+}
+.bigMsg>ul>li{
+	min-height: 28px;
+}
+.fabiaode>div{
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+.fabiaode{
+	margin-top: 20px;
+}
+.fabiaode>div>span{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+
+	margin-right: 10px;
+	background: url(../images/shipintupian.png) 0 0 no-repeat;
+}
+.fabiaode>div>i{
+	width: 105px;
+	height: 20px;
+	display: inline-block;
+
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.fabiaode>div>.fatupian{
+	background: url(../images/shipintupian.png) -20px 0 no-repeat;
+}
+/*我的 空间左侧···································*/
+.gerenLeft {
+	width: 320px;
+	float: left;
+	
+}
+.AdPosition{
+	height: 200px;
+	width: 320px;
+	margin-bottom: 20px;
+	background: url(../images/320280.jpg) 0 0 no-repeat;
+	background-size:cover;
+}
+.AdPosition>a>img{
+	height: 200px;
+	width: 320px;
+}
+.tadefensi{
+	width: 290px;
+	padding: 15px;
+}
+.guanzhuWrap{
+	height: 40px;
+	background-color: #fff;
+	text-align: center;
+}
+.guanzhuWrap>div{
+	float: left;
+	width: 158px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.guanzhuWrap>div>i{
+	 color:red;
+}
+.guanzhuliang{
+	border-right: #ccc solid 1px;
+}
+.sixinWrap>a{
+	display: inline-block;
+	height: 30px;
+	border: none;
+
+	line-height: 30px;
+	width: 108px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	float: left;
+	background-color: #E4663E;
+}
+.sixinWrap>.guanzhuBtn{
+	background-color: #cb7047;
+}
+.guanzhuBox{
+	margin-bottom: 20px;
+}
+.tadefensi{
+	background-color: #fff;
+	margin-bottom: 20px;
+	width: 290px;
+	overflow: hidden;
+}
+.tadefensi>h2{
+	height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 黑体;
+	border-bottom: #cb7047 solid 1px;
+	margin-bottom: 10px;
+
+}
+.tadefensi>ul{
+	width: 340px;
+}
+.tadefensi>ul>li{
+	width: 60px;
+	float: left;
+	margin:0 16px 15px 0;
+}
+.tadefensi>ul>li>a{
+	display: inline-block;
+	/*height: 100%;*/
+	color: #333;
+	width: 100%;
+}
+.tadefensi>ul>li>a>img{
+	height: 60px;
+	width: 60px;
+	border-radius: 5px;
+}
+.tadefensi>ul>li>a>h3{
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+
+}
+.moreBtn{
+	display: none;
+}
+/*我的 空间左侧完成···································*/
+/*我的空间右侧*/
+.gerenRight{
+	width: 860px;
+	float: right;
+	background-color: #fff;
+}
+/* 本例子css */
+.www360buy {
+	width: 860px;
+}
+.www360buy .hd {
+	overflow: hidden;
+	background:#feebaf;
+
+}
+.www360buy .hd li {
+	position: relative;
+	margin-left: -1px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 144px;
+	float: left;
+
+	border-top: 0;
+	font: normal 14px/37px "Microsoft YaHei";
+	_font-weight: bold;
+	cursor: pointer;
+}
+.www360buy .hd li.on {
+	width: 142px;
+	background: #cb7047;
+
+	color: #fff;
+}
+.www360buy .bd {
+
+	border-top: 0;
+}
+.www360buy .lh {
+	overflow: hidden;
+	padding: 30px 0 40px 15px;
+}
+.www360buy .lh li {
+	width: 195px;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 15px;
+	background-color: #f1f1f1;
+	padding-bottom: 10px;
+}
+.www360buy .lh li .p-img {
+	width: 195px;
+	height: 132px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.www360buy .lh li .p-img img{
+	width: 195px;
+	height: 132px;
+}
+.www360buy .lh li .p-name {
+	height: 30px;
+	line-height: 30px;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+.www360buy .lh li .p-name a{
+	color: #333;
+}
+.www360buy .lh li .p-price {
+	color: #999;
+}
+.www360buy .lh li .p-price strong {
+	color: #c00;
+	font-size: 14px;
+	font-family: verdana;
+}
+/* 调用slide的本例子css结束 */
+/*全部视频音乐图片的li*/
+.gerenBody{
+	background-color: #f1f1f1;
+}
+.quanzhandongtai{
+	padding: 15px;
+}
+.quanzhandongtai>li{
+	padding: 15px 0 0;
+}
+.quanzhandongtai>li>a>h3{
+	font-weight: bold;
+	line-height: 32px;
+	font-size: 14px;
+	color: #333;
+}
+.quanzhandongtai>li>a>p{
+	font-size: 12px;
+	margin-bottom: 10px;
+	line-height: 20px;
+	max-height: 80px;
+	overflow: hidden;
+}
+.zongshu{
+	display: none;
+}
+.time >span{
+	float: left;
+
+}
+.time{
+	padding: 10px 0;
+	margin-bottom: 10px;
+	border-bottom: #ccc solid 1px;
+}
+.timeRight{
+	float: right;
+	position: relative;
+
+}
+.timeRight .bdsharebuttonbox{
+	position: absolute;
+	top: -33px;
+	right: -6px;
+	display: none;
+}
+.timeRight ol>li{
+	float: left;
+	padding: 0 2px;
+}
+.timeRight ol>li i.iconfont{
+	font-size: 20px;
+}
+.timeRight ol>li.bigsize a i{
+	font-size: 22px;
+}
+.chatu{
+	height:93px;
+	width: 561px;
+}
+.chatu a{
+	display: block;
+	position: relative;
+
+}
+.chatu img{
+	height: 93px;
+	width: 135px;
+	margin-right: 5px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.chatu>a>i{
+	position: absolute;
+	top:22px;
+	left: 46px;
+	font-size: 42px;
+	color: #fff;
+}
+/*全部视频音乐图片的li结束*/
+/*简介*/
+.jianjie>li>h4{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: 20px;
+	background-color: #f7f7f7;
+	margin-bottom: 15px;
+}
+.jianjie{
+	padding-bottom: 40px;
+}
+.jianjie>li>span{
+	width: 200px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: right;
+	vertical-align: middle;
+}
+.jianjie>li>i{
+	display: inline-block;
+	width: 500px;
+	vertical-align: middle;
+}
+.timeRight>ol>li{
+	line-height: 20px;
+}
+.timeRight>ol>li:nth-child(12),
+.timeRight>ol>li:nth-child(8),
+.timeRight>ol>li:nth-child(9),
+.timeRight>ol>li:nth-child(10),
+.timeRight>ol>li:nth-child(11){
+	display: none;
+}
+.quanzhandongtai>li>h3,.quanzhandongtai>li>p{
+	margin-bottom: 5px;
+}
+.loaderMsg{
+	text-align: center;
+	font-size: 14px;
+	color: #cb7047;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

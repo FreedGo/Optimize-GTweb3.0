@@ -1,0 +1,234 @@
+/* 
+* @Author: Administrator
+* @Date:   2016-01-10 16:52:04
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-01-11 11:39:41
+*/
+.bodyWrap{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 15px;
+}
+.mianbaoxie {
+	height: 24px;
+	margin-bottom: 10px;
+
+}
+.mianbaoxie li{
+	float: left;
+	height: 24px;
+	line-height: 24px;
+
+}
+.mianbaoxie li a{
+	color: #333;
+}
+/*标题部分杨思································· */
+.topLeft{
+	float: left;
+	padding: 10px;
+	padding-bottom: 0;
+	width: 860px;
+	background-color: #EDEFF0;
+	height: 194px;
+}
+.topLeft>img{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.topLeft>strong,.topLeft>p{
+	overflow: hidden;
+	padding-left: 10px;
+}
+.menu{
+	overflow: hidden;
+	zoom: 1; 
+	padding-left: 15px;
+}
+.menu>h2,.menu>ul,.menu>ul>li{
+	float: left;
+}
+.menu>ul{
+	width: 664px;
+}
+.menu>h2{
+	font-weight: bold;
+	margin-right: 15px;
+	font-size: 16px;
+}
+.menu>ul>li{
+	padding: 0 2px;
+}
+.menu>ul>li.hong{
+	color: red;
+}
+.menu>ul>li.shoucang{
+	float: right;
+	padding-left: 20px;
+	background: url(../images/fav.gif) center left no-repeat;
+}
+
+/*发帖部分··································*/
+.topRight{
+	float: right;
+	width: 270px;
+	padding: 15px;
+	background-color: #f2f2f2;
+	text-align: center;
+	padding-bottom: 0;
+
+}
+.fatie{
+	width: 270px;
+	height: 48px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 48px;
+	background:  url(../images/ft01.png) center center no-repeat;
+}
+.fatie a{color: #fff;}
+.topRight>ul{
+	padding: 10px 0;
+}
+.topRight>ul>li{
+	float: left;
+	height: 50px;
+	width: 134px;
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.br{
+	border-right: #ccc solid 1px;
+}
+.bb{
+	border-bottom: #ccc solid 1px;
+}
+.p2{
+	color: #cb7047;
+}
+/*标题部分杨思································· */
+/*论坛主题结构	···································*/
+.fenlei{
+	background-color: #f2f2f2;
+
+	height: 48px;
+	padding: 0 10px;
+}
+.luntaiContent{
+	margin-top: 20px;
+}
+.luntaiContent a{
+	font-size: 14px;
+}
+.fenlei>ol>li{
+	float: left;
+	height: 48px;
+	line-height: 48px;
+	font-size: 14px;
+}
+.fenlei>ol>li>a{
+	color: #333;
+	display: inline-block;
+}
+.allTie {
+	
+	margin-right: 20px;
+}
+.allTie>a{
+	color: #cb7047!important;
+}
+.normalTie{
+	padding: 0 10px;
+}
+.zuozhe{
+	margin-left: 564px;
+}
+.huifu{
+	margin-left: 135px;
+}
+.lastFaBiao{
+	margin-left: 71px;
+}
+
+
+
+
+/*列表内容·············································*/
+.inContent dl{
+	height: 48px;
+	border-bottom: #ccc solid 1px;
+	padding: 0 10px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.inContent dl dt{
+	float: left;
+	line-height: 51px;
+	height: 48px;
+	
+}
+.tieming{
+	width: 738px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.inContent dl dt>img{
+	height: 18px;
+	width: auto;
+	margin-top: 15px;
+	display: inline-block;
+	padding: 0 2px;
+}
+.inContent dl dt>a{
+	display: inline-block;
+	color: #333;
+}
+.tieZuozhe{
+	width: 162px;
+}
+.tieHui{
+	width: 136px;
+}
+.lastFabiao>h4{
+	line-height: 50px;
+
+
+}
+
+
+.inContent ul{
+	height: 48px;
+	border-bottom: #ccc solid 1px;
+	padding: 0 10px;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+.inContent ul li{
+	float: left;
+	line-height: 51px;
+	height: 48px;
+	
+}
+
+.inContent ul li>img{
+	height: 18px;
+	width: auto;
+	margin-top: 15px;
+	display: inline-block;
+	padding: 0 2px;
+}
+.inContent ul li>a{
+	display: inline-block;
+	color: #333;
+}
+.inContent ul:hover,.inContent dl:hover{
+	background-color: #f7f7f7;
+}

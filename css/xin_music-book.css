@@ -1,0 +1,560 @@
+/*
+*  By Freed
+*  flyxz@126.com
+*  2016-6-2 9:20;
+*/
+.h1{
+	margin-top: 0;
+}
+body,html,body{
+	background-color: #f5f5f5!important;
+}
+.borb{
+	border-bottom: 1px solid #333;
+}
+.f-l-l{
+	float: left;
+}
+.f-l-r{
+	float: right;
+}
+.marr-20{
+	margin-right: 20px;
+}
+.bodyWrap{
+	width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #fff!important;
+}
+/*loader加载动画*/
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+html, body {
+  color: #000;
+  font-family: 'Source Sans Pro'; }
+
+h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0.6rem 0; }
+  h1 > span {
+    font-weight: 300; }
+
+h2 {
+  font-size: 1.15em;
+  font-weight: 300;
+  margin: 0.3rem 0; }
+
+.loaded {
+    transition: opacity .25s linear;
+    opacity: 1; }
+ header {
+    width: 100%; }
+ header > div {
+      width: 50%; }
+ header > .left, main header > .right {
+      height: 100%; }
+.loaders {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*display: none;*/
+     }
+ .loader {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 1 auto;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 25%;
+      /*max-width: 25%;*/
+      height: 200px;
+      align-items: center;
+      justify-content: center; }
+.line-scale > div:nth-child(1) {
+  -webkit-animation: line-scale 1s 0.1s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: line-scale 1s 0.1s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.line-scale > div:nth-child(2) {
+  -webkit-animation: line-scale 1s 0.2s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: line-scale 1s 0.2s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.line-scale > div:nth-child(3) {
+  -webkit-animation: line-scale 1s 0.3s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: line-scale 1s 0.3s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.line-scale > div:nth-child(4) {
+  -webkit-animation: line-scale 1s 0.4s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: line-scale 1s 0.4s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.line-scale > div:nth-child(5) {
+  -webkit-animation: line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.line-scale > div {
+  background-color: #cb7047;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: inline-block; }
+
+/**
+ * Util classes
+ */
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.cf, main header {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Buttons
+ */
+.btn {
+  color: #fff;
+  padding: .75rem 1.25rem;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform .1s ease-out, border .1s ease-out, background-color .15s ease-out, color .1s ease-out;
+  margin: 2rem 0; }
+  .btn:hover {
+    transform: scale(1.01562);
+    background-color: #fff;
+    color: #ed5565; }
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+
+@-webkit-keyframes line-scale {
+  0% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); }
+
+  50% {
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+
+  100% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); } }
+@keyframes line-scale {
+  0% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); }
+
+  50% {
+    -webkit-transform: scaley(0.4);
+            transform: scaley(0.4); }
+
+  100% {
+    -webkit-transform: scaley(1);
+            transform: scaley(1); } }
+
+/*loader加载动画结束*/
+
+
+
+/*乐谱首页左侧*/
+.music-book-left{
+	width: 280px;
+}
+.music-book-recommend{
+	width: 100%;
+	border: 1px solid #ccc;
+	/*border-radius: 3px;*/
+	height: 440px;
+	margin-bottom: 20px;
+}
+.recommend-list-content{
+	padding: 15px 0;
+}
+.recommend-list-content>li{
+	width: 260px;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	padding-left: 15px;
+}
+.recommend-list-content>li>a{
+	font:14px/26px 微软雅黑;
+	width: 260px;
+	overflow: hidden;
+	color: #333;
+}
+.recommend-list-content>li>a:hover{
+	color: #E42112;
+}
+/*乐谱首页右侧*/
+.search-warp{
+	margin-bottom: 15px;
+}
+.search{
+	height: 40px;
+	border: #cb7047 solid  1px;
+	line-height: 40px;
+	font-size: 14px;
+	
+}
+.search-type{
+	font:14px/40px "微软雅黑";
+	display: inline-block;
+	height: 40px;
+	width: 80px;
+}
+.search-content{
+	height: 40px;
+	font:14px/40px "微软雅黑";
+	width:200px;
+	border-left: #cb7047 solid 1px;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+.search-sub{
+	width: 40px;
+	height: 40px;
+	background-color: #CB7047;
+	cursor: pointer;
+	color: #fff;
+}
+.send-new{
+	width: 120px;
+	background-color: #CB7047;
+	border-radius:3px ;
+	line-height: 40px;
+	text-align: center;
+	
+}
+.send-new a{
+	color: #fff;
+}
+.change-style-warp {
+	margin-bottom: 15px;
+	border-bottom:#D50215 solid 1px ;
+	/*width: 878px;*/
+}
+.change-style{
+	height: 40px;
+	font: 18px/40px "微软雅黑";
+	color: #E42112;
+	font-weight: bold;
+	padding-left: 5px;
+	margin-right: 15px;
+}
+.change-style-sel {
+	height: 30px;
+	font: 14px/30px "微软雅黑";
+	width: 80px;
+	border: #cb7047 solid 1px;
+	margin-top: 5px;
+}
+.look-more a{
+	font: 14px/40px "微软雅黑";
+	color: #999;
+	padding: 5px;
+	margin-right: 15px;
+	border-radius: 3px;
+}
+.look-more a:hover{
+	color: #fff;
+	background-color: #D50215;
+}
+.music-book-type-menu{
+	height: 50px;
+	background: url(/images/normal_icon2.png) 0 -159px no-repeat;
+	margin-bottom: 20px;
+}
+.music-book-type-menu>li{
+	width: 102px;
+	font: 16px/50px "微软雅黑";
+	color: #333;
+	text-align: center;
+	cursor: pointer;
+}
+.music-book-type-menu>li.on{
+	background: url(/images/normal_icon2.png) -120px -104px no-repeat;
+	color: #fff;
+}
+
+.music-book-type-change .lists-content-cell{
+	width: 210px;
+	margin-right:19px;
+	box-sizing: border-box;
+	border: #ccc solid 1px;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-bottom: 19px;
+}
+.music-book-type-change .lists-content-cell:hover{
+	border: #f00 solid 1px;
+}
+.music-book-type-change .lists-content-cell .cell-img{
+	width: 210px;
+	height: 120px;
+}
+/*.music-book-type-change .cell-title,.music-book-type-change .cell-name,.music-book-type-change .cell-time {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+}*/
+.book-list-content .search{
+	/*height: 42px;*/
+}
+.cell-title, .cell-name,.cell-time {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+}
+.cell-title {
+	color: #333;
+}
+.cell-name>h3{
+	font-size:12px;
+}
+.lists-content-cell:hover .cell-title {
+	color: #D50215;
+}
+.cell-name,.cell-time{
+	color: #999;
+}
+.music-book-type-change .list-content-items>ul{
+	width: 920px;
+}
+.list-content-types{
+	width: 1000px;
+	display: none;
+}
+.list-content-types.on{
+	display: block
+}
+.music-book-type-change>li{
+	/*display: none;*/
+}
+.music-book-type-change>li.on{
+	display: block
+}
+.music-book-type-change>li.sousuo{
+	display: none;
+	margin-right: 20px;
+}
+
+.music-book-right{
+	width: 898px;
+}
+.music-book-list{
+	width: 100%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.list-title{
+	height: 40px;
+	background-color: #eee;
+	font:16px/40px 微软雅黑;
+	background: #f7f7f7 url(../images/path.png) 0 0 no-repeat;
+}
+.list-content-warp{
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.list-title .list-title-con{
+	padding-left: 15px;
+	font:16px/40px 微软雅黑;
+}
+.list-more>a{
+	font:16px/40px 微软雅黑;
+	color: #F1AC2C;
+	padding-right: 15px;
+}
+.list-more>a:hover{
+	color: #ff7800;
+}
+.list-title-img{
+	margin-left: 15px;
+	width: 208px;
+	height: 144px;
+}
+.list-content{
+	margin-left: 15px;
+	width: 658px;
+	
+}
+.list-content>li{
+	width: 329px;
+	height: 24px;
+	display: inline-block;
+}
+.list-content>li>a{
+	font:14px/24px 微软雅黑;
+	width: 300px;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+.sousuo {
+	display: none;
+}
+.sousuo .change-style-warp{
+	height: 50px;
+}
+/*.friendly-link{
+	width: 1170px;
+	padding: 15px;
+	border: 1px solid #ccc;
+}
+.friendly-link-head{
+	width: 70px;
+	font:14px/24px 微软雅黑;
+}
+.friendly-link-content{
+	width: 1090px;
+	margin-left: 10px;
+	font:14px/24px 微软雅黑;
+}*/
+.cell-img:after{
+	content: "";
+	display: block;
+}
+.list-content-items>ul{
+	min-height: 228px;
+}
+
+
+
+
+
+
+
+
+
+/*下面是乐谱列表页*/
+.music-book-list-wrap{
+	
+}
+.book-list-title{
+	height: 44px;
+	margin-bottom: 10px;
+	
+}
+.book-list-title h1{
+	font: 20px/30px 微软雅黑;
+}
+.book-list-title-border{
+	width: 420px;
+    height: 22px;
+    border-bottom: solid 1px #333;
+}
+.book-list-title-border.left{
+	margin-left: 20px;
+}
+.book-list-title-border.right{
+	margin-right: 20px;
+}
+.book-list-title-name{
+	width: 300px;
+	height: 44px;
+	text-align: center;
+}
+.book-list-sidebar{
+	width: 200px;
+	background-color: #ccc;
+}
+
+.book-list-content{
+	width: 980px;
+	/*background-color: #CCCCCC;*/
+}
+.list-content-items{
+	width: 100%;
+	
+}
+.list-content-items>ul{
+	width: 1000px;
+}
+.lists-content-cell{
+	width: 230px;
+	margin-right:20px;
+	box-sizing: border-box;
+	border: #ccc solid 1px;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.lists-content-cell>a{
+	display: inline-block;
+}
+.cell-img{
+	width: 228px;
+	height: 140px;
+	margin-bottom: 5px;;
+}
+.cell-img>img{
+	width: 100%;
+	height: 100%;
+}
+.cell-title {
+	
+}
+.book-list-sidebar{
+	height:120px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 120px;
+	text-align: center;
+	cursor: pointer;
+}
+.book-list-sidebar.on{
+	background-color: #cb7047;
+	color: #fff;
+}
+/*列表分页*/
+.page-warp{
+	display: inline-block;
+	margin: 0 auto;
+}
+.pageBtn{
+	font-family: 微软雅黑;
+	padding: 5px 15px;
+	border: 1px solid #666;
+	/* background-color: #ccc; */
+	margin-right: 5px;
+	color: #337ab7;
+	cursor: pointer;
+}
+.pageBtn:hover{
+	background-color: #ddd;
+}
+.pageBtn.on{
+	background-color: #cb7047;
+	color: #fff;
+}
+/*列表分页*/
+
+
+
+
+
+
+
+
+/*下面是乐谱列表页结束*/

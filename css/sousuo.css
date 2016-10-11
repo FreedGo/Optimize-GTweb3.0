@@ -1,0 +1,117 @@
+/* 
+* @Author: Administrator
+* @Date:   2016-01-18 14:03:23
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-01-18 14:54:16
+*/
+.sousuoWrap{
+			max-width:1170px;
+			margin:0 auto;
+			min-width: 680px;
+			background-color: #fff;
+			padding: 25px 15px;
+			background-color: #FEF9E9;
+		}
+.sousuokuang{
+	width: 100%;
+	height: 40px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+.sousuokuang input{
+	height: 36px;
+
+}
+.sousuo{
+	border: #cb7047 solid 1px;
+	outline: none;
+	width: 580px;
+	padding-left: 5px;
+}
+.benzhan{
+	padding: 0 20px;
+	border-radius: 3px;
+}
+.benzhan{
+	background-color: #cb7047;
+	color: #fff;
+}
+
+/*截取·······························*/
+
+
+.sousuoContent ul li a{
+	font-size: 14px;
+	display: inline-block;
+	height: 125px;
+
+}
+.sousuoContent li{
+	padding: 10px 0 0;
+
+}
+
+
+.sousuoContent li a{
+	width: 100%;
+
+}
+.sousuoContent li a h3{
+	    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+
+}
+.videoNewsListImg{
+	height: 110px;
+	width: 160px;
+	float: left;
+}
+.videoNewsListImg>img{
+	height: 110px;
+	width:160px;
+}
+
+.sousuoContent li a p{
+	padding: 0 10px;
+    color: #999;
+    height: 80px;
+	overflow: hidden;
+	line-height: 20px;
+	color: #333;
+}
+
+.laiyuan{
+	    padding: 5px 10px 0 170px;
+}
+.laiyuan span{
+	color: #089CEF;
+	margin-right: 10px;
+	line-height: 20px;
+	float: left;
+}
+.lianjie{
+	width: 300px;
+	display: inline-block;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#keyboard{
+	border: #ccc solid 1px;
+	width: 600px;
+	border-radius: 3px;
+	padding-left: 5px;
+}
+#search_news input[type=submit]{
+	width: 50px;
+	background-color: #cb7047;
+	color: #fff;
+}
+

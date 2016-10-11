@@ -1,0 +1,505 @@
+/* 
+* @Author: Administrator
+* @Date:   2016-01-06 09:21:45
+* @Last Modified by:   付云龙
+* @Last Modified time: 2016-04-04 09:07:12
+*/
+.bodyWrap{
+	width: 1200px;
+	margin: 0 auto;
+	
+	
+	padding: 20px 0 ;
+	background-color: #fff;
+}
+
+/*左侧二级导航样式·····································*/
+.leftWrap{
+	width: 200px;
+	float: left;
+	height: inherit;
+	/*overflow: hidden;*/
+	position: relative;
+	z-index: 1000;
+
+}
+.leftWrap li{
+	width: 200px;
+	height: 100px;
+	padding-top: 10px;
+	background-color: #ddd;
+	margin-bottom: 15px;
+	text-align: center;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	background-image: url(/images/leftMenu.png);
+	background-repeat: no-repeat;
+	position: relative;
+	
+}
+.msg_num{
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	height: 24px;
+	width: 24px;
+	text-align: center;
+	line-height: 24px;
+	background-color: #f00;
+	border-radius: 50%;
+	color: #fff;
+
+}
+.leftMenu0{
+	background-position: 0 -1980px;
+}
+.leftMenu0:hover{
+	background-position: 0 -2090px;
+}
+.leftMenu0.on{
+	background-position: 0 -2090px;
+}
+.leftMenu1{
+	background-position: 0 0px;
+}
+.leftMenu1:hover{
+	background-position: 0 -110px;
+}
+.leftMenu1.on{
+	background-position: 0 -110px;
+}
+.leftMenu2{
+	background-position: 0 -220px;
+}
+.leftMenu2:hover{
+	background-position: 0 -330px;
+}
+.leftMenu3{
+	background-position: 0 -440px;
+}
+.leftMenu3:hover{
+	background-position: 0 -550px;
+}
+
+/*.leftWrap li:hover{
+	background-color: #cb7047;
+
+}*/
+.leftWrap li:hover>a>i{
+	font-size:50px;
+}
+/*.leftWrap li:hover>a{
+	color: #fef5d8;
+}
+*/
+.leftWrap li>a{
+	color: #000;
+	display: block;
+	height: 100%;
+
+}
+.leftWrap li>a>i{
+	font-size:46px;
+	font-weight: 100;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	height: 50px;
+	display: inline-block;
+	transition: font-size 0.5s ease 0s;
+	-webkit-transition: font-size 0.5s ease 0s;
+	-ms-transition: font-size 0.5s ease 0s;
+	-moz-transition: font-size 0.5s ease 0s;
+
+}
+.leftWrap li>a>h2{
+	font-size: 20px;
+	height: 30px;
+	line-height: 40px;
+}
+.leftWrap li.current{
+	
+}
+/*.leftWrap li.current>a{
+	color: #fef5d8;
+}*/
+
+/*左侧二级导航样式结束··································*/
+
+/*中间内容部分··········································*/
+.rightWrap{
+	width:980px;
+	float: right;
+	
+
+}
+
+/*全站动态列表·············································*/
+
+.qzdtList{
+	width: 680px;
+	float: left;
+
+}
+
+.search{
+	height: 34px;
+	border: #cb7047 solid 1px;
+	padding: 2px 0;
+	background-color: #fff;
+	position: relative;
+	width: 300px;
+	display: inline-block;
+	/* margin-left: 378px; */
+}
+.searchWrap{
+	padding-bottom: 15px;
+	border-bottom: #cb7047 solid 1px;
+}
+.search>i{
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	width: 50px;
+	height: 40px;
+	background-color: #cb7047;
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.search input{
+	height: 34px;
+	width: 200px;
+	float: left;
+	border-left: #ccc solid 1px;
+	outline: none;
+}
+.search .inputSub{
+	position: absolute;
+	width: 50px;
+	height: 40px;
+	right: -1px;
+	top: -3px;
+	z-index: 2;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.search select{
+	height: 34px;
+	width: 70px;
+	font-size: 12px;
+	text-align: center;
+	padding-left: 5px;
+	float: left;
+	outline: none;
+}
+
+.listLeft{
+	width: 100px;
+	float: left;
+	padding-top: 10px;
+
+}
+
+.listLeft a{
+	display: block;
+	height: 100%;
+}
+.listLeft a img{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.listLeft a h3{
+	color: #333;
+	line-height: 24px;
+}
+
+.listLeft>a>p>em{
+	color: #333;
+	width: 60px;
+	display: inline-block;
+}
+.fromCity{
+	color: #333;
+}
+.listLeft a h3 i{
+	font-size: 14px;
+	color: #FFB700;
+}
+.listLeft a p{
+	line-height: 24px;
+	font-size: 14px;
+}
+.listLeft a p span{
+	color: skyblue;
+	padding-left: 5px;
+	display: inline-block;
+	/*width: 20px;*/
+	height: 18px;
+}
+.listLeft a p span>img{
+	height: 18px;
+	width: 20px;
+}
+
+
+.listRight{
+	width: 560px;
+	float: right;
+	position: relative;
+}
+.quanzhandongtai>li{
+	padding: 15px 0 0;
+}
+.quanzhandongtai>li>.listRight h3{
+	font-weight: bold;
+	line-height: 32px;
+	height: 32px;
+	font-size: 14px;
+	color: #333;
+	width: 500px;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+}
+.quanzhandongtai>li>.listRight>p{
+	font-size: 12px;
+	margin-bottom: 10px;
+	line-height: 20px;
+	height: 40px;
+	overflow: hidden;
+	width: 561px;
+}
+.time >span{
+	float: left;
+
+}
+.time{
+	padding: 10px 0;
+
+	border-bottom: #ccc solid 1px;
+}
+.timeRight{
+	float: right;
+	position: relative;
+
+}
+.timeRight a{
+	cursor: default;
+}
+.timeRight .bdsharebuttonbox{
+	position: absolute;
+	top: -33px;
+	right: -6px;
+	display: none;
+}
+.timeRight ol>li{
+	float: left;
+	padding: 0 2px;
+	line-height: 22px;
+}
+.timeRight ol>li:nth-child(7),.timeRight ol>li:nth-child(8){
+	display: none;
+}
+.timeRight ol>li:nth-child(9),.timeRight ol>li:nth-child(10),.timeRight ol>li:nth-child(11){
+	display: none;
+
+}
+.timeRight ol>li i.iconfont{
+	font-size: 20px;
+}
+.timeRight ol>li.bigsize a i{
+	font-size: 22px;
+}
+.chatu{
+	height:93px;
+	width: 561px;
+}
+.chatu .zongshu{
+	font-size: 14px;
+	color: #333;
+	display: none;
+}
+.chatu a{
+	display: block;
+	position: relative;
+
+}
+.chatu img{
+	height: 93px;
+	width: 135px;
+	margin-right: 5px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.chatu>a>i{
+	position: absolute;
+	top:22px;
+	left: 46px;
+	font-size: 42px;
+	color: #fff;
+}
+.toupiao{
+	position: absolute;
+	top: 140px;
+	right: 5px;
+	height: 24px;
+	width: 85px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #cb7047;
+	border-radius: 3px;
+	
+}
+.toupiao a{
+	color: #fef5d8;
+}
+/*全站动态列表结束·············································*/
+
+/*全站动态排行榜···············································*/
+.qzdtBang{
+	float: right;
+	width: 280px;
+
+
+}
+.recommond{
+			float: right;
+			width:280px;
+			padding-bottom:15px;
+			margin-bottom: 20px;
+			position: relative;
+			background-color: #eee;
+		}
+		.recommond dd{
+			font-size:16px;
+			padding-left:10px;
+			line-height: 44px;
+			font-weight:bold;
+			background-color: #ddd;
+			border-bottom:#e6e4e4 solid 1px;
+		}
+		/*新添加的css*/
+		.recommond dd span{
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		.recommond dd span.out{
+			font-size: 14px;
+			color: #999;
+		}
+		.dianzanTop{
+			display: none;
+		}
+		.pinglunTop{
+			display: none;
+		}
+/*新添加的css*/
+		.zuo_2>span{
+			margin: 0!important;
+			vertical-align: middle;
+		}
+		.recommond dt{
+			/*line-height: 30px;*/
+			padding-left:80px;
+			height: 80px;
+			border-bottom:#ccc dotted 1px;
+			position: relative;
+			
+			-webkit-background-size: 60px 60px;
+			background-size: 60px 60px;
+			transition: all 0.5s ease 0s;
+
+		}
+		.recommond dt img{
+			position: absolute;
+			top: 10px;
+			left: 9px;
+			height: 60px;
+			width: 60px;
+		}
+		.recommond dt:hover{
+			background-color: #ccc;
+		}
+		.recommond dt span{
+			display:inline-block;
+			color: #999;
+			margin-top: 10px;
+			font-size: 12px;
+			width: 95px;
+			overflow: hidden;
+			white-space: nowrap;
+			-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			
+			
+		}
+
+		.recommond dt a{
+			color:#333;
+			font-size: 14px;
+			line-height: 37px;
+			display: block;
+			-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+
+
+/*全站动态排行榜结束············································*/
+.search>form{
+	position:relative;}
+.sousuo{
+	position:absolute;
+	right:-1px;
+	top:-2px;
+	width:50px!important;
+	height:40px!important;
+	z-index:99;
+	opacity:0;
+	filter:alpha(opacity=0);}
+.guangchangfatie{
+	float: right;
+	width: 110px;
+	height: 40px;
+	border-radius: 3px;
+	overflow: hidden;
+	font-size: 14px;
+	padding-left: 10px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	background: url(/images/ft01.png) -38px 0 no-repeat;
+	background-size: 200px 40px;
+	cursor: pointer;
+
+}
+.guangchangfatie a{
+	font-size: 14px;
+	color: #fff;
+}
+/*2016.5.1增加下拉刷新提醒*/
+.loaderMsg{
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	color:#cb7047;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
