@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/其他海选列表页.html" afterPath="$PROJECT_DIR$/html/其他海选列表页.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/品牌海选列表页.html" afterPath="$PROJECT_DIR$/html/品牌海选列表页.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hai-list-new-paixu.js" afterPath="$PROJECT_DIR$/js/hai-list-new-paixu.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,12 +134,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hai-list-new-paixu.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hai-list-new-paixu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/hai-list-new-paixu.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="498">
               <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53866/home/hao/e/template/incfile/huodong/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="218" column="72" selection-start-line="218" selection-start-column="72" selection-end-line="218" selection-end-column="72" />
+              <folding>
+                <marker date="1476432038270" expanded="true" signature="740:807" ph="select * fro... phome_ecms_shop" />
+                <marker date="1476432038270" expanded="true" signature="9353:9373" ph="..." />
+                <marker date="1476432038270" expanded="true" signature="9485:9505" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,6 +198,7 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp14757/home/hao/app/news.php" />
         <option value="$PROJECT_DIR$/html/其他海选列表页.html" />
         <option value="$PROJECT_DIR$/js/hai-list-new-paixu.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp53866/home/hao/e/template/incfile/huodong/index.php" />
       </list>
     </option>
   </component>
@@ -351,7 +365,7 @@
       <updated>1475980328474</updated>
       <workItem from="1475980329957" duration="12128000" />
       <workItem from="1476149771105" duration="6007000" />
-      <workItem from="1476412283260" duration="9086000" />
+      <workItem from="1476412283260" duration="10493000" />
     </task>
     <task id="LOCAL-00001" summary="去除">
       <created>1476164634362</created>
@@ -381,11 +395,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476417584219</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="海选列表页的筛选，搜索js，原为品牌海选专用，现准备增加为通用">
+      <created>1476427458898</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1476427458898</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27221000" />
+    <option name="totallyTimeSpent" value="28628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -776,6 +797,18 @@
         <state relative-caret-position="498">
           <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53866/home/hao/e/template/incfile/huodong/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="218" column="72" selection-start-line="218" selection-start-column="72" selection-end-line="218" selection-end-column="72" />
+          <folding>
+            <marker date="1476432038270" expanded="true" signature="740:807" ph="select * fro... phome_ecms_shop" />
+            <marker date="1476432038270" expanded="true" signature="9353:9373" ph="..." />
+            <marker date="1476432038270" expanded="true" signature="9485:9505" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
