@@ -31,16 +31,22 @@ function haiListType(classid,id,index){
 	});
 	
 }
-
-function haiListSearch(classid,id,con){
+/**
+ * 各海选列表通用的搜索函数
+ * @param {number} classid  页面中获取的classid
+ * @param {number} id 页面中获取的id
+ * @param {string} con 搜索的内容
+ * @param {string} url 搜索请求的php地址
+ */
+function haiListSearch(classid,id,con,url){
 
 	$.ajax({
-		url: '/haixuan/pinpai/pinpai.name.ajax.php',
+		url: url || '/haixuan/pinpai/pinpai.name.ajax.php',
 		type: 'post',
 		// dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
 		data: {'classid': classid,'id':id,'name': con},
 		beforeSend:function(){
-			$('.liebiaoShow-con').eq(5).empty()
+			$('.liebiaoShow-con').eq(5).empty();
 			$('.loaders').show();
 		}
 	})
