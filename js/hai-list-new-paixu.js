@@ -87,5 +87,15 @@ $(function() {
 			alert('请输入内容再点击搜索');
 		}
 	});
+	// 音乐之星的搜索
+	$('.star-search .searchSub').click(function(event) {
+		$('.liebiaoShow-con').eq(5).addClass('on').siblings().removeClass('on');
+		var srhVal = $('.searchSelect').val();
+		if (srhVal || srhVal == 0) {
+			haiListSearch(actClassid,actid,srhVal,'/haixuan/haoqinsheng/hai.star.name.ajax.php');
+		} else {
+			alert('请输入内容再点击搜索');
+		}
+	});
 
 });
