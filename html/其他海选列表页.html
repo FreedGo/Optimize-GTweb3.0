@@ -48,10 +48,10 @@ $signPackage = $jssdk->GetSignPackage();
 		wx.config({
 			debug: false,
 			appId: '<?php echo $signPackage["appId"];?>',
-			timestamp: <?php echo $signPackage["timestamp"];?>,
-		nonceStr: '<?php echo $signPackage["nonceStr"];?>',
-				signature: '<?php echo $signPackage["signature"];?>',
-				jsApiList: ['onMenuShareTimeline',"onMenuShareAppMessage","onMenuShareQQ","onMenuShareQZone",]
+			timestamp: '<?php echo $signPackage["timestamp"];?>',
+			nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+			signature: '<?php echo $signPackage["signature"];?>',
+			jsApiList: ['onMenuShareTimeline',"onMenuShareAppMessage","onMenuShareQQ","onMenuShareQZone",]
 		});
 		wx.ready(function() {
 			// 1 判断当前版本是否支持指定 JS 接口，支持批量判断
@@ -196,22 +196,22 @@ $signPackage = $jssdk->GetSignPackage();
                             ?>
 
 							<?php
-$time = time();
-$dang=date("Y-m-d",$time);
-if($dang > $navinfor[huodong_2]){
-?>
-<a class="haixuanBtn jieshuBtn">报名结束</a>
-							<?
-}elseif($navinfor[huodong_1]>$dang){
-?>
-<a class="haixuanBtn jieshuBtn" >报名还未开始</a>
-							<?
-}else{
-?>
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang > $navinfor[huodong_2]){
+								?>
+								<a class="haixuanBtn jieshuBtn">报名结束</a>
+															<?
+								}elseif($navinfor[huodong_1]>$dang){
+								?>
+								<a class="haixuanBtn jieshuBtn" >报名还未开始</a>
+															<?
+								}else{
+								?>
 							<a class="baomingBtn haixuanBtn" >我要报名</a>
 							<?
-}
-?>
+							}
+							?>
 
 
                         </em>人报名参加</span>
@@ -227,14 +227,14 @@ if($dang > $navinfor[huodong_2]){
 								<a class="jiathis_button_fb"></a>
 								<!--<a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>-->
 								<!--<a class="jiathis_counter_style"></a>-->
-								<script "text/javascript">
-								var jiathis_config = {
-								// url: "http://www.yourdomain.com",
-								title: "[!--pagetitle--] — 好琴声",
-								summary:"[!--guanjian--]",
-								pic:"[!--titlepic--]",
-								img_url:"[!--titlepic--]"
-								}
+								<script >
+									var jiathis_config = {
+									// url: "http://www.yourdomain.com",
+									title: "[!--pagetitle--] — 好琴声",
+									summary:"[!--guanjian--]",
+									pic:"[!--titlepic--]",
+									img_url:"[!--titlepic--]"
+									}
 								</script>
 								<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
 							</div>
@@ -256,7 +256,7 @@ if($dang > $navinfor[huodong_2]){
 
 				<!-- 第一，当前海选部分····························· -->
 
-				<div class="yinyuemingren">
+				<div class="yinyuemingren hai-star">
 					<!-- 分类行····································· -->
 					<div class="fenlei borTop">
 						<ul class="clearfix fenleiFuck">
@@ -273,109 +273,144 @@ if($dang > $navinfor[huodong_2]){
 
 					<!-- 列表内容区域······························· -->
 					<div class="liebiao">
-
+						<script type="text/javascript" src="/js/hai-list-new-paixu.js"></script>
 						<ul class="liebiaoFuck liebiaoShow current clearfix">
 							<div class="hai-list-type paixu">
 								<span>筛选:</span>
-								<div class="paixufangfa">
-									<select name="" id="paixuSelect">
-										<option value="全部">全部</option>
-									</select>
-								</div>
-								<div class="search">
+								<dl class="paixufangfa clearfix">
+									<dt class="pinpaiSelect on  select1">全部</dt>
+									<!--<dt class="pinpaiSelect select2">钢琴</dt>-->
+									<!--<dt class="pinpaiSelect select3">提琴</dt>-->
+									<!--<dt class="pinpaiSelect select4">吉他</dt>-->
+									<!--<dt class="pinpaiSelect select5">其它</dt>-->
+								</dl>
+								<div class="search pinpai-search">
 									<input type="search" class="searchSelect" placeholder="请输入内容" required>
-									<i class="iconfont searchSub">&#xe658;</i>
+									<i class="iconfont searchSub ">&#xe658;</i>
 								</div>
 							</div>
-							<?php $num=1?>
-							[e:loop={"select * from phome_ecms_photo where hai_id='$navinfor[id]' order by tou_num desc",10,24,0}]
 
-							<?php
-$userr=sys_ShowMemberInfo($bqr[userid],'');
-?>
-							<li id="userId<?=$bqr[id]?>">
-								<a href="<?=$bqsr['titleurl']?>">
-									<?php
-                    	if($bqr[classid]==73){
-							echo "<i class='iconfont'>&#xe63b;</i>";
-									}
-									?>
+							<ol class="liebiaoShow-con on  liebiaoShow-con1">
+								<!--原海选的php调用-->
+								<?php $num=1?>
+								[e:loop={"select * from phome_ecms_photo where hai_id='$navinfor[id]' order by tou_num desc",10,24,0}]
+								<?php
+								$userr=sys_ShowMemberInfo($bqr[userid],'');
+								?>
+								<li id="userId<?=$bqr[id]?>">
+									<a href="<?=$bqsr['titleurl']?>">
+										<?php
+			                        if($bqr[classid]==73){
+										echo "<i class='iconfont'>&#xe63b;</i>";
+										}
+										?>
 
-									<img src="<?=$bqr[hai_photo]?>">
-								</a>
-								<div class="xingming">
-
-									<!--<span>乐曲名：</span><em><?=$bqr[hai_petition]?></em>-->
-								</div>
-								<div class="shenfen xingming">
-									<span>参赛者：</span><em><a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>"><?=$bqr[hai_name]?>
-									<div class="touxiangWrap">
-										<img src="<?=$userr[userpic]?>">
-										<h3>
-											<?
-          if($userr[groupid]==1){
-            echo $userr[putong_shenfen];//普通会员默认爱乐人
-          }elseif($userr[groupid]==2){
-            echo $userr[music_star];//音乐之星
-          }elseif($userr[groupid]==3){
-            echo $userr[teacher_type];//音乐老师
-          }elseif($userr[groupid]==4){
-            echo "音乐教室";
-          }elseif($userr[groupid]==5){
-            echo "乐器品牌";
-          }
-        ?>
-										</h3><!-- 身份 -->
-										<h4>
-											<?php
-              if($userr[userfen]<=100){
-                    echo "一级";
-                }elseif($userr[userfen]<=300){
-                   echo "二级";
-                }elseif($userr[userfen]<=800){
-                   echo "三级";
-                }elseif($userr[userfen]<=2000){
-                   echo "四级";
-                }elseif($userr[userfen]<=5000){
-                   echo "五级";
-                }elseif($userr[userfen]<=15000){
-                   echo "六级";
-                }elseif($userr[userfen]<=50000){
-                   echo "七级";
-                }elseif($userr[userfen]<=100000){
-                   echo "八级";
-                }else{
-                   echo "八级";
-                }
-              ?>
-										</h4><!-- 等级 -->
+										<img src="<?=$bqr[hai_photo]?>">
+									</a>
+									<div class="xingming">
 									</div>
-								</a></em>
-								</div>
-								<div class="guanzhu xingming clearfix">
-									<span >播放次数</span><em>：
-									<?=$bqr[onclick]?>
-								</em>
-								</div>
-								<div class="depiao xingming">
-                    <span>得票数：<i>
-                      <?=$bqr[tou_num]?>
-	                    票</i></span>
-								</div>
-								<div class="xingming paiming">
-									当前排名：第
-									<?php
+									<div class="shenfen xingming">
+										<span>参赛者：</span><em><a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>"><?=$bqr[hai_name]?>
+										<div class="touxiangWrap">
+											<img src="<?=$userr[userpic]?>">
+											<h3>
+												<?
+								          if($userr[groupid]==1){
+								            echo $userr[putong_shenfen];//普通会员默认爱乐人
+								          }elseif($userr[groupid]==2){
+								            echo $userr[music_star];//音乐之星
+								          }elseif($userr[groupid]==3){
+								            echo $userr[teacher_type];//音乐老师
+								          }elseif($userr[groupid]==4){
+								            echo "音乐教室";
+								          }elseif($userr[groupid]==5){
+								            echo "乐器品牌";
+								          }
+								        ?>
+											</h3><!-- 身份 -->
+											<h4>
+												<?php
+								              if($userr[userfen]<=100){
+								                    echo "一级";
+								                }elseif($userr[userfen]<=300){
+								                   echo "二级";
+								                }elseif($userr[userfen]<=800){
+								                   echo "三级";
+								                }elseif($userr[userfen]<=2000){
+								                   echo "四级";
+								                }elseif($userr[userfen]<=5000){
+								                   echo "五级";
+								                }elseif($userr[userfen]<=15000){
+								                   echo "六级";
+								                }elseif($userr[userfen]<=50000){
+								                   echo "七级";
+								                }elseif($userr[userfen]<=100000){
+								                   echo "八级";
+								                }else{
+								                   echo "八级";
+								                }
+								              ?>
+											</h4><!-- 等级 -->
+										</div>
+									</a></em>
+									</div>
+									<div class="guanzhu xingming clearfix">
+										<span >播放次数</span><em>：
+										<?=$bqr[onclick]?>
+									</em>
+									</div>
+									<div class="depiao xingming">
+				                    <span>得票数：<i>
+				                      <?=$bqr[tou_num]?>
+					                    票</i></span>
+									</div>
+									<div class="xingming paiming">
+										当前排名：第
+										<?php
+				                    echo $num++;
+									?>名
+									</div>
+									<div class="xingming paiming">
+										 <!--占位-->
+									</div>
+									<span class="dianjichakan ">
+			                      <a href="<?=$bqsr['titleurl']?>">投票</a>
+			                  </span>
+									[!--info.vote--]
+								</li>
+								[/e:loop]
+							</ol>
+							<ol class="liebiaoShow-con liebiaoShow-con2">
 
-                    echo $num++;
-					?>名
+							</ol>
+							<ol class="liebiaoShow-con liebiaoShow-con3">
+
+							</ol>
+							<ol class="liebiaoShow-con liebiaoShow-con4">
+
+							</ol>
+							<ol class="liebiaoShow-con liebiaoShow-con5">
+
+							</ol>
+							<!--这个是搜索内容用的-->
+							<ol class="liebiaoShow-con liebiaoShow-con6">
+
+							</ol>
+							<!-- 加载动画 -->
+							<div class="loaders">
+								<div class="loader">
+									<div class="loader-inner line-scale">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
 								</div>
-								<span class="dianjichakan ">
-                      <a href="<?=$bqsr['titleurl']?>">投票</a>
-                  </span>
-								[!--info.vote--]
-							</li>
-							[/e:loop]
+							</div>
+
 						</ul>
+
 						<!---------介绍--------->
 						<ul class="liebiaoFuck liebiaoShow daDiv clearfix">
 							<div class="jieshao">
@@ -394,9 +429,9 @@ $userr=sys_ShowMemberInfo($bqr[userid],'');
 								<!-----总结视频GG----->
 								[e:loop={"select zong_video from phome_ecms_shop where id='$navinfor[id]' order by id desc limit 1",10,24,0}]
 								<?php
-    if(!empty($bqr[zong_video])){
-		//视频出来啦
-?>
+								    if(!empty($bqr[zong_video])){
+										//视频出来啦
+								?>
 								<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
 								<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva_Compatible.js"></script>
 								<div style="width:960px;height:540px;margin:0 auto;" id="ivaLive"></div>
@@ -412,8 +447,8 @@ $userr=sys_ShowMemberInfo($bqr[userid],'');
 									});
 								</script>
 								<?
-}
-?>
+								}
+								?>
 
 								[/e:loop]
 								[!--newstext_1--]

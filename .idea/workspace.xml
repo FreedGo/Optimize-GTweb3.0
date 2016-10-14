@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/其他海选列表页.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/品牌海选列表页.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/其他海选列表页.html" afterPath="$PROJECT_DIR$/html/其他海选列表页.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/品牌海选列表页.html" afterPath="$PROJECT_DIR$/html/品牌海选列表页.html" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,17 +60,29 @@
       <file leaf-file-name="品牌海选列表页.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/品牌海选列表页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4950">
-              <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+            <state relative-caret-position="381">
+              <caret line="275" column="37" selection-start-line="275" selection-start-column="37" selection-end-line="275" selection-end-column="37" />
               <folding>
                 <element signature="e#6457#6463#0" expanded="true" />
                 <element signature="e#6463#6469#0" expanded="true" />
                 <element signature="e#6469#6475#0" expanded="true" />
                 <element signature="e#6475#6481#0" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#11309#11317#1" expanded="true" />
+                <element signature="n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#10999#11007#1" expanded="true" />
+                <element signature="n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="haixuan.css" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18911/home/hao/css/haixuan.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="2075" column="16" selection-start-line="2075" selection-start-column="16" selection-end-line="2075" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,14 +90,16 @@
       <file leaf-file-name="其他海选列表页.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/其他海选列表页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="438" column="7" selection-start-line="438" selection-start-column="7" selection-end-line="438" selection-end-column="7" />
+            <state relative-caret-position="89">
+              <caret line="258" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="473" selection-end-column="7" />
               <folding>
-                <element signature="e#6709#6715#0" expanded="true" />
-                <element signature="e#6715#6721#0" expanded="true" />
+                <element signature="e#6710#6716#0" expanded="true" />
+                <element signature="e#6716#6722#0" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#10107#10115#1" expanded="true" />
-                <element signature="e#10513#10521#1" expanded="true" />
+                <element signature="e#10496#10504#1" expanded="true" />
+                <element signature="e#11015#11023#1" expanded="true" />
+                <element signature="n#h3#0;n#div#0;n#a#0;n#em#0;n#div#1;n#li#0;n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#h4#0;n#div#0;n#a#0;n#em#0;n#div#1;n#li#0;n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -124,6 +138,9 @@
         <option value="$PROJECT_DIR$/html/品牌首页.html" />
         <option value="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp58076/home/hao/e/template/member/register.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp01452/home/hao/js/register.yanzheng2.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp18911/home/hao/css/haixuan.css" />
         <option value="$PROJECT_DIR$/html/品牌海选列表页.html" />
         <option value="$PROJECT_DIR$/html/其他海选列表页.html" />
       </list>
@@ -273,7 +290,7 @@
       <updated>1475980328474</updated>
       <workItem from="1475980329957" duration="12128000" />
       <workItem from="1476149771105" duration="6007000" />
-      <workItem from="1476412283260" duration="155000" />
+      <workItem from="1476412283260" duration="3823000" />
     </task>
     <task id="LOCAL-00001" summary="去除">
       <created>1476164634362</created>
@@ -282,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476164634362</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="其他海选参照品牌海选，增加筛选和搜素">
+      <created>1476412476825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1476412476825</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18290000" />
+    <option name="totallyTimeSpent" value="21958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,13 +323,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34814814" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -351,7 +375,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="去除" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除" />
+    <MESSAGE value="其他海选参照品牌海选，增加筛选和搜素" />
+    <option name="LAST_COMMIT_MESSAGE" value="其他海选参照品牌海选，增加筛选和搜素" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -544,17 +569,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01452/home/hao/js/register.yanzheng2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="228" column="29" selection-start-line="228" selection-start-column="29" selection-end-line="228" selection-end-column="29" />
+          <folding>
+            <marker date="1476414788585" expanded="true" signature="4811:4887" ph="..." />
+            <marker date="1476414788585" expanded="true" signature="5076:5137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58076/home/hao/e/template/member/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="93" column="71" selection-start-line="93" selection-start-column="71" selection-end-line="93" selection-end-column="71" />
+          <folding>
+            <marker date="1476414084097" expanded="true" signature="128:134" ph=" " />
+            <marker date="1476414084097" expanded="true" signature="135:141" ph=" " />
+            <marker date="1476414084097" expanded="true" signature="164:170" ph=" " />
+            <marker date="1476414084097" expanded="true" signature="171:177" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18911/home/hao/css/haixuan.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="2075" column="16" selection-start-line="2075" selection-start-column="16" selection-end-line="2075" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/品牌海选列表页.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4950">
-          <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+        <state relative-caret-position="381">
+          <caret line="275" column="37" selection-start-line="275" selection-start-column="37" selection-end-line="275" selection-end-column="37" />
           <folding>
             <element signature="e#6457#6463#0" expanded="true" />
             <element signature="e#6463#6469#0" expanded="true" />
             <element signature="e#6469#6475#0" expanded="true" />
             <element signature="e#6475#6481#0" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#11309#11317#1" expanded="true" />
+            <element signature="n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#10999#11007#1" expanded="true" />
+            <element signature="n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -562,14 +621,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/其他海选列表页.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="438" column="7" selection-start-line="438" selection-start-column="7" selection-end-line="438" selection-end-column="7" />
+        <state relative-caret-position="89">
+          <caret line="258" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="473" selection-end-column="7" />
           <folding>
-            <element signature="e#6709#6715#0" expanded="true" />
-            <element signature="e#6715#6721#0" expanded="true" />
+            <element signature="e#6710#6716#0" expanded="true" />
+            <element signature="e#6716#6722#0" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10107#10115#1" expanded="true" />
-            <element signature="e#10513#10521#1" expanded="true" />
+            <element signature="e#10496#10504#1" expanded="true" />
+            <element signature="e#11015#11023#1" expanded="true" />
+            <element signature="n#h3#0;n#div#0;n#a#0;n#em#0;n#div#1;n#li#0;n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#h4#0;n#div#0;n#a#0;n#em#0;n#div#1;n#li#0;n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
