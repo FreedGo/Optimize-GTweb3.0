@@ -25,9 +25,16 @@ $signPackage = $jssdk->GetSignPackage();
 	                        ?>票"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/haixuan.css">
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/tupianneiye3.css">
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]e/haitou/new-login-reg/css/style.css">
+	<style type="text/css">
+		.w3cFocusIn .bd li{width: 980px;}
+		.w3cFocusIn .bd li img {max-width: 900px;}
+	</style>
     <script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+	<script language="javascript" src="/js/language.js"></script>
+	<script type="text/javascript" src="[!--news.url--]js/jquery.SuperSlide.2.1.1.js"></script>
     <!-----获取父页链接---->
 	<?php
 	$id=$_GET['id'];
@@ -38,6 +45,11 @@ $signPackage = $jssdk->GetSignPackage();
 		var actid;
 		var fatherUrl='<?=$url[titleurl]?>#userId<?=$too[id]?>';
 	</script>
+	<style type="text/css">
+		a.player_control_bar_logo{
+		display:none !important;
+	}
+  	</style>
   	<script type="text/javascript" src="[!--news.url--]e/haitou/new-login-reg/js/common.js" ></script>
   	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script type="text/javascript">
@@ -100,6 +112,7 @@ $signPackage = $jssdk->GetSignPackage();
             });
         }
     </script>
+    <script type="text/javascript" src="[!--news.url--]e/extend/lgyPl/api.js"></script>
 </head>
 <body>
 
@@ -108,7 +121,36 @@ $signPackage = $jssdk->GetSignPackage();
 <!-- 头部结构结束·························································· -->
 <!-- ····························中间结构·································· -->
 <div class="bodyWrap clearfix">
-
+	<!-- 左边二级导航列···················································· -->
+	<div class="leftWrap">
+		<ol>
+			<li class=" current">
+				<a href="http://www.franzsandner.com/">
+					<img src="[!--news.url--]images/adLeft.jpg" alt="">
+				</a>
+			</li>
+			<li >
+				<a href="http://www.august-foerster.de/">
+					<img src="[!--news.url--]images/adLeft2.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="https://falanshande.tmall.com/">
+					<img src="[!--news.url--]images/adLeft3.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="http://www.oblanc.com.tw/">
+					<img src="[!--news.url--]images/adLeft4.jpg" alt="">
+				</a>
+			</li>
+		</ol>
+	</div>
+	<!-- 左边二级导航列结束················································ -->
+<?php
+	$classid=$_GET['classid'];
+	if($classid==112){
+	?>
 	<!-- 中间内容部分······················································ -->
 	<div class="rightWrap clearfix">
 		<div class="rightBan">
@@ -132,6 +174,31 @@ $signPackage = $jssdk->GetSignPackage();
 						        echo $tou[tou_num];
                         ?>
                     票</span></li>
+                    <div class="audition-member-share">
+						<!-- JiaThis Button BEGIN -->
+                        <div class="jiathis_style_32x32">
+                            <a class="jiathis_button_weixin"></a>
+                            <a class="jiathis_button_tsina"></a>
+                            <a class="jiathis_button_qzone"></a>
+                            <a class="jiathis_button_tqq"></a>
+                            <a class="jiathis_button_fb"></a>
+                            <a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+                            <a class="jiathis_counter_style"></a>
+                        </div>
+                        <script type="text/javascript" >
+                            var jiathis_config={
+                                data_track_clickback:true,
+//                                        summary:"摘要",//摘要
+//                                        title:"标题",//标题
+                                pic:"<?= $userpic ?>",//图片
+                                //	url:"url",//url
+                                shortUrl:false,
+                                hideMore:false
+                            }
+                        </script>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
+					</div>
 				</ul>
 			</div>
 			<div class="saishiMsg saishiVideo pic-toupiao clearfix">
@@ -146,7 +213,18 @@ $signPackage = $jssdk->GetSignPackage();
 										<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
 									</ul>
 								</div>
+								<div class="hd">
+									<ul>
+			                        	[!--morepic--]
+										<li><img src="/images/logo.png" /></li>
+										<li><img src="/images/logo.png" /></li>
+										<li><img src="/images/logo.png" /></li>
+										<li><img src="/images/logo.png" /></li>
+									</ul>
+								</div>
 							</div>
+							<a class="prev"  target="_self"></a>
+							<a class="next"  target="_self"></a>
 					</div>
 					<script type="text/javascript">
 			                         // 向服务器请求图片
@@ -236,8 +314,274 @@ $signPackage = $jssdk->GetSignPackage();
                     <script src="http://www.greattone.net/d/js/acmsd/thea65.js"></script>
                 </div>
 		</div>
+		<!-- 第一.全站动态部分············································· -->
+		<div class="rightMiddle qzdtList">
+			<!-- 内容··························· -->
+				<div class="qzdtContent">
+					<!-- 第一，当前海选部分····························· -->
+					<div class="yinyuemingren">
+						<!-- 分类行····································· -->
+						<div class="fenlei borTop">
+							<ul class="clearfix fenleiFuck">
+								<li class="current"><a href="javascript:;">评论</a><span></span></li>
+							</ul>
+						</div>
+						<!-- 分类行结束································· -->
+						<!-- 排序行····································· -->
+
+						<!-- 列表内容区域······························· -->
+						<div class="liebiao">
+								<!-- 此处插入畅言······················· -->
+								<div class="pl-520am" data-id="[!--id--]" data-classid="[!--classid--]"></div>
+								<!-- 此处插入畅言······················ -->
+						</div>
+						<!-- 列表内容区域结束··························· -->
+					</div>
+					<!-- 当前海选部分结束······························ -->
+				</div>
+			<!-- 内容··························· -->
+			</div>
+		<!-- 全站动态内容部分结束······························ -->
+
 	</div>
 	<!-- 中间内容部分结束·················································· -->
+	<?
+	}else{
+	?>
+	<!-- 中间内容部分······················································ -->
+	<div class="rightWrap clearfix">
+		<div class="rightBan">
+			<div class="mianbaoNav gg">
+				<span><a href="[!--news.url--]">首页</a></span><span>></span><span><a href="[!--news.url--]haixuan">海选</a></span><span>></span><span><a href="javascript:;">赛事详情</a></span>
+			</div>
+	  		<div class="saishiHead">
+				<h2>[!--hai_petition--]</h2>
+			</div>
+			<div class="zuozhexinxi">
+				<ul class="clearfix" style="border-bottom: #cb7047 solid 1px">
+					<!-- 头像框 -->
+                    <div class="zhuozhe-img f-l-l">
+                        <?
+                            $id=$_GET['id'];
+                            $haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");
+                            $poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");
+                        ?>
+                        <a class="f-l-l" href="/e/space/?userid=<?=$haipic[userid]?>">
+                            <img src="<?=$poto[userpic]?>" alt="">
+                        </a>
+                        <div class="zuozhe-msg f-l-l">
+                            <h2 class="zuozhe-name">[!--hai_name--]</h2>
+                            <h2 class="zuozhe-price">
+                            	<?php
+                					$poto=$empire->fetch1("select userfen from phome_enewsmember where userid=$haipic[userid]");
+                                	if($r[userfen]<=100){
+                                        echo "一级";
+                                    }elseif($r[userfen]<=300){
+                                    	 echo "二级";
+                                    }elseif($r[userfen]<=800){
+                                    	 echo "三级";
+                                    }elseif($r[userfen]<=2000){
+                                    	 echo "四级";
+                                    }elseif($r[userfen]<=5000){
+                                    	 echo "五级";
+                                    }elseif($r[userfen]<=15000){
+                                    	 echo "六级";
+                                    }elseif($r[userfen]<=50000){
+                                    	 echo "七级";
+                                    }elseif($r[userfen]>100000){
+                                    	 echo "八级";
+                                    }else{
+                    					echo "八级";
+                    				}
+                                ?>
+                            </h2>
+                        </div>
+                    </div>
+					<!-- <li><span>选手姓名：</span><span>[!--hai_name--]</span></li> -->
+<!--					<li><span>上传时间：</span><span><?=$name?></span></li>
+-->					<li><span>赛区：</span><span>[!--hai_division--]</span></li>
+					<li><span>分组：</span><span>[!--hai_grouping--]</span></li>
+                    <li><span>观看数量：</span><span class="hongse"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&addclick=1></script>次</span></li>
+					<li><span>目前票数：</span><span class="hongse">
+                    	<?php
+                        $id=$_GET['id'];
+						$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");
+						        echo $tou[tou_num];
+                        ?>
+                    票</span></li>
+                    <div class="audition-member-share">
+						<!-- JiaThis Button BEGIN -->
+                        <div class="jiathis_style_32x32">
+                            <a class="jiathis_button_weixin"></a>
+                            <a class="jiathis_button_tsina"></a>
+                            <a class="jiathis_button_qzone"></a>
+                            <a class="jiathis_button_tqq"></a>
+                            <a class="jiathis_button_fb"></a>
+                            <a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+                            <a class="jiathis_counter_style"></a>
+                        </div>
+                        <script type="text/javascript" >
+                            var jiathis_config={
+                                data_track_clickback:true,
+//                                        summary:"摘要",//摘要
+//                                        title:"标题",//标题
+                                pic:"<?= $userpic ?>",//图片
+                                //	url:"url",//url
+                                shortUrl:false,
+                                hideMore:false
+                            }
+                        </script>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
+					</div>
+				</ul>
+			</div>
+			<div class="saishiMsg saishiVideo pic-toupiao clearfix">
+				<!-- 此处插入视频 ·························································-->
+				<div class="w3cFocus">
+					<div class="w3cFocusIn" >
+								<div class="bd">
+									<ul>
+										<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+										<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+										<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+										<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
+									</ul>
+								</div>
+								<div class="hd">
+									<ul>
+			                        	[!--morepic--]
+										<li><img src="/images/logo.png" /></li>
+										<li><img src="/images/logo.png" /></li>
+										<li><img src="/images/logo.png" /></li>
+										<li><img src="/images/logo.png" /></li>
+									</ul>
+								</div>
+							</div>
+							<a class="prev"  target="_self"></a>
+							<a class="next"  target="_self"></a>
+					</div>
+					<script type="text/javascript">
+			                         // 向服务器请求图片
+						$(function() {
+							$.ajax({
+								url: '/guangchang/photo.php',
+								type: 'post',
+								dataType: 'html',
+								data: {'id_photo' : '[!--id--]'},
+							})
+							.done(function(msg) {
+								console.log("success");
+								console.log({'id_photo' : '[!--id--]'})
+								console.log(msg);
+								$('.bd ul').empty().append(msg);
+								$('.hd ul').empty().append(msg);
+			                                        jQuery(".w3cFocus").slide({ mainCell:".bd ul", effect:"leftLoop", delayTime:300, autoPlay:true });
+							})
+							.fail(function() {
+								console.log("error");
+							}).always(function() {
+			                        window.onload=function(){
+			                           $('.bd li').css('top',$('.bd ul').height()*0.5);
+			                           }
+
+							});
+						});
+					</script>
+
+			  <!-- 此处插入视频 ·························································-->
+				<!--投票提示框开始·············································-->
+                <!--pc提示弹框-->
+                <div class="toupiao-pop toupiao-web">
+                    <i class="toupiao-close close-web"></i>
+                    <div class="ad-img" id="ad-img-web">
+                        <!-- 这里面是广告 -->
+                        <script type="text/javascript">
+                            var Xsrc = 67+parseInt(Math.random()*3);
+                            document.write('<script src='+'http://www.greattone.net/d/js/acmsd/thea'+Xsrc+'.js'+'>'+'<'+'/script>');
+                        </script>
+                    </div>
+                    <div class="toupiao-pop-msg clearfix" >
+                        <div class="in-pop-msg f-l-l">
+                            <span class="pop-suc-fail">投票成功!</span>
+                            <span class="pop-dec">总计<i class="pop-dec-num"></i>票，</span>
+                            <span class="pop-list">排名第<i class="pop-list-num"></i>名！</span>
+                        </div>
+                    </div>
+                </div>
+                <!--H5提示弹框-->
+                <div class="toupiao-pop toupiao-h5">
+                    <i class="close close-h5"></i>
+                    <div class="ad-img">
+                        <!-- 这里面也是广告 -->
+                        <script type="text/javascript">
+                            var Xsrc = 67+parseInt(Math.random()*3);
+                            document.write('<script src='+'http://www.greattone.net/d/js/acmsd/thea'+Xsrc+'.js'+'>'+'<'+'/script>');
+                        </script>
+                    </div>
+                    <div class="toupiao-pop-msg" >
+                        <span class="pop-dec">总计<i class="pop-dec-num"></i>票，</span>
+                        <span class="pop-list">排名第<i class="pop-list-num"></i>名！</span>
+                        <span class="pop-suc-fail">投票成功!</span>
+                    </div>
+                </div>
+                <!--投票提示框结束·············································-->
+            </div>
+			<div class="toupiao"  style="margin-top:0;">
+                <script type="text/javascript" src="/js/toupiao-img.js"></script>
+                <?php
+                	$r=$empire->fetch1("select hai_id from phome_ecms_photo where id=$navinfor[id]");
+                $r=$empire->fetch1("select * from phome_ecms_shop where id=$r[hai_id]");
+                $time = time();
+                $dang=date("Y-m-d",$time);
+                if($dang > $r[huodong_2]){
+
+                $follow='<a target="_self" class="button blue ">投票结束</a>';
+                }else{
+                $follow='<a onclick="follow('.$navinfor[id].')" target="_self" class="button blue " id="follow'.$navinfor[id].'">点击投票</a>';
+                }
+                ?>
+                <?=$follow?>
+            </div>
+            <div class="hai-con">[!--smalltext--]</div>
+            <div class="video-ad" style="width: 960px;height: 90px; margin:10px 0;">
+                    <script src="http://www.greattone.net/d/js/acmsd/thea65.js"></script>
+                </div>
+		</div>
+		<!-- 第一.全站动态部分············································· -->
+		<div class="rightMiddle qzdtList">
+			<!-- 内容··························· -->
+				<div class="qzdtContent">
+					<!-- 第一，当前海选部分····························· -->
+					<div class="yinyuemingren">
+						<!-- 分类行····································· -->
+						<div class="fenlei borTop">
+							<ul class="clearfix fenleiFuck">
+								<li class="current"><a href="javascript:;">评论</a><span></span></li>
+							</ul>
+						</div>
+						<!-- 分类行结束································· -->
+						<!-- 排序行····································· -->
+
+						<!-- 列表内容区域······························· -->
+						<div class="liebiao">
+								<!-- 此处插入畅言······················· -->
+								<div class="pl-520am" data-id="[!--id--]" data-classid="[!--classid--]"></div>
+								<!-- 此处插入畅言······················ -->
+						</div>
+						<!-- 列表内容区域结束··························· -->
+					</div>
+					<!-- 当前海选部分结束······························ -->
+				</div>
+			<!-- 内容··························· -->
+			</div>
+		<!-- 全站动态内容部分结束······························ -->
+
+	</div>
+	<!-- 中间内容部分结束·················································· -->
+	<?
+	}
+?>
 	<!-- 手机端新版注册登录界面开始 -->
 	<div class="new-lgn-reg img-reg">
 		<div class="login-container">
@@ -404,134 +748,9 @@ $signPackage = $jssdk->GetSignPackage();
 		</div>
 	</div>
 </div>
-<!-- ····························中间结构结束·································· -->	
+<!-- ····························中间结构结束·································· -->
 <!-- 底部结构开始································································ -->
-<!-- 底部结构开始································································ -->
-<div class="footerWrap">
-	<div class="footBian">
-		<div class="footNavWrap clearfix">
-			<div class="footNav clearfix">
-				<dl>
-					<dd><a href="[!--news.url--]guangchang">音乐广场</a></dd>
-				</dl>
-				<dl>
-					<dd><a href="[!--news.url--]news">音乐资讯</a></dd>
-					<dt><a href="[!--news.url--]news/yinyue">音乐新闻</a></dt>
-					<dt><a href="[!--news.url--]news/yueqi">音乐资讯</a></dt>
-					<dt><a href="[!--news.url--]news/huodong">音乐活动</a></dt>
-				</dl>
-				<!--<dl>
-					<dd><a href="[!--news.url--]mingren">音乐名人</a></dd>
-					<dt><a href="[!--news.url--]mingren">名人名家</a></dt>
-					<dt><a href="[!--news.url--]mingren">音乐之星</a></dt>
-
-				</dl>-->
-				<dl>
-					<dd><a href="[!--news.url--]haixuan">各地海选</a></dd>
-					<dt><a href="[!--news.url--]haixuan">中华好琴声</a></dt>
-					<dt><a href="[!--news.url--]haixuan">城市音乐会</a></dt>
-					<dt><a href="[!--news.url--]haixuan">两岸大师班</a></dt>
-				</dl>
-				<dl>
-					<dd><a href="[!--news.url--]laoshi">音乐老师</a></dd>
-					<dt><a href="[!--news.url--]laoshi">键盘老师</a></dt>
-					<dt><a href="[!--news.url--]laoshi">吉他老师</a></dt>
-					<dt><a href="[!--news.url--]laoshi">弦乐老师</a></dt>
-					<dt><a href="[!--news.url--]laoshi">管乐老师</a></dt>
-					<dt><a href="[!--news.url--]laoshi">民乐老师</a></dt>
-					<dt><a href="[!--news.url--]laoshi">电声老师</a></dt>
-					<dt><a href="[!--news.url--]laoshi">民乐老师</a></dt>
-
-				</dl>
-				<dl>
-					<dd><a href="[!--news.url--]jiaoshi">音乐教室</a></dd>
-				</dl>
-				<!--<dl>
-					<dd><a href="[!--news.url--]">音乐乐团</a></dd>
-					<dt><a href="[!--news.url--]">管乐</a></dt>
-					<dt><a href="[!--news.url--]">弦乐</a></dt>
-					<dt><a href="[!--news.url--]">交响乐</a></dt>
-					<dt><a href="[!--news.url--]">民乐</a></dt>
-					<dt><a href="[!--news.url--]">合唱</a></dt>
-				</dl>-->
-
-				<dl>
-					<dd><a href="[!--news.url--]zhibo">直播课堂</a></dd>
-
-				</dl>
-				<dl>
-					<dd><a href="[!--news.url--]yuepu">音乐乐谱</a></dd>
-					<dt><a href="[!--news.url--]">钢琴</a></dt>
-					<dt><a href="[!--news.url--]">提琴</a></dt>
-					<dt><a href="[!--news.url--]">吉他</a></dt>
-				</dl>
-
-				<!--<dl>
-					<dd><a href="[!--news.url--]">音乐百科</a></dd>
-
-				</dl>
-				<dl>
-					<dd><a href="[!--news.url--]">音乐电台</a></dd>
-
-				</dl>-->
-				<dl>
-					<dd><a href="[!--news.url--]bbs">声粉论坛</a></dd>
-					<dt><a href="[!--news.url--]">乐迷互动</a></dt>
-					<dt><a href="[!--news.url--]">学习交流</a></dt>
-					<dt><a href="[!--news.url--]">乐器维修</a></dt>
-					<dt><a href="[!--news.url--]">网站建议</a></dt>
-				</dl>
-
-				<dl>
-					<dd><a>网站服务</a></dd>
-					<dt><a href="[!--news.url--]t/guanggao/html/index-ad.html">广告服务</a></dt>
-					<dt><a href="[!--news.url--]">联系我们</a></dt>
-					<dt><a href="[!--news.url--]">关于我们</a></dt>
-					<dt><a href="[!--news.url--]">CEO专栏</a></dt>
-					<dt><a href="[!--news.url--]">版权声明</a></dt>
-
-				</dl>
-			</div>
-			<div class="footCode clearfix">
-				<div class="firstCode">
-					<a href="javascript:;">
-						<img src="[!--news.url--]images/foot_weixin.jpg" alt="">
-						<h3>扫一扫关注微信</h3>
-					</a>
-				</div>
-				<div class="secondCode">
-					<a href="javascript:;">
-						<img src="[!--news.url--]images/foot_app.png" alt="">
-						<h3>扫一扫下载APP</h3>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="footBtm clearfix">
-			<div class="h1">
-				<a href="javascript:;">
-					<h1>好琴声</h1>
-				</a>
-			</div>
-			<div class="lianxi">
-				<div class="footTil">
-					<span>好琴声</span>
-					<i>0 2 1 - 6 7 7 0 3 9 5 6</i>
-<!--					<p class="zhanzhang"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256607007'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256607007%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></p>-->
-				</div>
-				<div class="footcon">
-					<p>Copyright © 2015 greattone.net All rights reserved. 好琴声版权所有 沪ICP备09050100号</p>
-					<p>公司总部地址：上海市金山区枫泾镇枫湾路531号科创小镇二楼 24小时服务热线：15216849061 合作QQ：14679828 , 2691608001 </p>
-					<p>台湾公司地址：新竹市四維路80號  電話：03-528-5680 E-mail：chengyun0423@franzsandner.com</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- 底部结构开始································································ -->
+[!--temp.wei--]
 <!-- 底部结构开始································································ -->
 </body>
 </html>

@@ -5,6 +5,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/广场活动页面.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" afterPath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/海选投票-图片/index.php" afterPath="$PROJECT_DIR$/php/海选投票-图片/index.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,19 +51,28 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/海选投票-图片/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="404" column="10" selection-start-line="404" selection-start-column="10" selection-end-line="404" selection-end-column="10" />
+            <state relative-caret-position="395">
+              <caret line="749" column="6" selection-start-line="749" selection-start-column="6" selection-end-line="749" selection-end-column="6" />
               <folding>
-                <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1476779888542" expanded="true" signature="943:994" ph="select tou_n... phome_ecms_photo" />
-                <marker date="1476779888542" expanded="true" signature="1593:1646" ph="select hai_i... phome_ecms_photo" />
-                <marker date="1476779888542" expanded="true" signature="1674:1734" ph="select title... phome_ecms_shop" />
-                <marker date="1476779888542" expanded="true" signature="3234:3285" ph="select tou_n... phome_ecms_photo" />
-                <marker date="1476779888542" expanded="true" signature="5903:5954" ph="select tou_n... phome_ecms_photo" />
-                <marker date="1476779888542" expanded="true" signature="9979:10024" ph="select hai_i... phome_ecms_photo" />
-                <marker date="1476779888542" expanded="true" signature="10077:10116" ph="select * fro... phome_ecms_shop" />
+                <element signature="n#script#6;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1476780119205" expanded="true" signature="943:994" ph="select tou_n... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="1944:1997" ph="select hai_i... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="2025:2085" ph="select title... phome_ecms_shop" />
+                <marker date="1476780119205" expanded="true" signature="3681:3732" ph="select tou_n... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="7210:7261" ph="select tou_n... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="13169:13214" ph="select hai_i... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="13267:13306" ph="select * fro... phome_ecms_shop" />
+                <marker date="1476780119205" expanded="true" signature="15938:15983" ph="select useri... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="16041:16095" ph="select userp... phome_enewsmemberadd" />
+                <marker date="1476780119205" expanded="true" signature="16585:16636" ph="select userf... phome_enewsmember" />
+                <marker date="1476780119205" expanded="true" signature="18369:18420" ph="select tou_n... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="24301:24346" ph="select hai_i... phome_ecms_photo" />
+                <marker date="1476780119205" expanded="true" signature="24399:24438" ph="select * fro... phome_ecms_shop" />
               </folding>
             </state>
           </provider>
@@ -305,7 +315,7 @@
       <workItem from="1476412283260" duration="14226000" />
       <workItem from="1476664239116" duration="623000" />
       <workItem from="1476665980058" duration="10350000" />
-      <workItem from="1476750243013" duration="21678000" />
+      <workItem from="1476750243013" duration="21856000" />
     </task>
     <task id="LOCAL-00001" summary="去除">
       <created>1476164634362</created>
@@ -391,11 +401,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476772962372</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="海选投票图片&#10;">
+      <created>1476779967016</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1476779967016</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65012000" />
+    <option name="totallyTimeSpent" value="65190000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -408,13 +425,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2984127" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22433862" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22433862" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -470,7 +487,8 @@
     <MESSAGE value="老师空间" />
     <MESSAGE value="老师空间,弹框提示最终版" />
     <MESSAGE value="教室空间原始备份" />
-    <option name="LAST_COMMIT_MESSAGE" value="教室空间原始备份" />
+    <MESSAGE value="海选投票图片&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="海选投票图片&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -919,19 +937,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/海选投票-图片/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="404" column="10" selection-start-line="404" selection-start-column="10" selection-end-line="404" selection-end-column="10" />
+        <state relative-caret-position="395">
+          <caret line="749" column="6" selection-start-line="749" selection-start-column="6" selection-end-line="749" selection-end-column="6" />
           <folding>
-            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1476779888542" expanded="true" signature="943:994" ph="select tou_n... phome_ecms_photo" />
-            <marker date="1476779888542" expanded="true" signature="1593:1646" ph="select hai_i... phome_ecms_photo" />
-            <marker date="1476779888542" expanded="true" signature="1674:1734" ph="select title... phome_ecms_shop" />
-            <marker date="1476779888542" expanded="true" signature="3234:3285" ph="select tou_n... phome_ecms_photo" />
-            <marker date="1476779888542" expanded="true" signature="5903:5954" ph="select tou_n... phome_ecms_photo" />
-            <marker date="1476779888542" expanded="true" signature="9979:10024" ph="select hai_i... phome_ecms_photo" />
-            <marker date="1476779888542" expanded="true" signature="10077:10116" ph="select * fro... phome_ecms_shop" />
+            <element signature="n#script#6;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1476780119205" expanded="true" signature="943:994" ph="select tou_n... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="1944:1997" ph="select hai_i... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="2025:2085" ph="select title... phome_ecms_shop" />
+            <marker date="1476780119205" expanded="true" signature="3681:3732" ph="select tou_n... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="7210:7261" ph="select tou_n... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="13169:13214" ph="select hai_i... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="13267:13306" ph="select * fro... phome_ecms_shop" />
+            <marker date="1476780119205" expanded="true" signature="15938:15983" ph="select useri... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="16041:16095" ph="select userp... phome_enewsmemberadd" />
+            <marker date="1476780119205" expanded="true" signature="16585:16636" ph="select userf... phome_enewsmember" />
+            <marker date="1476780119205" expanded="true" signature="18369:18420" ph="select tou_n... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="24301:24346" ph="select hai_i... phome_ecms_photo" />
+            <marker date="1476780119205" expanded="true" signature="24399:24438" ph="select * fro... phome_ecms_shop" />
           </folding>
         </state>
       </provider>
