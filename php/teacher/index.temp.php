@@ -272,13 +272,16 @@ if ($dangid != 0) {
                             if ($zjj != 11) {
                                 ?>
                                 <!-- sweetalert2 need -->
+                                <script>
+                                    var ieType = document.getElementsByClassName('showAlert');
+                                </script>
                                 <link rel="stylesheet" href="/css/sweetalert2.min.css">
                                 <script src="/js/es6-promise.min.js"></script> <!-- IE support -->
-                                <script src="/css/sweetalert2.min.js"></script>
+                                <script src="/js/sweetalert2.min.js"></script>
                                 <script>
                                     $(function () {
                                         $('.showAlert').on('click', function () {
-                                            swal('提示：', '你不是本老师下的学生，无法查看!', 'error').done()
+                                            swal('提示：', '你不是本老师下的学生，无法查看!', 'error').done();
                                         });
                                     })
                                 </script>
@@ -290,9 +293,9 @@ if ($dangid != 0) {
                                 <li class="current"><a href="javascript:;" target="_self" >老师介绍</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">推荐视频</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">课程中心</a><span></span></li>
-                                <li class="showAlert"><a href="javascript:;" target="_self">全部学员</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">在线直播</a><span></span></li>
-                                <li class="discuss-area-btn class="showAlert""><a href="javascript:;" target="_self">讨论区</a><span></span></li>
+                                <li class="showAlert"><a href="javascript:;" target="_self">全部学员</a><span></span></li>
+                                <li class="discuss-area-btn showAlert"><a href="javascript:;" target="_self">讨论区</a><span></span></li>
                             </ul>
                         </div>
                         <!-- 分类行结束································· -->
@@ -378,6 +381,7 @@ if ($dangid != 0) {
                                 ?>
                             </ul>
                             <!-- 课程中心·············································································· -->
+
                             <ul class="liebiaoFuck liebiaoShow  jiaoshiVideo clearfix">
                                 <?
                                 $friend_sql = "select * from {$dbtbpre}ecms_shop a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid where a.classid=58 and a.userid='$userid' order by a.userid desc limit 50";
@@ -399,6 +403,22 @@ if ($dangid != 0) {
                                     <?
                                 }
                                 ?>
+                            </ul>
+                            <!-- 在线直播·································································· -->
+                            <ul class="liebiaoFuck liebiaoShow current jiaoshiVideo clearfix">
+<!--                                <li>-->
+<!--                                    <a href="--><?//= $r['titleurl'] ?><!--">-->
+<!--                                        <i class="iconfont">&#xe63b;</i>-->
+<!--                                        <img src="--><?//= $r['titlepic'] ?><!--">-->
+<!--                                        <div class="xingming biaoti">-->
+<!--                                            <span>--><?//= $r['title'] ?><!--</span>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!---->
+<!--                                    <div class="guanzhu xingming clearfix">-->
+<!--                                        <span>时间:</span><em>5-30 19:00-5-30 21:00</em>-->
+<!--                                    </div>-->
+<!--                                </li>-->
                             </ul>
                             <!-- 全部学员··············································································-->
                             <?php
@@ -442,22 +462,7 @@ if ($dangid != 0) {
                                 <?
                             }
                             ?>
-                            <!-- 在线直播·································································· -->
-                            <ul class="liebiaoFuck liebiaoShow current jiaoshiVideo clearfix">
-                                <li>
-                                    <a href="<?= $r['titleurl'] ?>">
-                                        <i class="iconfont">&#xe63b;</i>
-                                        <img src="<?= $r['titlepic'] ?>">
-                                        <div class="xingming biaoti">
-                                            <span><?= $r['title'] ?></span>
-                                        </div>
-                                    </a>
 
-                                    <div class="guanzhu xingming clearfix">
-                                        <span>时间:</span><em>5-30 19:00-5-30 21:00</em>
-                                    </div>
-                                </li>
-                            </ul>
                             <!-- 讨论区··············································································-->
                             <?php
                             if ($zjj == 11) {
