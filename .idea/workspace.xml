@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="">
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="教室空间原始备份">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/广场活动页面.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/teacher/index.temp.php" afterPath="$PROJECT_DIR$/php/teacher/index.temp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" afterPath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,112 +25,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.temp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/teacher/index.temp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="384" column="7" selection-start-line="384" selection-start-column="7" selection-end-line="384" selection-end-column="7" />
-              <folding>
-                <element signature="e#15471#15798#0#HTML" expanded="false" />
-                <element signature="e#15983#20660#0#HTML" expanded="false" />
-                <element signature="e#20810#22211#0#HTML" expanded="false" />
-                <element signature="e#23569#25709#0#HTML" expanded="false" />
-                <element signature="e#26072#29767#0#HTML" expanded="false" />
-                <marker date="1476771444023" expanded="true" signature="879:954" ph="select feedu... $" />
-                <marker date="1476771444023" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
-                <marker date="1476771444023" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1476771444023" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1476771444023" expanded="true" signature="3288:3296" ph="..." />
-                <marker date="1476771444023" expanded="true" signature="5191:5268" ph="select follo... $" />
-                <marker date="1476771444023" expanded="true" signature="7050:7111" ph="select count... phome_ecms_photo" />
-                <marker date="1476771444023" expanded="true" signature="7512:7571" ph="select count... phome_enewspl_1" />
-                <marker date="1476771444023" expanded="true" signature="9530:9603" ph="select feedu... $" />
-                <marker date="1476771444023" expanded="true" signature="15600:15663" ph="select sayte... phome_enewsmemberadd" />
-                <marker date="1476771444023" expanded="true" signature="16184:16268" ph="select yaoqi... $" />
-                <marker date="1476771444023" expanded="true" signature="16718:16776" ph="SELECT yaoqi... $" />
-                <marker date="1476771444023" expanded="true" signature="18677:18885" ph="select * fro... $" />
-                <marker date="1476771444023" expanded="true" signature="20952:21119" ph="select * fro... $" />
-                <marker date="1476771444023" expanded="true" signature="23892:24057" ph="select * fro... $" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xin_yueqipinpai.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34156/home/hao/js/xin_yueqipinpai.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="470" column="32" selection-start-line="470" selection-start-column="32" selection-end-line="470" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.temp.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/jiaoshi/index.temp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1476410263000" expanded="true" signature="879:954" ph="select feedu... $" />
-                <marker date="1476410263000" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
-                <marker date="1476410263000" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1476410263000" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1476410263000" expanded="true" signature="4744:4752" ph="..." />
-                <marker date="1476410263000" expanded="true" signature="6647:6724" ph="select follo... $" />
-                <marker date="1476410263000" expanded="true" signature="8507:8568" ph="select count... phome_ecms_photo" />
-                <marker date="1476410263000" expanded="true" signature="8969:9028" ph="select count... phome_enewspl_1" />
-                <marker date="1476410263000" expanded="true" signature="10987:11060" ph="select feedu... $" />
-                <marker date="1476410263000" expanded="true" signature="17475:17538" ph="select sayte... phome_enewsmemberadd" />
-                <marker date="1476410263000" expanded="true" signature="22321:22422" ph="select num_s... phome_enewsmemberadd" />
-                <marker date="1476410263000" expanded="true" signature="37778:37856" ph="select * fro... phome_enews_feed" />
-                <marker date="1476410263000" expanded="true" signature="38012:38076" ph="select userp... phome_enewsmemberadd" />
-                <marker date="1476410263000" expanded="true" signature="39754:39838" ph="select yaoqi... $" />
-                <marker date="1476410263000" expanded="true" signature="40288:40346" ph="SELECT yaoqi... $" />
-                <marker date="1476410263000" expanded="true" signature="42247:42455" ph="select * fro... $" />
-                <marker date="1476410263000" expanded="true" signature="44521:44688" ph="select * fro... $" />
-                <marker date="1476410263000" expanded="true" signature="46206:46373" ph="select * fro... $" />
-                <marker date="1476410263000" expanded="true" signature="48202:48274" ph="select yaoqi... $" />
-                <marker date="1476410263000" expanded="true" signature="48724:48782" ph="SELECT yaoqi... $" />
-                <marker date="1476410263000" expanded="true" signature="50672:50831" ph="select * fro... $" />
-                <marker date="1476410263000" expanded="true" signature="52850:53015" ph="select * fro... $" />
-                <marker date="1476410263000" expanded="true" signature="55169:55338" ph="select * fro... $" />
-                <marker date="1476410263000" expanded="true" signature="62062:62131" ph="select photo... phome_enewsmemberadd" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.temp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp25319/home/hao/e/space/template/teacher/header.temp.php">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01221/home/hao/e/space/template/pinpai/header.temp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+            <state relative-caret-position="154">
+              <caret line="217" column="79" selection-start-line="217" selection-start-column="79" selection-end-line="217" selection-end-column="79" />
               <folding>
-                <marker date="1476768349820" expanded="true" signature="112:179" ph="select * fro... $" />
-                <marker date="1476768349820" expanded="true" signature="785:849" ph="select * fro... $" />
-                <marker date="1476768349820" expanded="true" signature="1130:1243" ph="select mid,q... $" />
-                <marker date="1476768349820" expanded="true" signature="1311:1377" ph="select id fr... $" />
-                <marker date="1476768349820" expanded="true" signature="2018:2070" ph="select * fro... $" />
-                <marker date="1476768349820" expanded="true" signature="2630:2693" ph="select feedu... $" />
-                <marker date="1476768349820" expanded="true" signature="2916:2990" ph="select zuiji... $" />
-                <marker date="1476768349820" expanded="true" signature="3040:3124" ph="update ${{$d... " />
-                <marker date="1476768349820" expanded="true" signature="3335:3413" ph="update ${{$d... " />
-                <marker date="1476768349820" expanded="true" signature="3447:3541" ph="update ${{$d... " />
-                <marker date="1476768349820" expanded="true" signature="6386:6403" ph="..." />
-                <marker date="1476768349820" expanded="true" signature="7161:7178" ph="..." />
-                <marker date="1476768349820" expanded="true" signature="15016:15089" ph="select feedu... $" />
+                <marker date="1476776075000" expanded="true" signature="109:176" ph="select * fro... $" />
+                <marker date="1476776075000" expanded="true" signature="744:808" ph="select * fro... $" />
+                <marker date="1476776075000" expanded="true" signature="1068:1181" ph="select mid,q... $" />
+                <marker date="1476776075000" expanded="true" signature="1244:1310" ph="select id fr... $" />
+                <marker date="1476776075000" expanded="true" signature="1906:1958" ph="select * fro... $" />
+                <marker date="1476776075000" expanded="true" signature="2475:2538" ph="select feedu... $" />
+                <marker date="1476776075000" expanded="true" signature="2745:2819" ph="select zuiji... $" />
+                <marker date="1476776075000" expanded="true" signature="2868:2952" ph="update ${{$d... " />
+                <marker date="1476776075000" expanded="true" signature="3155:3233" ph="update ${{$d... " />
+                <marker date="1476776075000" expanded="true" signature="3269:3363" ph="update ${{$d... " />
+                <marker date="1476776075000" expanded="true" signature="12882:12955" ph="select feedu... $" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.temp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32853/home/hao/e/space/template/teacher/footer.temp.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/海选投票-图片/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="937">
-              <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="321">
+              <caret line="404" column="10" selection-start-line="404" selection-start-column="10" selection-end-line="404" selection-end-column="10" />
+              <folding>
+                <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1476779888542" expanded="true" signature="943:994" ph="select tou_n... phome_ecms_photo" />
+                <marker date="1476779888542" expanded="true" signature="1593:1646" ph="select hai_i... phome_ecms_photo" />
+                <marker date="1476779888542" expanded="true" signature="1674:1734" ph="select title... phome_ecms_shop" />
+                <marker date="1476779888542" expanded="true" signature="3234:3285" ph="select tou_n... phome_ecms_photo" />
+                <marker date="1476779888542" expanded="true" signature="5903:5954" ph="select tou_n... phome_ecms_photo" />
+                <marker date="1476779888542" expanded="true" signature="9979:10024" ph="select hai_i... phome_ecms_photo" />
+                <marker date="1476779888542" expanded="true" signature="10077:10116" ph="select * fro... phome_ecms_shop" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,11 +118,16 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp04244/home/hao/js/xin_yinyuelaoshi.js" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp06046/home/hao/js/xin_haixuan.js" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp25737/home/hao/css/xin_yueqipinpai.css" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp01221/home/hao/e/space/template/pinpai/header.temp.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp32853/home/hao/e/space/template/teacher/footer.temp.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp25319/home/hao/e/space/template/teacher/header.temp.php" />
         <option value="$PROJECT_DIR$/php/teacher/index.temp.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp34156/home/hao/js/xin_yueqipinpai.js" />
+        <option value="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
+        <option value="$PROJECT_DIR$/html/广场活动页面.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp46039/home/hao/css/xin_haixuan-phone.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp01221/home/hao/e/space/template/pinpai/header.temp.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp35932/home/hao/e/space/template/pinpai/index.temp.php" />
+        <option value="$PROJECT_DIR$/php/海选投票-图片/index.php" />
       </list>
     </option>
   </component>
@@ -267,7 +206,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jiaoshi" />
+              <option name="myItemId" value="海选投票-图片" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,7 +305,7 @@
       <workItem from="1476412283260" duration="14226000" />
       <workItem from="1476664239116" duration="623000" />
       <workItem from="1476665980058" duration="10350000" />
-      <workItem from="1476750243013" duration="15924000" />
+      <workItem from="1476750243013" duration="21678000" />
     </task>
     <task id="LOCAL-00001" summary="去除">
       <created>1476164634362</created>
@@ -445,11 +384,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476772932255</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="教室空间原始备份">
+      <created>1476772962372</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1476772962372</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59258000" />
+    <option name="totallyTimeSpent" value="65012000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -464,11 +410,11 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2984127" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22433862" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22433862" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -523,41 +469,14 @@
     <MESSAGE value="教室与老师空间分开，此处为老师空间" />
     <MESSAGE value="老师空间" />
     <MESSAGE value="老师空间,弹框提示最终版" />
-    <option name="LAST_COMMIT_MESSAGE" value="老师空间,弹框提示最终版" />
+    <MESSAGE value="教室空间原始备份" />
+    <option name="LAST_COMMIT_MESSAGE" value="教室空间原始备份" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/buyChoose.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/hai-list-new-paixu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/buyChoose.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -808,34 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01221/home/hao/e/space/template/pinpai/header.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
-          <folding>
-            <marker date="1476766907664" expanded="true" signature="109:176" ph="select * fro... $" />
-            <marker date="1476766907664" expanded="true" signature="744:808" ph="select * fro... $" />
-            <marker date="1476766907664" expanded="true" signature="1068:1181" ph="select mid,q... $" />
-            <marker date="1476766907664" expanded="true" signature="1244:1310" ph="select id fr... $" />
-            <marker date="1476766907664" expanded="true" signature="1906:1958" ph="select * fro... $" />
-            <marker date="1476766907664" expanded="true" signature="2475:2538" ph="select feedu... $" />
-            <marker date="1476766907664" expanded="true" signature="2745:2819" ph="select zuiji... $" />
-            <marker date="1476766907664" expanded="true" signature="2868:2952" ph="update ${{$d... " />
-            <marker date="1476766907664" expanded="true" signature="3155:3233" ph="update ${{$d... " />
-            <marker date="1476766907664" expanded="true" signature="3269:3363" ph="update ${{$d... " />
-            <marker date="1476766907664" expanded="true" signature="12890:12963" ph="select feedu... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32853/home/hao/e/space/template/teacher/footer.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="937">
-          <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp25979/home/hao/e/space/template/teacher/index.temp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -857,6 +748,22 @@
             <marker date="1476767959000" expanded="true" signature="21071:21238" ph="select * fro... $" />
             <marker date="1476767959000" expanded="true" signature="23893:24058" ph="select * fro... $" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34156/home/hao/js/xin_yueqipinpai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="470" column="32" selection-start-line="470" selection-start-column="32" selection-end-line="470" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32853/home/hao/e/space/template/teacher/footer.temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -882,9 +789,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp46039/home/hao/css/xin_haixuan-phone.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="116" column="40" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/jiaoshi/index.temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="312" column="79" selection-start-line="312" selection-start-column="79" selection-end-line="312" selection-end-column="79" />
+          <folding>
+            <marker date="1476773105358" expanded="true" signature="879:954" ph="select feedu... $" />
+            <marker date="1476773105358" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
+            <marker date="1476773105358" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1476773105358" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1476773105358" expanded="true" signature="4744:4752" ph="..." />
+            <marker date="1476773105358" expanded="true" signature="6647:6724" ph="select follo... $" />
+            <marker date="1476773105358" expanded="true" signature="8507:8568" ph="select count... phome_ecms_photo" />
+            <marker date="1476773105358" expanded="true" signature="8969:9028" ph="select count... phome_enewspl_1" />
+            <marker date="1476773105358" expanded="true" signature="10987:11060" ph="select feedu... $" />
+            <marker date="1476773105358" expanded="true" signature="17087:17150" ph="select sayte... phome_enewsmemberadd" />
+            <marker date="1476773105358" expanded="true" signature="21933:22034" ph="select num_s... phome_enewsmemberadd" />
+            <marker date="1476773105358" expanded="true" signature="37390:37468" ph="select * fro... phome_enews_feed" />
+            <marker date="1476773105358" expanded="true" signature="37624:37688" ph="select userp... phome_enewsmemberadd" />
+            <marker date="1476773105358" expanded="true" signature="39366:39450" ph="select yaoqi... $" />
+            <marker date="1476773105358" expanded="true" signature="39900:39958" ph="SELECT yaoqi... $" />
+            <marker date="1476773105358" expanded="true" signature="41859:42067" ph="select * fro... $" />
+            <marker date="1476773105358" expanded="true" signature="44133:44300" ph="select * fro... $" />
+            <marker date="1476773105358" expanded="true" signature="45818:45985" ph="select * fro... $" />
+            <marker date="1476773105358" expanded="true" signature="47814:47886" ph="select yaoqi... $" />
+            <marker date="1476773105358" expanded="true" signature="48336:48394" ph="SELECT yaoqi... $" />
+            <marker date="1476773105358" expanded="true" signature="50284:50443" ph="select * fro... $" />
+            <marker date="1476773105358" expanded="true" signature="52462:52627" ph="select * fro... $" />
+            <marker date="1476773105358" expanded="true" signature="54781:54950" ph="select * fro... $" />
+            <marker date="1476773105358" expanded="true" signature="61674:61743" ph="select photo... phome_enewsmemberadd" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/广场活动页面.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3369">
+          <caret line="108" column="50" selection-start-line="108" selection-start-column="50" selection-end-line="108" selection-end-column="50" />
+          <folding>
+            <element signature="n#script#6;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7111#7117#0" expanded="false" />
+            <element signature="e#7117#7123#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/teacher/index.temp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
+        <state relative-caret-position="-7">
           <caret line="384" column="7" selection-start-line="384" selection-start-column="7" selection-end-line="384" selection-end-column="7" />
           <folding>
             <element signature="e#15471#15798#0#HTML" expanded="false" />
@@ -911,43 +872,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34156/home/hao/js/xin_yueqipinpai.js">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp35932/home/hao/e/space/template/pinpai/index.temp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="470" column="32" selection-start-line="470" selection-start-column="32" selection-end-line="470" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="308">
+          <caret line="194" column="34" selection-start-line="194" selection-start-column="34" selection-end-line="194" selection-end-column="34" />
+          <folding>
+            <marker date="1476779581291" expanded="true" signature="960:1035" ph="select feedu... $" />
+            <marker date="1476779581291" expanded="true" signature="1323:1384" ph="SELECT feedu... $" />
+            <marker date="1476779581291" expanded="true" signature="2239:2308" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1476779581291" expanded="true" signature="2573:2644" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1476779581291" expanded="true" signature="5606:5614" ph="..." />
+            <marker date="1476779581291" expanded="true" signature="7052:7113" ph="select * fro... $" />
+            <marker date="1476779581291" expanded="true" signature="9890:9963" ph="select feedu... $" />
+            <marker date="1476779581291" expanded="true" signature="14861:14945" ph="select newst... phome_ecms_brand" />
+            <marker date="1476779581291" expanded="true" signature="16547:16655" ph="select * fro... $" />
+            <marker date="1476779581291" expanded="true" signature="17804:17912" ph="select * fro... $" />
+            <marker date="1476779581291" expanded="true" signature="19069:19177" ph="select * fro... $" />
+            <marker date="1476779581291" expanded="true" signature="20330:20439" ph="select * fro... $" />
+            <marker date="1476779581291" expanded="true" signature="21591:21701" ph="select * fro... $" />
+            <marker date="1476779581291" expanded="true" signature="36014:36086" ph="select * fro... phome_ecms_brand" />
+            <marker date="1476779581291" expanded="true" signature="38802:38891" ph="select * fro... $" />
+            <marker date="1476779581291" expanded="true" signature="40145:40214" ph="select photo... phome_enewsmemberadd" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/jiaoshi/index.temp.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01221/home/hao/e/space/template/pinpai/header.temp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="154">
+          <caret line="217" column="79" selection-start-line="217" selection-start-column="79" selection-end-line="217" selection-end-column="79" />
           <folding>
-            <marker date="1476410263000" expanded="true" signature="879:954" ph="select feedu... $" />
-            <marker date="1476410263000" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
-            <marker date="1476410263000" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1476410263000" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1476410263000" expanded="true" signature="4744:4752" ph="..." />
-            <marker date="1476410263000" expanded="true" signature="6647:6724" ph="select follo... $" />
-            <marker date="1476410263000" expanded="true" signature="8507:8568" ph="select count... phome_ecms_photo" />
-            <marker date="1476410263000" expanded="true" signature="8969:9028" ph="select count... phome_enewspl_1" />
-            <marker date="1476410263000" expanded="true" signature="10987:11060" ph="select feedu... $" />
-            <marker date="1476410263000" expanded="true" signature="17475:17538" ph="select sayte... phome_enewsmemberadd" />
-            <marker date="1476410263000" expanded="true" signature="22321:22422" ph="select num_s... phome_enewsmemberadd" />
-            <marker date="1476410263000" expanded="true" signature="37778:37856" ph="select * fro... phome_enews_feed" />
-            <marker date="1476410263000" expanded="true" signature="38012:38076" ph="select userp... phome_enewsmemberadd" />
-            <marker date="1476410263000" expanded="true" signature="39754:39838" ph="select yaoqi... $" />
-            <marker date="1476410263000" expanded="true" signature="40288:40346" ph="SELECT yaoqi... $" />
-            <marker date="1476410263000" expanded="true" signature="42247:42455" ph="select * fro... $" />
-            <marker date="1476410263000" expanded="true" signature="44521:44688" ph="select * fro... $" />
-            <marker date="1476410263000" expanded="true" signature="46206:46373" ph="select * fro... $" />
-            <marker date="1476410263000" expanded="true" signature="48202:48274" ph="select yaoqi... $" />
-            <marker date="1476410263000" expanded="true" signature="48724:48782" ph="SELECT yaoqi... $" />
-            <marker date="1476410263000" expanded="true" signature="50672:50831" ph="select * fro... $" />
-            <marker date="1476410263000" expanded="true" signature="52850:53015" ph="select * fro... $" />
-            <marker date="1476410263000" expanded="true" signature="55169:55338" ph="select * fro... $" />
-            <marker date="1476410263000" expanded="true" signature="62062:62131" ph="select photo... phome_enewsmemberadd" />
+            <marker date="1476776075000" expanded="true" signature="109:176" ph="select * fro... $" />
+            <marker date="1476776075000" expanded="true" signature="744:808" ph="select * fro... $" />
+            <marker date="1476776075000" expanded="true" signature="1068:1181" ph="select mid,q... $" />
+            <marker date="1476776075000" expanded="true" signature="1244:1310" ph="select id fr... $" />
+            <marker date="1476776075000" expanded="true" signature="1906:1958" ph="select * fro... $" />
+            <marker date="1476776075000" expanded="true" signature="2475:2538" ph="select feedu... $" />
+            <marker date="1476776075000" expanded="true" signature="2745:2819" ph="select zuiji... $" />
+            <marker date="1476776075000" expanded="true" signature="2868:2952" ph="update ${{$d... " />
+            <marker date="1476776075000" expanded="true" signature="3155:3233" ph="update ${{$d... " />
+            <marker date="1476776075000" expanded="true" signature="3269:3363" ph="update ${{$d... " />
+            <marker date="1476776075000" expanded="true" signature="12882:12955" ph="select feedu... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/海选投票-图片/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="404" column="10" selection-start-line="404" selection-start-column="10" selection-end-line="404" selection-end-column="10" />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1476779888542" expanded="true" signature="943:994" ph="select tou_n... phome_ecms_photo" />
+            <marker date="1476779888542" expanded="true" signature="1593:1646" ph="select hai_i... phome_ecms_photo" />
+            <marker date="1476779888542" expanded="true" signature="1674:1734" ph="select title... phome_ecms_shop" />
+            <marker date="1476779888542" expanded="true" signature="3234:3285" ph="select tou_n... phome_ecms_photo" />
+            <marker date="1476779888542" expanded="true" signature="5903:5954" ph="select tou_n... phome_ecms_photo" />
+            <marker date="1476779888542" expanded="true" signature="9979:10024" ph="select hai_i... phome_ecms_photo" />
+            <marker date="1476779888542" expanded="true" signature="10077:10116" ph="select * fro... phome_ecms_shop" />
           </folding>
         </state>
       </provider>
