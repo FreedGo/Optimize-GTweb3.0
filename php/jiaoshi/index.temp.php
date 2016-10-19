@@ -310,15 +310,7 @@ if ($dangid != 0) {
                         <!-- 分类行····································· -->
                         <div class="fenlei teacher-space borTop">
                             <ul class="clearfix fenleiFuck">
-                                <li class="current"><a href="javascript:;">
-                                        <?php
-                                        if ($groupid == 4) {
-                                            echo "琴行介绍";
-                                        } else {
-                                            echo "老师介绍";
-                                        }
-                                        ?>
-                                    </a><span></span></li>
+                                <li class="current"><a href="javascript:;">琴行介绍</a><span></span></li>
                                 <li><a href="javascript:;">推荐视频</a><span></span></li>
                                 <li><a href="javascript:;">课程中心</a><span></span></li>
                                 <?php
