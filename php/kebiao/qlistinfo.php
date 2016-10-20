@@ -137,6 +137,49 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 
 		</script>
 		<!--end   课表依赖-->
+		<!--		日期控件依赖-->
+		<link rel="stylesheet" type="text/css" href="/e/data/html/kebiao/lib/lq.datetimepick.css"/>
+		<script src='/e/data/html/kebiao/lib/selectUi.js' type='text/javascript'></script>
+		<script src='/e/data/html/kebiao/lib/lq.datetimepick.js' type='text/javascript'></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#datetimepicker1").on("click",function(e){
+					e.stopPropagation();
+					$(this).lqdatetimepicker({
+						css : 'datetime-hour'
+					});
+				});
+				$("#datetimepicker2").on("click",function(e){
+					e.stopPropagation();
+					$(this).lqdatetimepicker({
+						css : 'datetime-hour'
+					});
+				});
+				$("#datetimepicker3").on("click",function(e){
+					e.stopPropagation();
+					$(this).lqdatetimepicker({
+						css : 'datetime-day',
+						dateType : 'D',
+						selectback : function(){
+						}
+					});
+				});
+			});
+			/*字数限制100个*/
+			$(function () {
+				$("#textInput").on("input propertychange", function() {
+					var $this = $(this),
+						_val = $this.val(),
+						count = "";
+					if (_val.length > 100) {
+						$this.val(_val.substring(0, 100));
+					}
+					count = 100 - $this.val().length;
+					$("#text-count").text(count);
+				});
+			});
+		</script>
+		<!--end日期控件依赖-->
 		<div class="laoshiguanli">
 			<div class="www360buy" style="margin:0 auto">
 			<div class="hd">
@@ -155,72 +198,50 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 	                <!-- 发布租赁 -->
 					<ul class="lh dengdai fabukecheng">
 						<form class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="ecms.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
-						<input type=hidden value=MAddInfo name=enews> <input type=hidden value=59 name=classid>
-						<input name=id type=hidden id="id" value=>
-						<input name=mid type=hidden id="mid" value=15>
-						<!----返回地址---->
-						<style>
-							.addKecheng>li{margin-bottom: 20px;}
-						</style>
-						<input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
-							<li class="clearfix"><span>琴房名称：</span><input required type="text" name="title"></li>
-							<li class="clearfix"><span>联系电话：</span><input required type="text" name="pbrand"></li>
-							<li class="clearfix"><span>琴房价格：</span><input required type="text" name="price" placeholder="元/天"></li>
-							<li class="clearfix"><span>人数上限：</span><input required type="text" name="pmaxnum"></li>
-	                        <li class="clearfix">
-								<span>上传图片：</span>
-								<script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.config.js"></script>
-	                            <script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.all.js"></script>
-	                            <!--<input type="file" name="titlepicfile" size="45">-->
-	                            <script id="upload_ue" name="content" type="text/plain">
-
-							    </script>
-							    <input type="hidden" id="picture" name="titlepic" value="">
-								<div class="imgPre" style="float: left;width:200px;border-radius: 3px;overflow: hidden; "><img id="preview" src="" alt=""></div>
-								<a  class="datepicker lookBtn2" style="float: left;margin-left: 20px;cursor: pointer;" onclick="upImage()">上传图片</a>
-								<script type="text/javascript">
-									var _editor = UE.getEditor('upload_ue');
-					                _editor.ready(function () {
-					                     //设置编辑器不可用
-					                    //_editor.setDisabled();  这个地方要注意 一定要屏蔽
-					                    //隐藏编辑器，因为不会用到这个编辑器实例，所以要隐藏
-					                    _editor.hide();
-
-					                    //侦听图片上传
-					                    _editor.addListener('beforeinsertimage', function (t, arg) {
-
-					                        //将地址赋值给相应的input,只去第一张图片的路径
-
-					                        var imgs;
-					                        for(var a in arg){
-					                            imgs +=arg[a].src+',';
-					                        }
-
-					                         $("#picture").attr("value", arg[0].src);
-					                        //图片预览
-					                         $("#preview").attr("src", arg[0].src);
-					                    })
-
-					                 });
-					                //弹出图片上传的对话框
-					                function upImage() {
-					                     var myImage = _editor.getDialog("insertimage");
-					                     myImage.open();
-					                }
-								</script>
+							<input type=hidden value=MAddInfo name=enews> <input type=hidden value=59 name=classid>
+							<input name=id type=hidden id="id" value=>
+							<input name=mid type=hidden id="mid" value=15>
+							<!----返回地址---->
+							<style>
+								.addKecheng>li{margin-bottom: 20px;}
+							</style>
+							<input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
+							<li class="clearfix"><span>课程名称：</span><input required type="text" name="title" placeholder="最多12个字"></li>
+							<li class="clearfix"><span>上课地点：</span><input required type="text" name="pbrand" placeholder="最多12个字"></li>
+							<li class="clearfix"><span>上课日期：</span><input required type="text" name="datepicker" id="datetimepicker3" class="form-control" /></li>
+							<li class="clearfix"><span>开始时间：</span><input required type="text" name="datepicker" id="datetimepicker1" class="form-control" /></li>
+							<li class="clearfix"><span>结束时间：</span><input required type="text" name="datepicker" id="datetimepicker2" class="form-control" /></li>
+							<li class="clearfix">
+								<span>重复周数：</span>
+								<select class="kebiao-select repeat-weeks" name="" >
+									<option value="1">1周</option>
+									<option value="2">2周</option>
+									<option value="3">3周</option>
+									<option value="4">4周</option>
+									<option value="5">5周</option>
+									<option value="6">6周</option>
+									<option value="7">7周</option>
+									<option value="8">8周</option>
+									<option value="9">9周</option>
+									<option value="10">10周</option>
+								</select>
 							</li>
 							<li class="clearfix">
-								<span>琴房描述：</span>
-								<!-- 预留的地div -->
-								<div style='background-color:#D0D0D0' class="qinmiao">
-									<!--<script type="text/javascript" src="/e/extend/UE/ueditor.config.js"></script>
-									<script type="text/javascript" src="/e/extend/UE/ueditor.all.js"></script>-->
-									<script id="UEditor" type="text/plain" name="newstext"></script>
-									<script type=text/javascript>
-											UE.getEditor("UEditor",{initialFrameHeight:300,initialFrameWidth:"100%",Ext:'{"classid":"59","filepass":"1453772598"}'})
-									</script>
-							</div>
-								<!-- 预留的地div -->
+								<span>上课学生：</span>
+								<select class="kebiao-select all-stus" name="" >
+									<option value="张三">张三</option>
+								</select>
+							</li>
+							</li>
+							<li class="clearfix">
+								<span>课程状态：</span>
+								<select class="kebiao-select all-stus" name="" >
+									<option value="张三">张三</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span>备注：</span>
+								<textarea class="kebiao-beizhu" name="" id="textInput" cols="30" rows="10" placeholder="最多100个字"></textarea>
 							</li>
 							<li class="clearfix">
 								<li><span></span><input class="zongse" type="submit"></li>
