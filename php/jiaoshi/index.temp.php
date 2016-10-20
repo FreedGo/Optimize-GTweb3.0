@@ -309,45 +309,37 @@ if ($dangid != 0) {
                     <div class="yinyuemingren">
                         <!-- 分类行····································· -->
                         <div class="fenlei teacher-space borTop">
+                            <?php
+                            if ($zjj != 11) {
+                                ?>
+                                <!-- sweetalert2 need -->
+                                <script>
+                                    var ieType = document.getElementsByClassName('showAlert');
+                                </script>
+                                <link rel="stylesheet" href="/css/sweetalert2.min.css">
+                                <script src="/js/es6-promise.min.js"></script> <!-- IE support -->
+                                <script src="/js/sweetalert2.min.js"></script>
+                                <script>
+                                    $(function () {
+                                        $('.showAlert').on('click', function () {
+                                            swal('提示：', '你不是当前琴行内部成员，无法查看，请登录重试或者关注当前琴行后加入琴行!', 'error').done();
+                                        });
+                                    })
+                                </script>
+                                <!--.......................-->
+                                <?
+                                }
+                            ?>
                             <ul class="clearfix fenleiFuck">
-                                <li class="current"><a href="javascript:;">琴行介绍</a><span></span></li>
-                                <li><a href="javascript:;">推荐视频</a><span></span></li>
-                                <li><a href="javascript:;">课程中心</a><span></span></li>
-                                <?php
-                                    if ($groupid == 4) {
-                                    ?>
-                                    <li><a href="javascript:;">琴房租赁</a><span></span></li>
-                                        <?php
-                                        if ($zjj == 11) {
-                                        ?>
-                                        <li><a href="javascript:;">音乐老师</a><span></span></li>
-                                        <?
-                                        }
-                                    }
-                                ?>
-
-                                <?php
-                                if ($zjj == 11) {
-                                    ?>
-                                    <li><a href="javascript:;">全部学员</a><span></span></li>
-                                    <?
-                                } ?>
-
-                                <?php
-                                    if ($groupid == 4) {
-                                        ?>
-                                        <li><a href="javascript:;">活动公告</a><span></span></li>
-                                        <?
-                                    }
-                                ?>
-                                <li><a href="javascript:;">在线直播</a><span></span></li>
-                                <?php
-                                if ($zjj == 11) {
-                                    ?>
-                                    <li class="discuss-area-btn"><a href="javascript:;">讨论区</a><span></span></li>
-                                    <?
-                                } ?>
-
+                                <li class="current"><a href="javascript:;" target="_self">琴行介绍</a><span></span></li>
+                                <li><a href="javascript:;" target="_self">推荐视频</a><span></span></li>
+                                <li><a href="javascript:;" target="_self">课程中心</a><span></span></li>
+                                <li><a href="javascript:;" target="_self">琴房租赁</a><span></span></li>
+                                <li class="showAlert"><a href="javascript:;" target="_self">音乐老师</a><span></span></li>
+                                <li class="showAlert"><a href="javascript:;" target="_self">全部学员</a><span></span></li>
+                                <li><a href="javascript:;" target="_self">活动公告</a><span></span></li>
+                                <li><a href="javascript:;" target="_self">在线直播</a><span></span></li>
+                                <li class="discuss-area-btn showAlert"><a href="javascript:;" target="_self">讨论区</a><span></span></li>
                             </ul>
                         </div>
                         <!-- 分类行结束································· -->
@@ -363,364 +355,6 @@ if ($dangid != 0) {
                                     $r = $empire->fetch1("select saytext from phome_enewsmemberadd where userid='$userid'");
                                     echo $r[saytext];
                                     ?>
-                                </div>
-                                <!--评论-->
-                                <style type="text/css">
-                                    .readyStar {
-                                        background-color: #eee;
-                                        overflow: hidden;
-                                        zoom: 1;
-                                        height: 40px;
-                                        padding: 25px 0 0 25px;
-                                    }
-
-                                    .totalStar {
-                                        float: left;
-                                    }
-
-                                    .totalStar > div {
-                                        float: left;
-                                    }
-
-                                    .ratystar {
-                                        overflow: hidden;
-                                        zoom: 1;
-                                        width: 144px !important;
-                                    }
-
-                                    .ratystar > img, .ratystar > input {
-                                        float: left;
-                                    }
-
-                                    .stuDiscuss {
-                                        border-top: 1px solid #ddd;
-                                        margin-top: 15px;
-                                    }
-
-                                    .stuDiscuss > h2 {
-                                        font-size: 18px;
-                                        line-height: 40px;
-                                    }
-
-                                    .getStar {
-                                        background-color: #fff;
-                                        padding-left: 0;
-
-                                    }
-
-                                    .stuDisCon {
-                                        width: 936px;
-                                        max-width: 936px;
-                                        padding: 5px;
-                                        border: 1px solid #ddd;
-                                        outline: none;
-                                        min-height: 50px;
-                                    }
-
-                                    .subDis {
-                                        height: 40px;
-                                        padding-top: 15px;
-
-                                    }
-
-                                    .subDis > input {
-                                        float: right;
-                                        padding: 10px 30px;
-                                        background-color: #cb7047;
-                                        border: none;
-                                        color: #FFF;
-                                        font-size: 14px;
-                                    }
-
-                                    .disLeft {
-                                        width: 100px;
-                                        float: left;
-                                    }
-
-                                    .disRight {
-                                        overflow: hidden;
-                                        padding-left: 10px;
-                                    }
-
-                                    .disLeft > a > img {
-                                        width: 100px;
-                                        height: 100px;
-                                    }
-
-                                    .disLeft > a > h2 {
-                                        width: 100%;
-                                        overflow: hidden;
-                                        -ms-text-overflow: ellipsis;
-                                        text-overflow: ellipsis;
-                                        white-space: nowrap;
-                                        font-size: 14px;
-                                        color: #333;
-                                    }
-
-                                    .aleadyDis > ol > li {
-                                        padding: 15px 0;
-                                        border-bottom: #ccc solid 1px;
-                                    }
-
-                                    .disTime {
-                                        padding-bottom: 5px;
-                                    }
-                                </style>
-                                <script type="text/javascript" src="/js/jquery.raty.min.js"></script>
-                                <?
-                                //计算打分
-                                $num = $empire->fetch1("select num_score,num_quality,num_ambient,num_service from phome_enewsmemberadd where userid='$userid'");
-
-                                if (!empty($num[num_score])) {
-
-                                    $num_score = explode("::::::", $num[num_score]);
-                                    $result = count($num_score) - 1;
-                                    for ($i = 0; $i <= $result; $i++) {
-                                        $numsco = $numsco . num + $num_score[$i];
-                                    }
-                                    $num_1 = $numsco / $result;
-                                    $num_1 = round($num_1);
-
-                                    /**********************/
-                                    $num_quality = explode("::::::", $num[num_quality]);
-                                    $result1 = count($num_quality) - 1;
-                                    for ($i = 0; $i <= $result1; $i++) {
-                                        $numsco2 = $numsco2 . num + $num_quality[$i];
-                                    }
-                                    $num_2 = $numsco2 / $result1;
-                                    $num_2 = round($num_2);
-                                    /**********************/
-                                    $num_ambient = explode("::::::", $num[num_ambient]);
-                                    $result3 = count($num_ambient) - 1;
-                                    for ($i = 0; $i <= $result3; $i++) {
-                                        $numsco3 = $numsco3 . num + $num_ambient[$i];
-                                    }
-                                    $num_3 = $numsco3 / $result3;
-                                    $num_3 = round($num_3);
-                                    /**********************/
-                                    $num_service = explode("::::::", $num[num_service]);
-                                    $result4 = count($num_service) - 1;
-                                    for ($i = 0; $i <= $result4; $i++) {
-                                        $numsco4 = $numsco4 . num + $num_service[$i];
-                                    }
-                                    $num_4 = $numsco4 / $result4;
-                                    $num_4 = round($num_4);
-                                } else {
-                                    //新号
-                                    $num_1 = 5;
-                                    $num_2 = 5;
-                                    $num_3 = 5;
-                                    $num_4 = 5;
-                                }
-                                ?>
-                                <script type="text/javascript">
-                                    // $(function() {
-                                    // 	$('#number-callback-demo').raty({
-                                    //         number: function() {
-                                    //           return $(this).attr('data-number');
-                                    //         }
-                                    //       });
-                                    // });
-                                    $(function () {
-                                        // 调用评分插件
-                                        $.fn.raty.defaults.path = '/images/';
-                                        // 当前用户已经获得的评级
-                                        // 1.总分
-                                        $.fn.raty.defaults.scoreName = 'allStar1';//打分的input的name值，可修改
-                                        $('#star1').raty({score: <?=$num_1?>, readOnly: true});//score是回掉的分数
-                                        //2.教学质量
-                                        $.fn.raty.defaults.scoreName = 'techStar1';
-                                        $('#star2').raty({score: <?=$num_2?>, readOnly: true});
-                                        //3.环境
-                                        $.fn.raty.defaults.scoreName = 'soundStar1';
-                                        $('#star3').raty({score: <?=$num_3?> , readOnly: true});
-                                        //4.服务
-                                        $.fn.raty.defaults.scoreName = 'serverStar1';
-                                        $('#star4').raty({score: <?=$num_4?>, readOnly: true});
-
-                                        // 打分的调用
-                                        // 1.总分
-                                        $.fn.raty.defaults.scoreName = 'allStar2';//打分的input的name值，可修改
-                                        $('#star5').raty({score: 5});//score是回掉的分数
-                                        //2.教学质量
-                                        $.fn.raty.defaults.scoreName = 'techStar2';
-                                        $('#star6').raty({score: 5});
-                                        //3.环境
-                                        $.fn.raty.defaults.scoreName = 'soundStar2';
-                                        $('#star7').raty({score: 5});
-                                        //4.服务
-                                        $.fn.raty.defaults.scoreName = 'serverStar2';
-                                        $('#star8').raty({score: 5});
-                                    });
-                                </script>
-                                <div class="jiaoshipinglun">
-                                    <!-- 当前用户已有评分调用 -->
-                                    <div class="readyStar">
-                                        <div class="totalStar">
-                                            <div>总评分：</div>
-                                            <div class="ratystar" id="star1"></div>
-                                        </div>
-                                        <div class="totalStar">
-                                            <div>教学质量：</div>
-                                            <div class="ratystar" id="star2"></div>
-                                        </div>
-                                        <?php
-                                        if ($groupid == 4) {
-                                            ?>
-                                            <div class="totalStar">
-                                                <div>教学环境：</div>
-                                                <div class="ratystar" id="star3"></div>
-                                            </div>
-                                            <?
-                                        }
-                                        ?>
-
-                                        <div class="totalStar">
-                                            <div>服务：</div>
-                                            <div class="ratystar" id="star4"></div>
-                                        </div>
-
-                                    </div>
-                                    <!--结束 当前用户已有评分调用 -->
-                                    <!-- 学生评论开始 --><? $mid = getcvar('mluserid'); ?>
-
-
-                                    <?
-                                    //判断是否为内部学生和老师
-                                    if (!empty($whe)) {
-                                        $whe = explode(",", $whe);
-                                        $num_whe = count($whe) - 1;
-                                        for ($i = 0; $i <= $num_whe; $i++) {
-                                            if ($whe[$i] == $mid) {
-                                                ?>
-                                                <div class="stuDiscuss">
-                                                    <h2>我要评价</h2>
-                                                    <form action="/e/space/template/jiaoshi/pi.php" method=post
-                                                          id="sdtDisStar">
-                                                        <input type="hidden" name="uid" value="<?= $userid ?>"/>
-                                                        <input type="hidden" name="mid" value="<?= $mid ?>"/>
-                                                        <input type="hidden" name="uname" value="<?= $username ?>"/>
-                                                        <input type="hidden" name="mname"
-                                                               value="<?= $mname = getcvar('mlusername'); ?>"/>
-                                                        <!-- 评分 -->
-                                                        <div class="readyStar getStar">
-                                                            <!--<div class="totalStar">
-                                                                <div>总评分：</div>
-                                                                <div class="ratystar" id="star5"></div>
-                                                            </div>-->
-                                                            <div class="totalStar">
-                                                                <div>教学质量：</div>
-                                                                <div class="ratystar" id="star6"></div>
-                                                            </div>
-                                                            <?php
-                                                            if ($groupid == 4) {
-                                                                ?>
-                                                                <div class="totalStar">
-                                                                    <div>教学环境：</div>
-                                                                    <div class="ratystar" id="star7"></div>
-                                                                </div>
-                                                                <?
-                                                            }
-                                                            ?>
-
-                                                            <div class="totalStar">
-                                                                <div>服务：</div>
-                                                                <div class="ratystar" id="star8"></div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- 评论 -->
-                                                        <textarea name="stuDisContent" required class="stuDisCon"
-                                                                  placeholder="请认真评论"></textarea>
-                                                        <div class="subDis">
-                                                            <input type="submit" value="提交">
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <?
-                                            }
-                                        }
-                                    }
-                                    if (!empty($xue)) {
-                                        $xue = explode(",", $xue);
-                                        $num_xue = count($xue) - 1;
-                                        for ($i = 0; $i <= $num_xue; $i++) {
-                                            if ($xue[$i] == $mid) {
-                                                ?>
-                                                <div class="stuDiscuss">
-                                                    <h2>我要评价</h2>
-                                                    <form action="/e/space/template/jiaoshi/pi.php" method=post
-                                                          id="sdtDisStar">
-                                                        <input type="hidden" name="uid" value="<?= $userid ?>"/>
-                                                        <input type="hidden" name="mid" value="<?= $mid ?>"/>
-                                                        <input type="hidden" name="uname" value="<?= $username ?>"/>
-                                                        <input type="hidden" name="mname"
-                                                               value="<?= $mname = getcvar('mlusername'); ?>"/>
-                                                        <!-- 评分 -->
-                                                        <div class="readyStar getStar">
-                                                            <!--<div class="totalStar">
-                                                                <div>总评分：</div>
-                                                                <div class="ratystar" id="star5"></div>
-                                                            </div>-->
-                                                            <div class="totalStar">
-                                                                <div>教学质量：</div>
-                                                                <div class="ratystar" id="star6"></div>
-                                                            </div>
-                                                            <?php
-                                                            if ($groupid == 4) {
-                                                                ?>
-                                                                <div class="totalStar">
-                                                                    <div>教学环境：</div>
-                                                                    <div class="ratystar" id="star7"></div>
-                                                                </div>
-                                                                <?
-                                                            }
-                                                            ?>
-                                                            <div class="totalStar">
-                                                                <div>服务：</div>
-                                                                <div class="ratystar" id="star8"></div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- 评论 -->
-                                                        <textarea name="stuDisContent" required class="stuDisCon"
-                                                                  placeholder="请认真评论"></textarea>
-                                                        <div class="subDis">
-                                                            <input type="submit" value="提交">
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <?
-                                            }
-                                        }
-
-                                    }
-                                    ?>
-                                    <!-- 结束。。学生评论开始 -->
-                                    <div class="aleadyDis">
-                                        <ol>
-                                            <?
-                                            $sql = $empire->query("select * from phome_enews_feed where uid='$userid' order by time desc limit 15");
-                                            while ($no = $empire->fetch($sql)) {
-                                                $pi = $empire->fetch1("select userpic from phome_enewsmemberadd where userid='$no[mid]'");
-                                                ?>
-                                                <li class="clearfix">
-                                                    <div class="disLeft">
-                                                        <a href="/e/space/?userid=<?= $no[mid] ?>">
-                                                            <img src="<?= $pi[userpic] ?>" alt="<?= $no[mname] ?>">
-                                                            <h2 class="disName"><?= $no[mname] ?></h2>
-                                                        </a>
-                                                    </div>
-                                                    <div class="disRight">
-                                                        <p class="disTime"><?= $no[time] ?></p>
-                                                        <p class="disCon"><?= $no[content] ?></p>
-                                                    </div>
-                                                </li>
-                                                <?
-                                            }
-                                            ?>
-                                        </ol>
-                                    </div>
                                 </div>
                             </ul>
 
@@ -814,11 +448,8 @@ if ($dangid != 0) {
                                 }
                                 ?>
                             </ul>
-                            <?php
-                                if ($groupid == 4) {
-                                ?>
-                                <!-- 琴房租赁```````````````````````````````````````````````````````````````````````````` -->
-                                <ul class="liebiaoFuck liebiaoShow jiaoshiVideo clearfix">
+                            <!-- 琴房租赁```````````````````````````````````````````````````````````````````````````` -->
+                            <ul class="liebiaoFuck liebiaoShow jiaoshiVideo clearfix">
                                     <?
                                     $friend_sql = "select * from {$dbtbpre}ecms_shop a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid where a.classid=59 and a.userid='$userid' order by a.userid desc limit 50";
                                     $list = $empire->query($friend_sql);
@@ -846,78 +477,77 @@ if ($dangid != 0) {
                                     }
                                     ?>
                                 </ul>
-                                <!-- 音乐老师············································································· -->
-                                <?
+                            <!-- 音乐老师············································································· -->
+                            <?
 //相互邀请
-                                $yaoqing = $empire->fetch1("select yaoqing from {$dbtbpre}enewsmemberadd where userid='$tmgetuserid'");
-                                $feeduser_result = explode("::::::", $yaoqing['yaoqing']);
-                                $guanzhu = array();
-                                if ($feeduser_result && !empty($feeduser_result)) {
-                                    unset($feeduser_result[count($feeduser_result) - 1]);
-                                    foreach ($feeduser_result as $key => $val) {
-                                        $sql = "SELECT yaoqing FROM {$dbtbpre}enewsmemberadd WHERE userid=" . $val;
-                                        $result = $empire->fetch1($sql);
-                                        if (!empty($result)) {
-                                            $friend_userid = explode("::::::", $result['yaoqing']);
+                            $yaoqing = $empire->fetch1("select yaoqing from {$dbtbpre}enewsmemberadd where userid='$tmgetuserid'");
+                            $feeduser_result = explode("::::::", $yaoqing['yaoqing']);
+                            $guanzhu = array();
+                            if ($feeduser_result && !empty($feeduser_result)) {
+                                unset($feeduser_result[count($feeduser_result) - 1]);
+                                foreach ($feeduser_result as $key => $val) {
+                                    $sql = "SELECT yaoqing FROM {$dbtbpre}enewsmemberadd WHERE userid=" . $val;
+                                    $result = $empire->fetch1($sql);
+                                    if (!empty($result)) {
+                                        $friend_userid = explode("::::::", $result['yaoqing']);
+                                        if (!empty($friend_userid)) {
+                                            unset($friend_userid[count($friend_userid) - 1]);
                                             if (!empty($friend_userid)) {
-                                                unset($friend_userid[count($friend_userid) - 1]);
-                                                if (!empty($friend_userid)) {
-                                                    foreach ($friend_userid as $k => $v) {
-                                                        if ($v == $tmgetuserid) {
-                                                            array_push($guanzhu, $val);
-                                                            /*print_r($guanzhu);*/
-                                                        }
+                                                foreach ($friend_userid as $k => $v) {
+                                                    if ($v == $tmgetuserid) {
+                                                        array_push($guanzhu, $val);
+                                                        /*print_r($guanzhu);*/
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
+                            }
 
-                                $whe = join(",", $guanzhu); //内部的老师
-                                if (empty($whe)) {
-                                    $whe = 0;
-                                }
-                                ?>
+                            $whe = join(",", $guanzhu); //内部的老师
+                            if (empty($whe)) {
+                                $whe = 0;
+                            }
+                            ?>
+
+                            <ul class="liebiaoFuck liebiaoShow jiaoshiVideo clearfix">
                                 <?php
                                 if ($zjj == 11) {
                                     ?>
-                                    <ul class="liebiaoFuck liebiaoShow jiaoshiVideo clearfix">
-                                        <?
-                                        if (empty($whe)) {
-                                            echo "您还没有内部老师";
-                                        } else {
-                                            $friend_sql = "select * from {$dbtbpre}enewsmember a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid WHERE a.userid IN ($whe) and a.groupid=3 order by a.userid desc";
-                                            $list = $empire->query($friend_sql);
-                                            while ($r = $empire->fetch($list)) {
-                                                ?>
-                                                <li>
-                                                    <a href="/e/space/?userid=<?= $r[userid] ?>">
-                                                        <img src="<?= $r[userpic] ?>">
-                                                        <div class="xingming">
-                                                            <strong class="noname1"><?= $r[username] ?></strong>
-                                                        </div>
-                                                    </a>
-                                                    <div class="shenfen xingming">
-                                                        <span>身份：</span><span><?= $r[teacher_type] ?></span>
-                                                    </div>
-                                                </li>
-                                                <?
-                                            }
-                                        }
-                                        ?>
-
-                                    </ul>
                                     <?
-                                }
-                            }
-                            ?>
-                            <!-- 全部学员··············································································-->
-                            <?php
-                            if ($zjj == 11) {
-                                ?>
-                                <ul class="liebiaoFuck liebiaoShow jiaoshiVideo all-student clearfix">
+                                    if (empty($whe)) {
+                                        echo "您还没有内部老师";
+                                    } else {
+                                        $friend_sql = "select * from {$dbtbpre}enewsmember a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid WHERE a.userid IN ($whe) and a.groupid=3 order by a.userid desc";
+                                        $list = $empire->query($friend_sql);
+                                        while ($r = $empire->fetch($list)) {
+                                            ?>
+                                            <li>
+                                                <a href="/e/space/?userid=<?= $r[userid] ?>">
+                                                    <img src="<?= $r[userpic] ?>">
+                                                    <div class="xingming">
+                                                        <strong class="noname1"><?= $r[username] ?></strong>
+                                                    </div>
+                                                </a>
+                                                <div class="shenfen xingming">
+                                                    <span>身份：</span><span><?= $r[teacher_type] ?></span>
+                                                </div>
+                                            </li>
+                                            <?
+                                        }
+                                    }
+                                    ?>
+                                    <?
+                                    }
+                                    ?>
+                                </ul>
 
+                            <!-- 全部学员··············································································-->
+                            <ul class="liebiaoFuck liebiaoShow jiaoshiVideo all-student clearfix">
+                                <?php
+                                if ($zjj == 11) {
+                                ?>
                                     <?
                                     if (empty($whe)) {
                                         echo "您还没有内部学生";
@@ -949,16 +579,13 @@ if ($dangid != 0) {
                                         }
                                     }
                                     ?>
-
+                                    <?
+                                    }
+                                ?>
                                 </ul>
-                                <?
-                            }
-                            ?>
+
                             <!-- 活动公告·············································································· -->
-                            <?php
-                                if ($groupid == 4) {
-                            ?>
-                                <ul class="liebiaoFuck liebiaoShow notice clearfix">
+                            <ul class="liebiaoFuck liebiaoShow notice clearfix">
                                 <?
                                 $friend_sql = "select * from {$dbtbpre}ecms_shop a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid where a.classid=62 and a.userid='$userid' order by a.truetime desc limit 10";
                                 $list = $empire->query($friend_sql);
@@ -976,9 +603,6 @@ if ($dangid != 0) {
                                 }
                                 ?>
                             </ul>
-                            <?
-                                }
-                            ?>
                             <!-- 在线直播·································································· -->
                             <ul class="liebiaoFuck liebiaoShow current jiaoshiVideo clearfix">
                                 <li>
