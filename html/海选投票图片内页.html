@@ -236,8 +236,8 @@ $signPackage = $jssdk->GetSignPackage();
 								$('.jiathis_style_32x32').show();
 								var jiathis_config={
 									data_track_clickback:true,
-									summary:"选手姓名：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
-									title:"[!--hai_name--]参加[!--hai_division--]比赛",//标题
+									summary:"参赛者：[!--hai_name--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
+									title:"[!--hai_name--]参加十大乐器品牌海选比赛",//标题
 									pic:"[!--hai_photo--]",//图片
 									//	url:"url",//url
 									shortUrl:false,
@@ -322,7 +322,7 @@ $signPackage = $jssdk->GetSignPackage();
 								$('.jiathis_style_32x32').show();
 								var jiathis_config={
 									data_track_clickback:true,
-									summary:"选手姓名：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
+									summary:"参赛者：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
 									title:"[!--hai_name--]参加[!--hai_division--]比赛",//标题
 									pic:"[!--hai_photo--]",//图片
 									//	url:"url",//url
