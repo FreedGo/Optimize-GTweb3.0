@@ -10,9 +10,9 @@ $(function(){
     $('.fenleiFuck li').click(function () {
         var ifenlei = $(this).index();
         $(this).addClass('current').siblings('li').removeClass('current');
-        $('.musical-instruments .liebiaoShow').eq(ifenlei).show().siblings('.liebiaoShow').hide();
+        $('.musical-instruments .liebiaoShow').eq(ifenlei).fadeIn(200).siblings('.liebiaoShow').hide();
     })
-})
+});
 
 
 $(function() {
@@ -464,6 +464,15 @@ $(function() {
                 };
             });
         });
+
+        // 5.1 联系我们中的二维码，如果图片链接为空，隐藏掉它
+        if (!$('.qrcode>img').attr('src')){
+            // console.log($('.qrcode>img').attr('src'));
+            $('.qrcode').hide();
+        }
+
+
+
 });
 
 
