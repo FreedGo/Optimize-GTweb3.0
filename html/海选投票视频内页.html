@@ -386,16 +386,23 @@ $signPackage = $jssdk->GetSignPackage();
 						<a class="jiathis_button_fb"></a>
 						<a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 						<a class="jiathis_counter_style"></a>
-						<script "text/javascript">
-						var jiathis_config = {
-						// url: "http://www.yourdomain.com",
-						// title: "自定义网页标题 #微博话题#",
-						summary:"选手姓名：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",
-						pic:"[!--hai_photo--]",
-						img_url:"[!--hai_photo--]"
-						}
+						<script type="text/javascript" >
+							if(ua.match(/MicroMessenger/i)=="micromessenger") {
+								$('.jiathis_style_32x32').hide();
+							} else {
+								$('.jiathis_style_32x32').show();
+								var jiathis_config={
+									data_track_clickback:true,
+									summary:"参赛者：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",
+									title:"[!--hai_name--]参加[!--hai_division--]比赛",//标题
+									pic:"[!--hai_photo--]",//图片
+									//	url:"url",//url
+									shortUrl:false,
+									hideMore:false
+								};
+								document.write('<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445"><'+'/'+'script>');
+							};
 						</script>
-						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
 					</div>
 					<!-- JiaThis Button END -->
 				</div>

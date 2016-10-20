@@ -147,10 +147,7 @@ $signPackage = $jssdk->GetSignPackage();
 		</ol>
 	</div>
 	<!-- 左边二级导航列结束················································ -->
-	<?php
-	$classid=$_GET['classid'];
-	if($classid==112){
-	?>
+
 	<!-- 中间内容部分······················································ -->
 	<div class="rightWrap clearfix">
 		<div class="rightBan">
@@ -161,6 +158,10 @@ $signPackage = $jssdk->GetSignPackage();
 				<h2>[!--hai_petition--]</h2>
 			</div>
 			<div class="zuozhexinxi">
+				<?php
+				$classid=$_GET['classid'];
+				if($classid==112){
+				?>
 				<ul class="clearfix" style="border-bottom: #cb7047 solid 1px">
 					<li><span>品牌名称：</span><span>[!--hai_name--]</span></li>
 					<!--					<li><span>上传时间：</span><span><?=$name?></span></li>
@@ -174,6 +175,7 @@ $signPackage = $jssdk->GetSignPackage();
 						        echo $tou[tou_num];
                         ?>
                     票</span></li>
+
 					<div class="audition-member-share">
 						<!-- JiaThis Button BEGIN -->
 						<div class="jiathis_style_32x32">
@@ -186,178 +188,28 @@ $signPackage = $jssdk->GetSignPackage();
 							<a class="jiathis_counter_style"></a>
 						</div>
 						<script type="text/javascript" >
-							var jiathis_config={
-								data_track_clickback:true,
-//                                        summary:"摘要",//摘要
-//                                        title:"标题",//标题
-								pic:"<?= $userpic ?>",//图片
-								//	url:"url",//url
-								shortUrl:false,
-								hideMore:false
-							}
+							if(ua.match(/MicroMessenger/i)=="micromessenger") {
+								$('.jiathis_style_32x32').hide();
+							} else {
+								$('.jiathis_style_32x32').show();
+								var jiathis_config={
+									data_track_clickback:true,
+									summary:"参赛者：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
+									title:"[!--hai_name--]参加[!--hai_division--]比赛",//标题
+									pic:"[!--hai_photo--]",//图片
+									//	url:"url",//url
+									shortUrl:false,
+									hideMore:false
+								};
+								document.write('<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445"><'+'/'+'script>');
+							};
 						</script>
-						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
 						<!-- JiaThis Button END -->
 					</div>
 				</ul>
-			</div>
-			<div class="saishiMsg saishiVideo pic-toupiao clearfix">
-				<!-- 此处插入视频 ·························································-->
-				<div class="w3cFocus">
-					<div class="w3cFocusIn" >
-						<div class="bd">
-							<ul>
-								<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
-								<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
-								<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
-								<li ><a target="_blank" href="javascript:;"><img src="/images/logo.png" /></a></li>
-							</ul>
-						</div>
-						<div class="hd">
-							<ul>
-								[!--morepic--]
-								<li><img src="/images/logo.png" /></li>
-								<li><img src="/images/logo.png" /></li>
-								<li><img src="/images/logo.png" /></li>
-								<li><img src="/images/logo.png" /></li>
-							</ul>
-						</div>
-					</div>
-					<a class="prev"  target="_self"></a>
-					<a class="next"  target="_self"></a>
-				</div>
-				<script type="text/javascript">
-					// 向服务器请求图片
-					$(function() {
-						$.ajax({
-							url: '/guangchang/photo.php',
-							type: 'post',
-							dataType: 'html',
-							data: {'id_photo' : '[!--id--]'},
-						})
-								.done(function(msg) {
-									console.log("success");
-									console.log({'id_photo' : '[!--id--]'})
-									console.log(msg);
-									$('.bd ul').empty().append(msg);
-									$('.hd ul').empty().append(msg);
-									jQuery(".w3cFocus").slide({ mainCell:".bd ul", effect:"leftLoop", delayTime:300, autoPlay:true });
-								})
-								.fail(function() {
-									console.log("error");
-								}).always(function() {
-							window.onload=function(){
-								$('.bd li').css('top',$('.bd ul').height()*0.5);
-							}
-
-						});
-					});
-				</script>
-				<!-- 此处插入视频 ·························································-->
-
-				<!--投票提示框开始·············································-->
-				<!--pc提示弹框-->
-				<div class="toupiao-pop toupiao-web">
-					<i class="toupiao-close close-web"></i>
-					<div class="ad-img" id="ad-img-web">
-						<!-- 这里面是广告 -->
-						<script type="text/javascript">
-							var Xsrc = 67+parseInt(Math.random()*3);
-							document.write('<script src='+'http://www.greattone.net/d/js/acmsd/thea'+Xsrc+'.js'+'>'+'<'+'/script>');
-						</script>
-					</div>
-					<div class="toupiao-pop-msg clearfix" >
-						<div class="in-pop-msg f-l-l">
-							<span class="pop-suc-fail">投票成功!</span>
-							<span class="pop-dec">总计<i class="pop-dec-num"></i>票，</span>
-							<span class="pop-list">排名第<i class="pop-list-num"></i>名！</span>
-						</div>
-					</div>
-				</div>
-				<!--H5提示弹框-->
-				<div class="toupiao-pop toupiao-h5">
-					<i class="close close-h5"></i>
-					<div class="ad-img">
-						<!-- 这里面也是广告 -->
-						<script type="text/javascript">
-							var Xsrc = 67+parseInt(Math.random()*3);
-							document.write('<script src='+'http://www.greattone.net/d/js/acmsd/thea'+Xsrc+'.js'+'>'+'<'+'/script>');
-						</script>
-					</div>
-					<div class="toupiao-pop-msg" >
-						<span class="pop-dec">总计<i class="pop-dec-num"></i>票，</span>
-						<span class="pop-list">排名第<i class="pop-list-num"></i>名！</span>
-						<span class="pop-suc-fail">投票成功!</span>
-					</div>
-				</div>
-				<!--投票提示框结束·············································-->
-			</div>
-			<div class="toupiao"  style="margin-top:0;">
-				<script type="text/javascript" src="/js/toupiao-img.js"></script>
-				<?php
-                	$r=$empire->fetch1("select hai_id from phome_ecms_photo where id=$navinfor[id]");
-				$r=$empire->fetch1("select * from phome_ecms_shop where id=$r[hai_id]");
-				$time = time();
-				$dang=date("Y-m-d",$time);
-				if($dang > $r[huodong_2]){
-
-				$follow='<a target="_self" class="button blue ">投票结束</a>';
+				<?
 				}else{
-				$follow='<a onclick="follow('.$navinfor[id].')" target="_self" class="button blue " id="follow'.$navinfor[id].'">点击投票</a>';
-				}
 				?>
-				<?=$follow?>
-			</div>
-
-			<div class="hai-con">[!--smalltext--]</div>
-			<div class="video-ad" style="width: 960px;height: 90px; margin:10px 0;">
-				<script src="http://www.greattone.net/d/js/acmsd/thea65.js"></script>
-			</div>
-		</div>
-		<!-- 第一.全站动态部分············································· -->
-		<div class="rightMiddle qzdtList">
-			<!-- 内容··························· -->
-			<div class="qzdtContent">
-				<!-- 第一，当前海选部分····························· -->
-				<div class="yinyuemingren">
-					<!-- 分类行····································· -->
-					<div class="fenlei borTop">
-						<ul class="clearfix fenleiFuck">
-							<li class="current"><a href="javascript:;">评论</a><span></span></li>
-						</ul>
-					</div>
-					<!-- 分类行结束································· -->
-					<!-- 排序行····································· -->
-
-					<!-- 列表内容区域······························· -->
-					<div class="liebiao">
-						<!-- 此处插入畅言······················· -->
-						<div class="pl-520am" data-id="[!--id--]" data-classid="[!--classid--]"></div>
-						<!-- 此处插入畅言······················ -->
-					</div>
-					<!-- 列表内容区域结束··························· -->
-				</div>
-				<!-- 当前海选部分结束······························ -->
-			</div>
-			<!-- 内容··························· -->
-		</div>
-		<!-- 全站动态内容部分结束······························ -->
-
-	</div>
-	<!-- 中间内容部分结束·················································· -->
-	<?
-	}else{
-	?>
-	<!-- 中间内容部分······················································ -->
-	<div class="rightWrap clearfix">
-		<div class="rightBan">
-			<div class="mianbaoNav gg">
-				<span><a href="[!--news.url--]">首页</a></span><span>></span><span><a href="[!--news.url--]haixuan">海选</a></span><span>></span><span><a href="javascript:;">赛事详情</a></span>
-			</div>
-			<div class="saishiHead">
-				<h2>[!--hai_petition--]</h2>
-			</div>
-			<div class="zuozhexinxi">
 				<ul class="clearfix" style="border-bottom: #cb7047 solid 1px">
 					<!-- 头像框 -->
 					<div class="zhuozhe-img f-l-l">
@@ -399,7 +251,8 @@ $signPackage = $jssdk->GetSignPackage();
 					</div>
 					<!-- <li><span>选手姓名：</span><span>[!--hai_name--]</span></li> -->
 					<!--					<li><span>上传时间：</span><span><?=$name?></span></li>
-					-->					<li><span>赛区：</span><span>[!--hai_division--]</span></li>
+					-->
+					<li><span>赛区：</span><span>[!--hai_division--]</span></li>
 					<li><span>分组：</span><span>[!--hai_grouping--]</span></li>
 					<li><span>观看数量：</span><span class="hongse"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&addclick=1></script>次</span></li>
 					<li><span>目前票数：</span><span class="hongse">
@@ -421,20 +274,28 @@ $signPackage = $jssdk->GetSignPackage();
 							<a class="jiathis_counter_style"></a>
 						</div>
 						<script type="text/javascript" >
-							var jiathis_config={
-								data_track_clickback:true,
-//                                        summary:"摘要",//摘要
-//                                        title:"标题",//标题
-								pic:"<?= $userpic ?>",//图片
-								//	url:"url",//url
-								shortUrl:false,
-								hideMore:false
-							}
+							if(ua.match(/MicroMessenger/i)=="micromessenger") {
+								$('.jiathis_style_32x32').hide();
+							} else {
+								$('.jiathis_style_32x32').show();
+								var jiathis_config={
+									data_track_clickback:true,
+									summary:"参赛者：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
+									title:"[!--hai_name--]参加[!--hai_division--]比赛",//标题
+									pic:"[!--hai_photo--]",//图片
+									//	url:"url",//url
+									shortUrl:false,
+									hideMore:false
+								};
+								document.write('<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445"><'+'/'+'script>');
+							};
 						</script>
-						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
 						<!-- JiaThis Button END -->
 					</div>
 				</ul>
+				<?
+					}
+				?>
 			</div>
 			<div class="saishiMsg saishiVideo pic-toupiao clearfix">
 				<!-- 此处插入视频 ·························································-->
@@ -488,8 +349,8 @@ $signPackage = $jssdk->GetSignPackage();
 						});
 					});
 				</script>
-
 				<!-- 此处插入视频 ·························································-->
+
 				<!--投票提示框开始·············································-->
 				<!--pc提示弹框-->
 				<div class="toupiao-pop toupiao-web">
@@ -543,13 +404,14 @@ $signPackage = $jssdk->GetSignPackage();
 				?>
 				<?=$follow?>
 			</div>
+
 			<div class="hai-con">[!--smalltext--]</div>
 			<div class="video-ad" style="width: 960px;height: 90px; margin:10px 0;">
 				<script src="http://www.greattone.net/d/js/acmsd/thea65.js"></script>
 			</div>
 		</div>
 		<!-- 第一.全站动态部分············································· -->
-		<div class="rightMiddle qzdtList">
+		<div class="rightMiddle qzdtList" style="float: right;">
 			<!-- 内容··························· -->
 			<div class="qzdtContent">
 				<!-- 第一，当前海选部分····························· -->
@@ -579,9 +441,7 @@ $signPackage = $jssdk->GetSignPackage();
 
 	</div>
 	<!-- 中间内容部分结束·················································· -->
-	<?
-	}
-?>
+
 	<!-- 手机端新版注册登录界面开始 -->
 	<div class="new-lgn-reg img-reg">
 		<div class="login-container">
