@@ -159,15 +159,57 @@ $signPackage = $jssdk->GetSignPackage();
 			</div>
 			<div class="zuozhexinxi">
 				<?php
-				$classid=$_GET['classid'];
-				if($classid==112){
+                $id=$_GET['id'];
+
+                $to=$empire->fetch1("select hai_id from phome_ecms_photo where id='$id'");
+
+				$tt=$empire->fetch1("select classid from phome_ecms_shop where id='$to[hai_id]'");
+
+				if($tt[classid]==112){
 				?>
 				<ul class="clearfix" style="border-bottom: #cb7047 solid 1px">
-					<li><span>品牌名称：</span><span>[!--hai_name--]</span></li>
+					<!-- 头像框 -->
+					<div class="zhuozhe-img f-l-l">
+						<?
+                            $id=$_GET['id'];
+                            $haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");
+						$poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");
+						?>
+						<a class="f-l-l" href="/e/space/?userid=<?=$haipic[userid]?>">
+							<img src="<?=$poto[userpic]?>" alt="">
+						</a>
+						<div class="zuozhe-msg f-l-l">
+							<h2 class="zuozhe-name">[!--hai_name--]</h2>
+							<h2 class="zuozhe-price">
+								<?php
+                					$poto=$empire->fetch1("select userfen from phome_enewsmember where userid=$haipic[userid]");
+								if($r[userfen]<=100){
+								echo "一级";
+								}elseif($r[userfen]<=300){
+								echo "二级";
+								}elseif($r[userfen]<=800){
+								echo "三级";
+								}elseif($r[userfen]<=2000){
+								echo "四级";
+								}elseif($r[userfen]<=5000){
+								echo "五级";
+								}elseif($r[userfen]<=15000){
+								echo "六级";
+								}elseif($r[userfen]<=50000){
+								echo "七级";
+								}elseif($r[userfen]>100000){
+								echo "八级";
+								}else{
+								echo "八级";
+								}
+								?>
+							</h2>
+						</div>
+					</div>
 					<!--					<li><span>上传时间：</span><span><?=$name?></span></li>
 					-->					<!--<li><span>赛区：</span><span>[!--hai_division--]</span></li>-->
 					<li><span>注册国家：</span><span>[!--hai_address--]</span></li>
-					<li><span>观看数量：</span><span class="hongse"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&addclick=1></script>次</span></li>
+					<li><span>点击量：</span><span class="hongse"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&addclick=1></script>次</span></li>
 					<li><span>目前票数：</span><span class="hongse">
                     	<?php
                         $id=$_GET['id'];
@@ -194,7 +236,7 @@ $signPackage = $jssdk->GetSignPackage();
 								$('.jiathis_style_32x32').show();
 								var jiathis_config={
 									data_track_clickback:true,
-									summary:"参赛者：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
+									summary:"选手姓名：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
 									title:"[!--hai_name--]参加[!--hai_division--]比赛",//标题
 									pic:"[!--hai_photo--]",//图片
 									//	url:"url",//url
@@ -280,7 +322,7 @@ $signPackage = $jssdk->GetSignPackage();
 								$('.jiathis_style_32x32').show();
 								var jiathis_config={
 									data_track_clickback:true,
-									summary:"参赛者：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
+									summary:"选手姓名：[!--hai_name--];赛区：[!--hai_division--];目前票数：<?php $id=$_GET['id'];$tou=$empire->fetch1("select tou_num from phome_ecms_photo where id='$id'");echo $tou[tou_num];?>票",//摘要
 									title:"[!--hai_name--]参加[!--hai_division--]比赛",//标题
 									pic:"[!--hai_photo--]",//图片
 									//	url:"url",//url
