@@ -19,10 +19,10 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 ?>
 	<div class="singleMiddle">
 		<!--	课表依赖-->
-		<link href='./lib/fullcalendar.min.css' rel='stylesheet' />
-		<script src='./lib/moment.min.js'></script>
-		<script src='./lib/fullcalendar.min.js'></script>
-		<script src="./lib/zh-cn.js"></script>
+		<link href='/e/data/html/kebiao/lib/fullcalendar.min.css' rel='stylesheet' />
+		<script src='/e/data/html/kebiao/lib/moment.min.js'></script>
+		<script src='/e/data/html/kebiao/lib/fullcalendar.min.js'></script>
+		<script src="/e/data/html/kebiao/lib/zh-cn.js"></script>
 		<script>
 			$(document).ready(function() {
 				$('#calendar').fullCalendar({
@@ -150,33 +150,24 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					<!-- 我的课表 -->
 					<ul class="neibulaoshi">
 						<div id='calendar'></div>
-
-
-
-
-
-
-
-
-
-
-
-
 					</ul>
 					<!--end 我的课表 -->
 	                <!-- 发布租赁 -->
 					<ul class="lh dengdai fabukecheng">
-						<form name="add" method="POST" enctype="multipart/form-data" action="ecms.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
+						<form class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="ecms.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
 						<input type=hidden value=MAddInfo name=enews> <input type=hidden value=59 name=classid>
 						<input name=id type=hidden id="id" value=>
 						<input name=mid type=hidden id="mid" value=15>
 						<!----返回地址---->
+						<style>
+							.addKecheng>li{margin-bottom: 20px;}
+						</style>
 						<input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
-							<li><span>琴房名称：</span><input required type="text" name="title"></li>
-							<li><span>联系电话：</span><input required type="text" name="pbrand"></li>
-							<li><span>琴房价格：</span><input required type="text" name="price" placeholder="元/天"></li>
-							<li><span>人数上限：</span><input required type="text" name="pmaxnum"></li>
-	                        <li>
+							<li class="clearfix"><span>琴房名称：</span><input required type="text" name="title"></li>
+							<li class="clearfix"><span>联系电话：</span><input required type="text" name="pbrand"></li>
+							<li class="clearfix"><span>琴房价格：</span><input required type="text" name="price" placeholder="元/天"></li>
+							<li class="clearfix"><span>人数上限：</span><input required type="text" name="pmaxnum"></li>
+	                        <li class="clearfix">
 								<span>上传图片：</span>
 								<script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.config.js"></script>
 	                            <script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.all.js"></script>
@@ -218,7 +209,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					                }
 								</script>
 							</li>
-							<li>
+							<li class="clearfix">
 								<span>琴房描述：</span>
 								<!-- 预留的地div -->
 								<div style='background-color:#D0D0D0' class="qinmiao">
@@ -231,7 +222,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 							</div>
 								<!-- 预留的地div -->
 							</li>
-							<li>
+							<li class="clearfix">
 								<li><span></span><input class="zongse" type="submit"></li>
 							</li>
 						</form>
