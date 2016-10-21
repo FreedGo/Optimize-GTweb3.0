@@ -241,7 +241,7 @@ if ($dangid != 0) {
                                     var jiathis_config={
                                         data_track_clickback:true,
                                        // summary:"摘要",//摘要
-                                        title:"<?= $username ?>的空间——好琴声，音乐人的交流平台！",//标题
+                                        title:"<?= $username ?>老师的主页——好琴声，音乐人的交流平台！",//标题
                                         pic:"<?= $userpic ?>",//图片
                                     //	url:"url",//url
                                         shortUrl:false,
@@ -281,18 +281,20 @@ if ($dangid != 0) {
                                 <script>
                                     $(function () {
                                         $('.showAlert').on('click', function () {
-                                            swal('提示：', '你不是本老师下的学生，无法查看!', 'error').done();
+                                            swal('提示：', '你不是当前老师下的学生，无法查看!', 'error').done();
                                         });
                                     })
                                 </script>
                                 <!--.......................-->
                                 <?
-                            } ?>
+                                }
+                            ?>
                             <ul class="clearfix fenleiFuck">
                                 <!--凡是加了showAlert类名的，点击之后会弹出提示框，js的加载由php来判断控制，不是这个老师下面的学生都会提示-->
                                 <li class="current"><a href="javascript:;" target="_self" >老师介绍</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">推荐视频</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">课程中心</a><span></span></li>
+                                <li><a href="javascript:;">老师动态</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">在线直播</a><span></span></li>
                                 <li class="showAlert"><a href="javascript:;" target="_self">全部学员</a><span></span></li>
                                 <li class="discuss-area-btn showAlert"><a href="javascript:;" target="_self">讨论区</a><span></span></li>
@@ -399,6 +401,25 @@ if ($dangid != 0) {
                                             <span class="hongse">¥:<?= $r[price] ?></span>
                                             <del>¥:<?= $r[tprice] ?></del>
                                         </div>
+                                    </li>
+                                    <?
+                                }
+                                ?>
+                            </ul>
+                            <!--活动公告···············································································-->
+                            <ul class="liebiaoFuck liebiaoShow notice clearfix">
+                                <?
+                                $friend_sql = "select * from {$dbtbpre}ecms_shop a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid where a.classid=62 and a.userid='$userid' order by a.truetime desc limit 10";
+                                $list = $empire->query($friend_sql);
+                                while ($r = $empire->fetch($list)) {
+                                    ?>
+                                    <li class="clearfix">
+                                        <a href="<?= $r[titleurl] ?>">
+                                            <span class="iconfont hongse">&#xe65e;</span>
+                                            <?= $r[title] ?>
+
+                                        </a>
+                                        <span><?= date('Y-m-d', $r[newstime]) ?></span>
                                     </li>
                                     <?
                                 }
