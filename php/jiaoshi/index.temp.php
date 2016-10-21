@@ -337,7 +337,7 @@ if ($dangid != 0) {
                                 <li><a href="javascript:;" target="_self">琴房租赁</a><span></span></li>
                                 <li class="showAlert"><a href="javascript:;" target="_self">音乐老师</a><span></span></li>
                                 <li class="showAlert"><a href="javascript:;" target="_self">全部学员</a><span></span></li>
-                                <li><a href="javascript:;" target="_self">活动公告</a><span></span></li>
+                                <li><a href="javascript:;" target="_self">琴行动态</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">在线直播</a><span></span></li>
                                 <li class="discuss-area-btn showAlert"><a href="javascript:;" target="_self">讨论区</a><span></span></li>
                             </ul>

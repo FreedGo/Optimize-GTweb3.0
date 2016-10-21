@@ -73,11 +73,32 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						console.log(calEvent);
 						console.log(jsEvent);
 						console.log(view);
+						$('.itemCon1').empty().html(calEvent.title);//标题
+						$('.itemCon2').empty().html(calEvent.title);//地址
+						$('.itemCon3').empty().html(calEvent.start._i);//开始
+						$('.itemCon4').empty().html(calEvent.end._i);//结束
+						$('.itemCon5').empty().html(calEvent.student);//学生
+						$('.itemCon6').empty().html(calEvent.status);//课程状态
+						$('.itemCon7').empty().html(calEvent.mark);//备注
+
+						$('.single-kecheng').show();
+
+
 					},
 					events: [
 						{
-							title: 'All Day Event',
-							start: '2016-10-01'
+							id:'id',                      //标示id，可选
+							title: 'All Day Event',       //标题，必选
+							start: '2016-10-01 12:00:00', //开始，必选
+							end:'2016-10-01 14:00:00',    //结束，必选
+							addres:'博特琴行钢琴室',       //上课地点，必选
+							student:'张三',               //上课学生，必选
+							status:'未开始',              //课程状态，必选
+							mark:'复习最多100字',          //备注，必选
+							allDay:false,                 //是否全天事件，用于请假，必选
+							backgroundColor:'#f00',       //背景色，用于辨识事件状态，可选
+							borderColor:'#ff0',           //边框色，可选
+							textColor:'#fff'              //文字颜色，可选
 						},
 						{
 							title: 'Long Event',
@@ -141,6 +162,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 		<link rel="stylesheet" type="text/css" href="/e/data/html/kebiao/lib/lq.datetimepick.css"/>
 		<script src='/e/data/html/kebiao/lib/selectUi.js' type='text/javascript'></script>
 		<script src='/e/data/html/kebiao/lib/lq.datetimepick.js' type='text/javascript'></script>
+		<script src="/e/data/html/kebiao/lib/kebiao.js"></script>
 		<script type="text/javascript">
 			$(function () {
 				$("#datetimepicker1").on("click",function(e){
@@ -193,6 +215,45 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					<!-- 我的课表 -->
 					<ul class="neibulaoshi">
 						<div id='calendar'></div>
+						<div class="single-kecheng">
+							<i class="shutUp">×</i>
+							<div class="single-ke-con">
+								<div class="single-ke-item clearfix">
+									<h4 class="ke-itme-tips">课程名称：</h4>
+									<p class="ke-item-con itemCon1">XXXXXXXXXXXX</p>
+								</div>
+								<div class="single-ke-item clearfix">
+									<h4 class="ke-itme-tips">上课地点：</h4>
+									<p class="ke-item-con itemCon2">XXXXXXXXXXXX</p>
+								</div>
+								<div class="single-ke-item clearfix">
+									<h4 class="ke-itme-tips">开始时间：</h4>
+									<p class="ke-item-con itemCon3">XXXXXXXXXXXX</p>
+								</div>
+								<div class="single-ke-item clearfix">
+									<h4 class="ke-itme-tips">结束时间：</h4>
+									<p class="ke-item-con itemCon4">XXXXXXXXXXXX</p>
+								</div>
+								<div class="single-ke-item clearfix">
+									<h4 class="ke-itme-tips">上课学生：</h4>
+									<p class="ke-item-con itemCon5">XXXXXXXXXXXX</p>
+								</div>
+								<div class="single-ke-item clearfix">
+									<h4 class="ke-itme-tips">课程状态：</h4>
+									<p class="ke-item-con itemCon6">XXXXXXXXXXXX</p>
+								</div>
+								<div class="single-ke-item clearfix">
+									<h4 class="ke-itme-tips">课程备注：</h4>
+									<p class="ke-item-con itemCon7">XXXXXXXXXXXXXXXXXX
+										XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+										XXXXX</p>
+								</div>
+								<div class="single-ke-item clearfix">
+									<button class="single-ke-btn edi-kecheng">修改课程</button>
+									<button class="single-ke-btn del-kecheng">删除课程</button>
+								</div>
+							</div>
+						</div>
 					</ul>
 					<!--end 我的课表 -->
 	                <!-- 发布租赁 -->

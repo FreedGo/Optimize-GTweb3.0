@@ -259,6 +259,55 @@
 .fc-toolbar{
     padding: 40px 0 20px;
 }
-
-
-
+.fc-day-header{
+    height:40px;
+    line-height:40px;
+    background-color: #E9B26F;
+    color: #fff;
+}
+.fc-day-number{
+    font-size: 14px;
+    color: #000;
+}
+.single-kecheng{
+    width:400px;
+    position: absolute;
+    border:#ccc solid 1px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 5px rgba(127,127,127,0.3);
+    top:100px;
+    left:100px;
+    background-color: #F1F5F8;
+    z-index: 100;
+    display: none;
+}
+.single-ke-con{
+    padding: 40px 10px 20px;
+}
+.ke-itme-tips,.ke-item-con{
+    float: left;
+    font:14px/36px 微软雅黑;
+    
+}
+.ke-itme-tips{
+    width: 124px;
+    text-align: right;
+}
+.itemCon7{
+    width:230px ;
+    overflow: hidden;
+}
+.single-ke-btn{
+    height: 36px;
+    font:14px/36px 微软雅黑;
+    background-color: #cb7047;
+    color: #fff;
+    text-align: center;
+    float: left;
+    width: 100px;
+    border-radius: 3px;
+    margin:20px 0 20px 60px;
+}
+.fc-content{
+    font:14px/24px 微软雅黑;
+}
