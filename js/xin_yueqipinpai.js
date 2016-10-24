@@ -327,10 +327,17 @@ $(function() {
             },
             data:{userid:curUserId}
         }).done(function (msg) {
-            if (msg == "" || msg == null){
-                $('.product-news ').append('<dt class="news-lists news-item>没有新闻了！</dt>')
+            var msg = eval('('+msg+ ')');
+            // console.log(msg);
+            // console.log(typeof msg);
+            // console.log(msg.length);
+
+            if (msg == "" || msg.lengh ==0){
+                $('.list3 .loaders').hide();
+                $('.list3 .product-news ').append('<dt class="news-lists news-item">没有新闻了！</dt>');
+
             } else {
-                var msg = eval('('+msg+ ')');
+                // var msg = eval('('+msg+ ')');
                 $('.list3 .loaders').hide();
                 $.each(msg, function(index, val) {
                     // data2.children('.recommend-list-content').append('<li class="f-l-l"><a href="'+val.c+'">'+'['+val.a+']'+val.b+'</a></li>');
@@ -349,7 +356,11 @@ $(function() {
         iNewsClk++;//记录点击次数
     })
     //4.销售渠道,点击渠道
+        var iSellClk = 0;
         $('.pinpai-seller').click(function () {
+            if ( iSellClk > 0 ) {
+                return false;
+            };
             $.ajax({
                 url:'/e/space/template/pinpai/xiaoshou.lie.ajax.php',
                 type:'post',
@@ -361,7 +372,7 @@ $(function() {
                 $('.list4 .product-news ').empty();
                 if (!msg){
                      $('.list4 .loaders').hide();
-                    $('.product-news ').append('<dt class="news-lists news-item" style="min-height:100px;">该品牌没有销售渠道！</dt>')
+                    $('.list4 .product-news ').append('<dt class="news-lists news-item" style="min-height:100px;">该品牌没有销售渠道！</dt>')
                 } else {
                     $('.list4 .loaders').hide();
                     // $('.list4 .product-news ').empty();
@@ -369,6 +380,7 @@ $(function() {
 
                 }
             });
+            iSellClk++;
         });
        // 4.1 销售渠道地区搜素
             $('.list4 .chacity').children('input').on('click',function () {
@@ -455,7 +467,8 @@ $(function() {
             }).done(function (msg) {
                 $('.list5 .messages-board-lists ').empty();
                 if (msg == "" || msg == null){
-                    $('.list5 .messages-board-lists ').append('<dt class="news-lists news-item>没有数据！</dt>')
+                    $('.list5 .loaders').hide();
+                    $('.list5 .messages-board-lists').append('<dt class="news-lists news-item">没有数据！</dt>')
                 } else {
                     $('.list5 .loaders').hide();
                     // $('.list4 .product-news ').empty();
