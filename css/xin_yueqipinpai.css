@@ -512,8 +512,9 @@
     margin-left: 20px;
     display: none;
 }
-.hongse{ color:#EC791D!important;
-    font-size: 14px;
+.hongse{
+    color:#ff0000!important;
+    font-size: 18px;
 }
 .xingming>a>span{
     /*vertical-align: middle;*/
@@ -551,6 +552,7 @@
     padding: 15px;
     /*background-color: #fff;*/
     /*display: none;*/
+    overflow: hidden;
 
 }
 .jiaoshipinglun{
@@ -574,6 +576,7 @@
 }
 .common-space-content .common-space-list.current{
     display: block;
+    overflow: hidden;
 }
 /*2.16.5.12修改教室多图展示*/
 /* 本例子css */
@@ -691,13 +694,13 @@
     width: 100%;
 }
 .cell-img{
-    width: 100%;
-    height: 144px;
+    width: 232px;
+    height: 232px;
     margin-bottom: 10px;
 }
 .cell-img>img{
-    width: 100%;
-    height: 144px;
+    width: 232px;
+    height: 232px;
     border-bottom: 1px solid #ccc;
 }
 .cell-title,.cell-price{

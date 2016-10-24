@@ -189,7 +189,7 @@
     margin: 5px 0 10px 0;
  }
  .uesrID i{
- 	color:#FFB700; 
+ 	color:#FF0000;
  }
 .shenfen,.dengji{
 	/* padding-left: 20px; */
@@ -2262,3 +2262,38 @@ a {
 .liuyan-content.on,.reply-liuyan-warp.on{
 	display: block;
 }
+
+/*2016-10-17乐器品牌个人中心菜单icon*/
+.pinpai{
+	width:18px;
+	height: 18px;
+	display: inline-block;
+	background-image: url("/images/pinpai_icon.png");
+	background-repeat: no-repeat;
+	vertical-align:middle;
+}
+.pin_icon_1{
+	background-position: 0 0;
+}
+.pin_icon_2{
+	background-position:0 -20px;
+}
+.pin_icon_3{
+	background-position:0 -40px;
+}
+.pin_icon_4{
+	background-position:0 -60px;
+}
+.pin_icon_5{
+	background-position:0 -80px;
+}
+.pin_icon_6{
+	 background-position:0 -100px;
+ }
+.pin_icon_7{
+	  background-position:0 -120px;
+  }
+
+
+
+
