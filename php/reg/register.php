@@ -11,24 +11,28 @@ require(ECMS_PATH . 'e/template/incfile/header_1.php');
     <link rel="stylesheet" type="text/css" href="/css/laydate.css">
     <link rel="stylesheet" type="text/css" href="/css/zhuce.css">
     <link rel="stylesheet" type="text/css" href="/css/vali.css">
+    <link href="/shang/newHeadPic/css/ShearPhoto.css" rel="stylesheet" type="text/css" media="all">
+    <!--ShearPhotoCSS文件-->
     <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="/js/laydate.js"></script>
-    <script type="text/javascript" src="/scripts/swfobject.js"></script>
-    <script type="text/javascript" src="/scripts/fullAvatarEditor.js"></script>
     <script type="text/javascript" src="/js/adress.js"></script>
     <script type="text/javascript" src="/js/language.js"></script>
     <script type="text/javascript" src="/js/vali.min.js"></script>
     <script type="text/javascript" src="/js/register.yanzheng2.js"></script>
-
-
+    <script type="text/javascript" src="/shang/newHeadPic/js/ShearPhoto.js"></script>
+    <!--ShearPhoto的核心文件 截取，拖拽，HTML5切图，数据交互等都是由这个文件处理，全部由明哥先生汗水交织而成-->
+<!--    <script type="text/javascript" src="shearphoto_common/js/webcam_ShearPhoto.js"></script>-->
+    <!--ShearPhoto在线拍照那个FLASH的接口，非技术性文件-->
+    <script type="text/javascript" src="/shang/newHeadPic/js/handle.js"></script>
+    <!--设置和处理对象方法的JS文件，要修改设置，请进入这个文件-->
     <table class="mainForm" width='1200' border='0' align='center' cellpadding='3' cellspacing='0' class="tableborder">
         <form class="register-form" id="user_info_sub" name=userinfoform method=post enctype="multipart/form-data"
               action=../doaction.php class="newMember">
+
             <input type=hidden name=enews value=register>
             <tr class="header">
                 <td colspan="2">好琴声 音乐人的交流平台！<?= $tobind ? ' (绑定账号)' : '' ?></td>
             </tr>
-
             <input name="groupid" type="hidden" id="groupid" value="<?= $groupid ?>">
             <tr>
                 <td width='15%' height="25" bgcolor="#FFFFFF">
@@ -46,41 +50,33 @@ require(ECMS_PATH . 'e/template/incfile/header_1.php');
                         ?>
                     </div>
                 </td>
-                <td width='75%' height="25" bgcolor="#FFFFFF" class="chongfumima"><input name='username'
-                                                                                         style="float:left;" type='text'
-                                                                                         id='username'
-                                                                                         class="yonghuming"
-                                                                                         maxlength='20' required>
+                <td width='75%' height="25" bgcolor="#FFFFFF" class="chongfumima">
+                    <input name='username' style="float:left;" type='text' id='username' class="yonghuming" maxlength='20' required>
                 </td>
             </tr>
             <tr>
                 <td height="25" bgcolor="#FFFFFF">
                     <div align='left'>密码：</div>
                 </td>
-                <td height="25" bgcolor="#FFFFFF" class="chongfumima"><input name='password' style="float:left;"
-                                                                             class="password1" type='password'
-                                                                             id='password' maxlength='20' required>
+                <td height="25" bgcolor="#FFFFFF" class="chongfumima">
+                    <input name='password' style="float:left;" class="password1" type='password' id='password' maxlength='20' required>
                 </td>
             </tr>
             <tr>
                 <td height="25" bgcolor="#FFFFFF">
                     <div align='left'>重复密码：</div>
                 </td>
-                <td height="25" bgcolor="#FFFFFF" class="chongfumima"><input name='repassword' style="float:left;"
-                                                                             type='password' id='repassword'
-                                                                             maxlength='20' required>
+                <td height="25" bgcolor="#FFFFFF" class="chongfumima">
+                    <input name='repassword' style="float:left;" type='password' id='repassword' maxlength='20' required>
                 </td>
             </tr>
             <!--    <tr>
                   <td height="25" bgcolor="#FFFFFF"> <div align='left'>邮箱：</div></td>
                   <td height="25" bgcolor="#FFFFFF"> <input name='email' type='text' id='email' maxlength='50'></td>
                 </tr>-->
-
             <tr>
                 <td height="25" colspan="2" bgcolor="#FFFFFF">
-
                     <table width='100%' align='center' cellpadding=3 cellspacing=0 bgcolor='#DBEAF5'>
-
                         <td width='15%' height=25 bgcolor='ffffff'>手机:</td>
                         <td width='75%' bgcolor='ffffff' class="chongfumima">
                             <select name="" id="" class="celltype">
@@ -102,9 +98,10 @@ require(ECMS_PATH . 'e/template/incfile/header_1.php');
 
                         <tr>
                             <td width='15%' height=25 bgcolor='ffffff'>验证码：</td>
-                            <td bgcolor='ffffff'><input type="text" class="yanzheng" required/><span class="yifasong"
-                                                                                                     style="font-size:12px"></span><input
-                                    class="yanzheng-pre" type="button" value="获取验证码"/></td>
+                            <td bgcolor='ffffff'>
+                                <input type="text" class="yanzheng" required/>
+                                <span class="yifasong" style="font-size:12px"></span>
+                                <input class="yanzheng-pre" type="button" value="获取验证码"/></td>
 
                         </tr>
                         <?
@@ -216,71 +213,175 @@ require(ECMS_PATH . 'e/template/incfile/header_1.php');
                                 }
                                 ?>
                             </td>
-                            <td bgcolor='ffffff' class="touxiangObj">
-                                <div class="touxiangcaijian" style="width:500px;margin: 0 auto;">
-
-                                    <div style="width:530px;margin: 0 auto;">
-
-                                        <div>
-                                            <p id="swfContainer">
-                                                本组件需要安装Flash Player后才可使用，请从<a
-                                                    href="http://www.adobe.com/go/getflashplayer">这里</a>下载安装。
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                    <script type="text/javascript">
-                                        swfobject.addDomLoadEvent(function () {
-                                            var swf = new fullAvatarEditor("swfContainer", {
-                                                    id: 'swf',
-                                                    upload_url: '/shang/upload.php',
-                                                    src_upload: 0,
-                                                    src_size: '5MB',
-                                                    browse_tip: '仅支持JPG、JPEG、GIF、PNG格式的图片文件\n文件不能大于5MB',
-                                                    avatar_box_border_width: 0,
-                                                    avatar_sizes: '200*200',
-                                                    avatar_scale: 2,//图片缩放系数，裁剪为200，保存为其2倍大小
-                                                    tab_visible: false,
-                                                    avatar_sizes_desc: '400*400像素',
-                                                    height: 400,
-                                                }, function (msg) {
-                                                    switch (msg.code) {
-
-                                                        // case 2 : alert("已成功加载默认指定的图片到编辑面板。");break;
-                                                        // case 3 :
-                                                        // 	if(msg.type == 0)
-                                                        // 	{
-                                                        // 		alert("摄像头已准备就绪且用户已允许使用。");
-                                                        // 	}
-                                                        // 	else if(msg.type == 1)
-                                                        // 	{
-                                                        // 		alert("摄像头已准备就绪但用户未允许使用！");
-                                                        // 	}
-                                                        // 	else
-                                                        // 	{
-                                                        // 		alert("摄像头被占用！");
-                                                        // 	}
-                                                        // break;
-                                                        case 5 :
-                                                            if (msg.type == 0) {
-                                                                if (msg.content.sourceUrl) {
-                                                                    // alert("原图已成功保存至服务器，url为：\n" +　msg.content.sourceUrl);
-                                                                }
-                                                                // alert("头像已成功保存至服务器，url为：\n" + msg.content.avatarUrls.join("\n"));
-                                                                $('#headImg').val("http://www.greattone.net/shang" + msg.content.avatarUrls.join("\n"));
-                                                                console.log($('#headImg').val());
-                                                            }
-                                                            break;
-                                                    }
-                                                }
-                                            );
-                                            document.getElementById("upload").onclick = function () {
-                                                swf.call("upload");
-                                            };
-                                        });
-                                    </script>
+<!--                            <td bgcolor='ffffff' class="touxiangObj">-->
+<!--                                <div class="touxiangcaijian" style="width:500px;margin: 0 auto;">-->
+<!--                                    <div style="width:530px;margin: 0 auto;">-->
+<!---->
+<!--                                        <div>-->
+<!--                                            <p id="swfContainer">-->
+<!--                                                本组件需要安装Flash Player后才可使用，请从<a-->
+<!--                                                    href="http://www.adobe.com/go/getflashplayer">这里</a>下载安装。-->
+<!--                                            </p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <script type="text/javascript">-->
+<!--                                        swfobject.addDomLoadEvent(function () {-->
+<!--                                            var swf = new fullAvatarEditor("swfContainer", {-->
+<!--                                                    id: 'swf',-->
+<!--                                                    upload_url: '/shang/upload.php',-->
+<!--                                                    src_upload: 0,-->
+<!--                                                    src_size: '5MB',-->
+<!--                                                    browse_tip: '仅支持JPG、JPEG、GIF、PNG格式的图片文件\n文件不能大于5MB',-->
+<!--                                                    avatar_box_border_width: 0,-->
+<!--                                                    avatar_sizes: '200*200',-->
+<!--                                                    avatar_scale: 2,//图片缩放系数，裁剪为200，保存为其2倍大小-->
+<!--                                                    tab_visible: false,-->
+<!--                                                    avatar_sizes_desc: '400*400像素',-->
+<!--                                                    height: 400,-->
+<!--                                                }, function (msg) {-->
+<!--                                                    switch (msg.code) {-->
+<!---->
+<!--                                                        // case 2 : alert("已成功加载默认指定的图片到编辑面板。");break;-->
+<!--                                                        // case 3 :-->
+<!--                                                        // 	if(msg.type == 0)-->
+<!--                                                        // 	{-->
+<!--                                                        // 		alert("摄像头已准备就绪且用户已允许使用。");-->
+<!--                                                        // 	}-->
+<!--                                                        // 	else if(msg.type == 1)-->
+<!--                                                        // 	{-->
+<!--                                                        // 		alert("摄像头已准备就绪但用户未允许使用！");-->
+<!--                                                        // 	}-->
+<!--                                                        // 	else-->
+<!--                                                        // 	{-->
+<!--                                                        // 		alert("摄像头被占用！");-->
+<!--                                                        // 	}-->
+<!--                                                        // break;-->
+<!--                                                        case 5 :-->
+<!--                                                            if (msg.type == 0) {-->
+<!--                                                                if (msg.content.sourceUrl) {-->
+<!--                                                                    // alert("原图已成功保存至服务器，url为：\n" +　msg.content.sourceUrl);-->
+<!--                                                                }-->
+<!--                                                                // alert("头像已成功保存至服务器，url为：\n" + msg.content.avatarUrls.join("\n"));-->
+<!--                                                                $('#headImg').val("http://www.greattone.net/shang" + msg.content.avatarUrls.join("\n"));-->
+<!--                                                                console.log($('#headImg').val());-->
+<!--                                                            }-->
+<!--                                                            break;-->
+<!--                                                    }-->
+<!--                                                }-->
+<!--                                            );-->
+<!--                                            document.getElementById("upload").onclick = function () {-->
+<!--                                                swf.call("upload");-->
+<!--                                            };-->
+<!--                                        });-->
+<!--                                    </script>-->
+<!--                                    <input type="hidden" id="headImg" name="userpic" required>-->
+<!--                            </td>-->
+                                <td style="background-color: #fff">
+                                    <!--主功能部份 主功能部份的标签请勿随意删除，除非你对shearphoto的原理了如指掌，否则JS找不到DOM对象，会给你抱出错误-->
                                     <input type="hidden" id="headImg" name="userpic" required>
-                            </td>
+                                    <div id="shearphoto_loading">程序加载中......</div>
+                                    <!--这是2.2版本加入的缓冲效果，JS方法加载前显示的等待效果-->
+                                    <div id="shearphoto_main">
+                                        <!--primary范围开始-->
+                                        <div class="primary">
+                                            <!--main范围开始-->
+                                            <div id="main">
+                                                <div class="point">
+                                                </div>
+                                                <!--选择加载图片方式开始-->
+                                                <div id="SelectBox">
+
+                                                        <a href="javascript:;" id="selectImage">
+                                                            <input type="file" name="UpFile" autocomplete="off" />
+                                                        </a>
+
+                                                </div>
+                                                <!--选择加载图片方式结束--->
+                                                <div id="relat">
+                                                    <div id="black">
+                                                    </div>
+                                                    <div id="movebox">
+                                                        <div id="smallbox">
+                                                            <img src="shearphoto_common/images/default.gif" class="MoveImg" />
+                                                            <!--截框上的小图-->
+                                                        </div>
+                                                        <!--动态边框开始-->
+                                                        <i id="borderTop">
+                                                        </i>
+
+                                                        <i id="borderLeft">
+                                                        </i>
+
+                                                        <i id="borderRight">
+                                                        </i>
+
+                                                        <i id="borderBottom">
+                                                        </i>
+                                                        <!--动态边框结束-->
+                                                        <i id="BottomRight">
+                                                        </i>
+                                                        <i id="TopRight">
+                                                        </i>
+                                                        <i id="Bottomleft">
+                                                        </i>
+                                                        <i id="Topleft">
+                                                        </i>
+                                                        <i id="Topmiddle">
+                                                        </i>
+                                                        <i id="leftmiddle">
+                                                        </i>
+                                                        <i id="Rightmiddle">
+                                                        </i>
+                                                        <i id="Bottommiddle">
+                                                        </i>
+                                                    </div>
+                                                    <img src="shearphoto_common/images/default.gif" class="BigImg" />
+                                                    <!--MAIN上的大图-->
+                                                </div>
+                                            </div>
+                                            <!--main范围结束-->
+                                            <div style="clear: both"></div>
+                                            <!--工具条开始-->
+                                            <div id="Shearbar">
+                                                <a id="LeftRotate" href="javascript:;">
+                                                    <em>
+                                                    </em> 向左旋转
+                                                </a>
+                                                <em class="hint L">
+                                                </em>
+                                                <div class="ZoomDist" id="ZoomDist">
+                                                    <div id="Zoomcentre">
+                                                    </div>
+                                                    <div id="ZoomBar">
+                                                    </div>
+                                                    <span class="progress">
+                        </span>
+                                                </div>
+                                                <em class="hint R">
+                                                </em>
+                                                <a id="RightRotate" href="javascript:;">
+                                                    向右旋转
+                                                    <em>
+                                                    </em>
+                                                </a>
+                                                <p class="Psava">
+                                                    <a id="againIMG" href="javascript:;">重新选择</a>
+                                                    <a id="saveShear" href="javascript:;">保存截图</a>
+                                                </p>
+                                            </div>
+                                            <!--工具条结束-->
+                                        </div>
+                                        <!--primary范围结束-->
+                                        <div style="clear: both"></div>
+                                    </div>
+                                    <!--shearphoto_main范围结束-->
+
+                                    <!--主功能部份 主功能部份的标签请勿随意删除，除非你对shearphoto的原理了如指掌，否则JS找不到DOM对象，会给你抱出错误-->
+                                </td>
+
+
+
+
                         </tr>
                     </table>
                     <input name='aihao' type='hidden' id='aihao' maxlength='20' value="无">
