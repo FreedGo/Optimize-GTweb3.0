@@ -7,15 +7,17 @@ $jssdk = new JSSDK("wx61344f87c60e6c9c", "0a00f48e715df119e22583b2c4ec9a43");
 $signPackage = $jssdk->GetSignPackage();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
 	<title>[!--pagetitle--] — 好琴声</title>
 	<meta property="og:image" content="[!--titlepic--]"/>
 	<meta property="og:description" content="[!--pagetitle--] — 好琴声"/>
+	<meta http-equiv="X-UA-Compatible"  content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
-
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/haixuan.css">
+	<link rel="stylesheet" type="text/css"  href="[!--news.url--]css/hai-list-phone.css">
 	<link rel="stylesheet" type="text/css" href="http://171.11.231.70:2000/upload/css/upload.css"/>
 	<script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
 	<script language="javascript" src="/js/language.js"></script>
@@ -39,7 +41,7 @@ $signPackage = $jssdk->GetSignPackage();
 			})
 		})
 	</script>
-	<script type="text/javascript" src="[!--news.url--]js/area.js"></script>
+	<!--<script type="text/javascript" src="[!&#45;&#45;news.url&#45;&#45;]js/area.js"></script>-->
 	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script type="text/javascript">
 		var TimeStamp,
@@ -297,7 +299,7 @@ $signPackage = $jssdk->GetSignPackage();
 								</div>
 							</div>
 
-							<ol class="liebiaoShow-con  liebiaoShow-con1">
+							<ol class="liebiaoShow-con  liebiaoShow-con1 clearfix">
 								<?php $num=1?>
 								<!-- [e:loop={"select * from phome_ecms_photo where hai_id='$navinfor[id]' order by tou_num
 								desc",10,24,0}] -->
@@ -337,20 +339,20 @@ $signPackage = $jssdk->GetSignPackage();
 								</li> -->
 								<!-- [/e:loop] -->
 							</ol>
-							<ol class="liebiaoShow-con on liebiaoShow-con2">
+							<ol class="liebiaoShow-con on liebiaoShow-con2 clearfix">
 
 							</ol>
-							<ol class="liebiaoShow-con liebiaoShow-con3">
+							<ol class="liebiaoShow-con liebiaoShow-con3 clearfix">
 
 							</ol>
-							<ol class="liebiaoShow-con liebiaoShow-con4">
+							<ol class="liebiaoShow-con liebiaoShow-con4 clearfix">
 
 							</ol>
-							<ol class="liebiaoShow-con liebiaoShow-con5">
+							<ol class="liebiaoShow-con liebiaoShow-con5 clearfix">
 
 							</ol>
 							<!--这个是搜索内容用的-->
-							<ol class="liebiaoShow-con liebiaoShow-con6">
+							<ol class="liebiaoShow-con liebiaoShow-con6 clearfix">
 
 							</ol>
 							<!-- 加载动画 -->

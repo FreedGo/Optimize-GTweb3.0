@@ -1,0 +1,70 @@
+/*
+* @Author: Administrator
+* @Date:   2016-01-06 20:19:04
+* @Last Modified by:   freed
+* @title 适配手机，海选列表页
+* @Last Modified time: 2016-10-25 09:09:44
+*/
+@media screen and (max-width:960px) {
+	body {
+		width: 100%
+	}
+
+	body .head {
+		width: 100%
+	}
+
+	body .bodyWrap {
+		width: 100%;
+		height: auto;
+		background-color: #DEDEDE !important;
+
+	}
+
+	body .nav {
+		width: 100%;
+		height: auto;
+	}
+    .bodyWrap .leftWrap{
+	    display: none;
+    }
+	.bodyWrap .rightWrap{
+		width: 100%;
+		float: left;
+	}
+	.bodyWrap .rightBan{
+		width:100%;
+	}
+	.liebiao>ul{
+		width:100%;
+	}
+	.jiathis_style_32x32{
+		display: none;}
+	.qzdtList{
+		width:100%;
+	}
+	.fenleiFuck{
+		overflow: hidden;
+	}
+    .search{
+	    float: left;
+	    margin: 20px 0;
+    }
+    .paixufangfa{
+	    height: 40px;
+	    line-height:40px;
+    }
+    .jieshao{
+	    width:100%;
+    }
+    .jieshao img{
+	    max-width: 90%!important;
+	    height: auto!important;
+    }
+	.liebiaoShow-con{
+		padding: 0 10px;
+	}
+
+
+
+}
