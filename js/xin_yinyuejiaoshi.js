@@ -82,7 +82,7 @@ $(function() {
 									} else {
 										$('.liebiaoFuck').eq(0).hide();
 										$('.liebiaoShow').empty().append(msg);
-										$('.toutiao01').append('推荐');
+										// $('.toutiao01').append('推荐');
 										$('.di_zhi').append('地址：');
 										$('.telephone_one').append('咨询电话：');
 									}
@@ -136,7 +136,7 @@ $(function() {
 										} else {
 											$('.liebiaoFuck').eq(0).hide();
 											$('.liebiaoShow').empty().append(msg);
-											$('.toutiao01').append('推荐');
+											// $('.toutiao01').append('推荐');
 											$('.di_zhi').append('地址：');
 											$('.telephone_one').append('咨询电话：');
 										}
@@ -182,7 +182,7 @@ $(function() {
 									// console.log(msg);
 									$('.liebiaoFuck').eq(0).hide();
 									$('.liebiaoShow').empty().append(msg);
-									$('.toutiao01').append('推荐');
+									// $('.toutiao01').append('推荐');
 									$('.di_zhi').append('地址：');
 									$('.telephone_one').append('咨询电话：');
 									}
@@ -230,7 +230,7 @@ $(function() {
 											// 清空liebiaoShow并插入li
 											$('.liebiaoFuck').eq(0).hide();
 											$('.liebiaoShow').empty().append(msg);
-											$('.toutiao01').append('推荐');
+											// $('.toutiao01').append('推荐');
 											$('.di_zhi').append('地址：');
 											$('.telephone_one').append('咨询电话：');
 										}

@@ -310,22 +310,24 @@
 /*头条点*/
 .toutiao01,.toutiao02{
 	position: absolute;
-	top: 176px;
-	left: 192px;
-	background-color: #239AD6;
+	top: 170px;
+	left: 169px;
+	/*background-color: #239AD6;*/
+
 	z-index: 100;
 	display: inline-block;
 	cursor: pointer;
 }
 .toutiao01{
-	height: 22px;
-	width: 28px;
+	height: 60px;
+	width: 40px;
 	font-size: 14px;
 	color: #fff;
 	line-height: 22px;
 	padding: 0 10px;
+	background: url(/images/newRecommend.png) 0 0 no-repeat;
 	z-index: 101;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3)
+	/*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3)*/
 }
 .toutiao02{
 	width: 10px;
@@ -369,14 +371,15 @@
 	white-space:nowrap;
 	height:24px;
 	line-height: 24px;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .xingming i{
 	padding: 0 5px;
-	color:#FFB700;
+	color:#FF0000;
 	position: relative;
 	top: -7px;
+	font-size: 24px;
 }
 .shenfen{
 	height: 24px;

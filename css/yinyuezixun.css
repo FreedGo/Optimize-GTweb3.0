@@ -585,7 +585,7 @@ float:right;}
 	width: 200px;
 	height: 100px;
 	padding-top: 10px;
-	background-color: #E6E4E4;
+	/*background-color: #E6E4E4;*/
 	margin-bottom: 15px;
 	text-align: center;
 	transition: all 0.5s ease 0s;

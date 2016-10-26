@@ -29,7 +29,7 @@
 	width: 200px;
 	height: 100px;
 	padding-top: 10px;
-	background-color: #ddd;
+	/*background-color: #ddd;*/
 	margin-bottom: 15px;
 	text-align: center;
 	transition: all 0.5s ease 0s;
@@ -911,7 +911,7 @@
 .leftWrap.jiaoshiRight{float: right;}
 
 .login_Hou{
-	padding: 20px 26px;
+	padding: 20px 0;
 	background-color: #f7f7f7;
 	
 	margin-bottom: 10px;
@@ -919,13 +919,13 @@
 	
 }
 .login_Hou .touxiang{
-	height: 102px;
-	width: 102px;
+	height: 140px;
+	width:140px;
 	margin: 0 auto 12px;
 }
  .touxiang img{
- 	height: 102px;
-	width: 102px;
+ 	height: 140px;
+	width: 140px;
  }
  .uesrID{
  	    text-align: center;
@@ -933,6 +933,11 @@
     font-size: 16px;
     color: #474646;
     line-height: 20px;
+ }
+ .username{
+	 margin-bottom: 10px;
+	 font-size: 18px;
+
  }
 .shenfen1,.dengji{
 	padding-left: 20px;
@@ -953,6 +958,7 @@
 .guanzhu {
 	height: 30px;
 	line-height: 30px;
+	padding-left: 20px;
 }
 .inguanzhu,.fensi{
 	float: left;
@@ -2068,6 +2074,22 @@ font-size: 14px;
 .liebiaoShow-con li{
 	background-color: #ddd;
 }
+.liebiaoShow-con .iconfont{
+	position: absolute;
+	color: #fff;
+	font-size: 80px;
+	top:60px;
+	left: 112px;
+	cursor: pointer;
+}
+.tips-h5 {
+	display: none;
+}
+
+
+
+
+
 /*2016.8.1适配手机*/
 @media screen and (max-width:960px){
 	body{width: 100%}

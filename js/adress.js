@@ -1,22 +1,22 @@
 // 修改自网上下载版本，作者名字已经记不清了，谢谢他，欢迎个人及商业用户随意使用，
 // 本例依赖于jq，请先引用jq包，增加了首字母筛选功能，台湾详细县市的增添，香港地区的补全 By Freed 2016/1/28 有任何问题可以邮件联系flyxz@126.com 
 $.fn.sjld = function(shenfen,chengshi,quyu){
-	var sfp = shenfen+' p'
-	var csp = chengshi+' p'
-	var qyp = quyu+' p'
-	var sfs = shenfen+' .m_zlxg2'
-	var css = chengshi+' .m_zlxg2'
-	var qys = quyu+' .m_zlxg2'
-	var sfli = shenfen+' ul li'
-	var csli = chengshi+' ul li'
-	var qyli = quyu+' ul li'
+	var sfp = shenfen+' p';
+	var csp = chengshi+' p';
+	var qyp = quyu+' p';
+	var sfs = shenfen+' .m_zlxg2';
+	var css = chengshi+' .m_zlxg2';
+	var qys = quyu+' .m_zlxg2';
+	var sfli = shenfen+' ul li';
+	var csli = chengshi+' ul li';
+	var qyli = quyu+' ul li';
 	$('.m_zlxg').click(function(){
 		$(this).find('.m_zlxg2').slideDown(200);
-	})
+	});
 	
 	$('.m_zlxg').mouseleave(function(){
 		$(this).find('.m_zlxg2').slideUp(200);
-	})
+	});
 
 	var sfgsmr = provinceList;
 	var csgsmr = provinceList[0].cityList;
@@ -35,7 +35,7 @@ $.fn.sjld = function(shenfen,chengshi,quyu){
 	// 	$(shenfen).find('ul').append(sfnrmr);
 	// }
 	for(b=0;b<csgsmr.length;b++){
-		var csmcmr = csgsmr[b].name;
+		var csmcmr = csgsmr[b].name || 0;
 		
 		var csnrmr = "<li>"+csmcmr+"</li>";
 		$(chengshi).find('ul').append(csnrmr);

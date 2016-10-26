@@ -889,3 +889,32 @@ div.footBian{
 .friendly-link-content a:hover{
 	color: #cb7047;
 }
+
+
+
+/*2016-10-25 新认证图标*/
+.xingming>a{
+	display: inline-block;
+	vertical-align: middle;
+}
+.xingming i.newRenZheng{
+	padding: 0;
+	top:0;
+}
+.newRenZheng{
+	background: url(/images/yirenzheng.png) 0 0 no-repeat;
+	display: inline-block;
+	width:80px ;
+	height: 30px;
+
+
+}
+.newRen{
+	float: right;
+	height: 30px;
+}
+
+
+
+
+
