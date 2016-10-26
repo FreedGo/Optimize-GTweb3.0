@@ -125,10 +125,11 @@ if ($dangid != 0) {
                 <a href="<?= $public_r['newsurl'] ?>e/space/?userid=<?= $userid ?>">
                     <div class="touxiang"><img src="<?= $userpic ?>"></div>
                 </a>
-                <div class="uesrID"><?= $username ?>
+                <div class="uesrID">
+                    <h2 class="username"><?= $username ?></h2>
                     <?
                     if ($cked == 1) {
-                        echo "<i class='iconfont hongse'>&#xe657;</i>";
+                        echo "<i class='iconfont newRenZheng'></i>";
                     }
                     ?>
                 </div>
