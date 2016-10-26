@@ -378,10 +378,6 @@ require(ECMS_PATH . 'e/template/incfile/header_1.php');
 
                                     <!--主功能部份 主功能部份的标签请勿随意删除，除非你对shearphoto的原理了如指掌，否则JS找不到DOM对象，会给你抱出错误-->
                                 </td>
-
-
-
-
                         </tr>
                     </table>
                     <input name='aihao' type='hidden' id='aihao' maxlength='20' value="无">
