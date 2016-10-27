@@ -21,6 +21,15 @@ $usersay = $addur['saytext'] ? $addur['saytext'] : '暂无简介';
 $usersay = RepFieldtextNbsp(stripSlashes($usersay));
 ?>
 
+<?php
+//微信分享相关
+require_once "../weixin/jssdk.php";
+$jssdk = new JSSDK("wx61344f87c60e6c9c", "0a00f48e715df119e22583b2c4ec9a43");
+$signPackage = $jssdk->GetSignPackage();
+?>
+
+
+
 <?
 
 //获取我的关注	
@@ -115,6 +124,63 @@ if ($dangid != 0) {
             });
 
 
+        });
+    </script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        var TimeStamp,
+            NonceStr,
+            Signature;
+        wx.config({
+            debug: false,
+            appId: '<?php echo $signPackage["appId"];?>',
+            timestamp: '<?php echo $signPackage["timestamp"];?>',
+            nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+            signature: '<?php echo $signPackage["signature"];?>',
+            jsApiList: ['onMenuShareTimeline',"onMenuShareAppMessage","onMenuShareQQ","onMenuShareQZone",]
+        });
+        wx.ready(function() {
+            // 1 判断当前版本是否支持指定 JS 接口，支持批量判断
+            wx.checkJsApi({
+                jsApiList : ['onMenuShareTimeline','onMenuShareAppMessage',"onMenuShareQQ","onMenuShareQZone","hideMenuItems"],
+
+            });
+            var strTiele="<?= $username ?>的主页-好琴声";
+            var strDesc="<?= $address ?><?= $address1 ?><?= $address2 ?><?= $addres ?>";
+            // var strLink="URL";
+            var strImgUrl="<?= $userpic ?>";
+            //分享朋友圈
+            wx.onMenuShareTimeline({
+                title : strTiele, // 分享标题
+                desc : strDesc,//分享描述
+                // link : strLink, // 分享链接
+                imgUrl: strImgUrl,// 分享图标
+
+            });
+
+            //分享给微信好友
+            wx.onMenuShareAppMessage({
+                title : strTiele, // 分享标题
+                desc : strDesc,//分享描述
+                // link : strLink, // 分享链接
+                imgUrl: strImgUrl,// 分享图标
+            });
+
+            //分享到QQ
+            wx.onMenuShareQQ({
+                title : strTiele, // 分享标题
+                desc : strDesc,//分享描述
+                // link : strLink, // 分享链接
+                imgUrl: strImgUrl,// 分享图标
+            });
+
+            //分享到QQ空间
+            wx.onMenuShareQZone({
+                title : strTiele, // 分享标题
+                desc : strDesc,//分享描述
+                // link : strLink, // 分享链接
+                imgUrl: strImgUrl,// 分享图标
+            });
         });
     </script>
     <div class="bodyWrap clearfix">
