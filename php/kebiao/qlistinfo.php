@@ -13,7 +13,7 @@ $ftnr=ReturnFirsttitleNameList(0,0);
 $ftnamer=$ftnr['ftr'];
 $ignamer=$ftnr['igr'];
 
-$public_diyr['pagetitle']='琴房租赁 — 好琴声';
+$public_diyr['pagetitle']='我的课表 — 好琴声';
 $url="<a href='../../'>首页</a>&nbsp;>&nbsp;<a href='../member/cp/'>会员中心</a>&nbsp;>&nbsp;<a href='ListInfo.php?mid=$mid".$addecmscheck."'>管理信息</a>&nbsp;(".$mr[qmname].")";
 require(ECMS_PATH.'e/template/incfile/header.php');
 ?>
@@ -85,20 +85,22 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 
 
 					},
+					
 					events: [
+					//PHP赋值｛｝
 						{
-							id:'id',                      //标示id，可选
-							title: 'All Day Event',       //标题，必选
-							start: '2016-10-01 12:00:00', //开始，必选
-							end:'2016-10-01 14:00:00',    //结束，必选
-							addres:'博特琴行钢琴室',       //上课地点，必选
-							student:'张三',               //上课学生，必选
-							status:'未开始',              //课程状态，必选
-							mark:'复习最多100字',          //备注，必选
-							allDay:false,                 //是否全天事件，用于请假，必选
-							backgroundColor:'#f00',       //背景色，用于辨识事件状态，可选
-							borderColor:'#ff0',           //边框色，可选
-							textColor:'#fff'              //文字颜色，可选
+							id:'id',//标示id
+							title: 'All Day Event',//标题
+							start: '2016-10-01 12:00:00',
+							end:'2016-10-01 14:00:00',
+							addres:'博特琴行钢琴室',
+							student:'张三',
+							status:'未开始',
+							mark:'复习上一节课指法复习上一节课指法复习上一节课指法，最多100字',
+							allDay:false,
+							backgroundColor:'#f00',//背景色
+							borderColor:'#ff0',//边框色
+							textColor:'#fff'//文字颜色
 						},
 						{
 							title: 'Long Event',
@@ -289,17 +291,13 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 							</li>
 							<li class="clearfix">
 								<span>上课学生：</span>
-								<select class="kebiao-select all-stus" name="" >
-									<option value="张三">张三</option>
-								</select>
+								<input type="text" class="all-stus" required max-length="12" placeholder="请输入学生姓名" >
+<!--								<select class="kebiao-select all-stus" name="" >-->
+<!--									<option value="张三">张三</option>-->
+<!--								</select>-->
 							</li>
 							</li>
-							<li class="clearfix">
-								<span>课程状态：</span>
-								<select class="kebiao-select all-stus" name="" >
-									<option value="张三">张三</option>
-								</select>
-							</li>
+
 							<li class="clearfix">
 								<span>备注：</span>
 								<textarea class="kebiao-beizhu" name="" id="textInput" cols="30" rows="10" placeholder="最多100个字"></textarea>
