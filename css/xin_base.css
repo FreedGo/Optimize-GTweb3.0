@@ -24,7 +24,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* 图片自适应 */
 img {
-	max-width:100%;
+	/*max-width:100%;*/
 	-ms-interpolation-mode: bicubic;/*为了照顾ie图片缩放失真*/
 }
 
@@ -909,9 +909,14 @@ div.footBian{
 
 
 }
+.xingming{
+	position: relative;
+}
 .newRen{
-	float: right;
+	/*float: right;*/
 	height: 30px;
+	position: absolute;
+	right:0;
 }
 
 

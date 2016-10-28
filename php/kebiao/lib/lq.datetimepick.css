@@ -255,6 +255,7 @@
     border:#ccc solid 1px;
     border-radius: 3px;
     width: 400px;
+    float: left;
 }
 .fc-toolbar{
     padding: 40px 0 20px;
@@ -262,8 +263,13 @@
 .fc-day-header{
     height:40px;
     line-height:40px;
-    background-color: #E9B26F;
-    color: #fff;
+    background-color: #FFC107;
+    color: #000;
+    font-size: 16px;
+}
+.fc-day-header>a{
+    color: #000;
+    font-size: 16px;
 }
 .fc-day-number{
     font-size: 14px;
@@ -311,3 +317,23 @@
 .fc-content{
     font:14px/24px 微软雅黑;
 }
+ .addKecheng>li{margin-bottom: 20px;}
+ .comTips{
+     float: left;
+     max-width:172px;
+     height: 36px;
+     font:14px/36px 微软雅黑;
+     color: #cb7047;
+     padding-left: 5px;
+ }
+.bd-r{
+    border:#f00 solid 1px ;
+}
+.neibulaoshi{
+    padding-bottom: 60px;
+}
+/*.fc-time{*/
+    /*display: none;}*/
+
+
+

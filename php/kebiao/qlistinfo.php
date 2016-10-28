@@ -17,6 +17,21 @@ $public_diyr['pagetitle']='我的课表 — 好琴声';
 $url="<a href='../../'>首页</a>&nbsp;>&nbsp;<a href='../member/cp/'>会员中心</a>&nbsp;>&nbsp;<a href='ListInfo.php?mid=$mid".$addecmscheck."'>管理信息</a>&nbsp;(".$mr[qmname].")";
 require(ECMS_PATH.'e/template/incfile/header.php');
 ?>
+
+<?php
+	//课表数据处理
+	$num=$empire->num("select id from phome_zjk_kebiao_tear where tearid=$userid"); 
+	if($num>0){
+		//本月课表数据
+		$sql=$empire->query("select * from phome_zjk_kebiao_tear where tearid=$userid  and date_format(classtime,'%Y-%m')=date_format(now(),'%Y-%m')"); 
+		while($r=$empire->fetch($sql)) 
+		{ 
+			$kebiao.="{id:'$r[id]',title: '$r[couname]',start: '$r[classtime] $r[starttime]',end:'$r[classtime] $r[stoptime]',addres:'$r[location]',student:'$r[stuname]',status:'$r[retype]',mark:'$r[couname]',allDay:false,backgroundColor:'#90F79B',borderColor:'#ff0',textColor:'#000'},";
+		}
+		//$biao=substr($kebiao, 0, -1);
+		//echo $biao;
+		}
+?>
 	<div class="singleMiddle">
 		<!--	课表依赖-->
 		<link href='/e/data/html/kebiao/lib/fullcalendar.min.css' rel='stylesheet' />
@@ -86,73 +101,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 
 					},
 					
-					events: [
-					//PHP赋值｛｝
-						{
-							id:'id',//标示id
-							title: 'All Day Event',//标题
-							start: '2016-10-01 12:00:00',
-							end:'2016-10-01 14:00:00',
-							addres:'博特琴行钢琴室',
-							student:'张三',
-							status:'未开始',
-							mark:'复习上一节课指法复习上一节课指法复习上一节课指法，最多100字',
-							allDay:false,
-							backgroundColor:'#f00',//背景色
-							borderColor:'#ff0',//边框色
-							textColor:'#fff'//文字颜色
-						},
-						{
-							title: 'Long Event',
-							start: '2016-10-07',
-							end: '2016-10-10'
-						},
-						{
-							id: 999,
-							title: 'Repeating Event',
-							start: '2016-10-09T16:00:00'
-						},
-						{
-							id: 999,
-							title: 'Repeating Event',
-							start: '2016-10-16T16:00:00'
-						},
-						{
-							title: 'Conference',
-							start: '2016-10-11',
-							end: '2016-10-13'
-						},
-						{
-							title: 'Meeting',
-							start: '2016-10-12T10:30:00',
-							end: '2016-10-12T12:30:00'
-						},
-						{
-							title: 'Lunch',
-							start: '2016-10-12T12:00:00'
-						},
-						{
-							title: 'Meeting',
-							start: '2016-10-12T14:30:00'
-						},
-						{
-							title: 'Happy Hour',
-							start: '2016-10-12T17:30:00'
-						},
-						{
-							title: 'Dinner',
-							start: '2016-10-12T20:00:00'
-						},
-						{
-							title: 'Birthday Party',
-							start: '2016-10-13T07:00:00'
-						},
-						{
-							title: 'Click for Google',
-							url: 'http://google.com/',
-							start: '2016-10-28'
-						}
-					],
+					events: [<?=$kebiao?>],
 
 				});
 
@@ -214,101 +163,116 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 				</ul>
 			</div>
 			<div class="bd">
-					<!-- 我的课表 -->
-					<ul class="neibulaoshi">
-						<div id='calendar'></div>
-						<div class="single-kecheng">
-							<i class="shutUp">×</i>
-							<div class="single-ke-con">
-								<div class="single-ke-item clearfix">
-									<h4 class="ke-itme-tips">课程名称：</h4>
-									<p class="ke-item-con itemCon1">XXXXXXXXXXXX</p>
-								</div>
-								<div class="single-ke-item clearfix">
-									<h4 class="ke-itme-tips">上课地点：</h4>
-									<p class="ke-item-con itemCon2">XXXXXXXXXXXX</p>
-								</div>
-								<div class="single-ke-item clearfix">
-									<h4 class="ke-itme-tips">开始时间：</h4>
-									<p class="ke-item-con itemCon3">XXXXXXXXXXXX</p>
-								</div>
-								<div class="single-ke-item clearfix">
-									<h4 class="ke-itme-tips">结束时间：</h4>
-									<p class="ke-item-con itemCon4">XXXXXXXXXXXX</p>
-								</div>
-								<div class="single-ke-item clearfix">
-									<h4 class="ke-itme-tips">上课学生：</h4>
-									<p class="ke-item-con itemCon5">XXXXXXXXXXXX</p>
-								</div>
-								<div class="single-ke-item clearfix">
-									<h4 class="ke-itme-tips">课程状态：</h4>
-									<p class="ke-item-con itemCon6">XXXXXXXXXXXX</p>
-								</div>
-								<div class="single-ke-item clearfix">
-									<h4 class="ke-itme-tips">课程备注：</h4>
-									<p class="ke-item-con itemCon7">XXXXXXXXXXXXXXXXXX
-										XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-										XXXXX</p>
-								</div>
-								<div class="single-ke-item clearfix">
-									<button class="single-ke-btn edi-kecheng">修改课程</button>
-									<button class="single-ke-btn del-kecheng">删除课程</button>
-								</div>
+				<!-- 我的课表 -->
+				<ul class="neibulaoshi">
+					<div id='calendar'></div>
+					<div class="single-kecheng">
+						<i class="shutUp">×</i>
+						<div class="single-ke-con">
+							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">课程名称：</h4>
+								<p class="ke-item-con itemCon1">XXXXXXXXXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">上课地点：</h4>
+								<p class="ke-item-con itemCon2">XXXXXXXXXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">开始时间：</h4>
+								<p class="ke-item-con itemCon3">XXXXXXXXXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">结束时间：</h4>
+								<p class="ke-item-con itemCon4">XXXXXXXXXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">上课学生：</h4>
+								<p class="ke-item-con itemCon5">XXXXXXXXXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">课程状态：</h4>
+								<p class="ke-item-con itemCon6">XXXXXXXXXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">课程备注：</h4>
+								<p class="ke-item-con itemCon7">XXXXXXXXXXXXXXXXXX
+									XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+									XXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
+								<button class="single-ke-btn edi-kecheng">修改课程</button>
+								<button class="single-ke-btn del-kecheng">删除课程</button>
 							</div>
 						</div>
-					</ul>
-					<!--end 我的课表 -->
-	                <!-- 发布租赁 -->
-					<ul class="lh dengdai fabukecheng">
-						<form class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="ecms.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
-							<input type=hidden value=MAddInfo name=enews> <input type=hidden value=59 name=classid>
-							<input name=id type=hidden id="id" value=>
-							<input name=mid type=hidden id="mid" value=15>
-							<!----返回地址---->
-							<style>
-								.addKecheng>li{margin-bottom: 20px;}
-							</style>
-							<input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
-							<li class="clearfix"><span>课程名称：</span><input required type="text" name="title" placeholder="最多12个字"></li>
-							<li class="clearfix"><span>上课地点：</span><input required type="text" name="pbrand" placeholder="最多12个字"></li>
-							<li class="clearfix"><span>上课日期：</span><input required type="text" name="datepicker" id="datetimepicker3" class="form-control" /></li>
-							<li class="clearfix"><span>开始时间：</span><input required type="text" name="datepicker" id="datetimepicker1" class="form-control" /></li>
-							<li class="clearfix"><span>结束时间：</span><input required type="text" name="datepicker" id="datetimepicker2" class="form-control" /></li>
-							<li class="clearfix">
-								<span>重复周数：</span>
-								<select class="kebiao-select repeat-weeks" name="" >
-									<option value="1">1周</option>
-									<option value="2">2周</option>
-									<option value="3">3周</option>
-									<option value="4">4周</option>
-									<option value="5">5周</option>
-									<option value="6">6周</option>
-									<option value="7">7周</option>
-									<option value="8">8周</option>
-									<option value="9">9周</option>
-									<option value="10">10周</option>
-								</select>
-							</li>
-							<li class="clearfix">
-								<span>上课学生：</span>
-								<input type="text" class="all-stus" required max-length="12" placeholder="请输入学生姓名" >
+					</div>
+				</ul>
+				<!--end 我的课表 -->
+                <!-- 发布课表 -->
+				<ul class="lh dengdai fabukecheng">
+					<form class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="insert.ke.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
+						<!----返回地址---->
+						<input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
+						<li class="clearfix">
+							<span>课程名称：</span>
+							<input required type="text" name="couname" placeholder="最多12个字">
+							<span class="comTips"></span>
+						</li>
+						<li class="clearfix">
+							<span>上课地点：</span>
+							<input required type="text" name="location" placeholder="最多12个字">
+							<span class="comTips"></span>
+						</li>
+						<li class="clearfix">
+							<span>上课日期：</span>
+							<input required type="text" name="classtime" id="datetimepicker3" class="form-control" />
+							<span class="comTips"></span>
+						</li>
+						<li class="clearfix">
+							<span>开始时间：</span>
+							<input required type="text" name="starttime" id="datetimepicker1" class="form-control" />
+							<span class="comTips"></span>
+						</li>
+						<li class="clearfix">
+							<span>结束时间：</span>
+							<input required type="text" name="stoptime" id="datetimepicker2" class="form-control" />
+							<span class="comTips"></span>
+						</li>
+						<li class="clearfix">
+							<span>重复周数：</span>
+							<select class="kebiao-select repeat-weeks" name="repeat" >
+								<option value="1">1周</option>
+								<option value="2">2周</option>
+								<option value="3">3周</option>
+								<option value="4">4周</option>
+								<option value="5">5周</option>
+								<option value="6">6周</option>
+								<option value="7">7周</option>
+								<option value="8">8周</option>
+								<option value="9">9周</option>
+								<option value="10">10周</option>
+							</select>
+						</li>
+						<li class="clearfix">
+							<span>上课学生：</span>
+							<input type="text" class="all-stus" required max-length="12" name="stuname" placeholder="请输入学生姓名" >
+							<span class="comTips"></span>
 <!--								<select class="kebiao-select all-stus" name="" >-->
 <!--									<option value="张三">张三</option>-->
 <!--								</select>-->
-							</li>
-							</li>
-
-							<li class="clearfix">
-								<span>备注：</span>
-								<textarea class="kebiao-beizhu" name="" id="textInput" cols="30" rows="10" placeholder="最多100个字"></textarea>
-							</li>
-							<li class="clearfix">
-								<li><span></span><input class="zongse" type="submit"></li>
-							</li>
-						</form>
-					</ul>
-					<ul class="lh fabukecheng rent-edi-wrap">
-					</ul>
+						</li>
+						</li>
+						<li class="clearfix">
+							<span>备注：</span>
+							<textarea class="kebiao-beizhu" name="remarks" id="textInput" cols="30" rows="10" placeholder="最多100个字"></textarea>
+							<span class="comTips"></span>
+						</li>
+						<li class="clearfix">
+							<li><span></span><input class="zongse" type="submit"></li>
+						</li>
+					</form>
+				</ul>
+				<ul class="lh fabukecheng rent-edi-wrap">
+				</ul>
 			</div>
 		</div>
 		<!-- 调用slide的js语句 -->
