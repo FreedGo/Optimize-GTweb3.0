@@ -208,18 +208,18 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 				</ul>
 				<!--end 我的课表 -->
                 <!-- 发布课表 -->
-				<ul class="lh dengdai fabukecheng">
-					<form class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="insert.ke.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
+				<ul class="lh dengdai fabukecheng fabukebiao">
+					<form id="addLesson" class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="insert.ke.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
 						<!----返回地址---->
 						<input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
 						<li class="clearfix">
 							<span>课程名称：</span>
-							<input required type="text" name="couname" placeholder="最多12个字">
+							<input required type="text" class="addKeTitle" name="couname" placeholder="最多12个字" maxlength="12">
 							<span class="comTips"></span>
 						</li>
 						<li class="clearfix">
 							<span>上课地点：</span>
-							<input required type="text" name="location" placeholder="最多12个字">
+							<input required type="text" class="addKeAddress" name="location" placeholder="最多12个字" maxlength="12">
 							<span class="comTips"></span>
 						</li>
 						<li class="clearfix">
@@ -254,7 +254,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						</li>
 						<li class="clearfix">
 							<span>上课学生：</span>
-							<input type="text" class="all-stus" required max-length="12" name="stuname" placeholder="请输入学生姓名" >
+							<input type="text" class="all-stus" required max-length="24" name="stuname" placeholder="请输入学生姓名" >
 							<span class="comTips"></span>
 <!--								<select class="kebiao-select all-stus" name="" >-->
 <!--									<option value="张三">张三</option>-->
@@ -270,6 +270,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 							<li><span></span><input class="zongse" type="submit"></li>
 						</li>
 					</form>
+
 				</ul>
 				<ul class="lh fabukecheng rent-edi-wrap">
 				</ul>

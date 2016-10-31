@@ -28,5 +28,14 @@
 	$class=date("Y-m-d",strtotime("$classtime+$i week"));
 		
 		$empire->query("INSERT INTO phome_zjk_kebiao_tear (tearid,tearname,stuid,stuname,classtime,ddid,timestamp,location,money,couname,stare,starttime,stoptime,remarks,retype) VALUES ('$userid','$username','0','$stuname','$class','$ddid','$timestamp','$location','0','$couname','111','$starttime','$stoptime','$repeat','1')"); 
-	}	
+	}
+
+	echo '<div style="width:500px;height:150px;border:#cb7047 solid 1px;text-align:center;margin:10px auto;" class="tijiaoSuccess">
+			            <h2 style="background:#cb7047;margin:0;height:40px;line-height:40px;color:#fff;font-size:16px;" class="Success1">信息提示</h2><br />
+			            <h3 class="Success2" style="font-size:12px;" >新增课程成功！</h3><br />
+						<a href="/e/kebiao/ListInfo.php?mid=10" class="Success3" style="font-size:12px;" >如果你的网页没有自动跳转，请点击这里</a>
+			        </div>';
+	echo '<meta http-equiv="refresh" content="1;url=/e/kebiao/ListInfo.php?mid=10">';
+	exit;
+
 ?>
