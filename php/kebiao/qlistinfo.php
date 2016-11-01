@@ -215,27 +215,27 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						<li class="clearfix">
 							<span>课程名称：</span>
 							<input required type="text" class="addKeTitle" name="couname" placeholder="最多12个字" maxlength="12">
-							<span class="comTips"></span>
+							<i class="comTips"></i>
 						</li>
 						<li class="clearfix">
 							<span>上课地点：</span>
 							<input required type="text" class="addKeAddress" name="location" placeholder="最多12个字" maxlength="12">
-							<span class="comTips"></span>
+							<i class="comTips"></i>
 						</li>
 						<li class="clearfix">
 							<span>上课日期：</span>
 							<input required type="text" name="classtime" id="datetimepicker3" class="form-control" />
-							<span class="comTips"></span>
+							<i class="comTips"></i>
 						</li>
 						<li class="clearfix">
 							<span>开始时间：</span>
 							<input required type="text" name="starttime" id="datetimepicker1" class="form-control" />
-							<span class="comTips"></span>
+							<i class="comTips"></i>
 						</li>
 						<li class="clearfix">
 							<span>结束时间：</span>
 							<input required type="text" name="stoptime" id="datetimepicker2" class="form-control" />
-							<span class="comTips"></span>
+							<i class="comTips"></i>
 						</li>
 						<li class="clearfix">
 							<span>重复周数：</span>
@@ -255,7 +255,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						<li class="clearfix">
 							<span>上课学生：</span>
 							<input type="text" class="all-stus" required max-length="24" name="stuname" placeholder="请输入学生姓名" >
-							<span class="comTips"></span>
+							<i class="comTips"></i>
 <!--								<select class="kebiao-select all-stus" name="" >-->
 <!--									<option value="张三">张三</option>-->
 <!--								</select>-->
@@ -264,7 +264,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						<li class="clearfix">
 							<span>备注：</span>
 							<textarea class="kebiao-beizhu" name="remarks" id="textInput" cols="30" rows="10" placeholder="最多100个字"></textarea>
-							<span class="comTips"></span>
+							<i class="comTips"></i>
 						</li>
 						<li class="clearfix">
 							<li><span></span><input class="zongse" type="submit"></li>

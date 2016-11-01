@@ -30,27 +30,52 @@ function closeKeTips(num) {
 
 
 $(function () {
+	var getTime = new Date(),                                                   //定义时间的全局变量
+		getYear = getTime.getFullYear(),                                        //年
+		getMonth = getTime.getMonth() + 1,                                      //月
+		getDay = getTime.getDate(),                                             //日
+		getHour = getTime.getHours();                                           //小时
+
+
 	// 1.1点击X关闭打开的单个课程详情
 	$('.single-kecheng .shutUp').on('click',function () {
 		$('.single-kecheng').hide();
 	});
-	//当新增课表的表单,提交的时候
+
+	//1.2页面加载之后填充默认日期,时间
+	$('#datetimepicker3').val(getYear+'-'+getMonth+'-'+getDay);
+	if (getHour<6){
+		$('#datetimepicker1').val('6:00');
+		$('#datetimepicker2').val('7:00');
+	} else if(getHour>=6 && getHour<=22 ){
+		$('#datetimepicker1').val(getHour+':00');
+		$('#datetimepicker2').val(getHour+1+':00');
+	} else {
+		$('#datetimepicker1').val('22:00');
+		$('#datetimepicker2').val('23:00');
+	};
+
+
+	//1.3当新增课表的表单,提交的时候
 	$('#addLesson').submit(function () {
-		var valTitle = $('.addKeTitle').val(),
-			valAddress = $('.addKeAddress').val(),
-			valDate = $('#datetimepicker3').val(),
-			valStartTime = $('#datetimepicker1').val(),
-			valEndTime = $('#datetimepicker2').val(),
-			Rxpdata = new RegExp('^[1-2]\\d{3}-[1-2]\\d-[0-3]\\d$');
+		var valTitle = $('.addKeTitle').val(),                                  //标题
+			valAddress = $('.addKeAddress').val(),                              //地址
+			valDate = $('#datetimepicker3').val(),                              //日期
+			valStartTime = $('#datetimepicker1').val(),                         //开始时间
+			valEndTime = $('#datetimepicker2').val(),                           //结束时间
+			Rxpdata = new RegExp('^[1-2]\\d{3}-(0?[1-9]|1[0-2])-((0?[1-9])|((1|2)[0-9])|30|31)$$');         //匹配日期的正则
 			if (valTitle.length>12){
 				keTips(0,'最长不能超过12个字');
+				return false;
 			};
 			if (valAddress.length>12){
 				keTips(1,'最长不能超过12个字');
+				return false;
 			};
-			if (!valDate.match(Rxg)){
-				keTips(2,'日期格式不正确');
-				$('#datetimepicker3').val(data)
+			if (!valDate.match(Rxpdata)){
+				keTips(2,'日期格式不正确,请重新选择');
+				$('#datetimepicker3').val(getYear+'-'+getMonth+'-'+getDay);
+				return false;
 			};
 
 

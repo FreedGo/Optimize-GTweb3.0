@@ -328,7 +328,7 @@
      display: none;
  }
 .bd-r{
-    border:#f00 solid 1px ;
+    border:#f00 solid 1px!important; ;
 }
 .neibulaoshi{
     padding-bottom: 60px;
