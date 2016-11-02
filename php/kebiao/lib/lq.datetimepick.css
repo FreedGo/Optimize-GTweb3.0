@@ -1,4 +1,11 @@
 /* Main stylesheet for select plugin */
+li{
+    list-style: none;
+}
+
+
+
+
 .selectul{
     position:relative;
     display:inline-block;
