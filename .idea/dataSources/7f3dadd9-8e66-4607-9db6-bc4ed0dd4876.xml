@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="data">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="test"/>
+    <table id="6" parent="1" name="stu"/>
+    <column id="7" parent="6" name="stuid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="8" parent="6" name="stuname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="9" parent="6" name="stusex">
+      <mandatory>1</mandatory>
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="10" parent="6" name="stuage">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="11" parent="6" name="stuadd">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="12" parent="6" name="PRIMARY">
+      <columns>stuid</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
