@@ -1,0 +1,125 @@
+/**
+* creat by freed 2016/10/15
+* flyxz@126.com
+* 活动，也就是海选末模板通用的响应式css
+*/
+
+/*2016.8.1适配手机*/
+.tips-h5{
+    display: none!important;
+}
+@media screen and (max-width:960px){
+    body{width: 100%}
+    body .head{width: 100%}
+    body .bodyWrap{width: 100%;height: auto;background-color: #DEDEDE!important;}
+    body .nav{width: 100%;height: auto;}
+    body .artRight{display: none;}
+    body .artLeft{width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+    }
+    body .leftWrap{display: none;}
+    body .rightWrap{width: 100%;float: inherit;}
+    body .rightBan{width: 100%;overflow: hidden;-ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;white-space: nowrap;}
+    .toupiao>a{width: 280px;margin: 0 auto;display: block;}
+    .gg{margin: 0 10px;}
+    .mianbaoNav{width:auto!important;border-bottom:#ccc solid 2px;}
+    .saishiHead{margin: 0 10px;}
+    .zuozhexinxi{height: auto;border: 1px solid #F1AB2A;margin: 0 10px 15px;}
+    .borTop{display: none;}
+    .rightMiddle{width: 100%;/*padding: 0 10px;box-sizing: border-box;*/}
+    .saishiVideo{margin:0 10px;}
+    .audition-member-share{display: none;}
+    .saishiHead h2{font-size: 16px;margin-bottom: 0;}
+    .headAdvert{width: 100%;}
+    .headAdvert img{width: 100%;}
+    .textHead h2{font-size: 16px;}
+    .bdsharebuttonbox{display: none;}
+    .footAdcert{width: 100%;}
+    .footAdcert img{width: 100%;}
+    .footNavWrap {width: 100%;overflow: hidden;}
+    .footNav {display: none;}
+    .footer{width: 100%;overflow: hidden;}
+    .footCode{float: none;margin: 0 auto;}
+    .h1{float: none;margin: 0 auto;}
+    .lianxi{float: none;padding: 10px;}
+    .footBtm{height: auto;}
+    .huanying,.erWeiMa,.denglu{display: none;}
+    .navwrap{height: auto;}
+    #ivaLive{width: 100%!important;height: 14rem!important;}
+    .content-ad{height: auto!important;}
+    .pre_and_next{height: auto;}
+    .pre{float: inherit;}
+    .next{float: inherit;}
+    .w3cFocus,.w3cFocusIn{width: 100%;}
+    .w3cFocusIn .bd li{width:18.75rem; }
+    .w3cFocusIn .bd li img{max-width:18.75rem;}
+    .w3cFocusIn .hd ul li img{
+        width: 40px;height: 30px;
+    }
+    .prev{display: none;}
+    .next{display: none;}
+    .content-ad{height: auto!important;}
+    .headerWrap{display: none;}
+    .headAdvert{display: none;}
+    .content-ad{width: 100%!important;margin-left:0}
+    .content-ad .index-ad-1 img,.content-ad .index-ad-2 img{
+        height: auto;
+    }
+    .share{display: none;}
+    .toolbar{display: none;}
+    .video-ad{
+        width: 100%!important;
+        margin: 0 auto;
+        height: auto!important;
+    }
+    .video-ad img{
+        width: 100%;
+        height: auto;
+    }
+    .toupiao{
+        margin-top: 20px;
+    }
+    .liebiao{display: none;}
+    .jiathis_style_32x32{
+        display: none;
+    }
+    .canyu li{
+        display: none;
+    }
+    .canyu li.baomingrenshu{
+        display: block;
+    }
+    .tips-h5 {
+        color: #f00;
+        font-family: bold;
+        display: block!important;
+    }
+    .canyu{
+        bottom:60px;
+    }
+
+    .liebiao{
+        display: block;
+    }
+    .liebiao>ul{
+        width:100%;
+    }
+    .jieshao{
+        width:100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    .inMsg{
+        border-bottom:#cb7047 solid 1px;
+    }
+
+
+
+
+
+
+}
