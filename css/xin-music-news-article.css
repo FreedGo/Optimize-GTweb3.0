@@ -32,7 +32,7 @@
 			height:80px;
 			/*width:1200px;*/
 			/*音乐新闻头部广告拉伸的bug*/
-
+			
 		}
 		.rightAdvert img{
 			height:280px;
@@ -410,7 +410,10 @@
 	.content-ad{width: 100%!important;}
 	.share{display: none;}
 	.toolbar{display: none;}
-	.neirong p img{left:0;}
+	.neirong p img{
+		left:0;
+		width: 100%!important;
+		height: auto!important;}
 	.index-ad-1,.index-ad-2{width: 100%!important;height: auto!important;}
 
 
