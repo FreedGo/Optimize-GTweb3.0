@@ -272,7 +272,7 @@
     font-size: 16px;
 }
 .fc-day-number{
-    font-size: 14px;
+    font-size: 18px;
     color: #000;
 }
 .single-kecheng{
@@ -315,7 +315,9 @@
     margin:20px 0 20px 60px;
 }
 .fc-content{
-    font:14px/24px 微软雅黑;
+    font:15px/24px 微软雅黑;
+    display: block;
+    text-align: center;
 }
  .addKecheng>li{margin-bottom: 20px;}
  .comTips{
@@ -338,6 +340,16 @@
 .fabukecheng{
     padding-bottom:60px;
 }
-.
-
+.fc-event{
+    border:none;
+}
+.fa-today>a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
 
