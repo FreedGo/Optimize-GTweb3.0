@@ -47,6 +47,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						center: 'title',
 						right: 'month,agendaWeek,agendaDay'
 					},
+//					isRTL:true,//本来用这个参数来控制title与time显示顺序,但是会影响别的东西
 					buttonText:{
 
 						today: '转到今日',
@@ -78,16 +79,16 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					eventLimit: true,
 					dayClick: function(date, allDay, jsEvent, view) {
 						//单击日历中的某一天时
-						console.log(date);
-						console.log(allDay);
-						console.log(jsEvent);
-						console.log(view);
+//						console.log(date);
+//						console.log(allDay);
+//						console.log(jsEvent);
+//						console.log(view);
 					},
 					eventClick: function(calEvent, jsEvent, view) {
 						//日历中的某一日程（事件）时，触发此操作
-						console.log(calEvent);
-						console.log(jsEvent);
-						console.log(view);
+//						console.log(calEvent);
+//						console.log(jsEvent);
+//						console.log(view);
 						$('.itemCon1').empty().html(calEvent.title);//标题
 						$('.itemCon2').empty().html(calEvent.title);//地址
 						$('.itemCon3').empty().html(calEvent.start._i);//开始
@@ -270,7 +271,6 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 							<li><span></span><input class="zongse" type="submit"></li>
 						</li>
 					</form>
-
 				</ul>
 				<ul class="lh fabukecheng rent-edi-wrap">
 				</ul>
@@ -282,7 +282,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 		<!-- 调用slide的js语句结束 -->
 		<script type="text/javascript">
 			$(function() {//点击弹出琴房租赁修改页面
-				var fa = $('.rent-set-sei-btn'),
+				var fa = $('.edi-kecheng'),
 					fb = $('.rent-edi-wrap'),
 					fc = $('.rent-edi-menu'),
 					fd,
@@ -291,10 +291,10 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					fg = $('.hd li');
 					// fh = $('#rent-page-insert').contents().find('#rent-page-sub');
 					fa.on('click', function(event) {
-						fc.trigger('click');
+						fc.trigger('click').addClass('on');
 						fg.removeClass('on');
-						fd=$(this).siblings('.rent-id').val(),
-						fb.empty().append('<iframe id="rent-page-insert" name="rent-page-insert" src="/e/data/html/zulin/rent-eid-page.php?id='+fd+'" frameborder="0"  style="width:724px;min-height:960px;"></iframe>').show();
+						fd=$(this).siblings('.rent-id').val();
+						fb.empty().append('<iframe id="rent-page-insert" name="rent-page-insert" src="/e/data/html/kebiao/rent-eid-page.php?id='+fd+'" frameborder="0"  style="width:724px;min-height:960px;"></iframe>').show();
 					});
 					// fh.on('click', function(event) {
 					// 	alert(1);
