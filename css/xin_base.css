@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 img {
 	border: none;
+	max-width:100%;
 }
 @font-face {font-family: 'iconfont';
     src: url('../font/iconfont.eot'); /* IE9*/

@@ -163,7 +163,7 @@
 			font-size:30px;
 			font-weight:bold;
 			color:#333;
-			height:60px;
+			/*height:60px;*//*修复音乐新闻内容页标题过长会和描述重复*/
 			line-height: 60px;
 		}
 		/*右一广告*/
@@ -415,6 +415,8 @@
 		width: 100%!important;
 		height: auto!important;}
 	.index-ad-1,.index-ad-2{width: 100%!important;height: auto!important;}
-
+	.textInfo{
+		border-bottom:#ccc solid 1px;
+	}
 
 }

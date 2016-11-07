@@ -18,7 +18,9 @@
 	padding: 20px 0 ;
 	background-color: #fef5d8;
 }
-
+img{
+	max-width:100%;
+}
 /*左侧二级导航样式·····································*/
 .leftWrap{
 	width: 200px;
@@ -2087,8 +2089,15 @@ font-size: 14px;
 }
 
 
-
-
+/*课表前台页面显示相关*/
+.kebiao {
+	position: relative;
+}
+.kebiao .single-kecheng{
+	top:200px;
+	left:320px;
+}
+/*end--课表前台页面显示相关*/
 
 /*2016.8.1适配手机*/
 @media screen and (max-width:960px){

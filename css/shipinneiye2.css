@@ -1,10 +1,12 @@
 
-
-		a.player_control_bar_logo{
+	a.player_control_bar_logo{
 		display:none !important;
 	}
 	html,body{
 		background-color: #EBEAEA;
+	}
+	img{
+		max-width:100%;
 	}
 	.bodyWrap{background-color: #DEDEDE!important;}
 		.artWrap{
@@ -29,9 +31,13 @@
 			height:80px;
 			background-color: skyblue;
 		}
-		.headAdvert img,.footAdcert img{
+		.headAdvert img{
 			height:80px;
 			width:1200px;
+		}
+		.footAdcert img{
+			width:600px;
+			height:90px;
 		}
 		.rightAdvert img{
 			height:280px;
