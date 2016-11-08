@@ -25,6 +25,10 @@ function musicBook(data1,data2){
 	})
 	.done(function(msg) {
 		data2.children('.recommend-list-content').children('.loaders').hide();
+		if (msg == '[]' || msg == ''){
+			data2.hide();
+			return false;
+		}
 		// console.log(msg);
 		msg = eval('('+msg+')');
 		// console.log(msg);
@@ -136,6 +140,7 @@ function sousuo(data){//data为搜索框的类名
 				}
 			})
 			.done(function(msg){
+
 				$('.list-content-type7').children('ul').empty();
 				msg = eval('('+msg+')');
 //				console.log(msg);
@@ -146,8 +151,21 @@ function sousuo(data){//data为搜索框的类名
 					$('.list-content-type7').children('ul').empty().append('没有搜索到相关乐谱，请重新搜索');
 				}
 				else {
-					
 					$.each(msg, function(index, val) {
+						var oType;
+						if (val.f == 38){
+							oType = '钢琴谱'
+						} else if(val.f ==39){
+							oType = '提琴谱'
+						} else if(val.f ==105){
+							oType = '吉他谱'
+						}else if(val.f ==106){
+							oType = '民乐谱'
+						}else if(val.f ==107){
+							oType = '管乐谱'
+						}else if(val.f ==108){
+							oType = '综合谱'
+						};
 						 // data2.children('.recommend-list-content').append('<li class="f-l-l"><a href="'+val.c+'">'+'['+val.a+']'+val.b+'</a></li>');
 						 $('.list-content-type7').children('ul').append('<li class="lists-content-cell f-l-l"><a href="'+val.e+
 						 							'"><div class="cell-img"><img src="'+val.a+
@@ -155,8 +173,8 @@ function sousuo(data){//data为搜索框的类名
 						 							'"></div><div class="cell-title ">'+
 													'<h2>'+val.b+'</h2>'+
 													'</div>'+
-													'<div class="cell-name"><h3>'+val.c+'</h3></div>'+
-													'<div class="cell-time">'+val.d+'</div>'+
+													'<div class="cell-name"><h3>'+oType+'</h3></div>'+
+													'<div class="cell-time">'+val.c+'</div>'+
 													'</a></li>');
 					});
 				}

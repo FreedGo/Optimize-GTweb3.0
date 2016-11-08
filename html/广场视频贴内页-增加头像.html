@@ -177,19 +177,19 @@
 				<h2>[!--title--]</h2>
 				<div class="textInfo">
 					<div class="zhuozhe-img f-l-l">
-						<?
-                            $id=$_GET['id'];
-                            $haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");
-						$poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");
-						?>
+						<!--<?-->
+                            <!--$id=$_GET['id'];-->
+                            <!--$haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");-->
+							<!--$poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");-->
+						<!--?>-->
 						<a class="f-l-l" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
-							<img src="<?=$poto[userpic]?>" alt="">
+							<img src="<?=$navinfor[userpic]?>" alt="">
 						</a>
 						<div class="zuozhe-msg f-l-l">
 							<h2 class="zuozhe-name">[!--username--]</h2>
 							<h2 class="zuozhe-price">
 								<?php
-								$poto=$empire->fetch1("select userfen from phome_enewsmember where userid=$haipic[userid]");
+
 								if($r[userfen]<=100){
 								echo "一级";
 								}elseif($r[userfen]<=300){

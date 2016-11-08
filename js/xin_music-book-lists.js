@@ -10,7 +10,7 @@ var maxPageNum=[0,0,0,0,0,0];//各个分类的页码系统
 // 1.2封装调用函数
 /**
  * 此处为乐谱数据向调用及分页相关
- * @param data1 {number}为栏目,==38钢琴  ==39提琴  ==105吉他  ==106民乐  ==107管乐  ==108综合
+ * @param data1 {number}为栏目,==38钢琴  ==39提琴  ==105吉他  ==106管乐  ==107民乐  ==108综合
  * @param data2 {number}为分类，1为全部 2为古典 3为流行 4为原创，5为伴奏，6为综合,
  * @param data3 {number}为各个分类请求次数，针对同时序列化多个页码系统
  * @param data4 {string}为div容器，放置请求回来的乐谱数据，针对同时序列化多个页码系统
@@ -41,9 +41,9 @@ function musicBookLists(data1,data2,data3,data4){
 		} else if(data1 ==105){
 			oType = '吉他谱'
 		}else if(data1 ==106){
-			oType = '民乐谱'
-		}else if(data1 ==107){
 			oType = '管乐谱'
+		}else if(data1 ==107){
+			oType = '民乐谱'
 		}else if(data1 ==108){
 			oType = '综合谱'
 		};
@@ -188,10 +188,12 @@ $(function(){
  *
  * @param data
  */
-function sousuo(data){//data为搜索框的类名
+function sousuo(data,datas){//data为搜索框的类名
 	var searchType,searchVal;
 		searchType = data.find('.search-type option:selected').val();
+	console.log(data.find('.search-type option:selected'));
 		searchVal  = data.children(".search-content").val();
+		console.log(datas);
 //		console.log(searchType);
 //		console.log(searchVal);
 		if(searchVal==""||searchVal ==null ){
@@ -209,30 +211,27 @@ function sousuo(data){//data为搜索框的类名
 			})
 			.done(function(msg){
 				var oType;
-				if (data1 == 38){
+				if (datas == 38){
 					oType = '钢琴谱'
-				} else if(data1 ==39){
+				} else if(datas ==39){
 					oType = '提琴谱'
-				} else if(data1 ==105){
+				} else if(datas ==105){
 					oType = '吉他谱'
-				}else if(data1 ==106){
+				}else if(datas ==106){
 					oType = '民乐谱'
-				}else if(data1 ==107){
+				}else if(datas ==107){
 					oType = '管乐谱'
-				}else if(data1 ==108){
+				}else if(datas ==108){
 					oType = '综合谱'
 				};
 				$('.list-content-typex').children('ul').empty();
-				msg = eval('('+msg+')');
+
 //				console.log(msg);
 //				console.log(typeof msg);
-				if (msg ==""||msg == null) {
+				if (msg =="") {
 					$('.list-content-typex').children('ul').empty().append('没有搜索到相关乐谱，请重新搜索');
-				} else if(msg.length == 0){
-					$('.list-content-typex').children('ul').empty().append('没有搜索到相关乐谱，请重新搜索');
-				}
-				else {
-					
+				} else {
+					msg = eval('('+msg+')');
 					$.each(msg, function(index, val) {
 						 // data2.children('.recommend-list-content').append('<li class="f-l-l"><a href="'+val.c+'">'+'['+val.a+']'+val.b+'</a></li>');
 						 $('.list-content-typex').children('ul').append('<li class="lists-content-cell f-l-l"><a href="'+val.e+
@@ -259,7 +258,7 @@ $(function(){
 	
 	$('.lists-search .search-sub').on('click',function(){
 		var searchList1 = $('.lists-search');
-		sousuo(searchList1);
+		sousuo(searchList1,MusicListType);
 	});
 
 
