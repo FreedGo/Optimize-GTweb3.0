@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声</title>
+	<meta name="keywords" content="[!--title--]" />
+	<meta name="description" content="[!--smalltext--]" />
+	<meta property="og:image" content="[!--titlepic--]"/>
+	<meta property="og:description" content="[!--smalltext--]"/>
+	<!-- facebook-share -->
+	<meta property="og:image"              content="[!--titlepic--]" />
+	<meta property="og:description"        content="[!--pagekey--]" />
+	<!-- facebook-share -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/base.css">
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/shipinneiye2.css">
+	<script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+	<script language="javascript" src="/js/language.js"></script>
+	<script language="javascript" src="/js/app/rem.js"></script>
+	<!--<script type="text/javascript" src="[!--news.url--]js/index.js"></script>-->
+	<script type="text/javascript">
+		$(function() {
+			// 知音数据推送
+			$.ajax({
+				url: '/e/extend/tui_zhiyin/index.php',
+				type: 'post',
+				dataType: 'html',
+				data: {'titid': '<?=$navinfor[id]?>'}
+			})
+			.done(function(msg) {
+				// console.log("success");
+				// console.log({'titid': <?=$navinfor[id]?>});
+				// console.log(msg);
+			})
+			.fail(function(msg) {
+				// console.log("error");
+				// console.log({'titid': <?=$navinfor[id]?>});
+				// console.log(msg);
+			});
+		});
+	</script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript">
+		var ua = navigator.userAgent.toLowerCase();
+		if(ua.match(/MicroMessenger/i)=="micromessenger") {
+			// 匹配是微信浏览器再去验证微信权限
+			var AppID,
+					TimeStamp,
+					NonceStr,
+					Signature,
+					getUrl = location.href.split('#')[0];
+			$.ajax({
+				url: '/e/weixin/jssdkone.php',
+				type: 'post',
+				dataType: 'json',
+				data: {'urlone':getUrl},
+				async: false
+//				timeout:1000
+
+			})
+			.done(function(msg) {
+				console.log("success");
+				AppID = msg.a;
+				TimeStamp = msg.b;
+				NonceStr = msg.c;
+				Signature = msg.d;
+			})
+			.fail(function() {
+				console.log("error");
+			})
+			.always(function() {
+				console.log("complete");
+			});
+			wx.config({
+				debug: false,
+				appId: AppID,
+				timestamp: TimeStamp,
+				nonceStr: NonceStr,
+				signature: Signature,
+				jsApiList: ['onMenuShareTimeline',"onMenuShareAppMessage","onMenuShareQQ","onMenuShareQZone",]
+			});
+			wx.ready(function() {
+				// 1 判断当前版本是否支持指定 JS 接口，支持批量判断
+				wx.checkJsApi({
+					jsApiList : ['onMenuShareTimeline','onMenuShareAppMessage',"onMenuShareQQ","onMenuShareQZone","hideMenuItems"],
+
+				});
+				var strTiele="[!--pagetitle--] - 好琴声";
+				var strDesc="[!--pagekey--]";
+				// var strLink="URL";
+				var strImgUrl="[!--titlepic--]";
+				//分享朋友圈
+				wx.onMenuShareTimeline({
+					title : strTiele, // 分享标题
+					desc : strDesc,//分享描述
+					// link : strLink, // 分享链接
+					imgUrl: strImgUrl,// 分享图标
+
+				});
+
+				//分享给微信好友
+				wx.onMenuShareAppMessage({
+					title : strTiele, // 分享标题
+					desc : strDesc,//分享描述
+					// link : strLink, // 分享链接
+					imgUrl: strImgUrl,// 分享图标
+				});
+
+				//分享到QQ
+				wx.onMenuShareQQ({
+					title : strTiele, // 分享标题
+					desc : strDesc,//分享描述
+					// link : strLink, // 分享链接
+					imgUrl: strImgUrl,// 分享图标
+				});
+
+				//分享到QQ空间
+				wx.onMenuShareQZone({
+					title : strTiele, // 分享标题
+					desc : strDesc,//分享描述
+					// link : strLink, // 分享链接
+					imgUrl: strImgUrl,// 分享图标
+				});
+			});
+		}
+	</script>
+	<script type="text/javascript" src="/e/extend/lgyPl/api.js"></script>
+	<script type="text/javascript">
+		var  getUserid;
+		$(function() {
+			$.get('/e/member/login/headjs_3.php?t='+Math.random(), function(data) {
+				console.log(data);
+				getUserid = parseInt(data);
+				console.log(getUserid);
+			});
+		});
+		// var getUserid = '<script src="[!--news.url--]e/member/login/headjs_2.php?t='+Math.random()+'"><'+'/script>';
+		// console.log(getUserid);
+	</script>
+	<!--视频播放器-->
+	<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+	<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva_Compatible.js"></script>
+	<script>
+		var tgs = new Array( 'div','td','tr');
+		var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+		var startSz = 2;
+		function ts( trgt,inc ) {
+			if (!document.getElementById) return
+			var d = document,cEl = null,sz = startSz,i,j,cTags;
+			sz += inc;
+			if ( sz < 0 ) sz = 0;
+			if ( sz > 3 ) sz = 3;
+			startSz = sz;
+			if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+			cEl.style.fontSize = szs[ sz ];
+			for ( i = 0 ; i < tgs.length ; i++ ) {
+				cTags = cEl.getElementsByTagName( tgs[ i ] );
+				for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+			}
+		}
+	</script>
+</head>
+<body>
+<!--头部-->
+[!--temp.tou--]
+<div class="bodyWrap">
+	<!-- 头部广告 -->
+	<div class="headAdvert"><!--<img src="">--><script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea1.js"></script></div>
+	<!-- 头部广告结束 -->
+	<div class="artWrap">
+		<!-- 左边结构 -->
+		<div class="artLeft">
+			<!-- 文章头 -->
+			<div class="textHead">
+				<div class="textSource">您当前的位置：[!--newsnav--]</div>
+				<h2>[!--title--]</h2>
+				<div class="textInfo">
+					<div class="zhuozhe-img f-l-l">
+						<?
+                            $id=$_GET['id'];
+                            $haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");
+						$poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");
+						?>
+						<a class="f-l-l" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
+							<img src="<?=$poto[userpic]?>" alt="">
+						</a>
+						<div class="zuozhe-msg f-l-l">
+							<h2 class="zuozhe-name">[!--username--]</h2>
+							<h2 class="zuozhe-price">
+								<?php
+								$poto=$empire->fetch1("select userfen from phome_enewsmember where userid=$haipic[userid]");
+								if($r[userfen]<=100){
+								echo "一级";
+								}elseif($r[userfen]<=300){
+								echo "二级";
+								}elseif($r[userfen]<=800){
+								echo "三级";
+								}elseif($r[userfen]<=2000){
+								echo "四级";
+								}elseif($r[userfen]<=5000){
+								echo "五级";
+								}elseif($r[userfen]<=15000){
+								echo "六级";
+								}elseif($r[userfen]<=50000){
+								echo "七级";
+								}elseif($r[userfen]>100000){
+								echo "八级";
+								}else{
+								echo "八级";
+								}
+								?>
+							</h2>
+						</div>
+					</div>
+					<div class="textTime">
+						<h3>发表时间：</h3>
+						<p>[!--newstime--]</p>
+					</div>
+					<!--<div class="textAuthor">-->
+						<!--<h3>作者：</h3>-->
+						<!--<p><a href="[!&#45;&#45;news.url&#45;&#45;]e/space/?userid=<?=$navinfor['userid']?>">[!&#45;&#45;username&#45;&#45;]</a></p>-->
+					<!--</div>-->
+					<div class="textDianji">
+						<h3>点击量：</h3>
+						<p>[!--page.stats--]<script src=[!--news.url--]e/public/ViewClick?classid=[!--classid--]&id=[!--id--]&addclick=1></script></p>
+					</div>
+
+					<!--<div class="textDianji">
+						<h3>收藏量：</h3>
+						<p>gettotal("select count(*) as total from phome_enewsfava where id='$navinfor[id]' and classid='$navinfor[classid]'");?></p>
+					</div>-->
+				</div>
+			</div>
+			<!-- 文字头结束 -->
+			<div class="text">
+				<div class="keyWrod">
+					<!--视频播放器-->
+					<div style="width:860px;height:530px;margin:0 auto;" id="ivaLive"></div>
+					<script>
+						var ivaInstance=new Iva('ivaLive',{
+							appkey:'4yh_rdnre',
+							video:'[!--shipin--]',
+							skinSelect: 2,
+							autoplay:true,
+							right_hand:false,
+							memory: false
+
+						});
+					</script>
+				</div>
+				<!-- 视频下方的广告················································· -->
+				<div class="content-ad clearfix" style="width:860px;">
+					<div class="index-ad-1" style="float: left;">
+						<script src="http://greattone.net/d/js/acmsd/thea83.js"></script>
+					</div>
+					<div class="index-ad-2" style="float: left;">
+						<script src="http://greattone.net/d/js/acmsd/thea84.js"></script>
+					</div>
+				</div>
+				<!-- 视频下方的广告结束················································· -->
+				<br>
+				<div class="neirong">
+					<div id="zihao">
+						<p>[!--smalltext--]</p>
+					</div>
+					<br><br><br>
+					<script type="text/javascript" src="/js/jquery.timeago.js"></script>
+					<script type="text/javascript" src="/js/jNotify.jquery.min.js"></script>
+					<script type="text/javascript" src="/js/artDialog.js"></script>
+					<script type="text/javascript" src="/js/iframeTools.js"></script>
+					<script type="text/javascript" src="/js/visuallightbox.js"></script>
+					<script type="text/javascript" src="/js/52img.js"></script>
+					<script language="javascript" src="/js/language.js"></script>
+					<script type="text/javascript" src="/js/zan.js"></script>
+					<div class="share">
+						<a class="article_mark" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"></a>
+						<?php
+							$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].',getUserid)" class="button blue dianzanBtn" id="follow'.$navinfor[id].'"></a>';
+						?>
+						<?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>
+						<!-- JiaThis Button BEGIN -->
+						<div class="jiathis_style_32x32" style="float:right">
+							<a class="jiathis_button_weixin"></a>
+							<a class="jiathis_button_tsina"></a>
+							<a class="jiathis_button_qzone"></a>
+							<a class="jiathis_button_tqq"></a>
+							<a class="jiathis_button_fb"></a>
+							<a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+							<a class="jiathis_counter_style"></a>
+							<script type="text/javascript">
+								var jiathis_config = {
+								// url: "http://www.yourdomain.com",
+								title: "[!--pagetitle--] - 好琴声",
+								summary:"[!--pagekey--]",
+								pic:"[!--titlepic--]",
+								img_url:"[!--titlepic--]"
+								}
+							</script>
+							</div>
+							<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
+							<!-- JiaThis Button END -->
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="pl-520am" data-id="[!--id--]" data-classid="[!--classid--]"></div>
+			</div>
+			<!-- 左边结构结束 -->
+
+			<!-- 右边结构 -->
+			<div class="artRight">
+				<div class="rightAdvert">
+					<script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea3.js"></script>
+				</div>
+				<div class="recommond">
+					<dl>
+						<dd>最热</dd>
+						[e:loop={11,8,1,0,'','newstime DESC'}]
+						<dt><a href="<?=$bqsr['titleurl']?>" target="_blank"><?=esub($bqr[title],44)?></a></dt>
+						[/e:loop]
+					</dl>
+				</div>
+				<div class="recommond">
+					<dl>
+						<dd>推荐</dd>
+						[e:loop={11,8,2,0,'','newstime DESC'}]
+						<dt><a href="<?=$bqsr['titleurl']?>" target="_blank"><?=esub($bqr[title],44)?></a></a></dt>
+						[/e:loop]
+					</dl>
+				</div>
+				<div class="recommond">
+					<dl>
+						<dd>相关</dd>
+						[e:loop={11,8,0,0,"username=username",'newstime DESC'}]
+						<dt><a href="<?=$bqsr['titleurl']?>" target="_blank"><?=esub($bqr[title],44)?></a></dt>
+						[/e:loop]
+					</dl>
+				</div>
+			</div>
+			<!-- 右边结构结束 -->
+		</div>
+		<div class="footAdcert">
+			<div class="content-ad clearfix" style="width:1200px;height:90px;">
+				<div class="index-ad-1" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea79.js"></script></div>
+				<div class="index-ad-2" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea80.js"></script></div>
+			</div>
+		</div>
+
+	</div>
+	<!-- 底部 -->
+	[!--temp.wei--]
+	<!----悬浮窗---->
+	[!--temp.xuanfu--]
+</body>
+</html>
