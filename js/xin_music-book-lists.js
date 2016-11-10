@@ -37,9 +37,9 @@ function musicBookLists(data1,data2,data3,data4){
 		if (data1 == 38){
 			oType = '钢琴谱'
 		} else if(data1 ==39){
-			oType = '提琴谱'
-		} else if(data1 ==105){
 			oType = '吉他谱'
+		} else if(data1 ==105){
+			oType = '提琴谱'
 		}else if(data1 ==106){
 			oType = '管乐谱'
 		}else if(data1 ==107){
