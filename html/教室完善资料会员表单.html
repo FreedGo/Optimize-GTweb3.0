@@ -193,11 +193,11 @@
 						tokenURL : "/d/images/wanshanziliao/jiaoshi/upload.php?action=tk", /** 根据文件名、大小等信息获取Token的URI（用于生成断点续传、跨域的令牌） */
 						frmUploadURL : "/d/images/wanshanziliao/jiaoshi/upload.php?action=fd;", /** Flash上传的URI */
 						uploadURL : "/d/images/wanshanziliao/jiaoshi/upload.php?action=up", /** HTML5上传的URI */
-						simLimit:4, /** 单次最大上传文件个数 */
+						simLimit:8, /** 单次最大上传文件个数 */
 						extFilters: [".jpeg",".jpg",".png","gif"], /** 允许的文件扩展名, 默认: [] */
 						//		onSelect: function(list) {alert('onSelect')}, /** 选择文件后的响应事件 */
 						onMaxSizeExceed: function(size, limited, name) {alert('最大只能上传5MB图片')}, /** 文件大小超出的响应事件 */
-						onFileCountExceed: function(selected, limit) {alert('只能上传4张图片')}, /** 文件数量超出的响应事件 */
+						onFileCountExceed: function(selected, limit) {alert('只能上传8张图片')}, /** 文件数量超出的响应事件 */
 						onExtNameMismatch: function(name, filters) {alert('请上传jpg,png,gif格式图片')}, /** 文件的扩展名不匹配的响应事件 */
 						//		onCancel : function(file) {alert('Canceled:  ' + file.name)}, /** 取消上传文件的响应事件 */
 						onComplete: function(file) {
@@ -225,6 +225,30 @@
 								$('.uploadImgShow').prepend('<div class="imgWarp"><img class="imgUrl4" alt="" /></div>');
 								$('.imgUrl4').attr('src',imgUrl);
 								$('.uploadImgNum4').val(imgUrl);
+
+								iimgNum++;
+							}else if(iimgNum==4){
+								$('.uploadImgShow').prepend('<div class="imgWarp"><img class="imgUrl5" alt="" /></div>');
+								$('.imgUrl5').attr('src',imgUrl);
+								$('.uploadImgNum5').val(imgUrl);
+
+								iimgNum++;
+							}else if(iimgNum==5){
+								$('.uploadImgShow').prepend('<div class="imgWarp"><img class="imgUrl6" alt="" /></div>');
+								$('.imgUrl6').attr('src',imgUrl);
+								$('.uploadImgNum6').val(imgUrl);
+
+								iimgNum++;
+							}else if(iimgNum==6){
+								$('.uploadImgShow').prepend('<div class="imgWarp"><img class="imgUrl7" alt="" /></div>');
+								$('.imgUrl7').attr('src',imgUrl);
+								$('.uploadImgNum7').val(imgUrl);
+
+								iimgNum++;
+							}else if(iimgNum==7){
+								$('.uploadImgShow').prepend('<div class="imgWarp"><img class="imgUrl8" alt="" /></div>');
+								$('.imgUrl8').attr('src',imgUrl);
+								$('.uploadImgNum8').val(imgUrl);
 								i++;
 							}else{
 								alert('网络出错，请刷新页面');console.log(iimgNum);
@@ -257,6 +281,10 @@ $pp=$empire->fetch1("select photo from phome_enewsmemberadd where userid='$useri
 			<input type="hidden" class="uploadImgNum2" name="poto2">
 			<input type="hidden" class="uploadImgNum3" name="poto3">
 			<input type="hidden" class="uploadImgNum4" name="poto4">
+			<input type="hidden" class="uploadImgNum5" name="poto5">
+			<input type="hidden" class="uploadImgNum6" name="poto6">
+			<input type="hidden" class="uploadImgNum7" name="poto7">
+			<input type="hidden" class="uploadImgNum8" name="poto8">
 			<input type="hidden" name="userid" value="<?=$userid?>">
 		</li>
 		<li><span >&nbsp;&nbsp;请提交琴行照片（如门口，接待区，内饰，最多4张），支持.jpg .gif .png格式照片，大小不超过5M</span></li>
