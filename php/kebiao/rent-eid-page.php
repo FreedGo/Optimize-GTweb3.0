@@ -6,16 +6,13 @@ $empire=new mysqlquery(); //声明数据库操作类</p> <p>db_close(); //关闭
 
 $id=$_GET['id'];
 
-$classid=$_GET['classid'];
-$classid=59;
 //$userid=$_GET['userid'];
-
-$b=$empire->fetch1("select * from phome_ecms_shop where id='$id' and classid='$classid'");
+$b=$empire->fetch1("select * from phome_zjk_kebiao_tear where id='$id'");
 
 $empire=null; //注消操作类变量 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
 	<title>租赁修改</title>
@@ -31,44 +28,44 @@ $empire=null; //注消操作类变量
 			var fa = $(window.parent.document.getElementById("rent-edi-trigger")),
 				fb = $('#rent-page-sub');
 				fb.click(function(event) {
-					fa.trigger('click');
+//					fa.trigger('click');
 					alert('修改成功');
+					parent.location.reload();
 				});
 		});
 	</script>
 </head>
 <body>
 <div class="www360buy">
-	<div class="bd fabukecheng fabukebiao">
-		<form id="addLesson" class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="insert.ke.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
-			<!----返回地址---->
-			<input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
+	<div class="bd fabukecheng xiugaikebiao">
+		<form id="addLesson" class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="/e/kebiao/update.kebiao.php" onSubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
+			<input type="hidden" name="id" value="<?=$b[id]?>">
 			<li class="clearfix">
 				<span>课程名称：</span>
-				<input required type="text" class="addKeTitle" name="couname" placeholder="最多12个字" maxlength="12">
+				<input required type="text" class="addKeTitle" name="couname" placeholder="最多12个字" maxlength="12" value="<?=$b[couname]?>">
 				<i class="comTips"></i>
 			</li>
 			<li class="clearfix">
 				<span>上课地点：</span>
-				<input required type="text" class="addKeAddress" name="location" placeholder="最多12个字" maxlength="12">
+				<input required type="text" class="addKeAddress" name="location" placeholder="最多12个字" maxlength="12" value="<?=$b[location]?>">
 				<i class="comTips"></i>
 			</li>
 			<li class="clearfix">
 				<span>上课日期：</span>
-				<input required type="text" name="classtime" id="datetimepicker3" class="form-control" />
+				<input required type="text" name="classtime" id="datetimepicker3" class="form-control" value="<?=$b[classtime]?>"/>
 				<i class="comTips"></i>
 			</li>
 			<li class="clearfix">
 				<span>开始时间：</span>
-				<input required type="text" name="starttime" id="datetimepicker1" class="form-control" />
+				<input required type="text" name="starttime" id="datetimepicker1" class="form-control" value="<?=$b[starttime]?>"/>
 				<i class="comTips"></i>
 			</li>
 			<li class="clearfix">
 				<span>结束时间：</span>
-				<input required type="text" name="stoptime" id="datetimepicker2" class="form-control" />
+				<input required type="text" name="stoptime" id="datetimepicker2" class="form-control"  value="<?=$b[stoptime]?>"/>
 				<i class="comTips"></i>
 			</li>
-			<li class="clearfix">
+			<!--<li class="clearfix">
 				<span>重复周数：</span>
 				<select class="kebiao-select repeat-weeks" name="repeat" >
 					<option value="1">1周</option>
@@ -82,10 +79,10 @@ $empire=null; //注消操作类变量
 					<option value="9">9周</option>
 					<option value="10">10周</option>
 				</select>
-			</li>
+			</li>-->
 			<li class="clearfix">
 				<span>上课学生：</span>
-				<input type="text" class="all-stus" required max-length="24" name="stuname" placeholder="请输入学生姓名" >
+				<input type="text" class="all-stus" required max-length="24" name="stuname" placeholder="请输入学生姓名" value="<?=$b[stuname]?>">
 				<i class="comTips"></i>
 				<!--								<select class="kebiao-select all-stus" name="" >-->
 				<!--									<option value="张三">张三</option>-->
@@ -94,11 +91,11 @@ $empire=null; //注消操作类变量
 			</li>
 			<li class="clearfix">
 				<span>备注：</span>
-				<textarea class="kebiao-beizhu" name="remarks" id="textInput" cols="30" rows="10" placeholder="最多100个字"></textarea>
+				<textarea class="kebiao-beizhu" name="remarks" id="textInput" cols="30" rows="10" placeholder="最多100个字"><?=$b[remarks]?></textarea>
 				<i class="comTips"></i>
 			</li>
 			<li class="clearfix">
-			<li><span></span><input class="zongse" type="submit"></li>
+			<li><span></span><input class="zongse" id="rent-page-sub" type="submit"></li>
 			</li>
 		</form>
 	</div>

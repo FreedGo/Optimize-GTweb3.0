@@ -86,16 +86,17 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					},
 					eventClick: function(calEvent, jsEvent, view) {
 						//日历中的某一日程（事件）时，触发此操作
-//						console.log(calEvent);
+						console.log(calEvent);
 //						console.log(jsEvent);
 //						console.log(view);
 						$('.itemCon1').empty().html(calEvent.title);//标题
-						$('.itemCon2').empty().html(calEvent.title);//地址
+						$('.itemCon2').empty().html(calEvent.addres);//地址
 						$('.itemCon3').empty().html(calEvent.start._i);//开始
 						$('.itemCon4').empty().html(calEvent.end._i);//结束
 						$('.itemCon5').empty().html(calEvent.student);//学生
 						$('.itemCon6').empty().html(calEvent.status);//课程状态
 						$('.itemCon7').empty().html(calEvent.mark);//备注
+						$('.kechengid').val(calEvent.id);
 
 						$('.single-kecheng').show();
 
@@ -200,6 +201,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 									XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 									XXXXX</p>
 							</div>
+							<input type="hidden" class="kechengid">
 							<div class="single-ke-item clearfix">
 								<button class="single-ke-btn edi-kecheng">修改课程</button>
 								<button class="single-ke-btn del-kecheng">删除课程</button>
@@ -281,7 +283,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 		<script type="text/javascript">jQuery(".www360buy").slide({delayTime:0,trigger:'click' });</script>
 		<!-- 调用slide的js语句结束 -->
 		<script type="text/javascript">
-			$(function() {//点击弹出琴房租赁修改页面
+			$(function() {//点击弹出课表修改页面
 				var fa = $('.edi-kecheng'),
 					fb = $('.rent-edi-wrap'),
 					fc = $('.rent-edi-menu'),
@@ -293,13 +295,35 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					fa.on('click', function(event) {
 						fc.trigger('click').addClass('on');
 						fg.removeClass('on');
-						fd=$(this).siblings('.rent-id').val();
+						fd=$('.kechengid').val();
 						fb.empty().append('<iframe id="rent-page-insert" name="rent-page-insert" src="/e/data/html/kebiao/rent-eid-page.php?id='+fd+'" frameborder="0"  style="width:724px;min-height:960px;"></iframe>').show();
 					});
 					// fh.on('click', function(event) {
 					// 	alert(1);
 					// });
 			});
+			$(function () {
+//				课表删除
+				$('.del-kecheng').on('click',function () {
+					var confirmDel =confirm('确定要删除吗?');
+					if (confirmDel){
+						$.ajax({
+							url:'/e/kebiao/delete.kebiao.php',
+							data:{'id':$('.kechengid').val()},
+							type:'post'
+						}).done(function (msg) {
+							console.log(msg)
+							alert('删除成功!');
+							window.location.reload();
+						}).error(function () {
+							console.log('error');
+							alert('删除失败!');
+						});
+					}
+
+				})
+			})
+
 		</script>
 		</div>
 		<!-- 知音动态区域·················································· -->

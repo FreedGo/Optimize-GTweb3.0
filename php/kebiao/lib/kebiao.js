@@ -79,16 +79,16 @@ $(function () {
 	});
 
 	//1.2页面加载之后填充默认日期,时间
-	$('#datetimepicker3').val(getYear+'-'+getMonth+'-'+getDay);
+	$('.fabukebiao').find('#datetimepicker3').val(getYear+'-'+getMonth+'-'+getDay);
 	if (getHour<6){
-		$('#datetimepicker1').val('6:00');
-		$('#datetimepicker2').val('7:00');
+		$('.fabukebiao').find('#datetimepicker1').val('6:00');
+		$('.fabukebiao').find('#datetimepicker2').val('7:00');
 	} else if(getHour>=6 && getHour<=22 ){
-		$('#datetimepicker1').val(getHour+':00');
-		$('#datetimepicker2').val(getHour+1+':00');
+		$('.fabukebiao').find('#datetimepicker1').val(getHour+':00');
+		$('.fabukebiao').find('#datetimepicker2').val(getHour+1+':00');
 	} else {
-		$('#datetimepicker1').val('22:00');
-		$('#datetimepicker2').val('23:00');
+		$('.fabukebiao').find('#datetimepicker1').val('22:00');
+		$('.fabukebiao').find('#datetimepicker2').val('23:00');
 	};
 
 
