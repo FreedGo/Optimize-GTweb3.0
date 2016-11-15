@@ -29,7 +29,9 @@ $empire=null; //注消操作类变量
 				fb = $('#rent-page-sub');
 				fb.click(function(event) {
 //					fa.trigger('click');
-					alert('修改成功');
+//					$('.addKecheng').submit();
+//					alert('修改成功');
+
 					parent.location.reload();
 				});
 		});
@@ -38,7 +40,7 @@ $empire=null; //注消操作类变量
 <body>
 <div class="www360buy">
 	<div class="bd fabukecheng xiugaikebiao">
-		<form id="addLesson" class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="/e/kebiao/update.kebiao.php" onSubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
+		<form id="ediLesson" class="addKecheng" name="add" method="POST" enctype="multipart/form-data" action="/e/kebiao/update.kebiao.php" onSubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
 			<input type="hidden" name="id" value="<?=$b[id]?>">
 			<li class="clearfix">
 				<span>课程名称：</span>

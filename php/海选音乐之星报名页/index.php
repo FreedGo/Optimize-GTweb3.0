@@ -3,6 +3,7 @@ require('../../../class/connect.php'); //引入数据库配置文件和公共函
 require('../../../class/db_sql.php'); //引入数据库操作文件 
 $link=db_connect(); //连接MYSQL 
 $empire=new mysqlquery(); //声明数据库操作类</p> <p>db_close(); //关闭MYSQL链接
+
 $userid   =getcvar('mluserid');
 if($userid==0){
 	echo '<meta http-equiv="refresh" content="0;url=/e/member/login/">';
@@ -38,7 +39,10 @@ if($userid==0){
 <script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript">
     var actid = '<?=$id?>';
+    console.log(actid);
     var actClassid = '<?=$classid?>';
+    console.log(actClassid);
+
   </script>
 <script type="text/javascript" src="/js/xin_haixuan.js" ></script>
 <script type="text/javascript">
@@ -46,7 +50,7 @@ if($userid==0){
     var aSelect = $('.hai_grouping'),
             b = $('.hai_grouping2'),
             c;
-            window.onload = function(){//海选报名分组，一级选择，在页面载入之后向台请求数据
+            window.onload = function(){//海选报名分组，一级选择，在页面载入之后向后天请求数据
               $.ajax({
                 url: '/e/ajax/haixuan.ajax.php',
                 type: 'post',

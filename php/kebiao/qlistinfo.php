@@ -26,7 +26,7 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 		$sql=$empire->query("select * from phome_zjk_kebiao_tear where tearid=$userid  and date_format(classtime,'%Y-%m')=date_format(now(),'%Y-%m')"); 
 		while($r=$empire->fetch($sql)) 
 		{ 
-			$kebiao.="{id:'$r[id]',title: '$r[couname]',start: '$r[classtime] $r[starttime]',end:'$r[classtime] $r[stoptime]',addres:'$r[location]',student:'$r[stuname]',status:'$r[retype]',mark:'$r[couname]',allDay:false,backgroundColor:'#90F79B',borderColor:'#ff0',textColor:'#000'},";
+			$kebiao.="{id:'$r[id]',title: '$r[couname]',start: '$r[classtime] $r[starttime]',end:'$r[classtime] $r[stoptime]',addres:'$r[location]',student:'$r[stuname]',status:'$r[retype]',mark:'$r[remarks]',allDay:false,backgroundColor:'#90F79B',borderColor:'#ff0',textColor:'#000'},";
 		}
 		//$biao=substr($kebiao, 0, -1);
 		//echo $biao;

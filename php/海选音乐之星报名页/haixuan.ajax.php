@@ -15,5 +15,5 @@ while($r=$empire->fetch($sql))
 ?>
 <option value="<?=$r[sitename]?>"><?=$r[sitename]?><?=$r[renminbi]?></option>
 <?
-}	
+}
 ?>
