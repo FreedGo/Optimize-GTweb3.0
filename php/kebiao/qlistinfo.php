@@ -70,8 +70,14 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					allDayText: '全天',
 					//agenda视图下两个相邻时间之间的间隔
 					slotMinutes: 30,
+					//设置显示的时间从几点开始
+					minTime:'6:00',
+					//设置显示的时间从几点结束
+					maxTime:'23:00',
+					//星期全称
+					dayNames:['周日','周一','周二','周三','周四','周五','周六'],
 					//区分工作时间
-					businessHours: true,
+					businessHours: false,
 					//非all-day时，如果没有指定结束时间，默认执行120分钟
 					defaultEventMinutes: 120,
 					//设置为true时，如果数据过多超过日历格子显示的高度时，多出去的数据不会将格子挤开，而是显示为 +...more ，点击后才会完整显示所有的数据
@@ -172,6 +178,10 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						<i class="shutUp">×</i>
 						<div class="single-ke-con">
 							<div class="single-ke-item clearfix">
+								<h4 class="ke-itme-tips">上课学生：</h4>
+								<p class="ke-item-con itemCon5">XXXXXXXXXXXX</p>
+							</div>
+							<div class="single-ke-item clearfix">
 								<h4 class="ke-itme-tips">课程名称：</h4>
 								<p class="ke-item-con itemCon1">XXXXXXXXXXXX</p>
 							</div>
@@ -186,10 +196,6 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 							<div class="single-ke-item clearfix">
 								<h4 class="ke-itme-tips">结束时间：</h4>
 								<p class="ke-item-con itemCon4">XXXXXXXXXXXX</p>
-							</div>
-							<div class="single-ke-item clearfix">
-								<h4 class="ke-itme-tips">上课学生：</h4>
-								<p class="ke-item-con itemCon5">XXXXXXXXXXXX</p>
 							</div>
 							<div class="single-ke-item clearfix">
 								<h4 class="ke-itme-tips">课程状态：</h4>
