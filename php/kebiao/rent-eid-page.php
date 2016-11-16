@@ -36,6 +36,50 @@ $empire=null; //注消操作类变量
 				});
 		});
 	</script>
+	<!--		日期控件依赖-->
+	<link rel="stylesheet" type="text/css" href="/e/data/html/kebiao/lib/lq.datetimepick.css"/>
+	<script src='/e/data/html/kebiao/lib/selectUi.js' type='text/javascript'></script>
+	<script src='/e/data/html/kebiao/lib/lq.datetimepick.js' type='text/javascript'></script>
+	<script src="/e/data/html/kebiao/lib/kebiao.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#datetimepicker1").on("click",function(e){
+				e.stopPropagation();
+				$(this).lqdatetimepicker({
+					css : 'datetime-hour'
+				});
+			});
+			$("#datetimepicker2").on("click",function(e){
+				e.stopPropagation();
+				$(this).lqdatetimepicker({
+					css : 'datetime-hour'
+				});
+			});
+			$("#datetimepicker3").on("click",function(e){
+				e.stopPropagation();
+				$(this).lqdatetimepicker({
+					css : 'datetime-day',
+					dateType : 'D',
+					selectback : function(){
+					}
+				});
+			});
+		});
+		/*字数限制100个*/
+		$(function () {
+			$("#textInput").on("input propertychange", function() {
+				var $this = $(this),
+					_val = $this.val(),
+					count = "";
+				if (_val.length > 100) {
+					$this.val(_val.substring(0, 100));
+				}
+				count = 100 - $this.val().length;
+				$("#text-count").text(count);
+			});
+		});
+	</script>
+	<!--end日期控件依赖-->
 </head>
 <body>
 <div class="www360buy">

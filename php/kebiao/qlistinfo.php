@@ -65,15 +65,19 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					//初始化时的默认视图，month、agendaWeek、agendaDay
 					defaultView: 'month',
 					//agenda视图下是否显示all-day
-					allDaySlot: true,
+					allDaySlot: false,
 					//agenda视图下all-day的显示文本
 					allDayText: '全天',
 					//agenda视图下两个相邻时间之间的间隔
-					slotMinutes: 30,
+					slotMinutes: 20,
 					//设置显示的时间从几点开始
 					minTime:'6:00',
 					//设置显示的时间从几点结束
 					maxTime:'23:00',
+					//日历主体内容的高度
+					//contentHeight:750,
+					//设置视图中的事件显示是否可以重叠覆盖
+					slotEventOverlap:false,
 					//星期全称
 					dayNames:['周日','周一','周二','周三','周四','周五','周六'],
 					//区分工作时间
