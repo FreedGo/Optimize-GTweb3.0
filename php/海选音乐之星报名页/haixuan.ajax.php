@@ -10,10 +10,11 @@ if(empty($titleid)){
 }
 
 $sql=$empire->query("select sitename,renminbi from {$dbtbpre}enewsbe where titleid='$titleid'");
+$arr = array();
 while($r=$empire->fetch($sql))
-{
-?>
-<option value="<?=$r[sitename]?>"><?=$r[sitename]?><?=$r[renminbi]?></option>
-<?
+	{
+	$arr[] = array('name' => $r[sitename], 'price' => $r[renminbi]);
 }
+echo json_encode($arr);
+
 ?>

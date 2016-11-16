@@ -59,8 +59,14 @@ if($userid==0){
               })
               .done(function(msg) {
                 // a.empty().append('<option value="0">请选择</option>');
-                aSelect.empty().append('<option value="请选择">请选择</option>'+msg);
-                console.log(msg);
+                aSelect.empty().append('<option value="请选择">请选择</option>');
+                  msg=eval("("+msg+")");
+                  for (var i = 0 ;i < msg.length ; i++){
+                      aSelect.append('<option value='+msg[i].name+'>'+msg[i].name+'</option>');
+                      $('.leftWrap').append('<input type="hidden" class="tem-price" value='+msg[i].price+' />')
+                  };
+                  aSelect[0].selectedIndex = 1;//默认选择第一个项
+                  $('.baomingfeinum').html(msg[0].price);//默认第一个价格
               })
               .fail(function() {
                 console.log("error");
@@ -71,10 +77,13 @@ if($userid==0){
               c = $(this).val();
               if (c=='请选择') {
                 
-                $("#hai_grouping option[value='请选择']").remove();
+//                $("#hai_grouping option[value='请选择']").remove();
+                  this.selectedIndex = 1;
                 alert('请选择分组');
               }
               else {
+                  var priceIndex = this.selectedIndex-1;
+                  $('.baomingfeinum').html($('.tem-price').eq(priceIndex).val());//选择对应分组的价格
                 $.ajax({
                   url: '/e/ajax/haixuan.ajax.two.php',
                   type: 'post',
@@ -200,7 +209,7 @@ if($r[hai_baotype]=="|视频|"){
 <form class="haixuanbaoming haixuanbaoming1 videobaoming" name="add" method="POST" enctype="multipart/form-data" action="/e/DoInfo/ecms.php" onSubmit="return EmpireCMSQInfoPostFun(document.add,'20');">
               <input type=hidden value=MAddInfo name=enews> <input type=hidden value=73 name=classid> 
               <input name=id type=hidden id="id" value=>
-              <input name=bao_type type=hidden id="id" value="3"> 
+              <input name=bao_type type=hidden id="idd" value="3">
               <input type="hidden" name="dingdan" value="<?=$ddid?>" />
                <!----返回地址---->
               <input type="hidden" name="ecmsfrom" value="/e/template/incfile/haixuan/pay.php?ddid=<?=$ddid?>&did=<?=$id?>">
@@ -294,9 +303,9 @@ if($r[hai_baotype]=="|视频|"){
                     <td bgcolor='ffffff'>
                     	<?php
                         	if($r[bitype]=="人民币"){
-								echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ $r[price]元</span>";
+								echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ <i class='baomingfeinum'>$r[price]</i>元</span>";
 							}elseif($r[bitype]=="新台幣"){
-								echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ $r[price]元</span>";
+								echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ <i class='baomingfeinum'>$r[price]</i>元</span>";
 							}
 						?>
                     </td>
@@ -548,9 +557,9 @@ if($r[hai_baotype]=="|视频|"){
                     <td bgcolor='ffffff'>
                      <?php
                         	if($r[bitype]=="人民币"){
-								echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ $r[price]元</span>";
+								echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ <i class='baomingfeinum'>$r[price]</i>元</span>";
 							}elseif($r[bitype]=="新台幣"){
-								echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ $r[price]元</span>";
+								echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ <i class='baomingfeinum'>$r[price]</i>元</span>";
 							}
 					?>
                     </td>
@@ -590,7 +599,7 @@ if($r[hai_baotype]=="|视频|"){
         <form class="haixuanbaoming haixuanbaoming1 videobaoming" name="add" method="POST" enctype="multipart/form-data" action="/e/DoInfo/ecms.php" onSubmit="return EmpireCMSQInfoPostFun(document.add,'20');">
         <input type=hidden value=MAddInfo name=enews> <input type=hidden value=73 name=classid>
         <input name=id type=hidden id="id" value=>
-        <input name=bao_type type=hidden id="id" value="4">
+        <input name=bao_type type=hidden id="idd" value="3">
         <input type="hidden" name="dingdan" value="<?=$ddid?>" />
         <!----返回地址---->
         <input type="hidden" name="ecmsfrom" value="/e/template/incfile/haixuan/pay.php?ddid=<?=$ddid?>&did=<?=$id?>">
@@ -684,9 +693,9 @@ if($r[hai_baotype]=="|视频|"){
                     <td bgcolor='ffffff'>
                         <?php
                         if($r[bitype]=="人民币"){
-                            echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ $r[price]元</span>";
+                            echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ <i class='baomingfeinum'>$r[price]</i>元</span>";
                         }elseif($r[bitype]=="新台幣"){
-                            echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ $r[price]元</span>";
+                            echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ <i class='baomingfeinum'>$r[price]</i>元</span>";
                         }
                         ?>
                     </td>
@@ -937,9 +946,9 @@ if($r[hai_baotype]=="|视频|"){
         <td bgcolor='ffffff'>
             <?php
             if($r[bitype]=="人民币"){
-                echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ $r[price]元</span>";
+                echo "<span class='baomingfei' style='font-weight: normal;'>人民币：¥ <i class='baomingfeinum'>$r[price]</i>元</span>";
             }elseif($r[bitype]=="新台幣"){
-                echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ $r[price]元</span>";
+                echo "<span class='baomingfei' style='font-weight: normal;'>新台幣：$ <i class='baomingfeinum'>$r[price]</i>元</span>";
             }
             ?>
         </td>
