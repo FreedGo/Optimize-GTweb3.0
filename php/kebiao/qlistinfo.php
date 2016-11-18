@@ -267,11 +267,11 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						</li>
 						<li class="clearfix">
 							<span>上课学生：</span>
-							<input type="text" class="all-stus" required max-length="24" name="stuname" placeholder="请输入学生姓名" >
+<!--							<input type="text" class="all-stus" required max-length="24" name="stuname" placeholder="请输入学生姓名" >-->
+							<select class="kebiao-select all-stus" name="stuname" >
+								<option value="0">请选择</option>
+							</select>
 							<i class="comTips"></i>
-<!--								<select class="kebiao-select all-stus" name="" >-->
-<!--									<option value="张三">张三</option>-->
-<!--								</select>-->
 						</li>
 						</li>
 						<li class="clearfix">

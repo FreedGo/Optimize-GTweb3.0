@@ -257,6 +257,7 @@ li{
     height:36px;
     border:#ccc solid 1px;
     border-radius: 3px;
+    float: left;
 }
 .kebiao-beizhu{
     border:#ccc solid 1px;
@@ -331,10 +332,11 @@ li{
      float: left;
      max-width:172px;
      height: 36px;
-     font:14px/36px 微软雅黑;
+     font:12px/36px 微软雅黑;
      color: #cb7047;
      padding-left: 5px;
      display: none;
+     line-height:18px;
  }
 .bd-r{
     border:#f00 solid 1px!important; ;

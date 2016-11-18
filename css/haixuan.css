@@ -1805,7 +1805,9 @@ font-size: 14px;
 	min-height: 28px!important;
 }
 /*单独海选报名*/
-.imgbaoming{display: none;}
+/*.imgbaoming{display: none;}*/
+.videobaoming{display: none;}
+/*2016-11-17 海选音乐之星改为先图片,再视频*/
 .haixuanbaoming1.jingling-img{
 	display: block;
 }

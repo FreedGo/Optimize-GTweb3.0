@@ -13,10 +13,10 @@
  */
 function keTips(num,str) {
 	var fatherDOM = $('.fabukebiao li').eq(num),
-		comInput =  fatherDOM.children('input')||fatherDOM.children('textarea'),
+		comInput =  fatherDOM.children('input')||fatherDOM.children('textarea')||fatherDOM.children('select'),
 		comTips = fatherDOM.children('.comTips');
-	comInput.addClass('bd-r');
-	comTips.empty().html(str).fadeIn(100);
+		comInput.addClass('bd-r');
+		comTips.empty().html(str).fadeIn(100);
 }
 /**
  * 0.2表单验证提示信息的关闭
@@ -98,8 +98,8 @@ $(function () {
 			valAddress = $('.addKeAddress').val(),                              //地址
 			valDate = $('#datetimepicker3').val(),                              //日期
 			valStartTime = $('#datetimepicker1').val(),                         //开始时间
-			valEndTime = $('#datetimepicker2').val();                           //结束时间
-
+			valEndTime = $('#datetimepicker2').val(),                           //结束时间
+			valStuName = $('.all-stus').val();                                        //选择学生的名字
 			if (valTitle.length>12){
 				keTips(0,'最长不能超过12个字');
 				return false;
@@ -118,13 +118,18 @@ $(function () {
 				return false;
 
 			};
+			if (valStuName == "0"){
+				keTips(6,'请选择您的学生,如果您没有学生,请与您的学生互相关注,并邀请他为您的学生');
+				return false;
+			};
 			if (!valEndTime.match(RxpHour)){
 				keTips(4,'时间格式不正确,请按照HH:MM格式');
 				return false;
 
 			}else{
 				return compareHour(valStartTime,valEndTime);
-			}
+			};
+
 
 	});
 
