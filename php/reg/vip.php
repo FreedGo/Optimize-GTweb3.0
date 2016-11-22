@@ -175,6 +175,7 @@ require(ECMS_PATH.'e/template/incfile/header_1.php');
 			<input name='phone' type='text' id='photo' style="float:left;"  phone="t"
 			       vali maxlength='11' required>
 		</td>
+
 	</tr>
 
 <tr>
