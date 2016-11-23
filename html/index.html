@@ -397,128 +397,51 @@
                 <div class="inXing">
                     <div class="xingHead">
                         <div class="yinyueHead clearfix">
-                            <h3><a href="[!--news.url--]mingren">音乐之星</a></h3>
-                            <span class="more"><a href="[!--news.url--]mingren">更多</a></span>
+                            <h3><a href="[!--news.url--]mingren">网络海选</a></h3>
+                            <span class="more"><a href="[!--news.url--]haixuan">更多</a></span>
                         </div>
                     </div>
-                    <div class="xingName">
-                        <ul class="clearfix">
-                            <li>琴行名人</li>
-                            <li>钢琴之星</li>
-                            <li>提琴之星</li>
-                            <li>吉他之星</li>
-                            <!--<li>琴行名人</li>-->
-                            <li>管乐之星</li>
-                            <li>民乐之星</li>
-                            <li>歌唱之星</li>
-                            <li>其他之星</li>
-                            <li>维修达人</li>
-                        </ul>
+                    <div class="picScroll hai_banner" style="margin:10px auto 0">
+                        <div class="bd">
+                            <a href="javascript:void(0)" class="prev"></a>
+                            <a href="javascript:void(0)" class="next"></a>
+                            <div class="scrollWrap">
+                                <ul class="picList">
+                                    <li>
+                                        <a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558" class="pic">
+                                            <img src="http://www.greattone.net/d/file/d185389c8ce8dbe870096975a894d77d.jpg">
+                                        </a>
+                                        <h2 class="movielist_tt">音乐之星海选-江苏站决赛</h2>
+                                        <p class="txt1">活动时间：2016-10-15—2016-12-13</p>
+                                        <p class="txt1">活动地点：南京艺术学院</p>
+                                        <span class="hai-baoming"><a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558">赶快参加</a></span>
+                                        <span class="has-sign-num">124人已报名</span>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558" class="pic">
+                                            <img src="http://www.greattone.net/d/file/d185389c8ce8dbe870096975a894d77d.jpg">
+                                        </a>
+                                        <h2 class="movielist_tt">音乐之星海选-江苏站决赛</h2>
+                                        <p class="txt1">活动时间：2016-10-15—2016-12-13</p>
+                                        <p class="txt1">活动地点：南京艺术学院</p>
+                                        <span class="has-sign-num">124人已报名</span>
+                                        <span class="hai-baoming"><a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558">赶快参加</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="xingImg">
-                        <ul class="clearfix">
-                            <!--名人名家-->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='琴行名人' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-
-                        </ul>
-                        <ul class="clearfix">
-                            <!--···············钢琴之星····················-->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='钢琴之星' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                        <ul class="clearfix">
-                            <!---------提琴之星---------->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='提琴之星' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                        <ul class="clearfix">
-                            <!---······················吉它之星·························--->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='吉它之星' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                        <ul class="clearfix">
-                            <!------琴行名人------->
-                            <!-- [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='琴行名人' limit 12",10,24,0}]
-                              <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                               <img src="<?=$bqr[userpic]?>" alt="">
-                                               <h3><?=$bqr[username]?></h3>
-                                           </a>
-                              </li>
-                               [/e:loop]-->
-                        </ul>
-                        <ul class="clearfix">
-                            <!------管乐之星------->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='管乐之星' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                        <ul class="clearfix">
-                            <!------民乐之星------->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='民乐之星' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                        <ul class="clearfix">
-                            <!------歌唱之星------->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2  and u.sign=1 and ui.music_star='歌唱之星' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                        <ul class="clearfix">
-                            <!------其他之星------->
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='其他之星' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                        <ul class="clearfix">
-                            <!------维修达人------->
-
-                            [e:loop={"select u.username,u.userid,u.sign,userpic,mycall,ui.company from phome_enewsmember u LEFT JOIN phome_enewsmemberadd ui ON u.userid=ui.userid where u.groupid=2 and u.sign=1 and ui.music_star='维修达人' limit 12",10,24,0}]
-                            <li><a href="[!--news.url--]/e/space/template/kongjian/?userid=<?=$bqr[userid]?>">
-                                <img src="<?=$bqr[userpic]?>" alt="">
-                                <h3><?=$bqr[username]?></h3>
-                            </a>
-                            </li>
-                            [/e:loop]
-                        </ul>
-                    </div>
+                    <script type="text/javascript">
+                        jQuery(".picScroll").slide({
+                            mainCell:".picList",
+                            effect:"left",
+                            pnLoop:false,
+                            scroll:1,
+                            interTime:3000,
+                            autoPage:true,
+                            autoPlay:true
+                        });
+                    </script>
                 </div>
             </div>
             <!-- 音乐之星结束················································ -->
