@@ -144,7 +144,7 @@
 									<div class="newdatagroup f-l-l">
 										<div class="input-group">
 								            <span class="input-group-btn">
-								                <button class="btn btn-default" type="button">业务员代码:</button>
+								                <button class="btn btn-default" type="button">业务员推荐码:</button>
 								            </span>
 											<input type="text" class="form-control">
 										</div><!-- /input-group -->
@@ -166,7 +166,7 @@
 							<thead>
 								<tr>
 									<th>姓名</th>
-									<th>代码</th>
+									<th>推荐码</th>
 									<th>操作</th>
 								</tr>
 							</thead>
@@ -189,19 +189,25 @@
 					<div class="count-data-warp clearfix">
 						<div class="get-data-check">
 							<form action="" class="form-group get-data-form clearfix">
-								<div class="input-group col-xs-3 f-l-l mr5">
+								<div class="input-group col-sm-3 f-l-l mr5">
 						            <span class="input-group-btn ">
-						                <button class="btn btn-default" type="button">业务员姓名:</button>
+						                <button class="btn btn-default" type="button">业务员</button>
 						            </span>
-									<input type="text" class="form-control check-data-name" >
+									<!--<input type="text" class="form-control check-data-name" >-->
+									<select class="form-control">
+										<option  value="全部"></option>
+										<option selected value="李四"></option>
+										<option value="王五"></option>
+										<option value="江流"></option>
+									</select>
 								</div>
-								<div class="input-group col-xs-3 f-l-l mr5">
+								<div class="input-group col-sm-3 f-l-l mr5">
 						            <span class="input-group-btn ">
 						                <button class="btn btn-default" type="button">开始时间</button>
 						            </span>
 									<input type="text" class="form-control check-data-name datetimepicker3" >
 								</div>
-								<div class="input-group col-xs-3 f-l-l mr5">
+								<div class="input-group col-sm-3 f-l-l mr5">
 						            <span class="input-group-btn ">
 						                <button class="btn btn-default" type="button">结束时间:</button>
 						            </span>
@@ -220,6 +226,7 @@
 								<thead>
 								<tr>
 									<th>业务员</th>
+									<th>推荐码</th>
 									<th>注册琴行</th>
 									<th>时间</th>
 								</tr>
@@ -229,7 +236,8 @@
 									<td>
 										张三
 									</td>
-									<td>12345678</td>
+									<td>254644</td>
+									<td>佳音琴行</td>
 									<td>时间</td>
 								</tr>
 								</tbody>
