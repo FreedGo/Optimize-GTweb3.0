@@ -39,13 +39,10 @@ if(!defined('InEmpireCMS'))
 		$empire->query("UPDATE phome_enewsmember SET cked = '0' WHERE userid=$userid limit 1");
 	}
 	}
-	
-	
 ?>
 <?php
 $public_diyr['pagetitle']='知音动态';
 require(ECMS_PATH.'e/template/incfile/header.php');
-
 //重置知音提醒状态
 $userid   =getcvar('mluserid');
 	$zhi=$empire->fetch1("select ti_zhiyin from {$dbtbpre}enewsmember where userid=$userid"); 
@@ -53,9 +50,6 @@ $userid   =getcvar('mluserid');
 		$empire->query("UPDATE {$dbtbpre}enewsmember SET ti_zhiyin = 0 WHERE userid=$userid");
 	}
 ?>
-
-
-
 			<div class="yinyueguangchang">
 				<!-- 标题················· -->
 				<div class="yinyueHead clearfix">
@@ -64,6 +58,8 @@ $userid   =getcvar('mluserid');
 				</div>
 				<!-- 标题················· -->
 				<!-- 音乐广场内容·············································· -->
+				<script src="/js/jquery.SuperSlide.2.1.1.js"></script>
+				<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
 				<div class="slideTxtBox">
 					<div class="hd">
 						<ul><li>全部</li><li>视频</li><li>音乐</li><li>图片</li></ul>
@@ -72,7 +68,7 @@ $userid   =getcvar('mluserid');
 						<ul class="quanzhandongtai">
 	                    <!--全部-->
 							<?
-								//获取我的关注
+							//获取我的关注
 							$feeduserid=$empire->fetch1("select feeduserid from {$dbtbpre}enewsmemberadd where userid='$tmgetuserid'");
 							$feeduser_result=explode("::::::",$feeduserid['feeduserid']);
 							$guanzhu=array();
@@ -515,10 +511,8 @@ $userid   =getcvar('mluserid');
 						</ul>
 					</div>
 				</div>
-				<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
 				<!-- 音乐广场内容············································ -->
-			</div>       
-			<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
-<?php
-require(ECMS_PATH.'e/template/incfile/footer.php');
-?>
+			</div>
+			<?php
+			require(ECMS_PATH.'e/template/incfile/footer.php');
+			?>

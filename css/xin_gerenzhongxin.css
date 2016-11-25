@@ -780,17 +780,6 @@ h3{}
 	padding: 0 2px;
 	cursor: default;
 }
-.timeRight ol>li:nth-child(3),
-.timeRight ol>li:nth-child(4),
-/*.timeRight ol>li:nth-child(7),*/
-.timeRight ol>li:nth-child(8),
-.timeRight ol>li:nth-child(9),
-.timeRight ol>li:nth-child(10),
-.timeRight ol>li:nth-child(11),
-.timeRight ol>li:nth-child(12)
-{
-	display: none;
-}
 .timeRight ol>li>a{
 	cursor: default;
 }
