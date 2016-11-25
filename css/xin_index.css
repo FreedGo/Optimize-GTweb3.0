@@ -305,10 +305,6 @@
 		.slideTxtBox .arrow .nextStop{ background-position:-60px -50px; }
 /*插件代码结束···················································*/
 /*控制首页六个小按钮的 显示与隐藏*/
-.timeRight>ol>li:nth-child(3),.timeRight>ol>li:nth-child(4),.timeRight>ol>li:nth-child(7),.timeRight>ol>li:nth-child(8),
-.timeRight>ol>li:nth-child(9),.timeRight>ol>li:nth-child(10),.timeRight>ol>li:nth-child(11){
-	display: none;
-}
 .yinyueguangchang{
 	height: 525px;
 	padding: 15px 15px 0 15px;

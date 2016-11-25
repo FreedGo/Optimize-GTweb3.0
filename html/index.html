@@ -73,13 +73,10 @@
                         [/e:loop]
                     </ul>
                 </div>
-
-
                 <a class="prev" href="javascript:void(0)"></a>
                 <a class="next" href="javascript:void(0)"></a>
 
             </div>
-
             <script type="text/javascript">
                 jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,effect:"leftLoop",interTime:5000});
             </script>
@@ -92,7 +89,6 @@
     <div class="middleWrap clearfix">
         <!-- 左边结构开始···················································· -->
         <div class="middleLeft">
-
             <!-- 音乐广场···················································· -->
             <div class="yinyueguangchang">
                 <!-- 标题················· -->
@@ -114,7 +110,6 @@
                     <div class="bd">
                         <ul class="quanzhandongtai">
                             [e:loop={'11,12,13',2,0,0,'','newstime DESC'}]
-
                             <li class="clearfix" id="userImg<?=$bqr[id]?>">
                                 <?
                             	if($bqr[classid]==12){
@@ -140,7 +135,6 @@
                                                     console.log("error");
                                                 });
                                     });
-
                                 </script>
                                 <?
                                 }
@@ -166,22 +160,9 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-
-                                            <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-                                            <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-
                                             <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
-                                            <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
-                                            <li>34</li>
-                                            <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
-                                            <li></li>
-                                            <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
                                         </ol>
-                                        <div class="bdsharebuttonbox">
-                                            <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                                        </div>
-
                                     </div>
                                 </div>
                             </li>
@@ -211,22 +192,9 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-
-                                            <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-                                            <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-
                                             <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
-                                            <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
-                                            <li>34</li>
-                                            <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
-                                            <li></li>
-                                            <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
                                         </ol>
-                                        <div class="bdsharebuttonbox">
-                                            <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                                        </div>
-
                                     </div>
                                 </div>
                             </li>
@@ -239,9 +207,7 @@
                                 <p><?=esub($bqr[smalltext],200)?></p>
                                 <div class="chatu">
                                     <a href="<?=$bqsr['titleurl']?>">
-
                                         <img src="<?=$bqr[titlepic]?$bqr[titlepic]:'/images/video2.jpg' ?>">
-
                                         <?php
 						                	if($bqr[classid]==11){
 						                    	echo "<i class='iconfont'>&#xe63b;</i>";
@@ -257,22 +223,9 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-
-                                            <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-                                            <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-
                                             <li><a title="评论数" ><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
-                                            <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
-                                            <li>34</li>
-                                            <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
-                                            <li></li>
-                                            <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
                                         </ol>
-                                        <div class="bdsharebuttonbox">
-                                            <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                                        </div>
-
                                     </div>
                                 </div>
                             </li>
@@ -285,7 +238,6 @@
                                     // ajax请求后台，返回四张图片
                                     $(function() {
                                         var imgUserMsg="<?=$bqr[id]?>";
-
                                         $.ajax({
                                             url: '/guangchang/index.photo.php',
                                             type: 'post',
@@ -293,18 +245,16 @@
                                             dataType: 'text',
                                             data: {'tit_id': imgUserMsg},
                                         })
-                                                .done(function(msg) {
-                                                    var UserImgInfo=msg;
-                                                    var userSelect="userImg1"+imgUserMsg;
-                                                    $('#'+userSelect).find('.chatu a').empty().append(msg);
-                                                })
-                                                .fail(function() {
-                                                    console.log("error");
-                                                });
+                                        .done(function(msg) {
+                                            var UserImgInfo=msg;
+                                            var userSelect="userImg1"+imgUserMsg;
+                                            $('#'+userSelect).find('.chatu a').empty().append(msg);
+                                        })
+                                        .fail(function() {
+                                            console.log("error");
+                                        });
                                     });
-
                                 </script>
-
                                 <h3><a href="<?=$bqsr['titleurl']?>"><?=$bqr['title']?></a></h3>
                                 <p><?=esub($bqr[smalltext],200)?></p>
                                 <div class="chatu">
@@ -313,7 +263,7 @@
 						                	if($bqr[classid]==11){
 						                    	echo "<i class='iconfont'>&#xe63b;</i>";
                                         }elseif($bqr[classid]==13){
-                                        echo "<i class='iconfont'>&#xe63e;</i>";
+                                            echo "<i class='iconfont'>&#xe63e;</i>";
                                         }
                                         ?>
                                     </a>
@@ -324,22 +274,9 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-
-                                            <li><a title="点赞数" href="JavaScript:makeRequest('/e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-                                            <li><script src=/e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-
                                             <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
-                                            <li class="bigsize"><a title="转载量" href="javascript:;"><i class="iconfont">&#xe623;</i></a></li>
-                                            <li>34</li>
-                                            <li class="bigsize"><a title="加入收藏" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
-                                            <li></li>
-                                            <li><a title="点击分享"><i class="iconfont">&#xe64b;</i></a></li>
                                         </ol>
-                                        <div class="bdsharebuttonbox">
-                                            <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></	a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                                        </div>
-
                                     </div>
                                 </div>
                             </li>
@@ -362,8 +299,6 @@
                 </div>
                 <div class="musicTechList">
                     <ul class="clearfix">
-
-
                         [e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=4 and a.sign=1 order by b.follownum desc limit 8",10,24,0}]
                         <li><a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
                             <img src="<?=$bqr[userpic]?>">
@@ -372,8 +307,6 @@
                         </li>
                         [/e:loop]
                     </ul>
-
-
                     <ul class="clearfix">
                         [e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3 and a.sign=1 order by b.follownum desc limit 8",10,24,0}]
                         <li><a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -384,7 +317,6 @@
                         [/e:loop]
                     </ul>
                 </div>
-
             </div>
             <!-- 音乐教室和老师结束·············································· -->
         </div>
@@ -397,36 +329,33 @@
                 <div class="inXing">
                     <div class="xingHead">
                         <div class="yinyueHead clearfix">
-                            <h3><a href="[!--news.url--]mingren">网络海选</a></h3>
+                            <h3><a href="[!--news.url--]mingren">网络报名</a></h3>
                             <span class="more"><a href="[!--news.url--]haixuan">更多</a></span>
                         </div>
                     </div>
-                    <div class="picScroll hai_banner" style="margin:10px auto 0">
+                    <div class="picScroll hai_banner">
                         <div class="bd">
                             <a href="javascript:void(0)" class="prev"></a>
                             <a href="javascript:void(0)" class="next"></a>
                             <div class="scrollWrap">
                                 <ul class="picList">
+                                    [e:loop={'select * from [!db.pre!]ecms_shop where classid in(32,33,34,70,110,112)and isgood=1 order by id desc',20,24,0}]
                                     <li>
-                                        <a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558" class="pic">
-                                            <img src="http://www.greattone.net/d/file/d185389c8ce8dbe870096975a894d77d.jpg">
+                                        <a href="<?=$bqsr['titleurl']?>" class="pic">
+                                            <img src="<?=$bqr[titlepic]?>">
                                         </a>
-                                        <h2 class="movielist_tt">音乐之星海选-江苏站决赛</h2>
-                                        <p class="txt1">活动时间：2016-10-15—2016-12-13</p>
-                                        <p class="txt1">活动地点：南京艺术学院</p>
-                                        <span class="hai-baoming"><a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558">赶快参加</a></span>
-                                        <span class="has-sign-num">124人已报名</span>
+                                        <h2 class="movielist_tt"><?=$bqr[title]?></h2>
+                                        <p class="txt1">活动时间：<?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></p>
+                                        <p class="txt1">活动地点：<?=$bqr[title]?></p>
+                                        <span class="has-sign-num">
+                                        	<?php
+                                            	$num=$empire->num("select id from {$dbtbpre}ecms_photo where hai_id=$bqr[id]");
+                                                echo $num;
+                                            ?>
+                                        人已报名</span>
+                                        <span class="hai-baoming"><a href="<?=$bqsr['titleurl']?>">赶快参加</a></span>
                                     </li>
-                                    <li>
-                                        <a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558" class="pic">
-                                            <img src="http://www.greattone.net/d/file/d185389c8ce8dbe870096975a894d77d.jpg">
-                                        </a>
-                                        <h2 class="movielist_tt">音乐之星海选-江苏站决赛</h2>
-                                        <p class="txt1">活动时间：2016-10-15—2016-12-13</p>
-                                        <p class="txt1">活动地点：南京艺术学院</p>
-                                        <span class="has-sign-num">124人已报名</span>
-                                        <span class="hai-baoming"><a href="http://www.greattone.net/e/action/ShowInfo.php?classid=32&id=558">赶快参加</a></span>
-                                    </li>
+                                    [/e:loop]
                                 </ul>
                             </div>
                         </div>
@@ -458,8 +387,6 @@
                         [ecmsinfo]'14,15',4,32,0,0,55,0,'','newstime DESC'[/ecmsinfo]
                     </ul>
                 </div>
-
-
             </div>
 
             <!-- 音乐资讯结束················································ -->
