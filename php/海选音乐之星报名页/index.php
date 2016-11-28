@@ -377,12 +377,12 @@ include '../header_1.php';
                       <input name="hai_piano" type="text" id="hai_piano" value="" size="" required>
                     </td>
                   </tr>
-<!--                  <tr>-->
-<!--                    <td width='16%' height=25 bgcolor='ffffff'>图片主题:</td>-->
-<!--                    <td bgcolor='ffffff'>-->
-<!--                      <input name="hai_petition" type="text" id="hai_petition" value="" size="" required>-->
-<!--                    </td>-->
-<!--                  </tr>-->
+                  <tr>
+                    <td width='16%' height=25 bgcolor='ffffff'>参赛曲目:</td>
+                    <td bgcolor='ffffff'>
+                      <input name="hai_petition" type="text" id="hai_petition" value="" size="" required>
+                    </td>
+                  </tr>
                   <tr>
                     <td width='16%' height=25 bgcolor='ffffff'>个人照片:</td>
                     <td bgcolor='ffffff'>
@@ -654,12 +654,12 @@ include '../header_1.php';
                           <input name="hai_piano" type="text" id="hai_piano" value="" size="" required>
                       </td>
                   </tr>
-                  <!--                  <tr>-->
-                  <!--                      <td width='16%' height=25 bgcolor='ffffff'>图片主题:</td>-->
-                  <!--                      <td bgcolor='ffffff'>-->
-                  <!--                          <input name="hai_petition" type="text" id="hai_petition" value="" size="" required>-->
-                  <!--                      </td>-->
-                  <!--                  </tr>-->
+                    <tr>
+                        <td width='16%' height=25 bgcolor='ffffff'>参赛曲目:</td>
+                        <td bgcolor='ffffff'>
+                            <input name="hai_petition" type="text" id="hai_petition" value="" size="" required>
+                        </td>
+                    </tr>
                   <tr>
                       <td width='16%' height=25 bgcolor='ffffff'>个人照片:</td>
                       <td bgcolor='ffffff'>
