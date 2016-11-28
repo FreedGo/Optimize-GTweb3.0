@@ -215,7 +215,6 @@ while($modr=$empire->fetch($modsql))
 				$(this).addClass('selected').siblings('span').removeClass('selected');
 				iTong=$(this).index();
 //				console.log(iTong);
-
 				// 控制最上面那行字母的显示与隐藏
 				if (iTong>0) {
 					$('.initials').fadeOut('normal');
@@ -489,6 +488,7 @@ require(ECMS_PATH.'e/template/incfile/header_1.php');
 				<?
 				}elseif($groupid==4){//音乐教室列表
 				?>
+
 					<li><i class="iconfont">&#xe65d;</i><a href="<?=$public_r['newsurl']?>e/member/cp">琴行资料</a></li>
                     <li><i class="iconfont">&#xe661;</i><a href="<?=$public_r['newsurl']?>e/ShopSys/address/ListAddress.php">我的账户</a></li>
                     <li><i class="iconfont pinpai pin_icon_1"></i><a href="<?=$public_r['newsurl']?>e/qinhang/qianyue/ListInfo.php?mid=10">琴行签约</a></li>

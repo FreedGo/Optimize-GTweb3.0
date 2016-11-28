@@ -82,6 +82,9 @@
 		.textAuthor,.textDianji {
 			width:150px;
 		}
+		.textAuthor{
+			display: none;/*2016-11-28 童要求隐藏掉音乐新闻作者*/
+		}
 		.bdsharebuttonbox{
 			display: inline-block;
 			height:36px;
