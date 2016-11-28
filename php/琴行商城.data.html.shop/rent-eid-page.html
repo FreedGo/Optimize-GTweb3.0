@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>租赁修改</title>
+	<link rel="stylesheet" type="text/css" href="/css/xin_base.css">
+	<link rel="stylesheet" type="text/css" href="/css/xin_gerenzhongxin.css">
+	<script type="text/javascript" src="/js/jquery-11.1.3.min.js"></script>
+</head>
+<body>
+<div class="www360buy">
+	<div class="bd">
+	 <form class="rent-edi-mian" name="add" method="POST" enctype="multipart/form-data" action="ecms.php" onsubmit="return EmpireCMSQInfoPostFun(document.add,'15');">
+				<input type=hidden value=MAddInfo name=enews> <input type=hidden value=59 name=classid> 
+              <input name=id type=hidden id="id" value=> 
+              <input name=mid type=hidden id="mid" value=15>
+              <!----返回地址---->
+              <input type="hidden" name="ecmsfrom" value="/e/zulin/ListInfo.php?mid=10">
+
+				<ul class="lh dengdai fabukecheng">
+						<li><h2 style="text-align: center;">琴房租赁修改</h2></li>
+						<li><span>琴房名称：</span><input required type="text" name="title"></li>
+						<li><span>联系电话：</span><input required type="text" name="pbrand"></li>
+						<li><span>琴房价格：</span><input required type="text" name="price" placeholder="元/天"></li>
+						<li><span>人数上限：</span><input required type="text" name="pmaxnum"></li>
+                        <li>
+							<span>上传图片：</span>
+                            <input type="file" name="titlepicfile" size="45">
+						</li>
+						<li>
+							<span>琴房描述：</span>
+							<!-- 预留的地div -->
+							<div style='background-color:#D0D0D0' class="qinmiao"><script type="text/javascript" src="/e/extend/UE/ueditor.config.js"></script>
+
+						<script type="text/javascript" src="/e/extend/UE/ueditor.all.js"></script>
+						<script id="UEditor" type="text/plain" name="newstext"></script>
+						<script type=text/javascript>
+								UE.getEditor("UEditor",{initialFrameHeight:300,initialFrameWidth:"100%",Ext:'{"classid":"59","filepass":"1453772598"}'})
+						</script>
+						</div>
+							<!-- 预留的地div -->
+						</li>
+						<li>
+							<li><span></span><input class="zongse" type="submit"></li>
+						</li>
+					</ul>
+				</form>
+			</div>
+</div>
+				
+</body>
+</html>
