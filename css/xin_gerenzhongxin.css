@@ -919,9 +919,9 @@ h3{}
 /* 本例子css */
 	.www360buy{ /*width:694px;*/  background-color: #fff;  }
 	.www360buy .hd{ overflow:hidden;position: relative; background: #fff; border-left:1px solid #fff; border-bottom:2px solid #ce6d40; }
-	.www360buy .hd li{ position:relative; margin-left:-1px;  height:38px; line-height:38px; text-align:center; width:145px; float:left;; border-top:0;
+	.www360buy .hd li{ position:relative; margin-left:-1px;  height:38px; line-height:38px; text-align:center; width:110px; float:left;; border-top:0;
 		font:normal 14px/38px "Microsoft YaHei"; _font-weight:bold; cursor:default; }
-	.www360buy .hd li.on{ width:145px; background:#ddd; color:#c00;  }
+	.www360buy .hd li.on{ width:130px; background:#ddd; color:#c00;  }
 	.www360buy .bd{  border:1px solid #ddd; border-top:0;  }
 	.www360buy .lh{ overflow:hidden;background-color: #fff;  }
 	.www360buy .lh>li{ width:220px; padding:0 10px; float:left;    }
@@ -2295,5 +2295,139 @@ a {
 	vertical-align: middle;
 }
 
+/*2016-11-30 新增在线商城*/
 
+.f-l-l{
+	float: left;
+}
+.online-shop-all-orders,.orders-finished,.orders-unfinished,.order-detaill-warp{
+	padding: 10px;
+}
+.order-tiem{
+	border:#ccc solid 1px;
+	margin-bottom:20px;
+}
+.order-head{
+	height: 34px;
+	background-color: #efefef;
+}
+.order-tiem:hover{
+	border:#ffa5a5 solid 1px;
+	/*box-shadow: 0 0 5px rgba(255,84,0,0.7);*/
+}
+.order-head-item{
+	font:14px/34px 微软雅黑;
+	color: #333;
+	padding-left: 5px;
+}
+.order-number{
+	width: 162px;
+}
+.roder-time{
+	width: 160px;
+}
+.order-seller{
+	width:150px;
+}
+.order-seller-telnumber{
+	width:206px;
+}
+.order-body{
+	height:70px;
+	padding-top: 20px;
+}
+.order-body-item{
+	height:48px;
+	margin-bottom: 5px;
+	font:14px/48px 微软雅黑;
+}
+.order-body-item.product-title{
+	line-height: 24px;
+}
+.product-img {
+	width: 48px;
+	height:48px;
+	border:#ccc solid 1px;
+	margin-left: 5px;
+}
+.product-title{
+	width:200px;
+	margin-left: 10px;
+	font:14px/48px 微软雅黑;
 
+}
+.product-title a{
+	font:14px/24px 微软雅黑;
+
+}
+.product-title:hover a{
+	color: #f00;
+}
+.product-nums{
+	width:42px;
+	text-align: center;
+}
+.product-total-price{
+	width:120px;
+	text-align: center;
+}
+.order-status,.order-Btn,.order-detaill{
+	width:90px;
+	text-align: center;
+}
+.order-com-button{
+	padding: 5px 10px;
+	background-color: #62AEFC;
+	border-radius: 4px;
+	color: #fff;
+}
+..order-com-button a{
+	color: #fff;
+}
+.look-order-detaill{
+	color: #cb7047;
+	border-bottom:solid 1px #cb7047;
+}
+.order-detaill-item{
+	padding: 10px 0;
+	border-bottom:#ccc solid 1px;
+}
+.order-detaill-item-title{
+	font:16px/32px 微软雅黑;
+}
+.detaill-msg-mon{
+	font:14px/24px 微软雅黑;
+}
+.detaill-msg-mon-val{
+	padding-left: 5px;
+}
+.get-wuliu-msg{
+	color: #F9B662;
+	font:14px/24px 微软雅黑;
+	text-decoration: underline;
+}
+.last-total-price>dl{
+	font:14px/24px 微软雅黑;
+}
+.last-total-price>dl span{
+	text-align: right;
+}
+.last-total-price-name{
+	width:500px;
+}
+.last-total-price-val{
+	width:150px;
+	color: #f00;
+}
+.last-total-price {
+	margin-top: 20px;
+}
+.lastest-pay .last-total-price-val{
+	font-size:18px;
+
+}
+.wuliu-msg-warp{
+	border:#ddd solid 1px;
+	border-radius: 4px;
+	background-color: #f7f7f7;
+}
