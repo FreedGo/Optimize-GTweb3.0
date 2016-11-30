@@ -519,8 +519,8 @@ html,body{
 	.headerWrap{display: none;}
 	.headAdvert{display: none;}
 	.content-ad{width: 100%!important;}
-	.content-ad .index-ad-1{width: 50%!important}
-	.content-ad .index-ad-2{width: 50%!important}
+	.content-ad .index-ad-1{width: 100%!important;height: auto!important;}
+	.content-ad .index-ad-2{width: 100%!important;height: auto!important;}
 	.content-ad .index-ad-1 img,.content-ad .index-ad-2 img{
 		width: 100%;height: auto
 	}

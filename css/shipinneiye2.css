@@ -437,4 +437,6 @@
 	.content-ad{width: 100%!important;}
 	.share{display: none;}
 	.toolbar{display: none;}
+	.content-ad .index-ad-1{width: 100%!important;height: auto!important;}
+	.content-ad .index-ad-2{width: 100%!important;height: auto!important;}
 }
