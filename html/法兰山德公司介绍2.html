@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8"/>
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link href="/css/sale-net.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			// 右侧点击菜单，切换左侧内容
+			var ComIntrL = $('.company-introduce'),//左侧菜单
+					ComIntrLi,
+					noname,
+					ComIntrR =$('.neirong');//右侧内容
+			ComIntrL.on('click', function(event) {
+				$(this).addClass('current').siblings('.company-introduce').removeClass('current');//左侧菜单class更改
+				ComIntrLi = $(this).index();
+				console.log(ComIntrLi);
+				ComIntrR.eq(ComIntrLi).addClass('current').siblings().removeClass('current');
+				noname = $(this).children('a').html();
+				$('.noname').html(noname);
+			});
+
+		});
+	</script>
+</head>
+<body>
+[!--temp.header--]
+<div id="body_container">
+	<div class="divsd clearfix">
+		<div class="new2"></div>
+		<div class="main1"></div>
+		<div class="m_n">
+			<div class="main_new2">
+				<!-- 轮播图开始······················································ -->
+				<div id="banner">
+					<div id="imgPlay">
+						<ul class="imgs clearfix" id="actor" style="width: 2880px; margin-left: -15.0801px;">
+							<li><a href="http://www.franzsandner.com/sales_f.php#Banner链接" target="_blank"><img src="/images/1359708142_5662_4408.jpg"></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 轮播图结束······················································ -->
+				<!-- <div class="h203">销售网络</div> -->
+				<!-- 左侧菜单开始···················································· -->
+				<div class="nn_left2">
+					<div class="leftcate">
+						<h2 class="h201">公司介绍</h2>
+						<ul style="margin-top:10px;">
+							<li class=" company-introduce current"><a >法兰山德</a></li>
+							<li class=" company-introduce"><a>奥古斯特·福斯特</a></li>
+							<li class=" company-introduce"><a>经营理念</a></li>
+							<li class=" company-introduce"><a>重要成员</a></li>
+							<li class=" company-introduce"><a>技术团队</a></li>
+						</ul>
+					</div>
+					<!-- 搜索框开始················································ -->
+					<!-- <div class="search-warp clearfix">
+					  <form action="">
+
+						<div class="form-group f-l-l">
+						   <label class="sr-only" for="search-con">输入各地琴行</label>
+						  <input class="form-control f-l-l" id="search-con " type="text" placeholder="输入搜索内容">
+						</div>
+						<button class="btn  btn-warning f-l-l" type="submit ">搜索</button>
+					  </form>
+					</div> -->
+					<!-- 搜索框结束················································ -->
+				</div>
+				<!-- 右侧菜单开始················································ -->
+				<div class="nn_right">
+					<h4 class="right05">&gt;&gt; <a href="">公司介绍</a> &gt;<span class="noname">法兰山德</span> </h4>
+					<!-- 省代理商列表 -->
+					<div class="province-sale-list">
+						<!-- 文章内容1 法兰山德·········································· -->
+						<div class="neirong current flsd">
+							<img src="/images/falan01.jpg" alt="" />
+							<!-- 段落1···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head clearfix">
+									<h3 class="f-l-l">品牌创建</h3>
+									<span class="f-l-l">Franz Sandner</span>
+								</div>
+								<p>Mr. Franz Sandner — 一个来自德国 Schnbach （森巴赫）的乐器生产家族,著名的品牌有 :FranzSandner全系列乐器产品;SCHREIBER、KEILWERTH管乐；August Forster福斯特钢琴；WINTER、PUCHNER、 LAUSMANN、KLIER乐器配件。
+									二战之后因为德国与捷克的边境重划,大部分的成员将工厂搬迁至法兰克福近郊的Nauheim（瑙海姆)镇继续着他们优良的乐器制作工艺。</p>
+							</div>
+							<!-- 段落1结束················································ -->
+							<!-- 段落2···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head clearfix">
+									<h3 class="f-l-l">德国精品</h3>
+									<span class="f-l-l">Richard Schuh</span>
+								</div>
+								<p>1950年代起Franz Sandner 的女儿Sonja 与他的先生Richard Schuh共同引领着公司的发展,并与家族内部成员合作生产钢琴、提琴、吉他、管乐扩大法兰山德的产品线,在上世纪90年代末期更做出了公司内部最重大的 決定,在中国设立自己的生产线。</p>
+							</div>
+							<!-- 段落2结束················································ -->
+							<!-- 段落3···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head clearfix">
+									<h3 class="f-l-l">全球品牌</h3>
+									<span class="f-l-l">Dietmar Schuh</span>
+								</div>
+								<p>1980年代年轻的第三代Dietmar Schuh进入公司,成功的将产品推向全世界60多个国家,大幅提升了法兰山德的世界知名度,2002年成功在中国设立自己的生产线,引引领德国精致的工 艺进入中国市场,並得到广大音乐群众的喜爱,欢迎您来体验这来自于德国的完美音色。</p>
+							</div>
+							<!-- 段落3结束················································ -->
+							<h1>
+								<img src="/images/falan02.jpg" alt="" />
+							</h1>
+						</div>
+						<!-- 文章内容1结束··············································· -->
+
+						<!-- 文章内容2 福斯特·········································· -->
+						<div class="neirong fst">
+							<img src="/images/falan03.jpg" alt="" />
+							<!-- 段落1···················································· -->
+							<div class="neirong-duan">
+								<p>AugustForster钢琴创始于1859年德国Labau(卢堡)，迄今已有150多年历史。公司创立以来，始终以坚持制造最好的钢琴艺术精品为经营理念，历经Forster家族5代人的不懈努力 ，不断研究与技术革新，使得福斯特成为世界顶级钢琴品牌之一，更赢得众多知名钢琴家的赞誉，并且在国际重大钢琴评鉴大赛中屡获大奖。</p>
+								<p>在钢琴音乐家心目中，福斯特就是高品质钢琴的代名词，著名的音乐家舒伯特认为福斯特钢琴是世界上最好的钢琴之一，全世界许多著名的音乐厅也都使用福斯特钢琴作为演出表演专用钢琴。在中国人民大会堂与共党文化纪念馆，也都使用着名贵的福斯特钢琴。</p>
+							</div>
+							<!-- 段落1结束················································ -->
+							<h1>
+								<img src="/images/falan04.jpg" alt="" />
+							</h1>
+						</div>
+						<!-- 文章内容2结束··············································· -->
+
+						<!-- 文章内容3 经营理念·········································· -->
+						<div class="neirong jyln">
+
+							<!-- 段落1···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head clearfix">
+									<h3 class="f-l-l">经营理念</h3>
+									<span class="f-l-l">诚心为本 创新为魂</span>
+								</div>
+								<img src="/images/falan05.jpg" alt="" />
+								<p>秉持着德国乐器企业的务实与敬业精神，法兰山德乐器家族拒绝宣传炒作，我们要向市场与消费者展示出企业发展的真实面貌。企业要具有长效的生命力，务实是最 重要的基石。法兰山德乐器在世界各地都有自己的经销商网络，尤其在国内市场，在法兰山德乐器内所占的角色是最重要的。陈德鹏总经理说，当前世界最大的钢琴 市场转向了中国，国内劳动力和企业运营的低成本成为内地乐器市场吸引外资进驻的优势，如何使产品的销售价格与市场需求对位，在兼容国内市场的成本优势和德 国先进乐器制造技术的基础上，如何促成法兰山德乐器成为一个具有国际竞争力的世界品牌，使法兰山德乐器站在国内乐器制造行业的前沿，这将成为法兰山德乐器 （上海）公司未来发展的构想方向。德国法兰山德乐器总裁舒迪玛先生强调，法兰山德乐器进驻中国乐器市场的首要任务是先制造出优质的乐器，然后再谈企业发 展。法兰山德乐器（上海）有限公司从创立至今，在用4年的时间完成产品质量标准化，以及现代化企业管理制度的前提下，才在2008上海国际乐器展前期推出 新品，便充分印证了德国法兰山德乐器家族的精品意识与敬业精神。如同汽车产业，产品不但要具有先进的引擎与外观设计，还要配合强势的推广，只有如此，产品 才会具有市场占有力。具有远见卓识的乐器制造商同样要具备现代化的经营思维，对产品质量的精益求精和销售的有效拓展是企业运营的基本要素，质量与销售的纽 带关系，决定着企业未来的生存与发展空间。</p>
+							</div>
+							<!-- 段落1结束················································ -->
+						</div>
+						<!-- 文章内容3结束··············································· -->
+
+						<!-- 文章内容4 重要成员·········································· -->
+						<div class="neirong zycy">
+							<!-- 段落1···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head important-head clearfix">
+									<h3 class="f-l-l">重要成员</h3>
+								</div>
+								<!-- 分公司1······························ -->
+								<div class="important de">
+									<h2>奥古斯特·福斯特</h2>
+									<!-- 成员1······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member1.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">
+												Anne Forster 福斯特总裁
+											</h3>
+											<p class="members-intro">福斯特公司的第五代经营者,自幼跟随父亲（第四代经营者沃尔夫冈·福斯特）学习并传承了家族150年精美的钢琴制作工艺以及完善的销售管理系统。自2006 年起正式出任福斯特公司的总裁，在Anne Forster 带领下，福斯特公司的工作团队正在积极的发挥他们独特的优势，续写福斯特辉煌的历史。
+											</p>
+										</div>
+									</div>
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member2.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">
+												frank lsrael 制琴大师
+											</h3>
+											<p class="members-intro">
+												世界著名的钢琴制造大师，在公司内服务超过30年，所有福斯特钢琴都在他的细心制作和检验下完成。
+											</p>
+										</div>
+									</div>
+									<!-- 成员2结束·························· -->
+								</div>
+								<!-- 分公司1结束·························· -->
+								<!-- 分公司2······························ -->
+								<div class="important flsd">
+									<h2>法兰山德</h2>
+									<!-- 成员1······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member3.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">Dietmar Schuh 总裁
+											</h3>
+											<p class="members-intro">法兰山德第三代经营者,自1980年开始进入公司跟随着父亲Richard Schuh学习,1988年起正式接掌公司所有业务,在他的带领下,法兰山德创造了最辉煌的年代,1990年起让法兰山德成为全美国.德国.英国.日本韩国.台湾畅销乐器品牌,现在负责公司全球营销策略。
+											</p>
+										</div>
+									</div>
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member4.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">
+												Soraya Schuh 销售总监
+											</h3>
+											<p class="members-intro">欧洲与美国区业务经理,自1991年起进入公司服务,将集团内部产品更深入的拓展至欧洲与美国各地,深深得到当地客户与消费者的认可。
+											</p>
+										</div>
+									</div>
+									<!-- 成员2结束·························· -->
+									<!-- 成员3······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member5.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">Frank 制琴大师
+											</h3>
+											<p class="members-intro">负责法兰山德所有产品设计与质量掌控,并且管理大陆公司人员训练。
+											</p>
+										</div>
+									</div>
+									<!-- 成员3结束·························· -->
+								</div>
+								<!-- 分公司2结束·························· -->
+
+								<!-- 分公司3······························ -->
+								<div class="important sh">
+									<h2>中国公司</h2>
+									<!-- 成员1······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member6.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">陈德鹏 总经理
+											</h3>
+											<p class="members-intro">出生于台湾一个钢琴世家,自幼跟随父亲学习钢琴行业,23岁起开始从事乐器国际贸易事务,对于全世界乐器市场有相当大的了解,2002年起进入法兰山德中国公司,掌管所有中国事务,在六年内将法兰山德的中国产品调整到国际水平,并且成功的销售到全中国各地。
+											</p>
+										</div>
+									</div>
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											　　<img src="/images/member9.png" alt="">　　
+										</div>
+										<div class="members-info f-l-r">
+											　　<h3 class="members-name">
+											　　林大嘉 副总
+											　　</h3>
+											　　<p class="members-intro">
+											自1979以来，林大嘉进入钢琴制造领域。他是IAPBT（国际钢琴制造者和技术人员协会）的讲师，并在许多国家应邀发表演讲关于钢琴制造的技术。林大嘉先生还担任IAPBT秘书长，并荣获IAPBT创新奖。现在，林大嘉先生负责法兰山德钢琴的设计、钢琴生产过程的技术顾问和员工的培训。
+											　　</p>
+										</div>
+									</div>
+									<!-- 成员2结束·························· -->
+									<!-- 成员3······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member7.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">张严娜  副总
+											</h3>
+											<p class="members-intro">长期从事企业财务、财务审计及企业管理工作，有15年的企业管理经验。
+											</p>
+										</div>
+									</div>
+									<!-- 成员3结束·························· -->
+								</div>
+								<!-- 分公司3结束·························· -->
+
+								<!-- 分公司4······························ -->
+								<div class="important sh">
+									<h2>台湾分公司</h2>
+									<!-- 成员1······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member8.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">林美兰 经理
+											</h3>
+											<p class="members-intro">曾服务于台湾杰士巴哈与晶琴乐器..等专业乐器公司,现为台湾法兰山德公司负责人, 林经理本身是音乐的热爱者，除了对于推行音乐教育不遗余力，专业质量及合理价格的乐器一直是林经理所秉持的宗旨。拥有专业的客服与门市专业销售能力堪称乐器界的长青树 。
+											</p>
+										</div>
+									</div>
+									<!-- 成员1结束·························· -->
+									<!-- 成员2······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member9.png" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">谢汉华 经理
+											</h3>
+											<p class="members-intro">长期从事乐器销售工作，拥有专业的客服能力及丰富的销售经验，一直尽心尽力为法兰山德乐器付出。并热心为顾客服务深得顾客信任。
+											</p>
+										</div>
+									</div>
+									<!-- 成员2结束·························· -->
+									<!-- 成员3······························ -->
+									<div class="important-members clearfix">
+										<div class="members-head-img f-l-l">
+											<img src="/images/member10.jpg" alt="">
+										</div>
+										<div class="members-info f-l-r">
+											<h3 class="members-name">严慧瑜 网络负责人
+											</h3>
+											<p class="members-intro">从事网络销售工作多年，目前经营三个法兰山德乐器商城，以诚实服务顾客为原则，深深得到消费者的信赖。
+											</p>
+										</div>
+									</div>
+									<!-- 成员3结束·························· -->
+								</div>
+								<!-- 分公司4结束·························· -->
+							</div>
+							<!-- 段落1结束················································ -->
+						</div>
+						<!-- 文章内容4结束··············································· -->
+
+						<!-- 文章内容5 经营理念·········································· -->
+						<div class="neirong jyln">
+
+							<!-- 段落1···················································· -->
+							<div class="neirong-duan">
+								<div class="duan-head important-head clearfix">
+									<h3 class="f-l-l">技术团队</h3>
+									<span class="f-l-l">不断超越 追求完美</span>
+								</div>
+								<img src="/images/falan06.jpg" alt="" />
+								<p>我们是一个具有高度热情以及奉献精神的工作团队，传承着150年几代人的制琴历史与经验，借由公司本身众多世界性专利设计，制作这高度精密的艺术杰作。每 位参与制作的技师都需严格考核与测试，才能在此工作。温暖而柔美的音色，是法兰山德钢琴的特征；与参与者合为一体的键盘表现，是我们百年深远造诣及经验的 沉淀，提供给世界钢琴艺术家一部完美的钢琴，是法兰山德生产团队的神圣使命。热情的邀约您来体验这世界上最好的钢琴。</p>
+								<img src="/images/falan07.jpg" alt="" />
+							</div>
+							<!-- 段落1结束················································ -->
+						</div>
+						<!-- 文章内容5结束··············································· -->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>
