@@ -11,10 +11,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai06.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai07.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai08.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/网络海选.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/法兰山德公司介绍2.html" afterPath="$PROJECT_DIR$/html/法兰山德公司介绍2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/海选投票视频内页.html" afterPath="$PROJECT_DIR$/html/海选投票视频内页.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/toupiao4.js" afterPath="$PROJECT_DIR$/js/toupiao4.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
@@ -424,14 +422,7 @@
       <workItem from="1480470675122" duration="15497000" />
       <workItem from="1480554358373" duration="1856000" />
       <workItem from="1480556274714" duration="22545000" />
-      <workItem from="1480638155106" duration="13874000" />
-    </task>
-    <task id="LOCAL-00053" summary="修正li的list-style">
-      <created>1478076606997</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1478076606997</updated>
+      <workItem from="1480638155106" duration="13918000" />
     </task>
     <task id="LOCAL-00054" summary="修改">
       <created>1478076688069</created>
@@ -769,11 +760,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480662977724</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="网络海选的栏目还原回去了">
+      <created>1480663021318</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1480663021318</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="477079000" />
+    <option name="totallyTimeSpent" value="477123000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -865,7 +863,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改ui" />
     <MESSAGE value="php返回值修改为json,价格储存在input里面,然后根据选择的option的index,来显示不同的价格" />
     <MESSAGE value="新的页面" />
     <MESSAGE value="琴行注册标准页面" />
@@ -890,7 +887,8 @@
     <MESSAGE value="备份" />
     <MESSAGE value="音乐广场头像旁边增加关注,点击可以直接关注,另外精简部分代码" />
     <MESSAGE value="音乐老师和琴行教室的前台主页,增加了 二维码,以及其他部分修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="音乐老师和琴行教室的前台主页,增加了 二维码,以及其他部分修改" />
+    <MESSAGE value="网络海选的栏目还原回去了" />
+    <option name="LAST_COMMIT_MESSAGE" value="网络海选的栏目还原回去了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1095,6 +1093,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,6 +1101,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
