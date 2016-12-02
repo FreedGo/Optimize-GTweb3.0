@@ -126,7 +126,6 @@ if ($dangid != 0) {
                                     }
                                     ?>
                 </span></div>
-
                 <div class="guanzhu clearfix">
                     <?
                     $s = $empire->fetch1("select follownum,feednum from {$dbtbpre}enewsmemberadd where userid='$userid'");
@@ -159,6 +158,7 @@ if ($dangid != 0) {
                             </li>
                             <li><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i
                                     class="star"></i></li>
+                            <li></li>
                             <li><span>粉丝数(<?= $s[follownum] ?>)</span>
                                 <!-- <span>学生数(80)</span>-->
                                 <span>发帖数(
@@ -177,26 +177,29 @@ if ($dangid != 0) {
                                     }
                                     ?>
                                     )</span></li>
-                            <li><span><?
+                            <li>
+                                <span><?
                                     if ($groupid == 3) {
                                         echo "老师类型：";
                                     } elseif ($groupid == 4) {
                                         echo "机构电话：";
                                     }
                                     ?>
-                    </span><span>
-						<?
-                        if ($groupid == 1) {
-                            echo $putong_shenfen;//普通会员默认爱乐人
-                        } elseif ($groupid == 2) {
-                            echo $music_star;//音乐之星
-                        } elseif ($groupid == 3) {
-                            echo $teacher_type;//音乐老师
-                        } elseif ($groupid == 4) {
-                            echo $telephone;
-                        }
-                        ?>
-                        </span></li>
+                                </span>
+                                <span>
+                                    <?
+                                    if ($groupid == 1) {
+                                        echo $putong_shenfen;//普通会员默认爱乐人
+                                    } elseif ($groupid == 2) {
+                                        echo $music_star;//音乐之星
+                                    } elseif ($groupid == 3) {
+                                        echo $teacher_type;//音乐老师
+                                    } elseif ($groupid == 4) {
+                                        echo $telephone;
+                                    }
+                                    ?>
+                                </span>
+                            </li>
                             <li><span>地址：</span><i><?= $address ?><?= $address1 ?><?= $address2 ?><?= $addres ?></i>
                             </li>
                             <li><span>空间：</span><!-- <span><?= $userid ?></span> -->
@@ -205,7 +208,7 @@ if ($dangid != 0) {
                                          class="jiacu"><?= $username ?>的空间</a></span></li>
                         </ul>
                     </div>
-                    <div class="canyu">
+                    <div class="canyu laojiao">
                         <ul><?= $r[feeduserid] ?>
                             <li class="baomingrenshu">
 
@@ -214,18 +217,18 @@ if ($dangid != 0) {
                                     $f = $empire->fetch1("select feeduserid from {$dbtbpre}enewsmemberadd where userid='$getuserid'");
                                     $fduserid = explode("::::::", $f['feeduserid']);
                                     if (in_array($userid, $fduserid)) {
-                                        $follow = '<a href="javascript:void()" onclick="follow(' . $userid . ')" class="button blue small orange" id="follow' . $userid . '" title="取消关注">取消关注</a>';
+                                        $follow = '<a href="javascript:void()" style="padding: 0" onclick="follow(' . $userid . ')" class="button blue small orange" id="follow' . $userid . '" title="取消关注">取消关注</a>';
                                     } else {
-                                        $follow = '<a href="javascript:void()" onclick="follow(' . $userid . ')" class="button blue small" id="follow' . $userid . '">关注</a>';
+                                        $follow = '<a href="javascript:void()" style="padding: 0" onclick="follow(' . $userid . ')" class="button blue small" id="follow' . $userid . '">关注</a>';
                                     }
 
                                 } else {
-                                    $follow = '<a href="/e/member/EditInfo/" class="button blue small">修改资料</a>';
+                                    $follow = '<a style="padding: 0" href="/e/member/EditInfo/" class="button blue small">修改资料</a>';
                                 }
                                 ?>
                                 <?= $follow ?>
 
-                                <a href="/e/QA/ListInfo.php?mid=10&username=<?= $username ?>&userid=<?= $userid ?>"
+                                <a style="padding: 0" href="/e/QA/ListInfo.php?mid=10&username=<?= $username ?>&userid=<?= $userid ?>"
                                    class="button blue small ">提问</a>
                             <li class="clearfix">
                                 <!-- <a href="javascript:;"><i class="iconfont">&#xe647;</i><span>收藏</span></a>-->
@@ -254,6 +257,17 @@ if ($dangid != 0) {
                             </li>
                         </ul>
                     </div>
+                    <div id="qrcodeTable"></div>
+                    <script type="text/javascript" src="/js/jquery.qrcode.min.js"></script>
+                    <script>
+                        //jQuery('#qrcode').qrcode("this plugin is great");
+                        jQuery('#qrcodeTable').qrcode({
+                            render	: "table",
+                            width:150,
+                            height:150,
+                            text	: "<?= $public_r['newsurl'] ?>e/space/?userid=<?= $userid ?>"
+                        });
+                    </script>
                 </div>
             </div>
 
@@ -297,7 +311,7 @@ if ($dangid != 0) {
                                 <li><a href="javascript:;" target="_self">课程中心</a><span></span></li>
                                 <li><a href="javascript:;">老师动态</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">在线直播</a><span></span></li>
-                                <li class="showAlert"><a href="javascript:;" target="_self">课表</a><span></span></li>
+                                <li class="showAlert"><a href="javascript:;" target="_self">课程表</a><span></span></li>
                                 <li class="showAlert"><a href="javascript:;" target="_self">全部学员</a><span></span></li>
                                 <li class="discuss-area-btn showAlert"><a href="javascript:;" target="_self">讨论区</a><span></span></li>
                             </ul>

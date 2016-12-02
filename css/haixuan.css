@@ -268,7 +268,7 @@ img{
 	float: left;
 	position: relative;
 	height: 50px;
-	width: 90px;
+	width: 100px;
 }
 .fenlei >ul>li.current{
 	background: url(/images/normal_icon2.png) -300px -104px no-repeat;
@@ -305,7 +305,7 @@ img{
 	line-height: 30px;
 	font-size: 16px;
 	color: #000;
-	padding: 0 10px;
+	padding: 0 15px;
 	width:70px;
 	text-align: center;
 	
@@ -650,8 +650,8 @@ img{
 	position: relative;
 }
 .saishiMsg>img{
-	height: 210px;
-	width: 320px;
+	height: 250px;
+	width: 250px;
 	border: #ccc solid 1px;
 	float: left;
 }
@@ -694,13 +694,18 @@ img{
 	bottom: -13px;
 	right: 0;
 }
+.laojiao{
+	width:252px;
+}
 .baomingrenshu {
 	font-size: 16px;
 	color: #ce6d40;
 	height: 30px;
 	line-height: 30px;
 	position: relative;
+	padding-left:78px ;
 }
+
 .baomingBtn{
 	height: 30px;
 	width: 100px;
@@ -737,7 +742,7 @@ img{
 }
 .canyu>ul>li{
 	height: 36px;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 .baomingrenshu>a{
 	display: inline-block;
@@ -1502,7 +1507,6 @@ font-size: 14px;
 
 /*控制教师前台的头像框的宽度与高度*/
 .saishiMsg .jiaoshiImg{
-	width: 250px;
 	cursor: pointer;
 }
 /*控制琴芳租赁的时间选择插件*/
@@ -2100,6 +2104,22 @@ font-size: 14px;
 	left:320px;
 }
 /*end--课表前台页面显示相关*/
+/*2016-12-2  增加二维码*/
+#qrcodeTable{
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*2016.8.1适配手机*/
 @media screen and (max-width:960px){

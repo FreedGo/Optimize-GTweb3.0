@@ -218,7 +218,16 @@ $(function() {
                  // $("#shenfen>p").html('当前:'+jsonObj.province);
                  subCity1=jsonObj.province;
                  subCity1=subCity1.substring(0,subCity1.length-1);//拼接字符串，减去最后一位子副
-                 console.log(subCity1);
+                 // console.log(subCity1);
+	             //增加加载页面师,三级联动加载一级城市
+	             //遍历第一级,找到之后模拟点击
+	             for (var i = 0 ; i < 34;i++){
+		             if ($('.m_zlxg1 ul li').eq(i).html() == subCity1){
+			             $('.m_zlxg1 ul li').eq(i).trigger('click');
+			             $('.m_zlxg1').hide();
+			             break;
+		             }
+	             };
                  // 第二步，向好琴声后台发送当前地址并接受返回的信息
 		         				$.ajax({
 		         	
