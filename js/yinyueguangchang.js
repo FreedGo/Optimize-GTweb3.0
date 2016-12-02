@@ -196,3 +196,54 @@ $(function() {
  	});
  	
  });
+
+/**
+ * //5.4 调用提示框
+ * @param {string} str,提示框显示的内容,必须
+ * @param {string} title,提示框标题,默认为空
+ * @param {number} time ,提示框消失时间,默认500毫秒
+ */
+function gtAleryt(str,title,time) {
+	var bgDom = $('.common-bg'),
+		msgWarp = $('.common-msg-warp'),
+		msgTitle = $('.common-msg-title'),
+		msgCon = $('.common-msg-con');
+	bgDom.stop(true).show();
+	msgWarp.stop(true).fadeIn(100);
+	msgCon.html(str);
+	msgTitle.html(title||"");
+	setTimeout(function () {
+		bgDom.stop(true).fadeOut(100);
+		msgWarp.stop(true).fadeOut(100);
+	},time||1500);
+}
+//5.5 每个人的旁边都要加关注
+/**
+ * 关注
+ * @param userid,{string}
+ * @constructor
+ */
+
+function GuanZhu(userid){
+	$.post("/e/extend/feed/index.php",
+		{
+			followid:userid
+		},
+		function(data,status){
+			switch(data){
+				case"DelSuccess":gtAleryt("取消关注成功!");
+					$('.guanzhu'+userid).html('关注');
+					break;
+				case"unknowerror":gtAleryt("发生未知错误,请联系管理员!");
+					break;
+				case"nofollowme":gtAleryt("不能关注自己哦!");
+					break;
+				case"AddSuccess":gtAleryt("关注成功!");
+					$('.guanzhu'+userid).html('已关注');
+					break;
+				case"Pleaselogin":$('#loginBtn').trigger('click');
+					break;
+			}
+		}
+	);
+}

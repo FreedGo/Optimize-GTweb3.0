@@ -220,28 +220,34 @@
 	line-height: 24px;
 }
 
-.listLeft>a>p>em{
+.listLeft>p>em{
 	color: #333;
 	width: 60px;
 	display: inline-block;
 }
+.listLeft>p.fromCity>em{
+	width: 55px;
+}
 .fromCity{
 	color: #333;
+	overflow: hidden;
+	zoom: 1;
 }
 .listLeft a h3 i{
 	font-size: 14px;
 	color: #FFB700;
 }
-.listLeft a p{
+.listLeft p{
 	line-height: 24px;
 	font-size: 14px;
 }
-.listLeft a p span{
+.listLeft p span{
 	color: skyblue;
-	padding-left: 5px;
 	display: inline-block;
 	/*width: 20px;*/
 	height: 18px;
+	float: right;
+	cursor: pointer;
 }
 .listLeft a p span>img{
 	height: 18px;
@@ -496,9 +502,6 @@
 	color:#cb7047;
 	font-size: 16px;
 }
-
-
-
 
 
 

@@ -869,6 +869,7 @@ div.footBian{
 	width: 1200px;
 	/*margin-top: 10px;*/
 	padding: 15px 0;
+	margin: 0 auto;
 
 }
 .friendly-link-head h2{
@@ -934,5 +935,41 @@ div.footBian{
 }
 
 
+/*2016-12-1 新增提醒模块*/
+.common-msg-warp{
+	width: 120px;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	border:#ccc solid 1px;
+	padding: 10px;
+	display: none;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin:-50px 0 0 -60px;
+	z-index: 200;
+}
+.common-msg-title{
+	font:14px/24px 微软雅黑;
+	background-color: #eee;
+	text-align: center;
+}
+.common-msg-con{
+	padding-top:10px;
+	font:bold 18px/24px 黑体;
+	text-align: center;
+	color: #039831;
+}
+.common-bg{
+	display: none;
+	background-color: #000;
+	opacity: 0.3;
+	filter: opacity(30);
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index: 100;
+}
+/*2016-12-1 新增提醒模块结束*/
 
 
