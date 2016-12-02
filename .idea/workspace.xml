@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="Default">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai03.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai04.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai05.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai06.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai07.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/bbs/luntan_bankuai08.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/直播中心.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/法兰山德公司介绍2.html" afterPath="$PROJECT_DIR$/html/法兰山德公司介绍2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/toupiao4.js" afterPath="$PROJECT_DIR$/js/toupiao4.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +31,25 @@
     <favorites_list name="Optimize-GTweb3.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="直播中心.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/直播中心.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="63" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="7" />
+              <folding>
+                <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#1884#1892#1" expanded="true" />
+                <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#4518#4526#1" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp11874/home/hao/e/space/template/pinpai/header_1.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp14487/home/hao/e/space/template/pinpai/header.temp.php" />
         <option value="$PROJECT_DIR$/php/zhiyindongtai/zhiyin.php" />
         <option value="$PROJECT_DIR$/html/琴行注册标准.html" />
@@ -120,6 +127,7 @@
         <option value="$PROJECT_DIR$/css/haixuan.css" />
         <option value="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
         <option value="$PROJECT_DIR$/php/teacher/index.temp.php" />
+        <option value="$PROJECT_DIR$/html/直播中心.html" />
       </list>
     </option>
   </component>
@@ -217,25 +225,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiaoshi" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,14 +412,7 @@
       <workItem from="1480470675122" duration="15497000" />
       <workItem from="1480554358373" duration="1856000" />
       <workItem from="1480556274714" duration="22545000" />
-      <workItem from="1480638155106" duration="13918000" />
-    </task>
-    <task id="LOCAL-00054" summary="修改">
-      <created>1478076688069</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1478076688069</updated>
+      <workItem from="1480638155106" duration="14321000" />
     </task>
     <task id="LOCAL-00055" summary="增加了修改课程的部分,需要后台配合完成功能">
       <created>1478076786747</created>
@@ -767,11 +750,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480663021318</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="投票描述改为了10分钟一次">
+      <created>1480663047291</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1480663047291</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="477123000" />
+    <option name="totallyTimeSpent" value="477526000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -784,15 +774,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4402174" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4402174" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25869566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19189766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25869566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19189766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -863,7 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="php返回值修改为json,价格储存在input里面,然后根据选择的option的index,来显示不同的价格" />
     <MESSAGE value="新的页面" />
     <MESSAGE value="琴行注册标准页面" />
     <MESSAGE value="音乐之星换为网络海选完成" />
@@ -888,7 +877,8 @@
     <MESSAGE value="音乐广场头像旁边增加关注,点击可以直接关注,另外精简部分代码" />
     <MESSAGE value="音乐老师和琴行教室的前台主页,增加了 二维码,以及其他部分修改" />
     <MESSAGE value="网络海选的栏目还原回去了" />
-    <option name="LAST_COMMIT_MESSAGE" value="网络海选的栏目还原回去了" />
+    <MESSAGE value="投票描述改为了10分钟一次" />
+    <option name="LAST_COMMIT_MESSAGE" value="投票描述改为了10分钟一次" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,13 +887,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/xin-music-news-article.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/个人中心头部及左侧的列表/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -1439,6 +1422,21 @@
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#4;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#5;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/直播中心.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="63" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="7" />
+          <folding>
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#1884#1892#1" expanded="true" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#4518#4526#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

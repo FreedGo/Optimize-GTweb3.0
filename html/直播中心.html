@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php
+		$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+	?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+
+	<link rel="stylesheet" type="text/css" href="/css/xin_base.css">
+	<link rel="stylesheet" type="text/css" href="/zhibo/xin_live.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="/zhibo/xin_live.js"></script>
+</head>
+<body>
+[!--temp.tou--]
+<div class="bodyWrap">
+	<!-- 历史回顾········································· -->
+	<section class="live-pre living">
+		<!-- 标题········································· -->
+		<div class="live-pre-head  clearfix">
+			<div class="live-pre-head-bor borb f-l-l left"></div>
+			<div class="live-pre-head-name f-l-l">历史回顾</div>
+			<div class="live-pre-head-bor borb f-l-r right"></div>
+		</div>
+		<!-- 列表········································· -->
+		<div class="live-pre-main clearfix">
+			<ul class="live-list clearfix">
+
+				[e:loop={"select * from phome_ecms_zhibo order by id desc",10,24,0}]
+				<?php
+				$shi=time();
+				$tittime_start=(strtotime("$bqr[tittime_start]"));
+				$tittime_stop=(strtotime("$bqr[tittime_stop]"));
+					if($shi>$tittime_stop){
+
+				?>
+				<li class="live-list-cell f-l-l marr-20">
+					<a href="<?=$bqsr[titleurl]?>">
+						<div class="cell-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"><i class="iconfont live-list-play">&#xe63b;</i>
+						</div>
+						<div class="cell-title">
+							<h2><?=esub($bqr[title],30)?> </h2>
+						</div>
+						<div class="cell-name">
+							<h3>直播人：<?=$bqr[titname]?></h3>
+						</div>
+						<div class="cell-time">直播时间：<?=date('m-d H:i',$tittime_start)?>至<?=date('m-d H:i',$tittime_stop)?></div>
+					</a>
+				</li>
+				<?
+				    }
+				    ?>
+				[/e:loop]
+			</ul>
+		</div>
+	</section>
+	<!-- 直播预告········································· -->
+	<section class="live-pre">
+		<!-- 标题········································· -->
+		<div class="live-pre-head clearfix">
+			<div class="live-pre-head-bor borb f-l-l left"></div>
+			<div class="live-pre-head-name f-l-l">直播预告</div>
+			<div class="live-pre-head-bor borb f-l-r right"></div>
+		</div>
+		<!-- 列表········································· -->
+		<div class="live-pre-main clearfix">
+			<ul class="live-list clearfix">
+				[e:loop={"select * from phome_ecms_zhibo order by id desc",10,24,0}]
+				<?php
+				$shi=time();
+				$tittime_start=(strtotime("$bqr[tittime_start]"));
+				$tittime_stop=(strtotime("$bqr[tittime_stop]"));
+					if($shi<$tittime_start){
+
+				?>
+				<li class="live-list-cell f-l-l marr-20">
+					<a href="<?=$bqsr[titleurl]?>">
+						<div class="cell-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></div>
+						<div class="cell-title">
+							<h2><?=esub($bqr[title],30)?> </h2>
+						</div>
+						<div class="cell-name">
+							<h3>直播人：<?=$bqr[titname]?></h3>
+						</div>
+						<div class="cell-time">直播时间：<?=date('m-d H:i',$tittime_start)?>至<?=date('m-d H:i',$tittime_stop)?></div>
+					</a>
+				</li>
+				<?
+				    }
+				    ?>
+				[/e:loop]
+
+			</ul>
+		</div>
+	</section>
+
+
+	<!-- 正在直播········································· -->
+	<section class="live-pre living">
+		<!-- 标题········································· -->
+		<div class="live-pre-head  clearfix">
+			<div class="live-pre-head-bor borb f-l-l left"></div>
+			<div class="live-pre-head-name f-l-l">正在直播</div>
+			<div class="live-pre-head-bor borb f-l-r right"></div>
+		</div>
+		<!-- 列表········································· -->
+		<div class="live-pre-main clearfix">
+			<ul class="live-list clearfix">
+
+				[e:loop={"select * from phome_ecms_zhibo order by id desc",10,24,0}]
+				<?php
+				$shi=time();
+				$tittime_start=(strtotime("$bqr[tittime_start]"));
+				$tittime_stop=(strtotime("$bqr[tittime_stop]"));
+					if($tittime_stop>$shi && $shi>$tittime_start){
+
+				?>
+				<li class="live-list-cell f-l-l marr-20">
+					<a href="<?=$bqsr[titleurl]?>">
+						<div class="cell-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"><i class="iconfont live-list-play">&#xe63b;</i>
+						</div>
+						<div class="cell-title">
+							<h2><?=esub($bqr[title],30)?> </h2>
+						</div>
+						<div class="cell-name">
+							<h3>直播人：<?=$bqr[titname]?></h3>
+						</div>
+						<div class="cell-time">直播时间：<?=date('m-d H:i',$tittime_start)?>至<?=date('m-d H:i',$tittime_stop)?></div>
+					</a>
+				</li>
+				<?
+				    }
+				    ?>
+				[/e:loop]
+			</ul>
+		</div>
+	</section>
+
+	<!-- 友情链接开始····························· -->
+	<style type="text/css">
+		.friendly-link{
+			width: 1200px;
+			/*margin-top: 10px;*/
+			padding: 15px 0;
+
+		}
+		.friendly-link-head h2{
+			font-size: 16px;
+			line-height: 34px;
+			color: #cb7047;
+			border-top: 2px solid #cb7047;
+			text-indent: 15px;
+		}
+		.friendly-link-content{
+			padding: 0 15px;
+		}
+		.friendly-link-content a{
+			font-size: 14px;
+			margin-right: 5px;
+			color: #333;
+			line-height: 22px;
+		}
+		.friendly-link-content a:hover{
+			color: #cb7047;
+		}
+	</style>
+	<section class="friendly-link" >
+		<div class="friendly-link-head">
+			<h2>友情链接：</h2>
+		</div>
+		<div class="friendly-link-content">
+			<a href="http://www.cnscnet.com/" title="申城网" target="_blank">申城网</a>
+			<a href="http://www.huatinet.com/" title="今日话题" target="_blank">今日话题</a>
+		</div>
+	</section>
+	<!-- 友情链接结束····························· -->
+</div>
+[!--temp.wei--]
+</body>
+</html>
