@@ -358,19 +358,19 @@ function getCurrentCity() {
                 }
             };
             // 第二步，向好琴声后台发送当前地址并接受返回的信息
-            $.ajax({
-                url: '/laoshi/indexs.ip.php',
-                type: 'post',
-                dataType: 'text',
-                data: {'city_ip': subCity1},
-                success: function (msg) {
-                    // console.log({'city_ip': subCity1})
-                    // console.log(msg);
-                    // 清空liebiaoShow并插入li
-                    $('.fenlei li').eq(0).trigger('click');//模拟点击了一下全部老师
-                    $('.liebiaoShow').eq(0).empty().append(msg);
-                }
-            });
+            // $.ajax({
+            //     url: '/laoshi/indexs.ip.php',
+            //     type: 'post',
+            //     dataType: 'text',
+            //     data: {'city_ip': subCity1},
+            //     success: function (msg) {
+            //         // console.log({'city_ip': subCity1})
+            //         // console.log(msg);
+            //         // 清空liebiaoShow并插入li
+            //         $('.fenlei li').eq(0).trigger('click');//模拟点击了一下全部老师
+            //         $('.liebiaoShow').eq(0).empty().append(msg);
+            //     }
+            // });
             // 第二步end，向好琴声后台发送当前地址并接受返回的信息
 
         }
@@ -390,15 +390,6 @@ $(document).ready(function(){
 
 
 // ``````````````````````````````````````````````````````````````````````````````````````
-$(function () {
-
-
-    //点击全部老师
-    $('.teacher-all').on('click', function (event) {
-        getCurrentCity();
-    });
-
-})
 // 点击音乐老师下面的，音乐名人，加载名人数据
 $(function () {
     $('.YinYueMingRen').on('click', function () {
@@ -434,6 +425,41 @@ $(function () {
     })
 })
 
+
+
+$(function () {
+    $.ajax({
+        url:'/laoshi/tear.index.php',
+        type:'get',
+        datatype:'json'
+    }).done(function (msg) {
+        msg = eval('('+msg+')');
+        // console.log(msg)
+        $('.loaders').hide();
+        $.each(msg, function(index, val) {
+            if (index <= 500 ){
+                $('.liebiaoShow').eq(0).append(
+                    '<li><a href="/e/space/?userid='+ val.userid +
+                    '"><img src='+ val.userpic +
+                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
+                    '"><span>' + val.username +
+                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
+                    ' iconfont"></i></a>'+
+                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
+                    '</span><span>粉丝数：'+val.follownum+
+                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
+                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
+                    '&userid=' +val.userid +
+                    '"><em>提问</em></a></div></li>'
+                )
+            }
+        });
+
+    }).error(function (data) {
+        console.log('error');
+        console.log(data)
+    });
+});
 
 //});
 
