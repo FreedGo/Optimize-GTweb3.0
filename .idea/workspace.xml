@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="Default">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/直播中心.html" />
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="音乐老师的ajax数据调用格式为json">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/音乐老师.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,19 +32,38 @@
     <favorites_list name="Optimize-GTweb3.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="直播中心.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/直播中心.html">
+    <leaf>
+      <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="63" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="7" />
+            <state relative-caret-position="40">
+              <caret line="435" column="32" selection-start-line="435" selection-start-column="32" selection-end-line="435" selection-end-column="32" />
               <folding>
-                <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#1884#1892#1" expanded="true" />
-                <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#4518#4526#1" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1480898352513" expanded="true" signature="6420:6467" ph="..." />
+                <marker date="1480898352513" expanded="true" signature="8405:8452" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="音乐老师.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/音乐老师.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="317" column="26" selection-start-line="317" selection-start-column="26" selection-end-line="317" selection-end-column="26" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#4647#4655#1" expanded="true" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ol#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#9560#9568#1" expanded="true" />
+                <element signature="e#10632#10640#1" expanded="true" />
+                <element signature="e#11682#11690#1" expanded="true" />
+                <element signature="e#12760#12768#1" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,14 +91,9 @@
       <projects_view />
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp14487/home/hao/e/space/template/pinpai/header.temp.php" />
-        <option value="$PROJECT_DIR$/php/zhiyindongtai/zhiyin.php" />
         <option value="$PROJECT_DIR$/html/琴行注册标准.html" />
         <option value="$PROJECT_DIR$/php/开发部琴行注册标准/index.php" />
         <option value="$PROJECT_DIR$/php/开发部琴行注册标准/qh-list.php" />
@@ -111,7 +126,6 @@
         <option value="$PROJECT_DIR$/html/海选投票视频内页.html" />
         <option value="$PROJECT_DIR$/html/法兰山德公司介绍.html" />
         <option value="$PROJECT_DIR$/html/法兰山德公司介绍2.html" />
-        <option value="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
         <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
         <option value="$PROJECT_DIR$/html/网络海选.html" />
         <option value="$PROJECT_DIR$/html/bbs/luntan_bankuai01.html" />
@@ -128,6 +142,9 @@
         <option value="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
         <option value="$PROJECT_DIR$/php/teacher/index.temp.php" />
         <option value="$PROJECT_DIR$/html/直播中心.html" />
+        <option value="$PROJECT_DIR$/css/xin_yinyuelaoshi.css" />
+        <option value="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
+        <option value="$PROJECT_DIR$/html/音乐老师.html" />
       </list>
     </option>
   </component>
@@ -195,8 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,6 +246,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -412,21 +429,8 @@
       <workItem from="1480470675122" duration="15497000" />
       <workItem from="1480554358373" duration="1856000" />
       <workItem from="1480556274714" duration="22545000" />
-      <workItem from="1480638155106" duration="14321000" />
-    </task>
-    <task id="LOCAL-00055" summary="增加了修改课程的部分,需要后台配合完成功能">
-      <created>1478076786747</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1478076786747</updated>
-    </task>
-    <task id="LOCAL-00056" summary="修改课程的弹出页面">
-      <created>1478076851775</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1478076851775</updated>
+      <workItem from="1480638155106" duration="19940000" />
+      <workItem from="1480897908197" duration="927000" />
     </task>
     <task id="LOCAL-00057" summary="海选手机H5页面css备份">
       <created>1478076876730</created>
@@ -757,13 +761,27 @@
       <option name="project" value="LOCAL" />
       <updated>1480663047291</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="直播中心修改顺序为历史回顾,直播预告,正在直播">
+      <created>1480663457828</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1480663457828</updated>
+    </task>
+    <task id="LOCAL-00105" summary="音乐老师的ajax数据调用格式为json">
+      <created>1480670780002</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1480670780002</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="477526000" />
+    <option name="totallyTimeSpent" value="484072000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -776,32 +794,32 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19402985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4402174" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25869566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19189766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.725" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25869566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2984127" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -853,8 +871,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新的页面" />
-    <MESSAGE value="琴行注册标准页面" />
     <MESSAGE value="音乐之星换为网络海选完成" />
     <MESSAGE value="修改了乐谱H5页面的几个小问题" />
     <MESSAGE value="知音备份" />
@@ -878,7 +894,9 @@
     <MESSAGE value="音乐老师和琴行教室的前台主页,增加了 二维码,以及其他部分修改" />
     <MESSAGE value="网络海选的栏目还原回去了" />
     <MESSAGE value="投票描述改为了10分钟一次" />
-    <option name="LAST_COMMIT_MESSAGE" value="投票描述改为了10分钟一次" />
+    <MESSAGE value="直播中心修改顺序为历史回顾,直播预告,正在直播" />
+    <MESSAGE value="音乐老师的ajax数据调用格式为json" />
+    <option name="LAST_COMMIT_MESSAGE" value="音乐老师的ajax数据调用格式为json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -887,62 +905,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/个人中心头部及左侧的列表/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="490" column="0" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18324/home/hao/e/data/html/pinpai/xiaoshou/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="228" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="228" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39015/home/hao/e/template/incfile/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1980">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp40916/home/hao/e/template/incfile/header_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="60" column="93" selection-start-line="60" selection-start-column="93" selection-end-line="60" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/发帖/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="227" column="105" selection-start-line="227" selection-start-column="105" selection-end-line="227" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp41405/home/hao/e/data/html/pinpai/chanpin/listinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4950">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp25944/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp41947/home/hao/e/data/html/fatie/qlistinfo1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp41405/home/hao/e/data/html/pinpai/chanpin/listinfo.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp25944/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp41947/home/hao/e/data/html/fatie/qlistinfo1.php" />
     <entry file="file://$PROJECT_DIR$/css/shipinneiye2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="902">
@@ -968,7 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="923" column="70" selection-start-line="923" selection-start-column="70" selection-end-line="923" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,15 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="275" selection-end-column="1" />
-          <folding>
-            <element signature="e#2509#3193#0" expanded="false" />
-            <element signature="e#3225#3710#0" expanded="false" />
-            <element signature="e#3744#4102#0" expanded="false" />
-            <element signature="n#!!block;n#HotBang#0" expanded="false" />
-            <element signature="e#4797#5504#0" expanded="false" />
-            <element signature="n#!!block;n#gtAleryt#0" expanded="false" />
-            <element signature="n#!!block;n#GuanZhu#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="504" column="0" selection-start-line="504" selection-start-column="0" selection-end-line="504" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="954" column="23" selection-start-line="954" selection-start-column="23" selection-end-line="954" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,11 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1804">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#4671#5029#0" expanded="false" />
-            <element signature="n#!!block;n#gtAleryt#0" expanded="false" />
-            <element signature="n#!!block;n#GuanZhu#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,13 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="434" column="19" selection-start-line="434" selection-start-column="19" selection-end-line="434" selection-end-column="19" />
-          <folding>
-            <marker date="1480574228887" expanded="true" signature="262:474" ph="select * fro... phome_ecms_photo" />
-            <marker date="1480574228887" expanded="true" signature="4843:4908" ph="select morep... $" />
-            <marker date="1480574228887" expanded="true" signature="9340:9348" ph="..." />
-            <marker date="1480574228887" expanded="true" signature="11962:11970" ph="..." />
-            <marker date="1480574228887" expanded="true" signature="14271:14338" ph="select * fro... phome_enewsad" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,27 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="1125" column="0" selection-start-line="1125" selection-start-column="0" selection-end-line="1125" selection-end-column="0" />
-          <folding>
-            <element signature="e#3036#3042#0" expanded="false" />
-            <element signature="e#3042#3048#0" expanded="false" />
-            <element signature="e#3809#3815#0" expanded="false" />
-            <element signature="n#em#0;n#p#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#p#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#7400#7406#0" expanded="false" />
-            <element signature="n#div#1;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#12403#12409#0" expanded="false" />
-            <element signature="n#p#0;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#em#0;n#p#1;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#p#1;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#15924#15930#0" expanded="false" />
-            <element signature="e#19474#19480#0" expanded="false" />
-            <element signature="e#23293#23299#0" expanded="false" />
-            <element signature="e#26679#26685#0" expanded="false" />
-            <element signature="e#30561#30567#0" expanded="false" />
-            <element signature="e#33822#33828#0" expanded="false" />
-            <element signature="e#37150#37156#0" expanded="false" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,44 +1023,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="355" column="20" selection-start-line="355" selection-start-column="20" selection-end-line="355" selection-end-column="41" />
-          <folding>
-            <marker date="1480641065912" expanded="true" signature="6420:6467" ph="..." />
-            <marker date="1480641065912" expanded="true" signature="8405:8452" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/法兰山德公司介绍2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="257" column="28" selection-start-line="257" selection-start-column="28" selection-end-line="257" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#3169#3173#0" expanded="false" />
-            <element signature="e#3173#3177#0" expanded="false" />
-            <element signature="e#3198#3202#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/法兰山德公司介绍.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="370" column="46" selection-start-line="332" selection-start-column="5" selection-end-line="370" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/html/法兰山德公司介绍.html" />
     <entry file="file://$PROJECT_DIR$/html/品牌海选列表页.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,137 +1053,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp56861/home/hao/e/data/ecmseditor/ueditor/php/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3366">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai04.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai05.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai06.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai07.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09125/home/hao/e/extend/lgyPl/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29273/home/hao/e/extend/lgyPl/assets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31301/home/hao/e/extend/UE/php/imageUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
-          <folding>
-            <marker date="1480650139807" expanded="true" signature="543:623" ph="select filet... $" />
-            <marker date="1480650139807" expanded="true" signature="1013:1084" ph="select class... $" />
-            <marker date="1480650139807" expanded="true" signature="2215:2452" ph="insert into $... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31670/home/hao/e/extend/UE/php/imageManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1379702432000" expanded="true" signature="988:1057" ph="select * fro... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai08.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp56861/home/hao/e/data/ecmseditor/ueditor/php/config.json" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/index.html" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai02.html" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai01.html" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai03.html" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai04.html" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai05.html" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai06.html" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai07.html" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09125/home/hao/e/extend/lgyPl/api.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29273/home/hao/e/extend/lgyPl/assets/style.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31301/home/hao/e/extend/UE/php/imageUp.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31670/home/hao/e/extend/UE/php/imageManager.php" />
+    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai08.html" />
     <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="164" column="10" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
-          <folding>
-            <element signature="e#3100#3106#0" expanded="true" />
-            <element signature="e#3106#3112#0" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1299,33 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
           <caret line="374" column="29" selection-start-line="374" selection-start-column="29" selection-end-line="374" selection-end-column="29" />
-          <folding>
-            <element signature="e#13027#16228#0#HTML" expanded="false" />
-            <element signature="e#13133#14569#0#HTML" expanded="false" />
-            <element signature="e#14372#14390#0#HTML" expanded="true" />
-            <element signature="e#16390#16808#0#HTML" expanded="false" />
-            <marker date="1480662727473" expanded="true" signature="1055:1130" ph="select feedu... $" />
-            <marker date="1480662727473" expanded="true" signature="1394:1455" ph="SELECT feedu... $" />
-            <marker date="1480662727473" expanded="true" signature="2210:2279" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480662727473" expanded="true" signature="2520:2591" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480662727473" expanded="true" signature="8932:9009" ph="select follo... $" />
-            <marker date="1480662727473" expanded="true" signature="10830:10891" ph="select count... phome_ecms_photo" />
-            <marker date="1480662727473" expanded="true" signature="11292:11351" ph="select count... phome_enewspl_1" />
-            <marker date="1480662727473" expanded="true" signature="13318:13391" ph="select feedu... $" />
-            <marker date="1480662727473" expanded="true" signature="14144:14154" ph="..." />
-            <marker date="1480662727473" expanded="true" signature="20318:20381" ph="select sayte... phome_enewsmemberadd" />
-            <marker date="1480662727473" expanded="true" signature="20903:20987" ph="select yaoqi... $" />
-            <marker date="1480662727473" expanded="true" signature="21437:21495" ph="SELECT yaoqi... $" />
-            <marker date="1480662727473" expanded="true" signature="23396:23604" ph="select * fro... $" />
-            <marker date="1480662727473" expanded="true" signature="25670:25837" ph="select * fro... $" />
-            <marker date="1480662727473" expanded="true" signature="27225:27392" ph="select * fro... $" />
-            <marker date="1480662727473" expanded="true" signature="29209:29281" ph="select yaoqi... $" />
-            <marker date="1480662727473" expanded="true" signature="29707:29765" ph="SELECT yaoqi... $" />
-            <marker date="1480662727473" expanded="true" signature="31540:31699" ph="select * fro... $" />
-            <marker date="1480662727473" expanded="true" signature="33627:33792" ph="select * fro... $" />
-            <marker date="1480662727473" expanded="true" signature="35840:36009" ph="select * fro... $" />
-            <marker date="1480662727473" expanded="true" signature="42637:42706" ph="select photo... phome_enewsmemberadd" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1333,40 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="313" column="94" selection-start-line="313" selection-start-column="94" selection-end-line="313" selection-end-column="94" />
-          <folding>
-            <element signature="e#2951#3116#0#HTML" expanded="false" />
-            <element signature="e#3133#3414#0#HTML" expanded="false" />
-            <element signature="e#3524#3998#0#HTML" expanded="false" />
-            <element signature="e#4053#5115#0#HTML" expanded="false" />
-            <element signature="e#5138#5542#0#HTML" expanded="false" />
-            <element signature="e#6087#6643#0#HTML" expanded="false" />
-            <element signature="e#6756#6812#0#HTML" expanded="false" />
-            <element signature="e#6884#7914#0#HTML" expanded="false" />
-            <element signature="e#7943#9068#0#HTML" expanded="false" />
-            <element signature="e#8448#8955#0#PHP" expanded="false" />
-            <element signature="e#9097#9219#0#HTML" expanded="false" />
-            <element signature="e#9248#9515#0#HTML" expanded="false" />
-            <element signature="e#10938#10956#0#HTML" expanded="true" />
-            <element signature="e#12958#13376#0#HTML" expanded="false" />
-            <marker date="1480662808531" expanded="true" signature="879:954" ph="select feedu... $" />
-            <marker date="1480662808531" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
-            <marker date="1480662808531" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480662808531" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480662808531" expanded="true" signature="5234:5311" ph="select follo... $" />
-            <marker date="1480662808531" expanded="true" signature="7131:7192" ph="select count... phome_ecms_photo" />
-            <marker date="1480662808531" expanded="true" signature="7593:7652" ph="select count... phome_enewspl_1" />
-            <marker date="1480662808531" expanded="true" signature="9884:9957" ph="select feedu... $" />
-            <marker date="1480662808531" expanded="true" signature="10710:10720" ph="..." />
-            <marker date="1480662808531" expanded="true" signature="16849:16912" ph="select sayte... phome_enewsmemberadd" />
-            <marker date="1480662808531" expanded="true" signature="17433:17517" ph="select yaoqi... $" />
-            <marker date="1480662808531" expanded="true" signature="17967:18025" ph="SELECT yaoqi... $" />
-            <marker date="1480662808531" expanded="true" signature="19926:20134" ph="select * fro... $" />
-            <marker date="1480662808531" expanded="true" signature="22201:22368" ph="select * fro... $" />
-            <marker date="1480662808531" expanded="true" signature="23743:23912" ph="select * fro... $" />
-            <marker date="1480662808531" expanded="true" signature="26233:26283" ph="select id fr... phome_zjk_kebiao_tear" />
-            <marker date="1480662808531" expanded="true" signature="26452:26571" ph="select * fro... phome_zjk_kebiao_tear" />
-            <marker date="1480662808531" expanded="true" signature="38926:39091" ph="select * fro... $" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1374,69 +1095,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="697" column="16" selection-start-line="697" selection-start-column="16" selection-end-line="697" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53930/home/hao/e/space/template/pinpai/index.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="197" column="50" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
-          <folding>
-            <marker date="1478855785000" expanded="true" signature="960:1035" ph="select feedu... $" />
-            <marker date="1478855785000" expanded="true" signature="1323:1384" ph="SELECT feedu... $" />
-            <marker date="1478855785000" expanded="true" signature="2239:2308" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1478855785000" expanded="true" signature="2573:2644" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1478855785000" expanded="true" signature="7079:7140" ph="select * fro... $" />
-            <marker date="1478855785000" expanded="true" signature="9917:9990" ph="select feedu... $" />
-            <marker date="1478855785000" expanded="true" signature="14903:14987" ph="select newst... phome_ecms_brand" />
-            <marker date="1478855785000" expanded="true" signature="16589:16704" ph="select * fro... $" />
-            <marker date="1478855785000" expanded="true" signature="17853:17968" ph="select * fro... $" />
-            <marker date="1478855785000" expanded="true" signature="19125:19240" ph="select * fro... $" />
-            <marker date="1478855785000" expanded="true" signature="20393:20509" ph="select * fro... $" />
-            <marker date="1478855785000" expanded="true" signature="21661:21778" ph="select * fro... $" />
-            <marker date="1478855785000" expanded="true" signature="36091:36163" ph="select * fro... phome_ecms_brand" />
-            <marker date="1478855785000" expanded="true" signature="38879:38968" ph="select * fro... $" />
-            <marker date="1478855785000" expanded="true" signature="40222:40291" ph="select photo... phome_enewsmemberadd" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53930/home/hao/e/space/template/pinpai/index.temp.php" />
     <entry file="file://$PROJECT_DIR$/html/网络海选.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-792">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1327#1335#1" expanded="true" />
-            <element signature="e#1472#1480#1" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#4;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#5;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/直播中心.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="63" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="7" />
+        <state relative-caret-position="476">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_music-book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13766/home/hao/laoshi/tear.index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp23970/home/hao/laoshi/index.name.php" />
+    <entry file="file://$PROJECT_DIR$/css/xin_yinyuelaoshi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="480" column="1" selection-start-line="480" selection-start-column="1" selection-end-line="480" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="435" column="32" selection-start-line="435" selection-start-column="32" selection-end-line="435" selection-end-column="32" />
           <folding>
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#1884#1892#1" expanded="true" />
-            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#4518#4526#1" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1480898352513" expanded="true" signature="6420:6467" ph="..." />
+            <marker date="1480898352513" expanded="true" signature="8405:8452" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐老师.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="317" column="26" selection-start-line="317" selection-start-column="26" selection-end-line="317" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#4647#4655#1" expanded="true" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ol#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#9560#9568#1" expanded="true" />
+            <element signature="e#10632#10640#1" expanded="true" />
+            <element signature="e#11682#11690#1" expanded="true" />
+            <element signature="e#12760#12768#1" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
