@@ -1,184 +1,171 @@
 $(function () {
 
-    $('.liebiaoFuck img').error(function () {
-        $(this).attr('src','/d/photo/5789/big.jpg');
-    });
-//	var iUl;
-//	var iList=8;
     // 点击分类显示不同分类里面的老师
-    var ifenlei;
+    var ifenlei = 0,//标价当前为那种音乐老师类型
+        iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
     $('.fenleiFuck li').click(function (event) {
-
         ifenlei = $(this).index();
-
         $(this).addClass('current').siblings('li').removeClass('current');
         $('.liebiaoFuck').eq(ifenlei).fadeIn('fast').siblings('ul').hide();
         $('.tuijianFuck').eq(ifenlei).fadeIn('fast').siblings('ol').hide();
-        // 显示前N个开始-----------------------------------------------------------
-        // 获取当前显示的那个ul列表的index值···························
-//	
-//		iList=8;
-//		$('.liebiaoShow').each(function(index, element) {
-//			if ($(element).is(':hidden')) {}else{
-//				iUl=index;
-//				;};
-//			
-//		});
-
-        // 获取当前显示的那个ul列表的index值结束·······················
-        // 首先显示前20个children('li:gt(20)').hide()
-        // $('.liebiaoShow').eq(iUl).children('li:gt(3)').hide();
-// 显示前N个结束-----------------------------------------------------------
-
-
     });
-    // 完成·····················································
-    //
-//	// 点击分类显示不同分类里面的音乐之星
-//	var ifenlei;
-//	$('.fenleiCa li').click(function(event) {
-//
-//
-//		ifenlei=$(this).index();
-//		
-//		$(this).addClass('current').siblings('li').removeClass('current');
-//		$('.liebiaoCa').eq(ifenlei).fadeIn('fast').siblings('ul').hide();
-//
-//		// 显示前N个开始-----------------------------------------------------------
-//		// 获取当前显示的那个ul列表的index值···························
-//		
-//		iList=8;
-//		$('.liebiaoShow').each(function(index, element) {
-//			if ($(element).is(':hidden')) {}else{
-//				iUl=index;
-//				;};
-//			
-//		});
-//		
-    // 获取当前显示的那个ul列表的index值结束·······················
-    // 首先显示前20个children('li:gt(20)').hide()
-//	$('.liebiaoShow').eq(iUl).children('li:gt(3)').hide();
-// 显示前N个结束-----------------------------------------------------------
-});
-// 完成·····················································
 
-//	// 左侧的二级菜单点击，右侧显示相应的内容·····················
-//	$('.mingrenPoint').click(function(event) {
-//		$('.mingrenPoint').addClass('current');
-//		$('.zhixingPoint').removeClass('current');
-//		$('.yinyuemingren').stop(true).show();
-//		$('.xinyuezhixing').stop(true).hide();
-//		// 显示前N个开始-----------------------------------------------------------
-//	// 获取当前显示的那个ul列表的index值···························
-//	iList=8;
-//	var iContent;
-//	$('.qzdtContent>div').each(function(index, element) {
-//		if ($(element).is(':hidden')) {}else{
-//			iContent=index;
-//			};
-//	});
-//	$('.liebiaoShow').each(function(index, element) {
-//		if ($(element).is(':hidden')) {}else{
-//			iUl=index;
-//			;};
-//		
-//	});
+    // ``````````````````````````````````````````````````````````````````````````````````````
+    /**
+     * 向后台查询老师数据,并返回处理
+     * @type {Array}
+     */
+    var techer00 = [],//全部老师
+        techer01 = [],//钢琴老师
+        techer02 = [],//吉他老师
+        techer03 = [],//弦乐老师
+        techer04 = [];//其他老师
+    $.ajax({
+        url:'/laoshi/tear.index.php',
+        type:'get',
+        datatype:'json'
+    })
+    .done(function (msg) {
+        msg = eval('('+msg+')');
+        // console.log(msg)
+        techer00 = msg;
+        $('.loaders').hide();
+        $.each(msg, function(index, val) {
+            if (index <= 20 ){
+                $('.liebiaoShow').eq(0).append(
+                    '<li><a href="/e/space/?userid='+ val.userid +
+                    '"><img src='+ val.userpic +
+                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
+                    '"><span>' + val.username +
+                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
+                    ' iconfont"></i></a>'+
+                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
+                    '</span><span>粉丝数：'+val.follownum+
+                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
+                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
+                    '&userid=' +val.userid +
+                    '"><em>提问</em></a></div></li>'
+                )
+            }
+        });
+        // 循环数组,根据类型不同拆分对象,再组成新的数组
+        for (var i = 0 ; i < msg.length ; i++){
+            switch (msg[i].teacher_type){
+                case '钢琴老师':
+                    techer01.push(msg[i]);
+                    break;
+                case '吉他老师':
+                    techer02.push(msg[i]);
+                    break;
+                case '弦乐老师':
+                    techer03.push(msg[i]);
+                    break;
+                case '':
+                    msg[i].teacher_type = '音乐老师';
+                    techer04.push(msg[i]);
+                    break;
+                default :
+                    techer04.push(msg[i]);
+                    break;
+            }
+        };
+        loadteacher(techer01,1);
+        loadteacher(techer02,2);
+        loadteacher(techer03,3);
+        loadteacher(techer04,4);
+    })
+    .error(function (data) {
+        console.log('error');
+        console.log(data)
+    });
+    /**
+     * 总计数字动态变化
+     * @type {Number}
+     */
+    var totalNum = techer00.length;
+    for (var i = 0 ;i <= totalNum ;i ++){
+        $('.tongjiNum').html(i);
+    };
+    /**
+     * 加载指定的数据进入指定的老师分类
+     * @param obj {object} 老师的数据;
+     * @param type {num}  分类;
+     */
+    function loadteacher(obj,type) {
+        $('.loader-warp').show();
+        $.each(obj,function (index,val) {
+            if (index>=iloadedNum[type] && index < (iloadedNum[type] +10)){
+                $('.liebiaoShow').eq(type).append(
+                    '<li><a href="/e/space/?userid='+ val.userid +
+                    '"><img src='+ val.userpic +
+                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
+                    '"><span>' + val.username +
+                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
+                    ' iconfont"></i></a>'+
+                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
+                    '</span><span>粉丝数：'+val.follownum+
+                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
+                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
+                    '&userid=' +val.userid +
+                    '"><em>提问</em></a></div></li>'
+                );
 
-// 获取当前显示的那个ul列表的index值结束·······················
-// 首先显示前20个children('li:gt(20)').hide()
-//	$('.liebiaoShow').eq(iUl).children('li:gt(3)').hide();
-// 显示前N个结束-----------------------------------------------------------
-// 
-//	});
-//	$('.zhixingPoint').click(function(event) {
-//		$('.mingrenPoint').removeClass('current');
-//		$('.zhixingPoint').addClass('current');
-//		$('.yinyuemingren').stop(true).hide();
-//		$('.xinyuezhixing').stop(true).show();
-//		// 显示前N个开始-----------------------------------------------------------
-//	// 获取当前显示的那个ul列表的index值···························
-//	iList=8;
-//	
-//	$('.qzdtContent>div').each(function(index, element) {
-//		if ($(element).is(':hidden')) {}else{
-//			iContent=index;
-//			};
-//	});
-//	$('.liebiaoShow').each(function(index, element) {
-//		if ($(element).is(':hidden')) {}else{
-//			iUl=index;
-//			;};
-//		
-//	});
+                console.log('成功');
+            } else if (index >= (iloadedNum[type] +10)){
+                console.log('条件不符');
+            }
+        });
+        iloadedNum[type] = iloadedNum[type] +10 ;
+        $('.loader-warp').hide();
+    }
 
-// 获取当前显示的那个ul列表的index值结束·······················
-// 首先显示前20个children('li:gt(20)').hide()
-//	$('.liebiaoShow').eq(iUl).children('li:gt(3)').hide();
-// 显示前N个结束-----------------------------------------------------------
-
-
-//	});
-
-// 瀑布流下拉显示·············································
-//
-
-
-// 显示前N个开始-----------------------------------------------------------
-// 获取当前显示的那个ul列表的index值···························
-
-//	var iContent;
-//	$('.qzdtContent>div').each(function(index, element) {
-//		if ($(element).is(':hidden')) {}else{
-//			iContent=index;
-//			};
-//	});
-//	$('.liebiaoShow').each(function(index, element) {
-//		if ($(element).is(':hidden')) {}else{
-//			iUl=index;
-//			;};
-//		
-//	});
-
-// 获取当前显示的那个ul列表的index值结束·······················
-// 首先显示前20个c
-// $('.liebiaoShow').eq(iUl).children('li:gt(3)').hide();
-
-
-// 显示前N个结束-----------------------------------------------------------
-//	
-//	$(window).scroll(function(event) {
-//							if ($(document).scrollTop() + $(window).height() > $(document).height() - 150) {
-//									
-//									for (var i = iList; i < iList+4; i++) {
-//										$('.liebiaoShow').eq(iUl).children('li').eq(i).show();
-//										console.log(i);
-//										
-//
-//									};
-//
-//									iList=iList+4;
-//							};
-//						});
-//
+    $(function() {
+        var iList=1,
+            scrollTimer=null,
+            iload=0;
+        $(window).scroll(function(event) {
+            if (scrollTimer) {
+                clearTimeout(scrollTimer);//清除定时器
+            }
+            scrollTimer=setTimeout(function() {
+                //如果离底部小于150像素，就发送请求
+                if ($(document).scrollTop() + $(window).height() > $(document).height() -360) {
+                    switch (ifenlei){
+                        case 0:
+                        loadteacher(techer00,ifenlei);
+                        break;
+                        case 1:
+                            loadteacher(techer01,ifenlei);
+                            break;
+                        case 2:
+                            loadteacher(techer02,ifenlei);
+                            break;
+                        case 3:
+                            loadteacher(techer03,ifenlei);
+                            break;
+                        case 4:
+                            loadteacher(techer04,ifenlei);
+                            break;
+                    }
+                }
+            }, 500);
+        });
+    });
 
 // ```````````````````````````````````````````````````````````````````````````````````````````````````````````
-$(function () {
-
-
+    /**
+     * 城市筛选搜索
+     */
     $('.tijiao input').click(function (event) {
-
         // 提交城市新信息切换列表内容····················································
         // subCity1代表省级值，subCity2代表市级值，subCity3代表县级值，
         var subCity1;
         var subCity2;
         var subCity3;
         var cityInfo;
-
-
         subCity1 = $('#sfdq_tj').val();
         subCity2 = $('#csdq_tj').val();
         subCity3 = $('#qydq_tj').val();
-
         if (subCity1 == "" || subCity1 == "选择省份") {
             alert("请选择省份再提交");
         } else {
@@ -194,20 +181,12 @@ $(function () {
                 data: {'city1': subCity1, 'city2': subCity2, 'city3': subCity3},
                 // data:city1,
                 success: function (msg) {
-                    // console.log(msg);
-                    // console.log(typeof(msg));
-                    // 清空liebiaoShow并插入li
-                    // $('.liebiaoFuck').eq(0).hide();
                     if (msg == '') {
                         $('.liebiaoShow').eq(0).empty().append('<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到老师，快来加入好琴声吧！</p>');
                     } else {
                         $('.fenlei li').eq(0).trigger('click');//模拟点击了一下全部老师
                         $('.liebiaoShow').eq(0).empty().append(msg);
                     }
-
-                    // $('.toutiao01').append('推荐');
-                    // $('.di_zhi').append('地址：');
-                    // $('.phone_one').append('咨询电话：');
 
                 }
             })
@@ -221,66 +200,49 @@ $(function () {
                 .always(function () {
                     // console.log("complete");
                 });
-
-        }
-        ;
-
-
+        };
     });
 // ---------------------------------------------------------------------------------------------------------
 
-// 教室输入名字查询
+    /**
+     * 教室输入名字搜索
+     */
     var jiaoshiName;
     $('.searchSub').click(function (event) {
+        $('.sousuoResult').show().children('a').trigger('click');
         jiaoshiName = $('.searchSelect').val();
+        $('.loader-warp').show();
         // console.log(jiaoshiName);
         if (jiaoshiName == "") {
             alert('输入的老师名字不能为空');
         } else {
-            // 点下按钮之后加载css动画
-            $('.liebiaoShow').empty().append('<div class="loaders"><div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div></div>');
-            $('.loaders').fadeIn(200);
-            // console.log(jiaoshiName);
-            $.ajax({
-                url: '/laoshi/index.name.php',
-                type: 'post',
-                dataType: 'text',
-                data: {'jiaoshi1': jiaoshiName},
-                success: function (msg) {
-                    // console.log(msg);
-                    // 清空liebiaoShow并插入li
-                    // console.log(msg);
-                    // $('.liebiaoFuck').eq(0).hide();
-                    if (msg == '') {
-                        $('.liebiaoShow').eq(0).empty().append('<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到老师，快来加入好琴声吧！</p>');
-                    } else {
-                        $('.fenlei li').eq(0).trigger('click');//模拟点击了一下全部老师
-                        $('.liebiaoShow').eq(0).empty().append(msg);
-                    }
-
-                    // $('.toutiao01').append('推荐');
-                    // $('.di_zhi').append('地址：');
-                    // $('.phone_one').append('咨询电话：');
+            for (var i = 0; i < techer00.length; i++){
+                if (techer00[i].username == jiaoshiName ){
+                    $('.sousuo-warp').empty().append(
+                        '<li><a href="/e/space/?userid='+ techer00[i].userid +
+                        '"><img src='+ techer00[i].userpic +
+                        '><div class="xingming"><a href="/e/space/?userid='+ techer00[i].userid +
+                        '"><span>' + techer00[i].username +
+                        '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +techer00[i].cked +
+                        ' iconfont"></i></a>'+
+                        '</div></a><div class="shenfen"><span>身份：'+techer00[i].teacher_type +
+                        '</span><span>粉丝数：'+techer00[i].follownum+
+                        '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +techer00[i].userid +
+                        '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + techer00[i].username +
+                        '&userid=' +techer00[i].userid +
+                        '"><em>提问</em></a></div></li>'
+                    );
                 }
-            })
-                .done(function () {
-                    // console.log("success");
-                })
-                .fail(function () {
-                    // console.log("error");
-                })
-                .always(function () {
-                    // console.log("complete");
-                });
-        }
-        ;
-
-
+            }
+            $('.no-sousuo-more').remove();
+            $('.sousuo-warp').append('<li class="no-sousuo-more" style="text-align: center;font:14px/32px 微软雅黑;color: #cb7047;">没有更多了!</li>');
+        };
     });
 
 // ---------------------------------------------------------------------------------------------------------
-
-    // 教室输入排序类型查询
+    /**
+     * 按照不同类型排序
+     */
     var paixuName;
     $('#paixuSelect').change(function (event) {
         paixuName = $('#paixuSelect').val();
@@ -323,31 +285,24 @@ $(function () {
 
 
     });
-})
 // ``````````````````````````````````````````````````````````````````````````````````````
 //首先封装页面加载获取当前所在城市信息的函数、
-function getCurrentCity() {
-    // 点下按钮之后加载css动画
-    $('.liebiaoShow').eq(0).empty().append('<div class="loaders"><div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div></div>');
-    $('.loaders').fadeIn(200);
+    function getCurrentCity() {
     var subCity1;
     // 第一步,向高德API发送请求并获得访问者所在省份
     $.ajax({
         type: "get",
-        url: "http://webapi.amap.com/maps/ipLocation?key=4a84cf8078fb847fd4072da2dbc9b6b7",//自己申请的高德key，2000次每天
+        // url: "http://webapi.amap.com/maps/ipLocation?key=cf19db6adadd29933f75fd2095b92a3e",//自己申请的高德key，2000次每天
+        url:'http://restapi.amap.com/v3/ip?key=7a178998b6550b21f6a2fb88d3285fcd',
         dataType: 'text',
         // contentType:'application/x-www-form-urlencoded;charset=UTF-8',
         success: function (data) {
-
-            // console.log(data);
             //转换为JSON对象
             var jsonObj = eval("(" + data.replace('(', '').replace(')', '').replace(';', '') + ")");
             //当前城市
             // $("#shenfen>p").html('当前:'+jsonObj.province);
             subCity1 = jsonObj.province;
             subCity1 = subCity1.substring(0, subCity1.length - 1);
-            // console.log(subCity1);
-
             //增加加载页面师,三级联动加载一级城市
             //遍历第一级,找到之后模拟点击
             for (var i = 0 ; i < 34;i++){
@@ -357,108 +312,22 @@ function getCurrentCity() {
                     break;
                 }
             };
-            // 第二步，向好琴声后台发送当前地址并接受返回的信息
-            // $.ajax({
-            //     url: '/laoshi/indexs.ip.php',
-            //     type: 'post',
-            //     dataType: 'text',
-            //     data: {'city_ip': subCity1},
-            //     success: function (msg) {
-            //         // console.log({'city_ip': subCity1})
-            //         // console.log(msg);
-            //         // 清空liebiaoShow并插入li
-            //         $('.fenlei li').eq(0).trigger('click');//模拟点击了一下全部老师
-            //         $('.liebiaoShow').eq(0).empty().append(msg);
-            //     }
-            // });
-            // 第二步end，向好琴声后台发送当前地址并接受返回的信息
-
         }
     });
 
     // 自定义函数结束
 }
-
 // 页面加载时调用自己封装的函数来获取当前所在城市信息
-$(document).ready(function(){
-    getCurrentCity();
-});
+    $(document).ready(function(){
+        getCurrentCity();
+    });
 //页面加载完毕调用自己封装的函数来获取当前所在城市信息
 // window.onload = function () {
 //     getCurrentCity();
 // }
 
 
-// ``````````````````````````````````````````````````````````````````````````````````````
-// 点击音乐老师下面的，音乐名人，加载名人数据
-$(function () {
-    $('.YinYueMingRen').on('click', function () {
-        var subCity1;
-        // 第一步,向高德API发送请求并获得访问者所在省份
-        $.ajax({
-            type: "get",
-            url: "http://webapi.amap.com/maps/ipLocation?key=4a84cf8078fb847fd4072da2dbc9b6b7",//自己申请的高德key，2000次每天
-            dataType: 'text',
-            success: function (data) {
-                //转换为JSON对象
-                var jsonObj = eval("(" + data.replace('(', '').replace(')', '').replace(';', '') + ")");
-                //当前城市
-                subCity1 = jsonObj.province;
-                subCity1 = subCity1.substring(0, subCity1.length - 1);
-                // console.log(subCity1);
-                // 第二步，向好琴声后台发送当前地址并接受返回的信息
-                $.ajax({
-                    url: '/mingren/indexs.ip.php',
-                    type: 'post',
-                    dataType: 'text',
-                    data: {'city_ip': subCity1,'mingren':'m'},
-                    success: function (msg) {
-                        // console.log({'city_ip': subCity1})
-                        // console.log(msg);
-                        // 清空liebiaoShow并插入li
-                        $('.MingRenLists').empty().prepend(msg);
-                    }
-                });
-                // 第二步end，向好琴声后台发送当前地址并接受返回的信息
-            }
-        });
-    })
-})
 
-
-
-$(function () {
-    $.ajax({
-        url:'/laoshi/tear.index.php',
-        type:'get',
-        datatype:'json'
-    }).done(function (msg) {
-        msg = eval('('+msg+')');
-        // console.log(msg)
-        $('.loaders').hide();
-        $.each(msg, function(index, val) {
-            if (index <= 500 ){
-                $('.liebiaoShow').eq(0).append(
-                    '<li><a href="/e/space/?userid='+ val.userid +
-                    '"><img src='+ val.userpic +
-                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
-                    '"><span>' + val.username +
-                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
-                    ' iconfont"></i></a>'+
-                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
-                    '</span><span>粉丝数：'+val.follownum+
-                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
-                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
-                    '&userid=' +val.userid +
-                    '"><em>提问</em></a></div></li>'
-                )
-            }
-        });
-
-    }).error(function (data) {
-        console.log('error');
-        console.log(data)
-    });
 });
 
 //});

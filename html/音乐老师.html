@@ -192,7 +192,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 							<li><a >吉他老师</a><span></span></li>
 							<li><a >弦乐老师</a><span></span></li>
 							<li><a >其他老师</a><span></span></li>
-							<!-- <li class="YinYueMingRen"><a >音乐名人</a><span></span></li> -->
+							<li class="sousuoResult" style="display: none"><a >搜索结果</a><span></span></li>
 						</ul>
 					</div>
 					<!-- 分类行结束································· -->
@@ -206,206 +206,78 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 							</select>
 						</div>
 						<div class="tongji">
-							<span>共计：
-								<?php
-                                    $count=mysql_query("select count(*) from phome_enewsmember where groupid='3'");
-                                    	while($tmp=mysql_fetch_row($count)){
-                                        print $tmp[0];
-                                        }
-                                ?>
-
+							<span>共计：<span class="tongjiNum">0</span>
+								<!--<?php-->
+                                    <!--$count=mysql_query("select count(*) from phome_enewsmember where groupid='3'");-->
+                                    	<!--while($tmp=mysql_fetch_row($count)){-->
+                                        <!--print $tmp[0];-->
+                                        <!--}-->
+                                <!--?>-->
 								人</span>
 						</div>
 					</div>
 					<!-- 列表内容区域······························· -->
 					<div class="liebiao">
-						<!-- 这个是推荐列表···················· -->
-						<!-- 1.0全部推荐 -->
-						<ol class="tuijianFuck current clearfix">
-
-							<!--[e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3 and a.resever_1=1 order by b.follownum desc limit 4",10,24,0}]
-														<li>
-																<a href="/e/space/?userid=<?=$bqr[userid]?>">
-																	<img src="<?=$bqr[userpic]?>">
-																	<div class="xingming">
-																		<span><?=$bqr[username]?></span>
-
-																	   <?php
-																			 if($bqr[cked]==1){
-																			echo '<a href="javascript:;" title="好琴声认证老师"><i class="iconfont">&#xe657;</i></a>';
-																			}
-																			?>
-
-																	</div>
-																</a>
-																<div class="shenfen"><span>身份：<?=$bqr[teacher_type]?></span><span>粉丝数：<?=$bqr[follownum]?></span></div>
-																<div class="guanzhu clearfix">
-																	<a href="/e/space/?userid=<?=$bqr[userid]?>"><span>＋关注</span></a>
-
-																	<a href="/e/QA/ListInfo.php?mid=10&username=<?=$bqr[username]?>&userid=<?=$bqr[userid]?>"><em>提问</em></a>
-																</div>
-																<span class="toutiao01">推广</span>
-																<span class="toutiao02"></span>
-															</li>
-							[/e:loop]-->
-
-						</ol>
-						<!-- 这个是内容列表开始················ -->
 						<!-- 1.这个是全部老师 -->
+						<!-- 1.0全部推荐,现在放置加载动画 -->
+						<!--<ol class="tuijianFuck current clearfix">-->
+
+						<!--</ol>-->
+						<!-- 这个是内容列表开始················ -->
 						<ul class="liebiaoFuck liebiaoShow current clearfix">
-							<!--[e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3  order by b.follownum desc",10,24,0}]
-															<li>
-																<a href="/e/space/?userid=<?=$bqr[userid]?>">
-																	<img src="<?=$bqr[userpic]?>">
-																	<div class="xingming">
-																		<span><?=$bqr[username]?></span>
-																		<?php
-																			 if($bqr[cked]==1){
-																			echo '<a href="javascript:;" title="好琴声认证老师"><i class="iconfont">&#xe657;</i></a>';
-																			}
-																			?>
-																	</div>
-																</a>
-																<div class="shenfen"><span>身份：<?=$bqr[teacher_type]?></span><span>粉丝数：<?=$bqr[follownum]?></span></div>
-																<div class="guanzhu clearfix">
-																	<a href="/e/space/?userid=<?=$bqr[userid]?>"><span>＋关注</span></a>
-																	<a href="/e/QA/ListInfo.php?mid=10&username=<?=$bqr[username]?>&userid=<?=$bqr[userid]?>"><em>提问</em></a>
-																</div>
-															</li>
-							[/e:loop]-->
+
 						</ul>
 						<!-- 2.钢琴老师 -->
 						<ul class="liebiaoFuck liebiaoShow clearfix">
-							[e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3  and a.sign=1 and b.teacher_type='钢琴老师' order by b.follownum desc",10,24,0}]
-							<li>
-								<a href="/e/space/?userid=<?=$bqr[userid]?>">
-									<img src="<?=$bqr[userpic]?>">
-									<div class="xingming">
-										<span><?=$bqr[username]?></span>
-										<?php
-				                             	if($bqr[cked]==1){
-                                                echo '<a href="javascript:;" title="好琴声认证老师"><i class="iconfont">&#xe657;</i></a>';
-								}
-								?>
+
+						</ul>
+						<!-- 3.0吉他老师 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+
+						</ul>
+						<!-- 4.0弦乐老师 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+
+						</ul>
+						<!-- 5.0 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+
+						</ul>
+						<!-- 5.0 -->
+						<!-- 5.0 -->
+						<ul class="liebiaoFuck liebiaoShow sousuo-warp clearfix">
+
+						</ul>
+						<!-- 5.0 -->
+						<!-- 5.0 -->
+						<ul class="liebiaoFuck loader-warp clearfix">
+							<div class="loaders">
+								<div class="loader">
+									<div class="loader-inner line-scale">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
 								</div>
-					</a>
-					<div class="shenfen"><span>身份：<?=$bqr[teacher_type]?></span><span>粉丝数：<?=$bqr[follownum]?></span></div>
-					<div class="guanzhu clearfix">
-						<a href="/e/space/?userid=<?=$bqr[userid]?>"><span>＋关注</span></a>
-						<a href="/e/QA/ListInfo.php?mid=10&username=<?=$bqr[username]?>&userid=<?=$bqr[userid]?>"><em>提问</em></a>
-					</div>
-					</li>
-					[/e:loop]
-					</ul>
-					<!-- 3.0吉他老师 -->
-					<ul class="liebiaoFuck liebiaoShow clearfix">
-						[e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3  and a.sign=1 and b.teacher_type='吉他老师' order by b.follownum desc",10,24,0}]
-						<li>
-							<a href="/e/space/?userid=<?=$bqr[userid]?>">
-								<img src="<?=$bqr[userpic]?>">
-								<div class="xingming">
-									<span><?=$bqr[username]?></span>
-									<?php
-				                             	if($bqr[cked]==1){
-                                                echo '<a href="javascript:;" title="好琴声认证老师"><i class="iconfont">&#xe657;</i></a>';
-							}
-							?>
-				</div>
-				</a>
-				<div class="shenfen"><span>身份：<?=$bqr[teacher_type]?></span><span>粉丝数：<?=$bqr[follownum]?></span></div>
-				<div class="guanzhu clearfix">
-					<a href="/e/space/?userid=<?=$bqr[userid]?>"><span>＋关注</span></a>
-					<a href="/e/QA/ListInfo.php?mid=10&username=<?=$bqr[username]?>&userid=<?=$bqr[userid]?>"><em>提问</em></a>
-				</div>
-
-				</li>
-				[/e:loop]
-				</ul>
-
-				<!-- 4.0弦乐老师 -->
-				<ul class="liebiaoFuck liebiaoShow clearfix">
-					[e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3  and a.sign=1 and b.teacher_type='弦乐老师' order by b.follownum desc",10,24,0}]
-					<li>
-						<a href="/e/space/?userid=<?=$bqr[userid]?>">
-							<img src="<?=$bqr[userpic]?>">
-							<div class="xingming">
-								<span><?=$bqr[username]?></span>
-								<?php
-				                             	if($bqr[cked]==1){
-                                                echo '<a href="javascript:;" title="好琴声认证老师"><i class="iconfont">&#xe657;</i></a>';
-						}
-						?>
-			</div>
-			</a>
-			<div class="shenfen"><span>身份：<?=$bqr[teacher_type]?></span><span>粉丝数：<?=$bqr[follownum]?></span></div>
-			<div class="guanzhu clearfix">
-				<a href="/e/space/?userid=<?=$bqr[userid]?>"><span>＋关注</span></a>
-				<a href="/e/QA/ListInfo.php?mid=10&username=<?=$bqr[username]?>&userid=<?=$bqr[userid]?>"><em>提问</em></a>
-			</div>
-			</li>
-			[/e:loop]
-			</ul>
-			<!-- 5.0 -->
-			<ul class="liebiaoFuck liebiaoShow clearfix">
-				[e:loop={"select * from phome_enewsmember a left join phome_enewsmemberadd b on a.userid=b.userid WHERE a.groupid=3  and a.sign=1 and b.teacher_type!='弦乐老师' and b.teacher_type!='吉他老师' and b.teacher_type!='钢琴老师' order by b.follownum desc",10,24,0}]
-				<li>
-					<a href="/e/space/?userid=<?=$bqr[userid]?>">
-						<img src="<?=$bqr[userpic]?>">
-						<div class="xingming">
-							<span><?=$bqr[username]?></span>
-							<?php
-				                             	if($bqr[cked]==1){
-                                                echo '<a href="javascript:;" title="好琴声认证老师"><i class="iconfont">&#xe657;</i></a>';
-					}
-					?>
-		</div>
-		</a>
-		<div class="shenfen"><span>身份：<?=$bqr[teacher_type]?></span><span>粉丝数：<?=$bqr[follownum]?></span></div>
-		<div class="guanzhu clearfix">
-			<a href="/e/space/?userid=<?=$bqr[userid]?>"><span>＋关注</span></a>
-			<a href="/e/QA/ListInfo.php?mid=10&username=<?=$bqr[username]?>&userid=<?=$bqr[userid]?>"><em>提问</em></a>
-		</div>
-		</li>
-		[/e:loop]							</ul>
-		<!-- 7.0 -->
-
-
-		<!-- 5.0 -->
-		<ul class="liebiaoFuck liebiaoShow MingRenLists clearfix">
-			<div class="loaders">
-				<div class="loader">
-					<div class="loader-inner line-scale">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
+							</div>
+						</ul>
+						<!-- 7.0 -->
 					</div>
 				</div>
+				</div>
 			</div>
-		</ul>
-		<!-- 7.0 -->
-
-
-
-	</div>
-</div>
-</div>
-<!-- 点击图标jq分享··········································· -->
-<!-- 瀑布流动态jq加载li········································ -->
-<script type="text/javascript">
-</script>
-</div>
-</div>
-<section class="friendly-link" style="float:left">
-	<div class="friendly-link-head">
-		<h2>友情链接：</h2>
-	</div>
-	<div class="friendly-link-content">
-		<a href="http://www.cnscnet.com/" title="申城网" target="_blank">申城网</a>
-		<a href="http://www.huatinet.com/" title="今日话题" target="_blank">今日话题</a>
-	</div>
-</section>
+			</div>
+			<section class="friendly-link" style="float:left">
+				<div class="friendly-link-head">
+					<h2>友情链接：</h2>
+				</div>
+				<div class="friendly-link-content">
+					<a href="http://www.cnscnet.com/" title="申城网" target="_blank">申城网</a>
+					<a href="http://www.huatinet.com/" title="今日话题" target="_blank">今日话题</a>
+				</div>
+			</section>
 <!-- 友情链接结束····························· -->
 </div>
 <!-- ····························中间结构结束·································· -->

@@ -204,7 +204,8 @@ $(function() {
         // 第一步,向高德API发送请求并获得访问者所在省份
         $.ajax({
             type: "get",
-            url: "http://webapi.amap.com/maps/ipLocation?key=4a84cf8078fb847fd4072da2dbc9b6b7",//自己申请的高德key，2000次每天
+            //url: "http://webapi.amap.com/maps/ipLocation?key=4a84cf8078fb847fd4072da2dbc9b6b7",//自己申请的高德key，2000次每天
+            url:'http://restapi.amap.com/v3/ip?key=7a178998b6550b21f6a2fb88d3285fcd',
             dataType: 'text',
             // contentType:'application/x-www-form-urlencoded;charset=UTF-8',
             success: function(data) {
