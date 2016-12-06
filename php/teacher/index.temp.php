@@ -263,8 +263,8 @@ if ($dangid != 0) {
                         //jQuery('#qrcode').qrcode("this plugin is great");
                         jQuery('#qrcodeTable').qrcode({
                             render	: "table",
-                            width:150,
-                            height:150,
+                            width:164
+                            height:164,
                             text	: "<?= $public_r['newsurl'] ?>e/space/?userid=<?= $userid ?>"
                         });
                     </script>
