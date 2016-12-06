@@ -4,7 +4,9 @@
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="老师,教室空间主页二维码chrome浏览器变形的bug修正">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/乐谱内页.html" afterPath="$PROJECT_DIR$/html/乐谱内页.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐老师.html" afterPath="$PROJECT_DIR$/html/音乐老师.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" afterPath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/teacher/index.temp.php" afterPath="$PROJECT_DIR$/php/teacher/index.temp.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +35,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+            <state relative-caret-position="506">
+              <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
               <folding>
-                <element signature="e#2102#2707#0" expanded="false" />
-                <element signature="e#5913#7807#0" expanded="false" />
-                <element signature="e#6725#7480#0" expanded="false" />
-                <element signature="e#7516#7583#0" expanded="false" />
-                <element signature="e#7619#7683#0" expanded="false" />
-                <element signature="e#7721#7788#0" expanded="false" />
-                <element signature="e#9901#11429#0" expanded="false" />
-                <marker date="1480920494027" expanded="true" signature="7178:7225" ph="..." />
-                <marker date="1480920494027" expanded="true" signature="9604:9658" ph="..." />
+                <element signature="e#0#34#0" expanded="false" />
+                <element signature="e#3027#3632#0" expanded="false" />
+                <element signature="e#4006#5326#0" expanded="false" />
+                <element signature="e#5345#6476#0" expanded="false" />
+                <element signature="e#6667#8561#0" expanded="false" />
+                <element signature="e#7479#8234#0" expanded="false" />
+                <element signature="e#8270#8337#0" expanded="false" />
+                <element signature="e#8373#8437#0" expanded="false" />
+                <element signature="e#8475#8542#0" expanded="false" />
+                <element signature="e#10655#12183#0" expanded="false" />
+                <marker date="1480993143099" expanded="true" signature="7932:7979" ph="..." />
+                <marker date="1480993143099" expanded="true" signature="10358:10412" ph="..." />
               </folding>
             </state>
           </provider>
@@ -56,127 +61,11 @@
       <file leaf-file-name="xin_yinyuejiaoshi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4642">
+            <state relative-caret-position="352">
               <caret line="211" column="86" selection-start-line="211" selection-start-column="86" selection-end-line="211" selection-end-column="86" />
               <folding>
                 <marker date="1480900355927" expanded="true" signature="2008:2055" ph="..." />
                 <marker date="1480900355927" expanded="true" signature="3795:3842" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xin_yueqipinpai.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/xin_yueqipinpai.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4510">
-              <caret line="205" column="24" selection-start-line="205" selection-start-column="24" selection-end-line="205" selection-end-column="24" />
-              <folding>
-                <marker date="1480900456368" expanded="true" signature="2625:2672" ph="..." />
-                <marker date="1480900456368" expanded="true" signature="5192:5239" ph="..." />
-                <marker date="1480900456368" expanded="true" signature="11061:11108" ph="..." />
-                <marker date="1480900456368" expanded="true" signature="14825:14842" ph="..." />
-                <marker date="1480900456368" expanded="true" signature="16239:16256" ph="..." />
-                <marker date="1480900456368" expanded="true" signature="16258:16264" ph=" " />
-                <marker date="1480900456368" expanded="true" signature="16264:16270" ph=" " />
-                <marker date="1480900456368" expanded="true" signature="17522:17539" ph="..." />
-                <marker date="1480900456368" expanded="true" signature="17541:17547" ph=" " />
-                <marker date="1480900456368" expanded="true" signature="17547:17553" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="音乐老师.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/音乐老师.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#ul#6;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.temp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/teacher/index.temp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="266" column="39" selection-start-line="266" selection-start-column="39" selection-end-line="266" selection-end-column="39" />
-              <folding>
-                <element signature="e#8448#8955#0#PHP" expanded="false" />
-                <marker date="1480988111445" expanded="true" signature="879:954" ph="select feedu... $" />
-                <marker date="1480988111445" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
-                <marker date="1480988111445" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1480988111445" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1480988111445" expanded="true" signature="5234:5311" ph="select follo... $" />
-                <marker date="1480988111445" expanded="true" signature="7131:7192" ph="select count... phome_ecms_photo" />
-                <marker date="1480988111445" expanded="true" signature="7593:7652" ph="select count... phome_enewspl_1" />
-                <marker date="1480988111445" expanded="true" signature="9884:9957" ph="select feedu... $" />
-                <marker date="1480988111445" expanded="true" signature="10710:10720" ph="..." />
-                <marker date="1480988111445" expanded="true" signature="16848:16911" ph="select sayte... phome_enewsmemberadd" />
-                <marker date="1480988111445" expanded="true" signature="17432:17516" ph="select yaoqi... $" />
-                <marker date="1480988111445" expanded="true" signature="17966:18024" ph="SELECT yaoqi... $" />
-                <marker date="1480988111445" expanded="true" signature="19925:20133" ph="select * fro... $" />
-                <marker date="1480988111445" expanded="true" signature="22200:22367" ph="select * fro... $" />
-                <marker date="1480988111445" expanded="true" signature="23742:23911" ph="select * fro... $" />
-                <marker date="1480988111445" expanded="true" signature="26232:26282" ph="select id fr... phome_zjk_kebiao_tear" />
-                <marker date="1480988111445" expanded="true" signature="26451:26570" ph="select * fro... phome_zjk_kebiao_tear" />
-                <marker date="1480988111445" expanded="true" signature="38925:39090" ph="select * fro... $" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.temp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/jiaoshi/index.temp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="371" column="39" selection-start-line="371" selection-start-column="39" selection-end-line="371" selection-end-column="39" />
-              <folding>
-                <marker date="1480988145364" expanded="true" signature="1055:1130" ph="select feedu... $" />
-                <marker date="1480988145364" expanded="true" signature="1394:1455" ph="SELECT feedu... $" />
-                <marker date="1480988145364" expanded="true" signature="2210:2279" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1480988145364" expanded="true" signature="2520:2591" ph="select yaoqi... phome_enewsmemberadd" />
-                <marker date="1480988145364" expanded="true" signature="8932:9009" ph="select follo... $" />
-                <marker date="1480988145364" expanded="true" signature="10830:10891" ph="select count... phome_ecms_photo" />
-                <marker date="1480988145364" expanded="true" signature="11292:11351" ph="select count... phome_enewspl_1" />
-                <marker date="1480988145364" expanded="true" signature="13318:13391" ph="select feedu... $" />
-                <marker date="1480988145364" expanded="true" signature="14144:14154" ph="..." />
-                <marker date="1480988145364" expanded="true" signature="20318:20381" ph="select sayte... phome_enewsmemberadd" />
-                <marker date="1480988145364" expanded="true" signature="20903:20987" ph="select yaoqi... $" />
-                <marker date="1480988145364" expanded="true" signature="21437:21495" ph="SELECT yaoqi... $" />
-                <marker date="1480988145364" expanded="true" signature="23396:23604" ph="select * fro... $" />
-                <marker date="1480988145364" expanded="true" signature="25670:25837" ph="select * fro... $" />
-                <marker date="1480988145364" expanded="true" signature="27225:27392" ph="select * fro... $" />
-                <marker date="1480988145364" expanded="true" signature="29209:29281" ph="select yaoqi... $" />
-                <marker date="1480988145364" expanded="true" signature="29707:29765" ph="SELECT yaoqi... $" />
-                <marker date="1480988145364" expanded="true" signature="31540:31699" ph="select * fro... $" />
-                <marker date="1480988145364" expanded="true" signature="33627:33792" ph="select * fro... $" />
-                <marker date="1480988145364" expanded="true" signature="35840:36009" ph="select * fro... $" />
-                <marker date="1480988145364" expanded="true" signature="42637:42706" ph="select photo... phome_enewsmemberadd" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="乐谱内页.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/乐谱内页.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,11 +142,11 @@
         <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
         <option value="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
         <option value="$PROJECT_DIR$/js/huodong.js" />
+        <option value="$PROJECT_DIR$/html/音乐老师.html" />
         <option value="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
+        <option value="$PROJECT_DIR$/html/乐谱内页.html" />
         <option value="$PROJECT_DIR$/php/teacher/index.temp.php" />
         <option value="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
-        <option value="$PROJECT_DIR$/html/乐谱内页.html" />
-        <option value="$PROJECT_DIR$/html/音乐老师.html" />
       </list>
     </option>
   </component>
@@ -354,7 +243,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,7 +254,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sweetalert2" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Greattone_Ad" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -544,14 +433,7 @@
       <workItem from="1480556274714" duration="22545000" />
       <workItem from="1480638155106" duration="19940000" />
       <workItem from="1480897908197" duration="20489000" />
-      <workItem from="1480987411406" duration="3287000" />
-    </task>
-    <task id="LOCAL-00060" summary="老师前台页面增加课表功能显示">
-      <created>1478510128292</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1478510128292</updated>
+      <workItem from="1480987411406" duration="11709000" />
     </task>
     <task id="LOCAL-00061" summary="整站css图片宽度bug修复">
       <created>1478510191455</created>
@@ -889,11 +771,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480988662801</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="修正了php的错误注释">
+      <created>1480990723793</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1480990723793</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="506921000" />
+    <option name="totallyTimeSpent" value="515343000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -985,7 +874,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="首页再精简,删除冗余代码" />
     <MESSAGE value="知音动态精简代码,删除无用的转载量,分享等" />
     <MESSAGE value="琴行注册标准和其列表页" />
     <MESSAGE value="首页的跳动框的css" />
@@ -1010,7 +898,8 @@
     <MESSAGE value="音乐老师封面模板页面备份" />
     <MESSAGE value="音乐老师的各项修改" />
     <MESSAGE value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
+    <MESSAGE value="修正了php的错误注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正了php的错误注释" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,6 +948,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="504" column="0" selection-start-line="504" selection-start-column="0" selection-end-line="504" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,9 +1106,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp00086/home/hao/e/admin/ecmschtml.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1672">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐老师.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#ul#6;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/乐谱内页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="153" column="26" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/teacher/index.temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="268" column="20" selection-start-line="268" selection-start-column="20" selection-end-line="277" selection-end-column="28" />
+          <folding>
+            <element signature="e#8448#8955#0#PHP" expanded="false" />
+            <marker date="1481007221517" expanded="true" signature="879:954" ph="select feedu... $" />
+            <marker date="1481007221517" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
+            <marker date="1481007221517" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1481007221517" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1481007221517" expanded="true" signature="5234:5311" ph="select follo... $" />
+            <marker date="1481007221517" expanded="true" signature="7131:7192" ph="select count... phome_ecms_photo" />
+            <marker date="1481007221517" expanded="true" signature="7593:7652" ph="select count... phome_enewspl_1" />
+            <marker date="1481007221517" expanded="true" signature="9884:9957" ph="select feedu... $" />
+            <marker date="1481007221517" expanded="true" signature="10710:10720" ph="..." />
+            <marker date="1481007221517" expanded="true" signature="17223:17286" ph="select sayte... phome_enewsmemberadd" />
+            <marker date="1481007221517" expanded="true" signature="17807:17891" ph="select yaoqi... $" />
+            <marker date="1481007221517" expanded="true" signature="18341:18399" ph="SELECT yaoqi... $" />
+            <marker date="1481007221517" expanded="true" signature="20300:20508" ph="select * fro... $" />
+            <marker date="1481007221517" expanded="true" signature="22575:22742" ph="select * fro... $" />
+            <marker date="1481007221517" expanded="true" signature="24117:24286" ph="select * fro... $" />
+            <marker date="1481007221517" expanded="true" signature="26607:26657" ph="select id fr... phome_zjk_kebiao_tear" />
+            <marker date="1481007221517" expanded="true" signature="26826:26945" ph="select * fro... phome_zjk_kebiao_tear" />
+            <marker date="1481007221517" expanded="true" signature="39300:39465" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/jiaoshi/index.temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="382" column="28" selection-start-line="382" selection-start-column="28" selection-end-line="382" selection-end-column="28" />
+          <folding>
+            <marker date="1481007260807" expanded="true" signature="1055:1130" ph="select feedu... $" />
+            <marker date="1481007260807" expanded="true" signature="1394:1455" ph="SELECT feedu... $" />
+            <marker date="1481007260807" expanded="true" signature="2210:2279" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1481007260807" expanded="true" signature="2520:2591" ph="select yaoqi... phome_enewsmemberadd" />
+            <marker date="1481007260807" expanded="true" signature="8932:9009" ph="select follo... $" />
+            <marker date="1481007260807" expanded="true" signature="10830:10891" ph="select count... phome_ecms_photo" />
+            <marker date="1481007260807" expanded="true" signature="11292:11351" ph="select count... phome_enewspl_1" />
+            <marker date="1481007260807" expanded="true" signature="13318:13391" ph="select feedu... $" />
+            <marker date="1481007260807" expanded="true" signature="14144:14154" ph="..." />
+            <marker date="1481007260807" expanded="true" signature="20692:20755" ph="select sayte... phome_enewsmemberadd" />
+            <marker date="1481007260807" expanded="true" signature="21277:21361" ph="select yaoqi... $" />
+            <marker date="1481007260807" expanded="true" signature="21811:21869" ph="SELECT yaoqi... $" />
+            <marker date="1481007260807" expanded="true" signature="23770:23978" ph="select * fro... $" />
+            <marker date="1481007260807" expanded="true" signature="26044:26211" ph="select * fro... $" />
+            <marker date="1481007260807" expanded="true" signature="27599:27766" ph="select * fro... $" />
+            <marker date="1481007260807" expanded="true" signature="29583:29655" ph="select yaoqi... $" />
+            <marker date="1481007260807" expanded="true" signature="30081:30139" ph="SELECT yaoqi... $" />
+            <marker date="1481007260807" expanded="true" signature="31914:32073" ph="select * fro... $" />
+            <marker date="1481007260807" expanded="true" signature="34001:34166" ph="select * fro... $" />
+            <marker date="1481007260807" expanded="true" signature="36214:36383" ph="select * fro... $" />
+            <marker date="1481007260807" expanded="true" signature="43011:43080" ph="select photo... phome_enewsmemberadd" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/xin_yueqipinpai.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4510">
+        <state relative-caret-position="154">
           <caret line="205" column="24" selection-start-line="205" selection-start-column="24" selection-end-line="205" selection-end-column="24" />
           <folding>
             <marker date="1480900456368" expanded="true" signature="2625:2672" ph="..." />
@@ -1237,7 +1222,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4642">
+        <state relative-caret-position="352">
           <caret line="211" column="86" selection-start-line="211" selection-start-column="86" selection-end-line="211" selection-end-column="86" />
           <folding>
             <marker date="1480900355927" expanded="true" signature="2008:2055" ph="..." />
@@ -1248,113 +1233,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+        <state relative-caret-position="506">
+          <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
           <folding>
-            <element signature="e#2102#2707#0" expanded="false" />
-            <element signature="e#5913#7807#0" expanded="false" />
-            <element signature="e#6725#7480#0" expanded="false" />
-            <element signature="e#7516#7583#0" expanded="false" />
-            <element signature="e#7619#7683#0" expanded="false" />
-            <element signature="e#7721#7788#0" expanded="false" />
-            <element signature="e#9901#11429#0" expanded="false" />
-            <marker date="1480920494027" expanded="true" signature="7178:7225" ph="..." />
-            <marker date="1480920494027" expanded="true" signature="9604:9658" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/teacher/index.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="266" column="39" selection-start-line="266" selection-start-column="39" selection-end-line="266" selection-end-column="39" />
-          <folding>
-            <element signature="e#8448#8955#0#PHP" expanded="false" />
-            <marker date="1480988111445" expanded="true" signature="879:954" ph="select feedu... $" />
-            <marker date="1480988111445" expanded="true" signature="1218:1279" ph="SELECT feedu... $" />
-            <marker date="1480988111445" expanded="true" signature="2034:2103" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480988111445" expanded="true" signature="2344:2415" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480988111445" expanded="true" signature="5234:5311" ph="select follo... $" />
-            <marker date="1480988111445" expanded="true" signature="7131:7192" ph="select count... phome_ecms_photo" />
-            <marker date="1480988111445" expanded="true" signature="7593:7652" ph="select count... phome_enewspl_1" />
-            <marker date="1480988111445" expanded="true" signature="9884:9957" ph="select feedu... $" />
-            <marker date="1480988111445" expanded="true" signature="10710:10720" ph="..." />
-            <marker date="1480988111445" expanded="true" signature="16848:16911" ph="select sayte... phome_enewsmemberadd" />
-            <marker date="1480988111445" expanded="true" signature="17432:17516" ph="select yaoqi... $" />
-            <marker date="1480988111445" expanded="true" signature="17966:18024" ph="SELECT yaoqi... $" />
-            <marker date="1480988111445" expanded="true" signature="19925:20133" ph="select * fro... $" />
-            <marker date="1480988111445" expanded="true" signature="22200:22367" ph="select * fro... $" />
-            <marker date="1480988111445" expanded="true" signature="23742:23911" ph="select * fro... $" />
-            <marker date="1480988111445" expanded="true" signature="26232:26282" ph="select id fr... phome_zjk_kebiao_tear" />
-            <marker date="1480988111445" expanded="true" signature="26451:26570" ph="select * fro... phome_zjk_kebiao_tear" />
-            <marker date="1480988111445" expanded="true" signature="38925:39090" ph="select * fro... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/jiaoshi/index.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="371" column="39" selection-start-line="371" selection-start-column="39" selection-end-line="371" selection-end-column="39" />
-          <folding>
-            <marker date="1480988145364" expanded="true" signature="1055:1130" ph="select feedu... $" />
-            <marker date="1480988145364" expanded="true" signature="1394:1455" ph="SELECT feedu... $" />
-            <marker date="1480988145364" expanded="true" signature="2210:2279" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480988145364" expanded="true" signature="2520:2591" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1480988145364" expanded="true" signature="8932:9009" ph="select follo... $" />
-            <marker date="1480988145364" expanded="true" signature="10830:10891" ph="select count... phome_ecms_photo" />
-            <marker date="1480988145364" expanded="true" signature="11292:11351" ph="select count... phome_enewspl_1" />
-            <marker date="1480988145364" expanded="true" signature="13318:13391" ph="select feedu... $" />
-            <marker date="1480988145364" expanded="true" signature="14144:14154" ph="..." />
-            <marker date="1480988145364" expanded="true" signature="20318:20381" ph="select sayte... phome_enewsmemberadd" />
-            <marker date="1480988145364" expanded="true" signature="20903:20987" ph="select yaoqi... $" />
-            <marker date="1480988145364" expanded="true" signature="21437:21495" ph="SELECT yaoqi... $" />
-            <marker date="1480988145364" expanded="true" signature="23396:23604" ph="select * fro... $" />
-            <marker date="1480988145364" expanded="true" signature="25670:25837" ph="select * fro... $" />
-            <marker date="1480988145364" expanded="true" signature="27225:27392" ph="select * fro... $" />
-            <marker date="1480988145364" expanded="true" signature="29209:29281" ph="select yaoqi... $" />
-            <marker date="1480988145364" expanded="true" signature="29707:29765" ph="SELECT yaoqi... $" />
-            <marker date="1480988145364" expanded="true" signature="31540:31699" ph="select * fro... $" />
-            <marker date="1480988145364" expanded="true" signature="33627:33792" ph="select * fro... $" />
-            <marker date="1480988145364" expanded="true" signature="35840:36009" ph="select * fro... $" />
-            <marker date="1480988145364" expanded="true" signature="42637:42706" ph="select photo... phome_enewsmemberadd" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp00086/home/hao/e/admin/ecmschtml.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1672">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/乐谱内页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐老师.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#ul#6;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#34#0" expanded="false" />
+            <element signature="e#3027#3632#0" expanded="false" />
+            <element signature="e#4006#5326#0" expanded="false" />
+            <element signature="e#5345#6476#0" expanded="false" />
+            <element signature="e#6667#8561#0" expanded="false" />
+            <element signature="e#7479#8234#0" expanded="false" />
+            <element signature="e#8270#8337#0" expanded="false" />
+            <element signature="e#8373#8437#0" expanded="false" />
+            <element signature="e#8475#8542#0" expanded="false" />
+            <element signature="e#10655#12183#0" expanded="false" />
+            <marker date="1480993143099" expanded="true" signature="7932:7979" ph="..." />
+            <marker date="1480993143099" expanded="true" signature="10358:10412" ph="..." />
           </folding>
         </state>
       </provider>

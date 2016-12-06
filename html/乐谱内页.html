@@ -134,42 +134,25 @@
                 <div class="textInfo">
                     <!-- 头像框 -->
                     <div class="zhuozhe-img f-l-l">
-                        <?
-                            $id=$_GET['id'];
-                            $haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");
-                        $poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");
+                        <?php
+
+                        	$rrr=$empire->fetch1("select * from {$dbtbpre}ecms_photo where id='$navinfor[id]'");
                         ?>
+                        [e:loop={"select a.userid,a.username,b.userpic,a.userfen from [!db.pre!]enewsmember a left join [!db.pre!]enewsmemberadd b on a.userid=b.userid where userid=$navinfor['userid']  limit 1",10,24,0}]
+
                         <a class="f-l-l" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
-                            <img src="<?=$poto[userpic]?>" alt="">
+
+                            <img src="<?=$dqr[userpic]?>" alt="">
                         </a>
                         <div class="zuozhe-msg f-l-l">
                             <h2 class="zuozhe-name">[!--username--]</h2>
                             <h2 class="zuozhe-price">
-                                <?php
-                					$poto=$empire->fetch1("select userfen from phome_enewsmember where userid=$haipic[userid]");
-                                if($r[userfen]<=100){
-                                echo "一级";
-                                }elseif($r[userfen]<=300){
-                                echo "二级";
-                                }elseif($r[userfen]<=800){
-                                echo "三级";
-                                }elseif($r[userfen]<=2000){
-                                echo "四级";
-                                }elseif($r[userfen]<=5000){
-                                echo "五级";
-                                }elseif($r[userfen]<=15000){
-                                echo "六级";
-                                }elseif($r[userfen]<=50000){
-                                echo "七级";
-                                }elseif($r[userfen]>100000){
-                                echo "八级";
-                                }else{
-                                echo "八级";
-                                }
-                                ?>
+                                <?=$dqr[userfen]?>
                             </h2>
                         </div>
+                        [/e:loop]
                     </div>
+
                     <div class="songster">
                         <h3>作曲者：</h3>
                         <p>[!--zuozhe--]</p>
@@ -279,9 +262,9 @@
                     <script type="text/javascript" src="/js/52img.js"></script>
                     <script type="text/javascript" src="/js/zan.js"></script>
                     <?php
-	                 $follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].')" class="button blue dianzanBtn " id="follow'.$navinfor[id].'"></a>';
+	                 //$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].')" class="button blue dianzanBtn " id="follow'.$navinfor[id].'"></a>';
                     ?>
-                    <?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>
+                    <!--<?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>-->
                     <!-- JiaThis Button BEGIN -->
                     <div class="jiathis_style_32x32" style="float:right">
                         <a class="jiathis_button_weixin"></a>
@@ -291,14 +274,14 @@
                         <a class="jiathis_button_fb"></a>
                         <a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
                         <a class="jiathis_counter_style"></a>
-                        <script "text/javascript">
-                        var jiathis_config = {
-                        // url: "http://www.yourdomain.com",
-                        title: "[!--pagetitle--] - 好琴声",
-                        summary:"[!--pagekey--]",
-                        pic:"[!--titlepic--]",
-                        img_url:"[!--titlepic--]"
-                        }
+                        <script type="text/javascript">
+                            var jiathis_config = {
+                            // url: "http://www.yourdomain.com",
+                            title: "[!--pagetitle--] - 好琴声",
+                            summary:"[!--pagekey--]",
+                            pic:"[!--titlepic--]",
+                            img_url:"[!--titlepic--]"
+                            }
                         </script>
                         </div>
                         <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
@@ -310,7 +293,10 @@
             </div>
         </div>
         <div class="footAdcert">
-            <script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea2.js"></script>
+            <div class="content-ad clearfix" style="width:1200px;height:90px;">
+                <div class="index-ad-1" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea81.js"></script></div>
+                <div class="index-ad-2" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea82.js"></script></div>
+            </div>
         </div>
 
     </div>
