@@ -74,8 +74,8 @@
 			border-bottom: #ccc solid 1px;
 		}
 		.textInfo{
-			height:36px;
-			line-height: 36px;
+			/*height:36px;*/
+			line-height: 50px;
 			overflow: hidden;
 			font-size:14px;
 		}
@@ -177,7 +177,7 @@
 			font-size:12px;
 
 		}
-		.textHead h2{
+		.textHead>h2{
 			font-size:30px;
 			font-weight:bold;
 			color:#333;

@@ -1,22 +1,18 @@
-[e:loop={"select photo from phome_ecms_music where id='$navinfor[id]'",10,24,0}]
+[e:loop={"select morepic from phome_ecms_photo_data_1 where id='$navinfor[id]'",10,24,0}]
 <?php
- 		if(empty($bqr[titlepic])){
-				//标题图片为空，调用图集第一张
-				$flid_1=explode("::::::",$bqr[photo]);
-				$titpic=$flid_1[0];
-		}else{
-			$titpic=$bqr[titlepic];
-		}
+ $flid1=explode("\\r\\n",$bqr['morepic']);
+		$flid_1=explode("::::::",$flid1[0]);
+        $titpic=$flid_1[1];
     ?>
 [/e:loop]
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <title>[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声</title>
     <meta name="keywords" content="[!--title--]" />
     <meta name="description" content="[!--smalltext--]" />
-    <meta property="og:image" content="[!--titlepic--]"/>
+
     <meta property="og:description" content="[!--smalltext--]"/>
     <meta property="og:image" content="<?=$titpic?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -25,13 +21,24 @@
     <script language="javascript" src="/js/language.js"></script>
     <link rel="stylesheet" type="text/css" href="[!--news.url--]css/tupianneiye3.css">
     <script type="text/javascript" src="[!--news.url--]js/app/rem.js"></script>
-    <!--<script type="text/javascript" src="[!&#45;&#45;news.url&#45;&#45;]js/index.js"></script>-->
+    <script type="text/javascript" src="[!--news.url--]js/index.js"></script>
     <script type="text/javascript" src="[!--news.url--]js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript">
+        var  getUserid;
+        $(function() {
+            $.get('/e/member/login/headjs_3.php?t='+Math.random(), function(data) {
+                console.log(data);
+                getUserid = parseInt(data);
+                console.log(getUserid);
+            });
+        });
+    </script>
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script type="text/javascript">
         var ua = navigator.userAgent.toLowerCase();
         if(ua.match(/MicroMessenger/i)=="micromessenger") {
             // 匹配是微信浏览器再去验证微信权限
+
 
             // 微信相关分享，1.0获取url发给后台并获取相应其他参数
             var AppID,
@@ -77,7 +84,7 @@
 
                 });
                 var strTiele="[!--title--] - 好琴声";
-                var strDesc="[!--pagekey--]";
+                var strDesc="[!--smalltext--]";
                 // var strLink="URL";
                 var strImgUrl="<?=$titpic?>";
                 //分享朋友圈
@@ -116,6 +123,26 @@
         }
     </script>
     <!--视频播放器-->
+    <script>
+        var tgs = new Array( 'div','td','tr');
+        var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+        var startSz = 2;
+        function ts( trgt,inc ) {
+            if (!document.getElementById) return
+            var d = document,cEl = null,sz = startSz,i,j,cTags;
+            sz += inc;
+            if ( sz < 0 ) sz = 0;
+            if ( sz > 3 ) sz = 3;
+            startSz = sz;
+            if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+            cEl.style.fontSize = szs[ sz ];
+            for ( i = 0 ; i < tgs.length ; i++ ) {
+                cTags = cEl.getElementsByTagName( tgs[ i ] );
+                for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+            }
+        }
+    </script>
+
 </head>
 <body>
 <!--头部-->
@@ -133,8 +160,8 @@
                 <h2 style="overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;height: 40px;">[!--title--]</h2>
                 <div class="textInfo">
                     <!-- 头像框 -->
-                    <div class="zhuozhe-img f-l-l">
-                        <a class="f-l-l" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
+                    <div class="zhuozhe-img" style="float: left;margin-right: 15px;">
+                        <a  style="float: left" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
                             [e:loop={"select userpic from phome_enewsmemberadd where userid='$navinfor[userid]' limit 1",10,24,0}]
                             <?php
                                 $userpic=$bqr[userpic];
@@ -145,7 +172,7 @@
                             <img src="<?=$userpic?>" alt="">
                             [/e:loop]
                         </a>
-                        <div class="zuozhe-msg f-l-l">
+                        <div class="zuozhe-msg " style="float: left">
                             <h2 class="zuozhe-name">[!--username--]</h2>
                             <h2 class="zuozhe-price">
                                 [e:loop={"select userfen from phome_enewsmember where userid='$navinfor[userid]' limit 1",10,24,0}]
@@ -174,31 +201,55 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="songster">
-                        <h3>作曲者：</h3>
-                        <p>[!--zuozhe--]</p>
-                    </div>
-                    <div class="textAuthor">
-                        <h3>上传者：</h3>
-                        <p><a href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">[!--username--]</a></p>
-                    </div>
-                    <div class="textDianji">
-                        <h3>点击量：</h3>
-                        <p>[!--page.stats--]<script src=[!--news.url--]e/public/ViewClick?classid=[!--classid--]&id=[!--id--]&addclick=1></script></p>
-                    </div>
                     <div class="textTime">
                         <h3>发表时间：</h3>
                         <p>[!--newstime--]</p>
                     </div>
+                    <!--<div class="textAuthor">-->
+                        <!--<h3>作者：</h3>-->
+                        <!--<p><a href="[!&#45;&#45;news.url&#45;&#45;]e/space/?userid=<?=$navinfor['userid']?>">[!&#45;&#45;username&#45;&#45;]</a></p>-->
+                    <!--</div>-->
+                    <div class="textDianji">
+                        <h3>点击量：</h3>
+                        <p>[!--page.stats--]<script src=[!--news.url--]e/public/ViewClick?classid=[!--classid--]&id=[!--id--]&addclick=1></script></p>
+                    </div>
+
                     <!-- <div class="textDianji shoucang">
           <h3>收藏量：</h3>
           <p>gettotal("select count(*) as total from phome_enewsfava where id='$navinfor[id]' and classid='$navinfor[classid]'");?></p>
       </div>-->
                 </div>
+                <div class="share">
 
+                    <div class="zihao" class="zi_hao">
+                        字体：
+                        <span><a href="javascript:ts('zihao',1)">放大</a></span>
+                        <span><a href="">初始</a></span>
+
+                        <span><a href="javascript:ts('zihao',-1)">缩小</a></span></div>
+                </div>
 
             </div>
             <!-- 文字头结束 -->
+            <!-- <div class="text"> -->
+            <!-- <div class="keyWrod"> -->
+            <!--视频播放器-->
+            <!-- [eshowphoto]11,0,0[/eshowphoto] -->
+
+
+            <!-- </div> -->
+            <!-- <br> -->
+            <!-- <div class="neirong"> -->
+            <!-- <div id="zihao"> -->
+            <!-- <p>[!--smalltext--]</p> -->
+            <!-- </div> -->
+            <!-- <br><br><br> -->
+
+
+
+            <!-- </div> -->
+
+            <!-- </div> -->
             <div class="text">
                 <div class="w3cFocus">
 
@@ -214,7 +265,7 @@
 
                         <div class="hd">
                             <ul>
-
+                                [!--morepic--]
                                 <li><img src="/images/logo.png" /></li>
                                 <li><img src="/images/logo.png" /></li>
                                 <li><img src="/images/logo.png" /></li>
@@ -226,15 +277,19 @@
                     <a class="next"  target="_self"></a>
 
                 </div>
-
+                <div class="content-ad clearfix" style="width:1170px;height:90px;">
+                    <div class="index-ad-1" style="float: left;width:585px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea79.js"></script></div>
+                    <div class="index-ad-2" style="float: left;width:585px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea80.js"></script></div>
+                </div>
                 <script type="text/javascript">
                     // 向服务器请求图片
                     $(function() {
                         $.ajax({
-                            url: '/yuepu/photo.php',
+                            url: '/guangchang/photo.php',
                             type: 'post',
                             dataType: 'html',
                             data: {'id_photo' : '[!--id--]'},
+                            async : false
                         })
                                 .done(function(msg) {
                                     console.log("success");
@@ -242,11 +297,12 @@
                                     console.log(msg);
                                     $('.bd ul').empty().append(msg);
                                     $('.hd ul').empty().append(msg);
-                                    jQuery(".w3cFocus").slide({ mainCell:".bd ul", effect:"leftLoop", delayTime:300, autoPlay:false });
+
                                 })
                                 .fail(function() {
                                     console.log("error");
                                 }).always(function() {
+                            jQuery(".w3cFocus").slide({ mainCell:".bd ul", effect:"leftLoop", delayTime:300, autoPlay:true });
                             window.onload=function(){
                                 console.log($('.bd ul').height());
                                 $('.bd li').css('top',$('.bd ul').height()*0.5);
@@ -269,11 +325,11 @@
 
                 <div class="nei_photo">[!--smalltext--]</div>
                 <div class="pre_and_next clearfix"><div class="pre">上一篇：
-                    [e:loop={"select * from phome_ecms_music where id>$navinfor[id] and classid=$navinfor[classid] order by id asc limit 1",10,24,0}]
+                    [e:loop={"select * from phome_ecms_photo where id>$navinfor[id] and classid=12 order by id asc limit 1",10,24,0}]
                     <a href="<?=$bqsr[titleurl]?>"><?=$bqr[title]?></a>
                     [/e:loop]
                 </div><div class="next">下一篇：
-                    [e:loop={"select * from phome_ecms_music where id<$navinfor[id] and classid=$navinfor[classid] order by id desc limit 1",10,24,0}]
+                    [e:loop={"select * from phome_ecms_photo where id<$navinfor[id] and classid=12 order by id desc limit 1",10,24,0}]
                     <a href="<?=$bqsr[titleurl]?>"><?=$bqr[title]?></a>
                     [/e:loop]
                 </div></div>
@@ -283,29 +339,30 @@
                     <script type="text/javascript" src="/js/52img.js"></script>
                     <script type="text/javascript" src="/js/zan.js"></script>
                     <?php
-	                 //$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].')" class="button blue dianzanBtn " id="follow'.$navinfor[id].'"></a>';
+	                 $follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].',getUserid)" class="button blue dianzanBtn " id="follow'.$navinfor[id].'"></a>';
                     ?>
-                    <!--<?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>-->
+                    <?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>
                     <!-- JiaThis Button BEGIN -->
                     <div class="jiathis_style_32x32" style="float:right">
                         <a class="jiathis_button_weixin"></a>
                         <a class="jiathis_button_tsina"></a>
                         <a class="jiathis_button_qzone"></a>
-
                         <a class="jiathis_button_tqq"></a>
                         <a class="jiathis_button_fb"></a>
-                        <a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                        <a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
                         <a class="jiathis_counter_style"></a>
-                        <script type="text/javascript">
-                            var jiathis_config = {
-                                // url: "http://www.yourdomain.com",
-                                title: "[!--pagetitle--] - 好琴声",
-                                summary:"[!--pagekey--]",
-                                pic:"[!--titlepic--]",
-                                img_url:"[!--titlepic--]"
-                            }
-                        </script>
                     </div>
+                    <script type="text/javascript" >
+                        var jiathis_config={
+                            data_track_clickback:true,
+                            //summary:"[!--smalltext--]",//摘要
+                            title:"[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声",//标题
+                            pic:"<?=$titpic?>",//图片
+                            //url:"url",//url
+                            shortUrl:false,
+                            hideMore:false
+                        }
+                    </script>
                     <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
                     <!-- JiaThis Button END -->
                 </div>
