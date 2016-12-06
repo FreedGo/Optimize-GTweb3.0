@@ -1,3 +1,36 @@
+/**
+ * 数字动态变化模块,摘自countjs,依赖jq
+ */
+(function($){
+    $.fn.numberRock=function(options){
+        var defaults={
+            speed:24,
+            count:100
+        };
+        var opts=$.extend({}, defaults, options);
+
+        var div_by = 100,
+            count=opts["count"],
+            speed = Math.floor(count / div_by),
+            sum=0,
+            $display = this,
+            run_count = 1,
+            int_speed = opts["speed"];
+        var int = setInterval(function () {
+            if (run_count <= div_by&&speed!=0) {
+                $display.text(sum=speed * run_count);
+                run_count++;
+            } else if (sum < count) {
+                $display.text(++sum);
+            } else {
+                clearInterval(int);
+            }
+        }, int_speed);
+    }
+
+})(jQuery);
+
+
 $(function () {
 
     // 点击分类显示不同分类里面的老师
@@ -19,7 +52,9 @@ $(function () {
         techer01 = [],//钢琴老师
         techer02 = [],//吉他老师
         techer03 = [],//弦乐老师
-        techer04 = [];//其他老师
+        techer04 = [],//其他老师
+        techer001 = [],
+        techer002 = [];
     $.ajax({
         url:'/laoshi/tear.index.php',
         type:'get',
@@ -28,26 +63,6 @@ $(function () {
     .done(function (msg) {
         msg = eval('('+msg+')');
         // console.log(msg)
-        techer00 = msg;
-        $('.loaders').hide();
-        $.each(msg, function(index, val) {
-            if (index <= 20 ){
-                $('.liebiaoShow').eq(0).append(
-                    '<li><a href="/e/space/?userid='+ val.userid +
-                    '"><img src='+ val.userpic +
-                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
-                    '"><span>' + val.username +
-                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
-                    ' iconfont"></i></a>'+
-                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
-                    '</span><span>粉丝数：'+val.follownum+
-                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
-                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
-                    '&userid=' +val.userid +
-                    '"><em>提问</em></a></div></li>'
-                )
-            }
-        });
         // 循环数组,根据类型不同拆分对象,再组成新的数组
         for (var i = 0 ; i < msg.length ; i++){
             switch (msg[i].teacher_type){
@@ -67,8 +82,37 @@ $(function () {
                 default :
                     techer04.push(msg[i]);
                     break;
-            }
+            };
+            // 根据是否认证，拆分所有老师的数组
+            msg[i].cked === '1'? techer001.push(msg[i]):techer002.push(msg[i]);
         };
+        // 组成新所有老师数组
+        techer00 = techer001.concat(techer002);
+        $.each(techer00, function(index, val) {
+            if (index <= 20 ){
+                $('.liebiaoShow').eq(0).append(
+                    '<li><a href="/e/space/?userid='+ val.userid +
+                    '"><img src='+ val.userpic +
+                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
+                    '"><span>' + val.username +
+                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
+                    ' iconfont"></i></a>'+
+                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
+                    '</span><span>粉丝数：'+val.follownum+
+                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
+                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
+                    '&userid=' +val.userid +
+                    '"><em>提问</em></a></div></li>'
+                )
+            }
+        });
+        $('.loaders').hide();
+        //数字跳动
+        $('.tongjiNum').numberRock({
+            speed:34,
+            count:techer00.length
+        });
+
         loadteacher(techer01,1);
         loadteacher(techer02,2);
         loadteacher(techer03,3);
@@ -78,14 +122,7 @@ $(function () {
         console.log('error');
         console.log(data)
     });
-    /**
-     * 总计数字动态变化
-     * @type {Number}
-     */
-    var totalNum = techer00.length;
-    for (var i = 0 ;i <= totalNum ;i ++){
-        $('.tongjiNum').html(i);
-    };
+
     /**
      * 加载指定的数据进入指定的老师分类
      * @param obj {object} 老师的数据;
