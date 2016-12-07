@@ -72,11 +72,11 @@ function follow(userid,userid1){
 								$('.pop-list-num').html(touType2);
 								$('.currentPiaoNum').html(touType3+'票');
 							} else{
-								$('.toupiao-web .pop-suc-fail').html('两次投票不能少于1小时,请稍后再来投票！').addClass('pop-fail');
+								$('.toupiao-web .pop-suc-fail').html('每十分钟投票一次！,请稍后再来投票！').addClass('pop-fail');
 								$('.toupiao-web .pop-dec').hide();
 								$('.toupiao-web .pop-list').hide();
 								$('.toupiao-h5 .pop-dec').html('两次投票间隔不能');
-								$('.toupiao-h5 .pop-list').html('少于1小时！');
+								$('.toupiao-h5 .pop-list').html('少于十分钟！');
 								$('.toupiao-h5 .pop-suc-fail').html('请稍后再来投票！');
 
 							};
@@ -102,11 +102,11 @@ function follow(userid,userid1){
 						$('.pop-list-num').html(touType2);
 						$('.currentPiaoNum').html(touType3+'票');
 					} else{
-						$('.toupiao-web .pop-suc-fail').html('两次投票不能少于1小时,请稍后再来投票！').addClass('pop-fail');
+						$('.toupiao-web .pop-suc-fail').html('每十分钟投票一次！,请稍后再来投票！').addClass('pop-fail');
 						$('.toupiao-web .pop-dec').hide();
 						$('.toupiao-web .pop-list').hide();
 						$('.toupiao-h5 .pop-dec').html('两次投票间隔不能');
-						$('.toupiao-h5 .pop-list').html('少于1小时！');
+						$('.toupiao-h5 .pop-list').html('少于十分钟！');
 						$('.toupiao-h5 .pop-suc-fail').html('请稍后再来投票！');
 
 					};

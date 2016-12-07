@@ -401,7 +401,12 @@
 	display: inline-block;
 	float: left;
 }
-
+.newRenZheng{
+	background: url("");
+}
+.newRenZheng1{
+	background: url(/images/yirenzheng.png) 0 0 no-repeat;
+}
 
 /*排序行结束··················································*/
 /*全站动态列表结束·············································*/

@@ -120,10 +120,8 @@ $(function () {
             // 根据是否认证，拆分所有老师的数组
             msg[i].cked === '1'? techer001.push(msg[i]):techer002.push(msg[i]);
         };
+        // 组成新所有老师数组
         techer00 = techer001.concat(techer002);
-        console.log(techer001);
-        console.log(techer002);
-        console.log(techer00);
         $.each(techer00, function(index, val) {
             if (index <= 20 ){
                 $('.liebiaoShow').eq(0).append(
