@@ -23,21 +23,21 @@
 		$(function() {
 			// 知音数据推送
 			$.ajax({
-				url: '/e/extend/tui_zhiyin/index.php',
-				type: 'post',
-				dataType: 'html',
-				data: {'titid': '<?=$navinfor[id]?>'}
-			})
+						url: '/e/extend/tui_zhiyin/index.php',
+						type: 'post',
+						dataType: 'html',
+						data: {'titid': <?=$navinfor[id]?>},
+		})
 			.done(function(msg) {
 				// console.log("success");
 				// console.log({'titid': <?=$navinfor[id]?>});
 				// console.log(msg);
 			})
-			.fail(function(msg) {
-				// console.log("error");
-				// console.log({'titid': <?=$navinfor[id]?>});
-				// console.log(msg);
-			});
+					.fail(function(msg) {
+						// console.log("error");
+						// console.log({'titid': <?=$navinfor[id]?>});
+						// console.log(msg);
+					});
 		});
 	</script>
 	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
@@ -55,23 +55,23 @@
 				type: 'post',
 				dataType: 'json',
 				data: {'urlone':getUrl},
-				async: false
-//				timeout:1000
+				async: false,
+				timeout:1000,
 
 			})
-			.done(function(msg) {
-				console.log("success");
-				AppID = msg.a;
-				TimeStamp = msg.b;
-				NonceStr = msg.c;
-				Signature = msg.d;
-			})
-			.fail(function() {
-				console.log("error");
-			})
-			.always(function() {
-				console.log("complete");
-			});
+					.done(function(msg) {
+						console.log("success");
+						AppID = msg.a;
+						TimeStamp = msg.b;
+						NonceStr = msg.c;
+						Signature = msg.d;
+					})
+					.fail(function() {
+						console.log("error");
+					})
+					.always(function() {
+						console.log("complete");
+					});
 			wx.config({
 				debug: false,
 				appId: AppID,
@@ -176,40 +176,45 @@
 				<div class="textSource">您当前的位置：[!--newsnav--]</div>
 				<h2>[!--title--]</h2>
 				<div class="textInfo">
-					<div class="zhuozhe-img f-l-l">
-						<!--<?-->
-                            <!--$id=$_GET['id'];-->
-                            <!--$haipic=$empire->fetch1("select userid from phome_ecms_photo where id=$id");-->
-							<!--$poto=$empire->fetch1("select userpic from phome_enewsmemberadd where userid=$haipic[userid]");-->
-						<!--?>-->
-						<a class="f-l-l" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
-							<img src="<?=$navinfor[userpic]?>" alt="">
+					<!-- 头像框 -->
+					<div class="zhuozhe-img" style="float: left;margin-right: 15px;">
+						<a  style="float: left" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
+							[e:loop={"select userpic from phome_enewsmemberadd where userid='$navinfor[userid]' limit 1",10,24,0}]
+							<?php
+                                $userpic=$bqr[userpic];
+                                if(empty($bqr[userpic])){
+                                    $userpic="http://www.greattone.net/images/logo.png";
+                                }
+                            ?>
+							<img src="<?=$userpic?>" alt="">
+							[/e:loop]
 						</a>
-						<div class="zuozhe-msg f-l-l">
+						<div class="zuozhe-msg " style="float: left">
 							<h2 class="zuozhe-name">[!--username--]</h2>
 							<h2 class="zuozhe-price">
+								[e:loop={"select userfen from phome_enewsmember where userid='$navinfor[userid]' limit 1",10,24,0}]
 								<?php
-
-								if($r[userfen]<=100){
-								echo "一级";
-								}elseif($r[userfen]<=300){
-								echo "二级";
-								}elseif($r[userfen]<=800){
-								echo "三级";
-								}elseif($r[userfen]<=2000){
-								echo "四级";
-								}elseif($r[userfen]<=5000){
-								echo "五级";
-								}elseif($r[userfen]<=15000){
-								echo "六级";
-								}elseif($r[userfen]<=50000){
-								echo "七级";
-								}elseif($r[userfen]>100000){
+										if($bqr[userfen]<=100){
+											echo "一级";
+										}elseif($bqr[userfen]<=300){
+											 echo "二级";
+										}elseif($bqr[userfen]<=800){
+											 echo "三级";
+										}elseif($bqr[userfen]<=2000){
+											 echo "四级";
+										}elseif($bqr[userfen]<=5000){
+											 echo "五级";
+										}elseif($bqr[userfen]<=15000){
+											 echo "六级";
+										}elseif($bqr[userfen]<=50000){
+											 echo "七级";
+										}elseif($bqr[userfen]>100000){
 								echo "八级";
 								}else{
 								echo "八级";
 								}
 								?>
+								[/e:loop]
 							</h2>
 						</div>
 					</div>
@@ -227,9 +232,9 @@
 					</div>
 
 					<!--<div class="textDianji">
-						<h3>收藏量：</h3>
-						<p>gettotal("select count(*) as total from phome_enewsfava where id='$navinfor[id]' and classid='$navinfor[classid]'");?></p>
-					</div>-->
+                        <h3>收藏量：</h3>
+                        <p>gettotal("select count(*) as total from phome_enewsfava where id='$navinfor[id]' and classid='$navinfor[classid]'");?></p>
+                    </div>-->
 				</div>
 			</div>
 			<!-- 文字头结束 -->
@@ -276,7 +281,7 @@
 					<div class="share">
 						<a class="article_mark" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"></a>
 						<?php
-							$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].',getUserid)" class="button blue dianzanBtn" id="follow'.$navinfor[id].'"></a>';
+	$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].',getUserid)" class="button blue dianzanBtn" id="follow'.$navinfor[id].'"></a>';
 						?>
 						<?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>
 						<!-- JiaThis Button BEGIN -->
@@ -288,14 +293,14 @@
 							<a class="jiathis_button_fb"></a>
 							<a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 							<a class="jiathis_counter_style"></a>
-							<script type="text/javascript">
-								var jiathis_config = {
-								// url: "http://www.yourdomain.com",
-								title: "[!--pagetitle--] - 好琴声",
-								summary:"[!--pagekey--]",
-								pic:"[!--titlepic--]",
-								img_url:"[!--titlepic--]"
-								}
+							<script "text/javascript">
+							var jiathis_config = {
+							// url: "http://www.yourdomain.com",
+							title: "[!--pagetitle--] - 好琴声",
+							summary:"[!--pagekey--]",
+							pic:"[!--titlepic--]",
+							img_url:"[!--titlepic--]"
+							}
 							</script>
 							</div>
 							<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>

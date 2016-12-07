@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声</title>
+    <meta name="keywords" content="[!--title--]" />
+    <meta name="description" content="[!--smalltext--]" />
+    <meta property="og:image" content="[!--titlepic--]"/>
+    <meta property="og:description" content="[!--smalltext--]"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="[!--news.url--]css/base.css">
+    <link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+    <script language="javascript" src="/js/language.js"></script>
+    <link rel="stylesheet" type="text/css" href="[!--news.url--]css/index.css">
+    <script language="javascript" src="/js/language.js"></script>
+    <!--音乐播放器-->
+    <link rel="stylesheet" type="text/css" href="[!--news.url--]src/css/base.css">
+    <link rel="stylesheet" href="[!--news.url--]src/css/smusic.css"/>
+
+    <script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="[!--news.url--]js/index.js"></script>
+    <script type="text/javascript">
+        var  getUserid;
+        $(function() {
+            $.get('/e/member/login/headjs_3.php?t='+Math.random(), function(data) {
+                console.log(data);
+                getUserid = parseInt(data);
+                console.log(getUserid);
+            });
+        });
+    </script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+            // 匹配是微信浏览器再去验证微信权限
+
+            // 微信相关分享，1.0获取url发给后台并获取相应其他参数
+            var AppID,
+                    TimeStamp,
+                    NonceStr,
+                    Signature,
+                    getUrl = location.href.split('#')[0];
+            $.ajax({
+                url: '/e/weixin/jssdkone.php',
+                type: 'post',
+                dataType: 'json',
+                data: {'urlone':getUrl},
+                async: false,
+                timeout:1000,
+
+            })
+                    .done(function(msg) {
+                        console.log("success");
+                        AppID = msg.a;
+                        TimeStamp = msg.b;
+                        NonceStr = msg.c;
+                        Signature = msg.d;
+                    })
+                    .fail(function() {
+                        console.log("error");
+                    })
+                    .always(function() {
+                        console.log("complete");
+                    });
+            // 2.微信权限验证
+            wx.config({
+                debug: false,
+                appId: AppID,
+                timestamp: TimeStamp,
+                nonceStr: NonceStr,
+                signature: Signature,
+                jsApiList: ['onMenuShareTimeline',"onMenuShareAppMessage","onMenuShareQQ","onMenuShareQZone",]
+            });
+            wx.ready(function() {
+                // 3 判断当前版本是否支持指定 JS 接口，支持批量判断
+                wx.checkJsApi({
+                    jsApiList : ['onMenuShareTimeline','onMenuShareAppMessage',"onMenuShareQQ","onMenuShareQZone","hideMenuItems"],
+
+                });
+                var strTiele="[!--title--]--好琴声--音乐欣赏";
+                var strDesc="";
+                // var strLink="URL";
+                var strImgUrl="[!--titlepic--]";
+                //分享朋友圈
+                wx.onMenuShareTimeline({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+
+                });
+
+                //分享给微信好友
+                wx.onMenuShareAppMessage({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+                });
+
+                //分享到QQ
+                wx.onMenuShareQQ({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+                });
+
+                //分享到QQ空间
+                wx.onMenuShareQZone({
+                    title : strTiele, // 分享标题
+                    desc : strDesc,//分享描述
+                    // link : strLink, // 分享链接
+                    imgUrl: strImgUrl,// 分享图标
+                });
+            });
+        }
+    </script>
+    <script>
+        var tgs = new Array( 'div','td','tr');
+        var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+        var startSz = 2;
+        function ts( trgt,inc ) {
+            if (!document.getElementById) return
+            var d = document,cEl = null,sz = startSz,i,j,cTags;
+            sz += inc;
+            if ( sz < 0 ) sz = 0;
+            if ( sz > 3 ) sz = 3;
+            startSz = sz;
+            if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+            cEl.style.fontSize = szs[ sz ];
+            for ( i = 0 ; i < tgs.length ; i++ ) {
+                cTags = cEl.getElementsByTagName( tgs[ i ] );
+                for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+            }
+        }
+    </script>
+    <style type="text/css">
+        a.player_control_bar_logo{
+            display:none !important;
+        }
+
+        .artWrap{
+            overflow: hidden;
+            zoom: 1;
+            border-bottom:#ccc solid 1px;
+            padding-bottom:15px;
+        }
+        .bodyWrap {
+            background-color: #ddd!important;
+        }
+        body{background-color: #eee!important;}
+        /*广告*/
+        .headAdvert{
+            height:80px;
+            width:1200px;
+            margin-bottom:15px;
+            margin-top:15px;
+        }
+        .footAdcert{
+            margin-top:15px;
+            margin-bottom:15px;
+            /*width:1200px;*/
+            height:80px;
+        }
+        .headAdvert img,.footAdcert img{
+            height:80px;
+            width:1200px;
+        }
+        .rightAdvert img{
+            height:280px;
+            height:300px;
+        }
+        .recommond dd{
+            background-color: #f7f7f7;
+        }
+        .artRight{
+            padding:0px 15px 0 15px !important;
+            width:280px!important;
+        }
+        /*头部广告结束*/
+        /*详情页左边*/
+
+        .artLeft{
+            width:860px;
+
+
+            float: left;
+            padding:10px 0 0 15px;
+        }
+        .text{
+            padding-bottom:10px;
+            border-bottom:#ccc 1px solid;
+        }
+        .textInfo{
+            /*height:36px;*/
+            line-height: 36px;
+            overflow: hidden;
+            font-size:14px;
+        }
+        .textInfo div{
+            float: left;
+        }
+        .textInfo h3{
+            float: left;
+        }
+        .textInfo p{
+            float: left;
+        }
+        .textTime{
+            width:240px;
+        }
+        .textAuthor,.textDianji {
+            width:150px;
+        }
+        .bdsharebuttonbox{
+            display: inline-block;
+            height:36px;
+            float: right;
+        }
+        .textHead .share{
+            height:auto;
+            padding-bottom:10px;
+            border-bottom:#ccc solid 1px;
+        }
+        .share{height:30px;}
+        .zihao{
+            font-size:14px;
+            float: right;
+            line-height: 36px;
+            margin-right:10px;position: relative;
+            top: -36px;
+        }
+        .zihao span{
+            cursor:pointer;
+            padding:0 5px;
+        }
+        .keyWrod{
+            padding-top:10px;
+            font-size:14px;
+            color:#6e6e6e;
+        }
+        .neirong{
+            font-size:14px;
+            color:#333;
+            line-height:26px;
+        }
+        .neirong p{
+            text-indent:2em;
+        }
+
+        .zihao{    text-align: right;
+            line-height: 36px;}
+        .zhuanfa{
+            overflow: hidden;
+            zoom: 1;
+            height:24px !important;
+            line-height: 24px;
+            width:100%;
+
+        }
+        .zhuanfa p{
+            float: left;
+            color:#062E82;
+        }
+        .zhuanfa a{
+            float: left;
+            color:#062E82;
+        }
+        .guandian,.laiyuan{
+            color:#9F9F9E;
+            overflow: hidden;
+            text-indent:2em;
+        }
+        .laiyuan div{
+            float: left;
+        }
+        /*详情页左边结束*/
+
+        /*详情页右边*/
+        .artRight{
+            width:282px;
+
+
+            float: right;
+            padding:0px 10px 0 15px;
+            border-left:#ccc solid 1px;
+        }
+        .textSource i{
+            color:#969696;
+            font-size:12px;
+
+        }
+        .textHead>h2{
+            font-size:30px;
+            font-weight:bold;
+            color:#333;
+            height:60px;
+            line-height: 60px;
+        }
+        /*右一广告*/
+        .rightAdvert{
+            height:300px;
+            width:280px;
+            background-color: skyblue;
+            margin-bottom: 20px;
+        }
+        /*右二排行榜*/
+        .recommond{
+            float: right;
+            width:250px;
+            padding-bottom:5px; width:280px;
+        }
+        .recommond dd{
+            font-size:14px;
+            padding-left:10px;
+            line-height: 44px;
+            font-weight:bold;
+            border-bottom:#C0C0C0 solid 1px;
+        }
+        .recommond dt{
+            line-height: 30px;
+            padding-left:15px;
+            border-bottom:#ccc dotted 1px;
+            background: url(images/sanjiao.png) 0 center no-repeat;
+
+        }
+        .recommond dt i{
+            padding-right:5px;
+            color:#ccc;
+            font-size:16px;
+            display: inline-block;
+            line-height: 24px;
+            -webkit-transform: rotateX(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        .recommond dt a{
+            color:#333;
+        }
+        /*详情页右边结束*/
+        /*评论页*/
+        .hotDiscuss{
+            width:675px;
+
+            border:#ccc solid 1px;
+        }
+        .discussName{
+            height:34px;
+            background-color: #ccc;
+            color:#333;
+            font-size:18px;
+            font-weight:bold;
+            text-indent:1em;
+            line-height: 34px;
+
+        }
+        .hotDiscuss dl{
+            padding-left:60px;
+        }
+        .hotDiscuss dl dt{
+            padding:10px 10px;
+            border-bottom:#ccc solid 1px;
+            position: relative;
+        }
+        .hotDiscuss dl dt img{
+            position: absolute;
+            height:40px;
+            width:40px;
+            top:10px;
+            left:-48px;
+        }
+        .discussAuthor{
+            height:30px;
+            line-height: 30px;
+            font-size:16px;
+            font-weight:bold;
+
+            margin-bottom:10px;
+        }
+        .discussNeirong{
+            font-size:14px;
+            line-height: 20px;
+            padding:10px 10px;
+        }
+        .discussLit span{
+            padding:10px;
+        }
+        .videopl{
+            width:670px;
+            border-top:#ccc solid 1px;
+            margin-top:20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        .videopl h2{
+            height:26px;
+            line-height: 26px;
+            font-size:16px;
+            padding-left:10px;
+            border-bottom:#ccc solid 1px;
+        }
+        .videopl form{
+            position: relative;
+            padding:10px;
+            overflow: hidden;
+            zoom:1;
+            font-size:14px;
+
+        }
+        #mima{
+            margin-left:100px;
+        }
+
+        .videopl form label{
+            height:20px;
+            line-height: 24px;
+        }
+        .videopl form input{
+            height:24px;
+            line-height: 30px;
+        }
+        #danxuan{
+            width:14px;
+            height:14px;
+            margin-left:100px;
+        }
+        textarea{
+            margin-top:10px;
+            width:580px;
+            height:100px;
+            resize: none;
+            background-color: #FDFDFD;
+        }
+        .videopl form button{
+            background-color: #ccc;
+            border-radius:4px;
+            height:24px;
+            width:80px;
+            text-align: center;
+            color:#333;
+            margin-top:10px;
+        }
+        #zan_xia{
+            width: 230px;
+            background-position: center;
+            padding-left: 200px;
+        }
+        /*2016.4.26增加点赞部分*/
+        .dianzanBtn{
+            background: url(/images/normal_icon.png) 0 0 no-repeat;
+            height: 24px;
+            width: 44px;
+            display: inline-block;
+            padding-left: 26px;
+            color: #333;
+            line-height: 24px;
+            position: relative;
+        }
+        .share{
+            position: relative;
+            overflow: visible;
+        }
+        .zan_num{
+            position: absolute;
+            left: 40px;
+            top: 0;
+            cursor: pointer;
+            line-height:24px;
+        }
+        .dianzantixing{
+            position: absolute;
+            top: 0px;
+            left:80px;
+            color: #E44405;
+            font-size: 14px;
+
+        }
+
+        /*视频贴投票增加作者头像*/
+        .zhuozhe-img{
+            /*width:50px;*/
+            height: 50px;
+            margin-right: 5px;
+        }
+        .zhuozhe-img img{
+            width:50px;
+            height: 50px;
+            border-radius: 2px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .zuozhe-name,.zuozhe-price{
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 5px;
+        }
+        .zuozhe-name{
+            color: #f00
+        }
+        @media screen and (max-width:960px){
+            body{width: 100%}
+            body .head{width: 100%}
+            body .bodyWrap{width: 100%;height: auto;}
+            body .nav{width: 100%;height: auto;}
+            body .artRight{display: none;}
+            body .artLeft{width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+            }
+            .headAdvert{width: 100%;}
+            .headAdvert img{width: 100%;}
+            .textHead h2{font-size: 16px;}
+            .bdsharebuttonbox{display: none;}
+            .footAdcert{width: 100%;}
+            .footAdcert img{width: 100%;}
+            .footNavWrap {width: 100%;overflow: hidden;}
+            .footNav {display: none;}
+            .footer{width: 100%;overflow: hidden;}
+            .footCode{float: none;margin: 0 auto;}
+            .h1{float: none;margin: 0 auto;}
+            .lianxi{float: none;padding: 10px;}
+            .footBtm{height: auto;}
+            .huanying,.fanti,.erweima,.dneglu{display: none;}
+            .navwrap{height: auto;}
+            #ivaLive{width: 100%!important;height: 4.95rem!important;}
+            .content-ad{height: auto!important;}
+            .grid-music-container{width: 100%;box-sizing: border-box;height: auto;}
+            .grid-music-container .m-music-play-wrap{padding-left: 0;height: auto;}
+            .grid-music-container .u-cover{position: relative;}
+            .grid-music-container .m-now-controls .u-process{width: 100%;}
+            .content-ad{height: auto!important;}
+            .headerWrap{display: none;}
+            .headAdvert{display: none;}
+            .content-ad{width: 100%!important;}
+            .share{display: none;}
+            .content-ad .index-ad-1{width: 100%!important;height: auto!important;}
+            .content-ad .index-ad-2{width: 100%!important;height: auto!important;}
+            .toolbar{display: none;}
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+[!--temp.tou--]
+<div class="bodyWrap">
+    <!-- 头部广告 -->
+    <div class="headAdvert"><!--<img src="">--><script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea1.js"></script></div>
+    <!-- 头部广告结束 -->
+    <div class="artWrap">
+        <!-- 左边结构 -->
+        <div class="artLeft">
+            <!-- 文章头 -->
+            <div class="textHead">
+                <div class="textSource">您当前的位置：[!--newsnav--]</div>
+                <h2>[!--title--]</h2>
+                <div class="textInfo">
+                    <!-- 头像框 -->
+                    <div class="zhuozhe-img" style="float: left;margin-right: 15px;">
+                        <a  style="float: left" href="[!--news.url--]e/space/?userid=<?=$navinfor['userid']?>">
+                            [e:loop={"select userpic from phome_enewsmemberadd where userid='$navinfor[userid]' limit 1",10,24,0}]
+                            <?php
+                                $userpic=$bqr[userpic];
+                                if(empty($bqr[userpic])){
+                                    $userpic="http://www.greattone.net/images/logo.png";
+                                }
+                            ?>
+                            <img src="<?=$userpic?>" alt="">
+                            [/e:loop]
+                        </a>
+                        <div class="zuozhe-msg " style="float: left">
+                            <h2 class="zuozhe-name">[!--username--]</h2>
+                            <h2 class="zuozhe-price">
+                                [e:loop={"select userfen from phome_enewsmember where userid='$navinfor[userid]' limit 1",10,24,0}]
+                                <?php
+										if($bqr[userfen]<=100){
+											echo "一级";
+										}elseif($bqr[userfen]<=300){
+											 echo "二级";
+										}elseif($bqr[userfen]<=800){
+											 echo "三级";
+										}elseif($bqr[userfen]<=2000){
+											 echo "四级";
+										}elseif($bqr[userfen]<=5000){
+											 echo "五级";
+										}elseif($bqr[userfen]<=15000){
+											 echo "六级";
+										}elseif($bqr[userfen]<=50000){
+											 echo "七级";
+										}elseif($bqr[userfen]>100000){
+                                echo "八级";
+                                }else{
+                                echo "八级";
+                                }
+                                ?>
+                                [/e:loop]
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textTime">
+                        <h3>发表时间：</h3>
+                        <p>[!--newstime--]</p>
+                    </div>
+                    <!--<div class="textAuthor">-->
+                        <!--<h3>作者：</h3>-->
+                        <!--<p><a href="[!&#45;&#45;news.url&#45;&#45;]e/space/?userid=<?=$navinfor['userid']?>">[!&#45;&#45;username&#45;&#45;]</a></p>-->
+                    <!--</div>-->
+                    <div class="textDianji">
+                        <h3>点击量：</h3>
+                        <p>[!--page.stats--]<script src=[!--news.url--]e/public/ViewClick?classid=[!--classid--]&id=[!--id--]&addclick=1></script></p>
+                    </div>
+
+                </div>
+                <div class="share">
+
+                    <div class="zihao">
+                        <!--字体：
+                        <span><a href="javascript:ts('zihao',1)">放大</a></span>
+                        <span><a href="">初始</a></span>
+                    <span><a href="javascript:ts('zihao',-1)">缩小</a></span>--></div>
+                </div>
+
+            </div>
+            <!-- 文字头结束 -->
+            <div class="text">
+                <!--音乐播放器-->
+                <div class="yinyue">
+                    <div class="grid-music-container f-usn">
+                        <div class="m-music-play-wrap">
+                            <div class="u-cover"></div>
+                            <div class="m-now-info">
+                                <h1 class="u-music-title"><strong>标题</strong><small>歌手</small></h1>
+                                <div class="m-now-controls">
+                                    <div class="u-control u-process">
+                                        <span class="buffer-process"></span>
+                                        <span class="current-process"></span>
+                                    </div>
+                                    <div class="u-control u-time">00:00/00:00</div>
+                                    <div class="u-control u-volume">
+                                        <div class="volume-process" data-volume="0.50">
+                                            <span class="volume-current"></span>
+                                            <span class="volume-bar"></span>
+                                            <span class="volume-event"></span>
+                                        </div>
+                                        <a class="volume-control"></a>
+                                    </div>
+                                </div>
+                                <div class="m-play-controls">
+                                    <a class="u-play-btn prev" title="上一曲"></a>
+                                    <a class="u-play-btn ctrl-play play" title="暂停"></a>
+                                    <a class="u-play-btn next" title="下一曲"></a>
+                                    <a class="u-play-btn mode mode-list current" title="列表循环"></a>
+                                    <a class="u-play-btn mode mode-random" title="随机播放"></a>
+                                    <a class="u-play-btn mode mode-single" title="单曲循环"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="f-cb">&nbsp;</div>
+                        <div class="m-music-list-wrap">122</div>
+                    </div>
+                    <script type="text/javascript" src="[!--news.url--]src/js/smusic.min.js"></script>
+                    <script type="text/javascript">
+                        var musicList = [
+                            {
+                                title : '[!--title--]',
+                                singer : '[!--username--]',
+                                cover  : '[!--titlepic--]',
+                                src    : '[!--yinyue--]'
+                            }
+                        ];
+                        new SMusic({
+                            musicList:musicList
+                        });
+                    </script>
+
+                </div>
+                <!-- 视频下方的广告················································· -->
+                <div class="content-ad clearfix" style="width:860px;height:90px;">
+                    <div class="index-ad-1" style="float: left;width:430px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea79.js"></script></div>
+                    <div class="index-ad-2" style="float: left;width:430px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea80.js"></script></div>
+                </div>
+                <!-- 视频下方的广告结束················································· -->
+                <br>
+                <div class="neirong">
+                    <div id="zihao">
+                        <p>[!--smalltext--]</p>
+                    </div>
+                    <br><br><br>
+
+
+
+
+
+                    <div class="share">
+                        <script type="text/javascript" src="/js/jquery.timeago.js"></script>
+                        <script type="text/javascript" src="/js/52img.js"></script>
+                        <script type="text/javascript" src="/js/zan.js"></script>
+                        <?php
+	$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].',getUserid)" class="button blue dianzanBtn" id="follow'.$navinfor[id].'"></a>';
+                        ?>
+                        <?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>
+
+                        <!-- JiaThis Button BEGIN -->
+                        <div class="jiathis_style_32x32" style="float:right">
+                            <a class="jiathis_button_weixin"></a>
+                            <a class="jiathis_button_tsina"></a>
+                            <a class="jiathis_button_qzone"></a>
+                            <a class="jiathis_button_tqq"></a>
+                            <a class="jiathis_button_fb"></a>
+                            <a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                            <a class="jiathis_counter_style"></a>
+                            <script type="text/javascript">
+                            var jiathis_config = {
+                            // url: "http://www.yourdomain.com",
+                            title: "[!--title--]--好琴声--音乐欣赏",
+                            // summary:"[!--smalltext--]",
+                            pic:"[!--titlepic--]",
+                            img_url:"[!--titlepic--]"
+                            }
+                            </script>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                [!--temp.chang--]
+            </div>
+            <!-- 左边结构结束 -->
+
+            <!-- 右边结构 -->
+            <div class="artRight">
+                <div class="rightAdvert">
+                    <script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea3.js"></script>
+                </div>
+                <div class="recommond">
+                    <dl>
+                        <dd>最热</dd>
+                        [e:loop={13,8,1,0,'','newstime DESC'}]
+                        <dt><a href="<?=$bqsr['titleurl']?>" target="_blank"><?=esub($bqr[title],40)?></a></dt>
+                        [/e:loop]
+                    </dl>
+                </div>
+                <div class="recommond">
+                    <dl>
+                        <dd>推荐</dd>
+                        [e:loop={13,8,2,0,'','newstime DESC'}]
+                        <dt><a href="<?=$bqsr['titleurl']?>" target="_blank"><?=esub($bqr[title],40)?></a></a></dt>
+                        [/e:loop]
+                    </dl>
+                </div>
+                <div class="recommond">
+                    <dl>
+                        <dd>相关</dd>
+                        [e:loop={13,8,0,0,"username=username",'newstime DESC'}]
+                        <dt><a href="<?=$bqsr['titleurl']?>" target="_blank"><?=esub($bqr[title],40)?></a></dt>
+                        [/e:loop]
+                    </dl>
+                </div>
+            </div>
+            <!-- 右边结构结束 -->
+        </div>
+        <div class="footAdcert">
+            <div class="content-ad clearfix" style="width:1200px;height:90px;">
+                <div class="index-ad-1" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea81.js"></script></div>
+                <div class="index-ad-2" style="float: left;width:600px;height:90px;"><script src="http://greattone.net/d/js/acmsd/thea82.js"></script></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    [!--temp.wei--]
+    <!----悬浮窗---->
+    [!--temp.xuanfu--]
+</body>
+</html>
