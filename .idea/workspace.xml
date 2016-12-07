@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="老师,教室空间主页二维码chrome浏览器变形的bug修正">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/琴行教室.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/好琴声前端技术文档.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin_yinyuejiaoshi.css" afterPath="$PROJECT_DIR$/css/xin_yinyuejiaoshi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/toupiao4.js" afterPath="$PROJECT_DIR$/js/toupiao4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" afterPath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/teacher/index.temp.php" afterPath="$PROJECT_DIR$/php/teacher/index.temp.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,14 +32,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="123" column="47" selection-start-line="123" selection-start-column="47" selection-end-line="123" selection-end-column="47" />
+            <state relative-caret-position="108">
+              <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="222" selection-end-column="11" />
               <folding>
                 <element signature="e#86#789#0" expanded="false" />
                 <element signature="e#5117#5180#0" expanded="false" />
+                <element signature="e#5323#6643#0" expanded="false" />
                 <element signature="e#6777#7785#0" expanded="false" />
                 <element signature="e#7984#10993#0" expanded="false" />
                 <element signature="e#9333#9443#0" expanded="false" />
@@ -65,33 +59,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xin_yinyuejiaoshi.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="xin_yinyuejiaoshi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="396">
+              <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
               <folding>
                 <element signature="e#47#594#0" expanded="false" />
-                <element signature="e#856#1676#0" expanded="false" />
-                <element signature="e#2235#4258#0" expanded="false" />
-                <element signature="e#2660#3970#0" expanded="false" />
-                <element signature="e#5202#5896#0" expanded="false" />
-                <element signature="e#7128#8876#0" expanded="false" />
-                <marker date="1481086022817" expanded="true" signature="3002:3049" ph="..." />
-                <marker date="1481086022817" expanded="true" signature="4915:4962" ph="..." />
+                <element signature="e#2297#4320#0" expanded="false" />
+                <element signature="e#2722#4032#0" expanded="false" />
+                <element signature="e#4503#6193#0" expanded="false" />
+                <element signature="e#5264#5958#0" expanded="false" />
+                <marker date="1481088703769" expanded="true" signature="3064:3111" ph="..." />
+                <marker date="1481088703769" expanded="true" signature="4977:5024" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.type.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21505/home/hao/jiaoshi/index.type.php">
+      <file leaf-file-name="indexs.ip.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50342/home/hao/jiaoshi/indexs.ip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
               <folding>
-                <marker date="1481084538570" expanded="true" signature="236:389" ph="select * fro... $" />
-                <marker date="1481084538570" expanded="true" signature="833:987" ph="select * fro... $" />
+                <marker date="1481088502000" expanded="true" signature="219:424" ph="select * fro... $" />
+                <marker date="1481088502000" expanded="true" signature="845:1047" ph="select * fro... $" />
               </folding>
             </state>
           </provider>
@@ -135,45 +128,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.name.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01278/home/hao/jiaoshi/index.name.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <marker date="1481081783823" expanded="true" signature="219:407" ph="select * fro... $" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp43871/home/hao/jiaoshi/indexs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <marker date="1481082243247" expanded="true" signature="301:483" ph="select * fro... $" />
-                <marker date="1481082243247" expanded="true" signature="938:1121" ph="select * fro... $" />
-                <marker date="1481082243247" expanded="true" signature="1577:1791" ph="select * fro... $" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexs.ip.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50342/home/hao/jiaoshi/indexs.ip.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="77" column="55" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="55" />
-              <folding>
-                <marker date="1477361681000" expanded="true" signature="219:424" ph="select * fro... $" />
-                <marker date="1477361681000" expanded="true" signature="1640:1842" ph="select * fro... $" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -199,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/xin-music-news-article.css" />
         <option value="$PROJECT_DIR$/html/音乐资讯.html" />
         <option value="$USER_HOME$/Downloads/jquery.rollbar.min.js" />
         <option value="$USER_HOME$/Downloads/jquery.easing.min.js" />
@@ -248,8 +201,9 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp01278/home/hao/jiaoshi/index.name.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp43871/home/hao/jiaoshi/indexs.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp21505/home/hao/jiaoshi/index.type.php" />
-        <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
         <option value="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp50342/home/hao/jiaoshi/indexs.ip.php" />
+        <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
       </list>
     </option>
   </component>
@@ -538,14 +492,7 @@
       <workItem from="1480897908197" duration="20489000" />
       <workItem from="1480987411406" duration="16505000" />
       <workItem from="1481015133511" duration="1553000" />
-      <workItem from="1481069597089" duration="11406000" />
-    </task>
-    <task id="LOCAL-00063" summary="修改">
-      <created>1478596964663</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1478596964663</updated>
+      <workItem from="1481069597089" duration="15373000" />
     </task>
     <task id="LOCAL-00064" summary="音乐老师首页加载ajax的php备份">
       <created>1478670915996</created>
@@ -883,11 +830,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481077919049</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="老师,教室空间主页二维码chrome浏览器变形的bug修正">
+      <created>1481086043707</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1481086043707</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="533098000" />
+    <option name="totallyTimeSpent" value="537065000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -902,7 +856,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20042644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10554371" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771739" sideWeight="0.30597016" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1000,11 +954,11 @@
     <MESSAGE value="音乐老师的ajax数据调用格式为json" />
     <MESSAGE value="音乐老师封面模板页面备份" />
     <MESSAGE value="音乐老师的各项修改" />
-    <MESSAGE value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
     <MESSAGE value="修正了php的错误注释" />
     <MESSAGE value="乐谱修改" />
     <MESSAGE value="音乐老师分类点击数字动态跳动,分类,搜索,地区筛选" />
-    <option name="LAST_COMMIT_MESSAGE" value="音乐老师分类点击数字动态跳动,分类,搜索,地区筛选" />
+    <MESSAGE value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1190,29 +1144,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/xin_yinyuejiaoshi.css">
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="408" column="1" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/xin_yinyuelaoshi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="480" column="1" selection-start-line="480" selection-start-column="1" selection-end-line="480" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50342/home/hao/jiaoshi/indexs.ip.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="77" column="55" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="55" />
+        <state relative-caret-position="108">
+          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="222" selection-end-column="11" />
           <folding>
-            <marker date="1477361681000" expanded="true" signature="219:424" ph="select * fro... $" />
-            <marker date="1477361681000" expanded="true" signature="1640:1842" ph="select * fro... $" />
+            <element signature="e#86#789#0" expanded="false" />
+            <element signature="e#5117#5180#0" expanded="false" />
+            <element signature="e#5323#6643#0" expanded="false" />
+            <element signature="e#6777#7785#0" expanded="false" />
+            <element signature="e#7984#10993#0" expanded="false" />
+            <element signature="e#9333#9443#0" expanded="false" />
+            <element signature="e#9503#10609#0" expanded="false" />
+            <element signature="e#10702#10769#0" expanded="false" />
+            <element signature="e#10805#10869#0" expanded="false" />
+            <element signature="e#10907#10974#0" expanded="false" />
+            <element signature="e#12100#12198#0" expanded="false" />
+            <element signature="e#12254#13300#0" expanded="false" />
+            <element signature="e#14501#15608#0" expanded="false" />
+            <marker date="1481086022789" expanded="true" signature="9100:9154" ph="..." />
+            <marker date="1481086022789" expanded="true" signature="11883:11937" ph="..." />
+            <marker date="1481086022789" expanded="true" signature="13524:13578" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01278/home/hao/jiaoshi/index.name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1481081783823" expanded="true" signature="219:407" ph="select * fro... $" />
           </folding>
         </state>
       </provider>
@@ -1226,6 +1188,22 @@
             <marker date="1481082243247" expanded="true" signature="938:1121" ph="select * fro... $" />
             <marker date="1481082243247" expanded="true" signature="1577:1791" ph="select * fro... $" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/xin_yinyuejiaoshi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="408" column="1" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/xin_yinyuelaoshi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="480" column="1" selection-start-line="480" selection-start-column="1" selection-end-line="480" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,20 +1223,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01278/home/hao/jiaoshi/index.name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1481081783823" expanded="true" signature="219:407" ph="select * fro... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21505/home/hao/jiaoshi/index.type.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="550">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="0" />
           <folding>
             <marker date="1481084538570" expanded="true" signature="236:389" ph="select * fro... $" />
             <marker date="1481084538570" expanded="true" signature="833:987" ph="select * fro... $" />
@@ -1266,43 +1234,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50342/home/hao/jiaoshi/indexs.ip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="550">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
           <folding>
-            <element signature="e#47#594#0" expanded="false" />
-            <element signature="e#856#1676#0" expanded="false" />
-            <element signature="e#2235#4258#0" expanded="false" />
-            <element signature="e#2660#3970#0" expanded="false" />
-            <element signature="e#5202#5896#0" expanded="false" />
-            <element signature="e#7128#8876#0" expanded="false" />
-            <marker date="1481086022817" expanded="true" signature="3002:3049" ph="..." />
-            <marker date="1481086022817" expanded="true" signature="4915:4962" ph="..." />
+            <marker date="1481088502000" expanded="true" signature="219:424" ph="select * fro... $" />
+            <marker date="1481088502000" expanded="true" signature="845:1047" ph="select * fro... $" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="123" column="47" selection-start-line="123" selection-start-column="47" selection-end-line="123" selection-end-column="47" />
+        <state relative-caret-position="396">
+          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
           <folding>
-            <element signature="e#86#789#0" expanded="false" />
-            <element signature="e#5117#5180#0" expanded="false" />
-            <element signature="e#6777#7785#0" expanded="false" />
-            <element signature="e#7984#10993#0" expanded="false" />
-            <element signature="e#9333#9443#0" expanded="false" />
-            <element signature="e#9503#10609#0" expanded="false" />
-            <element signature="e#10702#10769#0" expanded="false" />
-            <element signature="e#10805#10869#0" expanded="false" />
-            <element signature="e#10907#10974#0" expanded="false" />
-            <element signature="e#12100#12198#0" expanded="false" />
-            <element signature="e#12254#13300#0" expanded="false" />
-            <element signature="e#14501#15608#0" expanded="false" />
-            <marker date="1481086022789" expanded="true" signature="9100:9154" ph="..." />
-            <marker date="1481086022789" expanded="true" signature="11883:11937" ph="..." />
-            <marker date="1481086022789" expanded="true" signature="13524:13578" ph="..." />
+            <element signature="e#47#594#0" expanded="false" />
+            <element signature="e#2297#4320#0" expanded="false" />
+            <element signature="e#2722#4032#0" expanded="false" />
+            <element signature="e#4503#6193#0" expanded="false" />
+            <element signature="e#5264#5958#0" expanded="false" />
+            <marker date="1481088703769" expanded="true" signature="3064:3111" ph="..." />
+            <marker date="1481088703769" expanded="true" signature="4977:5024" ph="..." />
           </folding>
         </state>
       </provider>

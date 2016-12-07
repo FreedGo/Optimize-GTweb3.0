@@ -31,8 +31,7 @@
 })(jQuery);
 
 $(function() {
-	$('.loaders').hide();
-	var classRoom01,classRoom02,
+	var classroome00,classRoom01,classRoom02,
 	iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
 
 	/**
@@ -60,19 +59,19 @@ $(function() {
 	}
 
 // 显示前N个结束-----------------------------------------------------------
-	var iList = 0;
+	var iList=1,
+		scrollTimer=null,
+		iload=0;
 	$(window).scroll(function(event) {
-		if ($(document).scrollTop() + $(window).height() > $(document).height() - 150) {
-
-				for (var i = iList; i < iList+4; i++) {
-					$('.liebiaoShow').children('li').eq(i).show();
-
-
-
-				};
-
-				iList=iList+4;
-		};
+		if (scrollTimer) {
+			clearTimeout(scrollTimer);//清除定时器
+		}
+		scrollTimer=setTimeout(function() {
+			//如果离底部小于150像素，就发送请求
+			if ($(document).scrollTop() + $(window).height() > $(document).height() -360) {
+				loadClassrome(classroome00,0);
+			}
+		}, 500);
 	});
 
 
@@ -224,7 +223,8 @@ $(function() {
 						dataType: 'text',
 						data: {'num': paixuName},
 						success:function(msg){
-							msg = eval('('+msg+')');
+							classroome00 = eval('('+msg+')');
+							classroome00 = msg;
 							iloadedNum[0] = 0;
 							loadClassrome(msg,0);
 							$('.loaders').hide();
@@ -270,20 +270,20 @@ $(function() {
 		             }
 	             };
                  // 第二步，向好琴声后台发送当前地址并接受返回的信息
-		         				$.ajax({
-		         	
-										url: '/jiaoshi/indexs.ip.php',
-										type: 'post',
-										dataType: 'text',
-										data:{'city_ip': subCity1},
-										success:function(msg) {
-											// 清空liebiaoShow并插入li
-											$('.liebiaoShow').empty().append(msg);
-											// $('.toutiao01').append('推荐');
-											$('.di_zhi').append('地址：');
-											$('.telephone_one').append('咨询电话：');
-										}
-								});
+                    $.ajax({
+						url: '/jiaoshi/indexs.ip.php',
+	                    type: 'post',
+	                    data:{'city_ip': subCity1},
+	                    success:function(msg) {
+		                    // classroome00 = eval('('+msg+')');
+		                    $('.loaders').hide();
+		                    msg = eval( '(' +msg+')');
+		                    classroome00 = msg ;
+		                    iloadedNum[0] = 0;
+		                    loadClassrome(classroome00,0);
+
+	                    }
+					});
                 // 第二步end，向好琴声后台发送当前地址并接受返回的信息
             }
          });
