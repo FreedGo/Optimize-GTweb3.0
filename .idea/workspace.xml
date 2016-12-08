@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="精简冗余代码&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/index.name.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/index.namef.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/index.type.ajax.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/index.type.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/indexs.ip.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/indexs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" afterPath="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/琴行教室.html" afterPath="$PROJECT_DIR$/html/琴行教室.html" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,24 +33,80 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="index.name.php" pinned="false" current-in-tab="true">
+              <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="220">
+                    <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="2" />
+                    <folding>
+                      <marker date="1481182940462" expanded="true" signature="216:404" ph="select * fro... $" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Optimize-GTweb3.0" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xin_yinyuejiaoshi.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
+      <file leaf-file-name="index.name.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/pinpai/index.name.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="302" column="42" selection-start-line="302" selection-start-column="42" selection-end-line="302" selection-end-column="42" />
+            <state relative-caret-position="198">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
-                <element signature="e#47#594#0" expanded="false" />
-                <element signature="e#823#1643#0" expanded="false" />
-                <element signature="e#1715#3178#0" expanded="false" />
-                <element signature="e#6741#7435#0" expanded="false" />
-                <marker date="1481173026500" expanded="true" signature="4541:4588" ph="..." />
-                <marker date="1481173026500" expanded="true" signature="6454:6501" ph="..." />
+                <marker date="1481182982916" expanded="true" signature="216:404" ph="select * fro... $" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.type.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+              <folding>
+                <marker date="1481166637000" expanded="true" signature="241:394" ph="select * fro... $" />
+                <marker date="1481166637000" expanded="true" signature="860:1014" ph="select * fro... $" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="琴行教室.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/琴行教室.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="266" column="9" selection-start-line="266" selection-start-column="9" selection-end-line="266" selection-end-column="9" />
+              <folding>
+                <element signature="e#5027#5035#1" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#ul#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.namef.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/pinpai/index.namef.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <marker date="1481182833309" expanded="true" signature="216:404" ph="select * fro... $" />
               </folding>
             </state>
           </provider>
@@ -74,9 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp18324/home/hao/e/data/html/pinpai/xiaoshou/qlistinfo.php" />
-        <option value="$PROJECT_DIR$/php/琴行商城.data.html.shop/qlistinfo.php" />
-        <option value="$PROJECT_DIR$/php/发帖/qlistinfo.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp40916/home/hao/e/template/incfile/header_1.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp25944/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php" />
         <option value="$PROJECT_DIR$/css/tupianneiye3.css" />
@@ -114,7 +174,6 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp23611/home/hao/laoshi/tear.index.php" />
         <option value="$PROJECT_DIR$/js/toupiao4.js" />
         <option value="$PROJECT_DIR$/css/xin_yinyuejiaoshi.css" />
-        <option value="$PROJECT_DIR$/html/琴行教室.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp01278/home/hao/jiaoshi/index.name.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp43871/home/hao/jiaoshi/indexs.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp21505/home/hao/jiaoshi/index.type.php" />
@@ -122,9 +181,13 @@
         <option value="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
         <option value="$PROJECT_DIR$/html/广场图片贴内页增加头像.html" />
         <option value="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
-        <option value="$PROJECT_DIR$/php/空间H5-老师/index.html" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php" />
         <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
+        <option value="$PROJECT_DIR$/php/空间H5-老师/index.html" />
+        <option value="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php" />
+        <option value="$PROJECT_DIR$/php/pinpai/index.name.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php" />
+        <option value="$PROJECT_DIR$/html/琴行教室.html" />
       </list>
     </option>
   </component>
@@ -234,25 +297,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="空间H5-老师" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Greattone_Ad" />
+    <property name="last_opened_file_path" value="E:/test" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -285,14 +330,15 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\Optimize-GTweb3.0\php\pinpai" />
       <recent name="D:\Git\Optimize-GTweb3.0\html" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\琴行商城.data.html.shop" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\开发部琴行注册标准" />
       <recent name="D:\Git\Optimize-GTweb3.0\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -446,14 +492,7 @@
       <workItem from="1480987411406" duration="16505000" />
       <workItem from="1481015133511" duration="1553000" />
       <workItem from="1481069597089" duration="27520000" />
-      <workItem from="1481156613776" duration="7608000" />
-    </task>
-    <task id="LOCAL-00069" summary="修改">
-      <created>1478856724086</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1478856724087</updated>
+      <workItem from="1481156613776" duration="12482000" />
     </task>
     <task id="LOCAL-00070" summary="课表删除功能和修改功能">
       <created>1479188809802</created>
@@ -791,11 +830,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481172657897</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="精简冗余代码&#10;">
+      <created>1481173051043</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1481173051043</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="556820000" />
+    <option name="totallyTimeSpent" value="561694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -812,13 +858,13 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41304347" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771739" sideWeight="0.30597016" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21847826" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32717392" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25869566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -931,22 +977,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/法兰山德公司介绍.html" />
-    <entry file="file://$PROJECT_DIR$/html/品牌海选列表页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp56861/home/hao/e/data/ecmseditor/ueditor/php/config.json" />
     <entry file="file://$PROJECT_DIR$/html/bbs/index.html" />
     <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai02.html" />
     <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai01.html" />
@@ -1098,13 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/琴行教室.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="237" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="303" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21505/home/hao/jiaoshi/index.type.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1139,38 +1162,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/空间H5-老师/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="165" column="93" selection-start-line="165" selection-start-column="93" selection-end-line="165" selection-end-column="93" />
-          <folding>
-            <element signature="e#2657#2663#0" expanded="false" />
-            <element signature="e#2663#2669#0" expanded="false" />
-            <element signature="e#2669#2675#0" expanded="false" />
-            <element signature="e#2675#2681#0" expanded="false" />
-            <element signature="e#2681#2687#0" expanded="false" />
-            <element signature="e#2687#2693#0" expanded="false" />
-            <element signature="e#3441#3582#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/teacher/index.temp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <marker date="1481166637283" expanded="true" signature="241:394" ph="select * fro... $" />
-            <marker date="1481166637283" expanded="true" signature="860:1014" ph="select * fro... $" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,8 +1197,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="302" column="42" selection-start-line="302" selection-start-column="42" selection-end-line="302" selection-end-column="42" />
+        <state relative-caret-position="324">
+          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
           <folding>
             <element signature="e#47#594#0" expanded="false" />
             <element signature="e#823#1643#0" expanded="false" />
@@ -1210,6 +1206,79 @@
             <element signature="e#6741#7435#0" expanded="false" />
             <marker date="1481173026500" expanded="true" signature="4541:4588" ph="..." />
             <marker date="1481173026500" expanded="true" signature="6454:6501" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/广场视频贴内页-增加头像.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="308" column="26" selection-start-line="308" selection-start-column="26" selection-end-line="308" selection-end-column="26" />
+          <folding>
+            <element signature="n#script#5;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/空间H5-老师/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/pinpai/index.name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <marker date="1481182982916" expanded="true" signature="216:404" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/pinpai/index.namef.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <marker date="1481182833309" expanded="true" signature="216:404" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <marker date="1481182940462" expanded="true" signature="216:404" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <marker date="1481166637000" expanded="true" signature="241:394" ph="select * fro... $" />
+            <marker date="1481166637000" expanded="true" signature="860:1014" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/琴行教室.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="266" column="9" selection-start-line="266" selection-start-column="9" selection-end-line="266" selection-end-column="9" />
+          <folding>
+            <element signature="e#5027#5035#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
