@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="音乐教室更改,基于后台ajax的json数据">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/空间H5-老师/index.html" />
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="精简冗余代码&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,28 +32,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
+      <file leaf-file-name="xin_yinyuejiaoshi.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="298" column="7" selection-start-line="298" selection-start-column="7" selection-end-line="298" selection-end-column="7" />
+            <state relative-caret-position="170">
+              <caret line="302" column="42" selection-start-line="302" selection-start-column="42" selection-end-line="302" selection-end-column="42" />
               <folding>
-                <element signature="e#86#789#0" expanded="false" />
-                <element signature="e#1311#2390#0" expanded="false" />
-                <element signature="e#5146#5209#0" expanded="false" />
-                <element signature="e#5352#6672#0" expanded="false" />
-                <element signature="e#6806#7814#0" expanded="false" />
-                <element signature="e#9362#9472#0" expanded="false" />
-                <element signature="e#9532#10638#0" expanded="false" />
-                <element signature="e#10731#10798#0" expanded="false" />
-                <element signature="e#10834#10898#0" expanded="false" />
-                <element signature="e#10936#11003#0" expanded="false" />
-                <element signature="e#12129#12227#0" expanded="false" />
-                <element signature="e#12283#13329#0" expanded="false" />
-                <element signature="e#14530#15637#0" expanded="false" />
-                <marker date="1481096155239" expanded="true" signature="9129:9183" ph="..." />
-                <marker date="1481096155239" expanded="true" signature="11912:11966" ph="..." />
-                <marker date="1481096155239" expanded="true" signature="13553:13607" ph="..." />
+                <element signature="e#47#594#0" expanded="false" />
+                <element signature="e#823#1643#0" expanded="false" />
+                <element signature="e#1715#3178#0" expanded="false" />
+                <element signature="e#6741#7435#0" expanded="false" />
+                <marker date="1481173026500" expanded="true" signature="4541:4588" ph="..." />
+                <marker date="1481173026500" expanded="true" signature="6454:6501" ph="..." />
               </folding>
             </state>
           </provider>
@@ -456,14 +446,7 @@
       <workItem from="1480987411406" duration="16505000" />
       <workItem from="1481015133511" duration="1553000" />
       <workItem from="1481069597089" duration="27520000" />
-      <workItem from="1481156613776" duration="7210000" />
-    </task>
-    <task id="LOCAL-00068" summary="前端说明文档">
-      <created>1478770463745</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1478770463745</updated>
+      <workItem from="1481156613776" duration="7608000" />
     </task>
     <task id="LOCAL-00069" summary="修改">
       <created>1478856724086</created>
@@ -801,11 +784,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481172633962</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="老师页面的h5&#10;">
+      <created>1481172657897</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1481172657897</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="556422000" />
+    <option name="totallyTimeSpent" value="556820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,10 +808,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41304347" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771739" sideWeight="0.30597016" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21847826" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
@@ -906,8 +897,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="空间css修改,栏目太多,排不开了,减少每个栏目标题宽度" />
-    <MESSAGE value="图片报名,参赛曲目重新显示回来" />
     <MESSAGE value="在线商城订单" />
     <MESSAGE value="个人的订单中心" />
     <MESSAGE value="商家的个人中心,包括发布商品" />
@@ -931,7 +920,9 @@
     <MESSAGE value="音乐教室更改,基于后台ajax的json数据" />
     <MESSAGE value="修改" />
     <MESSAGE value="修改按类型排序数据处理错误的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改按类型排序数据处理错误的bug" />
+    <MESSAGE value="老师页面的h5&#10;" />
+    <MESSAGE value="精简冗余代码&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="精简冗余代码&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1153,12 +1144,12 @@
         <state relative-caret-position="394">
           <caret line="165" column="93" selection-start-line="165" selection-start-column="93" selection-end-line="165" selection-end-column="93" />
           <folding>
-            <element signature="e#2657#2663#0" expanded="true" />
-            <element signature="e#2663#2669#0" expanded="true" />
-            <element signature="e#2669#2675#0" expanded="true" />
-            <element signature="e#2675#2681#0" expanded="true" />
-            <element signature="e#2681#2687#0" expanded="true" />
-            <element signature="e#2687#2693#0" expanded="true" />
+            <element signature="e#2657#2663#0" expanded="false" />
+            <element signature="e#2663#2669#0" expanded="false" />
+            <element signature="e#2669#2675#0" expanded="false" />
+            <element signature="e#2675#2681#0" expanded="false" />
+            <element signature="e#2681#2687#0" expanded="false" />
+            <element signature="e#2687#2693#0" expanded="false" />
             <element signature="e#3441#3582#0" expanded="false" />
           </folding>
         </state>
@@ -1169,25 +1160,6 @@
         <state relative-caret-position="22">
           <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="292" column="47" selection-start-line="292" selection-start-column="47" selection-end-line="292" selection-end-column="47" />
-          <folding>
-            <element signature="e#47#594#0" expanded="false" />
-            <element signature="e#847#1667#0" expanded="false" />
-            <element signature="e#1739#3202#0" expanded="false" />
-            <element signature="e#3376#3638#0" expanded="false" />
-            <element signature="e#3857#5880#0" expanded="false" />
-            <element signature="e#4572#4699#0" expanded="false" />
-            <element signature="e#6063#7753#0" expanded="false" />
-            <element signature="e#6824#7518#0" expanded="false" />
-            <marker date="1481167116925" expanded="true" signature="4624:4671" ph="..." />
-            <marker date="1481167116925" expanded="true" signature="6537:6584" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,6 +1195,21 @@
             <marker date="1481096155239" expanded="true" signature="9129:9183" ph="..." />
             <marker date="1481096155239" expanded="true" signature="11912:11966" ph="..." />
             <marker date="1481096155239" expanded="true" signature="13553:13607" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="302" column="42" selection-start-line="302" selection-start-column="42" selection-end-line="302" selection-end-column="42" />
+          <folding>
+            <element signature="e#47#594#0" expanded="false" />
+            <element signature="e#823#1643#0" expanded="false" />
+            <element signature="e#1715#3178#0" expanded="false" />
+            <element signature="e#6741#7435#0" expanded="false" />
+            <marker date="1481173026500" expanded="true" signature="4541:4588" ph="..." />
+            <marker date="1481173026500" expanded="true" signature="6454:6501" ph="..." />
           </folding>
         </state>
       </provider>

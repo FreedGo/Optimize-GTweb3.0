@@ -31,9 +31,8 @@
 })(jQuery);
 
 $(function() {
-
-	var classroome00,classRoom01,classRoom02,
-	iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
+	var classroome00,
+		iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
 
 	/**
 	 * 加载指定的数据进入指定的老师分类
@@ -115,18 +114,13 @@ $(function() {
 		// 自定义函数结束
 	}
 
-
 	// 页面加载时调用自己封装的函数来获取当前所在城市信息
 	getCurrentCity();
-
-
 	/**
 	 * 瀑布流下拉刷新
 	 * @type {number}
 	 */
-	var iList=1,
-		scrollTimer=null,
-		iload=0;
+	var scrollTimer=null;
 	$(window).scroll(function(event) {
 		if (scrollTimer) {
 			clearTimeout(scrollTimer);//清除定时器
@@ -155,8 +149,6 @@ $(function() {
 	var subCity1;
 	var subCity2;
 	var subCity3;
-	var cityInfo;
-	var city1="2222";
 		subCity1=$('#sfdq_tj').val();
 		subCity2=$('#csdq_tj').val();
 		subCity3=$('#qydq_tj').val();
@@ -175,7 +167,7 @@ $(function() {
 				success:function(msg){
 					$('.loaders').hide();
 					if (msg==''||msg==null) {
-						$('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到琴行，请重新搜索</p>');
+						$('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-align:center;">没有找到琴行，请重新搜索</p>');
 					} else {
 						msg = eval('('+msg+')');
 						$('.tongjiNum').numberRock({
@@ -231,7 +223,7 @@ $(function() {
 						success:function(msg){
 							$('.loaders').hide();
 							if (msg==''||msg==null) {
-								$('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到琴行，请重新搜索</p>');
+								$('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-align:center;">没有找到琴行，请重新搜索</p>');
 							} else {
 								msg = eval('('+msg+')');
 								$('.tongjiNum').numberRock({
@@ -308,22 +300,7 @@ $(function() {
 		});
 
 // ``````````````````````````````````````````````````````````````````````````````````````
-
-
-
-
-
-
-
-
-
-
-
-// ``````````````````````````````````````````````````````````````````````````````````````
 	$('.fenleiFuck li').on('click', function(event) {
-		// 点下按钮之后加载css动画
-	  	$('.liebiaoShow').empty().append('<div class="loaders"><div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div></div>');
-	  	$('.loaders').fadeIn(200);
 		getCurrentCity();
 	});
 
