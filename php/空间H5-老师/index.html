@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+	<link rel="stylesheet" href="../../css/xin_base.css">
+	<style>
+		.f-l-l{
+			float: left;
+		}
+		.f-l-r{
+			float: right;
+		}
+		.main-bg{
+			height: 200px;
+			width: 100%;
+		}
+		.main-bg>img{
+			height: 200px;
+			width: auto;
+		}
+
+		.list-item{
+			height:40px;
+			font: 14px/40px 微软雅黑;
+			border-bottom:#fef9e9 solid 1px;
+		}
+		.member-head{
+			position: relative;
+			border:none;
+		}
+		.userpic{
+			width:80px;
+			height:80px;
+			border-radius: 50%;
+			overflow: hidden;
+			border:#fff solid 2px;
+			position: absolute;
+			top:-40px;
+		}
+		.info-lists{
+			padding: 0 15px;
+		}
+		.username{
+			padding-left: 100px;
+		}
+		.username span{
+			font-size: 16px;
+			float: left;
+			margin-right:10px;
+		}
+		.member-tips-tiem{
+			width:33%;
+			float: left;
+			text-align: center;
+			display: inline-block;
+		}
+		.member-intro{
+			padding: 15px 0;
+			height: auto;
+			line-height: 24px;
+			border:none;
+		}
+		.fix-btn{
+			position: fixed;
+			bottom:0;
+			width: 100%;
+			background-color: #f8f8f8;
+			border-top:#ddd solid 1px;
+		}
+		.btn-warp{
+			width:90%;
+			margin:5px auto;
+
+		}
+		.list-item-dec{
+			width: 80px;
+			display: inline-block;
+			color: #8c8c8c;
+		}
+		.btn-item{
+			width: 47%;
+			border:#ddd solid 1px;
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			background-color: #fef9e9;
+			color: #cb7047;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-body">
+		<div class="main-bg">
+			<img src="http://www.greattone.net/images/kongjian_bg.jpg" alt="背景">
+		</div>
+		<div class="main-info">
+			<ul class="info-lists">
+				<li class="list-item member-head clearfix">
+					<div class="userpic">
+						<img src="http://www.greattone.net/shang/upload/php_avatar1_20160617122910_217_JO3J4W80.jpg" alt="谭璐">
+					</div>
+					<div class="f-l-l username">
+						<span>谭璐</span><span><img src="" alt=""><img src="http://www.greattone.net/images/yirenzheng.jpg" alt=""></span>
+					</div>
+				</li>
+				<li class="list-item member-tips clearfix">
+					<span class="member-tips-tiem f-l-l">等级:二级</span>
+					<span class="member-tips-tiem f-l-l">粉丝数:1090</span>
+					<span class="member-tips-tiem f-l-l">发帖:109</span>
+				</li>
+				<li class="list-item clearfix">
+					<span class="list-item-dec f-l-l">老师类型:</span>
+					<span class="list-item-val f-l-l">音乐老师</span>
+				</li>
+				<li class="list-item clearfix">
+					<span class="list-item-dec f-l-l">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址:</span>
+					<span class="list-item-val f-l-l">浙江省杭州市</span>
+				</li>
+				<li class="list-item member-intro clearfix">
+					毕业于德国柏林音乐学院。师从享誉欧洲的著名钢琴演奏家苏珊娜，
+					葛瑞斯曼教授以及柏林音乐学院钢琴系主任嘉柏列勒，库菲娜格教授。
+					在随两位教授学习的同时，又拜世界级钢琴大师贝尔曼，魏森伯格，福尔
+					希特温格尔等为师。博众家之长，深受各位大师的好评与赞赏。被大师们
+					一致公认为极具灵性与潜质的演奏家。频繁在欧洲各地进行独奏和重奏巡
+					回演出
+				</li>
+			</ul>
+		</div>
+		<div class="fix-btn">
+			<div class="btn-warp clearfix">
+				<a class="btn-item f-l-l" id="followBtn">关注</a>
+				<a class="btn-item f-l-r" id="askBtn" >提问</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	function _IsIOS() {
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/iPhone\sOS/i) == "iphone os") {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	function _IsAndroid() {
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/Android/i) == "android") {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	var followBtn = document.getElementById('followBtn'),
+			askBtn = document.getElementById('askBtn');
+	askBtn.onclick = function () {
+//		_IsIOS()?
+//				window.location = 'https://itunes.apple.com/cn/app/hao-qin-sheng/id1110629540?mt=8':
+//				window.location = 'http://app.qq.com/#id=detail&appid=1105386990';
+		window.location = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.greattone.greattone';
+	}
+	followBtn.onclick = function () {
+//		_IsIOS()?
+//				window.location = 'https://itunes.apple.com/cn/app/hao-qin-sheng/id1110629540?mt=8':
+//				window.location = 'http://app.qq.com/#id=detail&appid=1105386990';
+	}
+</script>

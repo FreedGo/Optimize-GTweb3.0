@@ -4,9 +4,6 @@
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="音乐教室更改,基于后台ajax的json数据">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/空间H5-老师/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin_gerenzhongxin.css" afterPath="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/广场图片贴内页增加头像.html" afterPath="$PROJECT_DIR$/html/广场图片贴内页增加头像.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -459,21 +456,7 @@
       <workItem from="1480987411406" duration="16505000" />
       <workItem from="1481015133511" duration="1553000" />
       <workItem from="1481069597089" duration="27520000" />
-      <workItem from="1481156613776" duration="7139000" />
-    </task>
-    <task id="LOCAL-00066" summary="新增说明文档">
-      <created>1478682646421</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1478682646421</updated>
-    </task>
-    <task id="LOCAL-00067" summary="修正吉他列表和提琴列表中的乐器类型显示错误的bug">
-      <created>1478755940090</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1478755940091</updated>
+      <workItem from="1481156613776" duration="7210000" />
     </task>
     <task id="LOCAL-00068" summary="前端说明文档">
       <created>1478770463745</created>
@@ -804,11 +787,25 @@
       <option name="project" value="LOCAL" />
       <updated>1481103195680</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="修改">
+      <created>1481172593733</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1481172593734</updated>
+    </task>
+    <task id="LOCAL-00116" summary="修改按类型排序数据处理错误的bug">
+      <created>1481172633962</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1481172633962</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="556351000" />
+    <option name="totallyTimeSpent" value="556422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,7 +906,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="个人中心头部及左侧,尾部备份" />
     <MESSAGE value="空间css修改,栏目太多,排不开了,减少每个栏目标题宽度" />
     <MESSAGE value="图片报名,参赛曲目重新显示回来" />
     <MESSAGE value="在线商城订单" />
@@ -934,7 +930,8 @@
     <MESSAGE value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
     <MESSAGE value="音乐教室更改,基于后台ajax的json数据" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="修改按类型排序数据处理错误的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改按类型排序数据处理错误的bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1135,6 +1132,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="324" column="16" selection-start-line="324" selection-start-column="16" selection-end-line="324" selection-end-column="16" />
+          <folding>
+            <element signature="n#script#7;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#h2#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,6 +1144,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="249" column="24" selection-start-line="249" selection-start-column="24" selection-end-line="249" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
