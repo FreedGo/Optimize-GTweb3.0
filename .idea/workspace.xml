@@ -9,8 +9,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/indexs.ip.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/pinpai/indexs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" afterPath="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/琴行教室.html" afterPath="$PROJECT_DIR$/html/琴行教室.html" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -492,14 +490,7 @@
       <workItem from="1480987411406" duration="16505000" />
       <workItem from="1481015133511" duration="1553000" />
       <workItem from="1481069597089" duration="27520000" />
-      <workItem from="1481156613776" duration="12482000" />
-    </task>
-    <task id="LOCAL-00070" summary="课表删除功能和修改功能">
-      <created>1479188809802</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1479188809803</updated>
+      <workItem from="1481156613776" duration="12543000" />
     </task>
     <task id="LOCAL-00071" summary="修改">
       <created>1479188846916</created>
@@ -837,11 +828,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481173051043</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="琴行教室筛选改为粉丝数,教师等级&#10;">
+      <created>1481184594504</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1481184594504</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="561694000" />
+    <option name="totallyTimeSpent" value="561755000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,7 +941,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="在线商城订单" />
     <MESSAGE value="个人的订单中心" />
     <MESSAGE value="商家的个人中心,包括发布商品" />
     <MESSAGE value="样式放到总的css里面了" />
@@ -968,7 +965,8 @@
     <MESSAGE value="修改按类型排序数据处理错误的bug" />
     <MESSAGE value="老师页面的h5&#10;" />
     <MESSAGE value="精简冗余代码&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="精简冗余代码&#10;" />
+    <MESSAGE value="琴行教室筛选改为粉丝数,教师等级&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="琴行教室筛选改为粉丝数,教师等级&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
