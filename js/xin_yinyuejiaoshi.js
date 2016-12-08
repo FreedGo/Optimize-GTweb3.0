@@ -31,6 +31,7 @@
 })(jQuery);
 
 $(function() {
+
 	var classroome00,classRoom01,classRoom02,
 	iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
 
@@ -58,7 +59,71 @@ $(function() {
 		iloadedNum[type] = iloadedNum[type] +10 ;
 	}
 
-// 显示前N个结束-----------------------------------------------------------
+	/**
+	 * 页面加载的时候,1.三级联动加载到地区,2.按排序加载琴行
+	 */
+	function getCurrentCity(){
+		var subCity1;
+		// 第一步,向高德API发送请求并获得访问者所在省份
+		$.ajax({
+			type: "get",
+			//url: "http://webapi.amap.com/maps/ipLocation?key=4a84cf8078fb847fd4072da2dbc9b6b7",//自己申请的高德key，2000次每天
+			url:'http://restapi.amap.com/v3/ip?key=7a178998b6550b21f6a2fb88d3285fcd',
+			dataType: 'text',
+			// contentType:'application/x-www-form-urlencoded;charset=UTF-8',
+			success: function(data) {
+				//转换为JSON对象
+				var jsonObj = eval("(" + data.replace('(','').replace(')','').replace(';','') + ")");
+				//当前城市
+				// $("#shenfen>p").html('当前:'+jsonObj.province);
+				subCity1=jsonObj.province;
+				subCity1=subCity1.substring(0,subCity1.length-1);//拼接字符串，减去最后一位子副
+				// console.log(subCity1);
+				//增加加载页面师,三级联动加载一级城市
+				//遍历第一级,找到之后模拟点击
+				for (var i = 0 ; i < 34;i++){
+					if ($('.m_zlxg1 ul li').eq(i).html() == subCity1){
+						$('.m_zlxg1 ul li').eq(i).trigger('click');
+						$('.m_zlxg1').hide();
+						break;
+					}
+				};
+				// 第二步，向好琴声后台发送当前地址并接受返回的信息
+				$.ajax({
+					url: '/jiaoshi/indexs.ip.php',
+					type: 'post',
+					data:{'city_ip': subCity1},
+					success:function(msg) {
+						// classroome00 = eval('('+msg+')');
+						$('.loaders').hide();
+						msg = eval( '(' +msg+')');
+						classroome00 = msg ;
+						//数字跳动
+						$('.tongjiNum').numberRock({
+							speed:20,
+							count:classroome00.length
+						});
+						iloadedNum[0] = 0;
+						loadClassrome(classroome00,0);
+
+					}
+				});
+				// 第二步end，向好琴声后台发送当前地址并接受返回的信息
+			}
+		});
+
+		// 自定义函数结束
+	}
+
+
+	// 页面加载时调用自己封装的函数来获取当前所在城市信息
+	getCurrentCity();
+
+
+	/**
+	 * 瀑布流下拉刷新
+	 * @type {number}
+	 */
 	var iList=1,
 		scrollTimer=null,
 		iload=0;
@@ -73,6 +138,7 @@ $(function() {
 			}
 		}, 500);
 	});
+
 
 
 
@@ -223,7 +289,7 @@ $(function() {
 						dataType: 'text',
 						data: {'num': paixuName},
 						success:function(msg){
-							classroome00 = eval('('+msg+')');
+							msg = eval('('+msg+')');
 							classroome00 = msg;
 							iloadedNum[0] = 0;
 							loadClassrome(msg,0);
@@ -242,63 +308,8 @@ $(function() {
 		});
 
 // ``````````````````````````````````````````````````````````````````````````````````````
-//首先封装页面加载获取当前所在城市信息的函数
-	function getCurrentCity(){
-		var subCity1;
-		// 第一步,向高德API发送请求并获得访问者所在省份
-         $.ajax({
-            type: "get",
-             //url: "http://webapi.amap.com/maps/ipLocation?key=4a84cf8078fb847fd4072da2dbc9b6b7",//自己申请的高德key，2000次每天
-	         url:'http://restapi.amap.com/v3/ip?key=7a178998b6550b21f6a2fb88d3285fcd',
-             dataType: 'text',
-             // contentType:'application/x-www-form-urlencoded;charset=UTF-8',
-             success: function(data) {
-                 //转换为JSON对象
-                 var jsonObj = eval("(" + data.replace('(','').replace(')','').replace(';','') + ")");
-                 //当前城市
-                 // $("#shenfen>p").html('当前:'+jsonObj.province);
-                 subCity1=jsonObj.province;
-                 subCity1=subCity1.substring(0,subCity1.length-1);//拼接字符串，减去最后一位子副
-                 // console.log(subCity1);
-	             //增加加载页面师,三级联动加载一级城市
-	             //遍历第一级,找到之后模拟点击
-	             for (var i = 0 ; i < 34;i++){
-		             if ($('.m_zlxg1 ul li').eq(i).html() == subCity1){
-			             $('.m_zlxg1 ul li').eq(i).trigger('click');
-			             $('.m_zlxg1').hide();
-			             break;
-		             }
-	             };
-                 // 第二步，向好琴声后台发送当前地址并接受返回的信息
-                    $.ajax({
-						url: '/jiaoshi/indexs.ip.php',
-	                    type: 'post',
-	                    data:{'city_ip': subCity1},
-	                    success:function(msg) {
-		                    // classroome00 = eval('('+msg+')');
-		                    $('.loaders').hide();
-		                    msg = eval( '(' +msg+')');
-		                    classroome00 = msg ;
-		                    iloadedNum[0] = 0;
-		                    loadClassrome(classroome00,0);
 
-	                    }
-					});
-                // 第二步end，向好琴声后台发送当前地址并接受返回的信息
-            }
-         });
 
-	// 自定义函数结束				
-     }
-    
-     //页面加载时调用自己封装的函数来获取当前所在城市信息
-     // $(document).ready(function(){
-     //     getCurrentCity();
-     // });
-     //页面加载完毕调用自己封装的函数来获取当前所在城市信息
-		window.onload=function(){
-			getCurrentCity();
-		}
 
 
 
