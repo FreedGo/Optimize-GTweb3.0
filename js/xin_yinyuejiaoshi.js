@@ -204,63 +204,64 @@ $(function() {
 
   });
 // ---------------------------------------------------------------------------------------------------------
+	/**
+	 * 教室输入名字搜索函数
+	 */
+	function startSearch() {
+		var jiaoshiName;
+		jiaoshiName=$('.searchSelect').val();
+		if (jiaoshiName=="") {
+			alert('输入的教室名字不能为空');
+		} else{
+			$('.liebiaoShow').empty();
+			$('.loaders').show();
+			$.ajax({
+				url: '/jiaoshi/index.name.php',
+				type: 'post',
+				data: {'jiaoshi1': jiaoshiName},
+				success:function(msg){
+					$('.loaders').hide();
+					if (msg==''||msg==null) {
+						$('.liebiaoShow').append('<p style="font-size:16px;color:#cb7047;text-align:center;">没有找到琴行，请重新搜索</p>');
+					} else {
+						msg = eval('('+msg+')');
+						$('.tongjiNum').numberRock({
+							speed:20,
+							count:msg.length
+						});
+						$.each(msg,function (index,val) {
+							$('.liebiaoShow').append(
+								'<li><a href="/e/space/?userid=' +val.userid+
+								'"><img src="' +val.userpic+
+								'"></a><div class="xingming"><a href="/e/space/?userid=' +val.userid+
+								'"><span>' +val.username+
+								'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' +val.cked+
+								'"></i></a></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' +val.address+val.address1+val.address2+
+								'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' +val.telephone+
+								'</p></div> <span class="toutiao0' +val.resever_1+
+								'"></span></li>'
+							)
+						})
+					}
+				}
+			});
+		}
+	}
 
-	// 教室输入名字查询
-	var jiaoshiName;
+	/**
+	 * 搜索按钮点击
+	 */
 	$('.searchSub').click(function(event) {
-			jiaoshiName=$('.searchSelect').val();
-			// console.log(jiaoshiName);
-			if (jiaoshiName=="") {
-				alert('输入的教室名字不能为空');
-			} else{
-					// 点下按钮之后加载css动画
-				$('.loaders').show();
-					// console.log(jiaoshiName);
-					$.ajax({
-						url: '/jiaoshi/index.name.php',
-						type: 'post',
-						data: {'jiaoshi1': jiaoshiName},
-						success:function(msg){
-							$('.loaders').hide();
-							if (msg==''||msg==null) {
-								$('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-align:center;">没有找到琴行，请重新搜索</p>');
-							} else {
-								msg = eval('('+msg+')');
-								$('.tongjiNum').numberRock({
-									speed:20,
-									count:msg.length
-								});
-								$('.liebiaoShow').empty();
-								$.each(msg,function (index,val) {
-									$('.liebiaoShow').append(
-									'<li><a href="/e/space/?userid=' +val.userid+
-									'"><img src="' +val.userpic+
-									'"></a><div class="xingming"><a href="/e/space/?userid=' +val.userid+
-									'"><span>' +val.username+
-									'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' +val.cked+
-									'"></i></a></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' +val.address+val.address1+val.address2+
-									'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' +val.telephone+
-									'</p></div> <span class="toutiao0' +val.resever_1+
-									'"></span></li>'
-									)
-								})
-							}
-						}
-					})
-					.done(function() {
-						// console.log("success");
-					})
-					.fail(function() {
-						// console.log("error");
-					})
-					.always(function() {
-						// console.log("complete");
-					});
-			};
-
-
-		});
-
+		startSearch();
+	});
+	/**
+	 * 搜索框按下回车键
+	 */
+	$('.searchSelect').keypress(function (event) {
+		if (event.keyCode == 13){
+			startSearch();
+		}
+	});
 // ---------------------------------------------------------------------------------------------------------
 
 	// 教室输入排序类型查询
