@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="尝试修改ajax的php端文件,品牌的&#10;">
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="分离搜索时间,并且增加按回车开始搜索&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/luntanliebiao.css" afterPath="$PROJECT_DIR$/css/luntanliebiao.css" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +59,8 @@
       <file leaf-file-name="index.h5.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/teacher/index.h5.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="164" column="62" selection-start-line="164" selection-start-column="62" selection-end-line="164" selection-end-column="62" />
+            <state relative-caret-position="471">
+              <caret line="168" column="40" selection-start-line="168" selection-start-column="40" selection-end-line="168" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -72,11 +71,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="luntanliebiao.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="luntanliebiao.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/luntanliebiao.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
               <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xin_yinyuejiaoshi.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+              <folding>
+                <element signature="e#47#594#0" expanded="false" />
+                <element signature="e#823#1643#0" expanded="false" />
+                <element signature="e#1715#3178#0" expanded="false" />
+                <element signature="e#6042#6072#0" expanded="false" />
+                <element signature="e#6602#7281#0" expanded="false" />
+                <element signature="e#7704#8397#0" expanded="false" />
+                <marker date="1481268134137" expanded="true" signature="4541:4588" ph="..." />
+                <marker date="1481268134137" expanded="false" signature="5958:7309" ph="{...}" />
+                <marker date="1481268134137" expanded="true" signature="6364:6411" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toupiao4.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/toupiao4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="113" column="55" selection-start-line="113" selection-start-column="55" selection-end-line="114" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -160,7 +189,6 @@
         <option value="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
         <option value="$PROJECT_DIR$/html/广场图片贴内页增加头像.html" />
         <option value="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
-        <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
         <option value="$PROJECT_DIR$/php/空间H5-老师/index.html" />
         <option value="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php" />
@@ -170,6 +198,7 @@
         <option value="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
         <option value="$PROJECT_DIR$/php/teacher/index.h5.php" />
         <option value="$PROJECT_DIR$/css/luntanliebiao.css" />
+        <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
       </list>
     </option>
   </component>
@@ -254,70 +283,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="空间H5-老师" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,14 +476,7 @@
       <workItem from="1481015133511" duration="1553000" />
       <workItem from="1481069597089" duration="27520000" />
       <workItem from="1481156613776" duration="14941000" />
-      <workItem from="1481242411604" duration="6702000" />
-    </task>
-    <task id="LOCAL-00073" summary="修复bug">
-      <created>1479202437169</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1479202437170</updated>
+      <workItem from="1481242411604" duration="13207000" />
     </task>
     <task id="LOCAL-00074" summary="月视图显示为学生姓名,其他视图把学生姓名放在最前面">
       <created>1479277745449</created>
@@ -856,11 +814,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481189748848</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="分离搜索时间,并且增加按回车开始搜索&#10;">
+      <created>1481268194368</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1481268194368</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="570855000" />
+    <option name="totallyTimeSpent" value="577360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -872,18 +837,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377399" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377399" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33804348" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3152174" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2652174" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2652174" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -962,7 +927,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="商家的个人中心,包括发布商品" />
     <MESSAGE value="样式放到总的css里面了" />
     <MESSAGE value="广场帖子下方广告重新调整适配h5" />
     <MESSAGE value="发帖文件备份" />
@@ -987,7 +951,8 @@
     <MESSAGE value="精简冗余代码&#10;" />
     <MESSAGE value="琴行教室筛选改为粉丝数,教师等级&#10;" />
     <MESSAGE value="尝试修改ajax的php端文件,品牌的&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试修改ajax的php端文件,品牌的&#10;" />
+    <MESSAGE value="分离搜索时间,并且增加按回车开始搜索&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="分离搜索时间,并且增加按回车开始搜索&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,7 +961,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai03.html" />
     <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai04.html" />
     <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai05.html" />
     <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai06.html" />
@@ -1095,13 +1059,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp23611/home/hao/laoshi/tear.index.php" />
-    <entry file="file://$PROJECT_DIR$/js/toupiao4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/海选投票视频内页.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1157,13 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/广场视频贴内页-增加头像.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-418">
@@ -1182,16 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="269" column="9" selection-start-line="269" selection-start-column="9" selection-end-line="269" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/pinpai/index.namef.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <marker date="1481182833309" expanded="true" signature="216:404" ph="select * fro... $" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1301,10 +1241,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/pinpai/index.namef.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <marker date="1481182833309" expanded="true" signature="216:404" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/teacher/index.h5.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="164" column="62" selection-start-line="164" selection-start-column="62" selection-end-line="164" selection-end-column="62" />
+        <state relative-caret-position="471">
+          <caret line="168" column="40" selection-start-line="168" selection-start-column="40" selection-end-line="168" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1318,6 +1268,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+          <folding>
+            <element signature="e#47#594#0" expanded="false" />
+            <element signature="e#823#1643#0" expanded="false" />
+            <element signature="e#1715#3178#0" expanded="false" />
+            <element signature="e#6042#6072#0" expanded="false" />
+            <element signature="e#6602#7281#0" expanded="false" />
+            <element signature="e#7704#8397#0" expanded="false" />
+            <marker date="1481268134137" expanded="true" signature="4541:4588" ph="..." />
+            <marker date="1481268134137" expanded="false" signature="5958:7309" ph="{...}" />
+            <marker date="1481268134137" expanded="true" signature="6364:6411" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/reg/vip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389">
+          <caret line="198" column="52" selection-start-line="198" selection-start-column="52" selection-end-line="198" selection-end-column="52" />
+          <folding>
+            <element signature="e#3085#5292#0#HTML" expanded="false" />
+            <marker date="1479790880289" expanded="true" signature="146:152" ph=" " />
+            <marker date="1479790880289" expanded="true" signature="153:159" ph=" " />
+            <marker date="1479790880289" expanded="true" signature="182:188" ph=" " />
+            <marker date="1479790880289" expanded="true" signature="189:195" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/toupiao4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="113" column="55" selection-start-line="113" selection-start-column="55" selection-end-line="114" selection-end-column="46" />
           <folding />
         </state>
       </provider>
