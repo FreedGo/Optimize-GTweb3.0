@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<base target=_blank>
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_yinyueguangchang.css">
+	<script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="[!--news.url--]js/jquery.SuperSlide.2.1.1.js"></script>
+	<script language="javascript" src="/js/language.js"></script>
+	<script type="text/javascript" src="/js/yinyueguangchang.hot.js"></script>
+</head>
+<body>
+<!--提示框-->
+<div class="common-msg-warp">
+	<h1 class="common-msg-title"></h1>
+	<h2 class="common-msg-con"></h2>
+</div>
+<div class="common-bg"></div>
+<!--提示框-->
+<!-- ·······头部调用·········· -->
+[!--temp.tou--]
+
+<!-- ····························中间结构·································· -->
+<div class="bodyWrap clearfix">
+	<!-- 左边二级导航列···················································· -->
+	<div class="leftWrap">
+		<ul>
+			<li class="leftMenu0  on">
+				<a href="[!--news.url--]guangchang">
+					<i class="iconfont">&#xe642;</i>
+					<h2>推荐贴</h2>
+				</a>
+			</li>
+			<li class="leftMenu1">
+				<a href="[!--news.url--]guangchang/guang">
+					<i class="iconfont">&#xe642;</i>
+					<h2>全站动态</h2>
+				</a>
+			</li>
+			<li id="" class="current leftMenu2">
+				<a href="[!--news.url--]news/huodong">
+					<i class="iconfont">&#xe653;</i>
+					<h2>音乐活动</h2>
+				</a>
+			</li>
+			<li id="" class="current leftMenu3">
+
+				<a href="[!--news.url--]e/zhiyin/ListInfo.php?mid=10">
+					<i class="iconfont">&#xe64c;</i>
+					<h2>知音动态</h2>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 左边二级导航列结束················································ -->
+	<!-- 中间内容部分······················································ -->
+	<div class="rightWrap clearfix">
+		<!-- 第一.全站动态部分············································· -->
+		<div class="rightMiddle qzdtList">
+			<!-- 搜索框························· -->
+			<div class="searchWrap">
+				<div class="search">
+					<script type="text/javascript" src="[!--news.url--]skin/default/js/tabs.js"></script>
+					<form id="searchform">
+						<input type="hidden" name="show" value="title" />
+						<input type="hidden" name="tempid" value="1" />
+						<select name="tbname" id="xuanze">
+							<option value="0">全部</option>
+							<option value="1">会员名</option>
+							<option value="2">视频</option>
+							<option value="3">音乐</option>
+							<option value="4">图片</option>
+						</select>
+						<input type="input"  id="searchValue">
+					</form>
+					<i class="iconfont searchInputSub">&#xe658;</i>
+				</div>
+				<div class="guangchangfatie">
+					<a href="/e/fatie/ListInfo.php?mid=10">&nbsp;&nbsp;我要发帖</a>
+				</div>
+			</div>
+			<!-- 搜索框结束····················· -->
+
+
+
+			<!-- 内容··························· -->
+
+			<div class="qzdtContent">
+				<ul class="quanzhandongtai">
+
+					[e:loop={'select * from phome_ecms_photo a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where firsttitle=3 order by a.newstime DESC limit 3',4,24,3}]
+					<?
+					if($bqr[classid]==11 && $bqr[open]==1){
+				    ?>
+					<!--------视频开始-------->
+					<li class="clearfix dongtaiLi">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+					                if($bqr[cked]==1){
+				                    echo "<i class='iconfont'>&#xe657;</i>";
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>
+							</p>
+							<p>
+								<em>
+									<?
+									if($bqr[groupid]==1){
+										echo $bqr[putong_shenfen];//普通会员默认爱乐人
+									}elseif($bqr[groupid]==2){
+										echo $bqr[music_star];//音乐之星
+									}elseif($bqr[groupid]==3){
+										echo $bqr[teacher_type];//音乐老师
+									}elseif($bqr[groupid]==4){
+										echo "音乐教室";
+									}
+								?>
+								</em>
+								<span>
+					            <?php
+					                if($bqr[userfen]<=100){
+					                    echo "一级";
+					                }elseif($bqr[userfen]<=300){
+					                     echo "二级";
+					                }elseif($bqr[userfen]<=800){
+					                     echo "三级";
+					                }elseif($bqr[userfen]<=2000){
+					                     echo "四级";
+					                }elseif($bqr[userfen]<=5000){
+					                     echo "五级";
+					                }elseif($bqr[userfen]<=15000){
+					                     echo "六级";
+					                }elseif($bqr[userfen]<=50000){
+					                     echo "七级";
+					                }elseif($bqr[userfen]<=100000){
+					                     echo "八级";
+					                }else{
+					                    echo "八级";
+					                }
+					            ?>
+								</span>
+							</p>
+
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[title],30)?></h3></a>
+							<p><?=esub($bqr[smalltext],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr[titlepic]?>">
+									<i class="iconfont">&#xe63b;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+
+					<!--------视频结束-------->
+					<?
+				    }elseif($bqr[classid]==12 && $bqr[open]==1){
+				    ?>
+					<!--------图片开始-------->
+					<li class="clearfix" id="userImg<?=$bqr[id]?>">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<input type="hidden" name="titid" class="tit_id" value="<?=$bqr[id]?>" />
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+					                if($bqr[cked]==1){
+					                    echo "<i class='iconfont'>&#xe657;</i>";
+									}
+									?>
+								</h3>
+								<p class="fromCity">
+									<em><?=$bqr[address]?></em>
+									<span onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>
+								</p>
+								<p><em>
+									<?
+										if($bqr[groupid]==1){
+											echo $bqr[putong_shenfen];//普通会员默认爱乐人
+										}elseif($bqr[groupid]==2){
+											echo $bqr[music_star];//音乐之星
+										}elseif($bqr[groupid]==3){
+											echo $bqr[teacher_type];//音乐老师
+										}elseif($bqr[groupid]==4){
+											echo "音乐教室";
+										}
+									?>
+								</em>
+									<span>
+						            <?php
+						                if($bqr[userfen]<=100){
+						                    echo "一级";
+						                }elseif($bqr[userfen]<=300){
+						                     echo "二级";
+						                }elseif($bqr[userfen]<=800){
+						                     echo "三级";
+						                }elseif($bqr[userfen]<=2000){
+						                     echo "四级";
+						                }elseif($bqr[userfen]<=5000){
+						                     echo "五级";
+						                }elseif($bqr[userfen]<=15000){
+						                     echo "六级";
+						                }elseif($bqr[userfen]<=50000){
+						                     echo "七级";
+						                }elseif($bqr[userfen]<=100000){
+						                     echo "八级";
+						                }else{
+						                    echo "八级";
+						                }
+						            ?>
+                                </span></p>
+							</a>
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<script type="text/javascript">
+								$(function() {
+									var imgUserMsg="<?=$bqr[id]?>";
+
+									$.ajax({
+										url: '/guangchang/index.photo.php',
+										type: 'post',
+										dataType: 'text',
+										data: {'tit_id': imgUserMsg},
+									})
+											.done(function(msg) {
+
+												var UserImgInfo=msg;
+												var userSelect="userImg"+imgUserMsg;
+
+												// $('userSelect').children('chatu a').append('msg');
+												$('#'+userSelect).find('.chatu a').append(msg);
+											})
+											.fail(function() {
+												console.log("error");
+											});
+
+
+								});
+
+							</script>
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[title],30)?></h3></a>
+							<p><?=esub($bqr[smalltext],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>">
+
+									<!--<img src="<?=$bqr[titlepic]?>">-->
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+										<li class="bigsize"><a title="转载量" href="javascript:;" target="_self"><i class="iconfont">&#xe623;</i></a></li>
+										<li>34</li>
+										<li class="bigsize"><a title="加入收藏" href="[!--news.url--]e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"><i class="iconfont">&#xe647;</i></a></li>
+										<li></li>
+										<li><a title="点击分享" href="javascript:;" target="_self"><i class="iconfont">&#xe64b;</i></a></li>
+									</ol>
+									<div class="bdsharebuttonbox">
+										<a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+									</div>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------图片结束-------->
+					<?
+				    }elseif($bqr[classid]==13 && $bqr[open]==1){
+				    ?>
+					<!--------音乐开始-------->
+					<li class="clearfix">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+            	                        if($bqr[cked]==1){
+                	                    echo "<i class='iconfont'>&#xe657;</i>";
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>
+							</p>
+							<p><em>
+								<?
+									if($bqr[groupid]==1){
+										echo $bqr[putong_shenfen];//普通会员默认爱乐人
+									}elseif($bqr[groupid]==2){
+										echo $bqr[music_star];//音乐之星
+									}elseif($bqr[groupid]==3){
+										echo $bqr[teacher_type];//音乐老师
+									}elseif($bqr[groupid]==4){
+										echo "音乐教室";
+									}
+								?>
+							</em>
+								<span>
+						            <?php
+						                if($bqr[userfen]<=100){
+						                    echo "一级";
+						                }elseif($bqr[userfen]<=300){
+						                     echo "二级";
+						                }elseif($bqr[userfen]<=800){
+						                     echo "三级";
+						                }elseif($bqr[userfen]<=2000){
+						                     echo "四级";
+						                }elseif($bqr[userfen]<=5000){
+						                     echo "五级";
+						                }elseif($bqr[userfen]<=15000){
+						                     echo "六级";
+						                }elseif($bqr[userfen]<=50000){
+						                     echo "七级";
+						                }elseif($bqr[userfen]<=100000){
+						                     echo "八级";
+						                }else{
+						                    echo "八级";
+						                }
+						            ?>
+                                </span></p>
+
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[title],30)?></h3></a>
+							<p><?=esub($bqr[smalltext],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr[titlepic]?>">
+									<i class="iconfont">&#xe63e;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------音乐结束-------->
+					<?
+				    }elseif($bqr[classid]==73){
+				    ?>
+					<!--------报名开始-------->
+					<li class="clearfix">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+					                if($bqr[cked]==1){
+					                    echo "<i class='iconfont'>&#xe657;</i>";
+
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
+							<p><em>
+								<?
+									if($bqr[groupid]==1){
+										echo $bqr[putong_shenfen];//普通会员默认爱乐人
+									}elseif($bqr[groupid]==2){
+										echo $bqr[music_star];//音乐之星
+									}elseif($bqr[groupid]==3){
+										echo $bqr[teacher_type];//音乐老师
+									}elseif($bqr[groupid]==4){
+										echo "音乐教室";
+									}
+								?>
+							</em>
+								<span>
+						            <?php
+						                if($bqr[userfen]<=100){
+						                    echo "一级";
+						                }elseif($bqr[userfen]<=300){
+						                     echo "二级";
+						                }elseif($bqr[userfen]<=800){
+						                     echo "三级";
+						                }elseif($bqr[userfen]<=2000){
+						                     echo "四级";
+						                }elseif($bqr[userfen]<=5000){
+						                     echo "五级";
+						                }elseif($bqr[userfen]<=15000){
+						                     echo "六级";
+						                }elseif($bqr[userfen]<=50000){
+						                     echo "七级";
+						                }elseif($bqr[userfen]<=100000){
+						                     echo "八级";
+						                }else{
+						                    echo "八级";
+						                }
+						            ?>
+
+						        </span>
+							</p>
+
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<div class="toupiao"><a href="<?=$bqsr['titleurl']?>">我要投票</a></div>
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[hai_name],30)?>的报名</h3></a>
+							<p><?=esub($bqr[hai_petition],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>"><img src="<?=$bqr['hai_photo']?>" alt="">
+									<i class='iconfont'>&#xe63b;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------报名结束-------->
+					<?
+				    }elseif($bqr[classid]==104){
+				    ?>
+					<li class="clearfix">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+					                if($bqr[cked]==1){
+					                    echo "<i class='iconfont'>&#xe657;</i>";
+
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
+							<p><em>
+								<?
+									if($bqr[groupid]==1){
+										echo $bqr[putong_shenfen];//普通会员默认爱乐人
+									}elseif($bqr[groupid]==2){
+										echo $bqr[music_star];//音乐之星
+									}elseif($bqr[groupid]==3){
+										echo $bqr[teacher_type];//音乐老师
+									}elseif($bqr[groupid]==4){
+										echo "音乐教室";
+									}
+								?>
+							</em>
+								<span>
+						            <?php
+						                if($bqr[userfen]<=100){
+						                    echo "一级";
+						                }elseif($bqr[userfen]<=300){
+						                     echo "二级";
+						                }elseif($bqr[userfen]<=800){
+						                     echo "三级";
+						                }elseif($bqr[userfen]<=2000){
+						                     echo "四级";
+						                }elseif($bqr[userfen]<=5000){
+						                     echo "五级";
+						                }elseif($bqr[userfen]<=15000){
+						                     echo "六级";
+						                }elseif($bqr[userfen]<=50000){
+						                     echo "七级";
+						                }elseif($bqr[userfen]<=100000){
+						                     echo "八级";
+						                }else{
+						                    echo "八级";
+						                }
+						            ?>
+
+                                </span></p>
+
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<div class="toupiao"><a href="<?=$bqsr['titleurl']?>">我要投票</a></div>
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[hai_name],30)?>的报名</h3></a>
+							<p><?=esub($bqr[hai_petition],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>"><img src="<?=$bqr['hai_photo']?>" alt="">
+									<i class='iconfont'>&#xe63b;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<?
+    }
+	?>
+					[/e:loop]
+
+
+
+
+					[e:loop={'select * from phome_ecms_photo a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where isgood=3 order by a.newstime DESC limit 20',4,24,3}]
+					<?
+	if($bqr[classid]==11 && $bqr[open]==1){
+    ?>
+					<!--------视频开始-------->
+					<li class="clearfix dongtaiLi">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+            	if($bqr[cked]==1){
+                	echo "<i class='iconfont'>&#xe657;</i>";
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
+							<p><em>
+								<?
+					if($bqr[groupid]==1){
+						echo $bqr[putong_shenfen];//普通会员默认爱乐人
+					}elseif($bqr[groupid]==2){
+						echo $bqr[music_star];//音乐之星
+					}elseif($bqr[groupid]==3){
+						echo $bqr[teacher_type];//音乐老师
+					}elseif($bqr[groupid]==4){
+						echo "音乐教室";
+					}
+				?>
+							</em>
+								<span>
+            <?php
+            	if($bqr[userfen]<=100){
+                    echo "一级";
+                }elseif($bqr[userfen]<=300){
+                	 echo "二级";
+                }elseif($bqr[userfen]<=800){
+                	 echo "三级";
+                }elseif($bqr[userfen]<=2000){
+                	 echo "四级";
+                }elseif($bqr[userfen]<=5000){
+                	 echo "五级";
+                }elseif($bqr[userfen]<=15000){
+                	 echo "六级";
+                }elseif($bqr[userfen]<=50000){
+                	 echo "七级";
+                }elseif($bqr[userfen]<=100000){
+                	 echo "八级";
+                }else{
+                	echo "八级";
+                }
+            ?>
+
+        </span></p>
+
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[title],30)?></h3></a>
+							<p><?=esub($bqr[smalltext],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr[titlepic]?>">
+									<i class="iconfont">&#xe63b;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+
+					<!--------视频结束-------->
+					<?
+    }elseif($bqr[classid]==12 && $bqr[open]==1){
+    ?>
+					<!--------图片开始-------->
+					<li class="clearfix" id="userImg<?=$bqr[id]?>">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<input type="hidden" name="titid" class="tit_id" value="<?=$bqr[id]?>" />
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+            	if($bqr[cked]==1){
+                	echo "<i class='iconfont'>&#xe657;</i>";
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
+							<p><em>
+								<?
+					if($bqr[groupid]==1){
+						echo $bqr[putong_shenfen];//普通会员默认爱乐人
+					}elseif($bqr[groupid]==2){
+						echo $bqr[music_star];//音乐之星
+					}elseif($bqr[groupid]==3){
+						echo $bqr[teacher_type];//音乐老师
+					}elseif($bqr[groupid]==4){
+						echo "音乐教室";
+					}
+				?>
+							</em>
+								<span>
+            <?php
+            	if($bqr[userfen]<=100){
+                    echo "一级";
+                }elseif($bqr[userfen]<=300){
+                	 echo "二级";
+                }elseif($bqr[userfen]<=800){
+                	 echo "三级";
+                }elseif($bqr[userfen]<=2000){
+                	 echo "四级";
+                }elseif($bqr[userfen]<=5000){
+                	 echo "五级";
+                }elseif($bqr[userfen]<=15000){
+                	 echo "六级";
+                }elseif($bqr[userfen]<=50000){
+                	 echo "七级";
+                }elseif($bqr[userfen]<=100000){
+                	 echo "八级";
+                }else{
+                	echo "八级";
+                }
+            ?>
+
+        </span></p>
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<script type="text/javascript">
+								$(function() {
+									var imgUserMsg="<?=$bqr[id]?>";
+
+									$.ajax({
+										url: '/guangchang/index.photo.php',
+										type: 'post',
+										dataType: 'text',
+										data: {'tit_id': imgUserMsg},
+									})
+											.done(function(msg) {
+
+												var UserImgInfo=msg;
+												var userSelect="userImg"+imgUserMsg;
+
+												// $('userSelect').children('chatu a').append('msg');
+												$('#'+userSelect).find('.chatu a').append(msg);
+											})
+											.fail(function() {
+												console.log("error");
+											});
+
+
+								});
+
+							</script>
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[title],30)?></h3></a>
+							<p><?=esub($bqr[smalltext],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>">
+
+									<!--<img src="<?=$bqr[titlepic]?>">-->
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------图片结束-------->
+					<?
+    }elseif($bqr[classid]==13 && $bqr[open]==1){
+    ?>
+					<!--------音乐开始-------->
+					<li class="clearfix">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+            	if($bqr[cked]==1){
+                	echo "<i class='iconfont'>&#xe657;</i>";
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
+							<p><em>
+								<?
+					if($bqr[groupid]==1){
+						echo $bqr[putong_shenfen];//普通会员默认爱乐人
+					}elseif($bqr[groupid]==2){
+						echo $bqr[music_star];//音乐之星
+					}elseif($bqr[groupid]==3){
+						echo $bqr[teacher_type];//音乐老师
+					}elseif($bqr[groupid]==4){
+						echo "音乐教室";
+					}
+				?>
+							</em>
+								<span>
+            <?php
+            	if($bqr[userfen]<=100){
+                    echo "一级";
+                }elseif($bqr[userfen]<=300){
+                	 echo "二级";
+                }elseif($bqr[userfen]<=800){
+                	 echo "三级";
+                }elseif($bqr[userfen]<=2000){
+                	 echo "四级";
+                }elseif($bqr[userfen]<=5000){
+                	 echo "五级";
+                }elseif($bqr[userfen]<=15000){
+                	 echo "六级";
+                }elseif($bqr[userfen]<=50000){
+                	 echo "七级";
+                }elseif($bqr[userfen]<=100000){
+                	 echo "八级";
+                }else{
+                	echo "八级";
+                }
+            ?>
+
+        </span></p>
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[title],30)?></h3></a>
+							<p><?=esub($bqr[smalltext],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>">
+
+
+									<img src="<?=$bqr[titlepic]?>">
+									<i class="iconfont">&#xe63e;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------音乐结束-------->
+					<?
+    }elseif($bqr[classid]==73){
+    ?>
+					<!--------报名开始-------->
+					<li class="clearfix">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+            	if($bqr[cked]==1){
+                	echo "<i class='iconfont'>&#xe657;</i>";
+
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
+							<p>
+								<em>
+									<?
+					if($bqr[groupid]==1){
+						echo $bqr[putong_shenfen];//普通会员默认爱乐人
+					}elseif($bqr[groupid]==2){
+						echo $bqr[music_star];//音乐之星
+					}elseif($bqr[groupid]==3){
+						echo $bqr[teacher_type];//音乐老师
+					}elseif($bqr[groupid]==4){
+						echo "音乐教室";
+					}
+				?>
+								</em>
+								<span>
+            <?php
+            	if($bqr[userfen]<=100){
+                    echo "一级";
+                }elseif($bqr[userfen]<=300){
+                	 echo "二级";
+                }elseif($bqr[userfen]<=800){
+                	 echo "三级";
+                }elseif($bqr[userfen]<=2000){
+                	 echo "四级";
+                }elseif($bqr[userfen]<=5000){
+                	 echo "五级";
+                }elseif($bqr[userfen]<=15000){
+                	 echo "六级";
+                }elseif($bqr[userfen]<=50000){
+                	 echo "七级";
+                }elseif($bqr[userfen]<=100000){
+                	 echo "八级";
+                }else{
+                	echo "八级";
+                }
+            ?>
+
+        </span></p>
+
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<div class="toupiao"><a href="<?=$bqsr['titleurl']?>">我要投票</a></div>
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[hai_name],30)?>的报名</h3></a>
+							<p><?=esub($bqr[hai_petition],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>"><img src="<?=$bqr['hai_photo']?>" alt="">
+									<i class='iconfont'>&#xe63b;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------报名结束-------->
+					<?
+    }elseif($bqr[classid]==104){
+    ?>
+					<li class="clearfix">
+						<?=$userinfo?>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
+								<img src="<?=$bqr[userpic]?>">
+								<h3><?=$bqr[username]?>&nbsp;
+									<?
+            	if($bqr[cked]==1){
+                	echo "<i class='iconfont'>&#xe657;</i>";
+
+									}
+									?>
+								</h3>
+							</a>
+							<p class="fromCity">
+								<em><?=$bqr[address]?></em>
+								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
+							<p><em>
+								<?
+					if($bqr[groupid]==1){
+						echo $bqr[putong_shenfen];//普通会员默认爱乐人
+					}elseif($bqr[groupid]==2){
+						echo $bqr[music_star];//音乐之星
+					}elseif($bqr[groupid]==3){
+						echo $bqr[teacher_type];//音乐老师
+					}elseif($bqr[groupid]==4){
+						echo "音乐教室";
+					}
+				?>
+							</em>
+								<span>
+            <?php
+            	if($bqr[userfen]<=100){
+                    echo "一级";
+                }elseif($bqr[userfen]<=300){
+                	 echo "二级";
+                }elseif($bqr[userfen]<=800){
+                	 echo "三级";
+                }elseif($bqr[userfen]<=2000){
+                	 echo "四级";
+                }elseif($bqr[userfen]<=5000){
+                	 echo "五级";
+                }elseif($bqr[userfen]<=15000){
+                	 echo "六级";
+                }elseif($bqr[userfen]<=50000){
+                	 echo "七级";
+                }elseif($bqr[userfen]<=100000){
+                	 echo "八级";
+                }else{
+                	echo "八级";
+                }
+            ?>
+
+        </span></p>
+
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<div class="toupiao"><a href="<?=$bqsr['titleurl']?>">我要投票</a></div>
+							<a href="<?=$bqsr['titleurl']?>"><h3><?=esub($bqr[hai_name],30)?>的报名</h3></a>
+							<p><?=esub($bqr[hai_petition],100)?></p>
+							<div class="chatu">
+								<a href="<?=$bqsr['titleurl']?>"><img src="<?=$bqr['hai_photo']?>" alt="">
+									<i class='iconfont'>&#xe63b;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span><?=date('Y-m-d',$bqr[newstime])?></span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
+										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
+										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<?
+    }
+	?>
+					[/e:loop]
+
+
+				</ul>
+			</div>
+			<!-- 内容··························· -->
+			<!-- 点击图标jq分享··········································· -->
+			<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+			$(function() {
+				for (var i = 0; i < 5; i++) {
+					$('.timeRight ol').children('li').eq(10+11*i).click(function(event) {
+						$(this).parents('.timeRight').children('.bdsharebuttonbox').stop(true).slideDown();
+						event.stopPropagation();
+						$(window).click(function(event) {
+							$('.timeRight .bdsharebuttonbox').stop(true).slideUp();
+						});
+					});
+				};
+
+			});
+
+			</script>
+			<!-- 点击图标jq分享··········································· -->
+
+		</div>
+		<!-- 全站动态内容部分结束······························ -->
+		<!-- 全站动态排行榜···································· -->
+		<div class="rightRight qzdtBang">
+
+			<div class="recommond hotbang">
+				<!-- 控制热帖切换 点赞，评论的js·················································· -->
+
+				<!-- 控制热帖切换 点赞，评论的js·················································· -->
+				<dl class="dayTop">
+					<!-- 此处有修改······························································· -->
+					<dd><span class="on pai1">日排行</span><span class="out pai2" >周排行</span><span class="out pai3">月排行</span></dd>
+					<!-- 结束······························································· -->
+
+				</dl>
+				<!-- 点赞排行列表··········································································· -->
+				<dl class="weekTop">
+
+				</dl>
+				<!-- 点赞排行列表结束··········································································· -->
+				<!-- 评论排行列表··········································································· -->
+				<dl class="monthTop">
+
+				</dl>
+				<!-- 评论排行列表结束··········································································· -->
+			</div>
+
+			<div class="recommond">
+				<!-- 控制热帖切换 点赞，评论的js·················································· -->
+
+				<!-- 控制热帖切换 点赞，评论的js·················································· -->
+				<dl class="retieTop">
+					<!-- 此处有修改······························································· -->
+					<dd><span class="on tie1">热帖</span><span class="out tie2" >点赞</span><span class="out tie3">评论</span></dd>
+					<!-- 结束······························································· -->
+					[ecmsinfo]'11,12,13',6,20,0,1,57,0,'ismember=1'[/ecmsinfo]
+				</dl>
+				<!-- 点赞排行列表··········································································· -->
+				<dl class="dianzanTop">
+					[ecmsinfo]'11,12,13',6,20,0,2,64,0,'ismember=1'[/ecmsinfo]
+				</dl>
+				<!-- 点赞排行列表结束··········································································· -->
+				<!-- 评论排行列表··········································································· -->
+				<dl class="pinglunTop">
+					[ecmsinfo]'11,12,13',6,20,0,9,65,0,'ismember=1'[/ecmsinfo]
+				</dl>
+				<!-- 评论排行列表结束··········································································· -->
+			</div>
+
+
+			<div class="recommond">
+				<dl>
+					<dd>推荐</dd>
+					[ecmsinfo]'11,12,13',10,20,0,2,57,0,'ismember=1','','newstime DESC'[/ecmsinfo]
+				</dl>
+			</div>
+
+
+		</div>
+		<!-- 第一.全站动态排行榜结束······································· -->
+
+
+
+
+	</div>
+
+</div>
+<!-- 友情链接开始····························· -->
+<section class="friendly-link" style="background-color: #FEF9E9;">
+	<div class="friendly-link-head">
+		<h2>友情链接：</h2>
+	</div>
+	<div class="friendly-link-content">
+		[e:loop={'select lname,lurl,lpic from [!db.pre!]enewslink where checked=1 and classid=1 order by myorder,lid',20,24,0}]
+		<a href="<?=$bqr[lurl]?>" target="_blank" ><?=$bqr[lname]?></a>
+		[/e:loop]
+	</div>
+</section>
+<!-- 友情链接结束····························· -->
+<!-- 底部调用········ -->
+[!--temp.wei--]
+[!--temp.xuanfu--]
+</body>
+</html>
