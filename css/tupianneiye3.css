@@ -512,7 +512,7 @@ html,body{
 	}
 	.w3cFocusIn .bd li img{max-width:18.75rem!important;}
 	.w3cFocusIn .hd ul li img{
-		width: 40px;height: 30px;
+		width: 20px;height: 15px;
 	}
 	/*.w3cFocus .prev, .w3cFocus .next{display: none;}*/
 	.content-ad{height: auto!important;}

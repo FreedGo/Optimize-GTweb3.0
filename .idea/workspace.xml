@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="分离搜索时间,并且增加按回车开始搜索&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/组件化/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/tupianneiye3.css" afterPath="$PROJECT_DIR$/css/tupianneiye3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/发帖/qlistinfo.php" afterPath="$PROJECT_DIR$/php/发帖/qlistinfo.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +33,57 @@
     <favorites_list name="Optimize-GTweb3.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="qlistinfo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/发帖/qlistinfo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="455" column="56" selection-start-line="455" selection-start-column="56" selection-end-line="455" selection-end-column="56" />
+              <folding>
+                <element signature="e#23049#23118#0#HTML" expanded="true" />
+                <element signature="e#23378#23400#0#HTML" expanded="true" />
+                <marker date="1481508960496" expanded="true" signature="97:380" ph="select id,cl... ${$infotb}" />
+                <marker date="1481508960496" expanded="true" signature="580:586" ph=" " />
+                <marker date="1481508960496" expanded="true" signature="587:593" ph=" " />
+                <marker date="1481508960496" expanded="true" signature="625:631" ph=" " />
+                <marker date="1481508960496" expanded="true" signature="632:638" ph=" " />
+                <marker date="1481508960496" expanded="true" signature="695:701" ph=" " />
+                <marker date="1481508960496" expanded="true" signature="6672:6739" ph="select userp... $" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="496" selection-end-column="0" />
+              <folding>
+                <marker date="1476412277656" expanded="true" signature="2348:2363" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tupianneiye3.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/tupianneiye3.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="517" column="40" selection-start-line="517" selection-start-column="40" selection-end-line="517" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,10 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/shipinneiye2.css" />
-        <option value="$PROJECT_DIR$/css/xin_yinyueguangchang.css" />
-        <option value="$PROJECT_DIR$/css/xin_base.css" />
-        <option value="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.js" />
         <option value="$PROJECT_DIR$/php/ajax/guangchang/guangchang.ajax.php" />
         <option value="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
@@ -106,6 +148,10 @@
         <option value="$PROJECT_DIR$/php/teacher/index.h5.php" />
         <option value="$PROJECT_DIR$/css/luntanliebiao.css" />
         <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp51392/home/hao/e/template/incfile/haixuan/index.php" />
+        <option value="$PROJECT_DIR$/php/发帖/qlistinfo.php" />
+        <option value="$PROJECT_DIR$/css/tupianneiye3.css" />
+        <option value="$PROJECT_DIR$/组件化/base.css" />
       </list>
     </option>
   </component>
@@ -173,8 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,6 +239,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -220,15 +266,15 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\Optimize-GTweb3.0\php\pinpai" />
       <recent name="D:\Git\Optimize-GTweb3.0\html" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\琴行商城.data.html.shop" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\开发部琴行注册标准" />
       <recent name="D:\Git\Optimize-GTweb3.0\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -383,14 +429,8 @@
       <workItem from="1481015133511" duration="1553000" />
       <workItem from="1481069597089" duration="27520000" />
       <workItem from="1481156613776" duration="14941000" />
-      <workItem from="1481242411604" duration="13823000" />
-    </task>
-    <task id="LOCAL-00074" summary="月视图显示为学生姓名,其他视图把学生姓名放在最前面">
-      <created>1479277745449</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1479277745449</updated>
+      <workItem from="1481242411604" duration="14474000" />
+      <workItem from="1481502500606" duration="7828000" />
     </task>
     <task id="LOCAL-00075" summary="修改ui">
       <created>1479288597888</created>
@@ -728,11 +768,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481268194368</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="分离搜索时间,并且增加按回车开始搜索&#10;">
+      <created>1481274926357</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1481274926357</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="577976000" />
+    <option name="totallyTimeSpent" value="586455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,19 +792,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377399" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17537314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3152174" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5945652" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42282608" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1597826" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -768,12 +812,15 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -868,12 +915,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai04.html" />
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai05.html" />
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai06.html" />
-    <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai07.html" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09125/home/hao/e/extend/lgyPl/api.js" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29273/home/hao/e/extend/lgyPl/assets/style.css" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31301/home/hao/e/extend/UE/php/imageUp.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31670/home/hao/e/extend/UE/php/imageManager.php" />
     <entry file="file://$PROJECT_DIR$/html/bbs/luntan_bankuai08.html" />
@@ -1010,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,13 +1068,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php" />
     <entry file="file://$PROJECT_DIR$/html/琴行教室.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1042,88 +1076,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php" />
     <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="1044" column="28" selection-start-line="1044" selection-start-column="28" selection-end-line="1044" selection-end-column="28" />
-          <folding>
-            <element signature="e#1450#1458#1" expanded="true" />
-            <element signature="e#1597#1605#1" expanded="true" />
-            <element signature="e#1755#1763#1" expanded="true" />
-            <element signature="e#1929#1937#1" expanded="true" />
-            <element signature="e#2935#2943#1" expanded="true" />
-            <element signature="e#3037#3043#0" expanded="true" />
-            <element signature="e#3043#3049#0" expanded="true" />
-            <element signature="n#h3#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#3805#3811#0" expanded="true" />
-            <element signature="e#3926#3934#1" expanded="true" />
-            <element signature="n#em#0;n#p#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#p#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#5767#5775#1" expanded="true" />
-            <element signature="e#6045#6053#1" expanded="true" />
-            <element signature="e#6414#6422#1" expanded="true" />
-            <element signature="e#6651#6659#1" expanded="true" />
-            <element signature="e#7420#7426#0" expanded="true" />
-            <element signature="e#7530#7538#1" expanded="true" />
-            <element signature="e#10253#10261#1" expanded="true" />
-            <element signature="e#10622#10630#1" expanded="true" />
-            <element signature="e#10859#10867#1" expanded="true" />
-            <element signature="e#11388#11394#0" expanded="true" />
-            <element signature="e#11526#11534#1" expanded="true" />
-            <element signature="e#13382#13390#1" expanded="true" />
-            <element signature="e#13660#13668#1" expanded="true" />
-            <element signature="e#14029#14037#1" expanded="true" />
-            <element signature="e#14266#14274#1" expanded="true" />
-            <element signature="e#14909#14915#0" expanded="true" />
-            <element signature="e#15027#15035#1" expanded="true" />
-            <element signature="e#16959#16967#1" expanded="true" />
-            <element signature="e#17237#17245#1" expanded="true" />
-            <element signature="e#17606#17614#1" expanded="true" />
-            <element signature="e#17843#17851#1" expanded="true" />
-            <element signature="e#18458#18464#0" expanded="true" />
-            <element signature="e#18576#18584#1" expanded="true" />
-            <element signature="e#20519#20527#1" expanded="true" />
-            <element signature="e#20797#20805#1" expanded="true" />
-            <element signature="e#21166#21174#1" expanded="true" />
-            <element signature="e#21403#21411#1" expanded="true" />
-            <element signature="e#22296#22302#0" expanded="true" />
-            <element signature="e#22411#22419#1" expanded="true" />
-            <element signature="e#24249#24257#1" expanded="true" />
-            <element signature="e#24527#24535#1" expanded="true" />
-            <element signature="e#24896#24904#1" expanded="true" />
-            <element signature="e#25133#25141#1" expanded="true" />
-            <element signature="e#25906#25912#0" expanded="true" />
-            <element signature="e#26016#26024#1" expanded="true" />
-            <element signature="e#28756#28764#1" expanded="true" />
-            <element signature="e#29125#29133#1" expanded="true" />
-            <element signature="e#29362#29370#1" expanded="true" />
-            <element signature="e#30024#30030#0" expanded="true" />
-            <element signature="e#30134#30142#1" expanded="true" />
-            <element signature="e#31952#31960#1" expanded="true" />
-            <element signature="e#32230#32238#1" expanded="true" />
-            <element signature="e#32599#32607#1" expanded="true" />
-            <element signature="e#32836#32844#1" expanded="true" />
-            <element signature="e#33479#33485#0" expanded="true" />
-            <element signature="e#33589#33597#1" expanded="true" />
-            <element signature="e#35513#35521#1" expanded="true" />
-            <element signature="e#35791#35799#1" expanded="true" />
-            <element signature="e#36160#36168#1" expanded="true" />
-            <element signature="e#36397#36405#1" expanded="true" />
-            <element signature="e#37012#37018#0" expanded="true" />
-            <element signature="e#37122#37130#1" expanded="true" />
-            <element signature="e#39012#39020#1" expanded="true" />
-            <element signature="e#39290#39298#1" expanded="true" />
-            <element signature="e#39659#39667#1" expanded="true" />
-            <element signature="e#39896#39904#1" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1131,13 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-389">
           <caret line="198" column="52" selection-start-line="198" selection-start-column="52" selection-end-line="198" selection-end-column="52" />
-          <folding>
-            <element signature="e#3085#5292#0#HTML" expanded="false" />
-            <marker date="1479790880289" expanded="true" signature="146:152" ph=" " />
-            <marker date="1479790880289" expanded="true" signature="153:159" ph=" " />
-            <marker date="1479790880289" expanded="true" signature="182:188" ph=" " />
-            <marker date="1479790880289" expanded="true" signature="189:195" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1155,24 +1104,6 @@
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
             <marker date="1481182833309" expanded="true" signature="216:404" ph="select * fro... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
-          <folding>
-            <element signature="e#47#594#0" expanded="false" />
-            <element signature="e#823#1643#0" expanded="false" />
-            <element signature="e#1715#3178#0" expanded="false" />
-            <element signature="e#6042#6072#0" expanded="false" />
-            <element signature="e#6602#7281#0" expanded="false" />
-            <element signature="e#7704#8397#0" expanded="false" />
-            <marker date="1481274694526" expanded="true" signature="4541:4588" ph="..." />
-            <marker date="1481274694526" expanded="false" signature="5958:7309" ph="{...}" />
-            <marker date="1481274694526" expanded="true" signature="6364:6411" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1190,8 +1121,6 @@
         <state relative-caret-position="471">
           <caret line="168" column="40" selection-start-line="168" selection-start-column="40" selection-end-line="168" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1481274694526" expanded="true" signature="356:580" ph="select a.cke... $" />
             <marker date="1481274694526" expanded="true" signature="607:656" ph="select id fr... $" />
           </folding>
@@ -1202,10 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="222" selection-end-column="133" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,6 +1140,108 @@
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding>
             <marker date="1481187988704" expanded="true" signature="218:406" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp51392/home/hao/e/template/incfile/haixuan/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="310" column="86" selection-start-line="310" selection-start-column="86" selection-end-line="310" selection-end-column="86" />
+          <folding>
+            <element signature="e#7388#7410#0#HTML" expanded="true" />
+            <element signature="e#7330#13336#0#HTML" expanded="false" />
+            <element signature="e#13467#13489#0#HTML" expanded="true" />
+            <element signature="e#13415#24678#0#HTML" expanded="false" />
+            <element signature="e#24743#27225#0#HTML" expanded="false" />
+            <element signature="e#24823#27193#0#HTML" expanded="false" />
+            <element signature="e#27329#27547#0#HTML" expanded="false" />
+            <element signature="e#27566#28109#0#HTML" expanded="false" />
+            <element signature="e#28151#29092#0#HTML" expanded="false" />
+            <element signature="e#29467#41059#0#HTML" expanded="false" />
+            <element signature="e#41096#43607#0#HTML" expanded="false" />
+            <element signature="e#41244#43050#0#HTML" expanded="false" />
+            <element signature="e#43071#43477#0#HTML" expanded="false" />
+            <element signature="e#43679#43879#0#HTML" expanded="false" />
+            <element signature="e#43983#44466#0#HTML" expanded="false" />
+            <element signature="e#44051#44421#0#PHP" expanded="false" />
+            <element signature="e#44518#45480#0#HTML" expanded="false" />
+            <element signature="e#45689#51702#0#HTML" expanded="false" />
+            <marker date="1481507759865" expanded="true" signature="738:805" ph="select * fro... phome_ecms_shop" />
+            <marker date="1481507759865" expanded="true" signature="12805:12825" ph="..." />
+            <marker date="1481507759865" expanded="true" signature="12963:12983" ph="..." />
+            <marker date="1481507759865" expanded="true" signature="27808:27828" ph="..." />
+            <marker date="1481507759865" expanded="true" signature="27966:27986" ph="..." />
+            <marker date="1481507759865" expanded="true" signature="44136:44156" ph="..." />
+            <marker date="1481507759865" expanded="true" signature="44323:44343" ph="..." />
+            <marker date="1481507759865" expanded="true" signature="51129:51149" ph="..." />
+            <marker date="1481507759865" expanded="true" signature="51324:51344" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58723/home/hao/yuepu/index.liebiao.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="11" column="80" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <marker date="1475992862000" expanded="true" signature="322:404" ph="select * fro... $" />
+            <marker date="1475992862000" expanded="true" signature="865:948" ph="select * fro... $" />
+            <marker date="1475992862000" expanded="true" signature="1408:1490" ph="select * fro... $" />
+            <marker date="1475992862000" expanded="true" signature="1946:2029" ph="select * fro... $" />
+            <marker date="1475992862000" expanded="true" signature="2485:2568" ph="select * fro... $" />
+            <marker date="1475992862000" expanded="true" signature="3023:3106" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="496" selection-end-column="0" />
+          <folding>
+            <marker date="1476412277656" expanded="true" signature="2348:2363" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tupianneiye3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="517" column="40" selection-start-line="517" selection-start-column="40" selection-end-line="517" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/组件化/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/发帖/qlistinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="455" column="56" selection-start-line="455" selection-start-column="56" selection-end-line="455" selection-end-column="56" />
+          <folding>
+            <element signature="e#23049#23118#0#HTML" expanded="true" />
+            <element signature="e#23378#23400#0#HTML" expanded="true" />
+            <marker date="1481508960496" expanded="true" signature="97:380" ph="select id,cl... ${$infotb}" />
+            <marker date="1481508960496" expanded="true" signature="580:586" ph=" " />
+            <marker date="1481508960496" expanded="true" signature="587:593" ph=" " />
+            <marker date="1481508960496" expanded="true" signature="625:631" ph=" " />
+            <marker date="1481508960496" expanded="true" signature="632:638" ph=" " />
+            <marker date="1481508960496" expanded="true" signature="695:701" ph=" " />
+            <marker date="1481508960496" expanded="true" signature="6672:6739" ph="select userp... $" />
           </folding>
         </state>
       </provider>

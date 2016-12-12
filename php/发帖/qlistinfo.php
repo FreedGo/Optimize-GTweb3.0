@@ -472,10 +472,65 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 					<span class="music-book-auther-tle">乐曲作者：</span>
 					<input type="text" name="zuozhe" class="music-book-auther-con" value=""  required="required"/>
 				</div>
-				<div class="shangchuan clearfix">
+	                <div class="shangchuan clearfix">
+		                <span>上传乐谱封面：</span>
+		                <style>
+			                #upload_ue3{display: none}
+		                </style>
+		                <script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.config.js"></script>
+		                <script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.all.js"></script>
+		                <script id="upload_ue3" name="content" type="text/plain"></script>
+		                <!-- 储存图片路径 -->
+		                <input type="hidden" id="picture3" name="titlepic" value="">
+
+		                <!-- 上传按钮 -->
+		                <a  class="datepicker lookBtn2" style="float:left;margin-left: 20px;cursor: pointer;" onclick="upImage3()">上传封面</a>
+		                <!-- 显示预览图 -->
+		                <div class="imgPre3" style="float: left;width:688px;border-radius: 3px;overflow: hidden; ">
+			                <!--<img class="music-book-view" id="preview2" src="" alt="">-->
+			                <!--<input type="hidden" class="music-book-pic" name="music-book-pic" value="" />-->
+		                </div>
+		                <div class="img-src-warp2" style="display: none;">
+
+		                </div>
+		                <!-- 百度插件参数 -->
+		                <script type="text/javascript">
+			                var _editorr3 = UE.getEditor('upload_ue3');
+			                _editorr3.ready(function () {
+				                //设置编辑器不可用
+				                //_editor.setDisabled();  //这个地方要注意 一定要屏蔽
+				                //隐藏编辑器，因为不会用到这个编辑器实例，所以要隐藏
+				                _editorr3.hide();
+
+				                //侦听图片上传
+				                _editorr3.addListener('beforeinsertimage', function (t, arg) {
+					                //将地址赋值给相应的input,只去第一张图片的路径
+					                var imgs,imgUrlAll = '';
+					                for(var a in arg){
+						                imgs +=arg[a].src+',';
+						                console.log(arg[a].src);
+						                $('.imgPre3').empty().append('<img class="music-book-view" id="preview2" src="'+arg[a].src+'">');
+						                // $('.img-src-warp').append('<input type="hidden" class="music-book-pic" name="music-book-pic" value="'+arg[a].src+'" />');
+						                imgUrlAll = arg[a].src;
+					                }
+					                $('#picture3').val(imgUrlAll);
+//		                         $("#picture2").attr("value", arg[0].src);
+//		                         console.log(arg[0].src);
+					                //图片预览
+//		                         $("#preview2").attr("src", arg[0].src);
+				                })
+			                });
+			                //弹出图片上传的对话框
+			                function upImage3() {
+				                var myImage = _editorr3.getDialog("insertimage");
+//		                     var myImage = _editorr.getDialog("simpleupload");
+				                myImage.open();
+			                }
+		                </script>
+	                </div>
+
+	                <div class="shangchuan clearfix">
 					<span>上传乐谱图片：</span>
-					<script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.config.js"></script>
-					<script type="text/javascript" src="/e/data/ecmseditor/ueditor/ueditor.all.js"></script>
 					<script id="upload_ue2" name="content" type="text/plain"></script>
 					<!-- 储存图片路径 -->
 				    <input type="hidden" id="picture2" name="photo" value="">
@@ -523,22 +578,6 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 //		                     var myImage = _editorr.getDialog("simpleupload");
 		                     myImage.open();
 		                }
-					</script>
-					<script type="text/javascript">
-						//删除图片
-		                $(function(){
-	                		// $('.imgPre').on('click','.music-book-view',function(){
-	                		// 	var valueList = $(this).index();
-	                		// 	$(this).remove();
-	                		// 	$('.music-book-pic').eq(valueList).remove();
-	                		// })
-
-	                		$('.select-music-type-con').change(function(){
-	                			var musicTypeValue = $(this).val();
-//	                			console.log(musicTypeValue);
-	                			$('.music-type').val(musicTypeValue);
-	                		})
-		                })
 					</script>
 				</div>
 				  	<div class="wenzi">
