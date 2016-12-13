@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="琴行教室的 认证套餐 弹框修改&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" />
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="新的h5页面开始制作&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base.css" afterPath="$PROJECT_DIR$/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" afterPath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,51 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="qlistinfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-              <folding>
-                <marker date="1481601616031" expanded="true" signature="102:254" ph="select * fro... phome_ecms_shop" />
-                <marker date="1481601616031" expanded="true" signature="470:476" ph=" " />
-                <marker date="1481601616031" expanded="true" signature="477:483" ph=" " />
-                <marker date="1481601616031" expanded="true" signature="515:521" ph=" " />
-                <marker date="1481601616031" expanded="true" signature="522:528" ph=" " />
-                <marker date="1481601616031" expanded="true" signature="589:595" ph=" " />
-                <marker date="1481601616031" expanded="true" signature="1410:1515" ph="select * fro... phome_zjk_pinpai_qianyue" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="video.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/组件化/GTweb-h5/video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="64" />
-              <folding>
-                <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pay.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/pay.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+            <state relative-caret-position="353">
+              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -484,14 +443,7 @@
       <workItem from="1481156613776" duration="14941000" />
       <workItem from="1481242411604" duration="14474000" />
       <workItem from="1481502500606" duration="12250000" />
-      <workItem from="1481588576387" duration="13660000" />
-    </task>
-    <task id="LOCAL-00081" summary="音乐之星换为网络海选完成">
-      <created>1479888722834</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1479888722834</updated>
+      <workItem from="1481588576387" duration="13927000" />
     </task>
     <task id="LOCAL-00082" summary="修改了乐谱H5页面的几个小问题">
       <created>1479888771794</created>
@@ -829,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481619658647</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="新的h5页面开始制作&#10;">
+      <created>1481621662102</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1481621662102</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604537000" />
+    <option name="totallyTimeSpent" value="604804000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -852,7 +811,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48043478" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35869566" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
@@ -935,7 +894,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="音乐老师和琴行教室的前台主页,增加了 二维码,以及其他部分修改" />
     <MESSAGE value="网络海选的栏目还原回去了" />
     <MESSAGE value="投票描述改为了10分钟一次" />
     <MESSAGE value="直播中心修改顺序为历史回顾,直播预告,正在直播" />
@@ -960,7 +918,8 @@
     <MESSAGE value="修复名字过长会换行的bug&#10;" />
     <MESSAGE value="音乐广场关注弹框ui改善" />
     <MESSAGE value="琴行教室的 认证套餐 弹框修改&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="琴行教室的 认证套餐 弹框修改&#10;" />
+    <MESSAGE value="新的h5页面开始制作&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="新的h5页面开始制作&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1359,6 +1318,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/组件化/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/pay.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
@@ -1367,11 +1334,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/组件化/base.css">
+    <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="132">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="64" />
+          <folding>
+            <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1391,20 +1360,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="64" />
-          <folding>
-            <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/组件化/GTweb-h5/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="353">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
           <folding />
         </state>
       </provider>
