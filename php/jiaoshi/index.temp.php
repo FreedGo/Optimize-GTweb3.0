@@ -88,12 +88,6 @@ if ($dangid != 0) {
 ?>
     <script type="text/javascript">
         $(function () {
-            // 教室多图展示
-            jQuery(".focusBox").hover(function () {
-                jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
-            }, function () {
-                jQuery(this).find(".prev,.next").fadeOut()
-            });
             /*SuperSlide图片切换*/
             jQuery(".focusBox").slide({
                 mainCell: ".pic",

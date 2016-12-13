@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/haixuan.css" afterPath="$PROJECT_DIR$/css/haixuan.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" afterPath="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/发帖/qlistinfo.php" afterPath="$PROJECT_DIR$/php/发帖/qlistinfo.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -487,14 +486,7 @@
       <workItem from="1481156613776" duration="14941000" />
       <workItem from="1481242411604" duration="14474000" />
       <workItem from="1481502500606" duration="12250000" />
-      <workItem from="1481588576387" duration="2588000" />
-    </task>
-    <task id="LOCAL-00076" summary="php返回值修改为json,价格储存在input里面,然后根据选择的option的index,来显示不同的价格">
-      <created>1479288693973</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1479288693974</updated>
+      <workItem from="1481588576387" duration="2630000" />
     </task>
     <task id="LOCAL-00077" summary="新的页面">
       <created>1479374992685</created>
@@ -832,11 +824,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481519202516</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="乐谱发帖增加封面图及bug修改">
+      <created>1481591202395</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1481591202396</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="593465000" />
+    <option name="totallyTimeSpent" value="593507000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -938,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="广场帖子下方广告重新调整适配h5" />
     <MESSAGE value="发帖文件备份" />
     <MESSAGE value="修改广场,所有头像旁边加了关注按钮" />
     <MESSAGE value="备份" />
@@ -963,7 +961,8 @@
     <MESSAGE value="尝试修改ajax的php端文件,品牌的&#10;" />
     <MESSAGE value="分离搜索时间,并且增加按回车开始搜索&#10;" />
     <MESSAGE value="修改&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改&#10;&#10;" />
+    <MESSAGE value="乐谱发帖增加封面图及bug修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="乐谱发帖增加封面图及bug修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
