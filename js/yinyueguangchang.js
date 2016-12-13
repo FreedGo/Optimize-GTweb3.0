@@ -231,14 +231,14 @@ function GuanZhu(userid){
 		},
 		function(data,status){
 			switch(data){
-				case"DelSuccess":gtAleryt("取消关注成功!");
+				case"DelSuccess":gtAleryt("<img src='/yecha/error.png'><span style='color: pink'>取消关注成功!</span>");
 					$('.guanzhu'+userid).html('关注');
 					break;
 				case"unknowerror":gtAleryt("发生未知错误,请联系管理员!");
 					break;
 				case"nofollowme":gtAleryt("不能关注自己哦!");
 					break;
-				case"AddSuccess":gtAleryt("关注成功!");
+				case"AddSuccess":gtAleryt("<img src='/yecha/success.png'>关注成功!");
 					$('.guanzhu'+userid).html('已关注');
 					break;
 				case"Pleaselogin":$('#loginBtn').trigger('click');

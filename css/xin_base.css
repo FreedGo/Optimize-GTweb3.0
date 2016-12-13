@@ -937,7 +937,7 @@ div.footBian{
 
 /*2016-12-1 新增提醒模块*/
 .common-msg-warp{
-	width: 120px;
+	width: 144px;
 	background-color: #f7f7f7;
 	border-radius: 5px;
 	border:#ccc solid 1px;
@@ -953,10 +953,11 @@ div.footBian{
 	font:14px/24px 微软雅黑;
 	background-color: #eee;
 	text-align: center;
+	display: none;
 }
 .common-msg-con{
-	padding-top:10px;
-	font:bold 18px/24px 黑体;
+	/*padding-top:10px;*/
+	font: 18px/24px 黑体;
 	text-align: center;
 	color: #039831;
 }
