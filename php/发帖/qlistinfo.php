@@ -451,9 +451,9 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 						<option value="38">钢琴谱</option>
                         <option value="39">吉他谱</option>
 						<option value="105">提琴谱</option>
-						<option value="106">管乐谱</option>
-						<option value="107">民乐谱</option>
-						<option value="108">综合谱</option>
+<!--						<option value="106">管乐谱</option>-->
+<!--						<option value="107">民乐谱</option>-->
+<!--						<option value="108">综合谱</option>-->
 					</select>
 				</div>
 				<div class="select-music-style music-book-list">
@@ -602,21 +602,29 @@ require(ECMS_PATH.'e/template/incfile/header.php');
 								return false;
 							};
 						});
+						//动态发乐谱时选择乐谱类型的classid
+						$('.select-music-type-con').change(function () {
+							console.log($('.select-music-type-con option:selected').val());
+							$('.music-type').val($('.select-music-type-con option:selected').val());
+						})
 					});
 				</script>
 			</div>
 			<!-- 乐谱发帖结束·················································· -->
 			<script type="text/javascript">
-				// 点击视频音乐图片切换发帖面板
-			var iVideo;
-			$('.fatie1:gt(0)').hide();
-			console.log('nihao');
-			$('.fenfa li').click(function(event) {
-				iVideo=$(this).index();
-				$(this).addClass('on').siblings('li').removeClass('on').css('opacity', 1);
-				$('.fatie1').eq(iVideo).stop(true).fadeIn('fast').siblings('.fatie1').hide();
-			});
-			// 点击视频音乐图片切换发帖面板
+
+				$(function(){
+					// 点击视频音乐图片切换发帖面板
+					var iVideo;
+					$('.fatie1:gt(0)').hide();
+					$('.fenfa li').click(function(event) {
+						iVideo=$(this).index();
+						$(this).addClass('on').siblings('li').removeClass('on').css('opacity', 1);
+						$('.fatie1').eq(iVideo).stop(true).fadeIn('fast').siblings('.fatie1').hide();
+					});
+
+
+				})
 			</script>
 
 	<!--发帖框结束-->
