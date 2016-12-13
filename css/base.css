@@ -37,7 +37,7 @@ body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, d
 	border: none;
 }
 body {
-	font: 12px Microsoft YaHei, '宋体' Tahoma, Arial, sans-serif;
+	font: 12px Microsoft YaHei, '宋体', Tahoma, Arial, sans-serif;
 	color: #555;
 	background-color: #fff;
 }

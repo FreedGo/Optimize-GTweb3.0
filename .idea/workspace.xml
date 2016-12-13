@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="教室的图集切换按钮透明效果去掉&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/alllistinfo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/different-qinhang-h5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/doclistinfo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/kecheng.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/listinfo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php" />
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="琴行教室的 认证套餐 弹框修改&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pay.css" afterPath="$PROJECT_DIR$/css/pay.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin_base.css" afterPath="$PROJECT_DIR$/css/xin_base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base.css" afterPath="$PROJECT_DIR$/css/base.css" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="qlistinfo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qlistinfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="491">
@@ -55,6 +46,28 @@
                 <marker date="1481601616031" expanded="true" signature="522:528" ph=" " />
                 <marker date="1481601616031" expanded="true" signature="589:595" ph=" " />
                 <marker date="1481601616031" expanded="true" signature="1410:1515" ph="select * fro... phome_zjk_pinpai_qianyue" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/组件化/GTweb-h5/video.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="64" />
+              <folding>
+                <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,8 +89,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -95,8 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/法兰山德公司介绍.html" />
-        <option value="$PROJECT_DIR$/html/法兰山德公司介绍2.html" />
         <option value="$PROJECT_DIR$/html/网络海选.html" />
         <option value="$PROJECT_DIR$/html/bbs/luntan_bankuai01.html" />
         <option value="$PROJECT_DIR$/html/bbs/luntan_bankuai02.html" />
@@ -146,6 +157,8 @@
         <option value="$PROJECT_DIR$/css/xin_base.css" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.js" />
+        <option value="$PROJECT_DIR$/css/base.css" />
+        <option value="$PROJECT_DIR$/组件化/GTweb-h5/video.html" />
       </list>
     </option>
   </component>
@@ -242,7 +255,39 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="组件化" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="组件化" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GTweb-h5" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,20 +330,20 @@
       <recent name="D:\Git\Optimize-GTweb3.0\docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.video.html">
     <configuration default="false" name="好琴声业务统计页面1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/html/好琴声业务统计页面1.html">
       <method />
     </configuration>
     <configuration default="false" name="琴行注册标准.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/html/琴行注册标准.html">
       <method />
     </configuration>
-    <configuration default="false" name="vipRegisterStandard.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/html/vipRegisterStandard.php">
-      <method />
-    </configuration>
     <configuration default="false" name="qh-list.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/php/开发部琴行注册标准/qh-list.php">
       <method />
     </configuration>
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/php/空间H5-老师/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="video.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/组件化/GTweb-h5/video.html">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -350,17 +395,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.好琴声业务统计页面1.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.琴行注册标准.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.vipRegisterStandard.php" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.qh-list.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.qh-list.php" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.qh-list.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.琴行注册标准.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.好琴声业务统计页面1.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.vipRegisterStandard.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.qh-list.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.琴行注册标准.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.好琴声业务统计页面1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -439,21 +484,7 @@
       <workItem from="1481156613776" duration="14941000" />
       <workItem from="1481242411604" duration="14474000" />
       <workItem from="1481502500606" duration="12250000" />
-      <workItem from="1481588576387" duration="11556000" />
-    </task>
-    <task id="LOCAL-00079" summary="琴行注册标准页面">
-      <created>1479796771269</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1479796771270</updated>
-    </task>
-    <task id="LOCAL-00080" summary="修改">
-      <created>1479796807972</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1479796807972</updated>
+      <workItem from="1481588576387" duration="13660000" />
     </task>
     <task id="LOCAL-00081" summary="音乐之星换为网络海选完成">
       <created>1479888722834</created>
@@ -784,11 +815,25 @@
       <option name="project" value="LOCAL" />
       <updated>1481619526690</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="音乐广场关注弹框ui改善">
+      <created>1481619626240</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1481619626240</updated>
+    </task>
+    <task id="LOCAL-00129" summary="琴行教室的 认证套餐 弹框修改&#10;">
+      <created>1481619658647</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1481619658647</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="602433000" />
+    <option name="totallyTimeSpent" value="604537000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,10 +852,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3206522" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48043478" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -821,14 +868,12 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -890,8 +935,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="备份" />
-    <MESSAGE value="音乐广场头像旁边增加关注,点击可以直接关注,另外精简部分代码" />
     <MESSAGE value="音乐老师和琴行教室的前台主页,增加了 二维码,以及其他部分修改" />
     <MESSAGE value="网络海选的栏目还原回去了" />
     <MESSAGE value="投票描述改为了10分钟一次" />
@@ -915,7 +958,9 @@
     <MESSAGE value="乐谱发帖增加封面图及bug修改" />
     <MESSAGE value="教室的图集切换按钮透明效果去掉&#10;" />
     <MESSAGE value="修复名字过长会换行的bug&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复名字过长会换行的bug&#10;" />
+    <MESSAGE value="音乐广场关注弹框ui改善" />
+    <MESSAGE value="琴行教室的 认证套餐 弹框修改&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="琴行教室的 认证套餐 弹框修改&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -924,13 +969,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/直播中心.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/xin_music-book.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1204,20 +1242,6 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp51392/home/hao/e/template/incfile/haixuan/index.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58723/home/hao/yuepu/index.liebiao.ajax.php" />
-    <entry file="file://$PROJECT_DIR$/组件化/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="496" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18568/home/hao/e/data/html/qinhang/qianyue/qlistinfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1294,14 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/pay.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/组件化/yecha/1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1343,6 +1359,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/pay.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/组件化/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -1356,6 +1388,24 @@
             <marker date="1481601616031" expanded="true" signature="589:595" ph=" " />
             <marker date="1481601616031" expanded="true" signature="1410:1515" ph="select * fro... phome_zjk_pinpai_qianyue" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="64" />
+          <folding>
+            <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/组件化/GTweb-h5/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
