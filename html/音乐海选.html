@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<base target=_blank>
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/haixuan.css">
+	<script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="[!--news.url--]js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript">var actid;</script>
+	<script type="text/javascript" src="[!--news.url--]js/xin_haixuan.js" ></script>
+	<script language="javascript" src="/js/language.js"></script>
+</head>
+<body>
+<!-- ······························头部结构····································· -->
+[!--temp.tou--]
+
+<!-- ····························中间结构·································· -->
+<div class="bodyWrap clearfix">
+	<div class="leftWrap">
+		<ul>
+			<li class="mingrenPoint current">
+				<a href="javascript:;" target="_self" >
+					<i class="iconfont">&#xe64a;</i>
+					<h2>赛事</h2>
+				</a>
+			</li>
+			<li class="zhixingPoint">
+				<a href="javascript:;" target="_self">
+					<i class="iconfont">&#xe633;</i>
+					<h2>历史回顾</h2>
+				</a>
+			</li>
+		</ul>
+		<ol>
+			<li style="width: 117px;height: 110px;"><a href="http://www.franzsandner.com/"><img style="width: 100%;height: auto;" src="/images/adLeft.jpg" alt=""></a></li>
+		</ol>
+	</div>
+	<!-- 左边二级导航列结束················································ -->
+	<!-- 中间内容部分······················································ -->
+	<div class="rightWrap clearfix">
+		<!-- 第一.全站动态部分············································· -->
+		<div class="rightMiddle qzdtList">
+			<!-- 搜索框························· -->
+
+			<!-- 搜索框结束····················· -->
+
+
+
+			<!-- 内容··························· -->
+			<div class="qzdtContent">
+
+				<!-- 第一，当前海选部分····························· -->
+
+				<div class="yinyuemingren">
+					<!-- 分类行····································· -->
+					<div class="fenlei">
+						<ul class="clearfix fenleiFuck">
+							<li class="current"><a href="javascript:;" target="_self">全部赛事</a><span></span></li>
+							<li ><a href="javascript:;" target="_self" >中华好琴声</a><span></span></li>
+							<li ><a href="javascript:;" target="_self" >音乐精灵</a><span></span></li>
+							<li ><a href="javascript:;" target="_self" >好琴师</a><span></span></li>
+							<li ><a href="javascript:;" target="_self" >人气琴行</a><span></span></li>
+							<li ><a href="javascript:;" target="_self" >乐器品牌</a><span></span></li>
+							<!-- 精灵,琴师,琴行,品牌,暂时隐藏,2016-11-17  撤销隐藏12-2 -->
+						</ul>
+					</div>
+					<!-- 分类行结束································· -->
+					<!-- 排序行····································· -->
+
+					<!-- 列表内容区域······························· -->
+					<div class="liebiao">
+						<!-- 海选全部 -->
+						<ul class="liebiaoFuck liebiaoShow current clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 or classid=33 or classid=34  or classid=110  order by a.huodong_1 asc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang <= $bqr[huodong_2]){
+								?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan" style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 海选内容1 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 order by a.huodong_1 asc limit 100',4,24,3}]
+							<?php
+							$time = time();
+							$dang=date("Y-m-d",$time);
+							if($dang <= $bqr[huodong_2]){
+							?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 海选内容2 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=33 order by a.huodong_1 asc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang <= $bqr[huodong_2]){
+								?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 海选内容3 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where   classid=34 order by a.huodong_1 asc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang <= $bqr[huodong_2]){
+								?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 海选内容4 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where   classid=110 order by a.huodong_1 asc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang <= $bqr[huodong_2]){
+								?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 海选内容5 -->
+						<ul class="liebiaoFuck liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where   classid=112 order by a.huodong_1 asc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang <= $bqr[huodong_2]){
+								?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<!-- 应编辑部要求，乐器品牌去掉活动地点2016-9-28 -->
+								<!-- <div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div> -->
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+					</div>
+					<!-- 列表内容区域结束··························· -->
+				</div>
+
+
+
+				<!-- 当前海选部分结束······························ -->
+
+				<!-- 第二，历史回顾部分···························· -->
+				<div class="xinyuezhixing">
+					<div class="fenlei">
+						<ul class="clearfix fenleiCa">
+							<li class="current"><a href="javascript:;" target="_self">全部</a><span></span></li>
+							<li><a href="javascript:;" target="_self">音乐之星</a><span></span></li>
+							<li><a href="javascript:;" target="_self">音乐精灵</a><span></span></li>
+							<li><a href="javascript:;" target="_self">好琴师</a><span></span></li>
+							<li><a href="javascript:;" target="_self">人气琴行</a><span></span></li>
+							<li><a href="javascript:;" target="_self">乐器品牌</a><span></span></li>
+						</ul>
+					</div>
+
+					<div class="liebiao">
+						<!-- 历史回顾，海选内容全部 -->
+						<ul class="liebiaoCa liebiaoShow current clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 or classid=33 or classid=34  or classid=110 order by a.huodong_1 desc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang >= $bqr[huodong_2]){
+							?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 历史回顾，海选内容1 -->
+						<ul class="liebiaoCa liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 order by a.huodong_1 desc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang >= $bqr[huodong_2]){
+							?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 历史回顾，海选内容2 -->
+						<ul class="liebiaoCa liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where   classid=33 order by a.huodong_1 desc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang >= $bqr[huodong_2]){
+							?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 历史回顾，海选内容3 -->
+						<ul class="liebiaoCa liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where classid=34 order by a.huodong_1 desc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang >= $bqr[huodong_2]){
+							?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+
+
+						<!-- 历史回顾，海选内容4 -->
+						<ul class="liebiaoCa liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where classid=110 order by a.huodong_1 desc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang >= $bqr[huodong_2]){
+							?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div>
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+						<!-- 历史回顾，海选内容5 -->
+						<ul class="liebiaoCa liebiaoShow clearfix">
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where classid=112 order by a.huodong_1 desc limit 100',4,24,3}]
+							<?php
+								$time = time();
+								$dang=date("Y-m-d",$time);
+								if($dang >= $bqr[huodong_2]){
+							?>
+							<li>
+								<a href="<?=$bqsr['titleurl']?>">
+									<img src="<?=$bqr['titlepic']?>">
+									<div class="xingming">
+
+										<span>活动名称：</span><strong><?=esub($bqr[title],30)?></strong>
+									</div>
+								</a>
+								<div class="shenfen xingming">
+									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
+								</div>
+								<!-- <div class="guanzhu xingming clearfix">
+									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
+								</div> -->
+								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
+							</li>
+							<?
+								}
+								?>
+
+							[/e:loop]
+						</ul>
+					</div>
+				</div>
+				<!-- 第二，音乐之星部分结束························ -->
+			</div>
+			<!-- 内容··························· -->
+		</div>
+		<!-- 全站动态内容部分结束······························ -->
+	</div>
+	<!-- 中间内容部分结束·················································· -->
+	<!-- 友情链接开始····························· -->
+	<style type="text/css">
+		.friendly-link{
+			width: 1200px;
+			/*margin-top: 10px;*/
+			padding: 15px 0;
+
+		}
+		.friendly-link-head h2{
+			font-size: 16px;
+			line-height: 34px;
+			color: #cb7047;
+			border-top: 2px solid #cb7047;
+			text-indent: 15px;
+		}
+		.friendly-link-content{
+			padding: 0 15px;
+		}
+		.friendly-link-content a{
+			font-size: 14px;
+			margin-right: 5px;
+			color: #333;
+			line-height: 22px;
+		}
+		.friendly-link-content a:hover{
+			color: #cb7047;
+		}
+	</style>
+	<section class="friendly-link" style="float:left">
+		<div class="friendly-link-head">
+			<h2>友情链接：</h2>
+		</div>
+		<div class="friendly-link-content">
+			<a href="http://www.cnscnet.com/" title="申城网" target="_blank">申城网</a>
+			<a href="http://www.huatinet.com/" title="今日话题" target="_blank">今日话题</a>
+		</div>
+	</section>
+	<!-- 友情链接结束····························· -->
+</div>
+<!-- 底部结构开始································································ -->
+[!--temp.wei--]
+
+<!-- 底部结构开始································································ -->
+</body>
+</html>
