@@ -13,27 +13,91 @@
 		.f-l-r{
 			float: right;
 		}
+		ul,ol,dl,li,dd,dt{list-style: none;margin: 0;padding: 0;}
+		img{
+			max-width: 100%;
+		}
 		body{
 			background-color: #252329;
 			font: 12px Microsoft YaHei, '宋体', Tahoma, Arial, sans-serif;
 			color: #fff;
 		}
 		.logo{
-			text-indent: -9999px;
-			background:url("http://www.greattone.net/images/logo.png") center no-repeat;
+			/*background:url("http://www.greattone.net/images/logo.png") center no-repeat;*/
 			width:196px;
-			height:70px;
+			position: relative;
+			width: 40%;
+		}
+		.logo>a{
+			position: absolute;
+			visibility: hidden;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			display: inline-block;
+			width: 100%;
+		}
+		.logo>img{
+			width: 90%;
+			display: block;
+			margin: 0 auto;
+		}
+		.logo-dec{
+			width: 50%;
+			font-size: 16px;
+			line-height:30px;
+			text-align: center;
+		}
+		.container-fluid{
+			margin: 0;
+			padding: 0;
+		}
+		.video-warp{
+			width: 100%;
+		}
+		.video-warp video{
+			width: 100%;
+			height: auto;
+		}
+		.main-contain{
+			padding: 10px;
+		}
+		.userpic{
+			width: 40px;
+			height: 40px;
+		}
+		.user-otherinfos {
+			margin-left: 20px;
+			font:12px/20px 微软雅黑;
 		}
 	</style>
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
 	<header class="clearfix">
-		<h1 class="logo f-l-l"><a href="http://www.greattone.net/">好琴声</a></h1>
-		<h3 class="logo-dec f-l-l">音乐人的交流平台</h3>
+		<h1 class="logo f-l-l">
+			<a href="http://www.greattone.net/">好琴声</a>
+			<img src="http://www.greattone.net/images/logo.png" alt="">
+		</h1>
+		<h2 class="logo-dec f-l-l">爱乐人的交流平台</h2>
 	</header>
 	<main class="container-fluid">
-
+		<div class="video-warp">
+			<video webkit-playsinline="" playsinline="true" controls poster="http://mvimg1.meitudata.com/5819c098af43a378.jpg!thumb320" preload="auto">
+				<source src="http://mvvideo1.meitudata.com/5819c098bc1d31494.mp4" type="video/mp4">
+				<p>你的浏览器不支持视频播放，请下载播放，<a href="http://mvvideo1.meitudata.com/5819c098bc1d31494.mp4">点击下载</a>。</p>
+			</video>
+		</div>
+		<div class="main-contain">
+			<div class="user-info clearfix">
+				<div class="userpic f-l-l">
+					<img src="http://m.greattone.net/d/uploaduserpic/userpic/1481692235.jpg" alt="程伟" class="img-rounded">
+				</div>
+				<ul class="user-otherinfos f-l-l">
+					<li class="info-item ">程伟XXXXXXXXXXXXXXXXX</li>
+					<li class="info-item ">等级或者身份</li>
+				</ul>
+			</div>
+		</div>
 	</main>
 </body>
 </html>
