@@ -271,3 +271,9 @@
 	font-size: 12px;
 	color: #CB6F46;
 }
+.taoCanIntroWarp{
+	display: none;
+}
+.taoCanIntroWarp.on{
+	display: block;
+}

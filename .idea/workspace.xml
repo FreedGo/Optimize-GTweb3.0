@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="新的h5页面开始制作&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" afterPath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pay.css" afterPath="$PROJECT_DIR$/css/pay.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin_base.css" afterPath="$PROJECT_DIR$/css/xin_base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="video.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/组件化/GTweb-h5/video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+            <state relative-caret-position="309">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -111,13 +113,13 @@
         <option value="$PROJECT_DIR$/css/haixuan.css" />
         <option value="$PROJECT_DIR$/php/发帖/qlistinfo.php" />
         <option value="$PROJECT_DIR$/css/tupianneiye3.css" />
-        <option value="$PROJECT_DIR$/css/pay.css" />
-        <option value="$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php" />
-        <option value="$PROJECT_DIR$/css/xin_base.css" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.js" />
         <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/组件化/GTweb-h5/video.html" />
+        <option value="$PROJECT_DIR$/css/xin_base.css" />
+        <option value="$PROJECT_DIR$/css/pay.css" />
+        <option value="$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php" />
       </list>
     </option>
   </component>
@@ -185,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -246,6 +247,60 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jiaoshi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jiaoshi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qianyue" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -253,6 +308,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -443,14 +499,8 @@
       <workItem from="1481156613776" duration="14941000" />
       <workItem from="1481242411604" duration="14474000" />
       <workItem from="1481502500606" duration="12250000" />
-      <workItem from="1481588576387" duration="13927000" />
-    </task>
-    <task id="LOCAL-00082" summary="修改了乐谱H5页面的几个小问题">
-      <created>1479888771794</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1479888771794</updated>
+      <workItem from="1481588576387" duration="13943000" />
+      <workItem from="1481675153861" duration="2691000" />
     </task>
     <task id="LOCAL-00083" summary="知音备份">
       <created>1479890316850</created>
@@ -788,11 +838,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481621662102</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="新的h5页面开始制作&#10;">
+      <created>1481621906268</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1481621906268</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604804000" />
+    <option name="totallyTimeSpent" value="607511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,16 +864,14 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35869566" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3597826" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -827,12 +882,14 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1048,77 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="1044" column="28" selection-start-line="1044" selection-start-column="28" selection-end-line="1044" selection-end-column="28" />
-          <folding>
-            <element signature="e#1450#1458#1" expanded="false" />
-            <element signature="e#1597#1605#1" expanded="false" />
-            <element signature="e#1755#1763#1" expanded="false" />
-            <element signature="e#1929#1937#1" expanded="false" />
-            <element signature="e#2935#2943#1" expanded="false" />
-            <element signature="e#3037#3043#0" expanded="false" />
-            <element signature="e#3043#3049#0" expanded="false" />
-            <element signature="n#h3#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#3805#3811#0" expanded="false" />
-            <element signature="e#3926#3934#1" expanded="false" />
-            <element signature="n#em#0;n#p#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#p#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#5767#5775#1" expanded="false" />
-            <element signature="e#6045#6053#1" expanded="false" />
-            <element signature="e#6414#6422#1" expanded="false" />
-            <element signature="e#6651#6659#1" expanded="false" />
-            <element signature="e#7420#7426#0" expanded="false" />
-            <element signature="e#7530#7538#1" expanded="false" />
-            <element signature="e#10253#10261#1" expanded="false" />
-            <element signature="e#10622#10630#1" expanded="false" />
-            <element signature="e#10859#10867#1" expanded="false" />
-            <element signature="e#11388#11394#0" expanded="false" />
-            <element signature="e#11526#11534#1" expanded="false" />
-            <element signature="e#13382#13390#1" expanded="false" />
-            <element signature="e#13660#13668#1" expanded="false" />
-            <element signature="e#14029#14037#1" expanded="false" />
-            <element signature="e#14266#14274#1" expanded="false" />
-            <element signature="e#14909#14915#0" expanded="false" />
-            <element signature="e#15027#15035#1" expanded="false" />
-            <element signature="e#16959#16967#1" expanded="false" />
-            <element signature="e#17237#17245#1" expanded="false" />
-            <element signature="e#17606#17614#1" expanded="false" />
-            <element signature="e#17843#17851#1" expanded="false" />
-            <element signature="e#18458#18464#0" expanded="false" />
-            <element signature="e#18576#18584#1" expanded="false" />
-            <element signature="e#20519#20527#1" expanded="false" />
-            <element signature="e#20797#20805#1" expanded="false" />
-            <element signature="e#21166#21174#1" expanded="false" />
-            <element signature="e#21403#21411#1" expanded="false" />
-            <element signature="e#22296#22302#0" expanded="false" />
-            <element signature="e#22411#22419#1" expanded="false" />
-            <element signature="e#24249#24257#1" expanded="false" />
-            <element signature="e#24527#24535#1" expanded="false" />
-            <element signature="e#24896#24904#1" expanded="false" />
-            <element signature="e#25133#25141#1" expanded="false" />
-            <element signature="e#25906#25912#0" expanded="false" />
-            <element signature="e#26016#26024#1" expanded="false" />
-            <element signature="e#28756#28764#1" expanded="false" />
-            <element signature="e#29125#29133#1" expanded="false" />
-            <element signature="e#29362#29370#1" expanded="false" />
-            <element signature="e#30024#30030#0" expanded="false" />
-            <element signature="e#30134#30142#1" expanded="false" />
-            <element signature="e#31952#31960#1" expanded="false" />
-            <element signature="e#32230#32238#1" expanded="false" />
-            <element signature="e#32599#32607#1" expanded="false" />
-            <element signature="e#32836#32844#1" expanded="false" />
-            <element signature="e#33479#33485#0" expanded="false" />
-            <element signature="e#33589#33597#1" expanded="false" />
-            <element signature="e#35513#35521#1" expanded="false" />
-            <element signature="e#35791#35799#1" expanded="false" />
-            <element signature="e#36160#36168#1" expanded="false" />
-            <element signature="e#36397#36405#1" expanded="false" />
-            <element signature="e#37012#37018#0" expanded="false" />
-            <element signature="e#37122#37130#1" expanded="false" />
-            <element signature="e#39012#39020#1" expanded="false" />
-            <element signature="e#39290#39298#1" expanded="false" />
-            <element signature="e#39659#39667#1" expanded="false" />
-            <element signature="e#39896#39904#1" expanded="false" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1185,17 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2904">
           <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
-          <folding>
-            <element signature="e#47#594#0" expanded="false" />
-            <element signature="e#823#1643#0" expanded="false" />
-            <element signature="e#1715#3178#0" expanded="false" />
-            <element signature="e#5958#7309#0" expanded="false" />
-            <element signature="e#6042#6072#0" expanded="false" />
-            <element signature="e#6602#7281#0" expanded="false" />
-            <element signature="e#7704#8397#0" expanded="false" />
-            <marker date="1481274694526" expanded="true" signature="4541:4588" ph="..." />
-            <marker date="1481274694526" expanded="true" signature="6364:6411" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,15 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1477387046000" expanded="true" signature="102:254" ph="select * fro... phome_ecms_shop" />
-            <marker date="1477387046000" expanded="true" signature="470:476" ph=" " />
-            <marker date="1477387046000" expanded="true" signature="477:483" ph=" " />
-            <marker date="1477387046000" expanded="true" signature="515:521" ph=" " />
-            <marker date="1477387046000" expanded="true" signature="522:528" ph=" " />
-            <marker date="1477387046000" expanded="true" signature="589:595" ph=" " />
-            <marker date="1477387046000" expanded="true" signature="1393:1498" ph="select * fro... phome_zjk_pinpai_qianyue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1221,17 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
-          <folding>
-            <element signature="e#23501#25122#0#HTML" expanded="false" />
-            <element signature="e#25926#27637#0#HTML" expanded="false" />
-            <marker date="1481591150830" expanded="true" signature="97:380" ph="select id,cl... ${$infotb}" />
-            <marker date="1481591150830" expanded="true" signature="580:586" ph=" " />
-            <marker date="1481591150830" expanded="true" signature="587:593" ph=" " />
-            <marker date="1481591150830" expanded="true" signature="625:631" ph=" " />
-            <marker date="1481591150830" expanded="true" signature="632:638" ph=" " />
-            <marker date="1481591150830" expanded="true" signature="695:701" ph=" " />
-            <marker date="1481591150830" expanded="true" signature="6672:6739" ph="select userp... $" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1251,7 +1206,7 @@
             <element signature="e#4126#6089#0#HTML" expanded="false" />
             <element signature="e#6296#9010#0#HTML" expanded="false" />
             <element signature="e#9173#42454#0#HTML" expanded="false" />
-            <element signature="e#42634#42655#0#HTML" expanded="true" />
+            <element signature="e#42634#42655#0#HTML" expanded="false" />
             <marker date="1481589321465" expanded="true" signature="1055:1130" ph="select feedu... $" />
             <marker date="1481589321465" expanded="true" signature="1394:1455" ph="SELECT feedu... $" />
             <marker date="1481589321465" expanded="true" signature="2210:2279" ph="select yaoqi... phome_enewsmemberadd" />
@@ -1277,26 +1232,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/组件化/yecha/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/xin_base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="960" column="23" selection-start-line="960" selection-start-column="23" selection-end-line="960" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/组件化/yecha/1.jpg" />
     <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.hot.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="260" column="111" selection-start-line="260" selection-start-column="71" selection-end-line="260" selection-end-column="111" />
-          <folding>
-            <marker date="1481619434007" expanded="true" signature="6381:6392" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1304,9 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="233" column="114" selection-start-line="233" selection-start-column="114" selection-end-line="233" selection-end-column="114" />
-          <folding>
-            <marker date="1481619443439" expanded="true" signature="5835:5846" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1322,15 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/pay.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,32 +1266,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="64" />
-          <folding>
-            <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/pay.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="273" column="17" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="342" column="28" selection-start-line="342" selection-start-column="28" selection-end-line="342" selection-end-column="28" />
           <folding>
-            <marker date="1481601616031" expanded="true" signature="102:254" ph="select * fro... phome_ecms_shop" />
-            <marker date="1481601616031" expanded="true" signature="470:476" ph=" " />
-            <marker date="1481601616031" expanded="true" signature="477:483" ph=" " />
-            <marker date="1481601616031" expanded="true" signature="515:521" ph=" " />
-            <marker date="1481601616031" expanded="true" signature="522:528" ph=" " />
-            <marker date="1481601616031" expanded="true" signature="589:595" ph=" " />
-            <marker date="1481601616031" expanded="true" signature="1410:1515" ph="select * fro... phome_zjk_pinpai_qianyue" />
+            <marker date="1481678872056" expanded="true" signature="102:254" ph="select * fro... phome_ecms_shop" />
+            <marker date="1481678872056" expanded="true" signature="470:476" ph=" " />
+            <marker date="1481678872056" expanded="true" signature="477:483" ph=" " />
+            <marker date="1481678872056" expanded="true" signature="515:521" ph=" " />
+            <marker date="1481678872056" expanded="true" signature="522:528" ph=" " />
+            <marker date="1481678872056" expanded="true" signature="589:595" ph=" " />
+            <marker date="1481678872056" expanded="true" signature="1410:1515" ph="select * fro... phome_zjk_pinpai_qianyue" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/xin_base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="972" column="1" selection-start-line="972" selection-start-column="1" selection-end-line="972" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/组件化/GTweb-h5/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        <state relative-caret-position="309">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding />
         </state>
       </provider>

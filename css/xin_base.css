@@ -923,16 +923,16 @@ div.footBian{
 .nav>ul{
 	position: relative;
 }
-.haixuan:after {
-	content: "";
-	width: 88px;
-	height: 34px;
-	display: inline-block;
-	position: absolute;
-	background: url(/images/greattone_gif.gif) 0 0 no-repeat;
-	top:-28px;
-	left:310px
-}
+/*.haixuan:after {*/
+	/*content: "";*/
+	/*width: 88px;*/
+	/*height: 34px;*/
+	/*display: inline-block;*/
+	/*position: absolute;*/
+	/*background: url(/images/greattone_gif.gif) 0 0 no-repeat;*/
+	/*top:-28px;*/
+	/*left:310px*/
+/*}*/
 
 
 /*2016-12-1 新增提醒模块*/

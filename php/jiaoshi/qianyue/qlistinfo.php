@@ -115,20 +115,20 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                             <!--<li class="clearfix"><span class="payLeft">收款对象：</span><span class="payRight1">好琴声（上海）网络科技有限公司</span></li>-->
                             <li class="clearfix"><span class="">套餐选择：</span><span class="payRight1">
                                 <ol class="clearfix">
-                                    <li>
-                                        <label for="twoYears" class="years-two">
+                                    <li class="payTaoCanWarp">
+                                        <label for="twoYears" class="years-two ">
                                             <input type="radio" name="pay_way_select" id="twoYears" checked="checked" class="payTime payTime1">
                                             <a class="payTaoCan on">两年套餐</a>
                                         </label>
                                     </li>
-                                    <li >
-                                        <label for="oneYears" class="txpay">
+                                    <li class="payTaoCanWarp">
+                                        <label for="oneYears" class="years-one ">
                                             <input type="radio" name="pay_way_select" id="twoYears" class="payTime payTime2">
                                             <a class="payTaoCan">一年套餐</a>
                                         </label>
                                     </li>
-                                    <li >
-                                        <label for="halfYears" class="ccbpay">
+                                    <li class="payTaoCanWarp">
+                                        <label for="halfYears" class="years-half ">
                                             <input type="radio" name="pay_way_select" id="halfYears" class="payTime payTime3">
                                             <a class="payTaoCan">季度套餐</a>
                                         </label>
@@ -165,7 +165,7 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
 <!--                                </ol>-->
 <!--                            </span>-->
 <!--                            </li>-->
-                            <li class="clearfix taoCanIntroWarp">
+                            <li class="clearfix taoCanIntroWarp on">
                                 <span class="payLeft">套餐内容：</span>
                                 <span class="payRight1 taoCanIntroduce">
                                     1. 为期两年的平台认证账号使用权限;<br>
@@ -332,7 +332,25 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                     closeBtn3.onclick = function () {
                         agreeMent1.style.display = 'none';
                     };
-                }
+                };
+
+                $(function () {
+                    $('.payTaoCanWarp').on('click',function () {
+                        var taoCanIdx = $(this).index();
+                        console.log(taoCanIdx);
+                        $('.payTaoCan').removeClass('on');
+                        $(this).find('.payTaoCan').addClass('on');
+                        $('.taoCanIntroWarp').eq(taoCanIdx).addClass('on').siblings().removeClass('on');
+                        switch(taoCanIdx){
+                            case 0 :$('.payPriceTao').html('3000元/年');
+                                break;
+                            case 1 :$('.payPriceTao').html('1800元/年');
+                                break;
+                            case 2 :$('.payPriceTao').html('600元/年');
+                                break;
+                        };
+                    });
+                })
             </script>
 
         </div>
