@@ -258,7 +258,7 @@ function GuanZhu(userid){
 		},
 		function(data,status){
 			switch(data){
-				case"DelSuccess":gtAleryt("<img src='/yecha/error.png'><span style='color: pink'>取消关注成功!</span>");
+				case"DelSuccess":gtAleryt("<img src='/yecha/error.png'><span style='color: red'>取消关注成功!</span>");
 					$('.guanzhu'+userid).html('关注');
 					break;
 				case"unknowerror":gtAleryt("发生未知错误,请联系管理员!");

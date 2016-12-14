@@ -251,7 +251,7 @@ $(function () {
                 data: {'city1': subCity1, 'city2': subCity2, 'city3': subCity3},
                 // data:city1,
                 success: function (msg) {
-                    if (msg == '') {
+                    if (msg == ''||msg == null||msg == 'null') {
                         $('.tongjiNum').html('0');
                         $('.sousuo-warp').append('<li class="no-sousuo-more" style="text-align: center;font:14px/32px 微软雅黑;color: #cb7047;">没有搜索到数据!</li>');
                     } else {
@@ -315,7 +315,7 @@ $(function () {
                 type:'post',
                 data:{'jiaoshi1':jiaoshiName}
             }).done(function (msg) {
-                if (msg == null){
+                if (msg == ''||msg == null||msg == 'null'){
                     $('.tongjiNum').html('0');
                     $('.sousuo-warp').append('<li class="no-sousuo-more" style="text-align: center;font:14px/32px 微软雅黑;color: #cb7047;">没有搜索到数据!</li>');
                 } else {

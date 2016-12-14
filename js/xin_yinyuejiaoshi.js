@@ -271,9 +271,45 @@ $(function() {
 			// console.log(paixuName);
 			if (paixuName==0) {
 				alert('请选择排序类型');
+			}else if(paixuName==1||paixuName=='1'){
+				// 点下按钮之后加载css动画
+				$('.liebiaoShow').empty();
+				$('.loaders').show();
+				// console.log(paixuName);
+				$.ajax({
+					url: '/jiaoshi/index.type.php',
+					type: 'post',
+					dataType: 'text',
+					data: {'num': paixuName},
+					success:function(msg){
+						msg = eval('('+msg+')');
+						classroome00 = msg;
+						iloadedNum[0] = 0;
+						$.each(msg,function (index,val) {
+							$('.liebiaoShow').append(
+								'<li><a href="/e/space/?userid=' + val.userid +
+								'"><img src="' + val.userpic +
+								'"></a><div class="xingming"><a href="/e/space/?userid=' + val.userid +
+								'"><span>' + val.username +
+								'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' + val.cked +
+								'"></i></a></div><div class="shenfen fensi_num"><p><span class="di_zhi ">粉丝数：</span>' + val.follownum +
+								'</p></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' + val.address + val.address1 + val.address2 +
+								'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' + val.telephone +
+								'</p></div> <span class="toutiao0' + val.resever_1 +
+								'"></span></li>'
+							)
+						});
+						iloadedNum[0] = msg.length ;
+						$('.tongjiNum').numberRock({
+							speed:20,
+							count:msg.length
+						});
+						$('.loaders').hide();
+					}
+				});
 			} else{
 					// 点下按钮之后加载css动画
-					$('.liebiaoShow').empty()
+					$('.liebiaoShow').empty();
 					$('.loaders').show();
 				// console.log(paixuName);
 					$.ajax({
@@ -284,16 +320,15 @@ $(function() {
 						success:function(msg){
 							msg = eval('('+msg+')');
 							classroome00 = msg;
+
 							iloadedNum[0] = 0;
 							loadClassrome(msg,0);
+							$('.tongjiNum').numberRock({
+								speed:20,
+								count:msg.length
+							});
 							$('.loaders').hide();
 						}
-					})
-					.done(function() {
-						// console.log("success");
-					})
-					.fail(function() {
-						// console.log("error");
 					});
 			};
 

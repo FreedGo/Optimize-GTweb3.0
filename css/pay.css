@@ -277,3 +277,9 @@
 .taoCanIntroWarp.on{
 	display: block;
 }
+.yuanPriceTao{
+	margin-left: 10px;
+}
+.yuanPriceTao del{
+	line-height:30px;
+}

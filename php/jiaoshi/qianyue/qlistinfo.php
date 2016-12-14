@@ -199,7 +199,10 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                                 </span>
                             </li>
                             <li class="clearfix">
-                                <span class="payLeft">套餐价格：</span><span class="payRight1 payPriceTao">3000元/年</span></li>
+                                <span class="payLeft">套餐价格：</span>
+                                <span class="payRight1 payPriceTao">3000元/两年</span>
+                                <span class="payRight1 yuanPriceTao"><del>4000元/两年</del></span>
+                            </li>
                             <li><input class="goPay" id="payBtn" type="submit" value="立即购买"></li>
                             <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个解读的网站账号使用权限。
                             </li>
@@ -342,11 +345,14 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                         $(this).find('.payTaoCan').addClass('on');
                         $('.taoCanIntroWarp').eq(taoCanIdx).addClass('on').siblings().removeClass('on');
                         switch(taoCanIdx){
-                            case 0 :$('.payPriceTao').html('3000元/年');
+                            case 0 :$('.payPriceTao').html('3000元/两年');
+                                $('.yuanPriceTao').html('<del>4000元/两年</del>');
                                 break;
                             case 1 :$('.payPriceTao').html('1800元/年');
+                                $('.yuanPriceTao').html('<del>2000元/年</del>');
                                 break;
-                            case 2 :$('.payPriceTao').html('600元/年');
+                            case 2 :$('.payPriceTao').html('600元/季度');
+                                $('.yuanPriceTao').html('<del>900元/季度</del>');
                                 break;
                         };
                     });
