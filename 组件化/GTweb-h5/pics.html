@@ -6,8 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Title</title>
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="./video-h5.css">
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="dist/swiper.jquery.min.js"></script>
 </head>
 <body>
 	<header class="clearfix">
@@ -18,11 +20,38 @@
 		<h2 class="logo-dec f-l-l">爱乐人的交流平台</h2>
 	</header>
 	<main class="container-fluid">
-		<div class="video-warp">
-			<video webkit-playsinline="" playsinline="true" controls poster="http://mvimg1.meitudata.com/5819c098af43a378.jpg!thumb320" preload="auto">
-				<source src="http://mvvideo1.meitudata.com/5819c098bc1d31494.mp4" type="video/mp4">
-				<p>你的浏览器不支持视频播放，请下载播放，<a href="http://mvvideo1.meitudata.com/5819c098bc1d31494.mp4">点击下载</a>。</p>
-			</video>
+		<div class="pcis-warp">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="http://m.greattone.net/d/uploaduserpic/1481598944_0.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="http://m.greattone.net/d/uploaduserpic/1481598944_1.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="http://m.greattone.net/d/uploaduserpic/1481598944_0.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="http://m.greattone.net/d/uploaduserpic/1481598944_1.jpg" alt="">
+					</div>
+
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev',
+					autoHeight: true, //enable auto height
+				});
+			</script>
 		</div>
 		<div class="main-contain">
 			<div class="user-info clearfix">
@@ -36,7 +65,7 @@
 			</div>
 			<div class="user-btns clearfix">
 				<span class="user-btn like-btn" ><i class="like-btn-bg"></i><i class="like-btn-num">6</i></span>
-				<span class="user-btn share-btn" ><i class="share-btn-bg"></i>分享</span>
+				<span class="user-btn share-btn" ><i class="share-btn-bg"></i><i class="share-btn-dec">分享</i></span>
 			</div>
 		</div>
 	</main>

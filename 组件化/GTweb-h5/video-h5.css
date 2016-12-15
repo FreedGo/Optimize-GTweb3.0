@@ -1,0 +1,214 @@
+.f-l-l{
+	float: left;
+}
+.f-l-r{
+	float: right;
+}
+ul,ol,dl,li,dd,dt{list-style: none;margin: 0;padding: 0;}
+img{
+	max-width: 100%;
+}
+body{
+	background-color: #252329;
+	font: 12px Microsoft YaHei, '宋体', Tahoma, Arial, sans-serif;
+	color: #fff;
+}
+.logo{
+	/*background:url("http://www.greattone.net/images/logo.png") center no-repeat;*/
+	width:196px;
+	position: relative;
+	width: 40%;
+}
+.logo>a{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	display: inline-block;
+	width: 100%;
+}
+.logo>img{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+.logo-dec{
+	width: 50%;
+	font-size: 16px;
+	line-height:30px;
+	text-align: center;
+}
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+.video-warp{
+	width: 100%;
+}
+.video-warp video{
+	width: 100%;
+	height: auto;
+}
+.main-contain{
+	padding: 10px;
+}
+.userpic{
+	width: 40px;
+	height: 40px;
+}
+.user-btns{
+	text-align: center;
+}
+.user-btn{
+	
+	width: 120px;
+	display: inline-block;
+	line-height: 40px;
+	height: 40px;
+	background-color: #3B3745;
+	border-radius: 4px;
+}
+.like-btn{
+	margin-right: 30px;
+}
+.like-btn-bg,.share-btn-bg{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+
+}
+.like-btn-num,.share-btn-dec{
+	display: inline-block;
+	line-height: 40px;
+	height: 40px;
+}
+.user-info,.user-btns {
+	margin-bottom: 20px;
+}
+.user-otherinfos {
+	margin-left: 20px;
+	font:12px/20px 微软雅黑;
+}
+.share-lists{
+	width: 280px;
+	margin: 0 auto;
+}
+.share-bg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 100;
+	display: none;
+}
+.share{
+	position: fixed;
+	bottom: -196px;
+	z-index: 200;
+	background-color: #000;
+	width: 100%
+
+}
+.share-titile{
+    font-size: 14px;
+    line-height: 45px;
+    height: 45px;
+    color: #ccc;
+    width: 100%;
+    text-align: center;
+}
+.share-list-item{
+	width: 70px;
+	padding: 0 10px;
+}
+.share-icon-bg{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(./images/mobile-icon.png);
+}
+.share-weixin{
+	background-position: -71px 0;
+}
+.share-qq{
+	background-position: -258px 0;
+}
+.share-weibo{
+	background-position: -196px 0;
+}
+.share-fb{
+	background-position: -7px -119px;
+}
+.share-dec{
+	font:14px/24px 微软雅黑;
+	text-align: center;
+	color: #fff;
+}
+.share-cancel-btn-warp{
+	padding: 15px 20px;
+}
+.share-cancel-btn{
+	display: block;
+	font:14px/34px 微软雅黑;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #625e6b;
+}
+.recmd-title-lists{
+	margin-bottom: 10px;
+}
+.recmd-title-list-item{
+	font:16px/30px 微软雅黑;
+	text-align: center;
+	margin: 0 20px;
+	color: #fff;
+	border-bottom: 2px solid red;
+}
+.recmd-content-lists{
+	width: 95%;
+	margin: 0 auto;
+}
+.recmd-content-list-item{
+	width: 48%;
+	/*border-radius: 4px;*/
+	overflow: hidden;
+
+}
+.recmd-content-list-item:nth-child(2n+1){
+	margin-right: 4%;
+}
+.recmd-content-list-item>a{
+	display: inline-block;
+	width: 100%;
+}
+.recmd-content-list-pic{
+	width: 100%;
+}
+.recmd-content-list-pic{
+	border-radius: 4px;
+	overflow: hidden;
+}
+.recmd-content-list-titie{
+	color:#fff;
+}
+
+/*swiper*/
+.swiper-container {
+	width: 100%;
+	height: auto;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+}
+/*.swiper-container .swiper-slide {*/
+	/*height: 300px;*/
+/*}*/
+/*.swiper-container .swiper-slide:nth-child(2n) {*/
+	/*height: 500px;*/
+/*}*/
+/*/swiper*/
