@@ -337,38 +337,35 @@
 	width: 1000px;
 }
 /*头条点*/
-.toutiao01,.toutiao02{
+.toutiao01,.toutiao00{
 	position: absolute;
-	top: 176px;
-	left: 192px;
-	background-color: #239AD6;
+	top: 170px;
+	left: 169px;
+	/*background-color: #239AD6;*/
+
 	z-index: 100;
 	display: inline-block;
 	cursor: pointer;
 }
-.toutiao01{
-	height: 22px;
-	width: 28px;
+.toutiao01,.toutiao00{
+	height: 60px;
+	width: 40px;
 	font-size: 14px;
 	color: #fff;
 	line-height: 22px;
 	padding: 0 10px;
 	z-index: 101;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3)
+	/*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3)*/
 }
-.toutiao02{
-	width: 10px;
-	top: 180px;
-	height: 18px;
-	left: 230px;
-	transform-origin: right;
-	-webkit-transform-origin: right;
-	-ms-transform-origin: right;
-	-moz-transform-origin: right;
-	-webkit-transform: skewY(-45deg);
-	-ms-transform: skewY(-45deg);
-	-o-transform: skewY(-45deg);
-	transform: skewY(-45deg);
+.toutiao01{
+	background: url(/images/newRecommend.png) 0 0 no-repeat;
+
+}
+.qualification1{
+	background: url(/images/qualification.png) 0 0 no-repeat;
+}
+.toutiao01.qualification1{
+	background: url(/images/qualification.png) 0 0 no-repeat;
 
 }
 /*头条点*/

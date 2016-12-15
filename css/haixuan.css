@@ -1908,6 +1908,7 @@ font-size: 14px;
 }
 .pop-fail{
 	color: #CC3737;
+	margin-left: 120px;
 }
 .pop-list{
 	color: #CC3737;
@@ -1953,7 +1954,7 @@ font-size: 14px;
 }
 .toupiao-h5 .toupiao-pop-msg{
 	width: 100%;
-	height: 134px;
+	/*height: 134px;*/
 	background-image: url(/images/pop_h5_bg.png);
 	background-size: cover;
 }
@@ -1966,7 +1967,7 @@ font-size: 14px;
 .toupiao-h5 .close-h5{
 	background-image: url('/images/pop_h5_close.png');
 	position: absolute;
-	top: 288px;
+	bottom: 5px;
 	right: 5px;
 	height: 34px;
 	width: 34px;
