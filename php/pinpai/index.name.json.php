@@ -3,7 +3,9 @@
 	require("../e/class/db_sql.php");
 	$link=db_connect();
 	$empire=new mysqlquery();
-	header("Content-type: text/html; charset=utf-8");
+	header("Content-type: text/html; charset=utf-8"); 
+
+
 	$name=$_POST['jiaoshi1'];
 	
 $frie_sql="select * from {$dbtbpre}enewsmember a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid WHERE a.groupid=5 and a.checked=1 and a.username like '%$name%' order by a.registertime desc";
@@ -19,7 +21,7 @@ while($r=$empire->fetch($list))
                                       <?php
                              	if($r[cked]==1){
                                 ?>          
-                           <a href="javascript:;" title="��������֤����"><i class="iconfont">&#xe657;</i></a>
+                           <a class="newRen" href="javascript:;" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng1"></i></a>
                               
                              <?php
                                 }

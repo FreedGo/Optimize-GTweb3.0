@@ -137,7 +137,7 @@
                 <div class="creat">
                     <a href="[!--news.url--]/e/member/register/ChangeRegister.php">创建品牌</a>
                 </div>
-                <div class="search " style="float: left">
+                <div class="search " style="float: left;margin-left:0">
                     <input type="search" class="searchSelect">
                     <i class="iconfont searchSub">&#xe658;</i>
                 </div>
@@ -165,141 +165,48 @@
                         <div class="paixufangfa">
                             <select name="" id="paixuSelect" >
                                 <option value="0">请选择</option>
-                                <option value="1">关注</option>
-                                <option value="2">认证</option>
+                                <option value="1">粉丝数量</option>
+                                <option value="2">官方认证</option>
+                                <option value="2">会员等级</option>
                             </select>
                         </div>
                         <div class="tongji">
-								<span>共计:
-                                    <?php
-                                    $count=mysql_query("select count(*) from phome_enewsmember where groupid='5'");
-                                    	while($tmp=mysql_fetch_row($count)){
-                                        print $tmp[0];
-                                        }
-                                ?>
-                                    家</span>
+								<span >共计:<span class="tongjiNum">0</span>家</span>
                         </div>
                     </div>
                     <!-- 列表内容区域······························· -->
                     <div class="liebiao">
-                        <ul class="liebiaoFuck clearfix" style="display: none">
-                            <li>
-                                <a href="/e/space/?userid=<?=$userr[userid]?>">
-                                    <img src="<?=$bqr[userpic]?>">
-                                    <div class="xingming">
-                                        <span><?=$bqr[username]?></span>
-                                        <a href="javascript:;" title="好琴声认证老师"><i class="iconfont">&#xe657;</i></a>';
-                                    </div>
-                                </a>
-                                <div class="shenfen">
-                                    <p>地址：<?=$bqr[address]?></p>
-                                </div>
-                                <div class="guanzhu clearfix">
-                                    <p>咨询电话：<?=$bqr[telephone]?> <?=$bqr[mycall]?></p>
-                                </div>
-                                <span class="toutiao01">认证</span>
-                                <span class="toutiao02"></span>
-                            </li>
 
-                        </ul>
                         <!-- 全部 -->
                         <ul class="liebiaoFuck  liebiaoShow  clearfix">
-                            <!-- 加载动画框························· -->
-                            <div class="loaders" style="display: block">
-                                <div class="loader">
-                                    <div class="loader-inner line-scale">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 加载动画框结束······················ -->
+
                         </ul>
                         <!-- 钢琴 -->
                         <ul class="liebiaoFuck  liebiaoShow  clearfix">
-                            <!-- 加载动画框························· -->
-                            <div class="loaders" style="display: block">
-                                <div class="loader">
-                                    <div class="loader-inner line-scale">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 加载动画框结束······················ -->
+
                         </ul>
                         <!-- 提琴 -->
                         <ul class="liebiaoFuck  liebiaoShow  clearfix">
-                            <!-- 加载动画框························· -->
-                            <div class="loaders" style="display: block">
-                                <div class="loader">
-                                    <div class="loader-inner line-scale">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 加载动画框结束······················ -->
+
                         </ul>
                         <!-- 吉他 -->
                         <ul class="liebiaoFuck  liebiaoShow  clearfix">
-                            <!-- 加载动画框························· -->
-                            <div class="loaders" style="display: block">
-                                <div class="loader">
-                                    <div class="loader-inner line-scale">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 加载动画框结束······················ -->
+
                         </ul>
                         <!-- 管乐器 -->
                         <ul class="liebiaoFuck  liebiaoShow  clearfix">
-                            <!-- 加载动画框························· -->
-                            <div class="loaders" style="display: block">
-                                <div class="loader">
-                                    <div class="loader-inner line-scale">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 加载动画框结束······················ -->
+
                         </ul>
                         <!-- 打击乐器 -->
                         <ul class="liebiaoFuck  liebiaoShow  clearfix">
-                            <!-- 加载动画框························· -->
-                            <div class="loaders" style="display: block">
-                                <div class="loader">
-                                    <div class="loader-inner line-scale">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 加载动画框结束······················ -->
+
                         </ul>
                         <!-- 搜索预留 -->
                         <ul class="liebiaoFuck  liebiaoShow sousuo-pinpai clearfix">
+
+                        </ul>
+
+                        <ul class="loader-warp clearfix">
                             <!-- 加载动画框························· -->
                             <div class="loaders" style="display: block">
                                 <div class="loader">
@@ -365,11 +272,7 @@
     <!-- 友情链接结束····························· -->
 </div>
 <!-- ····························中间结构结束·································· -->
-<?php
-	echo $_POST['aa1'];
-	echo $_POST['aa2'];
-	echo $_POST['aa3'];
-?>
+
 <!-- 底部结构开始································································ -->
 [!--temp.wei--]
 <!-- 底部结构开始································································ -->

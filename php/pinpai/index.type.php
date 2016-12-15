@@ -23,7 +23,7 @@ while($r=$empire->fetch($list))
                                       <?php
                              	if($r[cked]==1){
                                 ?>
-	                                <a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng"></i></a>
+	                                <a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng1"></i></a>
                               
                              <?php
                                 }
@@ -66,7 +66,7 @@ while($r=$empire->fetch($list))
                                       <?php
                              	if($r[cked]==1){
                                 ?>
-	                                <a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng"></i></a>
+	                                <a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng1"></i></a>
                               
                              <?php
                                 }

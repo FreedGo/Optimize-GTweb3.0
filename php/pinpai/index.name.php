@@ -3,7 +3,7 @@
 	require("../e/class/db_sql.php");
 	$link=db_connect();
 	$empire=new mysqlquery();
-	header("Content-type: text/html; charset=utf-8");
+	header("Content-type: text/html; charset=utf-8"); 
 
 
 	$name=$_POST['jiaoshi1'];
@@ -11,7 +11,7 @@
 $frie_sql="select * from {$dbtbpre}enewsmember a left join {$dbtbpre}enewsmemberadd b on a.userid=b.userid WHERE a.groupid=5 and a.checked=1 and a.username like '%$name%' order by a.registertime desc";
 $list=$empire->query($frie_sql);
 while($r=$empire->fetch($list))
-{
+{	
 ?>
 	<li>
 									<a href="/e/space/?userid=<?=$r[userid]?>">
@@ -20,12 +20,12 @@ while($r=$empire->fetch($list))
 											<span><?=$r[username]?></span>
                                       <?php
                              	if($r[cked]==1){
-                                ?>
-                           <a href="javascript:;" title="��������֤����"><i class="iconfont">&#xe657;</i></a>
-
+                                ?>          
+                           <a class="newRen" href="javascript:;" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng1"></i></a>
+                              
                              <?php
                                 }
-                                ?>
+                                ?> 
 										</div>
 									</a>
 									<div class="shenfen">
@@ -40,12 +40,12 @@ while($r=$empire->fetch($list))
 									<?
                                     	if($r[resever_1]==1){
 										?>
-									<span class="toutiao01"></span>
+									<span class="toutiao01"></span>	
                                     <span class="toutiao02"></span>
 										<?
 										}
 										?>
-
+									
 								</li>
 <?
 }

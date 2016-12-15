@@ -23,8 +23,8 @@ while($r=$empire->fetch($list))
 											<span><?=$r[username]?></span>
                                       <?php
                              	if($r[cked]==1){
-                                ?>          
-                           <a href="javascript:;" title="好琴声认证教室"><i class="iconfont">&#xe657;</i></a>
+                                ?>
+	                                <a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng1"></i></a>
                               
                              <?php
                                 }
@@ -62,8 +62,8 @@ while($r=$empire->fetch($list))
 											<span><?=$r[username]?></span>
                                       <?php
                              	if($r[cked]==1){
-                                ?>          
-                           <a href="javascript:;" title="好琴声认证教室"><i class="iconfont">&#xe657;</i></a>
+                                ?>
+	                                <a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng1"></i></a>
                               
                              <?php
                                 }
@@ -101,8 +101,8 @@ while($r=$empire->fetch($list))
 											<span><?=$r[username]?></span>
                                       <?php
                              	if($r[cked]==1){
-                                ?>          
-                           <a href="javascript:;" title="好琴声认证教室"><i class="iconfont">&#xe657;</i></a>
+                                ?>
+	                                <a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng1"></i></a>
                               
                              <?php
                                 }

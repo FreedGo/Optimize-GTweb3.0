@@ -180,7 +180,6 @@ $(function () {
                     '&userid=' +val.userid +
                     '"><em>提问</em></a></div></li>'
                 );
-
                 console.log('成功');
             } else if (index >= (iloadedNum[type] +10)){
                 console.log('条件不符');

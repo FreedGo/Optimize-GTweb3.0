@@ -4,15 +4,260 @@
  * 乐器品牌是由音乐老师模板修改而来，故主体js继承音乐老师的，此处为乐器品牌自有的js
  */
 
+/**
+ * 数字动态变化模块,摘自countjs,依赖jq
+ */
+(function($){
+    $.fn.numberRock=function(options){
+        var defaults={
+            speed:24,
+            count:100
+        };
+        var opts=$.extend({}, defaults, options);
+
+        var div_by = 100,
+            count=opts["count"],
+            speed = Math.floor(count / div_by),
+            sum=0,
+            $display = this,
+            run_count = 1,
+            int_speed = opts["speed"];
+        var int = setInterval(function () {
+            if (run_count <= div_by&&speed!=0) {
+                $display.text(sum=speed * run_count);
+                run_count++;
+            } else if (sum < count) {
+                $display.text(++sum);
+            } else {
+                clearInterval(int);
+            }
+        }, int_speed);
+    }
+
+})(jQuery);
+
+/**
+ * 加载指定的数据进入指定的品牌分类
+ * @param obj {object} 老师的数据;
+ * @param type {num}  分类;
+ */
+function loadteacher(obj,type,iloadedNum) {
+    $('.loaders').show();
+    $.each(obj,function (index,val) {
+//        if (index>=iloadedNum[type] && index < (iloadedNum[type] +20)){
+            $('.liebiaoShow').eq(type).append(
+                '<li><a href="/e/space/?userid='+ val.userid +
+                '"><img src='+ val.userpic +
+                '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
+                '"><span>' + val.username +
+                '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
+                ' iconfont"></i></a>'+
+                '</div></a>' +
+                '<div class="shenfen"><p><span class="di_zhi">创立国家：</span>'+val.company + '</p></div>' +
+                '<div class="shenfen"><p><span class="nianfen">创立年份：</span>'+val.chusheng + '</p></div>' +
+                '<div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话:</span>'+val.telephone+'</p></div></li>'
+            );
+//            console.log('成功');
+//        } else if (index >= (iloadedNum[type] +20)){
+//            console.log('条件不符');
+//        }
+    });
+//    iloadedNum[type] = iloadedNum[type] +20 ;
+    $('.loaders').hide();
+}
+
+
 // 重新写乐器品牌下的分类与下面列表显示
 $(function(){
     $('.liebiaoShow').eq(0).show().siblings().hide();
-    $('.fenleiFuck li').click(function () {
-        var ifenlei = $(this).index();
+//    $('.fenleiFuck li').click(function () {
+//        var ifenlei = $(this).index();
+//        $(this).addClass('current').siblings('li').removeClass('current');
+//        $('.musical-instruments .liebiaoShow').eq(ifenlei).fadeIn(200).siblings('.liebiaoShow').hide();
+//    });
+
+    $('.loader-warp').show();
+    // 点击分类显示不同分类里面的老师
+    var ifenlei = 0,//标记当前为那种音乐老师类型
+        iloadedNum = [0,0,0,0,0],//标记已经加载的品牌数量,
+        pinpai00 = [],//全部品牌
+        pinpai01 = [],//钢琴品牌
+        pinpai02 = [],//提琴品牌
+        pinpai03 = [],//吉他品牌
+        pinpai04 = [],//管乐器品牌
+        pinpai05 = [],//打击乐器品牌
+        pinpai001 = [],//认证的品牌
+        pinpai002 = [];//未认证的品牌
+    /**
+     * 1.给分类标题绑定事件
+     * 1.1点击切换分类
+     * 1.2点击分类数量跳动
+     */
+    $('.fenleiFuck li').click(function (event) {
+        ifenlei = $(this).index();
         $(this).addClass('current').siblings('li').removeClass('current');
-        $('.musical-instruments .liebiaoShow').eq(ifenlei).fadeIn(200).siblings('.liebiaoShow').hide();
+        $('.liebiaoFuck').eq(ifenlei).fadeIn('fast').siblings('ul').hide();
+//        $('.tuijianFuck').eq(ifenlei).fadeIn('fast').siblings('ol').hide();
+        if (ifenlei <= 5){
+            switch(ifenlei){
+                case 0 :
+                    $('.tongjiNum').numberRock({
+                        speed:20,
+                        count:pinpai00.length
+                    });
+                    break;
+                case 1 :
+                    $('.tongjiNum').numberRock({
+                        speed:20,
+                        count:pinpai01.length
+                    });
+                    break;
+                case 2 :
+                    $('.tongjiNum').numberRock({
+                        speed:20,
+                        count:pinpai02.length
+                    });
+                    break;
+                case 3 :
+                    $('.tongjiNum').numberRock({
+                        speed:20,
+                        count:pinpai03.length
+                    });
+                    break;
+                case 4 :
+                    $('.tongjiNum').numberRock({
+                        speed:20,
+                        count:pinpai04.length
+                    });
+                    break;
+                case 3 :
+                    $('.tongjiNum').numberRock({
+                        speed:20,
+                        count:pinpai05.length
+                    });
+                    break;
+            }
+        }
+    });
+
+    /**
+     * 2.向后台请求数据,并做处理
+     * 2.1拆分数组,把品牌拆分为不同的分类
+     * 2.2给全部品牌加载20条数据
+     */
+    $.ajax({
+        url:'/pinpai/index.josn.php',
+        type:'get',
+        datatype:'json'
     })
+    .done(function (msg) {
+        msg = eval('('+msg+')');
+        pinpai00 = msg;
+        // console.log(msg)
+//         循环数组,根据类型不同拆分对象,再组成新的数组
+        for (var i = 0 ; i < msg.length ; i++){
+            var typeArray = msg[i].type.split('|');
+                //生成的数组第一个元素和最后一个元素都为空,故要删除
+                typeArray.shift();
+                typeArray.pop();
+            for (var x = 0;x < typeArray.length ; x ++ ){
+                switch (typeArray[x]){
+                    case '钢琴':
+                        pinpai01.push(msg[i]);
+                        break;
+                    case '提琴':
+                        pinpai02.push(msg[i]);
+                        break;
+                    case '吉他':
+                        pinpai03.push(msg[i]);
+                        break;
+                    case '管乐':
+                        pinpai04.push(msg[i]);
+                        break;
+                    case '打击乐':
+                        pinpai04.push(msg[i]);
+                        break;
+                }
+            }
+
+//            // 根据是否认证，拆分所有老师的数组
+//            msg[i].cked === '1'? pinpai001.push(msg[i]):pinpai002.push(msg[i]);
+        }
+        // 组成新所有老师数组
+//        pinpai00 = pinpai001.concat(pinpai002);
+        loadteacher(pinpai00,0,iloadedNum);
+        //数字跳动
+        $('.tongjiNum').numberRock({
+            speed:20,
+            count:pinpai00.length
+        });
+        loadteacher(pinpai01,1,iloadedNum);
+        loadteacher(pinpai02,2,iloadedNum);
+        loadteacher(pinpai03,3,iloadedNum);
+        loadteacher(pinpai04,4,iloadedNum);
+        loadteacher(pinpai05,5,iloadedNum);
+//
+    })
+    .error(function (data) {
+        console.log('error');
+        console.log(data)
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $(function() {
@@ -245,11 +490,12 @@ $(function() {
     // window.onload=function(){
     //
     // }
+
     $(function () {
-        getCurrentCity();
-        $('.musical-instruments .fenleiFuck').children('li:first').click(function () {
-            getCurrentCity();
-        })
+//        getCurrentCity();
+//        $('.musical-instruments .fenleiFuck').children('li:first').click(function () {
+////            getCurrentCity();
+//        })
     })
     /**
      * 1.X 此函数为乐器品牌首页,点击其他分类的时候向后台调用数据
