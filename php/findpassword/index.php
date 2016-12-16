@@ -1,0 +1,36 @@
+<?php
+require("../../class/connect.php");
+require("../../class/db_sql.php");
+require("../class/user.php");
+require("../class/member_registerfun.php");
+$link=db_connect();
+$empire=new mysqlquery();
+$editor=1;
+eCheckCloseMods('member');//关闭模块
+//验证时间段允许操作
+eCheckTimeCloseDo('reg');
+//验证IP
+eCheckAccessDoIp('register');
+$tobind=(int)$_GET['tobind'];
+//转向注册
+if(!empty($ecms_config['member']['registerurl']))
+{
+	Header("Location:".$ecms_config['member']['registerurl']);
+	exit();
+}
+//已经登陆不能注册
+if(getcvar('mluserid'))
+{
+	printerror("LoginToRegister","history.go(-1)",1);
+}
+$groupid=(int)$_GET['groupid'];
+$groupid=$groupid?$groupid:eReturnMemberDefGroupid();
+CheckMemberGroupCanReg($groupid);
+$formid=GetMemberFormId($groupid);
+$ecmsfirstpost=1;
+//$formfile='../../data/html/memberform'.$formid.'.php';
+//导入模板
+require(ECMS_PATH.'e/template/member/findpassword.php');
+db_close();
+$empire=null;
+?>

@@ -2111,9 +2111,15 @@ font-size: 14px;
 	top:0;
 	right:0;
 }
-
-
-
+/*总结修改*/
+.zongjie{
+	max-width: 980;
+}
+.zongjie p{
+	padding: 15px;
+	max-width:950px;
+	line-height:24px;
+}
 
 
 

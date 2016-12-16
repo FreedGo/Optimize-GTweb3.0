@@ -2026,14 +2026,14 @@ a {
 /*2016.5.19*/
 .huodong-sum-wrap{
 	display: none;
-	width: 550px;
+	width: 650px;
 	border-radius: 3px;
 	border: 1px solid #ccc;
 	background-color: #fff;
 	padding: 15px;
 	position: absolute;
-	z-index: 99999;
-	top: 0;
+	z-index: 100;
+	top: -38px;
 	left: 70px;
 }
 .huodong-sum-head{
@@ -2060,8 +2060,8 @@ a {
 	display: block;
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	width: 540px;
-	max-width: 550px;
+	width: 640px;
+	max-width: 650px;
 	min-height: 200px;
 	padding: 5px;
 	margin-bottom: 10px;

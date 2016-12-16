@@ -1,9 +1,5 @@
  $(document).ready(function() {
-	    			// 1.点击发送验证码，出现提示
-			    	// $('.yanzhengBtn').click(function(event) {
-						
-			    		
-			    	// });
+
 					var mi1;
 					var mi2;
 
@@ -75,12 +71,7 @@
 
 
 
-					// 验证码为12346结束························
-					//4.调用城市三级连动插件
-					$(function(){
-							$("#sjld").sjld("#shenfen","#chengshi","#quyu");
-
-						});
+					// 验证码为12346结束·······················
 					// 5.判断用户名输入字符长度以及是否重复
 					$('.yonghuming').blur(function(event) {
 						$('.yonghumingtishi').remove();
@@ -133,10 +124,6 @@
 						$('.yonghumingtishi').fadeOut('normal');
 					});
 					//7. 输入手机号框有内容输入就判断正确，因为有限制只输入数字
-					
-
-
-
 					var d = $('#photo'),
 						k = $('.celltype').val();
 						
@@ -223,18 +210,6 @@
 						b = $('#user_agreement'),
 						c;
 						a.on('submit', function(event) {//当点击提交的时候
-							// 9.1是否选中会员协议
-							if (!b.prop('checked')) {
-								alert("您还没有同意《网站会员注册协议》");
-								return false;
-							}
-							//9.2验证是否上传了头像
-							g =$('#headImg').val();
-							if (g==="") {
-								console.log(g);
-								alert("请上传头像");
-								return false;
-							}
 							if (reYanzhengma!=2) {
 								yanzhengNum=$('.yanzheng').val();
 								$.ajax({

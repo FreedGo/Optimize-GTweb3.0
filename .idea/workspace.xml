@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="视频,图片贴的新h5页面&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/活动.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/findpassword/findpassword.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pay.css" afterPath="$PROJECT_DIR$/css/pay.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/toupiao-img.js" afterPath="$PROJECT_DIR$/js/toupiao-img.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yueqipinpai.js" afterPath="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/qianyue/different-qinhang-h5.html" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/different-qinhang-h5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php" afterPath="$PROJECT_DIR$/php/jiaoshi/qianyue/qlistinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/组件化/GTweb-h5/video-h5.css" afterPath="$PROJECT_DIR$/组件化/GTweb-h5/video-h5.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/haixuan.css" afterPath="$PROJECT_DIR$/css/haixuan.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin_gerenzhongxin.css" afterPath="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/活动.php" afterPath="$PROJECT_DIR$/html/活动.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/register.yanzheng2.js" afterPath="$PROJECT_DIR$/js/register.yanzheng2.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,24 +37,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="活动.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/活动.php">
+      <file leaf-file-name="findpassword.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/findpassword/findpassword.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#6;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#7130#7136#0#HTML" expanded="true" />
-                <element signature="e#7136#7142#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1481860522448" expanded="true" signature="7437:7501" ph="select count... phome_ecms_photo" />
+                <element signature="e#1919#2808#0#HTML" expanded="false" />
+                <element signature="e#3279#3651#0#HTML" expanded="false" />
+                <element signature="e#3664#4024#0#HTML" expanded="false" />
+                <marker date="1481878214527" expanded="true" signature="128:134" ph=" " />
+                <marker date="1481878214527" expanded="true" signature="135:141" ph=" " />
+                <marker date="1481878214527" expanded="true" signature="164:170" ph=" " />
+                <marker date="1481878214527" expanded="true" signature="171:177" ph=" " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.yanzheng2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/register.yanzheng2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+              <folding>
+                <marker date="1481875625454" expanded="true" signature="432:486" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="566:620" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="735:791" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="871:927" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="1030:1067" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="1894:1920" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="1922:1928" ph=" " />
+                <marker date="1481875625454" expanded="true" signature="2073:2097" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="2099:2105" ph=" " />
+                <marker date="1481875625454" expanded="true" signature="3393:3429" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="3584:3644" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="3763:3825" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="4769:4845" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="5034:5095" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="8141:8167" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="8169:8175" ph=" " />
+                <marker date="1481875625454" expanded="true" signature="8324:8348" ph="..." />
+                <marker date="1481875625454" expanded="true" signature="8350:8356" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="findpassword.yanzheng2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/findpassword.yanzheng2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <marker date="1481879156346" expanded="true" signature="322:376" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="456:510" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="625:681" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="761:817" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="920:957" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="1784:1810" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="1812:1818" ph=" " />
+                <marker date="1481879156346" expanded="true" signature="1963:1987" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="1989:1995" ph=" " />
+                <marker date="1481879156346" expanded="true" signature="3176:3212" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="3367:3427" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="3546:3608" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="4543:4619" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="4808:4869" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="7641:7667" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="7669:7675" ph=" " />
+                <marker date="1481879156346" expanded="true" signature="7824:7848" ph="..." />
+                <marker date="1481879156346" expanded="true" signature="7850:7856" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/findpassword/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,11 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp50342/home/hao/jiaoshi/indexs.ip.php" />
-        <option value="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
-        <option value="$PROJECT_DIR$/html/广场图片贴内页增加头像.html" />
-        <option value="$PROJECT_DIR$/php/空间H5-老师/index.html" />
-        <option value="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php" />
         <option value="$PROJECT_DIR$/html/琴行教室.html" />
@@ -106,7 +164,6 @@
         <option value="$PROJECT_DIR$/css/xin_yinyuejiaoshi.css" />
         <option value="$PROJECT_DIR$/css/xin_yinyuelaoshi.css" />
         <option value="$PROJECT_DIR$/js/toupiao4.js" />
-        <option value="$PROJECT_DIR$/css/haixuan.css" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp53604/home/hao/jiaoshi/index.type.php" />
         <option value="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
         <option value="$PROJECT_DIR$/css/xin_base.css" />
@@ -136,6 +193,12 @@
         <option value="$PROJECT_DIR$/css/pay.css" />
         <option value="$PROJECT_DIR$/php/huodong/qlistinfo.php" />
         <option value="$PROJECT_DIR$/html/活动.php" />
+        <option value="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
+        <option value="$PROJECT_DIR$/css/haixuan.css" />
+        <option value="$PROJECT_DIR$/js/register.yanzheng2.js" />
+        <option value="$PROJECT_DIR$/php/findpassword/index.php" />
+        <option value="$PROJECT_DIR$/php/findpassword/findpassword.php" />
+        <option value="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
       </list>
     </option>
   </component>
@@ -238,6 +301,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="组件化" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -256,7 +333,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jiaoshi" />
+              <option name="myItemId" value="reg" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,7 +351,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="huodong" />
+              <option name="myItemId" value="findpassword" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,7 +365,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,11 +398,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\Optimize-GTweb3.0\js" />
+      <recent name="D:\Git\Optimize-GTweb3.0\php\findpassword" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\pinpai" />
       <recent name="D:\Git\Optimize-GTweb3.0\组件化\GTweb-h5" />
       <recent name="D:\Git\Optimize-GTweb3.0\html" />
-      <recent name="D:\Git\Optimize-GTweb3.0\php\琴行商城.data.html.shop" />
-      <recent name="D:\Git\Optimize-GTweb3.0\php\开发部琴行注册标准" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Git\Optimize-GTweb3.0\docs" />
@@ -488,14 +565,7 @@
       <workItem from="1481588576387" duration="13943000" />
       <workItem from="1481675153861" duration="21582000" />
       <workItem from="1481761159739" duration="14796000" />
-      <workItem from="1481847547656" duration="11083000" />
-    </task>
-    <task id="LOCAL-00090" summary="图片报名,参赛曲目重新显示回来">
-      <created>1480297959082</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1480297959082</updated>
+      <workItem from="1481847547656" duration="20797000" />
     </task>
     <task id="LOCAL-00091" summary="修改">
       <created>1480315363391</created>
@@ -833,11 +903,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481794441135</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="视频,图片贴的新h5页面&#10;">
+      <created>1481865867243</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1481865867243</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="652281000" />
+    <option name="totallyTimeSpent" value="661995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,9 +927,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -962,9 +1039,9 @@
     <MESSAGE value="新增用户头像信息&#10;" />
     <MESSAGE value="修改&#10;" />
     <MESSAGE value="广场修改,关注变按钮&#10;" />
-    <MESSAGE value="视频,图片贴的新h5页面&#10;" />
     <MESSAGE value="品牌数据调用改为json&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="品牌数据调用改为json&#10;" />
+    <MESSAGE value="视频,图片贴的新h5页面&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="视频,图片贴的新h5页面&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -973,65 +1050,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18568/home/hao/e/data/html/qinhang/qianyue/qlistinfo.php" />
-    <entry file="file://$PROJECT_DIR$/php/发帖/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/jiaoshi/index.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
-          <folding>
-            <element signature="e#4126#6089#0#HTML" expanded="false" />
-            <element signature="e#6296#9010#0#HTML" expanded="false" />
-            <element signature="e#9173#42454#0#HTML" expanded="false" />
-            <element signature="e#42634#42655#0#HTML" expanded="false" />
-            <marker date="1481589321465" expanded="true" signature="1055:1130" ph="select feedu... $" />
-            <marker date="1481589321465" expanded="true" signature="1394:1455" ph="SELECT feedu... $" />
-            <marker date="1481589321465" expanded="true" signature="2210:2279" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1481589321465" expanded="true" signature="2520:2591" ph="select yaoqi... phome_enewsmemberadd" />
-            <marker date="1481589321465" expanded="true" signature="8668:8745" ph="select follo... $" />
-            <marker date="1481589321465" expanded="true" signature="10566:10627" ph="select count... phome_ecms_photo" />
-            <marker date="1481589321465" expanded="true" signature="11028:11087" ph="select count... phome_enewspl_1" />
-            <marker date="1481589321465" expanded="true" signature="13054:13127" ph="select feedu... $" />
-            <marker date="1481589321465" expanded="true" signature="13880:13890" ph="..." />
-            <marker date="1481589321465" expanded="true" signature="20428:20491" ph="select sayte... phome_enewsmemberadd" />
-            <marker date="1481589321465" expanded="true" signature="21013:21097" ph="select yaoqi... $" />
-            <marker date="1481589321465" expanded="true" signature="21547:21605" ph="SELECT yaoqi... $" />
-            <marker date="1481589321465" expanded="true" signature="23506:23714" ph="select * fro... $" />
-            <marker date="1481589321465" expanded="true" signature="25780:25947" ph="select * fro... $" />
-            <marker date="1481589321465" expanded="true" signature="27335:27502" ph="select * fro... $" />
-            <marker date="1481589321465" expanded="true" signature="29319:29391" ph="select yaoqi... $" />
-            <marker date="1481589321465" expanded="true" signature="29817:29875" ph="SELECT yaoqi... $" />
-            <marker date="1481589321465" expanded="true" signature="31650:31809" ph="select * fro... $" />
-            <marker date="1481589321465" expanded="true" signature="33737:33902" ph="select * fro... $" />
-            <marker date="1481589321465" expanded="true" signature="35950:36119" ph="select * fro... $" />
-            <marker date="1481589321465" expanded="true" signature="42747:42816" ph="select photo... phome_enewsmemberadd" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/组件化/yecha/1.jpg" />
-    <entry file="file://$PROJECT_DIR$/css/tupianneiye3.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/组件化/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1039,14 +1057,6 @@
           <folding>
             <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/haixuan.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="1902" column="21" selection-start-line="1902" selection-start-column="21" selection-end-line="1902" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,20 +1415,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/xin_gerenzhongxin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="2034" column="16" selection-start-line="2034" selection-start-column="16" selection-end-line="2034" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/活动.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ol#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#em#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1481869581968" expanded="true" signature="7430:7494" ph="select count... phome_ecms_photo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28296/home/hao/e/huodong/huodong.zongjie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+        <state relative-caret-position="154">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
             <marker date="1463629348000" expanded="true" signature="330:393" ph="update phome... " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/haixuan.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="2119" column="20" selection-start-line="2119" selection-start-column="20" selection-end-line="2119" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/huodong/qlistinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state relative-caret-position="302">
+          <caret line="169" column="103" selection-start-line="169" selection-start-column="103" selection-end-line="169" selection-end-column="103" />
           <folding>
             <marker date="1481859312997" expanded="true" signature="99:251" ph="select * fro... phome_ecms_shop" />
             <marker date="1481859312997" expanded="true" signature="468:474" ph=" " />
@@ -1434,22 +1487,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/活动.php">
+    <entry file="file://$PROJECT_DIR$/php/findpassword/ChangeRegister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
+        <state relative-caret-position="-197">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#6;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#7130#7136#0#HTML" expanded="true" />
-            <element signature="e#7136#7142#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1481860522448" expanded="true" signature="7437:7501" ph="select count... phome_ecms_photo" />
+            <marker date="1363190400000" expanded="true" signature="628:722" ph="select group... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/findpassword/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/findpassword.yanzheng2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1481879156346" expanded="true" signature="322:376" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="456:510" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="625:681" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="761:817" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="920:957" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="1784:1810" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="1812:1818" ph=" " />
+            <marker date="1481879156346" expanded="true" signature="1963:1987" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="1989:1995" ph=" " />
+            <marker date="1481879156346" expanded="true" signature="3176:3212" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="3367:3427" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="3546:3608" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="4543:4619" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="4808:4869" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="7641:7667" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="7669:7675" ph=" " />
+            <marker date="1481879156346" expanded="true" signature="7824:7848" ph="..." />
+            <marker date="1481879156346" expanded="true" signature="7850:7856" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/register.yanzheng2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding>
+            <marker date="1481875625454" expanded="true" signature="432:486" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="566:620" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="735:791" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="871:927" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="1030:1067" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="1894:1920" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="1922:1928" ph=" " />
+            <marker date="1481875625454" expanded="true" signature="2073:2097" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="2099:2105" ph=" " />
+            <marker date="1481875625454" expanded="true" signature="3393:3429" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="3584:3644" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="3763:3825" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="4769:4845" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="5034:5095" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="8141:8167" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="8169:8175" ph=" " />
+            <marker date="1481875625454" expanded="true" signature="8324:8348" ph="..." />
+            <marker date="1481875625454" expanded="true" signature="8350:8356" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/findpassword/findpassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#1919#2808#0#HTML" expanded="false" />
+            <element signature="e#3279#3651#0#HTML" expanded="false" />
+            <element signature="e#3664#4024#0#HTML" expanded="false" />
+            <marker date="1481878214527" expanded="true" signature="128:134" ph=" " />
+            <marker date="1481878214527" expanded="true" signature="135:141" ph=" " />
+            <marker date="1481878214527" expanded="true" signature="164:170" ph=" " />
+            <marker date="1481878214527" expanded="true" signature="171:177" ph=" " />
           </folding>
         </state>
       </provider>
