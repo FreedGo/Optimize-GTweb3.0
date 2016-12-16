@@ -46,44 +46,79 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
             <!--续费vip弹框-->
             <div class="payWrap" id="vipBuyAgain">
                 <i class="shutUp iconfont" id="shutUpBtn1">&#xe62e;</i>
-                <h2 class="payHead">支付</h2>
+                <h2 class="payHead">琴行认证</h2>
                 <div class="payContent">
                     <form class="payInfo" method="POST" action="zhifubao/alipayapi.php">
+                        <input type="hidden" name="tid" value="4" />
                         <ul>
-                            <li class="clearfix"><span class="payLeft">支付项目：</span><span class="payRight1">好琴声琴行教室认证</span></li>
-                            <li class="clearfix"><span class="payLeft">收款对象：</span><span class="payRight1">好琴声（上海）网络科技有限公司</span></li>
-                            <li class="clearfix"><span class=" epayLeft">支付方式：</span><span class="payRight1">
+                            <li class="clearfix">
+                                <span class="logo-bg"></span><span class="payRight1 payTitle">认证账号服务</span>
+                            </li>
+                            <li class="clearfix"><span class="">套餐选择：</span><span class="payRight1">
                                 <ol class="clearfix">
-                                    <li>
-                                        <label for="zhifubao" class="alipay">
-                                            <input type="radio" name="pay_way_select" id="zhifubao" checked="checked" class="payWay payWay1">
-                                            <a class="payImg payImg1"></a>
+                                    <li class="payTaoCanWarp">
+                                        <label for="twoYears" class="years-two ">
+                                            <a class="payTaoCan on">两年套餐</a>
                                         </label>
                                     </li>
-                                    <li style="display: none">
-                                        <label for="weixin" class="txpay">
-                                            <input type="radio" name="pay_way_select" id="weixin" class="payWay payWay2">
-                                            <a class="payImg payImg2"></a>
+                                    <li class="payTaoCanWarp">
+                                        <label for="oneYears" class="years-one ">
+                                            <a class="payTaoCan">一年套餐</a>
                                         </label>
                                     </li>
-                                    <li style="display: none">
-                                        <label for="ccb" class="ccbpay">
-                                            <input type="radio" name="pay_way_select" id="ccb" class="payWay payWay3">
-                                            <a class="payImg payImg3"></a>
+                                    <li class="payTaoCanWarp">
+                                        <label for="halfYears" class="years-half ">
+                                            <a class="payTaoCan">季度套餐</a>
                                         </label>
-                                    </li>
-                                    <li style="display: none">
-                                      <label for="ofubao" class="twpay">
-                                        <input type="radio" name="pay_way_select" id="ofubao" class="payWay payWay4">
-                                        <a class="payImg payImg4"></a>
-                                      </label>
                                     </li>
                                 </ol>
                             </span>
                             </li>
+                            <li class="clearfix taoCanIntroWarp on">
+                                <span class="payLeft">套餐内容：</span>
+                                <span class="payRight1 taoCanIntroduce">
+                            1. 为期两年的平台认证账号使用权限;<br>
+                            2. 中华好琴声网站颁发的专属认证标志;<br>
+                            3. 中华好琴声网站为签约琴行音质的专属
+                                琴行名片;<br>
+                            4. 中华好琴声网站的各种推广活动的优先
+                                举办权.
+                        </span>
+                            </li>
+                            <li class="clearfix taoCanIntroWarp">
+                                <span class="payLeft">套餐内容：</span>
+                                <span class="payRight1 taoCanIntroduce">
+                            1. 为期一年的平台认证账号使用权限;<br>
+                            2. 中华好琴声网站颁发的专属认证标志;<br>
+                            3. 中华好琴声网站为签约琴行音质的专属
+                                琴行名片;<br>
+                            4. 中华好琴声网站的各种推广活动的优先
+                                举办权.
+                        </span>
+                            </li>
+                            <li class="clearfix taoCanIntroWarp">
+                                <span class="payLeft">套餐内容：</span>
+                                <span class="payRight1 taoCanIntroduce">
+                            1. 为期一季度的平台认证账号使用权限;<br>
+                            2. 中华好琴声网站颁发的专属认证标志;<br>
+                            3. 中华好琴声网站为签约琴行音质的专属
+                                琴行名片;<br>
+                            4. 中华好琴声网站的各种推广活动的优先
+                                举办权.
+                        </span>
+                            </li>
                             <li class="clearfix">
-                                <span class="payLeft">支付金额：</span><span class="payRight1">3000元</span></li>
-                            <li><input class="goPay" id="payBtn" type="submit" value="去支付"></li>
+                                <span class="payLeft">套餐价格：</span>
+                                <span class="payRight1 payPriceTao">3000元/两年</span>
+                                <span class="payRight1 yuanPriceTao"><del>4000元/两年</del></span>
+                            </li>
+                            <li><input class="goPay" id="payBtn" type="submit" value="立即购买"></li>
+                            <li class="remarks on">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
+                            </li>
+                            <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
+                            </li>
+                            <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
+                            </li>
                         </ul>
                     </form>
                 </div>
@@ -104,12 +139,13 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
             <!--第一次购买vip的付款弹框-->
             <div class="payWrap " id="vipBuyOne">
                 <i class="shutUp iconfont" id="shutUpBtn2">&#xe62e;</i>
-                <h2 class="payHead">好琴声琴行认证</h2>
+                <h2 class="payHead">琴行认证</h2>
                 <div class="payContent">
                     <form class="payInfo" method="POST" action="zhifubao/alipayapi.php">
+                        <input type="hidden" name="tid" value="4" />
                         <ul>
                             <li class="clearfix">
-                                <span class="logo-bg"></span><span class="payRight1 payTitle">平台认证账号服务</span>
+                                <span class="logo-bg"></span><span class="payRight1 payTitle">认证账号服务</span>
                             </li>
 <!--                            <li class="clearfix"><span class="payLeft">支付项目：</span><span class="payRight1">好琴声琴行教室会员认证</span></li>-->
                             <!--<li class="clearfix"><span class="payLeft">收款对象：</span><span class="payRight1">好琴声（上海）网络科技有限公司</span></li>-->
@@ -117,54 +153,25 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                                 <ol class="clearfix">
                                     <li class="payTaoCanWarp">
                                         <label for="twoYears" class="years-two ">
-                                            <input type="radio" name="pay_way_select" id="twoYears" checked="checked" class="payTime payTime1">
+<!--                                            <input type="radio" name="tid" id="twoYears" checked="checked" value="4" class="payTime payTime1">-->
                                             <a class="payTaoCan on">两年套餐</a>
                                         </label>
                                     </li>
                                     <li class="payTaoCanWarp">
                                         <label for="oneYears" class="years-one ">
-                                            <input type="radio" name="pay_way_select" id="twoYears" class="payTime payTime2">
+<!--                                            <input type="radio" name="tid" id="twoYears" value="3" class="payTime payTime2">-->
                                             <a class="payTaoCan">一年套餐</a>
                                         </label>
                                     </li>
                                     <li class="payTaoCanWarp">
                                         <label for="halfYears" class="years-half ">
-                                            <input type="radio" name="pay_way_select" id="halfYears" class="payTime payTime3">
+<!--                                            <input type="radio" name="tid" id="halfYears" value="2" class="payTime payTime3">-->
                                             <a class="payTaoCan">季度套餐</a>
                                         </label>
                                     </li>
                                 </ol>
                             </span>
                             </li>
-<!--                            <li class="clearfix"><span class=" epayLeft">支付方式：</span><span class="payRight1">-->
-<!--                                <ol class="clearfix">-->
-<!--                                    <li>-->
-<!--                                        <label for="zhifubao" class="alipay">-->
-<!--                                            <input type="radio" name="pay_way_select" id="zhifubao" checked="checked" class="payWay payWay1">-->
-<!--                                            <a class="payImg payImg1"></a>-->
-<!--                                        </label>-->
-<!--                                    </li>-->
-<!--                                    <li style="display: none">-->
-<!--                                        <label for="weixin" class="txpay">-->
-<!--                                            <input type="radio" name="pay_way_select" id="weixin" class="payWay payWay2">-->
-<!--                                            <a class="payImg payImg2"></a>-->
-<!--                                        </label>-->
-<!--                                    </li>-->
-<!--                                    <li style="display: none">-->
-<!--                                        <label for="ccb" class="ccbpay">-->
-<!--                                            <input type="radio" name="pay_way_select" id="ccb" class="payWay payWay3">-->
-<!--                                            <a class="payImg payImg3"></a>-->
-<!--                                        </label>-->
-<!--                                    </li>-->
-<!--                                    <li style="display: none">-->
-<!--                                      <label for="ofubao" class="twpay">-->
-<!--                                        <input type="radio" name="pay_way_select" id="ofubao" class="payWay payWay4">-->
-<!--                                        <a class="payImg payImg4"></a>-->
-<!--                                      </label>-->
-<!--                                    </li>-->
-<!--                                </ol>-->
-<!--                            </span>-->
-<!--                            </li>-->
                             <li class="clearfix taoCanIntroWarp on">
                                 <span class="payLeft">套餐内容：</span>
                                 <span class="payRight1 taoCanIntroduce">
@@ -204,7 +211,11 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                                 <span class="payRight1 yuanPriceTao"><del>4000元/两年</del></span>
                             </li>
                             <li><input class="goPay" id="payBtn" type="submit" value="立即购买"></li>
-                            <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个解读的网站账号使用权限。
+                            <li class="remarks on">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
+                            </li>
+                            <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
+                            </li>
+                            <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
                             </li>
                         </ul>
                     </form>
@@ -343,16 +354,25 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                         console.log(taoCanIdx);
                         $('.payTaoCan').removeClass('on');
                         $(this).find('.payTaoCan').addClass('on');
-                        $('.taoCanIntroWarp').eq(taoCanIdx).addClass('on').siblings().removeClass('on');
+                        $('.taoCanIntroWarp').eq(taoCanIdx).addClass('on').siblings().removeClass('on')
+                        $('.remarks').eq(taoCanIdx).addClass('on').siblings().removeClass('on');
                         switch(taoCanIdx){
-                            case 0 :$('.payPriceTao').html('3000元/两年');
+                            case 0 :
+                                $('.payPriceTao').html('3000元/两年');
                                 $('.yuanPriceTao').html('<del>4000元/两年</del>');
+                                $('.payInfo input[name="tid"]').val('4');
                                 break;
-                            case 1 :$('.payPriceTao').html('1800元/年');
+                            case 1 :
+                                $('.payPriceTao').html('1800元/年');
                                 $('.yuanPriceTao').html('<del>2000元/年</del>');
+                                $('.payInfo input[name="tid"]').val('3');
+
                                 break;
-                            case 2 :$('.payPriceTao').html('600元/季度');
+                            case 2 :
+                                $('.payPriceTao').html('600元/季度');
                                 $('.yuanPriceTao').html('<del>900元/季度</del>');
+                                $('.payInfo input[name="tid"]').val('2');
+
                                 break;
                         };
                     });

@@ -270,6 +270,10 @@
 .remarks{
 	font-size: 12px;
 	color: #CB6F46;
+	display: none;
+}
+.remarks.on{
+	display: block;
 }
 .taoCanIntroWarp{
 	display: none;

@@ -130,7 +130,7 @@ $(function(){
                         count:pinpai04.length
                     });
                     break;
-                case 3 :
+                case 5 :
                     $('.tongjiNum').numberRock({
                         speed:20,
                         count:pinpai05.length
