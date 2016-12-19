@@ -33,14 +33,15 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
         <!--这个是已经充值VIP的人，显示了到期时间以及续费按钮-->
         <div class="sponsor_div1 clearfix">
         <?php
+        	$dang=time();
             $r=$empire->fetch1("select * from phome_zjk_pinpai_qianyue where userid=$userid and shopzhuang='已付款' order by id desc limit 1");
-                if(!empty($r[userid]) && $r[shengyu]>0){
-                    $ner=ceil($r[shengyu]/365);
+                if(!empty($r[userid]) && $r[sttime]>$dang){
+                    //$ner=ceil($r[shengyu]/365);
         ?>
             <div class="sponor1">
                 <p class="p1">认证琴行教室会员</p>
                 <p class="p1">认证到期时间为：<i class="sponor-icon"></i></p>
-                <p class="p2"><?=date('Y-m-d',strtotime('+'.$ner.' year',strtotime($r[ddtime])))?></p>
+                <p class="p2"><?=$r[stoptime]?></p>
                 <p class="p3"><a id="goBuyVipAgain" target="self" >续费</a></p>
             </div>
             <!--续费vip弹框-->
@@ -110,7 +111,7 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                             <li class="clearfix">
                                 <span class="payLeft">套餐价格：</span>
                                 <span class="payRight1 payPriceTao">3000元/两年</span>
-                                <span class="payRight1 yuanPriceTao"><del>4000元/两年</del></span>
+                                <span class="payRight1 yuanPriceTao"><del>5000元/两年</del></span>
                             </li>
                             <li><input class="goPay" id="payBtn" type="submit" value="立即购买"></li>
                             <li class="remarks on">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
@@ -208,14 +209,14 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                             <li class="clearfix">
                                 <span class="payLeft">套餐价格：</span>
                                 <span class="payRight1 payPriceTao">3000元/两年</span>
-                                <span class="payRight1 yuanPriceTao"><del>4000元/两年</del></span>
+                                <span class="payRight1 yuanPriceTao"><del>5000元/两年</del></span>
                             </li>
                             <li><input class="goPay" id="payBtn" type="submit" value="立即购买"></li>
                             <li class="remarks on">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
                             </li>
                             <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
                             </li>
-                            <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠两个季度的网站账号使用权限。
+                            <li class="remarks">备注：如认证琴行在签约一个月内,录入琴行学生30名，琴行老师5名。中华好琴声加赠一个季度的网站账号使用权限。
                             </li>
                         </ul>
                     </form>
@@ -354,23 +355,23 @@ require(ECMS_PATH . 'e/template/incfile/header.php');
                         console.log(taoCanIdx);
                         $('.payTaoCan').removeClass('on');
                         $(this).find('.payTaoCan').addClass('on');
-                        $('.taoCanIntroWarp').eq(taoCanIdx).addClass('on').siblings().removeClass('on')
-                        $('.remarks').eq(taoCanIdx).addClass('on').siblings().removeClass('on');
+                        $('.taoCanIntroWarp').eq(taoCanIdx).addClass('on').siblings('.taoCanIntroWarp').removeClass('on');
+                        $('.remarks').eq(taoCanIdx).addClass('on').siblings('.remarks').removeClass('on');
                         switch(taoCanIdx){
                             case 0 :
                                 $('.payPriceTao').html('3000元/两年');
-                                $('.yuanPriceTao').html('<del>4000元/两年</del>');
+                                $('.yuanPriceTao').html('<del>5000元/两年</del>');
                                 $('.payInfo input[name="tid"]').val('4');
                                 break;
                             case 1 :
                                 $('.payPriceTao').html('1800元/年');
-                                $('.yuanPriceTao').html('<del>2000元/年</del>');
+                                $('.yuanPriceTao').html('<del>3000元/年</del>');
                                 $('.payInfo input[name="tid"]').val('3');
 
                                 break;
                             case 2 :
                                 $('.payPriceTao').html('600元/季度');
-                                $('.yuanPriceTao').html('<del>900元/季度</del>');
+                                $('.yuanPriceTao').html('<del>1000元/季度</del>');
                                 $('.payInfo input[name="tid"]').val('2');
 
                                 break;

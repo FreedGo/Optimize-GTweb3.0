@@ -80,7 +80,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 					<div class="liebiao">
 						<!-- 海选全部 -->
 						<ul class="liebiaoFuck liebiaoShow current clearfix">
-							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 or classid=33 or classid=34  or classid=110  order by a.huodong_1 asc limit 100',4,24,3}]
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 or classid=33 or classid=34  or classid=110 or classid=120 order by a.huodong_1 asc limit 100',4,24,3}]
 							<?php
 								$time = time();
 								$dang=date("Y-m-d",$time);
@@ -276,7 +276,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 								<div class="shenfen xingming">
 									<span>活动时间：</span><strong><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></strong>
 								</div>
-								<div class="guanzhu xingming clearfix">
+								<div class=" xingming clearfix">
 									<span>活动地点：</span><strong><?=esub($bqr['dizhi'],50)?></strong>
 								</div>
 								<span class="dianjichakan"  style="margin-left: 200px;"><a href="<?=$bqsr['titleurl']?>">点击查看</a></span>
@@ -313,7 +313,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 					<div class="liebiao">
 						<!-- 历史回顾，海选内容全部 -->
 						<ul class="liebiaoCa liebiaoShow current clearfix">
-							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 or classid=33 or classid=34  or classid=110 order by a.huodong_1 desc limit 100',4,24,3}]
+							[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=32 or classid=33 or classid=34  or classid=110 or classid=120 order by a.huodong_1 desc limit 100',4,24,3}]
 							<?php
 								$time = time();
 								$dang=date("Y-m-d",$time);
