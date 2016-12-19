@@ -2,40 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="制作找回密码模板">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/Paymentfailure.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/alipay.config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/alipayapi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/cacert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_core.function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_md5.function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_notify.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_submit.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/log.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/notify_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/paysuccess.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/return_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/oufubao/Allpay_AIO_CreateOrder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/oufubao/ou.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/Paymentfailure.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/alipay.config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/alipayapi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/cacert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_core.function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_md5.function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_notify.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_submit.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/log.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/notify_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/paysuccess.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/return_url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/oufubao/Allpay_AIO_CreateOrder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/oufubao/ou.class.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/海选展示及点击报名页.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -578,14 +544,7 @@
       <workItem from="1481675153861" duration="21582000" />
       <workItem from="1481761159739" duration="14796000" />
       <workItem from="1481847547656" duration="21872000" />
-      <workItem from="1482107335620" duration="3030000" />
-    </task>
-    <task id="LOCAL-00093" summary="个人的订单中心">
-      <created>1480482432035</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1480482432036</updated>
+      <workItem from="1482107335620" duration="3076000" />
     </task>
     <task id="LOCAL-00094" summary="商家的个人中心,包括发布商品">
       <created>1480482457131</created>
@@ -923,11 +882,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482110977223</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="海选报名表增加其它类,">
+      <created>1482111022901</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1482111022901</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="666100000" />
+    <option name="totallyTimeSpent" value="666146000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1029,7 +995,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
     <MESSAGE value="音乐教室更改,基于后台ajax的json数据" />
     <MESSAGE value="修改" />
     <MESSAGE value="修改按类型排序数据处理错误的bug" />
@@ -1054,7 +1019,8 @@
     <MESSAGE value="视频,图片贴的新h5页面&#10;" />
     <MESSAGE value="制作找回密码模板" />
     <MESSAGE value="音乐海选列表增加其它栏目" />
-    <option name="LAST_COMMIT_MESSAGE" value="音乐海选列表增加其它栏目" />
+    <MESSAGE value="海选报名表增加其它类," />
+    <option name="LAST_COMMIT_MESSAGE" value="海选报名表增加其它类," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
