@@ -38,7 +38,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/oufubao/ou.class.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/海选展示及点击报名页.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐海选.html" afterPath="$PROJECT_DIR$/html/音乐海选.html" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -579,14 +578,7 @@
       <workItem from="1481675153861" duration="21582000" />
       <workItem from="1481761159739" duration="14796000" />
       <workItem from="1481847547656" duration="21872000" />
-      <workItem from="1482107335620" duration="2999000" />
-    </task>
-    <task id="LOCAL-00092" summary="在线商城订单">
-      <created>1480325304342</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1480325304342</updated>
+      <workItem from="1482107335620" duration="3030000" />
     </task>
     <task id="LOCAL-00093" summary="个人的订单中心">
       <created>1480482432035</created>
@@ -924,11 +916,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481879184781</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="音乐海选列表增加其它栏目">
+      <created>1482110977223</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1482110977223</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="666069000" />
+    <option name="totallyTimeSpent" value="666100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1030,7 +1029,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="音乐老师分类点击数字动态跳动,分类,搜索,地区筛选" />
     <MESSAGE value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
     <MESSAGE value="音乐教室更改,基于后台ajax的json数据" />
     <MESSAGE value="修改" />
@@ -1055,7 +1053,8 @@
     <MESSAGE value="品牌数据调用改为json&#10;" />
     <MESSAGE value="视频,图片贴的新h5页面&#10;" />
     <MESSAGE value="制作找回密码模板" />
-    <option name="LAST_COMMIT_MESSAGE" value="制作找回密码模板" />
+    <MESSAGE value="音乐海选列表增加其它栏目" />
+    <option name="LAST_COMMIT_MESSAGE" value="音乐海选列表增加其它栏目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
