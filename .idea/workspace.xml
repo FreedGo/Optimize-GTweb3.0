@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="视频,图片贴的新h5页面&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/findpassword/findpassword.php" />
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="制作找回密码模板">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/jingling/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/qita/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/海选报名表/海选展示及点击报名页.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/haixuan.css" afterPath="$PROJECT_DIR$/css/haixuan.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin_gerenzhongxin.css" afterPath="$PROJECT_DIR$/css/xin_gerenzhongxin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/活动.php" afterPath="$PROJECT_DIR$/html/活动.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/register.yanzheng2.js" afterPath="$PROJECT_DIR$/js/register.yanzheng2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐海选.html" afterPath="$PROJECT_DIR$/html/音乐海选.html" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,15 +67,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="findpassword.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="findpassword.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/findpassword/findpassword.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="22">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <element signature="e#1919#2808#0#HTML" expanded="false" />
-                <element signature="e#3279#3651#0#HTML" expanded="false" />
-                <element signature="e#3664#4024#0#HTML" expanded="false" />
                 <marker date="1481878214527" expanded="true" signature="128:134" ph=" " />
                 <marker date="1481878214527" expanded="true" signature="135:141" ph=" " />
                 <marker date="1481878214527" expanded="true" signature="164:170" ph=" " />
@@ -55,10 +82,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="海选展示及点击报名页.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/海选报名表/海选展示及点击报名页.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="469" column="7" selection-start-line="469" selection-start-column="7" selection-end-line="469" selection-end-column="7" />
+              <folding>
+                <element signature="n#script#3;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#7;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#6893#6899#0#HTML" expanded="true" />
+                <element signature="e#6899#6905#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#10738#10746#1#HTML" expanded="true" />
+                <element signature="n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1482110863103" expanded="true" signature="7262:7326" ph="select count... phome_ecms_photo" />
+                <marker date="1482110863103" expanded="true" signature="11241:11249" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="401" column="4" selection-start-line="401" selection-start-column="4" selection-end-line="412" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="register.yanzheng2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/register.yanzheng2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="1430">
               <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
               <folding>
                 <marker date="1481875625454" expanded="true" signature="432:486" ph="..." />
@@ -87,7 +146,7 @@
       <file leaf-file-name="findpassword.yanzheng2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/findpassword.yanzheng2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="528">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <marker date="1481879156346" expanded="true" signature="322:376" ph="..." />
@@ -116,7 +175,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/findpassword/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="462">
               <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding />
             </state>
@@ -148,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp42946/home/hao/jiaoshi/index.name.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp09344/home/hao/jiaoshi/index.type.php" />
         <option value="$PROJECT_DIR$/html/琴行教室.html" />
         <option value="$PROJECT_DIR$/php/pinpai/index.name.php" />
@@ -174,7 +232,6 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp29432/home/hao/pinpai/index.type.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp29266/home/hao/pinpai/index.type.ajax.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp24409/home/hao/pinpai/index.name.php" />
-        <option value="$PROJECT_DIR$/html/音乐海选.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp11716/home/hao/e/template/incfile/header_1.php" />
         <option value="$USER_HOME$/Desktop/台湾.txt" />
         <option value="$PROJECT_DIR$/js/adress.js" />
@@ -199,6 +256,8 @@
         <option value="$PROJECT_DIR$/php/findpassword/index.php" />
         <option value="$PROJECT_DIR$/php/findpassword/findpassword.php" />
         <option value="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
+        <option value="$PROJECT_DIR$/html/音乐海选.html" />
+        <option value="$PROJECT_DIR$/php/海选报名表/海选展示及点击报名页.php" />
       </list>
     </option>
   </component>
@@ -272,7 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,20 +359,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="组件化" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -333,44 +377,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reg" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="findpassword" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="海选报名表" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
@@ -397,15 +410,15 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\Optimize-GTweb3.0\php\海选报名表\jingling" />
       <recent name="D:\Git\Optimize-GTweb3.0\js" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\findpassword" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\pinpai" />
       <recent name="D:\Git\Optimize-GTweb3.0\组件化\GTweb-h5" />
-      <recent name="D:\Git\Optimize-GTweb3.0\html" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.video.html">
@@ -565,14 +578,8 @@
       <workItem from="1481588576387" duration="13943000" />
       <workItem from="1481675153861" duration="21582000" />
       <workItem from="1481761159739" duration="14796000" />
-      <workItem from="1481847547656" duration="20797000" />
-    </task>
-    <task id="LOCAL-00091" summary="修改">
-      <created>1480315363391</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1480315363391</updated>
+      <workItem from="1481847547656" duration="21872000" />
+      <workItem from="1482107335620" duration="2999000" />
     </task>
     <task id="LOCAL-00092" summary="在线商城订单">
       <created>1480325304342</created>
@@ -910,11 +917,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481865867243</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="制作找回密码模板">
+      <created>1481879184780</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1481879184781</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="661995000" />
+    <option name="totallyTimeSpent" value="666069000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -927,15 +941,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19130434" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37391305" sideWeight="0.69402987" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28695652" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28695652" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1016,7 +1030,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="乐谱修改" />
     <MESSAGE value="音乐老师分类点击数字动态跳动,分类,搜索,地区筛选" />
     <MESSAGE value="老师,教室空间主页二维码chrome浏览器变形的bug修正" />
     <MESSAGE value="音乐教室更改,基于后台ajax的json数据" />
@@ -1041,7 +1054,8 @@
     <MESSAGE value="广场修改,关注变按钮&#10;" />
     <MESSAGE value="品牌数据调用改为json&#10;" />
     <MESSAGE value="视频,图片贴的新h5页面&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="视频,图片贴的新h5页面&#10;" />
+    <MESSAGE value="制作找回密码模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="制作找回密码模板" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1050,36 +1064,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="64" />
-          <folding>
-            <marker date="1481621306046" expanded="true" signature="2349:2364" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/xin_yinyuelaoshi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="369" column="1" selection-start-line="369" selection-start-column="1" selection-end-line="369" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53604/home/hao/jiaoshi/index.type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/xin_yinyuejiaoshi.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="401" column="61" selection-start-line="401" selection-start-column="61" selection-end-line="401" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,41 +1100,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp30167/home/hao/pinpai/indexs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="113" selection-start-line="26" selection-start-column="113" selection-end-line="26" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29338/home/hao/pinpai/indexs.ip.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2794">
-          <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29432/home/hao/pinpai/index.type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="68" column="113" selection-start-line="68" selection-start-column="113" selection-end-line="68" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29266/home/hao/pinpai/index.type.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="73" column="97" selection-start-line="73" selection-start-column="97" selection-end-line="73" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24409/home/hao/pinpai/index.name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp30167/home/hao/pinpai/indexs.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29338/home/hao/pinpai/indexs.ip.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29432/home/hao/pinpai/index.type.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29266/home/hao/pinpai/index.type.ajax.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24409/home/hao/pinpai/index.name.php" />
     <entry file="file://$PROJECT_DIR$/好琴声前端技术文档.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -1173,20 +1131,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11716/home/hao/e/template/incfile/header_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10733/home/hao/e/template/member/ChangeRegister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11716/home/hao/e/template/incfile/header_1.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10733/home/hao/e/template/member/ChangeRegister.php" />
     <entry file="file://$USER_HOME$/Desktop/台湾.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -1201,32 +1147,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp22871/alidata/www/hao/css/app/phoneArticle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp22021/alidata/www/hao/app/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="158" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐海选.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp22871/alidata/www/hao/css/app/phoneArticle.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp22021/alidata/www/hao/app/news.php" />
     <entry file="file://$PROJECT_DIR$/php/jiaoshi/qianyue/kecheng.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1241,7 +1167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,27 +1184,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/品牌首页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3212">
-          <caret line="217" column="51" selection-start-line="217" selection-start-column="51" selection-end-line="217" selection-end-column="51" />
-          <folding>
-            <element signature="e#2878#7055#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#7416#7424#1" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#7;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/pinpai/index.name.json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <marker date="1481696890000" expanded="true" signature="219:407" ph="select * fro... $" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1288,31 +1195,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="123" column="11" selection-start-line="123" selection-start-column="11" selection-end-line="123" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp20703/home/hao/e/qinhang/qianyue/zhifubao/alipayapi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01356/home/hao/e/data/html/qinhang/qianyue/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="366" column="23" selection-start-line="366" selection-start-column="23" selection-end-line="366" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp20703/home/hao/e/qinhang/qianyue/zhifubao/alipayapi.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01356/home/hao/e/data/html/qinhang/qianyue/qlistinfo.php" />
     <entry file="file://$PROJECT_DIR$/js/toupiao4.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
           <caret line="172" column="60" selection-start-line="172" selection-start-column="54" selection-end-line="172" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1320,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="194" column="1" selection-start-line="194" selection-start-column="1" selection-end-line="194" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,7 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,14 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="43" column="24" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="24" />
-          <folding>
-            <element signature="e#47#792#0" expanded="false" />
-            <element signature="e#2758#2847#0" expanded="false" />
-            <element signature="e#2874#5117#0" expanded="false" />
-            <element signature="e#5352#6671#0" expanded="false" />
-            <marker date="1481855029723" expanded="true" signature="9156:9210" ph="..." />
-            <marker date="1481855029723" expanded="true" signature="11965:12019" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1351,15 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="347" column="104" selection-start-line="347" selection-start-column="104" selection-end-line="347" selection-end-column="104" />
-          <folding>
-            <marker date="1481856551000" expanded="true" signature="102:254" ph="select * fro... phome_ecms_shop" />
-            <marker date="1481856551000" expanded="true" signature="470:476" ph=" " />
-            <marker date="1481856551000" expanded="true" signature="477:483" ph=" " />
-            <marker date="1481856551000" expanded="true" signature="515:521" ph=" " />
-            <marker date="1481856551000" expanded="true" signature="522:528" ph=" " />
-            <marker date="1481856551000" expanded="true" signature="589:595" ph=" " />
-            <marker date="1481856551000" expanded="true" signature="1431:1536" ph="select * fro... phome_zjk_pinpai_qianyue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1367,7 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="275" column="19" selection-start-line="275" selection-start-column="19" selection-end-line="275" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1375,7 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1383,19 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-682">
           <caret line="132" column="22" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
-          <folding>
-            <element signature="e#161#906#0" expanded="false" />
-            <marker date="1481855063324" expanded="true" signature="8783:8830" ph="..." />
-            <marker date="1481855063324" expanded="true" signature="11350:11397" ph="..." />
-            <marker date="1481855063324" expanded="true" signature="17230:17277" ph="..." />
-            <marker date="1481855063324" expanded="true" signature="20994:21011" ph="..." />
-            <marker date="1481855063324" expanded="true" signature="22408:22425" ph="..." />
-            <marker date="1481855063324" expanded="true" signature="22427:22433" ph=" " />
-            <marker date="1481855063324" expanded="true" signature="22433:22439" ph=" " />
-            <marker date="1481855063324" expanded="true" signature="23691:23708" ph="..." />
-            <marker date="1481855063324" expanded="true" signature="23710:23716" ph=" " />
-            <marker date="1481855063324" expanded="true" signature="23716:23722" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1403,15 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
           <caret line="374" column="0" selection-start-line="374" selection-start-column="0" selection-end-line="374" selection-end-column="0" />
-          <folding>
-            <marker date="1481855815366" expanded="true" signature="102:254" ph="select * fro... phome_ecms_shop" />
-            <marker date="1481855815366" expanded="true" signature="470:476" ph=" " />
-            <marker date="1481855815366" expanded="true" signature="477:483" ph=" " />
-            <marker date="1481855815366" expanded="true" signature="515:521" ph=" " />
-            <marker date="1481855815366" expanded="true" signature="522:528" ph=" " />
-            <marker date="1481855815366" expanded="true" signature="589:595" ph=" " />
-            <marker date="1481855815366" expanded="true" signature="1410:1515" ph="select * fro... phome_zjk_pinpai_qianyue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1419,7 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="2034" column="16" selection-start-line="2034" selection-start-column="16" selection-end-line="2034" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,23 +1275,6 @@
         <state relative-caret-position="375">
           <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ol#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#em#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1481869581968" expanded="true" signature="7430:7494" ph="select count... phome_ecms_photo" />
           </folding>
         </state>
@@ -1454,9 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <marker date="1463629348000" expanded="true" signature="330:393" ph="update phome... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,18 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="169" column="103" selection-start-line="169" selection-start-column="103" selection-end-line="169" selection-end-column="103" />
-          <folding>
-            <marker date="1481859312997" expanded="true" signature="99:251" ph="select * fro... phome_ecms_shop" />
-            <marker date="1481859312997" expanded="true" signature="468:474" ph=" " />
-            <marker date="1481859312997" expanded="true" signature="475:481" ph=" " />
-            <marker date="1481859312997" expanded="true" signature="513:519" ph=" " />
-            <marker date="1481859312997" expanded="true" signature="520:526" ph=" " />
-            <marker date="1481859312997" expanded="true" signature="587:593" ph=" " />
-            <marker date="1481859312997" expanded="true" signature="7090:7149" ph="select count... phome_ecms_photo" />
-            <marker date="1481859312997" expanded="true" signature="7517:7584" ph="select * fro... phome_ecms_photo" />
-            <marker date="1481859312997" expanded="true" signature="7716:7863" ph="select * fro... $" />
-            <marker date="1481859312997" expanded="true" signature="17127:17285" ph="select * fro... phome_ecms_shop_check" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1499,7 +1314,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/findpassword/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="462">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
         </state>
@@ -1507,7 +1322,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/findpassword.yanzheng2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="528">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <marker date="1481879156346" expanded="true" signature="322:376" ph="..." />
@@ -1534,7 +1349,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/register.yanzheng2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="1430">
           <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
           <folding>
             <marker date="1481875625454" expanded="true" signature="432:486" ph="..." />
@@ -1559,18 +1374,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/品牌首页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="217" column="51" selection-start-line="217" selection-start-column="51" selection-end-line="217" selection-end-column="51" />
+          <folding>
+            <element signature="e#2878#7055#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="401" column="4" selection-start-line="401" selection-start-column="4" selection-end-line="412" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐海选.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2008">
+          <caret line="543" column="10" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#6;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#4;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#5;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/海选音乐之星报名页/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4554">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480296388947" expanded="true" signature="738:805" ph="select * fro... phome_ecms_shop" />
+            <marker date="1480296388947" expanded="true" signature="12782:12802" ph="..." />
+            <marker date="1480296388947" expanded="true" signature="12940:12960" ph="..." />
+            <marker date="1480296388947" expanded="true" signature="27762:27782" ph="..." />
+            <marker date="1480296388947" expanded="true" signature="27920:27940" ph="..." />
+            <marker date="1480296388947" expanded="true" signature="44090:44110" ph="..." />
+            <marker date="1480296388947" expanded="true" signature="44277:44297" ph="..." />
+            <marker date="1480296388947" expanded="true" signature="51083:51103" ph="..." />
+            <marker date="1480296388947" expanded="true" signature="51278:51298" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/findpassword/findpassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="22">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#1919#2808#0#HTML" expanded="false" />
-            <element signature="e#3279#3651#0#HTML" expanded="false" />
-            <element signature="e#3664#4024#0#HTML" expanded="false" />
             <marker date="1481878214527" expanded="true" signature="128:134" ph=" " />
             <marker date="1481878214527" expanded="true" signature="135:141" ph=" " />
             <marker date="1481878214527" expanded="true" signature="164:170" ph=" " />
             <marker date="1481878214527" expanded="true" signature="171:177" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/海选报名表/海选展示及点击报名页.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="469" column="7" selection-start-line="469" selection-start-column="7" selection-end-line="469" selection-end-column="7" />
+          <folding>
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#7;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#6893#6899#0#HTML" expanded="true" />
+            <element signature="e#6899#6905#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#10738#10746#1#HTML" expanded="true" />
+            <element signature="n#ol#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1482110863103" expanded="true" signature="7262:7326" ph="select count... phome_ecms_photo" />
+            <marker date="1482110863103" expanded="true" signature="11241:11249" ph="..." />
           </folding>
         </state>
       </provider>
