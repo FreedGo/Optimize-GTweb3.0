@@ -168,3 +168,7 @@
     .user_agree_wrap a{
     	font-size: 16px;
     }
+    .tipMsg{
+	    font-size: 12px;
+	    white-space: nowrap;
+    }

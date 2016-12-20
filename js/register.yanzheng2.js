@@ -44,7 +44,7 @@
 							url: '/e/ajax/zhuce.code.ajax.php',
 							type: 'post',
 							dataType: 'html',
-							data: {'code': yanzhengNum,'message':d.val()}
+							data: {'code': yanzhengNum,'message':d.val()},
 						})
 						.done(function(msg) {
 							console.log("success");
@@ -55,7 +55,8 @@
 							} else{//其他数值代表验证码输入错误
 								$('.yanzhengCode').remove();
 								$('.getRegCode').after('<span class="yanzhengCode" style="font-size:12px;color:red">&nbsp;验证码错误，请重输</span>');
-//								$('.yanzheng').val('');//清空验证码输入框内容
+								$('.yanzheng').val('');//清空验证码输入框内容
+								console.log($('.yanzheng').val());
 							};
 							$('.yanzheng').focus(function(event) {
 								$('.yanzhengCode').fadeOut('normal');
@@ -218,6 +219,13 @@
 						$('.receiveNum').empty().html(icelltype);
 						$('.quxiao').val(icelltype);
 					});
+	                //8.1 2016-10-14 修改 地区默认为空，用户必选，不选的时候跳出提示
+	                    $('.iphoneNum').focus(function () {
+	                    	// console.log($('.celltype').val());
+		                    if ($('.celltype').val() == '+0'){
+			                    d.after('<span class="iphoneNumKuang"  style="font-size:12px;line-height:34px;margin-left:5px; color:red;">请先选择地区</span>');
+		                    };
+	                    });
 					//9.提交时验证
 					var a = $('#user_info_sub'),
 						b = $('#user_agreement'),
