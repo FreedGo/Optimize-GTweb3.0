@@ -19,6 +19,7 @@
 	</header>
 	<main class="container-fluid">
 		<div class="video-warp">
+			<span class="viewNumWarp clearfix"><i class="viewNumBg f-l-l"></i><i class="viewNums">1088次</i></span>
 			<video webkit-playsinline="" playsinline="true" controls poster="http://mvimg1.meitudata.com/5819c098af43a378.jpg!thumb320" preload="auto">
 				<source src="http://mvvideo1.meitudata.com/5819c098bc1d31494.mp4" type="video/mp4">
 				<p>你的浏览器不支持视频播放，请下载播放，<a href="http://mvvideo1.meitudata.com/5819c098bc1d31494.mp4">点击下载</a>。</p>
@@ -30,8 +31,8 @@
 					<img src="http://m.greattone.net/d/uploaduserpic/userpic/1481692235.jpg" alt="程伟" class="img-rounded">
 				</div>
 				<ul class="user-otherinfos f-l-l">
-					<li class="info-item ">程伟XXXXXXXXXXXXXXXXX</li>
-					<li class="info-item ">等级或者身份</li>
+					<li class="info-item clearfix"><h2 class="f-l-l">程伟XXXXXXXXXXXXXXXXX</h2><i class="newRenZheng f-l-l"></i></li>
+					<li class="info-item clearfix"><span class="identity f-l-l">普通会员</span><span class="level"></span></li>
 				</ul>
 			</div>
 			<div class="user-btns clearfix">
@@ -126,11 +127,12 @@
 		 * 2.分享取消按钮事件
 		 * @param  500毫秒的动画
 		 */
-		$('.share-cancel-btn').on('click',function(){
+		$('.share-cancel-btn,.share-bg').on('click',function(){
 			$('.share-bg').fadeOut(500);
 			$('.share').animate({
 				bottom:-196
 			},500);
+
 		});
 		//让封面图为方形
 		conImgHeight();

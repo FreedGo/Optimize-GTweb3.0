@@ -44,10 +44,30 @@ body{
 }
 .video-warp{
 	width: 100%;
+	position: relative;
 }
 .video-warp video{
 	width: 100%;
 	height: auto;
+}
+.viewNumWarp{
+	position: absolute;
+	top:10px;
+	right:10px;
+	height: 24px;
+	padding: 5px 10px;
+	/*width:40px;*/
+	line-height: 14px;
+	background-color: rgba(0,0,0,0.5);
+	border:#ccc solid 1px;
+	border-radius: 5px;
+	z-index: 10000;
+}
+.viewNumBg{
+	width:16px;
+	height: 14px;
+	background: url(./images/mobile-icon.png) -302px -59px no-repeat ;
+
 }
 .main-contain{
 	padding: 10px;
@@ -73,9 +93,17 @@ body{
 }
 .like-btn-bg,.share-btn-bg{
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 24px;
+	height: 24px;
 	vertical-align: middle;
+
+}
+.like-btn-bg{
+	background: url(./images/mobile-icon.png) -256px -85px no-repeat ;
+
+}
+.share-btn-bg{
+	background: url(./images/mobile-icon.png) -286px -85px no-repeat ;
 
 }
 .like-btn-num,.share-btn-dec{
@@ -193,6 +221,17 @@ body{
 .recmd-content-list-titie{
 	color:#fff;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*swiper*/
 .swiper-container {
