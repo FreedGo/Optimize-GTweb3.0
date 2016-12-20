@@ -68,7 +68,6 @@
 			<div class="searchWrap">
 				<div class="search">
 					<script type="text/javascript" src="[!--news.url--]skin/default/js/tabs.js"></script>
-					<form id="searchform">
 						<input type="hidden" name="show" value="title" />
 						<input type="hidden" name="tempid" value="1" />
 						<select name="tbname" id="xuanze">
@@ -79,7 +78,6 @@
 							<option value="4">图片</option>
 						</select>
 						<input type="input"  id="searchValue">
-					</form>
 					<i class="iconfont searchInputSub">&#xe658;</i>
 				</div>
 				<div class="guangchangfatie">
@@ -105,7 +103,7 @@
 									<?
 					                    if($bqr[cked]==1){
 				                            echo "<i class='iconfont'>&#xe657;</i>";
-										}
+									}
 									?>
 								</h3>
 							</a>
@@ -390,7 +388,7 @@
 									<?
 					                    if($bqr[cked]==1){
 					                        echo "<i class='iconfont'>&#xe657;</i>";
-										}
+									}
 									?>
 								</h3>
 							</a>
@@ -475,7 +473,7 @@
 									<?
 					                    if($bqr[cked]==1){
 					                        echo "<i class='iconfont'>&#xe657;</i>";
-										}
+									}
 									?>
 								</h3>
 							</a>
@@ -552,7 +550,7 @@
 					?>
 					[/e:loop]
 
-					[e:loop={'select * from phome_ecms_photo a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where isgood=3 order by a.newstime DESC limit 20',4,24,3}]
+					[e:loop={'select * from phome_ecms_photo a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where isgood=3 order by a.newstime DESC limit 40',4,24,3}]
 					<?
 						if($bqr[classid]==11 && $bqr[open]==1){
 				    ?>
@@ -567,7 +565,7 @@
 									<?
 						                if($bqr[cked]==1){
 					                        echo "<i class='iconfont'>&#xe657;</i>";
-										}
+									}
 									?>
 								</h3>
 							</a>
@@ -660,7 +658,7 @@
 							<p class="fromCity">
 								<em><?=$bqr[address]?></em>
 								<span class="guanzhu<?=$bqr[userid]?>" onclick="GuanZhu('<?=$bqr[userid]?>')">关注</span>								</p>
-								<p><em>
+							<p><em>
 								<?
 									if($bqr[groupid]==1){
 										echo $bqr[putong_shenfen];//普通会员默认爱乐人
@@ -672,7 +670,7 @@
 										echo "音乐教室";
 									}
 								?>
-								</em>
+							</em>
 								<span>
 						            <?php
 						                if($bqr[userfen]<=100){
@@ -1034,25 +1032,25 @@
 				<!-- 评论排行列表结束··········································································· -->
 			</div>
 			<!--<div class="recommond">-->
-				<!-- 控制热帖切换 点赞，评论的js·················································· -->
+			<!-- 控制热帖切换 点赞，评论的js·················································· -->
 
-				<!-- 控制热帖切换 点赞，评论的js·················································· -->
-				<!--<dl class="retieTop">-->
-					<!-- 此处有修改······························································· -->
-					<!--<dd><span class="on tie1">热帖</span><span class="out tie2" >点赞</span><span class="out tie3">评论</span></dd>-->
-					<!-- 结束······························································· -->
-					<!--[ecmsinfo]'11,12,13',6,20,0,1,57,0,'ismember=1'[/ecmsinfo]-->
-				<!--</dl>-->
-				<!-- 点赞排行列表··········································································· -->
-				<!--<dl class="dianzanTop">-->
-					<!--[ecmsinfo]'11,12,13',6,20,0,2,64,0,'ismember=1'[/ecmsinfo]-->
-				<!--</dl>-->
-				<!-- 点赞排行列表结束··········································································· -->
-				<!-- 评论排行列表··········································································· -->
-				<!--<dl class="pinglunTop">-->
-					<!--[ecmsinfo]'11,12,13',6,20,0,9,65,0,'ismember=1'[/ecmsinfo]-->
-				<!--</dl>-->
-				<!-- 评论排行列表结束··········································································· -->
+			<!-- 控制热帖切换 点赞，评论的js·················································· -->
+			<!--<dl class="retieTop">-->
+			<!-- 此处有修改······························································· -->
+			<!--<dd><span class="on tie1">热帖</span><span class="out tie2" >点赞</span><span class="out tie3">评论</span></dd>-->
+			<!-- 结束······························································· -->
+			<!--[ecmsinfo]'11,12,13',6,20,0,1,57,0,'ismember=1'[/ecmsinfo]-->
+			<!--</dl>-->
+			<!-- 点赞排行列表··········································································· -->
+			<!--<dl class="dianzanTop">-->
+			<!--[ecmsinfo]'11,12,13',6,20,0,2,64,0,'ismember=1'[/ecmsinfo]-->
+			<!--</dl>-->
+			<!-- 点赞排行列表结束··········································································· -->
+			<!-- 评论排行列表··········································································· -->
+			<!--<dl class="pinglunTop">-->
+			<!--[ecmsinfo]'11,12,13',6,20,0,9,65,0,'ismember=1'[/ecmsinfo]-->
+			<!--</dl>-->
+			<!-- 评论排行列表结束··········································································· -->
 			<!--</div>-->
 			<div class="recommond">
 				<dl>

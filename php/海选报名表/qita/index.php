@@ -287,6 +287,10 @@ include '../../header_1.php';
                      <br><input type="hidden" name="videoid" id="videoid" value="" size="45"><!-- 视频ID： -->
                     </td>
                   </tr>
+                    <tr>
+                        <td width='16%' height=25 bgcolor='ffffff'>视频描述:</td>
+                        <td><textarea name="smalltext" id="smalltext" cols="30" rows="10" required></textarea></td>
+                    </tr>
                   <tr>
                     <td width='16%' height=25 bgcolor='ffffff'>比赛费用<?=$$r[price]?>:</td>
                     <td bgcolor='ffffff'>

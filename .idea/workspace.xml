@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="海选新增其它完成">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/haixuan.css" afterPath="$PROJECT_DIR$/css/haixuan.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/zhuce.css" afterPath="$PROJECT_DIR$/css/zhuce.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-全部贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/findpassword.yanzheng2.js" afterPath="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/register.yanzheng2.js" afterPath="$PROJECT_DIR$/js/register.yanzheng2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/findpassword/findpassword.php" afterPath="$PROJECT_DIR$/php/findpassword/findpassword.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/海选报名表/qita/index.php" afterPath="$PROJECT_DIR$/php/海选报名表/qita/index.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
@@ -558,14 +553,7 @@
       <workItem from="1481761159739" duration="14796000" />
       <workItem from="1481847547656" duration="21872000" />
       <workItem from="1482107335620" duration="16679000" />
-      <workItem from="1482196853589" duration="13381000" />
-    </task>
-    <task id="LOCAL-00097" summary="发帖文件备份">
-      <created>1480494197461</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1480494197461</updated>
+      <workItem from="1482196853589" duration="13430000" />
     </task>
     <task id="LOCAL-00098" summary="修改广场,所有头像旁边加了关注按钮">
       <created>1480574766762</created>
@@ -903,11 +891,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482225904560</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="重置密码模板及js验证完成">
+      <created>1482225953360</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1482225953360</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="693130000" />
+    <option name="totallyTimeSpent" value="693179000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1009,7 +1004,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="老师页面的h5&#10;" />
     <MESSAGE value="精简冗余代码&#10;" />
     <MESSAGE value="琴行教室筛选改为粉丝数,教师等级&#10;" />
     <MESSAGE value="尝试修改ajax的php端文件,品牌的&#10;" />
@@ -1034,7 +1028,8 @@
     <MESSAGE value="海选报名按键js增加了跳转到其它报名的路径" />
     <MESSAGE value="海选新增其它完成" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="重置密码模板及js验证完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="重置密码模板及js验证完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

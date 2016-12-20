@@ -146,30 +146,45 @@ $(function() {
 
 //3.音乐广场搜索ajax
 $(function() {
-	var searchV1;//大的搜索分类
-	var searchV2;//搜索内容
-	$('.searchInputSub').bind('click', function(event) {
-		searchV1=$('#xuanze').val();
-		searchV2=$('#searchValue').val();
-		if (searchV2=='') {
+	/**
+	 * 广场搜索
+	 * @param type,分类
+	 * @param ele,搜索的内容
+	 */
+	function sousuo(type,ele) {
+		if (ele=='') {
 			alert('搜索内容不能为空');
 		}else{
 			$.ajax({
 				url: '/guangchang/index.name.php',
 				type: 'post',
 				dataType: 'html',
-				data: {'leixing': searchV1,'neirong':searchV2}
+				data: {'leixing': type,'neirong':ele}
 			})
-			.done(function(msg) {
-				
-				$('.quanzhandongtai').empty().stop(true).hide().fadeIn('normal').append(msg);
-			})
-			.fail(function() {
-				console.log("error");
-			});
-		};
-		
+				.done(function(msg) {
+					$('.quanzhandongtai').empty().stop(true).hide().fadeIn('normal').append(msg);
+				})
+				.fail(function() {
+					console.log("error");
+				});
+		}
+	}
+	var searchV1;//大的搜索分类
+	var searchV2;//搜索内容
+	//点击搜索按钮
+	$('.searchInputSub').on('click', function(event) {
+		searchV1=$('#xuanze').val();
+		searchV2=$('#searchValue').val();
+		sousuo(searchV1,searchV2)
 	});
+//	输入内容按回车
+	$('#searchValue').keypress(function (event) {
+		if (event.keyCode == 13){
+			searchV1=$('#xuanze').val();
+			searchV2=$('#searchValue').val();
+			sousuo(searchV1,searchV2);
+		}
+	})
 
 });
 // $('input').click(function(event) {
