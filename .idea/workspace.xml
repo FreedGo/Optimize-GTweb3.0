@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="海选新增其它完成">
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="找回密码,js验证用户名和手机号码匹配">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-全部贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/海选报名表/qita/index.php" afterPath="$PROJECT_DIR$/php/海选报名表/qita/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/findpassword.yanzheng2.js" afterPath="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,145 +31,7 @@
     <favorites_list name="Optimize-GTweb3.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="register.yanzheng2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/register.yanzheng2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="225" column="107" selection-start-line="225" selection-start-column="107" selection-end-line="225" selection-end-column="107" />
-              <folding>
-                <marker date="1482197280594" expanded="true" signature="432:486" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="566:620" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="735:791" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="871:927" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="1030:1067" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="1895:1921" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="1923:1929" ph=" " />
-                <marker date="1482197280594" expanded="true" signature="2074:2098" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="2100:2106" ph=" " />
-                <marker date="1482197280594" expanded="true" signature="3435:3471" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="3626:3686" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="3805:3867" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="4811:4887" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="5076:5137" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="7589:7648" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="8613:8639" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="8641:8647" ph=" " />
-                <marker date="1482197280594" expanded="true" signature="8796:8820" ph="..." />
-                <marker date="1482197280594" expanded="true" signature="8822:8828" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="findpassword.yanzheng2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/findpassword.yanzheng2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5000">
-              <caret line="250" column="75" selection-start-line="250" selection-start-column="75" selection-end-line="250" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yinyueguangchang.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="184" column="38" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
-              <folding>
-                <marker date="1482224038838" expanded="true" signature="6138:6148" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yinyueguangchang.hot.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.hot.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="155" column="38" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
-              <folding>
-                <marker date="1482224061638" expanded="true" signature="6755:6765" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_jquery_jquery.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_jquery_jquery.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="2125" column="4" selection-start-line="2125" selection-start-column="4" selection-end-line="2125" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="音乐广场-全部贴.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="77" column="105" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="7" />
-              <folding>
-                <element signature="e#1983#1991#1" expanded="true" />
-                <element signature="e#2957#2965#1" expanded="true" />
-                <element signature="e#3059#3065#0" expanded="true" />
-                <element signature="e#3065#3071#0" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="音乐广场-推荐贴.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="83" column="79" selection-start-line="83" selection-start-column="79" selection-end-line="83" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.name.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12771/home/hao/guangchang/index.name.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="738" column="60" selection-start-line="738" selection-start-column="60" selection-end-line="738" selection-end-column="60" />
-              <folding>
-                <marker date="1482222302526" expanded="true" signature="265:479" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482222302526" expanded="true" signature="4243:4308" ph="select morep... $" />
-                <marker date="1482222302526" expanded="true" signature="7204:7392" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482222302526" expanded="true" signature="11138:11203" ph="select morep... $" />
-                <marker date="1482222302526" expanded="true" signature="14100:14303" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482222302526" expanded="true" signature="16297:16500" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482222302526" expanded="true" signature="18482:18684" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482222302526" expanded="true" signature="20488:20553" ph="select morep... $" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="guangchang.ajax.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp14381/home/hao/guangchang/guangchang.ajax.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="11" />
-              <folding>
-                <element signature="n#em#0;n#p#2;n#div#0;n#li#0;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#p#2;n#div#0;n#li#0;n#!!top" expanded="false" />
-                <marker date="1481003605000" expanded="true" signature="262:474" ph="select * fro... phome_ecms_photo" />
-                <marker date="1481003605000" expanded="true" signature="4870:4935" ph="select morep... $" />
-                <marker date="1481003605000" expanded="true" signature="9367:9375" ph="..." />
-                <marker date="1481003605000" expanded="true" signature="11989:11997" ph="..." />
-                <marker date="1481003605000" expanded="true" signature="14298:14365" ph="select * fro... phome_enewsad" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -242,13 +100,13 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp12369/home/en.flsd/css/base.css" />
         <option value="$PROJECT_DIR$/css/haixuan.css" />
         <option value="$PROJECT_DIR$/css/zhuce.css" />
-        <option value="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp39314/home/hao/e/extend/feed/index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp12771/home/hao/guangchang/index.name.php" />
         <option value="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
         <option value="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.js" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
+        <option value="$PROJECT_DIR$/js/findpassword.yanzheng2.js" />
       </list>
     </option>
   </component>
@@ -264,8 +122,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+    <option name="x" value="1918" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -322,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -351,18 +207,19 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../franzsandner_mall_tw" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="\usr\local\bin\node" />
@@ -383,15 +240,15 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\Optimize-GTweb3.0\js" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\海选报名表\jingling" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\findpassword" />
       <recent name="D:\Git\Optimize-GTweb3.0\php\pinpai" />
       <recent name="D:\Git\Optimize-GTweb3.0\组件化\GTweb-h5" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Optimize-GTweb3.0\docs" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.video.html">
@@ -553,14 +410,8 @@
       <workItem from="1481761159739" duration="14796000" />
       <workItem from="1481847547656" duration="21872000" />
       <workItem from="1482107335620" duration="16679000" />
-      <workItem from="1482196853589" duration="13430000" />
-    </task>
-    <task id="LOCAL-00098" summary="修改广场,所有头像旁边加了关注按钮">
-      <created>1480574766762</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1480574766763</updated>
+      <workItem from="1482196853589" duration="13761000" />
+      <workItem from="1482279464218" duration="7670000" />
     </task>
     <task id="LOCAL-00099" summary="备份">
       <created>1480584463735</created>
@@ -898,11 +749,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482225953360</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="音乐广场推荐贴和全站动态,增加搜索框回车绑定搜索事件,搜索结果上增加关注按钮">
+      <created>1482226019201</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1482226019201</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="693179000" />
+    <option name="totallyTimeSpent" value="701180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,10 +772,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1918" y="0" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15884861" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41304347" sideWeight="0.38219616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1004,8 +862,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="精简冗余代码&#10;" />
-    <MESSAGE value="琴行教室筛选改为粉丝数,教师等级&#10;" />
     <MESSAGE value="尝试修改ajax的php端文件,品牌的&#10;" />
     <MESSAGE value="分离搜索时间,并且增加按回车开始搜索&#10;" />
     <MESSAGE value="修改&#10;&#10;" />
@@ -1029,7 +885,9 @@
     <MESSAGE value="海选新增其它完成" />
     <MESSAGE value="修改" />
     <MESSAGE value="重置密码模板及js验证完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="重置密码模板及js验证完成" />
+    <MESSAGE value="音乐广场推荐贴和全站动态,增加搜索框回车绑定搜索事件,搜索结果上增加关注按钮" />
+    <MESSAGE value="找回密码,js验证用户名和手机号码匹配" />
+    <option name="LAST_COMMIT_MESSAGE" value="找回密码,js验证用户名和手机号码匹配" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1038,35 +896,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/组件化/GTweb-h5/pics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="131" column="10" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/xin_yinyueguangchang.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/pinpai/index.name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="134" column="10" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/pinpai/index.name.json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -1126,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="2034" column="16" selection-start-line="2034" selection-start-column="16" selection-end-line="2034" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,12 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="267" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="267" selection-end-column="6" />
-          <folding>
-            <element signature="e#10621#10627#0#HTML" expanded="false" />
-            <element signature="e#10627#10633#0#HTML" expanded="false" />
-            <marker date="1482131214772" expanded="true" signature="4376:4439" ph="select cked phome_enewsmember" />
-            <marker date="1482131214772" expanded="true" signature="9750:9819" ph="select photo... phome_enewsmemberadd" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1293,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="34" column="109" selection-start-line="34" selection-start-column="109" selection-end-line="34" selection-end-column="109" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,34 +1130,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/register.yanzheng2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="225" column="107" selection-start-line="225" selection-start-column="107" selection-end-line="225" selection-end-column="107" />
-          <folding>
-            <marker date="1482197280594" expanded="true" signature="432:486" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="566:620" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="735:791" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="871:927" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="1030:1067" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="1895:1921" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="1923:1929" ph=" " />
-            <marker date="1482197280594" expanded="true" signature="2074:2098" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="2100:2106" ph=" " />
-            <marker date="1482197280594" expanded="true" signature="3435:3471" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="3626:3686" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="3805:3867" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="4811:4887" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="5076:5137" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="7589:7648" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="8613:8639" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="8641:8647" ph=" " />
-            <marker date="1482197280594" expanded="true" signature="8796:8820" ph="..." />
-            <marker date="1482197280594" expanded="true" signature="8822:8828" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1366,9 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="392" column="22" selection-start-line="392" selection-start-column="22" selection-end-line="392" selection-end-column="22" />
-          <folding>
-            <marker date="1482200060894" expanded="true" signature="2504:2519" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1376,7 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="296" column="12" selection-start-line="296" selection-start-column="12" selection-end-line="296" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,7 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
           <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1400,58 +1186,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <marker date="1482221350364" expanded="true" signature="346:430" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="452:528" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="567:651" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="673:749" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="1037:1098" ph="select * fro... $" />
-            <marker date="1482221350364" expanded="true" signature="1154:1242" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="1265:1349" ph="UPDATE ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="1403:1491" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="1751:1835" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="1954:2056" ph="update ${{$d... " />
-            <marker date="1482221350364" expanded="true" signature="2080:2164" ph="UPDATE ${{$d... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12771/home/hao/guangchang/index.name.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="14760">
           <caret line="738" column="60" selection-start-line="738" selection-start-column="60" selection-end-line="738" selection-end-column="60" />
-          <folding>
-            <marker date="1482222302526" expanded="true" signature="265:479" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482222302526" expanded="true" signature="4243:4308" ph="select morep... $" />
-            <marker date="1482222302526" expanded="true" signature="7204:7392" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482222302526" expanded="true" signature="11138:11203" ph="select morep... $" />
-            <marker date="1482222302526" expanded="true" signature="14100:14303" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482222302526" expanded="true" signature="16297:16500" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482222302526" expanded="true" signature="18482:18684" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482222302526" expanded="true" signature="20488:20553" ph="select morep... $" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp14381/home/hao/guangchang/guangchang.ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="620">
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="11" />
-          <folding>
-            <element signature="n#em#0;n#p#2;n#div#0;n#li#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#p#2;n#div#0;n#li#0;n#!!top" expanded="false" />
-            <marker date="1481003605000" expanded="true" signature="262:474" ph="select * fro... phome_ecms_photo" />
-            <marker date="1481003605000" expanded="true" signature="4870:4935" ph="select morep... $" />
-            <marker date="1481003605000" expanded="true" signature="9367:9375" ph="..." />
-            <marker date="1481003605000" expanded="true" signature="11989:11997" ph="..." />
-            <marker date="1481003605000" expanded="true" signature="14298:14365" ph="select * fro... phome_enewsad" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="1540">
           <caret line="77" column="105" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="7" />
           <folding>
             <element signature="e#1983#1991#1" expanded="true" />
@@ -1465,7 +1221,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="1660">
           <caret line="83" column="79" selection-start-line="83" selection-start-column="79" selection-end-line="83" selection-end-column="79" />
           <folding />
         </state>
@@ -1473,9 +1229,72 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_jquery_jquery.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
+        <state relative-caret-position="42440">
           <caret line="2125" column="4" selection-start-line="2125" selection-start-column="4" selection-end-line="2125" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/register.yanzheng2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding>
+            <marker date="1482197280594" expanded="true" signature="432:486" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="566:620" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="735:791" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="871:927" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="1030:1067" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="1895:1921" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="1923:1929" ph=" " />
+            <marker date="1482197280594" expanded="true" signature="2074:2098" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="2100:2106" ph=" " />
+            <marker date="1482197280594" expanded="true" signature="3435:3471" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="3626:3686" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="3805:3867" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="4811:4887" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="5076:5137" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="7589:7648" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="8613:8639" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="8641:8647" ph=" " />
+            <marker date="1482197280594" expanded="true" signature="8796:8820" ph="..." />
+            <marker date="1482197280594" expanded="true" signature="8822:8828" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.hot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="155" column="38" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
+          <folding>
+            <marker date="1482224061638" expanded="true" signature="6755:6765" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/member_editinfofun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1380989460000" expanded="true" signature="892:946" ph="select regem... $" />
+            <marker date="1380989460000" expanded="true" signature="1004:1137" ph="select count... ${eReturnMemberTable()}" />
+            <marker date="1380989460000" expanded="true" signature="2294:2355" ph="select * fro... $" />
+            <marker date="1380989460000" expanded="true" signature="2874:3031" ph="insert into $... " />
+            <marker date="1380989460000" expanded="true" signature="3074:3165" ph="update ${{$d... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="69" column="85" selection-start-line="69" selection-start-column="85" selection-end-line="69" selection-end-column="85" />
+          <folding>
+            <marker date="1481695324065" expanded="true" signature="4541:4588" ph="..." />
+            <marker date="1481695324065" expanded="true" signature="6364:6411" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1491,19 +1310,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/findpassword.yanzheng2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5000">
-          <caret line="250" column="75" selection-start-line="250" selection-start-column="75" selection-end-line="250" selection-end-column="75" />
+        <state relative-caret-position="271">
+          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding>
+            <element signature="e#1422#2385#0" expanded="false" />
+            <element signature="e#7635#7675#0" expanded="false" />
+            <element signature="e#7760#7923#0" expanded="false" />
+            <element signature="e#8040#8327#0" expanded="false" />
+            <element signature="e#8457#9376#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/乐谱内页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.hot.js">
+    <entry file="file://$PROJECT_DIR$/html/乐谱中心.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="155" column="38" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
-          <folding>
-            <marker date="1482224061638" expanded="true" signature="6755:6765" ph="..." />
-          </folding>
+        <state relative-caret-position="-300">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

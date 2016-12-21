@@ -118,10 +118,10 @@
 							.done(function(msg) {
 								if (msg==="1") {
 //									tipNam.html('未查询到用户').css('fontSize', 20);
-									showNotice(tipNam,'未查询到用户','green');
+									showNotice(tipNam,'未查询到用户','red');
 								}
 								else{
-									showNotice(tipNam,'√','red');
+									showNotice(tipNam,'√','green');
 								}
 							})
 							.fail(function() {
@@ -140,67 +140,108 @@
 
 
 					var d = $('#photo'),
-						k = $('.celltype').val(),
+						k ,
+						username1,
+						celltypeNum,
 						tipPhone = $('.tipPhone');
 						
 					$('#photo').blur(function(event) {
-						e = d.val();
+						username1 = $('.yonghuming').val();//用户名
+						k = $('.celltype').val(); //区号
+						e = d.val();//手机号
 						if (e=="") {
-							tipPhone.html('');
+							showNotice(tipPhone,'手机号为空','red');
 							$('.yanzhengBtn').addClass('yanzheng-pre').removeClass('yanzhengBtn');
-						} else{
+						}else if (username = ''){
+							showNotice($('.tipName'),'用户名为空','red');
+						} else {
 							e = parseInt(d.val());
 //							tipPhone.html('验证中');
 							showNotice(tipPhone,'验证中','green');
 							var f = $('.iphoneNumKuang');
 							$.ajax({
-								url: '/e/ajax/zhuce.phone.ajax.php',
+								url: '/e/member/findpassword/password.ajax.php',
 								type: 'post',
 								dataType: 'html',
-								data: {'phone': e},
+								data: {'phone': e,'area':k,'username':username1}
 							})
 							.done(function(msg) {
 								// console.log("success");
-								// console.log(msg);
+								 console.log(msg);
 								// console.log(typeof(msg));
-								if (msg==="2") {//等于0直接过
-									// console.log(f);
+//								if (msg==="2") {//等于0直接过
+//									// console.log(f);
+//									showNotice(tipPhone,'√','green');
+//									// 此时验证码按钮处于能点状态，并且点击后可以向后台发送ajax
+//									$('.yanzheng-pre').addClass('yanzhengBtn').removeClass('yanzheng-pre');
+//									//点击之后先提示已发送，再ajax
+//									$('.yanzhengBtn').on('click', function(event) {
+//										$('.yifasong').html('&nbsp;验证码已发送，请查看');
+//										$('.yifasong').stop(true).delay(2000).fadeOut('fast');
+//										$.ajax({
+//											url: '/e/ajax/sendSMS.php',
+//											type: 'post',
+//											dataType: 'html',
+//											data: {'message': e,'Area':k}
+//										})
+//										.done(function(msg) {
+//											console.log("success");
+//											// console.log(msg);
+//										})
+//										.fail(function() {
+//											console.log("error");
+//										})
+//										.always(function() {
+//											console.log({'message': e,'Area':k});
+//										});
+//										// 按钮先变灰色
+//										$('.yanzhengBtn').addClass('yanzheng-pre').removeClass('yanzhengBtn');
+//										// 5秒之后再变回去
+//										setTimeout(function(){
+//											$('.yanzheng-pre').addClass('yanzhengBtn').removeClass('yanzheng-pre');
+//										}, 10000);
+//									});
+//
+//								}
+//								else if (msg=="0"){//等于1提示已注册
+//									showNotice(tipPhone,'当前手机号与用户名不匹配','red');
+//									$('.yanzhengBtn').addClass('yanzheng-pre').removeClass('yanzhengBtn');
+//								}
+
+								if (msg == '0'){
+									showNotice(tipPhone,'当前手机号与用户名不匹配','red');
+									$('.yanzhengBtn').addClass('yanzheng-pre').removeClass('yanzhengBtn');
+								}else{
 									showNotice(tipPhone,'√','green');
 									// 此时验证码按钮处于能点状态，并且点击后可以向后台发送ajax
 									$('.yanzheng-pre').addClass('yanzhengBtn').removeClass('yanzheng-pre');
-									//点击之后先提示已发送，再ajax
 									$('.yanzhengBtn').on('click', function(event) {
 										$('.yifasong').html('&nbsp;验证码已发送，请查看');
-										$('.yifasong').stop(true).delay(2000).fadeOut('fast');
-										k = $('.celltype').val();
+										$('.yifasong').stop(true).delay(2000).empty();
 										$.ajax({
 											url: '/e/ajax/sendSMS.php',
 											type: 'post',
 											dataType: 'html',
 											data: {'message': e,'Area':k}
 										})
-										.done(function(msg) {
-											console.log("success");
-											// console.log(msg);
-										})
-										.fail(function() {
-											console.log("error");
-										})
-										.always(function() {
-											console.log({'message': e,'Area':k});
-										});
+											.done(function(msg) {
+												console.log("success");
+												// console.log(msg);
+											})
+											.fail(function() {
+												console.log("error");
+											})
+											.always(function() {
+												console.log({'message': e,'Area':k});
+											});
 										// 按钮先变灰色
 										$('.yanzhengBtn').addClass('yanzheng-pre').removeClass('yanzhengBtn');
-										// 5秒之后再变回去
+										// 10秒之后再变回去
 										setTimeout(function(){
 											$('.yanzheng-pre').addClass('yanzhengBtn').removeClass('yanzheng-pre');
 										}, 10000);
 									});
 
-								}
-								else if (msg==="1"){//等于1提示已注册
-									showNotice(tipPhone,'此手机号已注册','red');
-									$('.yanzhengBtn').addClass('yanzheng-pre').removeClass('yanzhengBtn');
 								}
 							})
 							.fail(function() {
