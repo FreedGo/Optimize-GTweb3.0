@@ -2,20 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/公共模板-页面头部.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/公共模板-页面底部.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/音乐新闻-乐器.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Optimize-GTweb3.0.iml" afterPath="$PROJECT_DIR$/.idea/Optimize-GTweb3.0.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/jingling/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pay.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/index备份.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/pinpai/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinhang/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qinshi/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/index - 备份原版3种报名方式.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/haixuan/qita/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/header_1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/pay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/huodong/pay.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/huodong.css" afterPath="$PROJECT_DIR$/css/huodong.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin_base.css" afterPath="$PROJECT_DIR$/css/xin_base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/琴行教室.html" afterPath="$PROJECT_DIR$/html/琴行教室.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/huodong.js" afterPath="$PROJECT_DIR$/js/huodong.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/组件化/GTweb-h5/video-h5.css" afterPath="$PROJECT_DIR$/组件化/GTweb-h5/video-h5.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" afterPath="$PROJECT_DIR$/组件化/GTweb-h5/video.html" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,7 +209,7 @@
         <entry file="file://$PROJECT_DIR$/css/xin_base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
-              <caret line="452" column="19" lean-forward="false" selection-start-line="452" selection-start-column="19" selection-end-line="452" selection-end-column="19" />
+              <caret line="452" column="0" lean-forward="false" selection-start-line="452" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -285,6 +382,68 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="组件化" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huodong" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,14 +664,7 @@
       <workItem from="1482374901533" duration="6000" />
       <workItem from="1482375025854" duration="691000" />
       <workItem from="1482375733839" duration="5377000" />
-      <workItem from="1482384902115" duration="8781000" />
-    </task>
-    <task id="LOCAL-00100" summary="音乐广场头像旁边增加关注,点击可以直接关注,另外精简部分代码">
-      <created>1480642432876</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1480642432877</updated>
+      <workItem from="1482384902115" duration="8961000" />
     </task>
     <task id="LOCAL-00101" summary="音乐老师和琴行教室的前台主页,增加了 二维码,以及其他部分修改">
       <created>1480662977724</created>
@@ -850,11 +1002,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482311365215</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="修改">
+      <created>1482396758088</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1482396758088</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="719896000" />
+    <option name="totallyTimeSpent" value="720076000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -984,7 +1143,7 @@
     <MESSAGE value="音乐广场推荐贴和全站动态,增加搜索框回车绑定搜索事件,搜索结果上增加关注按钮" />
     <MESSAGE value="找回密码,js验证用户名和手机号码匹配" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1361,7 +1520,7 @@
     <entry file="file://$PROJECT_DIR$/css/xin_base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
-          <caret line="452" column="19" lean-forward="false" selection-start-line="452" selection-start-column="19" selection-end-line="452" selection-end-column="19" />
+          <caret line="452" column="0" lean-forward="false" selection-start-line="452" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
           <folding />
         </state>
       </provider>
