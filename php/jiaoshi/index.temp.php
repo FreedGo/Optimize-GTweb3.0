@@ -494,7 +494,7 @@ if ($dangid != 0) {
                                             </div>
                                         </a>
 
-                                        <div class="guanzhu xingming clearfix">
+                                        <div class=" xingming clearfix">
                                             <span>点击:</span><em><?= $r[onclick] ?></em>
 
                                             <!-- <a href="/e/member/fava/add/?classid=<?= $r['classid'] ?>&amp;id=<?= $r['id'] ?>"><i class="iconfont po1">&#xe647;</i><span class="po4">收藏</span></a>
@@ -520,7 +520,7 @@ if ($dangid != 0) {
                                                 <span><?= $r[title] ?></span>
                                             </div>
                                         </a>
-                                        <div class="guanzhu xingming clearfix">
+                                        <div class=" xingming clearfix">
                                             <span class="hongse">¥:<?= $r[price] ?></span>
                                             <del>¥:<?= $r[tprice] ?></del>
                                         </div>
@@ -548,7 +548,7 @@ if ($dangid != 0) {
                                                 <span>价格：</span><span class="hongse">¥<?= $r[price] ?>元</span>
                                             </div>
 
-                                            <div class="guanzhu xingming clearfix">
+                                            <div class=" xingming clearfix">
                                                 <!-- <a href="/e/member/fava/add/?classid=<?= $classid ?>&amp;id=<?= $id ?>"><i class="iconfont ">&#xe647;</i><span >收藏</span></a> -->
                                             </div>
                                             <span class="dianjichakan irent"><a
@@ -560,7 +560,7 @@ if ($dangid != 0) {
                                 </ul>
                             <!-- 音乐老师············································································· -->
                             <?
-//相互邀请
+							//相互邀请
                             $yaoqing = $empire->fetch1("select yaoqing from {$dbtbpre}enewsmemberadd where userid='$tmgetuserid'");
                             $feeduser_result = explode("::::::", $yaoqing['yaoqing']);
                             $guanzhu = array();

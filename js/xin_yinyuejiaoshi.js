@@ -37,7 +37,7 @@ $(function() {
 	$('.liebiaoshow:gt(0)').hide();
 
 	var classroome00,
-		iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
+		iloadedNum = [0,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
 
 	/**
 	 * 加载指定的数据进入指定的老师分类
@@ -45,29 +45,35 @@ $(function() {
 	 * @param type {num}  分类;
 	 */
 	function loadClassrome(obj,type) {
-		$.each(obj,function (index,val) {
-			if (index>=iloadedNum[type] && index < (iloadedNum[type] +10)) {
-				$('.liebiaoShow').eq(0).append(
-					'<li><a href="/e/space/?userid=' + val.userid +
-					'"><img src="' + val.userpic +
-					'"></a><div class="xingming"><a href="/e/space/?userid=' + val.userid +
-					'"><span>' + val.username +
-					'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' + val.cked +
-					'"></i></a></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' + val.address + val.address1 + val.address2 +
-					'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' + val.telephone +
-					'</p></div> <span class="toutiao0' + val.resever_1 +
-					'"></span></li>'
-				)
-			}
-		});
-		iloadedNum[type] = iloadedNum[type] +10 ;
+		if (obj.length == iloadedNum[type]){
+				$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
+		} else {
+			$('.liebiaoShow').eq(1).hide();
+			$.each(obj,function (index,val) {
+				if (index>=iloadedNum[type] && index < (iloadedNum[type] +10)) {
+					$('.liebiaoShow').eq(0).append(
+						'<li><a href="/e/space/?userid=' + val.userid +
+						'"><img src="' + val.userpic +
+						'"></a><div class="xingming"><a href="/e/space/?userid=' + val.userid +
+						'"><span>' + val.username +
+						'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' + val.cked +
+						'"></i></a></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' + val.address + val.address1 + val.address2 +
+						'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' + val.telephone +
+						'</p></div> <span class="toutiao0' + val.resever_1 +
+						'"></span></li>'
+					)
+				}
+			});
+			iloadedNum[type] = iloadedNum[type] +10 ;
+		}
 	}
 
 	/**
 	 * 页面加载的时候,1.三级联动加载到地区,2.按排序加载琴行
 	 */
 	function getCurrentCity(){
-		var subCity1;
+		var subCity1,//省
+		    subCity2;//市
 		// 第一步,向高德API发送请求并获得访问者所在省份
 		$.ajax({
 			type: "get",
@@ -81,7 +87,9 @@ $(function() {
 				//当前城市
 				// $("#shenfen>p").html('当前:'+jsonObj.province);
 				subCity1=jsonObj.province;
+				subCity2 = jsonObj.city;
 				subCity1=subCity1.substring(0,subCity1.length-1);//拼接字符串，减去最后一位子副
+				subCity2=subCity2.substring(0,subCity2.length-1);//拼接字符串，减去最后一位子副
 				// console.log(subCity1);
 				//增加加载页面师,三级联动加载一级城市
 				//遍历第一级,找到之后模拟点击
@@ -96,20 +104,29 @@ $(function() {
 				$.ajax({
 					url: '/jiaoshi/index-ajax/index.ajax.php',
 					type: 'post',
-					data:{'addres': subCity1},
+					data:{'addres': subCity2},
 					success:function(msg) {
 						// classroome00 = eval('('+msg+')');
 						$('.loaders').hide();
-						msg = eval( '(' +msg+')');
-						classroome00 = msg ;
-						//数字跳动
-						$('.tongjiNum').numberRock({
-							speed:20,
-							count:classroome00.length
-						});
+						if (msg == 'null'||msg == null){
+							msg = [];
+							classroome00 = msg;
+							$('.tongjiNum').numberRock({
+								speed:20,
+								count:0
+							});
+							$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
+						}else {
+							msg = eval( '(' +msg+')');
+							classroome00 = msg ;
+							//数字跳动
+							$('.tongjiNum').numberRock({
+								speed:20,
+								count:classroome00.length
+							});
+							loadClassrome(classroome00,0);
+						};
 						iloadedNum[0] = 0;
-						loadClassrome(classroome00,0);
-
 					}
 				});
 				// 第二步end，向好琴声后台发送当前地址并接受返回的信息
@@ -165,35 +182,45 @@ $(function() {
 			// 点下按钮之后加载css动画
 			$('.loaders').show();
 			$.ajax({
-					url: '/jiaoshi/indexs.php',
-					type: 'post',
-					// data:{'city1': subCity1,'city2':subCity2,'city3':subCity3},
-					data:{'city1': subCity1,'city2':subCity2,'city3':subCity3},
-					// data:city1,
+				url: '/jiaoshi/index-ajax/index.address.php',
+				type: 'post',
+				// data:{'city1': subCity1,'city2':subCity2,'city3':subCity3},
+				data:{'addres': subCity1,'addres1':subCity2,'addres2':subCity3},
+				// data:city1,
 				success:function(msg){
+					$('.liebiaoShow').empty();
 					$('.loaders').hide();
-					if (msg==''||msg==null) {
-						$('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-align:center;">没有找到琴行，请重新搜索</p>');
+					if (msg=='null'||msg==null) {
+						msg = [];
+						classroome00 = msg;
+						$('.tongjiNum').numberRock({
+							speed:20,
+							count:0
+						});
+						$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
 					} else {
 						msg = eval('('+msg+')');
+						iloadedNum[0] = 0;
+						classroome00 = msg;
 						$('.tongjiNum').numberRock({
 							speed:20,
 							count:msg.length
 						});
-						$('.liebiaoShow').empty();
-						$.each(msg,function (index,val) {
-							$('.liebiaoShow').append(
-								'<li><a href="/e/space/?userid=' +val.userid+
-								'"><img src="' +val.userpic+
-								'"></a><div class="xingming"><a href="/e/space/?userid=' +val.userid+
-								'"><span>' +val.username+
-								'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' +val.cked+
-								'"></i></a></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' +val.address+val.address1+val.address2+
-								'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' +val.telephone+
-								'</p></div> <span class="toutiao0' +val.resever_1+
-								'"></span></li>'
-							)
-						})
+//						$.each(msg,function (index,val) {
+//							$('.liebiaoShow').append(
+//								'<li><a href="/e/space/?userid=' +val.userid+
+//								'"><img src="' +val.userpic+
+//								'"></a><div class="xingming"><a href="/e/space/?userid=' +val.userid+
+//								'"><span>' +val.username+
+//								'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' +val.cked+
+//								'"></i></a></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' +val.address+val.address1+val.address2+
+//								'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' +val.telephone+
+//								'</p></div> <span class="toutiao0' +val.resever_1+
+//								'"></span></li>'
+//							)
+//						})
+						loadClassrome(msg,0);
+//						iloadedNum[0] = msg.length ;
 					}
 				}
 		})
@@ -228,6 +255,11 @@ $(function() {
 				success:function(msg){
 					$('.loaders').hide();
 					if (msg==''||msg==null) {
+						classroome00 = msg = [];
+						$('.tongjiNum').numberRock({
+							speed:20,
+							count:0
+						});
 						$('.liebiaoShow').append('<p style="font-size:16px;color:#cb7047;text-align:center;">没有找到琴行，请重新搜索</p>');
 					} else {
 						msg = eval('('+msg+')');
@@ -235,8 +267,9 @@ $(function() {
 							speed:20,
 							count:msg.length
 						});
+						classroome00 = msg;//把搜索结果赋值给全局的加载变量
 						$.each(msg,function (index,val) {
-							$('.liebiaoShow').append(
+							$('.liebiaoShow').eq(0).append(
 								'<li><a href="/e/space/?userid=' +val.userid+
 								'"><img src="' +val.userpic+
 								'"></a><div class="xingming"><a href="/e/space/?userid=' +val.userid+
@@ -247,7 +280,8 @@ $(function() {
 								'</p></div> <span class="toutiao0' +val.resever_1+
 								'"></span></li>'
 							)
-						})
+						});
+						iloadedNum[0] = msg.length;//重置下拉显示的li为0
 					}
 				}
 			});
@@ -280,10 +314,10 @@ $(function() {
 	    addres1,//市
 	    addres2;//县
 	$('#paixuSelect').change(function(event) {
-			paixuName=$('#paixuSelect').val();
-			addres = $('#sfdq_tj').val();
-			addres1 = $('#csdq_tj').val();
-			addres2 = $('#qydq_tj').val();
+		paixuName=$('#paixuSelect').val();
+		addres = $('#sfdq_tj').val();
+		addres1 = $('#csdq_tj').val();
+		addres2 = $('#qydq_tj').val();
 			// console.log(paixuName);
 			if (paixuName==0) {
 				alert('请选择排序类型');
@@ -303,9 +337,19 @@ $(function() {
 						'addres2':addres2
 					},
 					success:function(msg){
-						msg = eval('('+msg+')');
-						classroome00 = msg;
 						iloadedNum[0] = 0;
+						if (msg == 'null'||msg == null){
+							msg = [];
+							classroome00 = msg;
+							$('.tongjiNum').numberRock({
+								speed:20,
+								count:0
+							});
+							$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
+						}else{
+							msg = eval('('+msg+')');
+							classroome00 = msg;
+							iloadedNum[0] = 0;
 //						$.each(msg,function (index,val) {
 //							$('.liebiaoShow').append(
 //								'<li><a href="/e/space/?userid=' + val.userid +
@@ -321,11 +365,13 @@ $(function() {
 //							)
 //						});
 //						iloadedNum[0] = msg.length ;
-						loadClassrome(msg,0);
-						$('.tongjiNum').numberRock({
-							speed:20,
-							count:msg.length
-						});
+							loadClassrome(msg,0);
+							$('.tongjiNum').numberRock({
+								speed:20,
+								count:msg.length
+							});
+						}
+
 						$('.loaders').hide();
 					}
 				});
@@ -345,14 +391,24 @@ $(function() {
 							'addres2':addres2
 						},
 						success:function(msg){
-							msg = eval('('+msg+')');
-							classroome00 = msg;
 							iloadedNum[0] = 0;
-							loadClassrome(msg,0);
-							$('.tongjiNum').numberRock({
-								speed:20,
-								count:msg.length
-							});
+							if (msg == 'null'||msg == null){
+								msg = [];
+								classroome00 = msg;
+								$('.tongjiNum').numberRock({
+									speed:20,
+									count:0
+								});
+								$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
+							}else{
+								msg = eval('('+msg+')');
+								classroome00 = msg;
+								loadClassrome(msg,0);
+								$('.tongjiNum').numberRock({
+									speed:20,
+									count:msg.length
+								});
+							};
 							$('.loaders').hide();
 						}
 					});

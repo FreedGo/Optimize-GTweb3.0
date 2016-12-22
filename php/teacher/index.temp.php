@@ -72,7 +72,6 @@ if ($dangid != 0) {
                     $zjj = 11;
                 }
             }
-
         }
     }
 }
@@ -394,7 +393,7 @@ if ($dangid != 0) {
                                             </div>
                                         </a>
 
-                                        <div class="guanzhu xingming clearfix">
+                                        <div class="xingming clearfix">
                                             <span>点击:</span><em><?= $r[onclick] ?></em>
 
                                             <!-- <a href="/e/member/fava/add/?classid=<?= $r['classid'] ?>&amp;id=<?= $r['id'] ?>"><i class="iconfont po1">&#xe647;</i><span class="po4">收藏</span></a>
@@ -421,7 +420,7 @@ if ($dangid != 0) {
                                                 <span><?= $r[title] ?></span>
                                             </div>
                                         </a>
-                                        <div class="guanzhu xingming clearfix">
+                                        <div class=" xingming clearfix">
                                             <span class="hongse">¥:<?= $r[price] ?></span>
                                             <del>¥:<?= $r[tprice] ?></del>
                                         </div>

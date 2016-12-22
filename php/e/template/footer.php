@@ -20,15 +20,14 @@ if(!defined('InEmpireCMS'))
 					<dl>
 						<dd><a href="[!--news.url--]news">音乐资讯</a></dd>
 						<dt><a href="[!--news.url--]news/yinyue">音乐新闻</a></dt>
-						<dt><a href="[!--news.url--]news/yueqi">音乐资讯</a></dt>
-						<dt><a href="[!--news.url--]news/huodong">音乐活动</a></dt>
+						<dt><a href="[!--news.url--]news/yueqi">原创新闻</a></dt>
 					</dl>
 					<!--<dl>
-                        <dd><a href="[!--news.url--]mingren">音乐名人</a></dd>
-                        <dt><a href="[!--news.url--]mingren">名人名家</a></dt>
-                        <dt><a href="[!--news.url--]mingren">音乐之星</a></dt>
+						<dd><a href="[!--news.url--]mingren">音乐名人</a></dd>
+						<dt><a href="[!--news.url--]mingren">名人名家</a></dt>
+						<dt><a href="[!--news.url--]mingren">音乐之星</a></dt>
 
-                    </dl>-->
+					</dl>-->
 					<dl>
 						<dd><a href="[!--news.url--]haixuan">网络海选</a></dd>
 						<dt><a href="[!--news.url--]haixuan">中华好琴声</a></dt>
@@ -36,6 +35,7 @@ if(!defined('InEmpireCMS'))
 						<dt><a href="[!--news.url--]haixuan">好琴师</a></dt>
 						<dt><a href="[!--news.url--]haixuan">人气琴行</a></dt>
 						<dt><a href="[!--news.url--]haixuan">乐器品牌</a></dt>
+						<dt><a href="[!--news.url--]haixuan">其它</a></dt>
 
 					</dl>
 					<dl>
@@ -46,43 +46,50 @@ if(!defined('InEmpireCMS'))
 						<dt><a href="[!--news.url--]laoshi">其他老师</a></dt>
 					</dl>
 					<dl>
-						<dd><a href="[!--news.url--]jiaoshi">音乐教室</a></dd>
+						<dd><a href="[!--news.url--]jiaoshi">琴行教室</a></dd>
 					</dl>
 					<!--<dl>
-                        <dd><a href="[!--news.url--]">音乐乐团</a></dd>
-                        <dt><a href="[!--news.url--]">管乐</a></dt>
-                        <dt><a href="[!--news.url--]">弦乐</a></dt>
-                        <dt><a href="[!--news.url--]">交响乐</a></dt>
-                        <dt><a href="[!--news.url--]">民乐</a></dt>
-                        <dt><a href="[!--news.url--]">合唱</a></dt>
-                    </dl>-->
+						<dd><a href="[!--news.url--]">音乐乐团</a></dd>
+						<dt><a href="[!--news.url--]">管乐</a></dt>
+						<dt><a href="[!--news.url--]">弦乐</a></dt>
+						<dt><a href="[!--news.url--]">交响乐</a></dt>
+						<dt><a href="[!--news.url--]">民乐</a></dt>
+						<dt><a href="[!--news.url--]">合唱</a></dt>
+					</dl>-->
 					<dl>
-						<dd><a href="[!--news.url--]zhibo">直播课堂</a></dd>
-						<dt><a href="[!--news.url--]zhibo">历史回顾</a></dt>
-						<dt><a href="[!--news.url--]zhibo">直播预告</a></dt>
-						<dt><a href="[!--news.url--]zhibo">正在直播</a></dt>
+						<dd><a href="[!--news.url--]pinpai">乐器品牌</a></dd>
+						<dt><a href="[!--news.url--]pinpai">钢琴</a></dt>
+						<dt><a href="[!--news.url--]pinpai">提琴</a></dt>
+						<dt><a href="[!--news.url--]pinpai">吉他</a></dt>
+						<dt><a href="[!--news.url--]pinpai">管乐器</a></dt>
+						<dt><a href="[!--news.url--]pinpai">打击乐器</a></dt>
 					</dl>
 					<dl>
-						<dd><a href="[!--news.url--]yuepu">音乐乐谱</a></dd>
-						<dt><a href="[!--news.url--]">钢琴</a></dt>
-						<dt><a href="[!--news.url--]">提琴</a></dt>
-						<dt><a href="[!--news.url--]">吉他</a></dt>
+						<dd><a href="[!--news.url--]e/action/ListInfo/?classid=96">直播中心</a></dd>
+						<dt><a href="[!--news.url--]e/action/ListInfo/?classid=96">历史回顾</a></dt>
+						<dt><a href="[!--news.url--]e/action/ListInfo/?classid=96">直播预告</a></dt>
+						<dt><a href="[!--news.url--]e/action/ListInfo/?classid=96">正在直播</a></dt>
+					</dl>
+					<dl>
+						<dd><a href="[!--news.url--]yuepu">乐谱中心</a></dd>
+						<dt><a href="[!--news.url--]yuepu">钢琴</a></dt>
+						<dt><a href="[!--news.url--]yuepu">提琴</a></dt>
+						<dt><a href="[!--news.url--]yuepu">吉他</a></dt>
 					</dl>
 
 					<!--<dl>
-                        <dd><a href="[!--news.url--]">音乐百科</a></dd>
+						<dd><a href="[!--news.url--]">音乐百科</a></dd>
 
-                    </dl>
-                    <dl>
-                        <dd><a href="[!--news.url--]">音乐电台</a></dd>
-
-                    </dl>-->
+					</dl>
+					<dl>
+						<dd><a href="[!--news.url--]">音乐电台</a></dd>
+					</dl>-->
 					<dl>
 						<dd><a href="[!--news.url--]bbs">声粉论坛</a></dd>
-						<dt><a href="[!--news.url--]">乐迷互动</a></dt>
-						<dt><a href="[!--news.url--]">学习交流</a></dt>
-						<dt><a href="[!--news.url--]">乐器维修</a></dt>
-						<dt><a href="[!--news.url--]">网站建议</a></dt>
+						<dt><a href="[!--news.url--]bbs">乐迷互动</a></dt>
+						<dt><a href="[!--news.url--]bbs">学习交流</a></dt>
+						<dt><a href="[!--news.url--]bbs">乐器维修</a></dt>
+						<dt><a href="[!--news.url--]bbs">网站建议</a></dt>
 					</dl>
 
 					<dl>
