@@ -429,7 +429,7 @@ $(function () {
                     $('.m_zlxg1').hide();
                     break;
                 }
-            };
+            }
         }
     });
 

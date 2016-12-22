@@ -5,9 +5,39 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Title</title>
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.css">
+	<link rel="stylesheet" href="dist/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="./video-h5.css">
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="dist/swiper.jquery.min.js"></script>
+	<style>
+		.swiper-container-video {
+			width: 254px;
+			height: 254px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+	</style>
 </head>
 <body>
 	<header class="clearfix">
@@ -31,8 +61,8 @@
 					<img src="http://m.greattone.net/d/uploaduserpic/userpic/1481692235.jpg" alt="程伟" class="img-rounded">
 				</div>
 				<ul class="user-otherinfos f-l-l">
-					<li class="info-item clearfix"><h2 class="f-l-l">程伟XXXXXXXXXXXXXXXXX</h2><i class="newRenZheng f-l-l"></i></li>
-					<li class="info-item clearfix"><span class="identity f-l-l">普通会员</span><span class="level"></span></li>
+					<li class="info-item clearfix"><h2 class="f-l-l">程伟伟伟伟伟伟伟</h2><i class="newRenZheng f-l-l"></i></li>
+					<li class="info-item clearfix"><span class="identity f-l-l">普通会员</span><span class="level f-l-l">三级</span></li>
 				</ul>
 			</div>
 			<div class="user-btns clearfix">
@@ -41,6 +71,42 @@
 			</div>
 		</div>
 	</main>
+	<!-- 推荐 -->
+	<div class="recommond-warp">
+		<ul class="recmd-title-lists">
+			<li class="recmd-title-list-item">更多热门贴</li>
+		</ul>
+		<ol class="recmd-content-lists clearfix">
+			<li class="recmd-content-list-item f-l-l">
+				<a href="">
+					<img class="recmd-content-list-pic" src="http://mvimg10.meitudata.com/585006c14cd045462.jpg!thumb320">
+					<h5 class="recmd-content-list-titie">标题标题</h5>
+				</a>
+			</li>
+			<li class="recmd-content-list-item f-l-l">
+				<a href="">
+					<img class="recmd-content-list-pic" src="http://mvimg10.meitudata.com/585006c14cd045462.jpg!thumb320">
+					<h5 class="recmd-content-list-titie">标题标题</h5>
+				</a>
+			</li>
+			<li class="recmd-content-list-item f-l-l">
+				<a href="">
+					<img class="recmd-content-list-pic" src="http://mvimg10.meitudata.com/585006c14cd045462.jpg!thumb320">
+					<h5 class="recmd-content-list-titie">标题标题</h5>
+				</a>
+			</li>
+			<li class="recmd-content-list-item f-l-l">
+				<a href="">
+					<img class="recmd-content-list-pic" src="http://mvimg10.meitudata.com/585006c14cd045462.jpg!thumb320">
+					<h5 class="recmd-content-list-titie">标题标题</h5>
+				</a>
+			</li>
+
+		</ol>
+	</div>
+	<!--模态背景组件-->
+	<div class="model-bg"></div>
+	<!--/模态背景组件-->
 	<!-- 分享组件 -->
 	<div class="share-bg">
 		<div class="share">
@@ -76,32 +142,38 @@
 			</div>
 		</div>
 	</div>
-	<!-- 推荐 -->
-	<div class="recommond-warp">
-		<ul class="recmd-title-lists">
-			<li class="recmd-title-list-item">更多热门贴</li>
-		</ul>
-		<ol class="recmd-content-lists clearfix">
-			<li class="recmd-content-list-item f-l-l">
-				<a href="">
-					<img class="recmd-content-list-pic" src="http://mvimg10.meitudata.com/585006c14cd045462.jpg!thumb320">
-					<h5 class="recmd-content-list-titie">标题标题</h5>
-				</a>
-			</li>
-			<li class="recmd-content-list-item f-l-l">
-				<a href="">
-					<img class="recmd-content-list-pic" src="http://mvimg10.meitudata.com/585006c14cd045462.jpg!thumb320">
-					<h5 class="recmd-content-list-titie">标题标题</h5>
-				</a>
-			</li>
-			<li class="recmd-content-list-item f-l-l">
-				<a href="">
-					<img class="recmd-content-list-pic" src="http://mvimg10.meitudata.com/585006c14cd045462.jpg!thumb320">
-					<h5 class="recmd-content-list-titie">标题标题</h5>
-				</a>
-			</li>
-		</ol>
+	<!--/ 分享组件 -->
+	<!--投票组件-->
+	<!--H5提示弹框-->
+	<div class="toupiao-pop toupiao-h5">
+		<i class="close close-h5"></i>
+		<div class="ad-img">
+			<!-- 这里面也是广告 -->
+			<!-- Swiper -->
+			<div class="swiper-container-video">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="http://www.greattone.net/d/file/46fbef5d43312c5adad1cbedb7ae2480.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="http://www.greattone.net/d/file/46fbef5d43312c5adad1cbedb7ae2480.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="http://www.greattone.net/d/file/46fbef5d43312c5adad1cbedb7ae2480.jpg" alt=""></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<script>
+				var swiper = new Swiper('.swiper-container-video',{
+					pagination: '.swiper-pagination'
+				});
+			</script>
+			<!--/ Swiper -->
+		</div>
+		<div class="toupiao-pop-msg" >
+			<span class="pop-dec">总计<i class="pop-dec-num"></i>票，</span>
+			<span class="pop-list">排名第<i class="pop-list-num"></i>名！</span>
+			<span class="pop-suc-fail">投票成功!</span>
+		</div>
 	</div>
+	<!--投票提示框结束·············································-->
+
 </body>
 </html>
 <script type="text/javascript">
@@ -134,11 +206,21 @@
 			},500);
 
 		});
-		//让封面图为方形
+		/**
+		 * 3.让封面图为方形
+		 */
 		conImgHeight();
 		$(window).resize(function(){
 			conImgHeight();
 
+		});
+
+		/**
+		 * 点击按钮关闭
+		 */
+		$('.close').on('click',function () {
+			$(this).parent('.toupiao-pop').hide();
+			$('.mdeol').hide();
 		})
 	})
 </script>

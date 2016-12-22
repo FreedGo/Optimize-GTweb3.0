@@ -70,11 +70,11 @@ body{
 
 }
 .main-contain{
-	padding: 10px;
+	padding: 5px;
 }
 .userpic{
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 }
 .user-btns{
 	text-align: center;
@@ -115,7 +115,7 @@ body{
 	margin-bottom: 20px;
 }
 .user-otherinfos {
-	margin-left: 20px;
+	margin-left: 10px;
 	font:12px/20px 微软雅黑;
 }
 .share-lists{
@@ -124,6 +124,16 @@ body{
 }
 .share-bg{
 	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 100;
+	display: none;
+}
+.model-bg{
+	position: fixed;
+	z-index: 100;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -221,9 +231,24 @@ body{
 .recmd-content-list-titie{
 	color:#fff;
 }
-
-
-
+.info-item h2{
+	margin:0;
+	font-size: 16px;
+	line-height:40px;
+}
+.user-otherinfos{
+	font-size: 14px;
+	line-height:40px;
+}
+.newRenZheng{
+	width:80px;
+	height:30px;
+	background: url("http://www.greattone.net/images/yirenzheng.png") center no-repeat;
+	margin:5px 0 0 5px;
+}
+.level{
+	margin-left: 20px;
+}
 
 
 
@@ -251,3 +276,59 @@ body{
 	/*height: 500px;*/
 /*}*/
 /*/swiper*/
+
+/*海选投票框-h5*/
+.toupiao-h5{
+	width: 260px;
+	max-width: 80%;
+	position: fixed;
+	background-color: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 99999;
+	/*display: none;*/
+	border: #ccc solid 1px;
+
+}
+.toupiao-h5 .ad-img{
+	width: 100%;
+	height: auto;
+
+}
+.toupiao-h5 .ad-img img{
+	width: 100%;
+	height: auto;
+}
+.toupiao-h5 .toupiao-pop-msg{
+	width: 100%;
+	/*height: 134px;*/
+	background-color: #3C3F41;
+}
+.toupiao-h5 .toupiao-pop-msg>span{
+	display: block;
+	text-align: center;
+	font:20px/42px "微软雅黑";
+
+}
+.toupiao-h5 .close-h5{
+	background-image: url('/images/pop_h5_close.png');
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	height: 34px;
+	width: 34px;
+	z-index: 1000;
+	background-color:#ccc ;
+	border-radius:50% ;
+	overflow: hidden;
+	border: #ccc solid 1px;
+}
+
+
+/*投票弹出提示框结束*/

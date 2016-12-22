@@ -31,6 +31,11 @@
 })(jQuery);
 
 $(function() {
+	/**
+	 * 除了第一个后面都隐藏
+	 */
+	$('.liebiaoshow:gt(0)').hide();
+
 	var classroome00,
 		iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
 
@@ -42,7 +47,7 @@ $(function() {
 	function loadClassrome(obj,type) {
 		$.each(obj,function (index,val) {
 			if (index>=iloadedNum[type] && index < (iloadedNum[type] +10)) {
-				$('.liebiaoShow').append(
+				$('.liebiaoShow').eq(0).append(
 					'<li><a href="/e/space/?userid=' + val.userid +
 					'"><img src="' + val.userpic +
 					'"></a><div class="xingming"><a href="/e/space/?userid=' + val.userid +
@@ -89,9 +94,9 @@ $(function() {
 				};
 				// 第二步，向好琴声后台发送当前地址并接受返回的信息
 				$.ajax({
-					url: '/jiaoshi/indexs.ip.php',
+					url: '/jiaoshi/index-ajax/index.ajax.php',
 					type: 'post',
-					data:{'city_ip': subCity1},
+					data:{'addres': subCity1},
 					success:function(msg) {
 						// classroome00 = eval('('+msg+')');
 						$('.loaders').hide();
@@ -141,8 +146,10 @@ $(function() {
   $('.citySelect').submit(function(event) {
   	return false
   });
-  
-  $('.tijiao input').click(function(event) {
+	/**
+	 * 城市筛选
+	 */
+	$('.tijiao input').click(function(event) {
 
   	// 提交城市新信息切换列表内容····················································
 	// subCity1代表省级值，subCity2代表市级值，subCity3代表县级值，
@@ -152,7 +159,6 @@ $(function() {
 		subCity1=$('#sfdq_tj').val();
 		subCity2=$('#csdq_tj').val();
 		subCity3=$('#qydq_tj').val();
-
 		if (subCity1==""||subCity1=="选择省份") {
 			alert("请选择省份再提交");
 		} else{
@@ -265,9 +271,19 @@ $(function() {
 // ---------------------------------------------------------------------------------------------------------
 
 	// 教室输入排序类型查询
-	var paixuName;
+	/**
+	 * 琴行教室选择不同类型进行排序
+	 * 2016-12-22 要求进行联动筛选(地区+类型)
+	 */
+	var paixuName,
+	    addres,//省
+	    addres1,//市
+	    addres2;//县
 	$('#paixuSelect').change(function(event) {
 			paixuName=$('#paixuSelect').val();
+			addres = $('#sfdq_tj').val();
+			addres1 = $('#csdq_tj').val();
+			addres2 = $('#qydq_tj').val();
 			// console.log(paixuName);
 			if (paixuName==0) {
 				alert('请选择排序类型');
@@ -277,29 +293,35 @@ $(function() {
 				$('.loaders').show();
 				// console.log(paixuName);
 				$.ajax({
-					url: '/jiaoshi/index.type.php',
+					url: '/jiaoshi/index-ajax/index.type.php',
 					type: 'post',
 					dataType: 'text',
-					data: {'num': paixuName},
+					data: {
+						'type': paixuName,
+						'addres':addres,
+						'addres1':addres1,
+						'addres2':addres2
+					},
 					success:function(msg){
 						msg = eval('('+msg+')');
 						classroome00 = msg;
 						iloadedNum[0] = 0;
-						$.each(msg,function (index,val) {
-							$('.liebiaoShow').append(
-								'<li><a href="/e/space/?userid=' + val.userid +
-								'"><img src="' + val.userpic +
-								'"></a><div class="xingming"><a href="/e/space/?userid=' + val.userid +
-								'"><span>' + val.username +
-								'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' + val.cked +
-								'"></i></a></div><div class="shenfen fensi_num"><p><span class="di_zhi ">粉丝数：</span>' + val.follownum +
-								'</p></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' + val.address + val.address1 + val.address2 +
-								'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' + val.telephone +
-								'</p></div> <span class="toutiao0' + val.resever_1 +
-								'"></span></li>'
-							)
-						});
-						iloadedNum[0] = msg.length ;
+//						$.each(msg,function (index,val) {
+//							$('.liebiaoShow').append(
+//								'<li><a href="/e/space/?userid=' + val.userid +
+//								'"><img src="' + val.userpic +
+//								'"></a><div class="xingming"><a href="/e/space/?userid=' + val.userid +
+//								'"><span>' + val.username +
+//								'</span></a><a class="newRen" title="好琴声官方认证"><i class="iconfont newRenZheng newRenZheng' + val.cked +
+//								'"></i></a></div><div class="shenfen fensi_num"><p><span class="di_zhi ">粉丝数：</span>' + val.follownum +
+//								'</p></div><div class="shenfen"><p><span class="di_zhi">地址：</span>' + val.address + val.address1 + val.address2 +
+//								'</p></div><div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话：</span>' + val.telephone +
+//								'</p></div> <span class="toutiao0' + val.resever_1 +
+//								'"></span></li>'
+//							)
+//						});
+//						iloadedNum[0] = msg.length ;
+						loadClassrome(msg,0);
 						$('.tongjiNum').numberRock({
 							speed:20,
 							count:msg.length
@@ -313,14 +335,18 @@ $(function() {
 					$('.loaders').show();
 				// console.log(paixuName);
 					$.ajax({
-						url: '/jiaoshi/index.type.php',
+						url: '/jiaoshi/index-ajax/index.type.php',
 						type: 'post',
 						dataType: 'text',
-						data: {'num': paixuName},
+						data: {
+							'type': paixuName,
+							'addres':addres,
+							'addres1':addres1,
+							'addres2':addres2
+						},
 						success:function(msg){
 							msg = eval('('+msg+')');
 							classroome00 = msg;
-
 							iloadedNum[0] = 0;
 							loadClassrome(msg,0);
 							$('.tongjiNum').numberRock({
@@ -330,7 +356,7 @@ $(function() {
 							$('.loaders').hide();
 						}
 					});
-			};
+			}
 
 
 		});
