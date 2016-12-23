@@ -262,3 +262,24 @@ function GuanZhu(userid){
 		}
 	);
 }
+/**
+ * 判断是否已经关注
+ * @param userid
+ */
+function isFeed(userid){
+	$.post("/e/extend/feed/isFeed.php",
+		{
+			followid:userid
+		},
+		function(data,status){
+			switch(data){
+				case '0':
+					$('.guanzhu'+userid).html('关注');
+					break;
+				case '1':
+					$('.guanzhu'+userid).html('已关注');
+					break;
+			}
+		}
+	);
+}

@@ -68,16 +68,16 @@
 			<div class="searchWrap">
 				<div class="search">
 					<script type="text/javascript" src="[!--news.url--]skin/default/js/tabs.js"></script>
-						<input type="hidden" name="show" value="title" />
-						<input type="hidden" name="tempid" value="1" />
-						<select name="tbname" id="xuanze">
-							<option value="0">全部</option>
-							<option value="1">会员名</option>
-							<option value="2">视频</option>
-							<option value="3">音乐</option>
-							<option value="4">图片</option>
-						</select>
-						<input type="input"  id="searchValue">
+					<input type="hidden" name="show" value="title" />
+					<input type="hidden" name="tempid" value="1" />
+					<select name="tbname" id="xuanze">
+						<option value="0">全部</option>
+						<option value="1">会员名</option>
+						<option value="2">视频</option>
+						<option value="3">音乐</option>
+						<option value="4">图片</option>
+					</select>
+					<input type="input"  id="searchValue">
 					<i class="iconfont searchInputSub">&#xe658;</i>
 				</div>
 				<div class="guangchangfatie">
@@ -95,6 +95,7 @@
 					<!--------视频开始-------->
 					<li class="clearfix dongtaiLi">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -149,7 +150,6 @@
 					            ?>
 								</span>
 							</p>
-
 						</div>
 						<!-- list右侧，内容区域·························· -->
 						<div class="listRight">
@@ -176,7 +176,6 @@
 							</div></div>
 						<!-- list右侧，内容区域结束······················ -->
 					</li>
-
 					<!--------视频结束-------->
 					<?
 				    }elseif($bqr[classid]==12 && $bqr[open]==1){
@@ -184,6 +183,7 @@
 					<!--------图片开始-------->
 					<li class="clearfix" id="userImg<?=$bqr[id]?>">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -250,17 +250,17 @@
 										dataType: 'text',
 										data: {'tit_id': imgUserMsg},
 									})
-											.done(function(msg) {
+										.done(function(msg) {
 
-												var UserImgInfo=msg;
-												var userSelect="userImg"+imgUserMsg;
+											var UserImgInfo=msg;
+											var userSelect="userImg"+imgUserMsg;
 
-												// $('userSelect').children('chatu a').append('msg');
-												$('#'+userSelect).find('.chatu a').append(msg);
-											})
-											.fail(function() {
-												console.log("error");
-											});
+											// $('userSelect').children('chatu a').append('msg');
+											$('#'+userSelect).find('.chatu a').append(msg);
+										})
+										.fail(function() {
+											console.log("error");
+										});
 
 
 								});
@@ -294,6 +294,7 @@
 					<!--------音乐开始-------->
 					<li class="clearfix">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -380,6 +381,7 @@
 					<!--------报名开始-------->
 					<li class="clearfix">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -465,6 +467,7 @@
 				    ?>
 					<li class="clearfix">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -557,6 +560,7 @@
 					<!--------视频开始-------->
 					<li class="clearfix dongtaiLi">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -642,6 +646,7 @@
 					<!--------图片开始-------->
 					<li class="clearfix" id="userImg<?=$bqr[id]?>">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -707,17 +712,17 @@
 										dataType: 'text',
 										data: {'tit_id': imgUserMsg},
 									})
-											.done(function(msg) {
+										.done(function(msg) {
 
-												var UserImgInfo=msg;
-												var userSelect="userImg"+imgUserMsg;
+											var UserImgInfo=msg;
+											var userSelect="userImg"+imgUserMsg;
 
-												// $('userSelect').children('chatu a').append('msg');
-												$('#'+userSelect).find('.chatu a').append(msg);
-											})
-											.fail(function() {
-												console.log("error");
-											});
+											// $('userSelect').children('chatu a').append('msg');
+											$('#'+userSelect).find('.chatu a').append(msg);
+										})
+										.fail(function() {
+											console.log("error");
+										});
 
 
 								});
@@ -752,6 +757,7 @@
 					<!--------音乐开始-------->
 					<li class="clearfix">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -839,6 +845,7 @@
 					<!--------报名开始-------->
 					<li class="clearfix">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
@@ -926,6 +933,7 @@
 				    ?>
 					<li class="clearfix">
 						<?=$userinfo?>
+						<script>$(function(){isFeed('<?=$bqr[userid]?>')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
 						<div class="listLeft">
 							<a href="[!--news.url--]e/space/?userid=<?=$bqr[userid]?>">
