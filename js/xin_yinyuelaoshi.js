@@ -1,4 +1,12 @@
 /**
+ * Title:老师页面的数据加载
+ * Auther:Freed
+ * E-mail:flyxz@126.com
+ * Time:2016-6-1
+ */
+
+
+/**
  * 数字动态变化模块,摘自countjs,依赖jq
  */
 (function($){
@@ -38,7 +46,7 @@ $(function () {
      * 声明全局变量
 	 */
 	var ifenlei = 0,//标价当前为那种音乐老师类型
-        iloadedNum = [20,0,0,0,0],//标记已经加载的老师数量,页面加载时就加载了20个全部老师
+        iloadedNum = [0,0,0,0,0],//标记已经加载的老师数量,页面加载时就加载了20个全部老师
 	    techer00 = [],//全部老师
 	    techer01 = [],//钢琴老师
 	    techer02 = [],//吉他老师
@@ -47,6 +55,9 @@ $(function () {
 	    techer001 = [],
 	    techer002 = [];
 
+	/**
+	 * 给分类标题按钮绑定事件
+	 */
     $('.fenleiFuck li').click(function (event) {
         ifenlei = $(this).index();
         $(this).addClass('current').siblings('li').removeClass('current');
@@ -84,12 +95,6 @@ $(function () {
                         count:techer04.length
                     });
                     break;
-	            case 5 :
-		            $('.tongjiNum').numberRock({
-			            speed:20,
-			            count:techer05.length
-		            });
-		            break;
             }
         }
     });
@@ -99,6 +104,13 @@ $(function () {
 	 * @param datas {array} json数据
 	 */
 	function manageDatas(datas) {
+			techer00 = [];//全部老师
+			techer01 = [];//钢琴老师
+			techer02 = [];//吉他老师
+			techer03 = [];//弦乐老师
+			techer04 = [];//其他老师
+			techer001 = [];
+			techer002 = [];
 	    for (var i = 0 ; i < datas.length ; i++){
 		    switch (datas[i].teacher_type){
 			    case '钢琴老师':
@@ -111,15 +123,15 @@ $(function () {
 				    techer03.push(datas[i]);
 				    break;
 			    case '':
-				    msg[i].teacher_type = '音乐老师';
-				    techer04.push(msg[i]);
+				    datas[i].teacher_type = '音乐老师';
+				    techer04.push(datas[i]);
 				    break;
 			    default :
-				    techer04.push(msg[i]);
+				    techer04.push(datas[i]);
 				    break;
 		    };
 		    // 根据是否认证，拆分所有老师的数组
-		    msg[i].cked === '1'? techer001.push(msg[i]):techer002.push(msg[i]);
+		    datas[i].cked === '1'? techer001.push(datas[i]):techer002.push(datas[i]);
 	    };
 	    // 组成新所有老师数组
 	    techer00 = techer001.concat(techer002);
@@ -127,7 +139,7 @@ $(function () {
 
     // ``````````````````````````````````````````````````````````````````````````````````````
     /**
-     * 向后台查询老师数据,并返回处理
+     * 页面加载的时候,向后台查询老师数据,并返回处理
      * @type {Array}
      */
 
@@ -140,24 +152,7 @@ $(function () {
         msg = eval('('+msg+')');
         // console.log(msg)
 	    manageDatas(msg);
-        $.each(techer00, function(index, val) {
-            if (index <= 20 ){
-                $('.liebiaoShow').eq(0).append(
-                    '<li><a href="/e/space/?userid='+ val.userid +
-                    '"><img src='+ val.userpic +
-                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
-                    '"><span>' + val.username +
-                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
-                    ' iconfont"></i></a>'+
-                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
-                    '</span><span>粉丝数：'+val.follownum+
-                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
-                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
-                    '&userid=' +val.userid +
-                    '"><em>提问</em></a></div></li>'
-                )
-            }
-        });
+	    loadteacher(techer00,0);
         $('.loaders').hide();
         //数字跳动
         $('.tongjiNum').numberRock({
@@ -180,30 +175,32 @@ $(function () {
      * @param type {num}  分类;
      */
     function loadteacher(obj,type) {
-        $('.loader-warp').show();
-        $.each(obj,function (index,val) {
-            if (index>=iloadedNum[type] && index < (iloadedNum[type] +10)){
-                $('.liebiaoShow').eq(type).append(
-                    '<li><a href="/e/space/?userid='+ val.userid +
-                    '"><img src='+ val.userpic +
-                    '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
-                    '"><span>' + val.username +
-                    '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
-                    ' iconfont"></i></a>'+
-                    '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
-                    '</span><span>粉丝数：'+val.follownum+
-                    '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
-                    '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
-                    '&userid=' +val.userid +
-                    '"><em>提问</em></a></div></li>'
-                );
-                console.log('成功');
-            } else if (index >= (iloadedNum[type] +10)){
-                console.log('条件不符');
-            }
-        });
-        iloadedNum[type] = iloadedNum[type] +10 ;
-        $('.loader-warp').hide();
+        if (obj.length == iloadedNum[type]){
+	        $('.liebiaoShow').eq(type).html('<p style="text-align: center;color: #cb7047;">没有更多的老师了</p>');
+        }else {
+	        $.each(obj,function (index,val) {
+		        if (index>=iloadedNum[type] && index < (iloadedNum[type] +10)){
+			        $('.liebiaoShow').eq(type).append(
+				        '<li><a href="/e/space/?userid='+ val.userid +
+				        '"><img src='+ val.userpic +
+				        '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
+				        '"><span>' + val.username +
+				        '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
+				        ' iconfont"></i></a>'+
+				        '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
+				        '</span><span>粉丝数：'+val.follownum+
+				        '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
+				        '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
+				        '&userid=' +val.userid +
+				        '"><em>提问</em></a></div></li>'
+			        );
+			        console.log('成功');
+		        } else if (index >= (iloadedNum[type] +10)){
+			        console.log('条件不符');
+		        }
+	        });
+	        iloadedNum[type] = iloadedNum[type] +10 ;
+        }
     }
 
 	/**
@@ -260,10 +257,11 @@ $(function () {
             alert("请选择省份再提交");
         } else {
             // 点下按钮之后加载css动画
-            $('.sousuoResult').show().children('a').trigger('click');
+//            $('.sousuoResult').show().children('a').trigger('click');
 //            $('.sousuo-warp').empty();
             $('.liebiaoShow').empty();
             $('.loader-warp').show();
+            $('.loaders').show();
             $.ajax({
                 url: '/laoshi/indexs.php',
                 type: 'post',
@@ -273,48 +271,27 @@ $(function () {
                 success: function (msg) {
 	                iloadedNum = [0,0,0,0,0];//重置加载次数
                     if (msg == ''||msg == null||msg == 'null') {
-                        $('.tongjiNum').html('0');
                         msg = [];
-                        manageDatas(msg);
-                        $('.sousuo-warp').append('<li class="no-sousuo-more" style="text-align: center;font:14px/32px 微软雅黑;color: #cb7047;">没有搜索到数据!</li>');
                     } else {
                         msg = eval('('+msg+')');
-                        //数字跳动
-                        $('.tongjiNum').numberRock({
-                            speed:20,
-                            count:msg.length
-                        });
-
-                        $.each(msg, function(index, val) {
-                            $('.sousuo-warp').append(
-                                '<li><a href="/e/space/?userid='+ val.userid +
-                                '"><img src='+ val.userpic +
-                                '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
-                                '"><span>' + val.username +
-                                '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
-                                ' iconfont"></i></a>'+
-                                '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
-                                '</span><span>粉丝数：'+val.follownum+
-                                '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
-                                '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
-                                '&userid=' +val.userid +
-                                '"><em>提问</em></a></div></li>'
-                            )
-                        });
-                    }
-
+                    };
+                    //数字跳动
+	                $('.tongjiNum').numberRock({
+		                speed:20,
+		                count:msg.length
+	                });
+	                //数据处理
+	                manageDatas(msg);
+	                //数据加载
+	                loadteacher(techer00,0);
+	                loadteacher(techer01,1);
+	                loadteacher(techer02,2);
+	                loadteacher(techer03,3);
+	                loadteacher(techer04,4);
+	                //隐藏loading动画
+	                $('.loader-warp').hide();
                 }
-            })
-                .done(function () {
-                    // console.log("success");
-
-                })
-                .fail(function () {
-                    // console.log("error");
-                })
-                .always(function () {
-                    // console.log("complete");
-                });
+            });
         };
     });
 // ---------------------------------------------------------------------------------------------------------
@@ -325,8 +302,6 @@ $(function () {
     var jiaoshiName;
     $('.searchSub').click(function (event) {
         jiaoshiName = $('.searchSelect').val();
-
-        $('.sousuoResult').show().children('a').trigger('click');
         $('.sousuo-warp').empty();
         $('.loader-warp').show();
         // console.log(jiaoshiName);
@@ -340,40 +315,31 @@ $(function () {
                 data:{'jiaoshi1':jiaoshiName}
             }).done(function (msg) {
                 if (msg == ''||msg == null||msg == 'null'){
-                    $('.tongjiNum').html('0');
-                    $('.sousuo-warp').append('<li class="no-sousuo-more" style="text-align: center;font:14px/32px 微软雅黑;color: #cb7047;">没有搜索到数据!</li>');
+                    msg = [];
                 } else {
                     msg = eval('('+msg+')');
-                    //数字跳动
-                    $('.tongjiNum').numberRock({
-                        speed:20,
-                        count:msg.length
-                    });
-                    $.each(msg, function(index, val) {
-                        $('.sousuo-warp').append(
-                            '<li><a href="/e/space/?userid='+ val.userid +
-                            '"><img src='+ val.userpic +
-                            '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
-                            '"><span>' + val.username +
-                            '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
-                            ' iconfont"></i></a>'+
-                            '</div></a><div class="shenfen"><span>身份：'+val.teacher_type +
-                            '</span><span>粉丝数：'+val.follownum+
-                            '</span></div><div class="guanzhu clearfix"><a href="/e/space/?userid=' +val.userid +
-                            '"><span>＋关注</span></a><a href="/e/QA/ListInfo.php?mid=10&username=' + val.username +
-                            '&userid=' +val.userid +
-                            '"><em>提问</em></a></div></li>'
-                        )
-                    });
                 };
-                $('.loaders').hide();
+	            //数字跳动
+	            $('.tongjiNum').numberRock({
+		            speed:20,
+		            count:msg.length
+	            });
+	            //数据处理
+	            manageDatas(msg);
+	            //数据加载
+	            loadteacher(techer00,0);
+	            loadteacher(techer01,1);
+	            loadteacher(techer02,2);
+	            loadteacher(techer03,3);
+	            loadteacher(techer04,4);
+	            //隐藏loading动画
+	            $('.loader-warp').hide();
             }).error(function (data) {
                 console.log(data);
-            })
+            });
             // $('.sousuo-warp').append('<li class="no-sousuo-more" style="text-align: center;font:14px/32px 微软雅黑;color: #cb7047;">没有更多了!</li>');
-        };
+        }
     });
-
 // ---------------------------------------------------------------------------------------------------------
     /**
      * 按照不同类型排序
