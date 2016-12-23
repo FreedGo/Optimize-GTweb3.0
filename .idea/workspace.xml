@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuejiaoshi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" afterPath="$PROJECT_DIR$/js/xin_yinyuelaoshi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/e/space/template/default/header.temp.php" afterPath="$PROJECT_DIR$/php/e/space/template/default/header.temp.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/reg/register.php" afterPath="$PROJECT_DIR$/php/reg/register.php" />
@@ -520,14 +519,7 @@
       <workItem from="1482375733839" duration="5377000" />
       <workItem from="1482384902115" duration="23922000" />
       <workItem from="1482452574084" duration="12430000" />
-      <workItem from="1482472810164" duration="4544000" />
-    </task>
-    <task id="LOCAL-00104" summary="直播中心修改顺序为历史回顾,直播预告,正在直播">
-      <created>1480663457828</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1480663457828</updated>
+      <workItem from="1482472810164" duration="4613000" />
     </task>
     <task id="LOCAL-00105" summary="音乐老师的ajax数据调用格式为json">
       <created>1480670780002</created>
@@ -865,11 +857,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482458966155</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="修改第二次加载会跟第一次加载重复的bug">
+      <created>1482480117723</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1482480117724</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="752011000" />
+    <option name="totallyTimeSpent" value="752080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,7 +973,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="乐谱发帖增加封面图及bug修改" />
     <MESSAGE value="教室的图集切换按钮透明效果去掉&#10;" />
     <MESSAGE value="修复名字过长会换行的bug&#10;" />
     <MESSAGE value="音乐广场关注弹框ui改善" />
@@ -999,7 +997,8 @@
     <MESSAGE value="e下面的大部分模板都拉过来了" />
     <MESSAGE value="音乐教室联动筛选及空判断等" />
     <MESSAGE value="增加isFeed函数,来判断广场推荐贴列表,全站动态列表上的发帖人是否一句被我关注" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加isFeed函数,来判断广场推荐贴列表,全站动态列表上的发帖人是否一句被我关注" />
+    <MESSAGE value="修改第二次加载会跟第一次加载重复的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改第二次加载会跟第一次加载重复的bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1243,6 +1242,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2225">
           <caret line="347" column="9" lean-forward="true" selection-start-line="347" selection-start-column="9" selection-end-line="347" selection-end-column="9" />
+          <folding>
+            <marker date="1482460100656" expanded="true" signature="109:176" ph="select * fro... $" />
+            <marker date="1482460100656" expanded="true" signature="769:833" ph="select * fro... $" />
+            <marker date="1482460100656" expanded="true" signature="1093:1206" ph="select mid,q... $" />
+            <marker date="1482460100656" expanded="true" signature="1269:1335" ph="select id fr... $" />
+            <marker date="1482460100656" expanded="true" signature="1931:1983" ph="select * fro... $" />
+            <marker date="1482460100656" expanded="true" signature="2500:2563" ph="select feedu... $" />
+            <marker date="1482460100656" expanded="true" signature="2770:2844" ph="select zuiji... $" />
+            <marker date="1482460100656" expanded="true" signature="2893:2977" ph="update ${{$d... " />
+            <marker date="1482460100656" expanded="true" signature="3180:3258" ph="update ${{$d... " />
+            <marker date="1482460100656" expanded="true" signature="3294:3388" ph="update ${{$d... " />
+            <marker date="1482460100656" expanded="true" signature="5571:5588" ph="..." />
+            <marker date="1482460100656" expanded="true" signature="12120:12197" ph="select count... phome_ecms_photo" />
+            <marker date="1482460100656" expanded="true" signature="12497:12574" ph="select count... phome_ecms_photo" />
+          </folding>
         </state>
       </provider>
     </entry>

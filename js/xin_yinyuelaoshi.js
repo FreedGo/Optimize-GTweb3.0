@@ -34,14 +34,25 @@
 $(function () {
     $('.loader-warp').show();
     // 点击分类显示不同分类里面的老师
-    var ifenlei = 0,//标价当前为那种音乐老师类型
-        iloadedNum = [20,0,0,0,0];//标记已经加载的老师数量,页面加载时就加载了20个全部老师
+	/**
+     * 声明全局变量
+	 */
+	var ifenlei = 0,//标价当前为那种音乐老师类型
+        iloadedNum = [20,0,0,0,0],//标记已经加载的老师数量,页面加载时就加载了20个全部老师
+	    techer00 = [],//全部老师
+	    techer01 = [],//钢琴老师
+	    techer02 = [],//吉他老师
+	    techer03 = [],//弦乐老师
+	    techer04 = [],//其他老师
+	    techer001 = [],
+	    techer002 = [];
+
     $('.fenleiFuck li').click(function (event) {
         ifenlei = $(this).index();
         $(this).addClass('current').siblings('li').removeClass('current');
         $('.liebiaoFuck').eq(ifenlei).fadeIn('fast').siblings('ul').hide();
         $('.tuijianFuck').eq(ifenlei).fadeIn('fast').siblings('ol').hide();
-        if (ifenlei <= 4){
+        if (ifenlei <= 5){
             switch(ifenlei){
                 case 0 :
                     $('.tongjiNum').numberRock({
@@ -73,22 +84,53 @@ $(function () {
                         count:techer04.length
                     });
                     break;
+	            case 5 :
+		            $('.tongjiNum').numberRock({
+			            speed:20,
+			            count:techer05.length
+		            });
+		            break;
             }
         }
     });
+
+	/**
+     * 处理后台发过来的json数据,根据类型不同拆分对象,再组成新的数组
+	 * @param datas {array} json数据
+	 */
+	function manageDatas(datas) {
+	    for (var i = 0 ; i < datas.length ; i++){
+		    switch (datas[i].teacher_type){
+			    case '钢琴老师':
+				    techer01.push(datas[i]);
+				    break;
+			    case '吉他老师':
+				    techer02.push(datas[i]);
+				    break;
+			    case '弦乐老师':
+				    techer03.push(datas[i]);
+				    break;
+			    case '':
+				    msg[i].teacher_type = '音乐老师';
+				    techer04.push(msg[i]);
+				    break;
+			    default :
+				    techer04.push(msg[i]);
+				    break;
+		    };
+		    // 根据是否认证，拆分所有老师的数组
+		    msg[i].cked === '1'? techer001.push(msg[i]):techer002.push(msg[i]);
+	    };
+	    // 组成新所有老师数组
+	    techer00 = techer001.concat(techer002);
+    }
 
     // ``````````````````````````````````````````````````````````````````````````````````````
     /**
      * 向后台查询老师数据,并返回处理
      * @type {Array}
      */
-    var techer00 = [],//全部老师
-        techer01 = [],//钢琴老师
-        techer02 = [],//吉他老师
-        techer03 = [],//弦乐老师
-        techer04 = [],//其他老师
-        techer001 = [],
-        techer002 = [];
+
     $.ajax({
         url:'/laoshi/tear.index.php',
         type:'get',
@@ -97,31 +139,7 @@ $(function () {
     .done(function (msg) {
         msg = eval('('+msg+')');
         // console.log(msg)
-        // 循环数组,根据类型不同拆分对象,再组成新的数组
-        for (var i = 0 ; i < msg.length ; i++){
-            switch (msg[i].teacher_type){
-                case '钢琴老师':
-                    techer01.push(msg[i]);
-                    break;
-                case '吉他老师':
-                    techer02.push(msg[i]);
-                    break;
-                case '弦乐老师':
-                    techer03.push(msg[i]);
-                    break;
-                case '':
-                    msg[i].teacher_type = '音乐老师';
-                    techer04.push(msg[i]);
-                    break;
-                default :
-                    techer04.push(msg[i]);
-                    break;
-            };
-            // 根据是否认证，拆分所有老师的数组
-            msg[i].cked === '1'? techer001.push(msg[i]):techer002.push(msg[i]);
-        };
-        // 组成新所有老师数组
-        techer00 = techer001.concat(techer002);
+	    manageDatas(msg);
         $.each(techer00, function(index, val) {
             if (index <= 20 ){
                 $('.liebiaoShow').eq(0).append(
@@ -146,7 +164,6 @@ $(function () {
             speed:20,
             count:techer00.length
         });
-
         loadteacher(techer01,1);
         loadteacher(techer02,2);
         loadteacher(techer03,3);
@@ -189,7 +206,10 @@ $(function () {
         $('.loader-warp').hide();
     }
 
-    $(function() {
+	/**
+     * 下拉自动加载瀑布流,自动判断类型
+	 */
+	$(function() {
         var iList=1,
             scrollTimer=null,
             iload=0;
@@ -241,7 +261,8 @@ $(function () {
         } else {
             // 点下按钮之后加载css动画
             $('.sousuoResult').show().children('a').trigger('click');
-            $('.sousuo-warp').empty();
+//            $('.sousuo-warp').empty();
+            $('.liebiaoShow').empty();
             $('.loader-warp').show();
             $.ajax({
                 url: '/laoshi/indexs.php',
@@ -250,8 +271,11 @@ $(function () {
                 data: {'city1': subCity1, 'city2': subCity2, 'city3': subCity3},
                 // data:city1,
                 success: function (msg) {
+	                iloadedNum = [0,0,0,0,0];//重置加载次数
                     if (msg == ''||msg == null||msg == 'null') {
                         $('.tongjiNum').html('0');
+                        msg = [];
+                        manageDatas(msg);
                         $('.sousuo-warp').append('<li class="no-sousuo-more" style="text-align: center;font:14px/32px 微软雅黑;color: #cb7047;">没有搜索到数据!</li>');
                     } else {
                         msg = eval('('+msg+')');
@@ -260,6 +284,7 @@ $(function () {
                             speed:20,
                             count:msg.length
                         });
+
                         $.each(msg, function(index, val) {
                             $('.sousuo-warp').append(
                                 '<li><a href="/e/space/?userid='+ val.userid +
