@@ -108,6 +108,7 @@ $(function() {
 					success:function(msg) {
 						// classroome00 = eval('('+msg+')');
 						$('.loaders').hide();
+						iloadedNum[0] = 0;
 						if (msg == 'null'||msg == null){
 							msg = [];
 							classroome00 = msg;
@@ -126,7 +127,7 @@ $(function() {
 							});
 							loadClassrome(classroome00,0);
 						};
-						iloadedNum[0] = 0;
+
 					}
 				});
 				// 第二步end，向好琴声后台发送当前地址并接受返回的信息
