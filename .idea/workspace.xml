@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="音乐教室联动筛选及空判断等">
+    <list default="true" id="22346496-49e2-4757-a52f-6186dcbaa3d9" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/extend/feed/isFeed.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
@@ -506,14 +506,7 @@
       <workItem from="1482375025854" duration="691000" />
       <workItem from="1482375733839" duration="5377000" />
       <workItem from="1482384902115" duration="23922000" />
-      <workItem from="1482452574084" duration="6205000" />
-    </task>
-    <task id="LOCAL-00103" summary="投票描述改为了10分钟一次">
-      <created>1480663047291</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1480663047291</updated>
+      <workItem from="1482452574084" duration="6328000" />
     </task>
     <task id="LOCAL-00104" summary="直播中心修改顺序为历史回顾,直播预告,正在直播">
       <created>1480663457828</created>
@@ -851,11 +844,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482414811615</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="增加isFeed函数,来判断广场推荐贴列表,全站动态列表上的发帖人是否一句被我关注">
+      <created>1482458966154</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1482458966155</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="741242000" />
+    <option name="totallyTimeSpent" value="741365000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,7 +960,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改&#10;&#10;" />
     <MESSAGE value="乐谱发帖增加封面图及bug修改" />
     <MESSAGE value="教室的图集切换按钮透明效果去掉&#10;" />
     <MESSAGE value="修复名字过长会换行的bug&#10;" />
@@ -985,7 +984,8 @@
     <MESSAGE value="修改" />
     <MESSAGE value="e下面的大部分模板都拉过来了" />
     <MESSAGE value="音乐教室联动筛选及空判断等" />
-    <option name="LAST_COMMIT_MESSAGE" value="音乐教室联动筛选及空判断等" />
+    <MESSAGE value="增加isFeed函数,来判断广场推荐贴列表,全站动态列表上的发帖人是否一句被我关注" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加isFeed函数,来判断广场推荐贴列表,全站动态列表上的发帖人是否一句被我关注" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
