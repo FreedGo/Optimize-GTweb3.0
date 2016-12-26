@@ -321,8 +321,8 @@ $xingyun = $follow[xingyun] ? $follow[xingyun] : "";
 				<!--				<li><a href="--><?//=$public_r['newsurl']?><!--mingren">音乐名人</a></li>-->
 				<li><a href="<?=$public_r['newsurl']?>laoshi">音乐老师</a></li>
 				<li><a href="<?=$public_r['newsurl']?>jiaoshi">琴行教室</a></li>
-				<li><a href="<?=$public_r['newsurl']?>pinpai">音乐品牌</a></li>
-				<li><a href="<?=$public_r['newsurl']?>/e/action/ListInfo/?classid=96">直播课堂</a></li>
+				<li><a href="<?=$public_r['newsurl']?>pinpai">乐器品牌</a></li>
+				<li><a href="<?=$public_r['newsurl']?>/e/action/ListInfo/?classid=96">直播中心</a></li>
 				<li><a href="<?=$public_r['newsurl']?>yuepu">乐谱中心</a></li>
 				<!--					<li><a href="--><?//=$public_r['newsurl']?><!--haixuan">各地海选</a></li>-->
 				<!--<li><a href="<?=$public_r['newsurl']?>yuepu">音乐乐谱</a></li>-->

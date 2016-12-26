@@ -36,38 +36,7 @@
 
 })(jQuery);
 
-/**
- * 加载指定的数据进入指定的品牌分类
- * @param obj {object} 老师的数据;
- * @param type {num}  分类;
- */
-function loadteacher(obj,type,iloadedNum) {
-    $('.loaders').show();
-    $.each(obj,function (index,val) {
-//        if (index>=iloadedNum[type] && index < (iloadedNum[type] +20)){
-            $('.liebiaoShow').eq(type).append(
-                '<li><a href="/e/space/?userid='+ val.userid +
-                '"><img src='+ val.userpic +
-                '><div class="xingming"><a href="/e/space/?userid='+ val.userid +
-                '"><span>' + val.username +
-                '</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
-                ' iconfont"></i></a>'+
-                '</div></a>' +
-                '<div class="shenfen"><p><span class="di_zhi">创立国家：</span>'+val.company + '</p></div>' +
-                '<div class="shenfen"><p><span class="nianfen">创立年份：</span>'+val.chusheng + '</p></div>' +
-                '<div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话:</span>'+val.telephone+'</p></div></li>'
-            );
-//            console.log('成功');
-//        } else if (index >= (iloadedNum[type] +20)){
-//            console.log('条件不符');
-//        }
-    });
-//    iloadedNum[type] = iloadedNum[type] +20 ;
-    $('.loaders').hide();
-}
 
-
-// 重新写乐器品牌下的分类与下面列表显示
 $(function(){
     $('.liebiaoShow').eq(0).show().siblings().hide();
 //    $('.fenleiFuck li').click(function () {
@@ -88,6 +57,72 @@ $(function(){
         pinpai05 = [],//打击乐器品牌
         pinpai001 = [],//认证的品牌
         pinpai002 = [];//未认证的品牌
+
+	/**
+	 * 加载指定的数据进入指定的品牌分类
+	 * @param obj {object} 老师的数据;
+	 * @param type {num}  分类;
+	 */
+	function loadteacher(obj,type) {
+		$('.loaders').show();
+		$.each(obj,function (index,val) {
+//        if (index>=iloadedNum[type] && index < (iloadedNum[type] +20)){
+			$('.liebiaoShow').eq(type).append(
+				'<li><a href="/e/space/?userid='+ val.userid +
+				'"><img src='+ val.userpic +
+				'><div class="xingming"><a href="/e/space/?userid='+ val.userid +
+				'"><span>' + val.username +
+				'</span></a><a class="newRen" title="好琴声官方认证"><i class="newRenZheng newRenZheng' +val.cked +
+				' iconfont"></i></a>'+
+				'</div></a>' +
+				'<div class="shenfen"><p><span class="di_zhi">创立国家：</span>'+val.company + '</p></div>' +
+				'<div class="shenfen"><p><span class="nianfen">创立年份：</span>'+val.chusheng + '</p></div>' +
+				'<div class="guanzhu clearfix"><p><span class="telephone_one">咨询电话:</span>'+val.telephone+'</p></div></li>'
+			);
+//            console.log('成功');
+//        } else if (index >= (iloadedNum[type] +20)){
+//            console.log('条件不符');
+//        }
+		});
+//    iloadedNum[type] = iloadedNum[type] +20 ;
+		$('.loaders').hide();
+	}
+	/**
+	 * 处理后台发回来的数据,根据类型不同拆分成不同的数组
+	 * @param data
+	 */
+	function magageData(data) {
+		for (var i = 0 ; i < data.length ; i++){
+			var typeArray = data[i].type.split('|');
+			//生成的数组第一个元素和最后一个元素都为空,故要删除
+			typeArray.shift();
+			typeArray.pop();
+			for (var x = 0;x < typeArray.length ; x ++ ){
+				switch (typeArray[x]){
+					case '钢琴':
+						pinpai01.push(data[i]);
+						break;
+					case '提琴':
+						pinpai02.push(data[i]);
+						break;
+					case '吉他':
+						pinpai03.push(data[i]);
+						break;
+					case '管乐':
+						pinpai04.push(data[i]);
+						break;
+					case '打击乐':
+						pinpai05.push(data[i]);
+						break;
+				}
+			}
+
+//            // 根据是否认证，拆分所有老师的数组
+//            msg[i].cked === '1'? pinpai001.push(msg[i]):pinpai002.push(msg[i]);
+		}
+	}
+
+
     /**
      * 1.给分类标题绑定事件
      * 1.1点击切换分类
@@ -143,7 +178,7 @@ $(function(){
     /**
      * 2.向后台请求数据,并做处理
      * 2.1拆分数组,把品牌拆分为不同的分类
-     * 2.2给全部品牌加载20条数据
+     * 2.2给全部品牌加载全部数据
      */
     $.ajax({
         url:'/pinpai/index.josn.php',
@@ -151,38 +186,15 @@ $(function(){
         datatype:'json'
     })
     .done(function (msg) {
-        msg = eval('('+msg+')');
+        if (msg == null||msg == 'null' || msg == ''){
+	        msg = [];
+        } else {
+	        msg = eval('('+msg+')');
+        }
         pinpai00 = msg;
+	    magageData(msg);
         // console.log(msg)
 //         循环数组,根据类型不同拆分对象,再组成新的数组
-        for (var i = 0 ; i < msg.length ; i++){
-            var typeArray = msg[i].type.split('|');
-                //生成的数组第一个元素和最后一个元素都为空,故要删除
-                typeArray.shift();
-                typeArray.pop();
-            for (var x = 0;x < typeArray.length ; x ++ ){
-                switch (typeArray[x]){
-                    case '钢琴':
-                        pinpai01.push(msg[i]);
-                        break;
-                    case '提琴':
-                        pinpai02.push(msg[i]);
-                        break;
-                    case '吉他':
-                        pinpai03.push(msg[i]);
-                        break;
-                    case '管乐':
-                        pinpai04.push(msg[i]);
-                        break;
-                    case '打击乐':
-                        pinpai04.push(msg[i]);
-                        break;
-                }
-            }
-
-//            // 根据是否认证，拆分所有老师的数组
-//            msg[i].cked === '1'? pinpai001.push(msg[i]):pinpai002.push(msg[i]);
-        }
         // 组成新所有老师数组
 //        pinpai00 = pinpai001.concat(pinpai002);
         loadteacher(pinpai00,0,iloadedNum);
@@ -201,6 +213,34 @@ $(function(){
     .error(function (data) {
         console.log('error');
         console.log(data)
+    });
+
+
+
+    var paixuname;
+    $('#paixuSelect').change(function () {
+	    paixuname = $('#paixuSelect').val();
+	    $.ajax({
+	        url:'/pinpai/',
+            type:'post',
+            datatype:'json'
+        }).done(function (msg) {
+		    iloadedNum = [0,0,0,0,0];
+		    msg = eval('('+msg+')');
+		    pinpai00 = msg;
+		    magageData(msg);
+		    loadteacher(pinpai00,0,iloadedNum);
+		    //数字跳动
+		    $('.tongjiNum').numberRock({
+			    speed:20,
+			    count:pinpai00.length
+		    });
+		    loadteacher(pinpai01,1,iloadedNum);
+		    loadteacher(pinpai02,2,iloadedNum);
+		    loadteacher(pinpai03,3,iloadedNum);
+		    loadteacher(pinpai04,4,iloadedNum);
+		    loadteacher(pinpai05,5,iloadedNum);
+	    });
     });
 
 
@@ -261,82 +301,13 @@ $(function(){
 
 
 $(function() {
-    var iList=8;
-    // 瀑布流下拉显示·············································
-    //
 
-// 显示前N个结束-----------------------------------------------------------
-
-    $(window).scroll(function(event) {
-        if ($(document).scrollTop() + $(window).height() > $(document).height() - 150) {
-
-            for (var i = iList; i < iList+4; i++) {
-                $('.liebiaoShow').children('li').eq(i).show();
-            };
-            iList=iList+4;
-        };
-    });
 // 阻止原form的默认提交
 // -----------------------------------------------------------------------
     $('.citySelect').submit(function(event) {
         return false
     });
 //------------------------------------------------------------
-    $('.tijiao input').click(function(event) {
-        // 提交城市新信息切换列表内容····················································
-        // subCity1代表省级值，subCity2代表市级值，subCity3代表县级值，
-        var subCity1;
-        var subCity2;
-        var subCity3;
-        var cityInfo;
-        var city1="2222";
-        subCity1=$('#sfdq_tj').val();
-        subCity2=$('#csdq_tj').val();
-        subCity3=$('#qydq_tj').val();
-        if (subCity1==""||subCity1=="选择省份") {
-            alert("请选择省份再提交");
-        } else{
-            // 点下按钮之后加载css动画
-            $('.liebiaoShow').empty().append('<div class="loaders"><div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div></div>');
-            $('.loaders').fadeIn(200);
-            // console.log({'city1': subCity1,'city2':subCity2,'city3':subCity3});
-            $.ajax({
-                url: '/jiaoshi/indexs.php',
-                type: 'post',
-                dataType: 'text',
-                // data:{'city1': subCity1,'city2':subCity2,'city3':subCity3},
-                data:{'city1': subCity1,'city2':subCity2,'city3':subCity3},
-                // data:city1,
-                success:function(msg) {
-                    // console.log(msg);
-                    // console.log(typeof(msg));
-                    // 清空liebiaoShow并插入li
-                    if (msg=='') {
-                        $('.liebiaoShow').empty().append('<p style="font-size:16px;color:#cb7047;text-algin:center;">没有找到琴行，快来加入好琴声吧！</p>');
-                    } else {
-                        $('.liebiaoFuck').eq(0).hide();
-                        $('.liebiaoShow').empty().append(msg);
-                        $('.toutiao01').append('推荐');
-                        $('.di_zhi').append('地址：');
-                        $('.telephone_one').append('咨询电话：');
-                    }
-                }
-            })
-                .done(function() {
-                    // console.log("success");
-                    // ````````````````````````````````````````````````````````````````````````````````````````````
-
-                })
-                .fail(function() {
-                    // console.log("error");
-                })
-                .always(function() {
-                    // console.log("complete");
-                });
-            // `````````````````````````````````````````````````````````````````````````````````````````````````````````
-        };
-
-    });
 // ---------------------------------------------------------------------------------------------------------
 
     // 教室输入名字查询
@@ -399,48 +370,7 @@ $(function() {
 
 // ---------------------------------------------------------------------------------------------------------
 
-    // 教室输入排序类型查询
-    var paixuName;
-    $('#paixuSelect').change(function(event) {
-        paixuName=$('#paixuSelect').val();
-        // console.log(paixuName);
-        if (paixuName==0) {
-            alert('请选择排序类型');
-        } else{
-            // 点下按钮之后加载css动画
-            $('.liebiaoShow').empty().append('<div class="loaders"><div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div></div>');
-            $('.loaders').fadeIn(200);
-            // console.log(paixuName);
-            $.ajax({
-                url: '/pinpai/index.type.php',
-                type: 'post',
-                dataType: 'text',
-                data: {'num': paixuName},
-                success:function(msg){
-                    // console.log(msg);
-                    // 清空liebiaoShow并插入li
-                    // console.log(msg);
-                    $('.liebiaoFuck').eq(0).hide();
-                    $('.liebiaoShow').eq(0).empty().append(msg);
-                    $('.liebiaoShow').eq(0).find('.toutiao01').append('推荐');
-                    $('.liebiaoShow').eq(0).find('.di_zhi').append('创立国家：');
-                    $('.liebiaoShow').eq(0).find('.nianfen').append('创立年份：');
-                    $('.liebiaoShow').eq(0).find('.telephone_one').append('咨询电话：');
-                }
-            })
-                .done(function() {
-                    // console.log("success");
-                })
-                .fail(function() {
-                    // console.log("error");
-                })
-                .always(function() {
-                    // console.log("complete");
-                });
-        };
 
-
-    });
 
 // ``````````````````````````````````````````````````````````````````````````````````````
 //首先封装页面加载获取当前所在城市信息的函数

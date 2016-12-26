@@ -55,13 +55,12 @@ document.write('<script src="<?=$public_r['newsurl']?>e/member/login/headjs_1.ph
 				<ul class="clearfix">
 					<li><a href="<?=$public_r['newsurl']?>guangchang">音乐广场</a></li>
 					<li><a href="<?=$public_r['newsurl']?>news">音乐资讯</a></li>
-					<li><a href="<?=$public_r['newsurl']?>mingren">音乐名人</a></li>
+					<li><a href="<?=$public_r['newsurl']?>haixuan">网络海选</a></li>
 					<li><a href="<?=$public_r['newsurl']?>laoshi">音乐老师</a></li>
 					<li><a href="<?=$public_r['newsurl']?>jiaoshi">琴行教室</a></li>
-                    <li><a href="<?=$public_r['newsurl']?>pinpai">音乐品牌</a></li>
-					<li><a href="<?=$public_r['newsurl']?>zhibo">在线教育</a></li>
+					<li><a href="<?=$public_r['newsurl']?>pinpai">乐器品牌</a></li>
+					<li><a href="<?=$public_r['newsurl']?>zhibo">直播中心</a></li>
 					<li><a href="<?=$public_r['newsurl']?>yuepu">乐谱中心</a></li>
-					<li><a href="<?=$public_r['newsurl']?>haixuan">各地海选</a></li>
 					<!--<li><a href="<?=$public_r['newsurl']?>yuepu">音乐乐谱</a></li>-->
 					<!--<li><a href="<?=$public_r['newsurl']?>baike">音乐百科</a></li>-->
 					<!--<li><a href="<?=$public_r['newsurl']?>diantai">音乐电台</a></li>-->
