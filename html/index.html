@@ -5,7 +5,7 @@
     <title>[!--pagetitle--]</title>
     <meta name="keywords" content="[!--pagekey--]" />
     <meta name="description" content="[!--pagedes--]" />
-    <meta name="baidu-site-verification" content="SSAE70KFwk" />
+    <meta name="baidu-site-verification" content="w4wtwQBXdv" />
     <meta http-equiv="X-UA-Compatible"  content="ie=edge">
     <meta property="og:title"           content="[!--pagetitle--]" />
     <meta property="og:description"     content="[!--pagedes--]" />
@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
     <link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_index.css">
-    <script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--<script type="text/javascript" src="[!&#45;&#45;news.url&#45;&#45;]js/52img.js"></script>-->
     <script type="text/javascript" src="[!--news.url--]js/jquery.SuperSlide.2.1.1.js"></script>
     <script language='javascript' src='/js/language.js'></script>
@@ -33,7 +33,7 @@
         <div class="login">
             <!-- 登录前············································· -->
             <script>
-                document.write('<script src="[!--news.url--]e/member/login/loginjs.php?t='+Math.random()+'"><'+'/script>');
+				document.write('<script src="[!--news.url--]e/member/login/loginjs.php?t='+Math.random()+'"><'+'/script>');
             </script>
             <!-- 登录后············································· -->
 
@@ -78,7 +78,7 @@
 
             </div>
             <script type="text/javascript">
-                jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,effect:"leftLoop",interTime:5000});
+				jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,effect:"leftLoop",interTime:5000});
             </script>
         </div>
         <!-- 轮播图结束······················································ -->
@@ -115,26 +115,26 @@
                             	if($bqr[classid]==12){
                                 ?>
                                 <script type="text/javascript">
-                                    // ajax请求后台，返回四张图片
-                                    $(function() {
-                                        var imgUserMsg="<?=$bqr[id]?>";
+									// ajax请求后台，返回四张图片
+									$(function() {
+										var imgUserMsg="<?=$bqr[id]?>";
 
-                                        $.ajax({
-                                            url: '/guangchang/index.photo.php',
-                                            type: 'post',
-                                            cache:true,
-                                            dataType: 'text',
-                                            data: {'tit_id': imgUserMsg},
-                                        })
-                                                .done(function(msg) {
-                                                    var UserImgInfo=msg;
-                                                    var userSelect="userImg"+imgUserMsg;
-                                                    $('#'+userSelect).find('.chatu a').empty().append(msg);
-                                                })
-                                                .fail(function() {
-                                                    console.log("error");
-                                                });
-                                    });
+										$.ajax({
+											url: '/guangchang/index.photo.php',
+											type: 'post',
+											cache:true,
+											dataType: 'text',
+											data: {'tit_id': imgUserMsg},
+										})
+											.done(function(msg) {
+												var UserImgInfo=msg;
+												var userSelect="userImg"+imgUserMsg;
+												$('#'+userSelect).find('.chatu a').empty().append(msg);
+											})
+											.fail(function() {
+												console.log("error");
+											});
+									});
                                 </script>
                                 <?
                                 }
@@ -160,7 +160,7 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-                                            <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
+                                            <li><a title="评论数" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
                                         </ol>
                                     </div>
@@ -192,7 +192,7 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-                                            <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
+                                            <li><a title="评论数" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
                                         </ol>
                                     </div>
@@ -223,7 +223,7 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-                                            <li><a title="评论数" ><i class="iconfont">&#xe64e;</i></a></li>
+                                            <li><a title="评论数" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
                                         </ol>
                                     </div>
@@ -235,25 +235,25 @@
                             [e:loop={12,2,0,0,'','newstime DESC'}]
                             <li class="clearfix" id="userImg1<?=$bqr[id]?>">
                                 <script type="text/javascript">
-                                    // ajax请求后台，返回四张图片
-                                    $(function() {
-                                        var imgUserMsg="<?=$bqr[id]?>";
-                                        $.ajax({
-                                            url: '/guangchang/index.photo.php',
-                                            type: 'post',
-                                            cache:true,
-                                            dataType: 'text',
-                                            data: {'tit_id': imgUserMsg},
-                                        })
-                                        .done(function(msg) {
-                                            var UserImgInfo=msg;
-                                            var userSelect="userImg1"+imgUserMsg;
-                                            $('#'+userSelect).find('.chatu a').empty().append(msg);
-                                        })
-                                        .fail(function() {
-                                            console.log("error");
-                                        });
-                                    });
+									// ajax请求后台，返回四张图片
+									$(function() {
+										var imgUserMsg="<?=$bqr[id]?>";
+										$.ajax({
+											url: '/guangchang/index.photo.php',
+											type: 'post',
+											cache:true,
+											dataType: 'text',
+											data: {'tit_id': imgUserMsg},
+										})
+											.done(function(msg) {
+												var UserImgInfo=msg;
+												var userSelect="userImg1"+imgUserMsg;
+												$('#'+userSelect).find('.chatu a').empty().append(msg);
+											})
+											.fail(function() {
+												console.log("error");
+											});
+									});
                                 </script>
                                 <h3><a href="<?=$bqsr['titleurl']?>"><?=$bqr['title']?></a></h3>
                                 <p><?=esub($bqr[smalltext],200)?></p>
@@ -263,7 +263,7 @@
 						                	if($bqr[classid]==11){
 						                    	echo "<i class='iconfont'>&#xe63b;</i>";
                                         }elseif($bqr[classid]==13){
-                                            echo "<i class='iconfont'>&#xe63e;</i>";
+                                        echo "<i class='iconfont'>&#xe63e;</i>";
                                         }
                                         ?>
                                     </a>
@@ -274,7 +274,7 @@
                                         <ol class="clearfix">
                                             <li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
                                             <li><?=$bqr['onclick']?></li>
-                                            <li><a title="评论数"><i class="iconfont">&#xe64e;</i></a></li>
+                                            <li><a title="评论数" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
                                             <li><?=$bqr['plnum']?></li>
                                         </ol>
                                     </div>
@@ -329,7 +329,7 @@
                 <div class="inXing">
                     <div class="xingHead">
                         <div class="yinyueHead clearfix">
-                            <h3><a href="[!--news.url--]mingren">网络报名</a></h3>
+                            <h3><a href="[!--news.url--]mingren">网络海选</a></h3>
                             <span class="more"><a href="[!--news.url--]haixuan">更多</a></span>
                         </div>
                     </div>
@@ -361,15 +361,15 @@
                         </div>
                     </div>
                     <script type="text/javascript">
-                        jQuery(".picScroll").slide({
-                            mainCell:".picList",
-                            effect:"left",
-                            pnLoop:false,
-                            scroll:1,
-                            interTime:3000,
-                            autoPage:true,
-                            autoPlay:true
-                        });
+						jQuery(".picScroll").slide({
+							mainCell:".picList",
+							effect:"left",
+							pnLoop:false,
+							scroll:1,
+							interTime:3000,
+							autoPage:true,
+							autoPlay:true
+						});
                     </script>
                 </div>
             </div>

@@ -68,15 +68,15 @@ body,html,body{
 	transform: translate3d(0,-2px,0);
 }
 .live-list-cell .cell-img{
-	width: 283px;
-	height: 178px;
+	width: 313px;
+	height: 243px;
 	overflow: hidden;
 	margin-bottom: 5px;
 	position: relative;
 }
 .cell-img img{
-	width: 283px;
-	min-height: 178px;
+	width: 313px;
+	min-height: 243px;
 	transition: all 5s linear;
 }
 .live-list-play{
@@ -240,7 +240,7 @@ body,html,body{
 	position: relative;
 	background-color: #fff;
 	padding: 0px;
-	display: none;
+	
 	height: 536px;
 
 }
@@ -256,6 +256,7 @@ body,html,body{
 	position: absolute;
 	left: 596px;
 	bottom: 0;
+	display: none;
 }
 .talk-msg-edi{
 	background-color: #fff;
@@ -332,7 +333,7 @@ body,html,body{
 }
 .leftWrap li{
 	width: 200px;
-	height: 134px;
+	/*height: 134px;*/
 	background-color: #ddd;
 	margin-bottom: 15px;
 	text-align: center;
@@ -540,6 +541,22 @@ body,html,body{
 .listLeft a p span{
 	color: skyblue;
 	padding-left: 5px;
+}
+.live-player-cover{
+	/*display: none;*/
+	height: 520px;
+	width: 880px;
+	position: absolute;
+	top: 0;
+	background: #000 url(/images/video_cover.png) 0 0 no-repeat;
+}
+.loader{
+	display: inline-block;
+	margin-top: 320px;
+	margin-left: 413px;
+}
+.live-player{
+	position: relative;
 }
 /*分类行样式··········································*/
 .fenlei{

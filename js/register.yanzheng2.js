@@ -51,11 +51,11 @@
 							reYanzhengma = msg;
 							if (msg==2) {//若为2则后台对比成功
 								$('.yanzhengCode').remove();
-								$('.getRegCode').after('<span class="yanzhengCode" style="font-size:20px;color:green">&nbsp;√</span>');
+								$('.newYanZhengBtn').after('<span class="yanzhengCode" style="font-size:20px;color:green">&nbsp;√</span>');
 							} else{//其他数值代表验证码输入错误
 								$('.yanzhengCode').remove();
-								$('.getRegCode').after('<span class="yanzhengCode" style="font-size:12px;color:red">&nbsp;验证码错误，请重输</span>');
-								$('.yanzheng').val('');//清空验证码输入框内容
+								$('.newYanZhengBtn').after('<span class="yanzhengCode" style="font-size:12px;color:red">&nbsp;验证码错误，请重输</span>');
+//								$('.newYanZhengBtn').val('');//清空验证码输入框内容
 								console.log($('.yanzheng').val());
 							};
 							$('.yanzheng').focus(function(event) {
@@ -171,6 +171,7 @@
 									$('.yanzheng-pre').addClass('yanzhengBtn').removeClass('yanzheng-pre');
 									//点击之后先提示已发送，再ajax
 									$('.yanzhengBtn').on('click', function(event) {
+										$('.yanzhengCode').remove();
 										$('.yifasong').html('&nbsp;验证码已发送，请查看');
 										$('.yifasong').stop(true).delay(2000).fadeOut('fast');
 										k = $('.celltype').val();

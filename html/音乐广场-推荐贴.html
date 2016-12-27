@@ -165,17 +165,18 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>" ><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>" ><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>
 							</div></div>
 						<!-- list右侧，内容区域结束······················ -->
 					</li>
+
 					<!--------视频结束-------->
 					<?
 				    }elseif($bqr[classid]==12 && $bqr[open]==1){
@@ -277,11 +278,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>" ><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>" ><i class="iconfont">&#xe64e;</i></a></li>
 									</ol>
 								</div>
 							</div></div>
@@ -363,11 +364,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>
@@ -450,11 +451,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>" ><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>" ><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>
@@ -536,11 +537,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 
@@ -553,7 +554,7 @@
 					?>
 					[/e:loop]
 
-					[e:loop={'select * from phome_ecms_photo a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where isgood=3 order by a.newstime DESC limit 40',4,24,3}]
+					[e:loop={'select * from phome_ecms_photo a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where isgood=3 order by a.newstime DESC limit 30',4,24,3}]
 					<?
 						if($bqr[classid]==11 && $bqr[open]==1){
 				    ?>
@@ -627,11 +628,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>
@@ -739,11 +740,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>
@@ -827,11 +828,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>
@@ -916,11 +917,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>
@@ -1000,11 +1001,11 @@
 								<span><?=date('Y-m-d',$bqr[newstime])?></span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('[!--news.url--]e/public/digg/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="<?=$bqsr['titleurl']?>"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=[!--news.url--]e/public/ViewClick/?classid=<?=$bqr['classid']?>&id=<?=$bqr['id']?>&down=2></script></li>
 									</ol>
 								</div>

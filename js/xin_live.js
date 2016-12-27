@@ -6,6 +6,13 @@
 */
 $(function() {
 	//1.0直播内页superslide配置
+
+	$('.fenleiFuck li').click(function (event) {
+		ifenlei = $(this).index();
+		$(this).addClass('current').siblings('li').removeClass('current');
+		$('.liebiaoFuck').eq(ifenlei).fadeIn('fast').siblings('ul').hide();
+		$('.tuijianFuck').eq(ifenlei).fadeIn('fast').siblings('ol').hide();
+	});
 	/* 详简切换通过添加on类名和css控制 */
 	$("#tabRank li").hover(function(){ $(this).addClass("on").siblings().removeClass("on")},function(){ });
 	/* Tab切换 */

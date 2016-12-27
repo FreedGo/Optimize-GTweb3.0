@@ -221,11 +221,13 @@ $(function(){
     $('#paixuSelect').change(function () {
 	    paixuname = $('#paixuSelect').val();
 	    $.ajax({
-	        url:'/pinpai/',
+	        url:'/pinpai/index.type.php',
             type:'post',
+            data:{'type':paixuname},
             datatype:'json'
         }).done(function (msg) {
 		    iloadedNum = [0,0,0,0,0];
+		    $('.liebiaoShow').empty();
 		    msg = eval('('+msg+')');
 		    pinpai00 = msg;
 		    magageData(msg);

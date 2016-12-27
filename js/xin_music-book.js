@@ -135,12 +135,13 @@ function sousuo(data){//data为搜索框的类名
 				type:'post',
 				data:{'type':searchType,'name':searchVal},
 				beforeSend:function(){
-					$("html,body").animate({scrollTop:$(".sousuo").offset().top},300);
+//					$("html,body").animate({scrollTop:$(".sousuo").offset().top},300);
+					$('.music-book-type-change>li:lt(6)').hide();
+					$('.search2').hide();
 					$('.list-content-type7').children('ul').empty().append('<div class="loader"><div class="loader-inner line-scale"><div></div><div></div><div></div><div></div><div></div></div></div>');
 				}
 			})
 			.done(function(msg){
-
 				$('.list-content-type7').children('ul').empty();
 				msg = eval('('+msg+')');
 //				console.log(msg);

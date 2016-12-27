@@ -69,30 +69,45 @@ $(function () {
                         speed:20,
                         count:techer00.length
                     });
+                    if (techer00.length == 0){
+                    	$('.tongjiNum').html('0');
+                    };
                     break;
                 case 1 :
                     $('.tongjiNum').numberRock({
                         speed:20,
                         count:techer01.length
                     });
+	                if (techer01.length == 0){
+		                $('.tongjiNum').html('0');
+	                };
                     break;
                 case 2 :
                     $('.tongjiNum').numberRock({
                         speed:20,
                         count:techer02.length
                     });
+	                if (techer02.length == 0){
+		                $('.tongjiNum').html('0');
+	                };
                     break;
                 case 3 :
                     $('.tongjiNum').numberRock({
                         speed:20,
                         count:techer03.length
                     });
+	                if (techer03.length == 0){
+		                $('.tongjiNum').html('0');
+	                };
                     break;
                 case 4 :
                     $('.tongjiNum').numberRock({
                         speed:20,
                         count:techer04.length
                     });
+	                if (techer04.length == 0){
+		                $('.tongjiNum').html('0');
+	                };
                     break;
             }
         }
@@ -432,6 +447,7 @@ $(function () {
 	            iloadedNum = [0,0,0,0,0];
 	            if (msg == ''||msg == null||msg == 'null'){
 		            msg = [];
+		            $('.tongjiNum').html('0');
 	            } else {
 		            msg = eval('('+msg+')');
 	            };

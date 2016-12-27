@@ -112,10 +112,7 @@ $(function() {
 						if (msg == 'null'||msg == null){
 							msg = [];
 							classroome00 = msg;
-							$('.tongjiNum').numberRock({
-								speed:20,
-								count:0
-							});
+							$('.tongjiNum').html('0');
 							$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
 						}else {
 							msg = eval( '(' +msg+')');
@@ -194,10 +191,7 @@ $(function() {
 					if (msg=='null'||msg==null) {
 						msg = [];
 						classroome00 = msg;
-						$('.tongjiNum').numberRock({
-							speed:20,
-							count:0
-						});
+						$('.tongjiNum').html('0');
 						$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
 					} else {
 						msg = eval('('+msg+')');
@@ -342,10 +336,7 @@ $(function() {
 						if (msg == 'null'||msg == null){
 							msg = [];
 							classroome00 = msg;
-							$('.tongjiNum').numberRock({
-								speed:20,
-								count:0
-							});
+							$('.tongjiNum').html('0');
 							$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
 						}else{
 							msg = eval('('+msg+')');
@@ -396,10 +387,7 @@ $(function() {
 							if (msg == 'null'||msg == null){
 								msg = [];
 								classroome00 = msg;
-								$('.tongjiNum').numberRock({
-									speed:20,
-									count:0
-								});
+								$('.tongjiNum').html('0');
 								$('.liebiaoShow').eq(1).stop(true).empty().fadeIn(200).html('<p style="text-align: center;color: #cb7047;">没有更多数据了</p>');
 							}else{
 								msg = eval('('+msg+')');
