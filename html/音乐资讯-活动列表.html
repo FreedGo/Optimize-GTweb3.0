@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
+	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/huodong.css">
+	<link rel="stylesheet" type="text/css" href="/css/dateRange.css"/>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="[!--news.url--]js/adress.js"></script>
+	<script type="text/javascript" src="/js/dateRange.js"></script>
+	<script type="text/javascript" src="[!--news.url--]js/huodong.js"></script>
+	<script language="javascript" src="/js/language.js"></script>
+</head>
+<body>
+<!-- ······························头部结构····································· -->
+[!--temp.tou--]
+<!-- 头部结构结束·························································· -->
+<!-- ····························中间结构·································· -->
+<div class="bodyWrap clearfix">
+	<!-- 左边二级导航列···················································· -->
+	<div class="leftWrap">
+		<ul>
+			<li class="leftMenu3 current">
+				<a href="/news/yinyue/" target="_blank">
+					<i class="iconfont"></i>
+					<h2>音乐新闻</h2>
+				</a>
+			</li>
+			<li class=" leftMenu4">
+				<a href="/news/yueqi/" target="_blank">
+					<i class="iconfont"></i>
+					<h2>原创新闻</h2>
+				</a>
+			</li>
+			<li class="leftMenu2">
+				<a href="/news/huodong/" target="_blank">
+					<i class="iconfont"></i>
+					<h2>音乐活动</h2>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 左边二级导航列结束················································ -->
+
+	<!-- 中间内容部分······················································ -->
+	<div class="rightWrap clearfix">
+
+
+		<!-- 第一.全站动态部分············································· -->
+		<div class="rightMiddle qzdtList">
+
+
+
+			<!-- 搜索框························· -->
+			<div class="searchWrap clearfix">
+				<div class="dizhi">
+					<div id="sjld" class="clearix" >
+
+						<div class="m_zlxg" id="shenfen">
+
+							<p title="">选择地区</p>
+
+							<div class="m_zlxg2 m_zlxg1">
+
+								<ul>
+
+									<li class="aa a1">北京</li>
+									<li class="ss s1">上海</li>
+									<li class="tt t1">天津</li>
+									<li class="bb a8">重庆</li>
+									<li class="tt t2">四川</li>
+									<li class="aa a4">贵州</li>
+									<li class="tt t3">云南</li>
+									<li class="tt t4">西藏</li>
+									<li class="hh hh1">河南</li>
+									<li class="hh h4">湖北</li>
+									<li class="hh h3">湖南</li>
+									<li class="bb a5">广东</li>
+									<li class="bb a6">广西</li>
+									<li class="ll s8">陕西</li>
+									<li class="bb a7">甘肃</li>
+									<li class="ll s5">青海</li>
+									<li class="ll s6">宁夏</li>
+									<li class="zz t5">新疆</li>
+									<li class="hh h2">河北</li>
+									<li class="ss s3">山西</li>
+									<li class="ss s4">内蒙古</li>
+									<li class="ii h5">江苏</li>
+									<li class="zz t6">浙江</li>
+									<li class="aa a2">安徽</li>
+									<li class="aa a3">福建</li>
+									<li class="ii h8">江西</li>
+									<li class="ss s2">山东</li>
+									<li class="ll s7">辽宁</li>
+									<li class="ii h7">吉林</li>
+									<li class="ii h6">黑龙江</li>
+									<li class="jj h9">海南</li>
+									<li class="zz t7">台湾</li>
+									<li class="zz t8">香港</li>
+									<li class="yy t9">澳门</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="m_zlxg" id="chengshi">
+
+							<p title="">选择城市</p>
+
+
+							<div class="m_zlxg2">
+
+								<ul></ul>
+
+							</div>
+
+						</div>
+
+						<div class="m_zlxg" id="quyu">
+
+							<p title="">选择区域</p>
+
+							<div class="m_zlxg2">
+
+								<ul></ul>
+
+							</div>
+
+						</div>
+
+						<input id="sfdq_num" type="hidden" value="" />
+
+						<input id="csdq_num" type="hidden" value="" />
+
+						<input id="sfdq_tj" type="hidden" value="" />
+
+						<input id="csdq_tj" type="hidden" value="" />
+
+						<input id="qydq_tj" type="hidden" value="" />
+
+					</div>
+					<!-- 城市三级联动调用js参数 -->
+					<script type="text/javascript">
+
+						$(function(){
+
+							$("#sjld").sjld("#shenfen","#chengshi","#quyu");
+
+						});
+
+					</script>
+					<!-- 城市三级联动调用js参数 -->
+
+					<div class="tijiao">
+						<input type="submit">
+					</div>
+
+				</div>
+				<div class="search">
+					<form class="clearfix" action="">
+						<input type="search" class="searchSelect" placeholder="搜索" required>
+						<input type="submit" class="search-sub" value="搜索">
+					</form>
+					<a href="javascript:;" target="_self"><i class="iconfont">&#xe658;</i></a>
+
+				</div>
+
+
+				<div class="creat">
+					<a href="[!--news.url--]e/huodong/ListInfo.php?mid=10">发布活动</a>
+				</div>
+
+			</div>
+			<!-- 搜索框结束····················· -->
+
+
+
+			<!-- 内容··························· -->
+			<div class="qzdtContent">
+				<!-- 正常内容显示列表········································ -->
+				<ul class="quanzhandongtai">
+					[e:loop={'select * from phome_ecms_shop a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where  classid=76 order by a.id DESC limit 100',4,24,3}]
+					<?php
+					$time = time();
+					$dang=date("Y-m-d",$time);
+					if($dang <= $bqr[huodong_2]){
+					?>
+					<li class="clearfix">
+						<div class="listLeft">
+							<a href="<?=$bqsr['titleurl']?>" target="_self">
+								<img src="<?=$bqr['titlepic']?>">
+							</a>
+						</div>
+						<div class="listRight">
+
+							<div class="difang">
+								<span class="left1">活动名称：</span><span class="bolder"><a href="<?=$bqsr['titleurl']?>"><?=$bqr[title]?></a></span>
+							</div>
+							<div class="shijian">
+								<span class="left1">活动时间：</span><span><?=$bqr[huodong_1]?>—<?=$bqr[huodong_2]?></span>
+							</div>
+							<div class="faburen">
+								<span class="left1">活动地址 ：</span><span><?=$bqr['ke_province']?><?=$bqr['ke_city']?><?=$bqr['ke_area']?></span>
+							</div>
+							<div class="faburen">
+								<span class="left1">发 布 人 ：</span><span><a href="/e/space/?userid=<?=$bqr['userid']?>"><?=$bqr['username']?></a></span>
+							</div>
+
+
+						</div>
+						<div class="toupiao"><a href="<?=$bqsr['titleurl']?>">点击查看</a></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<?
+}
+?>
+
+					[/e:loop]
+
+				</ul>
+				<!-- 正常内容显示列表结束········································ -->
+			</div>
+			<!-- 内容··························· -->
+		</div>
+		<!-- 全站动态内容部分结束······························ -->
+
+		<!-- 全站动态排行榜···································· -->
+		<div class="rightRight qzdtBang">
+			<div class="ta_date" id="div_date_demo3">
+				<span class="date_title" id="date_demo3"></span>
+				<a class="opt_sel" id="input_trigger_demo3" href="#">
+					<i class="i_orderd"></i>
+				</a>
+			</div>
+			<div id="datePicker"></div>
+		</div>
+		<!-- 第一.全站动态排行榜结束······································· -->
+	</div>
+	<!-- 中间内容部分结束·················································· -->
+</div>
+
+<!-- ····························中间结构结束·································· -->
+<!-- 底部结构开始································································ -->
+[!--temp.wei--]
+<!-- 底部结构开始································································ -->
+
+
+</body>
+</html>

@@ -716,3 +716,10 @@ a:hover{
 .allNewsList li.loadermsg{
 	border-bottom: none;
 }
+
+.leftMenu2{
+	background-position: 0 -220px;
+}
+.leftMenu2:hover{
+	background-position: 0 -330px;
+}

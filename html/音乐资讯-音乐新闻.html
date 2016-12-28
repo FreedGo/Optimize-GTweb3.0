@@ -14,10 +14,10 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_index.css">
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/yinyuexinwenlist.css">
 	<script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="[!--news.url--]js/index.js"></script>
 	<script language="javascript" src="/js/language.js"></script>
+	<script type="text/javascript" src="[!--news.url--]js/index.js"></script>
 	<script type="text/javascript">
-		var newsType =2;
+		var newsType = 1;
 	</script>
 	<script type="text/javascript" src="/js/news-list-next.js"></script>
 </head>
@@ -30,16 +30,17 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 	<!-- 头部广告条结束 -->
 	<!-- 新闻主题 -->
 	<div class="allNews clearfix">
+		<!-- 左边二级导航列···················································· -->
 		<div class="leftWrap">
 			<ul>
 
-				<li class=" leftMenu3">
+				<li class="leftMenu3 current">
 					<a href="/news/yinyue/" target="_blank">
 						<i class="iconfont"></i>
 						<h2>音乐新闻</h2>
 					</a>
 				</li>
-				<li  class="leftMenu4 current">
+				<li class=" leftMenu4">
 					<a href="/news/yueqi/" target="_blank">
 						<i class="iconfont"></i>
 						<h2>原创新闻</h2>
@@ -51,78 +52,31 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 						<h2>音乐活动</h2>
 					</a>
 				</li>
-
-
 			</ul>
-
-
 		</div>
+		<!-- 左边二级导航列结束················································ -->
 		<!-- 左边新闻 -->
 		<div class="leftNews">
-
-			<!-- 轮播焦点新闻 -->
-			<div class="lunboNews">
-
-				<!--<ul>
-					[ecmsinfo]15,4,32,0,0,42,0,'firsttitle=3','newstime DESC'[/ecmsinfo]
-				</ul>-->
-				<ol class="point">
-					<li class="current"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ol>
-			</div>
-			<!-- 轮播焦点新闻结束 -->
-			<!-- 推荐新闻 -->
-			<div class="recommendNews">
-				<ul class="clearfix">
-					<!--三级推荐2条-->
-					[ecmsinfo]15,2,32,0,0,40,0,'isgood=3','newstime DESC'[/ecmsinfo]
-				</ul>
-			</div>
-
-			<!-- 推荐新闻结束 -->
-
 			<!-- 所有新闻列表，包括视频音乐图片 -->
 			<div class="allNewsList clearfix">
-
 				<!-- 。。。。。。。。。。最新新闻。。。。。。。。。。 -->
 				<div class="videoNewsList current">
 					<div class="videoNewsListHead">
 						<ul class="clearfix">
-
-							<li><a href="[!--news.url--]news/yueqi/">原创新闻</a></li>
+							<li><a href="[!--news.url--]news/yinyue/">音乐新闻</a></li>
 						</ul>
 					</div>
 					<ul class="videoNewsListFuck current clearfix">
 
 					</ul>
-
 					<!-- 。。。。。。。。。。最新新闻。。。。。。。。。。 -->
-
 				</div>
-
-
-
-
 			</div>
 			<!-- 全部新闻列表结束 -->
-
 		</div>
 		<!-- 左边新闻结束 -->
-
 		<!-- 右边新闻榜 -->
 		<div class="rightNews">
-			<!-- ···························二维码················· -->
-			<!-- <div class="rightErWeiMa">
-
-					<a href="javascritp:;">
-					二维码
-						<img src="" alt="">
-					</a>
-				</div> -->
-			<!-- ···························二维码················· -->
 			<!-- ························搜索框························· -->
 			<div class="newsSearch">
 				<form action="[!--news.url--]e/search/index.php" method="post" name="searchform" id="searchform">
@@ -147,7 +101,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 						<img src="<?=$userr[userpic]?>">
 						<a href="[!--news.url--]e/space/?userid=<?=$userr[userid]?>"><?=$userr[username]?></a>
 						<div class="banZan">
-							<span><a href="javascript::">访问量：<?=$userr[viewstats]?>次</a></span>
+							<span><a href="javascript:;" target="_self">访问量：<?=$userr[viewstats]?>次</a></span>
 							<input type="submit" value="">
 						</div>
 
@@ -163,7 +117,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 			<div class="recommond">
 				<dl>
 					<dd>最热</dd>
-					[ecmsinfo]15,6,24,0,1,41,0,'','onclick DESC'[/ecmsinfo]
+					[ecmsinfo]14,6,24,0,1,41,0,'','newstime DESC'[/ecmsinfo]
 				</dl>
 			</div>
 			<!-- ··················最热·························· -->
@@ -171,7 +125,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 				<dl>
 					<dd>最多评论</dd>
 					<!--临时推荐调用-->
-					[ecmsinfo]15,6,24,0,2,41,0,'','newstime DESC'[/ecmsinfo]
+					[ecmsinfo]14,6,24,0,2,41,0,'','newstime DESC'[/ecmsinfo]
 				</dl>
 			</div>
 
@@ -181,7 +135,6 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 		</div>
 		<!-- 右边新闻帮结束 -->
 	</div>
-
 	<!-- 新闻主体结束 -->
 	<div class="footerAdvert">
 		<script type="text/javascript" src="/d/js/acmsd/thea2.js"></script>

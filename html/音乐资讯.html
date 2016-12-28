@@ -26,28 +26,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 				$('.videoNewsListFuck').eq(ihead).addClass('current').siblings().removeClass('current');
 
 			});
-
-			// 点击button事件
-			$('.videoNewsListFuck li').css('display', 'none');
-			var FuckLi=10;
-			for (var i = 0; i < FuckLi; i++) {
-				$('.videoNewsListFuck li').eq(i).css('display', 'block');
-			};
-			$('.loadMore button').click(function(event) {
-				FuckLi=FuckLi+3;
-				for (var i = 0; i < FuckLi; i++) {
-
-					$('.videoNewsListFuck li').eq(i).css('display', 'block');
-
-				};
-			});
-
-
-
-
 		});
-
-
 	</script>
 	<script type="text/javascript">
 		var newsType = 1;
@@ -66,7 +45,6 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 		<!-- 左侧导航 -->
 		<div class="leftNav">
 			<ul>
-
 				<li class="leftMenu3">
 					<a href="[!--news.url--]news/yinyue/">
 						<i class="iconfont">&#xe643;</i>
@@ -76,20 +54,16 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 				<li class="leftMenu4">
 					<a href="[!--news.url--]news/yueqi/">
 						<i class="iconfont">&#xe653;</i>
-						<h2>乐器资讯</h2>
+						<h2>原创新闻</h2>
 					</a>
 				</li>
-				<!--<li>
+				<li class="leftMenu2">
 					<a href="[!--news.url--]news/huodong/">
 						<i class="iconfont">&#xe64c;</i>
 						<h2>音乐活动</h2>
 					</a>
-				</li>-->
-
-
+				</li>
 			</ul>
-
-
 		</div>
 
 
@@ -172,11 +146,11 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 			</div>
 			<!-- ·································收藏榜2016-11-28 童要求隐藏··················· -->
 			<!--<div class="recommond" id="recommondFixed">-->
-				<!--<dl>-->
-					<!--<dd>收藏</dd>-->
-					<!--&lt;!&ndash;临时9级推荐&ndash;&gt;-->
-					<!--[ecmsinfo]'14,15,16',6,24,0,0,52,0,'isgood=9','newstime DESC'[/ecmsinfo]-->
-				<!--</dl>-->
+			<!--<dl>-->
+			<!--<dd>收藏</dd>-->
+			<!--&lt;!&ndash;临时9级推荐&ndash;&gt;-->
+			<!--[ecmsinfo]'14,15,16',6,24,0,0,52,0,'isgood=9','newstime DESC'[/ecmsinfo]-->
+			<!--</dl>-->
 			<!--</div>-->
 			<!-- ··················榜结束·························· -->
 
@@ -188,47 +162,20 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 		<script type="text/javascript" src="/d/js/acmsd/thea2.js"></script>
 	</div>
 	<!-- 友情链接开始····························· -->
-	<style type="text/css">
-		.friendly-link{
-			width: 1200px;
-			/*margin-top: 10px;*/
-			padding: 15px 0;
-
-		}
-		.friendly-link-head h2{
-			font-size: 16px;
-			line-height: 34px;
-			color: #cb7047;
-			border-top: 2px solid #cb7047;
-			text-indent: 15px;
-		}
-		.friendly-link-content{
-			padding: 0 15px;
-		}
-		.friendly-link-content a{
-			font-size: 14px;
-			margin-right: 5px;
-			color: #333;
-			line-height: 22px;
-		}
-		.friendly-link-content a:hover{
-			color: #cb7047;
-		}
-	</style>
-	<section class="friendly-link" style="background-color: #DDDDDD;">
+	<section class="friendly-link" style="background-color: #FEF9E9;">
 		<div class="friendly-link-head">
 			<h2>友情链接：</h2>
 		</div>
 		<div class="friendly-link-content">
-			<a href="http://www.cnscnet.com/" title="申城网" target="_blank">申城网</a>
-			<a href="http://www.huatinet.com/" title="今日话题" target="_blank">今日话题</a>
+			[e:loop={'select lname,lurl,lpic from [!db.pre!]enewslink where checked=1 and classid=1 order by myorder,lid',20,24,0}]
+			<a href="<?=$bqr[lurl]?>" target="_blank" ><?=$bqr[lname]?></a>
+			[/e:loop]
 		</div>
 	</section>
 	<!-- 友情链接结束····························· -->
 	<!-- 底部调用 -->
 	[!--temp.wei--]
 </div>
-<script type="text/javascript" charset="utf-8" src="http://changyan.itc.cn/js/??lib/jquery.js,changyan.labs.js?appid=cys9VvWvG"></script>
 <!----悬浮窗---->
 [!--temp.xuanfu--]
 </body>

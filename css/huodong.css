@@ -75,23 +75,24 @@
 .leftWrap li.current>a{
 	color: #fef5d8;
 }
-.leftMenu1{
-	background-position: 0 0;
+
+.leftMenu4{
+	background-position: 0 -1540px;
 }
-.leftMenu1:hover{
-	background-position: 0 -110px;
+.leftMenu3{
+	background-position: 0 -1760px;
+}
+.leftMenu4:hover{
+	background-position: 0 -1650px;
+}
+.leftMenu3:hover{
+	background-position: 0 -1870px;
 }
 .leftMenu2{
-	background-position: 0 -330px;
+	background-position: 0 -220px;
 }
 .leftMenu2:hover{
 	background-position: 0 -330px;
-}
-.leftMenu3{
-	background-position: 0 -440px;
-}
-.leftMenu3:hover{
-	background-position: 0 -550px;
 }
 
 /*左侧二级导航样式结束··································*/

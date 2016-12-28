@@ -7,10 +7,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/reg/vip.php" afterPath="$PROJECT_DIR$/php/reg/vip.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/reg/备份/vip.php" afterPath="$PROJECT_DIR$/php/reg/备份/vip.php" />
     </list>
-    <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="修改">
+    <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="广场搜索结果增加isFeed函数">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/音乐资讯-活动列表.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/音乐资讯-音乐新闻.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guangchang/index.name.php" afterPath="$PROJECT_DIR$/php/guangchang/index.name.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guangchang/index.php" afterPath="$PROJECT_DIR$/php/guangchang/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/huodong.css" afterPath="$PROJECT_DIR$/css/huodong.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/yinyuexinwenlist.css" afterPath="$PROJECT_DIR$/css/yinyuexinwenlist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/yinyuezixun.css" afterPath="$PROJECT_DIR$/css/yinyuezixun.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-全部贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐新闻-乐器.html" afterPath="$PROJECT_DIR$/html/音乐新闻-乐器.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐资讯.html" afterPath="$PROJECT_DIR$/html/音乐资讯.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,77 +48,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="yinyueguangchang.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.js">
+      <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding>
-                <marker date="1482457934441" expanded="true" signature="6138:6148" ph="..." />
+                <element signature="e#133#878#0" expanded="false" />
+                <element signature="e#5608#5675#0" expanded="false" />
+                <element signature="e#6387#7417#0" expanded="false" />
+                <element signature="e#7536#8667#0" expanded="false" />
+                <element signature="e#8858#10927#0" expanded="false" />
+                <element signature="e#11136#12637#0" expanded="false" />
+                <element signature="e#13270#13559#0" expanded="false" />
+                <element signature="e#14341#14397#0" expanded="false" />
+                <element signature="e#14431#14490#0" expanded="false" />
+                <element signature="e#14658#15760#0" expanded="false" />
+                <marker date="1482825147252" expanded="true" signature="6278:6312" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.name.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/guangchang/index.name.php">
+      <file leaf-file-name="音乐广场-全部贴.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="247" column="9" lean-forward="false" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
+            <state relative-caret-position="532">
+              <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="音乐资讯.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/音乐资讯.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
-                <element signature="e#601#2730#0#HTML" expanded="false" />
-                <element signature="e#2783#5854#0#HTML" expanded="false" />
-                <element signature="e#5907#8004#0#HTML" expanded="false" />
-                <element signature="e#8367#10443#0#HTML" expanded="false" />
-                <element signature="e#10496#13516#0#HTML" expanded="false" />
-                <element signature="e#13569#15591#0#HTML" expanded="false" />
-                <element signature="e#15937#17884#0#HTML" expanded="false" />
-                <element signature="e#18224#20202#0#HTML" expanded="false" />
-                <element signature="e#20540#23474#0#HTML" expanded="false" />
-                <element signature="e#20722#22096#0#HTML" expanded="false" />
-                <element signature="e#22276#23312#0#HTML" expanded="false" />
-                <marker date="1482889241147" expanded="true" signature="270:484" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482889241147" expanded="true" signature="4728:4793" ph="select morep... $" />
-                <marker date="1482889241147" expanded="true" signature="8062:8250" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482889241147" expanded="true" signature="12369:12434" ph="select morep... $" />
-                <marker date="1482889241147" expanded="true" signature="15650:15853" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482889241147" expanded="true" signature="17937:18140" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482889241147" expanded="true" signature="20254:20456" ph="select * fro... phome_ecms_photo" />
-                <marker date="1482889241147" expanded="true" signature="22375:22440" ph="select morep... $" />
+                <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="音乐广场-推荐贴.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
+      <file leaf-file-name="音乐资讯-活动列表.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/音乐资讯-活动列表.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="97" column="24" lean-forward="false" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="83" />
+            <state relative-caret-position="367">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <element signature="n#div#1;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#6;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#7;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#8;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#9;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="isFeed.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/e/extend/feed/isFeed.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-              <folding>
-                <marker date="1482887652003" expanded="true" signature="1114:1175" ph="select * fro... $" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -157,17 +145,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp19923/home/hao/e/space/template/teacher/footer.temp.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp20768/home/hao/e/space/template/default/footer.temp.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp20823/home/hao/e/space/template/jiaoshi/footer.temp.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp20771/home/hao/e/space/template/jiaoshi_space/footer.temp.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp21071/home/hao/e/space/template/kongjian/footer.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp21433/home/hao/e/space/template/pinpai/footer.temp.php" />
-        <option value="$PROJECT_DIR$/php/teacher/index.temp.php" />
-        <option value="$PROJECT_DIR$/php/jiaoshi/index.temp.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp20293/home/hao/jiaoshi/index-ajax/index.address.php" />
         <option value="$PROJECT_DIR$/php/guangchang/guangchang.ajax.php" />
-        <option value="$PROJECT_DIR$/js/yinyueguangchang.js" />
         <option value="$PROJECT_DIR$/php/e/space/template/default/header.temp.php" />
         <option value="$PROJECT_DIR$/php/reg/备份/vip.php" />
         <option value="$PROJECT_DIR$/php/reg/vip.php" />
@@ -189,7 +167,6 @@
         <option value="$PROJECT_DIR$/js/register.yanzheng2.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/css/xin_yinyueguangchang.css" />
-        <option value="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
         <option value="$PROJECT_DIR$/html/音乐乐谱中心.html" />
         <option value="$PROJECT_DIR$/js/xin_music-book.js" />
         <option value="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
@@ -208,6 +185,17 @@
         <option value="$PROJECT_DIR$/php/e/extend/feed/isFeed.php" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
         <option value="$PROJECT_DIR$/php/guangchang/index.name.php" />
+        <option value="$PROJECT_DIR$/js/yinyueguangchang.js" />
+        <option value="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
+        <option value="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
+        <option value="$PROJECT_DIR$/html/音乐资讯.html" />
+        <option value="$PROJECT_DIR$/html/音乐资讯-音乐新闻.html" />
+        <option value="$PROJECT_DIR$/html/音乐新闻-乐器.html" />
+        <option value="$PROJECT_DIR$/css/yinyuezixun.css" />
+        <option value="$PROJECT_DIR$/css/yinyuexinwenlist.css" />
+        <option value="$PROJECT_DIR$/html/音乐资讯-活动列表.html" />
+        <option value="$PROJECT_DIR$/css/huodong.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp00662/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php" />
       </list>
     </option>
   </component>
@@ -309,21 +297,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Optimize-GTweb3.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -549,14 +523,7 @@
       <workItem from="1482714790638" duration="15984000" />
       <workItem from="1482798978441" duration="257000" />
       <workItem from="1482799709489" duration="18105000" />
-      <workItem from="1482885284309" duration="2796000" />
-    </task>
-    <task id="LOCAL-00111" summary="音乐老师分类点击数字动态跳动,分类,搜索,地区筛选">
-      <created>1481077919049</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1481077919049</updated>
+      <workItem from="1482885284309" duration="14657000" />
     </task>
     <task id="LOCAL-00112" summary="老师,教室空间主页二维码chrome浏览器变形的bug修正">
       <created>1481086043707</created>
@@ -894,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482889290374</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="广场搜索结果增加isFeed函数">
+      <created>1482889428775</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1482889428775</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="794522000" />
+    <option name="totallyTimeSpent" value="806383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -910,13 +884,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17681624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12431843" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12431843" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14285715" sideWeight="0.6394231" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -943,31 +917,33 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771739" sideWeight="0.30597016" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12431843" sideWeight="0.50213677" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771739" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12431843" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21847826" sideWeight="0.69402987" order="10" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25869566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14285715" sideWeight="0.6394231" order="12" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21155943" sideWeight="0.6178038" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17681624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1004,7 +980,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="琴行认证弹框就是切换&#10;" />
     <MESSAGE value="网络海选左侧广告尺寸调整&#10;" />
     <MESSAGE value="新增用户头像信息&#10;" />
     <MESSAGE value="修改&#10;" />
@@ -1029,7 +1004,8 @@
     <MESSAGE value="直播备份" />
     <MESSAGE value="修改" />
     <MESSAGE value="修改是否关注请求post为get" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改是否关注请求post为get" />
+    <MESSAGE value="广场搜索结果增加isFeed函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="广场搜索结果增加isFeed函数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1038,29 +1014,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/e/space/template/pinpai/header_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="66" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32954/home/hao/e/space/template/default/header.temp.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34544/home/hao/e/space/template/default/footer.temp.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36290/home/hao/e/space/template/jiaoshi/header_1.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37176/home/hao/e/space/template/jiaoshi/footer.temp.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37254/home/hao/e/space/template/jiaoshi/header.temp.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp38063/home/hao/e/space/template/pinpai/header.temp.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39717/home/hao/e/space/template/pinpai/footer.temp.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39411/home/hao/e/space/template/teacher/header.temp.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp40658/home/hao/e/space/template/teacher/footer.temp.php" />
-    <entry file="file://$PROJECT_DIR$/html/琴行教室.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="32" column="86" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/reg/vip.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1253,27 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <element signature="e#133#878#0" expanded="false" />
-            <element signature="e#3440#4249#0" expanded="false" />
-            <element signature="e#5608#5675#0" expanded="false" />
-            <element signature="e#6387#7417#0" expanded="false" />
-            <element signature="e#7536#8667#0" expanded="false" />
-            <element signature="e#8858#10927#0" expanded="false" />
-            <element signature="e#11136#12637#0" expanded="false" />
-            <element signature="e#13270#13559#0" expanded="false" />
-            <element signature="e#14341#14397#0" expanded="false" />
-            <element signature="e#14431#14490#0" expanded="false" />
-            <element signature="e#14658#15760#0" expanded="false" />
-            <marker date="1482825147252" expanded="true" signature="6278:6312" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/音乐老师.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1355,46 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1482457934441" expanded="true" signature="6138:6148" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/e/extend/feed/isFeed.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding>
-            <marker date="1482887652003" expanded="true" signature="1114:1175" ph="select * fro... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="97" column="24" lean-forward="false" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="83" />
-          <folding>
-            <element signature="n#div#1;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#6;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#7;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#8;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#9;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/guangchang/index.name.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-133">
@@ -1419,6 +1311,180 @@
             <marker date="1482889241147" expanded="true" signature="17937:18140" ph="select * fro... phome_ecms_photo" />
             <marker date="1482889241147" expanded="true" signature="20254:20456" ph="select * fro... phome_ecms_photo" />
             <marker date="1482889241147" expanded="true" signature="22375:22440" ph="select morep... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/e/extend/feed/isFeed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <marker date="1482887652003" expanded="true" signature="1114:1175" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="273" column="30" lean-forward="true" selection-start-line="273" selection-start-column="30" selection-end-line="273" selection-end-column="30" />
+          <folding>
+            <marker date="1482889448978" expanded="true" signature="6138:6148" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="52" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1090" selection-end-column="7" />
+          <folding>
+            <element signature="n#div#1;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#6;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#7;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#8;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#9;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/yinyuexinwenlist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="714" column="1" lean-forward="true" selection-start-line="714" selection-start-column="1" selection-end-line="714" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐新闻-乐器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="50" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="194" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="e#133#878#0" expanded="false" />
+            <element signature="e#5608#5675#0" expanded="false" />
+            <element signature="e#6387#7417#0" expanded="false" />
+            <element signature="e#7536#8667#0" expanded="false" />
+            <element signature="e#8858#10927#0" expanded="false" />
+            <element signature="e#11136#12637#0" expanded="false" />
+            <element signature="e#13270#13559#0" expanded="false" />
+            <element signature="e#14341#14397#0" expanded="false" />
+            <element signature="e#14431#14490#0" expanded="false" />
+            <element signature="e#14658#15760#0" expanded="false" />
+            <marker date="1482825147252" expanded="true" signature="6278:6312" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/huodong.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐资讯-音乐新闻.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="53" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/yinyuezixun.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="664" column="0" lean-forward="false" selection-start-line="664" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp00662/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="375" column="0" lean-forward="false" selection-start-line="375" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+          <folding>
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <marker date="1482908581223" expanded="true" signature="100:252" ph="select * fro... phome_ecms_shop" />
+            <marker date="1482908581223" expanded="true" signature="468:474" ph=" " />
+            <marker date="1482908581223" expanded="true" signature="475:481" ph=" " />
+            <marker date="1482908581223" expanded="true" signature="513:519" ph=" " />
+            <marker date="1482908581223" expanded="true" signature="520:526" ph=" " />
+            <marker date="1482908581223" expanded="true" signature="587:593" ph=" " />
+            <marker date="1482908581223" expanded="true" signature="1551:1645" ph="select * fro... $" />
+            <marker date="1482908581223" expanded="false" signature="6567:6581" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49367/home/hao/news/huodong/indexs.ip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="43" column="116" lean-forward="false" selection-start-line="43" selection-start-column="116" selection-end-line="43" selection-end-column="116" />
+          <folding>
+            <marker date="1465374874000" expanded="true" signature="223:330" ph="select * fro... $" />
+            <marker date="1465374874000" expanded="true" signature="1463:1566" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐资讯.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp04381/home/hao/e/data/html/shop/qlistinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480477358000" expanded="true" signature="100:252" ph="select * fro... phome_ecms_shop" />
+            <marker date="1480477358000" expanded="true" signature="468:474" ph=" " />
+            <marker date="1480477358000" expanded="true" signature="475:481" ph=" " />
+            <marker date="1480477358000" expanded="true" signature="513:519" ph=" " />
+            <marker date="1480477358000" expanded="true" signature="520:526" ph=" " />
+            <marker date="1480477358000" expanded="true" signature="587:593" ph=" " />
+            <marker date="1480477358000" expanded="true" signature="1523:1617" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐资讯-活动列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
