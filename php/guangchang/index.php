@@ -212,7 +212,77 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 			<div class="qzdtContent">
 				<ul class="quanzhandongtai">
 					
-															<!--------视频开始-------->
+															<!--------图片开始-------->
+					<li class="clearfix" id="userImg7545">
+												<script>$(function(){isFeed('734')})</script>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="http://www.greattone.net/e/space/?userid=734">
+								<img src="http://www.greattone.net/d/file/avator/user734_avator.jpg">
+								<input type="hidden" name="titid" class="tit_id" value="7545" />
+								<h3>李雨&nbsp;
+																	</h3>
+							</a>
+							<p class="fromCity">
+								<em>北京</em>
+								<span class="guanzhu734" onclick="GuanZhu('734')">关注</span>								</p>
+							<p><em>
+								弦乐老师							</em>
+								<span>
+						            五级                                </span></p>
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<script type="text/javascript">
+								$(function() {
+									var imgUserMsg="7545";
+
+									$.ajax({
+										url: '/guangchang/index.photo.php',
+										type: 'post',
+										dataType: 'text',
+										data: {'tit_id': imgUserMsg},
+									})
+										.done(function(msg) {
+
+											var UserImgInfo=msg;
+											var userSelect="userImg"+imgUserMsg;
+
+											// $('userSelect').children('chatu a').append('msg');
+											$('#'+userSelect).find('.chatu a').append(msg);
+										})
+										.fail(function() {
+											console.log("error");
+										});
+
+
+								});
+
+							</script>
+							<a href="http://www.greattone.net/guangchang/tupian/2016-12-26/7545.html"><h3>200年难得一遇的奇才 约瑟夫‧哈</h3></a>
+							<p>约瑟夫·哈西德(Josef Hassid 1923年12月28日-1950年11月7日)(原名Joseph Chasyd)诞生于波兰与苏联边境的一</p>
+							<div class="chatu">
+								<a href="http://www.greattone.net/guangchang/tupian/2016-12-26/7545.html">
+									<!--<img src="">-->
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span>2016-12-26</span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/tupian/2016-12-26/7545.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7545></script></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/tupian/2016-12-26/7545.html"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7545&down=5></script></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/tupian/2016-12-26/7545.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7545&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------图片结束-------->
+																				<!--------视频开始-------->
 					<li class="clearfix dongtaiLi">
 												<script>$(function(){isFeed('696')})</script>
 						<!-- list左侧，包含头像姓名······················ -->
@@ -244,11 +314,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-22</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-22/7514.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7514></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7514&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-22/7514.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7514&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-22/7514.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7514&down=2></script></li>
 									</ol>
 								</div>
@@ -316,11 +386,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-22</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/tupian/2016-12-22/7508.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7508></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7508&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/tupian/2016-12-22/7508.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7508&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/tupian/2016-12-22/7508.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7508&down=2></script></li>
 									</ol>
 								</div>
@@ -328,6 +398,51 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 						<!-- list右侧，内容区域结束······················ -->
 					</li>
 					<!--------图片结束-------->
+																				<!--------视频开始-------->
+					<li class="clearfix dongtaiLi">
+												<script>$(function(){isFeed('7343')})</script>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="http://www.greattone.net/e/space/?userid=7343">
+								<img src="http://www.greattone.net/d/file/avator/user7343_avator.jpg">
+								<h3>赵青&nbsp;
+																	</h3>
+							</a>
+							<p class="fromCity">
+								<em>广东</em>
+								<span class="guanzhu7343" onclick="GuanZhu('7343')">关注</span>								</p>
+							<p><em>
+								钢琴老师							</em>
+								<span>
+						            六级						        </span></p>
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<a href="http://www.greattone.net/guangchang/shipin/2016-12-22/7505.html"><h3>Beat it | Michael Jackson | Mi</h3></a>
+							<p>&quot;The Valley&quot; the Miguel Rivera&#039;s New Album already available:</p>
+							<div class="chatu">
+								<a href="http://www.greattone.net/guangchang/shipin/2016-12-22/7505.html">
+									<img src="http://www.greattone.net/d/file/f91b9ce7141ce527663ac5d1d5277453.jpg">
+									<i class="iconfont">&#xe63b;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span>2016-12-22</span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-22/7505.html"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7505></script></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-22/7505.html"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7505&down=5></script></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-22/7505.html"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7505&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+
+					<!--------视频结束-------->
 																				<!--------视频开始-------->
 					<li class="clearfix dongtaiLi">
 												<script>$(function(){isFeed('6078')})</script>
@@ -360,11 +475,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-21</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-21/7490.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7490></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7490&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-21/7490.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7490&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-21/7490.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7490&down=2></script></li>
 									</ol>
 								</div>
@@ -408,11 +523,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-20</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7487.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7487></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7487&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7487.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7487&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7487.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7487&down=2></script></li>
 									</ol>
 								</div>
@@ -455,12 +570,60 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-20</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7485.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7485></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7485&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7485.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7485&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7485.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7485&down=2></script></li>
+									</ol>
+								</div>
+							</div></div>
+						<!-- list右侧，内容区域结束······················ -->
+					</li>
+					<!--------音乐结束-------->
+																				<!--------音乐开始-------->
+					<li class="clearfix">
+												<script>$(function(){isFeed('8453')})</script>
+						<!-- list左侧，包含头像姓名······················ -->
+						<div class="listLeft">
+							<a href="http://www.greattone.net/e/space/?userid=8453">
+								<img src="http://M.greattone.net/d/uploaduserpic/userpic/1474442338249.jpg">
+								<h3>张安安&nbsp;
+																	</h3>
+							</a>
+							<p class="fromCity">
+								<em>江苏</em>
+								<span class="guanzhu8453" onclick="GuanZhu('8453')">关注</span>								</p>
+							<p><em>
+								普通会员							</em>
+								<span>
+					            三级
+					        </span></p>
+						</div>
+						<!-- list右侧，内容区域·························· -->
+						<div class="listRight">
+							<a href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7484.html"><h3>四季组曲   理查德</h3></a>
+							<p>“春” Concerto No. 1 in E major, Op. 8, RV 269, &quot;La primavera&quot; (Spring) I. Allego
+“夏”Concerto No</p>
+							<div class="chatu">
+								<a href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7484.html">
+
+
+									<img src="http://M.greattone.net/d/uploaduserpic/userpic/1474442338249.jpg">
+									<i class="iconfont">&#xe63e;</i>
+								</a>
+							</div>
+							<div class="time clearfix">
+								<span>2016-12-20</span>
+								<div class="timeRight">
+									<ol class="clearfix">
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7484.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7484></script></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7484.html"><i class="iconfont">&#xe629;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7484&down=5></script></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7484.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7484&down=2></script></li>
 									</ol>
 								</div>
 							</div></div>
@@ -502,11 +665,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-20</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7483.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7483></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7483&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7483.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7483&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7483.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7483&down=2></script></li>
 									</ol>
 								</div>
@@ -547,11 +710,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-20</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-20/7481.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7481></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7481&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-20/7481.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7481&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-20/7481.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7481&down=2></script></li>
 									</ol>
 								</div>
@@ -593,11 +756,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-20</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-20/7480.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7480></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7480&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-20/7480.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7480&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-20/7480.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7480&down=2></script></li>
 									</ol>
 								</div>
@@ -664,11 +827,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-19</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/tupian/2016-12-19/7457.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7457></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7457&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/tupian/2016-12-19/7457.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7457&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/tupian/2016-12-19/7457.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7457&down=2></script></li>
 									</ol>
 								</div>
@@ -734,11 +897,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-18</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/tupian/2016-12-18/7452.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7452></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7452&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/tupian/2016-12-18/7452.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7452&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/tupian/2016-12-18/7452.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7452&down=2></script></li>
 									</ol>
 								</div>
@@ -781,11 +944,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-16</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-16/7448.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7448></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7448&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-16/7448.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7448&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-16/7448.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7448&down=2></script></li>
 									</ol>
 								</div>
@@ -828,11 +991,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-16</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-16/7446.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7446></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7446&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-16/7446.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7446&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-16/7446.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7446&down=2></script></li>
 									</ol>
 								</div>
@@ -872,11 +1035,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-16</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-16/7442.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7442></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7442&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-16/7442.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7442&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-16/7442.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7442&down=2></script></li>
 									</ol>
 								</div>
@@ -917,11 +1080,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-16</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-16/7440.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7440></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7440&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-16/7440.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7440&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-16/7440.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7440&down=2></script></li>
 									</ol>
 								</div>
@@ -962,11 +1125,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-14</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-14/7416.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7416></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7416&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-14/7416.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7416&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-14/7416.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7416&down=2></script></li>
 									</ol>
 								</div>
@@ -1010,11 +1173,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-12</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/e/action/ShowInfo.php?classid=73&id=7374"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=73&id=7374></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=73&id=7374&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/e/action/ShowInfo.php?classid=73&id=7374"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=73&id=7374&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/e/action/ShowInfo.php?classid=73&id=7374"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=73&id=7374&down=2></script></li>
 									</ol>
 								</div>
@@ -1054,11 +1217,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-12</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7371.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7371></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7371&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7371.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7371&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7371.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7371&down=2></script></li>
 									</ol>
 								</div>
@@ -1099,11 +1262,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-12</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7369.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7369></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7369&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7369.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7369&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7369.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7369&down=2></script></li>
 									</ol>
 								</div>
@@ -1144,11 +1307,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-12</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7365.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7365></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7365&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7365.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7365&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-12/7365.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7365&down=2></script></li>
 									</ol>
 								</div>
@@ -1192,11 +1355,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-09</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-09/7349.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7349></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7349&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-09/7349.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7349&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-09/7349.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7349&down=2></script></li>
 									</ol>
 								</div>
@@ -1237,11 +1400,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-08</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-08/7336.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7336></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7336&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-08/7336.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7336&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-08/7336.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7336&down=2></script></li>
 									</ol>
 								</div>
@@ -1308,11 +1471,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-08</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/tupian/2016-12-08/7326.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7326></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7326&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/tupian/2016-12-08/7326.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7326&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/tupian/2016-12-08/7326.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7326&down=2></script></li>
 									</ol>
 								</div>
@@ -1353,11 +1516,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-07</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-07/7316.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7316></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7316&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-07/7316.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7316&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-07/7316.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7316&down=2></script></li>
 									</ol>
 								</div>
@@ -1398,11 +1561,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-07</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-07/7312.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7312></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7312&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-07/7312.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7312&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-07/7312.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7312&down=2></script></li>
 									</ol>
 								</div>
@@ -1446,11 +1609,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-06</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-06/7299.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7299></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7299&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-06/7299.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7299&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-06/7299.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7299&down=2></script></li>
 									</ol>
 								</div>
@@ -1493,11 +1656,11 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-06</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/yinyue/2016-12-06/7295.html" target="_self"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7295></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7295&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/yinyue/2016-12-06/7295.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7295&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/yinyue/2016-12-06/7295.html" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7295&down=2></script></li>
 									</ol>
 								</div>
@@ -1537,705 +1700,12 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 								<span>2016-12-05</span>
 								<div class="timeRight">
 									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
+										<li><a  title="点击量" href="http://www.greattone.net/guangchang/shipin/2016-12-05/7261.html"><i class="iconfont">&#xe644;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7261></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7261&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
+										<li><a title="点赞量" href="http://www.greattone.net/guangchang/shipin/2016-12-05/7261.html"><i class="iconfont">&#xe629;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7261&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
+										<li><a title="评论量" href="http://www.greattone.net/guangchang/shipin/2016-12-05/7261.html"><i class="iconfont">&#xe64e;</i></a></li>
 										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7261&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-
-					<!--------视频结束-------->
-																				<!--------音乐开始-------->
-					<li class="clearfix">
-												<script>$(function(){isFeed('406')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=406">
-								<img src="http://www.greattone.net/d/file/avator/user406_avator.jpg">
-								<h3>于惜文&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>广东</em>
-								<span class="guanzhu406" onclick="GuanZhu('406')">关注</span>								</p>
-							<p><em>
-								爱乐人							</em>
-								<span>
-					            五级
-					        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/yinyue/2016-12-05/7259.html"><h3>蔡琴 - 绿岛小夜曲</h3></a>
-							<p>这绿岛像一只船，在月夜里摇啊摇。姑娘呀，你也在我的心海里飘啊飘！让我的歌声随那微风，掀开了你的窗帘，让我的衷曲</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/yinyue/2016-12-05/7259.html">
-
-
-									<img src="http://www.greattone.net/d/file/avator/user406_avator.jpg">
-									<i class="iconfont">&#xe63e;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-12-05</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7259></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7259&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7259&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7259&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------音乐结束-------->
-																				<!--------视频开始-------->
-					<li class="clearfix dongtaiLi">
-												<script>$(function(){isFeed('7489')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=7489">
-								<img src="http://m.greattone.net/d/uploaduserpic/userpic/1472431245.jpg">
-								<h3>TeddyChen&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>台灣</em>
-								<span class="guanzhu7489" onclick="GuanZhu('7489')">关注</span>								</p>
-							<p><em>
-								爱乐人							</em>
-								<span>
-						            三级						        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/shipin/2016-12-05/7257.html"><h3>台灣原住民的孩子演唱</h3></a>
-							<p>好美的歌聲，希望您喜愛</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/shipin/2016-12-05/7257.html">
-									<img src="http://m.greattone.net/d/uploaduserpic/1480901217.jpg">
-									<i class="iconfont">&#xe63b;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-12-05</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7257></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7257&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7257&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7257&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-
-					<!--------视频结束-------->
-																				<!--------视频开始-------->
-					<li class="clearfix dongtaiLi">
-												<script>$(function(){isFeed('8453')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=8453">
-								<img src="http://M.greattone.net/d/uploaduserpic/userpic/1474442338249.jpg">
-								<h3>张安安&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>江苏</em>
-								<span class="guanzhu8453" onclick="GuanZhu('8453')">关注</span>								</p>
-							<p><em>
-								普通会员							</em>
-								<span>
-						            三级						        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/shipin/2016-12-02/7242.html"><h3>马克西姆 野蜂飞舞</h3></a>
-							<p>这首常用于小提琴或其他器乐独奏的小曲，原是里姆斯基-柯萨科夫所作歌剧 《萨旦王的故事》 第二幕第一场中，由</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/shipin/2016-12-02/7242.html">
-									<img src="http://171.11.231.70:2100/20161202/fVm8tuV8/1.jpg">
-									<i class="iconfont">&#xe63b;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-12-02</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7242></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7242&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7242&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7242&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-
-					<!--------视频结束-------->
-																				<!--------音乐开始-------->
-					<li class="clearfix">
-												<script>$(function(){isFeed('9487')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=9487">
-								<img src="http://M.greattone.net/d/uploaduserpic/userpic/1479715610797.png">
-								<h3>王雨晨&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>江苏</em>
-								<span class="guanzhu9487" onclick="GuanZhu('9487')">关注</span>								</p>
-							<p><em>
-															</em>
-								<span>
-					            一级
-					        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/yinyue/2016-12-01/7232.html"><h3>1号圆舞曲  钢琴曲</h3></a>
-							<p>萧邦的名曲： Op代表作品编码，例如Op.10-3表示作品十号的第三首。1号圆舞曲降E大调Op. 18~~</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/yinyue/2016-12-01/7232.html">
-
-
-									<img src="http://M.greattone.net/d/uploaduserpic/userpic/1476767428694.png">
-									<i class="iconfont">&#xe63e;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-12-01</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7232></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7232&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7232&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7232&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------音乐结束-------->
-																				<!--------音乐开始-------->
-					<li class="clearfix">
-												<script>$(function(){isFeed('9385')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=9385">
-								<img src="http://M.greattone.net/d/uploaduserpic/userpic/1479196882357.png">
-								<h3>钱静&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>江苏</em>
-								<span class="guanzhu9385" onclick="GuanZhu('9385')">关注</span>								</p>
-							<p><em>
-															</em>
-								<span>
-					            二级
-					        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/yinyue/2016-12-01/7229.html"><h3>华尔兹圆舞曲</h3></a>
-							<p>　　《肖邦:华尔兹圆舞曲》肖邦一共写了17首《圆舞曲》。除了编号外的3首，其它14首有编号的，都在这张历史性纪</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/yinyue/2016-12-01/7229.html">
-
-
-									<img src="http://M.greattone.net/d/uploaduserpic/userpic/1479196882357.png">
-									<i class="iconfont">&#xe63e;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-12-01</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7229></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7229&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7229&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7229&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------音乐结束-------->
-																				<!--------图片开始-------->
-					<li class="clearfix" id="userImg7225">
-												<script>$(function(){isFeed('5705')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=5705">
-								<img src="http://www.greattone.net/d/file/avator/user5705_avator.jpg">
-								<input type="hidden" name="titid" class="tit_id" value="7225" />
-								<h3>小咏&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>黑龙江</em>
-								<span class="guanzhu5705" onclick="GuanZhu('5705')">关注</span>								</p>
-							<p><em>
-								钢琴老师							</em>
-								<span>
-						            四级                                </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<script type="text/javascript">
-								$(function() {
-									var imgUserMsg="7225";
-
-									$.ajax({
-										url: '/guangchang/index.photo.php',
-										type: 'post',
-										dataType: 'text',
-										data: {'tit_id': imgUserMsg},
-									})
-										.done(function(msg) {
-
-											var UserImgInfo=msg;
-											var userSelect="userImg"+imgUserMsg;
-
-											// $('userSelect').children('chatu a').append('msg');
-											$('#'+userSelect).find('.chatu a').append(msg);
-										})
-										.fail(function() {
-											console.log("error");
-										});
-
-
-								});
-
-							</script>
-							<a href="http://www.greattone.net/guangchang/tupian/2016-12-01/7225.html"><h3>当代世界十大钢琴家之阿尔弗雷德</h3></a>
-							<p>　　阿尔弗雷德·布伦德尔（Alfred Brendel），1931年1月5日生于奥地利的维森堡，1949年在意大利波尔萨诺获布索尼大</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/tupian/2016-12-01/7225.html">
-									<!--<img src="">-->
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-12-01</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7225></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7225&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7225&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7225&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------图片结束-------->
-																				<!--------图片开始-------->
-					<li class="clearfix" id="userImg7223">
-												<script>$(function(){isFeed('5705')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=5705">
-								<img src="http://www.greattone.net/d/file/avator/user5705_avator.jpg">
-								<input type="hidden" name="titid" class="tit_id" value="7223" />
-								<h3>小咏&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>黑龙江</em>
-								<span class="guanzhu5705" onclick="GuanZhu('5705')">关注</span>								</p>
-							<p><em>
-								钢琴老师							</em>
-								<span>
-						            四级                                </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<script type="text/javascript">
-								$(function() {
-									var imgUserMsg="7223";
-
-									$.ajax({
-										url: '/guangchang/index.photo.php',
-										type: 'post',
-										dataType: 'text',
-										data: {'tit_id': imgUserMsg},
-									})
-										.done(function(msg) {
-
-											var UserImgInfo=msg;
-											var userSelect="userImg"+imgUserMsg;
-
-											// $('userSelect').children('chatu a').append('msg');
-											$('#'+userSelect).find('.chatu a').append(msg);
-										})
-										.fail(function() {
-											console.log("error");
-										});
-
-
-								});
-
-							</script>
-							<a href="http://www.greattone.net/guangchang/tupian/2016-12-01/7223.html"><h3>当代世界十大钢琴家之斯维亚托斯</h3></a>
-							<p>　　斯维亚托斯拉夫·杰奥里索维奇·里希特（Sviatoslav Teorisovich Richter，1915－1997），前苏联钢琴家。自幼随父</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/tupian/2016-12-01/7223.html">
-									<!--<img src="">-->
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-12-01</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7223></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7223&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7223&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7223&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------图片结束-------->
-																				<!--------图片开始-------->
-					<li class="clearfix" id="userImg7180">
-												<script>$(function(){isFeed('5705')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=5705">
-								<img src="http://www.greattone.net/d/file/avator/user5705_avator.jpg">
-								<input type="hidden" name="titid" class="tit_id" value="7180" />
-								<h3>小咏&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>黑龙江</em>
-								<span class="guanzhu5705" onclick="GuanZhu('5705')">关注</span>								</p>
-							<p><em>
-								钢琴老师							</em>
-								<span>
-						            四级                                </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<script type="text/javascript">
-								$(function() {
-									var imgUserMsg="7180";
-
-									$.ajax({
-										url: '/guangchang/index.photo.php',
-										type: 'post',
-										dataType: 'text',
-										data: {'tit_id': imgUserMsg},
-									})
-										.done(function(msg) {
-
-											var UserImgInfo=msg;
-											var userSelect="userImg"+imgUserMsg;
-
-											// $('userSelect').children('chatu a').append('msg');
-											$('#'+userSelect).find('.chatu a').append(msg);
-										})
-										.fail(function() {
-											console.log("error");
-										});
-
-
-								});
-
-							</script>
-							<a href="http://www.greattone.net/guangchang/tupian/2016-11-30/7180.html"><h3>当代世界十大钢琴家之弗拉基米尔</h3></a>
-							<p>　　弗拉基米尔·霍洛维茨 （Vladimir Horowitz，1904－1989），美国最负盛名的钢琴家之一，美籍俄罗斯人。很早就显露音</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/tupian/2016-11-30/7180.html">
-									<!--<img src="">-->
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-11-30</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7180></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7180&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7180&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7180&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------图片结束-------->
-																				<!--------图片开始-------->
-					<li class="clearfix" id="userImg7178">
-												<script>$(function(){isFeed('8468')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=8468">
-								<img src="http://m.greattone.net/d/uploaduserpic/userpic/1474435267.jpg">
-								<input type="hidden" name="titid" class="tit_id" value="7178" />
-								<h3>清秋&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>福建</em>
-								<span class="guanzhu8468" onclick="GuanZhu('8468')">关注</span>								</p>
-							<p><em>
-															</em>
-								<span>
-						            一级                                </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<script type="text/javascript">
-								$(function() {
-									var imgUserMsg="7178";
-
-									$.ajax({
-										url: '/guangchang/index.photo.php',
-										type: 'post',
-										dataType: 'text',
-										data: {'tit_id': imgUserMsg},
-									})
-										.done(function(msg) {
-
-											var UserImgInfo=msg;
-											var userSelect="userImg"+imgUserMsg;
-
-											// $('userSelect').children('chatu a').append('msg');
-											$('#'+userSelect).find('.chatu a').append(msg);
-										})
-										.fail(function() {
-											console.log("error");
-										});
-
-
-								});
-
-							</script>
-							<a href="http://www.greattone.net/guangchang/tupian/2016-11-30/7178.html"><h3>1877年11月30日， 柴可夫斯基《洛</h3></a>
-							<p>    1876年，柴可夫斯基创作了《洛可可主题变奏曲》，题献给他的好朋友、著名大提琴家菲芩哈根，该曲于1877年11月</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/tupian/2016-11-30/7178.html">
-									<!--<img src="http://greattone.net">-->
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-11-30</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7178></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=12&id=7178&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7178&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7178&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------图片结束-------->
-																				<!--------音乐开始-------->
-					<li class="clearfix">
-												<script>$(function(){isFeed('7426')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=7426">
-								<img src="http://M.greattone.net/d/uploaduserpic/userpic/1470125921749.jpeg">
-								<h3>李然&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>江苏</em>
-								<span class="guanzhu7426" onclick="GuanZhu('7426')">关注</span>								</p>
-							<p><em>
-								爱乐人							</em>
-								<span>
-					            四级
-					        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/yinyue/2016-11-28/7121.html"><h3>钢琴  彩云追月</h3></a>
-							<p>曲名“彩云追月”的寓意是仙人驾五彩祥云奔向月宫。中国古典文学著作当中常有仙人驾彩云的描述，曲名当中的“</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/yinyue/2016-11-28/7121.html">
-
-
-									<img src="http://M.greattone.net/d/uploaduserpic/userpic/1470125921749.jpeg">
-									<i class="iconfont">&#xe63e;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-11-28</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7121></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=13&id=7121&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7121&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7121&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-					<!--------音乐结束-------->
-																				<!--------视频开始-------->
-					<li class="clearfix dongtaiLi">
-												<script>$(function(){isFeed('5724')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=5724">
-								<img src="/d/photo/4724/big.jpg">
-								<h3>思桦&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>上海</em>
-								<span class="guanzhu5724" onclick="GuanZhu('5724')">关注</span>								</p>
-							<p><em>
-								习乐人							</em>
-								<span>
-						            二级						        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/shipin/2016-11-24/7075.html"><h3>11岁无锡男孩儿王奕程弹唱羽泉《</h3></a>
-							<p> 王奕程，11岁，江苏无锡人，目前就读于无锡市洛社中心小学五年级，从小喜欢唱歌，小学三年级参加了合唱队，当时同学中</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/shipin/2016-11-24/7075.html">
-									<img src="http://171.11.231.70:2100/20161124/rhsXWxTM/1.jpg">
-									<i class="iconfont">&#xe63b;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-11-24</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7075></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7075&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7075&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7075&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-
-					<!--------视频结束-------->
-																				<!--------视频开始-------->
-					<li class="clearfix dongtaiLi">
-												<script>$(function(){isFeed('5705')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=5705">
-								<img src="http://www.greattone.net/d/file/avator/user5705_avator.jpg">
-								<h3>小咏&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>黑龙江</em>
-								<span class="guanzhu5705" onclick="GuanZhu('5705')">关注</span>								</p>
-							<p><em>
-								钢琴老师							</em>
-								<span>
-						            四级						        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/shipin/2016-11-24/7071.html"><h3>周安妮和郎朗 - 四手联弹舒伯特</h3></a>
-							<p>看过郎朗和恩师巴伦博伊姆共同演奏过舒伯特的《军队进行曲》，郎朗也曾与肖邦大奖少年组的获得者周安妮于2011</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/shipin/2016-11-24/7071.html">
-									<img src="http://171.11.231.70:2100/20161124/8rbLvIvr/1.jpg">
-									<i class="iconfont">&#xe63b;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-11-24</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7071></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7071&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7071&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7071&down=2></script></li>
-									</ol>
-								</div>
-							</div></div>
-						<!-- list右侧，内容区域结束······················ -->
-					</li>
-
-					<!--------视频结束-------->
-																				<!--------视频开始-------->
-					<li class="clearfix dongtaiLi">
-												<script>$(function(){isFeed('7426')})</script>
-						<!-- list左侧，包含头像姓名······················ -->
-						<div class="listLeft">
-							<a href="http://www.greattone.net/e/space/?userid=7426">
-								<img src="http://M.greattone.net/d/uploaduserpic/userpic/1470125921749.jpeg">
-								<h3>李然&nbsp;
-																	</h3>
-							</a>
-							<p class="fromCity">
-								<em>江苏</em>
-								<span class="guanzhu7426" onclick="GuanZhu('7426')">关注</span>								</p>
-							<p><em>
-								爱乐人							</em>
-								<span>
-						            四级						        </span></p>
-						</div>
-						<!-- list右侧，内容区域·························· -->
-						<div class="listRight">
-							<a href="http://www.greattone.net/guangchang/shipin/2016-11-23/7057.html"><h3>四手联弹   Heart And Soul</h3></a>
-							<p>《Heart And Soul》是歌手Kenny.G的发布于2010年6月30日的新专辑。特别棒！</p>
-							<div class="chatu">
-								<a href="http://www.greattone.net/guangchang/shipin/2016-11-23/7057.html">
-									<img src="http://171.11.231.70:2100/20161123/JHQYWEjj/1.jpg">
-									<i class="iconfont">&#xe63b;</i>
-								</a>
-							</div>
-							<div class="time clearfix">
-								<span>2016-11-23</span>
-								<div class="timeRight">
-									<ol class="clearfix">
-										<li><a  title="点击量" href="javascript:;" target="_self"><i class="iconfont">&#xe644;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7057></script></li>
-										<li><a title="点赞量" href="JavaScript:makeRequest('http://www.greattone.net/e/public/digg/?classid=11&id=7057&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"><i class="iconfont">&#xe629;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7057&down=5></script></li>
-										<li><a title="评论量" href="javascript:;" target="_self"><i class="iconfont">&#xe64e;</i></a></li>
-										<li><script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7057&down=2></script></li>
 									</ol>
 								</div>
 							</div></div>
@@ -2305,6 +1775,12 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 			<!--<dl class="dianzanTop">-->
 			<!--
 <dt>
+						<img src="http://www.greattone.net/e/data/images/notimg.gif">
+						<a href="http://www.greattone.net/guangchang/tupian/2016-12-26/7545.html">200年难得一遇的奇才 </a>
+						<span class="zuo_1">作者：李雨</span><span class="zuo_2">点赞数：<script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7545&down=5></script></script></span>
+					</dt>
+
+<dt>
 						<img src="http://171.11.231.70:2100/20161222/rZz3hilg/1.jpg">
 						<a href="http://www.greattone.net/guangchang/shipin/2016-12-22/7514.html">杜峰-流浪者之歌</a>
 						<span class="zuo_1">作者：陈晨</span><span class="zuo_2">点赞数：<script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7514&down=5></script></script></span>
@@ -2317,6 +1793,12 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 					</dt>
 
 <dt>
+						<img src="http://www.greattone.net/d/file/f91b9ce7141ce527663ac5d1d5277453.jpg">
+						<a href="http://www.greattone.net/guangchang/shipin/2016-12-22/7505.html">Beat it | Michael Ja</a>
+						<span class="zuo_1">作者：赵青</span><span class="zuo_2">点赞数：<script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7505&down=5></script></script></span>
+					</dt>
+
+<dt>
 						<img src="http://171.11.231.70:2100/20161221/XPcIZVhc/1.jpg">
 						<a href="http://www.greattone.net/guangchang/shipin/2016-12-21/7490.html">小提琴曲《罗密欧与朱</a>
 						<span class="zuo_1">作者：杨阳</span><span class="zuo_2">点赞数：<script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7490&down=5></script></script></span>
@@ -2326,18 +1808,6 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 						<img src="http://M.greattone.net/d/uploaduserpic/userpic/1480064464740.png">
 						<a href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7487.html">Always With Me 久石</a>
 						<span class="zuo_1">作者：刘小雨</span><span class="zuo_2">点赞数：<script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7487&down=5></script></script></span>
-					</dt>
-
-<dt>
-						<img src="http://M.greattone.net/d/uploaduserpic/userpic/1481010277486.png">
-						<a href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7485.html">意大利交响曲 理查德</a>
-						<span class="zuo_1">作者：李冉冉</span><span class="zuo_2">点赞数：<script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7485&down=5></script></script></span>
-					</dt>
-
-<dt>
-						<img src="http://M.greattone.net/d/uploaduserpic/userpic/1474442338249.jpg">
-						<a href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7483.html">芳菲何处  理查德克莱</a>
-						<span class="zuo_1">作者：张安安</span><span class="zuo_2">点赞数：<script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7483&down=5></script></script></span>
 					</dt>
 -->
 			<!--</dl>-->
@@ -2388,6 +1858,10 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 				<dl>
 					<dd>推荐</dd>
 					<dt>
+						<img src="http://www.greattone.net/e/data/images/notimg.gif">
+						<a href="http://www.greattone.net/guangchang/tupian/2016-12-26/7545.html">200年难得一遇的奇才 </a>
+						<span class="zuo_1">作者：李雨</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7545></script></span>
+					</dt><dt>
 						<img src="http://171.11.231.70:2100/20161222/rZz3hilg/1.jpg">
 						<a href="http://www.greattone.net/guangchang/shipin/2016-12-22/7514.html">杜峰-流浪者之歌</a>
 						<span class="zuo_1">作者：陈晨</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7514></script></span>
@@ -2395,6 +1869,10 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 						<img src="http://www.greattone.net/e/data/images/notimg.gif">
 						<a href="http://www.greattone.net/guangchang/tupian/2016-12-22/7508.html">历久不衰的贝多芬 D大</a>
 						<span class="zuo_1">作者：杨阳</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7508></script></span>
+					</dt><dt>
+						<img src="http://www.greattone.net/d/file/f91b9ce7141ce527663ac5d1d5277453.jpg">
+						<a href="http://www.greattone.net/guangchang/shipin/2016-12-22/7505.html">Beat it | Michael Ja</a>
+						<span class="zuo_1">作者：赵青</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7505></script></span>
 					</dt><dt>
 						<img src="http://171.11.231.70:2100/20161221/XPcIZVhc/1.jpg">
 						<a href="http://www.greattone.net/guangchang/shipin/2016-12-21/7490.html">小提琴曲《罗密欧与朱</a>
@@ -2409,24 +1887,16 @@ document.write('<script src="http://www.greattone.net/e/member/login/headjs_1.ph
 						<span class="zuo_1">作者：李冉冉</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7485></script></span>
 					</dt><dt>
 						<img src="http://M.greattone.net/d/uploaduserpic/userpic/1474442338249.jpg">
+						<a href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7484.html">四季组曲   理查德</a>
+						<span class="zuo_1">作者：张安安</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7484></script></span>
+					</dt><dt>
+						<img src="http://M.greattone.net/d/uploaduserpic/userpic/1474442338249.jpg">
 						<a href="http://www.greattone.net/guangchang/yinyue/2016-12-20/7483.html">芳菲何处  理查德克莱</a>
 						<span class="zuo_1">作者：张安安</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=13&id=7483></script></span>
 					</dt><dt>
 						<img src="http://171.11.231.70:2100/20161220/OD1Ar4jZ/1.jpg">
 						<a href="http://www.greattone.net/guangchang/shipin/2016-12-20/7481.html">贝多芬第六交响曲《田</a>
 						<span class="zuo_1">作者：杨阳</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7481></script></span>
-					</dt><dt>
-						<img src="http://171.11.231.70:2100/20161220/0fHLDJoK/1.jpg">
-						<a href="http://www.greattone.net/guangchang/shipin/2016-12-20/7480.html">李云迪浪漫演绎舒曼《</a>
-						<span class="zuo_1">作者：思桦</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=11&id=7480></script></span>
-					</dt><dt>
-						<img src="http://www.greattone.net/e/data/images/notimg.gif">
-						<a href="http://www.greattone.net/guangchang/tupian/2016-12-19/7457.html">旅美青年钢琴家郝博—</a>
-						<span class="zuo_1">作者：思桦</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7457></script></span>
-					</dt><dt>
-						<img src="http://www.greattone.net/e/data/images/notimg.gif">
-						<a href="http://www.greattone.net/guangchang/tupian/2016-12-18/7452.html">法兰山德副总林大嘉辽</a>
-						<span class="zuo_1">作者：君和琴行</span><span class="zuo_2">点击量：<script src=http://www.greattone.net/e/public/ViewClick/?classid=12&id=7452></script></span>
 					</dt>				</dl>
 			</div>
 		</div>

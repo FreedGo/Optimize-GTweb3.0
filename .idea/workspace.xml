@@ -9,8 +9,6 @@
     </list>
     <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="修改">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/e/extend/feed/isFeed.php" afterPath="$PROJECT_DIR$/php/e/extend/feed/isFeed.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guangchang/index.name.php" afterPath="$PROJECT_DIR$/php/guangchang/index.name.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guangchang/index.php" afterPath="$PROJECT_DIR$/php/guangchang/index.php" />
     </list>
@@ -57,7 +55,7 @@
       <file leaf-file-name="index.name.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/guangchang/index.name.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="-133">
               <caret line="247" column="9" lean-forward="false" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
               <folding>
                 <element signature="e#601#2730#0#HTML" expanded="false" />
@@ -551,14 +549,7 @@
       <workItem from="1482714790638" duration="15984000" />
       <workItem from="1482798978441" duration="257000" />
       <workItem from="1482799709489" duration="18105000" />
-      <workItem from="1482885284309" duration="2697000" />
-    </task>
-    <task id="LOCAL-00110" summary="乐谱修改">
-      <created>1481008351408</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1481008351408</updated>
+      <workItem from="1482885284309" duration="2796000" />
     </task>
     <task id="LOCAL-00111" summary="音乐老师分类点击数字动态跳动,分类,搜索,地区筛选">
       <created>1481077919049</created>
@@ -896,11 +887,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482831520030</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="修改是否关注请求post为get">
+      <created>1482889290372</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1482889290374</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="794423000" />
+    <option name="totallyTimeSpent" value="794522000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1006,7 +1004,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新的h5页面开始制作&#10;" />
     <MESSAGE value="琴行认证弹框就是切换&#10;" />
     <MESSAGE value="网络海选左侧广告尺寸调整&#10;" />
     <MESSAGE value="新增用户头像信息&#10;" />
@@ -1031,7 +1028,8 @@
     <MESSAGE value="老师地区筛选已经好可了" />
     <MESSAGE value="直播备份" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="修改是否关注请求post为get" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改是否关注请求post为get" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1399,7 +1397,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/guangchang/index.name.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="-133">
           <caret line="247" column="9" lean-forward="false" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
           <folding>
             <element signature="e#601#2730#0#HTML" expanded="false" />
