@@ -24,7 +24,7 @@ $editor = 1;
 
 
 $userid = (int)getcvar('mluserid');
-$getuserid = (int)$_POST['followid'];
+$getuserid = (int)$_GET['followid'];
 
 //关注通知
 //$userid=getcvar('mluserid');

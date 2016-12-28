@@ -298,7 +298,7 @@ function GuanZhu(userid){
  * @param userid
  */
 function isFeed(userid){
-	$.post("/e/extend/feed/isFeed.php",
+	$.get("/e/extend/feed/isFeed.php",
 		{
 			followid:userid
 		},
