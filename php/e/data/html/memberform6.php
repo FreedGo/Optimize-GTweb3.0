@@ -23,17 +23,22 @@ if(!defined('InEmpireCMS'))
     			<li>
    				  	<span class="dataLeft">创建年份：</span>		
 <!--					  <input type="text" class="laydate-icon dataLeftShort" required placeholder="请输入品牌创建的年份"  name="chusheng" id="demo9" value="--><?//=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($addr[chusheng]))?><!--">-->
-				  		<script type="text/javascript">
-						!function(){
-							laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
-							laydate({
-								elem: '#demo9',
-								format: 'YYYY',
-								min: '1700-01-01 00:00:00', //最小日期
-        						max: '2099-12-31 23:59:59', //最大日期
-							});//绑定元素
-						}();
-						</script>
+				  	<select class="dataLeftShort" name="chusheng">
+					    <option value="<?=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($addr[chusheng]))?>" selected><?=$ecmsfirstpost==1?"":ehtmlspecialchars(stripSlashes($addr[chusheng]))?></option>
+				    </select>
+				    <script type="text/javascript">
+						$(function () {
+							var yearSelect = $('.dataLeftShort'),
+								curDate = new Date(),
+							    year = curDate.getFullYear();
+							if (yearSelect.val() == ''){
+								yearSelect.empty();
+							};
+							for (var i = year;i >=1800 ; i-- ){
+								yearSelect.append('<option value="'+i+'">'+i+'</option>');
+							};
+						})
+					</script>
    			  	</li>
    			  	<li>
    				  	<span class="dataLeft">包含的乐器：</span>

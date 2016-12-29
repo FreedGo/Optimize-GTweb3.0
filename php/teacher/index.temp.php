@@ -216,9 +216,9 @@ if ($dangid != 0) {
                                     $f = $empire->fetch1("select feeduserid from {$dbtbpre}enewsmemberadd where userid='$getuserid'");
                                     $fduserid = explode("::::::", $f['feeduserid']);
                                     if (in_array($userid, $fduserid)) {
-                                        $follow = '<a href="javascript:void()" style="padding: 0" onclick="follow(' . $userid . ')" class="button blue small orange" id="follow' . $userid . '" title="取消关注">取消关注</a>';
+                                        $follow = '<a  style="padding: 0;cursor:point" onclick="follow(' . $userid . ')" class="button blue small orange" id="follow' . $userid . '" title="取消关注">取消关注</a>';
                                     } else {
-                                        $follow = '<a href="javascript:void()" style="padding: 0" onclick="follow(' . $userid . ')" class="button blue small" id="follow' . $userid . '">关注</a>';
+                                        $follow = '<a  style="padding: 0;cursor:point" onclick="follow(' . $userid . ')" class="button blue small" id="follow' . $userid . '">关注</a>';
                                     }
 
                                 } else {
@@ -318,7 +318,7 @@ if ($dangid != 0) {
                                 <li><a href="javascript:;" target="_self">课程中心</a><span></span></li>
                                 <li><a href="javascript:;">老师动态</a><span></span></li>
                                 <li><a href="javascript:;" target="_self">在线直播</a><span></span></li>
-                                <li class="showAlert"><a href="javascript:;" target="_self">课程表</a><span></span></li>
+                                <li class="showAlert" style="display: none"><a href="javascript:;" target="_self">课程表</a><span></span></li>
                                 <li class="showAlert"><a href="javascript:;" target="_self">全部学员</a><span></span></li>
                                 <li class="discuss-area-btn showAlert"><a href="javascript:;" target="_self">讨论区</a><span></span></li>
                             </ul>
@@ -468,7 +468,7 @@ if ($dangid != 0) {
                             <?php
                             if ($zjj == 11) {
                                 ?>
-                                <ul class="liebiaoFuck liebiaoShow current kebiao clearfix">
+                                <ul class="liebiaoFuck liebiaoShow current kebiao  clearfix" style="display: none">
                                     <?php
                                     //课表数据处理
                                     $num=$empire->num("select id from phome_zjk_kebiao_tear where tearid=$userid");

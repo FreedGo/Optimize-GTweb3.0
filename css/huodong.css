@@ -126,7 +126,7 @@
 	background-color: #fff;
 	position: relative;
 	width: 235px;
-	float: left;
+	float: right;
 	margin-left: 43px;
 
 }
@@ -423,6 +423,7 @@
 	background-color: #cb7047;
 	line-height: 40px;
 	margin-right: 15px;
+	display: none;
 }
 .creat a{
 	color: #fff;

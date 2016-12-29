@@ -116,7 +116,9 @@
     .inMsg{
         border-bottom:#cb7047 solid 1px;
     }
-
+    .liebiao video{
+        max-width:100%;
+    }
 
 
 

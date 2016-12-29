@@ -14,7 +14,6 @@ require(ECMS_PATH.'e/template/incfile/header.php');
                 	<li><a href="/e/member/cp/" class="selected">我的信息</a></li>
             		<li><a href="/e/member/EditInfo/">完善资料</a></li>
             		<li><a href="/e/member/EditInfo/EditSafeInfo.php">修改密码</a></li>
-                    <li><a href="/e/member/EditInfo/EditShenfen.php">选择身份</a></li>
            		  <li><a href="/e/member/EditInfo/EditAvator.php">修改头像</a></li>
             	</ul>
             </div>

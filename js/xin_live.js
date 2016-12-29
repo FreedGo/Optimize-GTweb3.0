@@ -50,5 +50,8 @@ $(function() {
 		$('.rightMiddle').hide();
 		$('.baomingMsg').show();
 	});
-
+	//2.2视频遮罩5秒消失
+	setTimeout(function () {
+		$('.live-player-cover').hide();
+	},5000)
 });
