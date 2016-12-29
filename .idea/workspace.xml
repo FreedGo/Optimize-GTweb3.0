@@ -7,18 +7,211 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/reg/vip.php" afterPath="$PROJECT_DIR$/php/reg/vip.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/reg/备份/vip.php" afterPath="$PROJECT_DIR$/php/reg/备份/vip.php" />
     </list>
-    <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="广场搜索结果增加isFeed函数">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/音乐资讯-活动列表.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/音乐资讯-音乐新闻.html" />
+    <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="音乐活动改版块到音乐资讯里面">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/expressInstall.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/fullAvatarEditor.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/data/html/memberform1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/data/html/memberform2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/data/html/memberform3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/data/html/memberform4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/data/html/memberform5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/data/html/memberform6.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/jingling/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pay.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/index备份.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/pinpai/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinhang/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qinshi/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/index - 备份原版3种报名方式.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/haixuan/qita/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/header_1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/Paymentfailure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/alipay.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/alipayapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/lib/alipay_core.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/lib/alipay_md5.function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/lib/alipay_notify.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/lib/alipay_submit.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/notify_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/paysuccess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/demo/return_url.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/oufubao/Allpay_AIO_CreateOrder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/oufubao/ou.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/pay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/incfile/huodong/pay.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/AddFava.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/AddFavasc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/AddFriend.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/AddMsg.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/AddMsg2222.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/AddMsg_xiao.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/ChangeFriend.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/ChangeRegister.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/ChoseFriend.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/EditAvator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/EditInfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/EditInfo11.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/EditSafeInfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/EditShenfen.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/FavaClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/FavaClass111.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/FriendClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/GetPassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/ShowInfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/ViewMsg.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/ViewMsg111.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/buybak.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/buygroup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/card.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/cp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/downbak.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/fava.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/fava111.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/findpassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/friend.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/getpass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/gonggao.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/huodong.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/jiaoshi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/kecheng.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/laoshi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/laoshi_lao.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/laoshi_xue.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/loginopen.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/memberlist/1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/msg.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/msg1111.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/msg_xiao.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/msg_xiaoxi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/mspace/ChangeStyle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/mspace/ReGbook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/mspace/SetDiy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/mspace/SetSpace.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/mspace/ShowFeedback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/mspace/feedback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/mspace/gbook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/my.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/register.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/register备份10-25.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/regsend.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/tuijian.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/vip.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/vip备份11.22.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/vip注册备份.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/xuesheng.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/template/member/xuesheng_shen.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/news/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/news/index.name.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/news/index.type.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/news/indexs.ip.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/news/indexs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/huodong.css" afterPath="$PROJECT_DIR$/css/huodong.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/yinyuexinwenlist.css" afterPath="$PROJECT_DIR$/css/yinyuexinwenlist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/yinyuezixun.css" afterPath="$PROJECT_DIR$/css/yinyuezixun.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-全部贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐新闻-乐器.html" afterPath="$PROJECT_DIR$/html/音乐新闻-乐器.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐资讯.html" afterPath="$PROJECT_DIR$/html/音乐资讯.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yinyueguangchang.js" afterPath="$PROJECT_DIR$/js/yinyueguangchang.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +244,8 @@
       <file leaf-file-name="xin_yinyuelaoshi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+            <state relative-caret-position="19">
+              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
               <folding>
                 <element signature="e#133#878#0" expanded="false" />
                 <element signature="e#5608#5675#0" expanded="false" />
@@ -70,35 +263,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="音乐广场-全部贴.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
+      <file leaf-file-name="EditInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/e/template/member/EditInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="1900">
+              <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="音乐资讯.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/音乐资讯.html">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39193/home/hao/e/member/EditInfo/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1478566733000" expanded="true" signature="322:397" ph="select * fro... $" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="音乐资讯-活动列表.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/音乐资讯-活动列表.html">
+      <file leaf-file-name="memberform6.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/e/data/html/memberform6.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1482972502825" expanded="true" signature="2966:3029" ph="select cked phome_enewsmember" />
+                <marker date="1482972502825" expanded="true" signature="9134:9203" ph="select photo... phome_enewsmemberadd" />
               </folding>
             </state>
           </provider>
@@ -145,7 +339,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/guangchang/guangchang.ajax.php" />
         <option value="$PROJECT_DIR$/php/e/space/template/default/header.temp.php" />
         <option value="$PROJECT_DIR$/php/reg/备份/vip.php" />
         <option value="$PROJECT_DIR$/php/reg/vip.php" />
@@ -196,6 +389,7 @@
         <option value="$PROJECT_DIR$/html/音乐资讯-活动列表.html" />
         <option value="$PROJECT_DIR$/css/huodong.css" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp00662/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php" />
+        <option value="$PROJECT_DIR$/php/e/data/html/memberform6.php" />
       </list>
     </option>
   </component>
@@ -260,7 +454,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,8 +494,53 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -523,14 +761,8 @@
       <workItem from="1482714790638" duration="15984000" />
       <workItem from="1482798978441" duration="257000" />
       <workItem from="1482799709489" duration="18105000" />
-      <workItem from="1482885284309" duration="14657000" />
-    </task>
-    <task id="LOCAL-00112" summary="老师,教室空间主页二维码chrome浏览器变形的bug修正">
-      <created>1481086043707</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1481086043707</updated>
+      <workItem from="1482885284309" duration="15328000" />
+      <workItem from="1482970879645" duration="1273000" />
     </task>
     <task id="LOCAL-00113" summary="音乐教室更改,基于后台ajax的json数据">
       <created>1481090865035</created>
@@ -868,11 +1100,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482889428775</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="音乐活动改版块到音乐资讯里面">
+      <created>1482916927380</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1482916927380</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="806383000" />
+    <option name="totallyTimeSpent" value="808327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -887,14 +1126,13 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17681624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17895299" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29782608" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12431843" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14285715" sideWeight="0.6394231" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34133044" sideWeight="0.6394231" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21155943" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21155943" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -902,6 +1140,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -980,7 +1219,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="网络海选左侧广告尺寸调整&#10;" />
     <MESSAGE value="新增用户头像信息&#10;" />
     <MESSAGE value="修改&#10;" />
     <MESSAGE value="广场修改,关注变按钮&#10;" />
@@ -1005,7 +1243,8 @@
     <MESSAGE value="修改" />
     <MESSAGE value="修改是否关注请求post为get" />
     <MESSAGE value="广场搜索结果增加isFeed函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="广场搜索结果增加isFeed函数" />
+    <MESSAGE value="音乐活动改版块到音乐资讯里面" />
+    <option name="LAST_COMMIT_MESSAGE" value="音乐活动改版块到音乐资讯里面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,34 +1253,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/reg/vip.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐乐谱中心.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_music-book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="138" column="65" lean-forward="true" selection-start-line="138" selection-start-column="65" selection-end-line="138" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/xin_yinyueguangchang.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="426" column="25" lean-forward="true" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1056,13 +1267,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01258/home/hao/pinpai/index.type.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01258/home/hao/pinpai/index.type.ajax.php" />
     <entry file="file://$PROJECT_DIR$/php/reg/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
@@ -1070,13 +1275,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12846/home/hao/pinpai/index.type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12846/home/hao/pinpai/index.type.php" />
     <entry file="file://$PROJECT_DIR$/js/xin_live1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1098,20 +1297,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42334/home/hao/e/space/template/teacher/index.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="470" column="115" lean-forward="true" selection-start-line="470" selection-start-column="115" selection-end-line="470" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50846/home/hao/e/template/zhiyin/zhiyin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="512" column="87" lean-forward="false" selection-start-line="512" selection-start-column="87" selection-end-line="512" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42334/home/hao/e/space/template/teacher/index.temp.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50846/home/hao/e/template/zhiyin/zhiyin.php" />
     <entry file="file://$PROJECT_DIR$/js/xin_live.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1119,90 +1306,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp23886/home/hao/e/space/template/jiaoshi/header.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7011">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp26342/home/hao/e/space/template/jiaoshi_space/index.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4446">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp35123/home/hao/laoshi/tear.index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="174" lean-forward="false" selection-start-line="15" selection-start-column="139" selection-end-line="15" selection-end-column="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34147/home/hao/laoshi/index-ajax/index.type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="56" column="85" lean-forward="false" selection-start-line="56" selection-start-column="85" selection-end-line="56" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50569/home/hao/e/template/incfile/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="496" column="135" lean-forward="true" selection-start-line="496" selection-start-column="135" selection-end-line="496" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp23349/home/hao/e/space/template/jiaoshi/index.temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="699" column="42" lean-forward="true" selection-start-line="699" selection-start-column="42" selection-end-line="699" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10787/home/hao/e/QAtj/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12075/home/hao/e/template/DoInfo/DoInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11370/home/hao/e/QA/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13466/home/hao/e/data/html/QA/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp23886/home/hao/e/space/template/jiaoshi/header.temp.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp26342/home/hao/e/space/template/jiaoshi_space/index.temp.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp35123/home/hao/laoshi/tear.index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp34147/home/hao/laoshi/index-ajax/index.type.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp50569/home/hao/e/template/incfile/header.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp23349/home/hao/e/space/template/jiaoshi/index.temp.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10787/home/hao/e/QAtj/index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12075/home/hao/e/template/DoInfo/DoInfo.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11370/home/hao/e/QA/index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13466/home/hao/e/data/html/QA/qlistinfo.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12352/home/hao/e/QAtj/ListInfo.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13799/home/hao/e/data/html/QAtj/qlistinfo.php" />
     <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
           <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
-          <folding>
-            <marker date="1482825289941" expanded="true" signature="997:1031" ph="..." />
-            <marker date="1482825289941" expanded="true" signature="3517:3551" ph="..." />
-            <marker date="1482825289941" expanded="true" signature="5415:5449" ph="..." />
-            <marker date="1482825289941" expanded="true" signature="7437:7484" ph="..." />
-            <marker date="1482825289941" expanded="true" signature="9817:9851" ph="..." />
-            <marker date="1482825289941" expanded="true" signature="11657:11691" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,7 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="89" lean-forward="false" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,17 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="229" column="38" lean-forward="false" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
-          <folding>
-            <marker date="1482815766759" expanded="true" signature="8930:8977" ph="..." />
-            <marker date="1482815766759" expanded="true" signature="13138:13185" ph="..." />
-            <marker date="1482815766759" expanded="true" signature="16902:16919" ph="..." />
-            <marker date="1482815766759" expanded="true" signature="18316:18333" ph="..." />
-            <marker date="1482815766759" expanded="true" signature="18335:18341" ph=" " />
-            <marker date="1482815766759" expanded="true" signature="18341:18347" ph=" " />
-            <marker date="1482815766759" expanded="true" signature="19599:19616" ph="..." />
-            <marker date="1482815766759" expanded="true" signature="19618:19624" ph=" " />
-            <marker date="1482815766759" expanded="true" signature="19624:19630" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1236,11 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="168" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="280" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ul#7;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1248,10 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#1;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1259,7 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,15 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="303" column="10" lean-forward="true" selection-start-line="303" selection-start-column="10" selection-end-line="303" selection-end-column="10" />
-          <folding>
-            <element signature="e#3313#3682#0" expanded="false" />
-            <element signature="e#4118#4476#0" expanded="false" />
-            <element signature="n#!!block;n#HotBang#0" expanded="false" />
-            <element signature="e#5171#5878#0" expanded="false" />
-            <element signature="n#!!block;n#gtAleryt#0" expanded="false" />
-            <element signature="n#!!block;n#GuanZhu#0" expanded="false" />
-            <marker date="1482887823386" expanded="true" signature="6755:6765" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,7 +1371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="685" column="42" lean-forward="true" selection-start-line="685" selection-start-column="42" selection-end-line="685" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,9 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="273" column="30" lean-forward="true" selection-start-line="273" selection-start-column="30" selection-end-line="273" selection-end-column="30" />
-          <folding>
-            <marker date="1482889448978" expanded="true" signature="6138:6148" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1339,19 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-266">
           <caret line="52" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1090" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#1;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#6;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#7;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#8;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#9;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1359,7 +1430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="714" column="1" lean-forward="true" selection-start-line="714" selection-start-column="1" selection-end-line="714" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,14 +1437,83 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="50" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="194" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/huodong.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐资讯-音乐新闻.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/yinyuezixun.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="664" column="0" lean-forward="false" selection-start-line="664" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp00662/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="375" column="0" lean-forward="false" selection-start-line="375" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49367/home/hao/news/huodong/indexs.ip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="43" column="116" lean-forward="false" selection-start-line="43" selection-start-column="116" selection-end-line="43" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp04381/home/hao/e/data/html/shop/qlistinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐资讯-活动列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐资讯.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/xin_yinyuelaoshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        <state relative-caret-position="19">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding>
             <element signature="e#133#878#0" expanded="false" />
             <element signature="e#5608#5675#0" expanded="false" />
@@ -1391,100 +1530,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/huodong.css">
+    <entry file="file://$PROJECT_DIR$/php/e/template/member/EditInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state relative-caret-position="1900">
+          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐广场-全部贴.html">
+    <entry file="file://$PROJECT_DIR$/php/e/data/html/memberform5.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐资讯-音乐新闻.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="53" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/yinyuezixun.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="664" column="0" lean-forward="false" selection-start-line="664" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp00662/home/hao/e/data/html/pinpai/chanpin/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="375" column="0" lean-forward="false" selection-start-line="375" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <marker date="1482908581223" expanded="true" signature="100:252" ph="select * fro... phome_ecms_shop" />
-            <marker date="1482908581223" expanded="true" signature="468:474" ph=" " />
-            <marker date="1482908581223" expanded="true" signature="475:481" ph=" " />
-            <marker date="1482908581223" expanded="true" signature="513:519" ph=" " />
-            <marker date="1482908581223" expanded="true" signature="520:526" ph=" " />
-            <marker date="1482908581223" expanded="true" signature="587:593" ph=" " />
-            <marker date="1482908581223" expanded="true" signature="1551:1645" ph="select * fro... $" />
-            <marker date="1482908581223" expanded="false" signature="6567:6581" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49367/home/hao/news/huodong/indexs.ip.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="43" column="116" lean-forward="false" selection-start-line="43" selection-start-column="116" selection-end-line="43" selection-end-column="116" />
-          <folding>
-            <marker date="1465374874000" expanded="true" signature="223:330" ph="select * fro... $" />
-            <marker date="1465374874000" expanded="true" signature="1463:1566" ph="select * fro... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐资讯.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp04381/home/hao/e/data/html/shop/qlistinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-855">
+        <state relative-caret-position="-4446">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480477358000" expanded="true" signature="100:252" ph="select * fro... phome_ecms_shop" />
-            <marker date="1480477358000" expanded="true" signature="468:474" ph=" " />
-            <marker date="1480477358000" expanded="true" signature="475:481" ph=" " />
-            <marker date="1480477358000" expanded="true" signature="513:519" ph=" " />
-            <marker date="1480477358000" expanded="true" signature="520:526" ph=" " />
-            <marker date="1480477358000" expanded="true" signature="587:593" ph=" " />
-            <marker date="1480477358000" expanded="true" signature="1523:1617" ph="select * fro... $" />
+            <marker date="1482130844000" expanded="true" signature="4422:4485" ph="select cked phome_enewsmember" />
+            <marker date="1482130844000" expanded="true" signature="9796:9865" ph="select photo... phome_enewsmemberadd" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐资讯-活动列表.html">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp39193/home/hao/e/member/EditInfo/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1478566733000" expanded="true" signature="322:397" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/e/data/html/memberform6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <marker date="1482972502825" expanded="true" signature="2966:3029" ph="select cked phome_enewsmember" />
+            <marker date="1482972502825" expanded="true" signature="9134:9203" ph="select photo... phome_enewsmemberadd" />
           </folding>
         </state>
       </provider>
