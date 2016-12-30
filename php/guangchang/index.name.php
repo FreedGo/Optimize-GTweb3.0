@@ -22,6 +22,7 @@ if ($titid == 0) {
 					<a href="/e/space/?userid=<?= $r[userid] ?>">
 						<img src="<?= $r[userpic] ?>">
 						<h3><?= $r[username] ?></h3>
+					</a>
 						<p class="fromCity">
 							<em><?= $r[address] ?></em>
 							<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -63,7 +64,7 @@ if ($titid == 0) {
 				            ?>
 				        </span>
 						</p>
-					</a>
+
 				</div>
 				<!-- list右侧，内容区域·························· -->
 				<div class="listRight">
@@ -92,7 +93,7 @@ if ($titid == 0) {
 					<a href="/e/space/?userid=<?= $r[userid] ?>">
 						<img src="<?= $r[userpic] ?>">
 						<input type="hidden" name="titid" class="tit_id" value="<?= $r[id] ?>"/>
-						<h3><?= $r[username] ?></h3>
+						<h3><?= $r[username] ?></h3></a>
 						<p class="fromCity">
 							<em><?= $r[address] ?></em>
 							<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -133,7 +134,7 @@ if ($titid == 0) {
 
 				        </span>
 						</p>
-					</a>
+<!--					</a>-->
 				</div>
 				<!-- list右侧，内容区域·························· -->
 				<div class="listRight">
@@ -186,7 +187,7 @@ if ($titid == 0) {
 				<div class="listLeft">
 					<a href="/e/space/?userid=<?= $r[userid] ?>">
 						<img src="<?= $r[userpic] ?>">
-						<h3><?= $r[username] ?></h3>
+						<h3><?= $r[username] ?></h3></a>
 						<p class="fromCity">
 							<em><?= $r[address] ?></em>
 							<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -226,7 +227,7 @@ if ($titid == 0) {
 				             ?>
 			                </span>
 						</p>
-					</a>
+<!--					</a>-->
 				</div>
 				<!-- list右侧，内容区域·························· -->
 				<div class="listRight">
@@ -246,6 +247,7 @@ if ($titid == 0) {
 			</li>
 			<?
 		}
+
 	}
 } elseif ($titid == 1) {//会员名
 	$frie_sql = "select * from phome_ecms_photo a left join phome_enewsmemberadd b on a.userid=b.userid left join phome_enewsmember c on a.userid=c.userid where c.username like '%$name%' order by a.id DESC";
@@ -260,7 +262,7 @@ if ($titid == 0) {
 				<div class="listLeft">
 					<a href="/e/space/?userid=<?= $r[userid] ?>">
 						<img src="<?= $r[userpic] ?>">
-						<h3><?= $r[username] ?></h3>
+						<h3><?= $r[username] ?></h3></a>
 						<p class="fromCity">
 							<em><?= $r[address] ?></em>
 							<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -300,7 +302,7 @@ if ($titid == 0) {
 				            ?>
 				        </span>
 						</p>
-					</a>
+<!--					</a>-->
 				</div>
 				<!-- list右侧，内容区域·························· -->
 				<div class="listRight">
@@ -329,7 +331,7 @@ if ($titid == 0) {
 					<a href="/e/space/?userid=<?= $r[userid] ?>">
 						<img src="<?= $r[userpic] ?>">
 						<input type="hidden" name="titid" class="tit_id" value="<?= $r[id] ?>"/>
-						<h3><?= $r[username] ?></h3>
+						<h3><?= $r[username] ?></h3></a>
 						<p class="fromCity">
 							<em><?= $r[address] ?></em>
 							<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -370,7 +372,7 @@ if ($titid == 0) {
             ?>
             
         </span></p>
-					</a>
+<!--					</a>-->
 				</div>
 				<!-- list右侧，内容区域·························· -->
 				<div class="listRight">
@@ -430,7 +432,7 @@ if ($titid == 0) {
 				<div class="listLeft">
 					<a href="/e/space/?userid=<?= $r[userid] ?>">
 						<img src="<?= $r[userpic] ?>">
-						<h3><?= $r[username] ?></h3>
+						<h3><?= $r[username] ?></h3></a>
 						<p class="fromCity">
 							<em><?= $r[address] ?></em>
 							<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -470,7 +472,7 @@ if ($titid == 0) {
 	             }
 	             ?>
         </span></p>
-					</a>
+<!--					</a>-->
 				</div>
 				<!-- list右侧，内容区域·························· -->
 				<div class="listRight">
@@ -507,7 +509,7 @@ if ($titid == 0) {
 			<div class="listLeft">
 				<a href="/e/space/?userid=<?= $r[userid] ?>">
 					<img src="<?= $r[userpic] ?>">
-					<h3><?= $r[username] ?></h3>
+					<h3><?= $r[username] ?></h3></a>
 					<p class="fromCity">
 						<em><?= $r[address] ?></em>
 						<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -547,7 +549,7 @@ if ($titid == 0) {
             }
             ?>
         </span></p>
-				</a>
+<!--				</a>-->
 			</div>
 			<!-- list右侧，内容区域·························· -->
 			<div class="listRight">
@@ -580,7 +582,7 @@ if ($titid == 0) {
 			<div class="listLeft">
 				<a href="/e/space/?userid=<?= $r[userid] ?>">
 					<img src="<?= $r[userpic] ?>">
-					<h3><?= $r[username] ?></h3>
+					<h3><?= $r[username] ?></h3></a>
 					<p class="fromCity">
 						<em><?= $r[address] ?></em>
 						<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -619,7 +621,7 @@ if ($titid == 0) {
 	             }
 	             ?>
         </span></p>
-				</a>
+<!--				</a>-->
 			</div>
 			<!-- list右侧，内容区域·························· -->
 			<div class="listRight">
@@ -654,7 +656,7 @@ if ($titid == 0) {
 				<a href="/e/space/?userid=<?= $r[userid] ?>">
 					<img src="<?= $r[userpic] ?>">
 					<input type="hidden" name="titid" class="tit_id" value="<?= $r[id] ?>"/>
-					<h3><?= $r[username] ?></h3>
+					<h3><?= $r[username] ?></h3></a>
 					<p class="fromCity">
 						<em><?= $r[address] ?></em>
 						<span class="guanzhu<?= $r[userid] ?>" onclick="GuanZhu('<?= $r[userid] ?>')">关注</span>
@@ -694,7 +696,7 @@ if ($titid == 0) {
             ?>
             
         </span></p>
-				</a>
+<!--				</a>-->
 			</div>
 			<!-- list右侧，内容区域·························· -->
 			<div class="listRight">

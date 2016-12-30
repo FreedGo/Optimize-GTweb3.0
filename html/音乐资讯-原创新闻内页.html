@@ -5,16 +5,15 @@
 	<title>[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声</title>
 	<meta name="keywords" content="[!--guanjian--]" />
 	<meta name="description" content="[!--smalltext--]" />
-	<meta property="og:image" content="[!--titlepic--]"/>
-	<meta property="og:description" content="[!--smalltext--]"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/base.css">
+	<meta property="og:image" content="[!--titlepic--]"/>
+	<meta property="og:description" content="[!--smalltext--]"/>
+	<script language="javascript" src="/js/language.js"></script>
 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/xin_base.css">
-	<!-- 	<link rel="stylesheet" type="text/css" href="[!--news.url--]css/index.css"> -->
 	<link rel="stylesheet" type="text/css" href="/css/xin-music-news-article.css">
 	<script type="text/javascript" src="[!--news.url--]js/jquery-1.11.3.min.js"></script>
-	<!-- <script type="text/javascript" src="[!--news.url--]js/index.js"></script> -->
-	<script language="javascript" src="/js/language.js"></script>
+	<script type="text/javascript" src="[!--news.url--]js/index.js"></script>
 	<script type="text/javascript">
 		var  getUserid;
 		$(function() {
@@ -30,8 +29,6 @@
 		var ua = navigator.userAgent.toLowerCase();
 		if(ua.match(/MicroMessenger/i)=="micromessenger") {
 			// 匹配是微信浏览器再去验证微信权限
-
-
 			// 微信相关分享，1.0获取url发给后台并获取相应其他参数
 			var AppID,
 			    TimeStamp,
@@ -76,7 +73,7 @@
 
 				});
 				var strTiele="[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声";
-				var strDesc="[!--smalltext--]";
+				var strDesc="[!--guanjian--]";
 				// var strLink="URL";
 				var strImgUrl="[!--titlepic--]";
 				//分享朋友圈
@@ -169,6 +166,7 @@
 
 				</div>
 				<div class="share">
+
 				</div>
 
 			</div>
@@ -180,17 +178,20 @@
 						<p>[!--newstext--]</p>—来自好琴声
 						<div class="web_page">[!--page.url--]</div>
 					</div>
+
 					<!--中间广告-->
 					<div class="content-ad clearfix" style="width:860px;">
 						<div class="index-ad-1" style="float: left;"><script src="http://greattone.net/d/js/acmsd/thea81.js"></script></div>
 						<div class="index-ad-2" style="float: left;"><script src="http://greattone.net/d/js/acmsd/thea82.js"></script></div>
 					</div>
 					<!--/中间广告-->
+
 					<div class="textFoot">
 						<!--顶 踩-->
 						[!--temp.ding--]
 						<div class="zhuanfa">
-							<p>请支持独立网站，转发请注明本文链接：http://www.greattone.net/</p>
+							<p>请支持独立网站，转发请注明本文链接：</p>
+							<a href="javascript::">http://www.greattone.net/</a>
 						</div>
 						<p class="guandian">本文仅代表作者个人观点。</p>
 						<div class="laiyuan">
@@ -205,7 +206,7 @@
 						</div>
 						<div class="share">
 							<!-- JiaThis Button BEGIN -->
-							<div class="jiathis_style_32x32" style="float: right;" >
+							<div class="jiathis_style_32x32" style="float: right">
 								<a class="jiathis_button_weixin"></a>
 								<a class="jiathis_button_tsina"></a>
 								<a class="jiathis_button_qzone"></a>
@@ -216,11 +217,11 @@
 								<script type="text/javascript">
 								var jiathis_config = {
 								// url: "http://www.yourdomain.com",
-								title: "[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声",
-								summary:"[!--smalltext--]",
-								pic:"[!--titlepic--]",
-								img_url:"[!--titlepic--]"
-								}
+									title: "[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声",
+									summary:"[!--guanjian--]",
+									pic:"[!--titlepic--]",
+									img_url:"[!--titlepic--]"
+									}
 								</script>
 								</div>
 								<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
@@ -242,27 +243,26 @@
 									?>
 									<?=$follow?>
 									<span class="zan_num">
-									<script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script>
-									</span>
+								<script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script>
+								</span>
 								</div>
 							</div>
-
 						</div>
 
 					</div>
 
 				</div>
+
+
 				<br>
-
-
-			[!--temp.chang--]
+				[!--temp.chang--]
 			</div>
 			<!-- 左边结构结束 -->
 
 			<!-- 右边结构 -->
 			<div class="artRight">
 				<div class="rightAdvert">
-					<script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea3.js"></script>
+					<script type="text/javascript" src="[!--news.url--]d/js/acmsd/thea59.js"></script>
 				</div>
 				<div class="recommond">
 					<dl>
