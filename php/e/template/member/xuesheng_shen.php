@@ -260,7 +260,7 @@ while($r=$empire->fetch($list))
 				?>
                 <?=$follow?>
                 
-                <a href="javascript:;" class="sixinBtn">私信</a>
+                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信</a>
                 </div>
 	</li> 
 <?
@@ -297,7 +297,7 @@ while($r=$empire->fetch($list))
 				?>
                 <?=$follow?>
                 
-                <a href="javascript:;" class="sixinBtn">私信</a>
+                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信</a>
                 </div>
 	</li>
 <?
@@ -332,7 +332,7 @@ while($r=$empire->fetch($list2))
 				?>
                 <?=$follow?>
                 
-                <a href="javascript:;" class="sixinBtn">私信</a>
+                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信</a>
                 </div>
 	</li>
 <?
@@ -370,7 +370,7 @@ while($r=$empire->fetch($list))
 				?>
                 <?=$follow?>
                 
-                <a href="javascript:;" class="sixinBtn">私信</a>
+                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信</a>
                 </div>
 	</li>
 <?

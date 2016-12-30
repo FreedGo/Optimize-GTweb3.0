@@ -265,7 +265,7 @@ if(empty($str)){
 										?>
 						                <?=$follow?>
 						                
-						                <a href="javascript:;" class="sixinBtn">私信</a>
+						                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信</a>
 						                </div>
 							</li> 
 						<?
@@ -302,7 +302,7 @@ if(empty($str)){
 									?>
 					                <?=$follow?>
 					                
-					                <a href="javascript:;" class="sixinBtn">私信</a>
+					                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信</a>
 					                </div>
 						</li>
 					<?
@@ -341,7 +341,7 @@ if(empty($str)){
 									?>
 					                <?=$follow?>
 					                
-					                <a href="javascript:;" class="sixinBtn">私信</a>
+					                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信</a>
 					                </div>
 						</li>
 					<?
@@ -376,7 +376,7 @@ if(empty($str)){
 									?>
 					                <?=$follow?>
 					                
-					                <a href="javascript:;" class="sixinBtn">私信<?=$r[userid]?></a>
+					                <a href="/e/member/msg/AddMsg/?username=<?=$r[username]?>" class="sixinBtn">私信<?=$r[userid]?></a>
 					                </div>
 						</li>
 					<?
