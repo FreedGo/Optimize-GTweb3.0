@@ -7,9 +7,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/reg/vip.php" afterPath="$PROJECT_DIR$/php/reg/vip.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/reg/备份/vip.php" afterPath="$PROJECT_DIR$/php/reg/备份/vip.php" />
     </list>
-    <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="广场视频贴,没有修改">
+    <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="首页修正音乐教室为琴行教室">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/音乐资讯-新闻内页.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" afterPath="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/guangchang/index.name.php" afterPath="$PROJECT_DIR$/php/guangchang/index.name.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,42 +42,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xuesheng.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/e/template/member/xuesheng.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2808">
-              <caret line="378" column="93" lean-forward="false" selection-start-line="378" selection-start-column="93" selection-end-line="378" selection-end-column="93" />
-              <folding>
-                <marker date="1483061087618" expanded="true" signature="120:126" ph=" " />
-                <marker date="1483061087618" expanded="true" signature="127:133" ph=" " />
-                <marker date="1483061087618" expanded="true" signature="279:346" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="881:945" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="1184:1297" ph="select mid,q... $" />
-                <marker date="1483061087618" expanded="true" signature="1360:1426" ph="select id fr... $" />
-                <marker date="1483061087618" expanded="true" signature="2022:2074" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="2591:2654" ph="select feedu... $" />
-                <marker date="1483061087618" expanded="true" signature="2861:2935" ph="select zuiji... $" />
-                <marker date="1483061087618" expanded="true" signature="2984:3068" ph="update ${{$d... " />
-                <marker date="1483061087618" expanded="true" signature="3271:3349" ph="update ${{$d... " />
-                <marker date="1483061087618" expanded="true" signature="3385:3479" ph="update ${{$d... " />
-                <marker date="1483061087618" expanded="true" signature="3536:3611" ph="select feedu... $" />
-                <marker date="1483061087618" expanded="true" signature="3845:3906" ph="SELECT feedu... $" />
-                <marker date="1483061087618" expanded="true" signature="4414:4486" ph="select yaoqi... $" />
-                <marker date="1483061087618" expanded="true" signature="4717:4775" ph="SELECT yaoqi... $" />
-                <marker date="1483061087618" expanded="true" signature="5502:5673" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="6991:7156" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="7669:7742" ph="select yaoqi... $" />
-                <marker date="1483061087618" expanded="true" signature="8712:8959" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="9453:9526" ph="select yaoqi... $" />
-                <marker date="1483061087618" expanded="true" signature="10634:10825" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="11319:11392" ph="select yaoqi... $" />
-                <marker date="1483061087618" expanded="true" signature="12326:12551" ph="select * fro... $" />
-                <marker date="1483061087618" expanded="true" signature="13049:13122" ph="select yaoqi... $" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xuesheng_shen.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/e/template/member/xuesheng_shen.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,47 +78,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="广场视频贴内页-增加头像.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/广场视频贴内页-增加头像.html">
+      <file leaf-file-name="音乐资讯-新闻内页.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/音乐资讯-新闻内页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="251" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="360" selection-end-column="7" />
+            <state relative-caret-position="488">
+              <caret line="303" column="7" lean-forward="false" selection-start-line="303" selection-start-column="7" selection-end-line="303" selection-end-column="7" />
               <folding>
-                <element signature="n#script#3;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#7;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xin_music-book.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/xin_music-book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="200" column="32" lean-forward="true" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#musicBook#0" expanded="false" />
-                <element signature="n#!!block;n#musicBookList#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="295" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="419" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -185,6 +126,9 @@
       <find>signlePrice</find>
       <find>ticketNum</find>
       <find>bao_type</find>
+      <find>totalPrice</find>
+      <find>音乐教室</find>
+      <find>报名</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,15 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp38063/home/hao/e/space/template/pinpai/header.temp.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp39411/home/hao/e/space/template/teacher/header.temp.php" />
-        <option value="$PROJECT_DIR$/html/琴行教室.html" />
-        <option value="$PROJECT_DIR$/php/reg/register.php" />
-        <option value="$PROJECT_DIR$/js/register.yanzheng2.js" />
-        <option value="$PROJECT_DIR$/css/xin_yinyueguangchang.css" />
-        <option value="$PROJECT_DIR$/html/音乐乐谱中心.html" />
-        <option value="$PROJECT_DIR$/js/xin_yueqipinpai.js" />
-        <option value="$PROJECT_DIR$/html/乐器品牌.html" />
         <option value="$PROJECT_DIR$/html/直播中心.html" />
         <option value="$PROJECT_DIR$/html/直播中心改样式.html" />
         <option value="$PROJECT_DIR$/css/xin_live.css" />
@@ -224,7 +159,6 @@
         <option value="$PROJECT_DIR$/js/yinyueguangchang.hot.js" />
         <option value="$PROJECT_DIR$/php/guangchang/index.name.php" />
         <option value="$PROJECT_DIR$/js/yinyueguangchang.js" />
-        <option value="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
         <option value="$PROJECT_DIR$/html/音乐广场-全部贴.html" />
         <option value="$PROJECT_DIR$/html/音乐资讯.html" />
         <option value="$PROJECT_DIR$/html/音乐资讯-音乐新闻.html" />
@@ -252,6 +186,16 @@
         <option value="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" />
         <option value="$PROJECT_DIR$/js/xin_music-book.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
+        <option value="$PROJECT_DIR$/html/音乐广场-推荐贴.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp12174/home/hao/guangchang/index.name.php" />
+        <option value="$PROJECT_DIR$/php/guangchang/guangchang.ajax.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp19181/home/en.flsd/e/template/incfile/guoji.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp06743/home/en.flsd/css/article.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp25148/home/hao/d/js/acmsd/thea69.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp20734/alidata/www/hao/app/buyticket/index.html" />
+        <option value="$PROJECT_DIR$/html/test.html" />
+        <option value="$PROJECT_DIR$/html/音乐资讯-新闻.html" />
+        <option value="$PROJECT_DIR$/html/音乐资讯-新闻内页.html" />
       </list>
     </option>
   </component>
@@ -273,10 +217,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1913" />
+    <option name="width" value="1932" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -353,6 +296,38 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guangchang" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Optimize-GTweb3.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="html" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -394,10 +369,7 @@
       <recent name="D:\Git\Optimize-GTweb3.0\docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.pics.html">
-    <configuration default="false" name="qh-list.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/php/开发部琴行注册标准/qh-list.php">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.test.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/php/空间H5-老师/index.html">
       <method />
     </configuration>
@@ -408,6 +380,9 @@
       <method />
     </configuration>
     <configuration default="false" name="video.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Optimize-GTweb3.0/组件化/GTweb-h5/video.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Optimize-GTweb3.0/html/test.html">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -467,19 +442,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.qh-list.php" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.pics.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.video.html (1)" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.pics.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.video.html (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.pics.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.video.html (1)" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.qh-list.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.pics.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.video.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.video.html (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -581,14 +556,7 @@
       <workItem from="1482799709489" duration="18105000" />
       <workItem from="1482885284309" duration="15328000" />
       <workItem from="1482970879645" duration="18758000" />
-      <workItem from="1483059370473" duration="6903000" />
-    </task>
-    <task id="LOCAL-00118" summary="精简冗余代码&#10;">
-      <created>1481173051043</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1481173051043</updated>
+      <workItem from="1483059370473" duration="16146000" />
     </task>
     <task id="LOCAL-00119" summary="琴行教室筛选改为粉丝数,教师等级&#10;">
       <created>1481184594504</created>
@@ -926,11 +894,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483069248225</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="首页修正音乐教室为琴行教室">
+      <created>1483069280267</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1483069280267</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="832715000" />
+    <option name="totallyTimeSpent" value="841958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -942,18 +917,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="1913" y="0" width="1932" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18108974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18147752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2977099" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12431843" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33478734" sideWeight="0.6394231" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35572687" sideWeight="0.6394231" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21592148" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771739" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -965,14 +942,12 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771739" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12431843" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1038,7 +1013,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="视频,图片贴的新h5页面&#10;" />
     <MESSAGE value="制作找回密码模板" />
     <MESSAGE value="音乐海选列表增加其它栏目" />
     <MESSAGE value="海选报名表增加其它类," />
@@ -1063,7 +1037,8 @@
     <MESSAGE value="学生管理,私信按钮修复" />
     <MESSAGE value="广场视频贴,没有修改" />
     <MESSAGE value="乐谱搜索增加enter键触发" />
-    <option name="LAST_COMMIT_MESSAGE" value="乐谱搜索增加enter键触发" />
+    <MESSAGE value="首页修正音乐教室为琴行教室" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页修正音乐教室为琴行教室" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1072,86 +1047,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13799/home/hao/e/data/html/QAtj/qlistinfo.php" />
-    <entry file="file://$PROJECT_DIR$/js/xin_yinyuejiaoshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐老师.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="89" lean-forward="false" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_yueqipinpai.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="229" column="38" lean-forward="false" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/乐器品牌.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="168" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="280" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/直播中心.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp41692/alidata/website-info.log" />
-    <entry file="file://$PROJECT_DIR$/js/yinyueguangchang.hot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="303" column="10" lean-forward="true" selection-start-line="303" selection-start-column="10" selection-end-line="303" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_jquery_jquery.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="685" column="42" lean-forward="true" selection-start-line="685" selection-start-column="42" selection-end-line="685" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/guangchang/index.name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="247" column="9" lean-forward="false" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
-          <folding>
-            <element signature="e#601#2730#0#HTML" expanded="false" />
-            <element signature="e#2783#5854#0#HTML" expanded="false" />
-            <element signature="e#5907#8004#0#HTML" expanded="false" />
-            <element signature="e#8367#10443#0#HTML" expanded="false" />
-            <element signature="e#10496#13516#0#HTML" expanded="false" />
-            <element signature="e#13569#15591#0#HTML" expanded="false" />
-            <element signature="e#15937#17884#0#HTML" expanded="false" />
-            <element signature="e#18224#20202#0#HTML" expanded="false" />
-            <element signature="e#20540#23474#0#HTML" expanded="false" />
-            <element signature="e#20722#22096#0#HTML" expanded="false" />
-            <element signature="e#22276#23312#0#HTML" expanded="false" />
-            <marker date="1482889241147" expanded="true" signature="270:484" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482889241147" expanded="true" signature="4728:4793" ph="select morep... $" />
-            <marker date="1482889241147" expanded="true" signature="8062:8250" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482889241147" expanded="true" signature="12369:12434" ph="select morep... $" />
-            <marker date="1482889241147" expanded="true" signature="15650:15853" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482889241147" expanded="true" signature="17937:18140" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482889241147" expanded="true" signature="20254:20456" ph="select * fro... phome_ecms_photo" />
-            <marker date="1482889241147" expanded="true" signature="22375:22440" ph="select morep... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/e/extend/feed/isFeed.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -1166,13 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="273" column="30" lean-forward="true" selection-start-line="273" selection-start-column="30" selection-end-line="273" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1090" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1430,6 +1318,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12174/home/hao/guangchang/index.name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1483060508000" expanded="true" signature="270:484" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="4740:4805" ph="select morep... $" />
+            <marker date="1483060508000" expanded="true" signature="8086:8274" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="12415:12480" ph="select morep... $" />
+            <marker date="1483060508000" expanded="true" signature="15707:15910" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="18005:18208" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="20333:20535" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="22465:22530" ph="select morep... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/guangchang/index.name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1590">
+          <caret line="341" column="71" lean-forward="true" selection-start-line="341" selection-start-column="71" selection-end-line="341" selection-end-column="71" />
+          <folding>
+            <marker date="1483060508000" expanded="true" signature="270:484" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="4740:4805" ph="select morep... $" />
+            <marker date="1483060508000" expanded="true" signature="8086:8274" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="12415:12480" ph="select morep... $" />
+            <marker date="1483060508000" expanded="true" signature="15707:15910" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="18005:18208" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="20333:20535" ph="select * fro... phome_ecms_photo" />
+            <marker date="1483060508000" expanded="true" signature="22465:22530" ph="select morep... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/音乐广场-推荐贴.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="380" column="22" lean-forward="true" selection-start-line="380" selection-start-column="22" selection-end-line="380" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="295" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="419" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xin_music-book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="200" column="32" lean-forward="true" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#musicBook#0" expanded="false" />
+            <element signature="n#!!block;n#musicBookList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/guangchang/guangchang.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="360" column="79" lean-forward="false" selection-start-line="360" selection-start-column="76" selection-end-line="360" selection-end-column="79" />
+          <folding>
+            <marker date="1482457730000" expanded="true" signature="262:474" ph="select * fro... phome_ecms_photo" />
+            <marker date="1482457730000" expanded="true" signature="4990:5055" ph="select morep... $" />
+            <marker date="1482457730000" expanded="true" signature="9607:9615" ph="..." />
+            <marker date="1482457730000" expanded="true" signature="12289:12297" ph="..." />
+            <marker date="1482457730000" expanded="true" signature="14598:14665" ph="select * fro... phome_enewsad" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp25148/home/hao/d/js/acmsd/thea69.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp33732/home/hao/d/js/acmsd/thea67.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="225" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp06743/home/en.flsd/css/article.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/广场视频贴内页-增加头像.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="251" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="360" selection-end-column="7" />
+          <folding>
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#7;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp19181/home/en.flsd/e/template/incfile/guoji.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding>
+            <marker date="1483078836278" expanded="true" signature="3873:3929" ph="select * fro... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp20734/alidata/www/hao/app/buyticket/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="96" column="71" lean-forward="true" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/e/template/member/xuesheng.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2808">
@@ -1461,6 +1486,14 @@
             <marker date="1483061087618" expanded="true" signature="12326:12551" ph="select * fro... $" />
             <marker date="1483061087618" expanded="true" signature="13049:13122" ph="select yaoqi... $" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1498,42 +1531,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/广场视频贴内页-增加头像.html">
+    <entry file="file://$PROJECT_DIR$/html/音乐资讯-新闻内页.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="251" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="360" selection-end-column="7" />
+        <state relative-caret-position="488">
+          <caret line="303" column="7" lean-forward="false" selection-start-line="303" selection-start-column="7" selection-end-line="303" selection-end-column="7" />
           <folding>
-            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#7;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/xin_music-book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="200" column="32" lean-forward="true" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#musicBook#0" expanded="false" />
-            <element signature="n#!!block;n#musicBookList#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="295" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="419" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
