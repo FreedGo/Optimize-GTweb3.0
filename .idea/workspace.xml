@@ -10,8 +10,6 @@
     <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="php文件备份">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" afterPath="$PROJECT_DIR$/html/广场视频贴内页-增加头像.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/e/template/member/xuesheng.php" afterPath="$PROJECT_DIR$/php/e/template/member/xuesheng.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/e/template/member/xuesheng_shen.php" afterPath="$PROJECT_DIR$/php/e/template/member/xuesheng_shen.php" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -639,14 +637,7 @@
       <workItem from="1482799709489" duration="18105000" />
       <workItem from="1482885284309" duration="15328000" />
       <workItem from="1482970879645" duration="18758000" />
-      <workItem from="1483059370473" duration="6128000" />
-    </task>
-    <task id="LOCAL-00115" summary="修改">
-      <created>1481172593733</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1481172593734</updated>
+      <workItem from="1483059370473" duration="6164000" />
     </task>
     <task id="LOCAL-00116" summary="修改按类型排序数据处理错误的bug">
       <created>1481172633962</created>
@@ -984,11 +975,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482993934348</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="学生管理,私信按钮修复">
+      <created>1483068513484</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1483068513485</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="831940000" />
+    <option name="totallyTimeSpent" value="831976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1096,7 +1094,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改&#10;" />
     <MESSAGE value="广场修改,关注变按钮&#10;" />
     <MESSAGE value="品牌数据调用改为json&#10;" />
     <MESSAGE value="视频,图片贴的新h5页面&#10;" />
@@ -1121,7 +1118,8 @@
     <MESSAGE value="广场搜索结果增加isFeed函数" />
     <MESSAGE value="音乐活动改版块到音乐资讯里面" />
     <MESSAGE value="php文件备份" />
-    <option name="LAST_COMMIT_MESSAGE" value="php文件备份" />
+    <MESSAGE value="学生管理,私信按钮修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="学生管理,私信按钮修复" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

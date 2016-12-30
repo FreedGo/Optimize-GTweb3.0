@@ -23,21 +23,21 @@
 		$(function() {
 			// 知音数据推送
 			$.ajax({
-						url: '/e/extend/tui_zhiyin/index.php',
-						type: 'post',
-						dataType: 'html',
-						data: {'titid': '<?=$navinfor[id]?>'},
+					url: '/e/extend/tui_zhiyin/index.php',
+					type: 'post',
+					dataType: 'html',
+					data: {'titid': '<?=$navinfor[id]?>'},
 		})
 			.done(function(msg) {
 				// console.log("success");
 				// console.log({'titid': <?=$navinfor[id]?>});
 				// console.log(msg);
 			})
-					.fail(function(msg) {
-						// console.log("error");
-						// console.log({'titid': <?=$navinfor[id]?>});
-						// console.log(msg);
-					});
+				.fail(function(msg) {
+					// console.log("error");
+					// console.log({'titid': <?=$navinfor[id]?>});
+					// console.log(msg);
+				});
 		});
 	</script>
 	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
@@ -46,10 +46,10 @@
 		if(ua.match(/MicroMessenger/i)=="micromessenger") {
 			// 匹配是微信浏览器再去验证微信权限
 			var AppID,
-					TimeStamp,
-					NonceStr,
-					Signature,
-					getUrl = location.href.split('#')[0];
+			    TimeStamp,
+			    NonceStr,
+			    Signature,
+			    getUrl = location.href.split('#')[0];
 			$.ajax({
 				url: '/e/weixin/jssdkone.php',
 				type: 'post',
@@ -59,19 +59,19 @@
 				timeout:1000,
 
 			})
-					.done(function(msg) {
-						console.log("success");
-						AppID = msg.a;
-						TimeStamp = msg.b;
-						NonceStr = msg.c;
-						Signature = msg.d;
-					})
-					.fail(function() {
-						console.log("error");
-					})
-					.always(function() {
-						console.log("complete");
-					});
+				.done(function(msg) {
+					console.log("success");
+					AppID = msg.a;
+					TimeStamp = msg.b;
+					NonceStr = msg.c;
+					Signature = msg.d;
+				})
+				.fail(function() {
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
 			wx.config({
 				debug: false,
 				appId: AppID,
@@ -223,8 +223,8 @@
 						<p>[!--newstime--]</p>
 					</div>
 					<!--<div class="textAuthor">-->
-						<!--<h3>作者：</h3>-->
-						<!--<p><a href="[!&#45;&#45;news.url&#45;&#45;]e/space/?userid=<?=$navinfor['userid']?>">[!&#45;&#45;username&#45;&#45;]</a></p>-->
+					<!--<h3>作者：</h3>-->
+					<!--<p><a href="[!&#45;&#45;news.url&#45;&#45;]e/space/?userid=<?=$navinfor['userid']?>">[!&#45;&#45;username&#45;&#45;]</a></p>-->
 					<!--</div>-->
 					<div class="textDianji">
 						<h3>点击量：</h3>
@@ -240,6 +240,7 @@
 			<!-- 文字头结束 -->
 			<div class="text">
 				<div class="keyWrod">
+
 					<!--视频播放器-->
 					<div style="width:860px;height:530px;margin:0 auto;" id="ivaLive"></div>
 					<script>
@@ -276,12 +277,11 @@
 					<script type="text/javascript" src="/js/iframeTools.js"></script>
 					<script type="text/javascript" src="/js/visuallightbox.js"></script>
 					<script type="text/javascript" src="/js/52img.js"></script>
-					<script language="javascript" src="/js/language.js"></script>
 					<script type="text/javascript" src="/js/zan.js"></script>
 					<div class="share">
 						<a class="article_mark" href="/e/member/fava/add/?classid=<?=$bqr['classid']?>&amp;id=<?=$bqr['id']?>"></a>
 						<?php
-	$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].',getUserid)" class="button blue dianzanBtn" id="follow'.$navinfor[id].'"></a>';
+						$follow='<a href="javascript:void()" onclick="follow('.$navinfor[id].',getUserid)" class="button blue dianzanBtn" id="follow'.$navinfor[id].'"></a>';
 						?>
 						<?=$follow?><span class="zan_num"><script src=[!--news.url--]e/public/ViewClick/?classid=[!--classid--]&id=[!--id--]&down=5></script></span>
 						<!-- JiaThis Button BEGIN -->
@@ -293,14 +293,14 @@
 							<a class="jiathis_button_fb"></a>
 							<a href="http://www.jiathis.com/share?uid=2111445" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 							<a class="jiathis_counter_style"></a>
-							<script type= "text/javascript">
-							var jiathis_config = {
-							// url: "http://www.yourdomain.com",
-							title: "[!--pagetitle--] - 好琴声",
-							summary:"[!--pagekey--]",
-							pic:"[!--titlepic--]",
-							img_url:"[!--titlepic--]"
-							}
+							<script type="text/javascript">
+								var jiathis_config = {
+								// url: "http://www.yourdomain.com",
+								title: "[!--pagetitle--] - 好琴声",
+								summary:"[!--pagekey--]",
+								pic:"[!--titlepic--]",
+								img_url:"[!--titlepic--]"
+								}
 							</script>
 							</div>
 							<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2111445" charset="utf-8"></script>
