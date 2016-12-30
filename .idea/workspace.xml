@@ -10,7 +10,6 @@
     <list default="true" id="c7c7233f-0b9d-46b9-b1fc-47649c8f7e0d" name="Rejected commit: Default" comment="广场视频贴,没有修改">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/xin_music-book.js" afterPath="$PROJECT_DIR$/js/xin_music-book.js" />
     </list>
     <ignored path="Optimize-GTweb3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -582,14 +581,7 @@
       <workItem from="1482799709489" duration="18105000" />
       <workItem from="1482885284309" duration="15328000" />
       <workItem from="1482970879645" duration="18758000" />
-      <workItem from="1483059370473" duration="6870000" />
-    </task>
-    <task id="LOCAL-00117" summary="老师页面的h5&#10;">
-      <created>1481172657897</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1481172657897</updated>
+      <workItem from="1483059370473" duration="6903000" />
     </task>
     <task id="LOCAL-00118" summary="精简冗余代码&#10;">
       <created>1481173051043</created>
@@ -927,11 +919,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483068560139</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="乐谱搜索增加enter键触发">
+      <created>1483069248225</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1483069248225</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="832682000" />
+    <option name="totallyTimeSpent" value="832715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -951,7 +950,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12431843" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.259542" sideWeight="0.6394231" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33478734" sideWeight="0.6394231" order="9" side_tool="false" content_ui="tabs" x="1924" y="743" width="1914" height="249" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21592148" sideWeight="0.6178038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1039,7 +1038,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="品牌数据调用改为json&#10;" />
     <MESSAGE value="视频,图片贴的新h5页面&#10;" />
     <MESSAGE value="制作找回密码模板" />
     <MESSAGE value="音乐海选列表增加其它栏目" />
@@ -1064,7 +1062,8 @@
     <MESSAGE value="php文件备份" />
     <MESSAGE value="学生管理,私信按钮修复" />
     <MESSAGE value="广场视频贴,没有修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="广场视频贴,没有修改" />
+    <MESSAGE value="乐谱搜索增加enter键触发" />
+    <option name="LAST_COMMIT_MESSAGE" value="乐谱搜索增加enter键触发" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
