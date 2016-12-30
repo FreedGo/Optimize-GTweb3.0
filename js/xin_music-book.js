@@ -150,8 +150,7 @@ function sousuo(data){//data为搜索框的类名
 					$('.list-content-type7').children('ul').empty().append('没有搜索到相关乐谱，请重新搜索');
 				} else if(msg.length == 0){
 					$('.list-content-type7').children('ul').empty().append('没有搜索到相关乐谱，请重新搜索');
-				}
-				else {
+				} else {
 					$.each(msg, function(index, val) {
 						var oType;
 						if (val.f == 38){
@@ -169,14 +168,14 @@ function sousuo(data){//data为搜索框的类名
 						};
 						 // data2.children('.recommend-list-content').append('<li class="f-l-l"><a href="'+val.c+'">'+'['+val.a+']'+val.b+'</a></li>');
 						 $('.list-content-type7').children('ul').append('<li class="lists-content-cell f-l-l"><a href="'+val.e+
-						 							'"><div class="cell-img"><img src="'+val.a+
-						 							'"/ alt="'+val.b+
-						 							'"></div><div class="cell-title ">'+
-													'<h2>'+val.b+'</h2>'+
-													'</div>'+
-													'<div class="cell-name"><h3>'+oType+'</h3></div>'+
-													'<div class="cell-time">'+val.c+'</div>'+
-													'</a></li>');
+                            '"><div class="cell-img"><img src="'+val.a+
+                            '"/ alt="'+val.b+
+                            '"></div><div class="cell-title ">'+
+							'<h2>'+val.b+'</h2>'+
+							'</div>'+
+							'<div class="cell-name"><h3>'+oType+'</h3></div>'+
+							'<div class="cell-time">'+val.c+'</div>'+
+							'</a></li>');
 					});
 				}
 				
@@ -195,6 +194,12 @@ $(function(){
 	$('.search1 .search-sub').on('click',function(){
 		var searchList1 = $('.search1');
 		sousuo(searchList1);
+	});
+	$('.search1 .search-content').on('keypress',function(event){
+		var searchList1 = $('.search1');
+		if (event.keyCode == 13){
+			sousuo(searchList1);
+		}
 	});
 	$('.search2 .search-sub').on('click',function(){
 		var searchList2 = $('.search2');
